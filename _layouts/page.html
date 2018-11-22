@@ -1,30 +1,19 @@
 ---
-layout: default
+layout: base
 ---
 
-<main id="main" class="main-content" aria-label="Content">
-  <article>
-    {% include page-image.html %}
-    <div class="page-wrapper">
-      <header class="page-header">
-        {% if page.id %}
-          {% assign title = page.title | markdownify | strip_html %}
-        {% else %}
-          {% assign title = page.title %}
-        {% endif %}
-        {% if page.link %}
-          <h1 id="page-title" class="page-title"><a href="{{ page.link }}">{{ title }} <span class="link-arrow">&rarr;</span></a></h1>
-        {% else %}
-          <h1 id="page-title" class="page-title">{{ title }}</h1>
-        {% endif %}
-      </header>
-      <div class="page-content">
-        {{ content }}
+{% include header.html type="page" %}
 
-        {% if page.share %}
-          {% include social-share.html %}
-        {% endif %}
-      </div>
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      {{ content }}
+	    {% if page.comments %}
+        <div class="disqus-comments">
+	        {% include disqus.html %}
+        </div>
+	        {% include fb-comment.html %}
+	    {% endif %}
     </div>
-  </article>
-</main>
+  </div>
+</div>

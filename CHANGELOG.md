@@ -1,284 +1,73 @@
-# Change Log
-
-All notable changes to this project will be documented in this file.
-
-The format is based on [Keep a Changelog](http://keepachangelog.com/)
-and this project adheres to [Semantic Versioning](http://semver.org/).
-
-## [Unreleased]
-
-### Changed
-- Update GitHub issue templates.
-
-### Added
-- Add German translations to `text.yml`. [#311](https://github.com/mmistakes/so-simple-theme/pull/311)
-- Add Spanish translations to `text.yml`. [#300](https://github.com/mmistakes/so-simple-theme/pull/300)
-
-### Fixed
-- Correct stylesheet path in documentation. [#309](https://github.com/mmistakes/so-simple-theme/pull/309)
-- Clarify where to customize SCSS variables in `/assets/css/main.scss`. [#293](https://github.com/mmistakes/so-simple-theme/pull/293)
-
-## [3.1.1] - 05-03-2018
-
-### Changed
-- Include creation of `navigation.yml` when "starting fresh". [#270](https://github.com/mmistakes/so-simple-theme/issues/270)
-- Center hero image. [#289](https://github.com/mmistakes/so-simple-theme/pull/289)
-- Update Font Awesome to version [`5.0.12`](https://github.com/FortAwesome/Font-Awesome/blob/master/CHANGELOG.md).
-- Do not show `<footer>` in `_includes/entry.html` if there is no `site.read_time` or `entry.date` (typical of collection documents). [#283](https://github.com/mmistakes/so-simple-theme/pull/283)
-
-### Fixed
-- Fix documentation links to sample `index.md` file. [#288](https://github.com/mmistakes/so-simple-theme/issues/288)
-- Fix "Uncaught TypeError: Cannot read property 'addEventListener' of null" in `main.js` when navigation isn't defined.
-- Fix search form from resetting when pressing "Enter". [#278](https://github.com/mmistakes/so-simple-theme/pull/278)
-- Fix author links from not displaying correct when a single link is defined in `_config.yml`. [#280](https://github.com/mmistakes/so-simple-theme/issues/280)
-- Fix search result excerpts that run together because of implied spaces. [#281](https://github.com/mmistakes/so-simple-theme/pull/281)
-- Fix usage of `$site-logo-height` variable in `_global.scss`. [#284](https://github.com/mmistakes/so-simple-theme/pull/284)
-
-## [3.1.0] - 03-12-2018
-
-### Changed
-- Set `autofocus` on search input.
-- Update Font Awesome to version [`5.0.7`](https://github.com/FortAwesome/Font-Awesome/blob/master/CHANGELOG.md).
-
-### Added
-- Add `posts_limit` override to `home` layout to set how many posts are shown (when not using pagination).
-- Add `hidden: true` test post to verify it is excluded from home page pagination.
-- Add note about disabling footer links with `footer_links: false`.
-- Add support for sorting collections by `date` or `title`. [#272](https://github.com/mmistakes/so-simple-theme/pull/272)
-
-### Fixed
-- Fix `remote_theme` name in README documentation. [#268](https://github.com/mmistakes/so-simple-theme/pull/268)
-
-## [3.0.1] - 02-06-2018
-
-### Fixed
-- Fix Google Analytics conditional and variable name in include.
-
-## [3.0.0] - 02-06-2018
-
-### Changed
-- Freshen up look and feel, rebuilding with modern CSS using grid and flexbox.
-- Improve parity with Jekyll's default theme (Minima).
-- Properly support `url` and `baseurl` by leveraging Jekyll's `absolute_url` and `relative_url` filters.
-- Rename image front matter to those used by jekyll-seo-tag, jekyll-feed, and jekyll-sitemap (e.g., rename `image.feature` to `image.path`).
-- Require full paths to image assets instead of forcing them into `/images/`.
-- Update MathJax to `2.7.2`.
-- Update Font Awesome to `5.0.6`.
-- Update jQuery to `3.3.1`.
-- Remove FitVid.JS script.
-- Replace Magnific Popup with Lity.
-- Improve list view.
-- Replace JSON search with [Lunr](https://lunrjs.com/).
-- Improve syntax highlighting styling.
-- Improve README.md with full installation guide.
-- Replace Grunt tasks with `npm run` scripts.
-- Update GitHub issue labels.
-- Migrate `gh-pages` branch into `/docs` folder on `master`.
-
-### Added
-- Convert into a [Ruby gem-based theme](https://jekyllrb.com/docs/themes/#understanding-gem-based-themes).
-- Add support for installing on GitHub Pages as a [remote theme](https://github.com/benbalter/jekyll-remote-theme).
-- Add custom author links to post sidebar via `_config.yml`.
-- Add custom footer links via `_config.yml`.
-- Allow footer copyright to be changed via `_config.yml`.
-- Assign Google Fonts to easily customize site's typography via `_config.yml`.
-- Add hooks for injecting custom markup or content to `<head>` and `<footer>`.
-- Add estimated reading time to pages.
-- Add [data file](_data/text.yml) with all of the theme's text strings for localization.
-- Add grid view.
-- Add full document content, URL, and tags to search index for improved results.
-- Add support for line numbers in syntax highlighted code blocks.
-- Add toggle for showing or hiding excerpts with `show_excerpts`.
-- Add `default` layout.
-- Add `home` layout with [jekyll-paginate](https://jekyllrb.com/docs/pagination/) support.
-- Add `posts` layout for showing all posts.
-- Add `categories` layout for showing all posts grouped by category.
-- Add `category` layout for showing posts of a specific category.
-- Add `tags` layout for showing all posts grouped by tag.
-- Add `tag` layout for showing posts of a specific tag.
-- Add `collection` layout for showing documents of a specific collection.
-- Add `search` layout.
-- Add [Microformats](http://microformats.org/wiki/microformats2) markup to posts.
-- Add responsive embed helper.
-- Add table of contents helper.
-- Add CHANGELOG.md file.
-- Add migration guide for v2 to v3.
-- Add stale bot for dealing with inactive issues and pull-requests.
-- Add GitHub issue template.
+ # CHANGELOG
 
-### Fixed
-- Fix MathJax CDN path. [#241](https://github.com/mmistakes/so-simple-theme/pull/241)
+This file lists all non-trivial changes to Beautiful Jekyll.
 
----
+I often make small changes to documentation, to the demo site, or to the general look-and-feel. These changes will not be listed here. Any other minor changes will also not be listed here.
 
-## [2.3.4] - 09-14-2016
+**2018-10-19** Move Google Analytics to the head (#419) (thanks @jpvicari)
 
-### Changed
-- Change `spin` to `adjust-hue`. [#201](https://github.com/mmistakes/so-simple-theme/issues/201)
-- Improve readability of .scss files.
+**2018-06-08** Add support for Facebook comments (#350) (thanks @npes87184)
 
-## [2.3.3] - 09-12-2016
+**2018-02-22** Automatically generate sitemap (#323) (thanks @JosemyDuarte)
 
-### Changed
-- Removed pro tip on applying for Twitter Cards.
+**2018-01-18** Add clickable tags to each post and a tags index page, works for GitHub sites (#307) (thanks @OCram85)
 
-## [2.3.2] - 09-12-2016
+**2018-01-14** Redo Dockerfile (#302) (thanks @jennydaman)
 
-### Fixed
-- Fix search.js interference with other forms. [#194](https://github.com/mmistakes/so-simple-theme/issues/194)
-- Fix parenthesis Liquid error in `_layouts/post.html`. [#141](https://github.com/mmistakes/so-simple-theme/issues/141)
+**2018-01-06** More color personalization options (#297 and #299) (thanks @jennydaman)
 
-## [2.3.1] - 06-01-2016
+**2018-01-05** Abstract the social networks logic (thanks @OCram85)
 
-### Changed
-- Remove Octopress configuration from `_config.yml`.
+**2018-01-03** Avatar image no longer causes a ghost click (thanks @alefi87)
 
-## [2.3.0] - 06-01-2016
+**2017-10-16** Add GitHub buttons to posts (#265) (thanks @yonicd)
 
-### Changed
-- Update gems.
-- Remove Octopress dependency.
-- Replace `{% highlight %}` tags with GitHub Flavored Markdown backticks.
-- Replace custom `feed.xml` with [jekyll-feed](https://github.com/jekyll/jekyll-feed) plugin.
+**2017-09-04** Ability to change colour/image of navbar/footer/body
 
-## [2.2.3] - 05-05-2016
+**2017-08-17** Add support for notification, error, and warning boxes in markdown (#227) (thanks @OCram85)
 
-## [2.2.2] - 02-17-2016
+**2017-08-12** Add social buttons for twitch, yelp, and steam (#234) (thanks @TheRealBenForce)
 
-## [2.2.1] - 02-07-2016
+**2017-03-30** Make the footer contact links friendly for screen readers (thanks @eugenius1)
 
-## [2.2.0] - 02-01-2016
+**2017-03-30** Started a CHANGELOG file (thanks @eugenius1)
 
-### Changed
-- Minor updates to `_syntax.scss` styling and theme documentation.
+**2017-01-28** Add Subresource Integrity (SRI) support (#164) (thanks @tony-ho)
 
-### Added
-- Add compatibility with Jekyll 3.0.
+**2017-01-09** Add Google Tag Manager Integration (#157) (thanks @csarigoz)
 
-## [2.1.1] - 01-22-2015
+**2017-01-06** Add options to configure HTML document title (#154) (thanks @tony-ho)
 
-### Changed
-- Improve comments in Sass partials and remove unused styles from Less versions.
-- Enable Disqus comments globally instead of by post. [#94](https://github.com/mmistakes/so-simple-theme/issues/94)
-- Improve Jekyll search feature by removing poorly performing input box overlay on mobile and touch devices [#88](https://github.com/mmistakes/so-simple-theme/issues/88.
-- Move search form to dedicated page `/search/` and link to top navigation.
+**2016-12-25** Allow dynamic images on each blog post (#143) (thanks @bbritten)
 
-### Added
-- Add post excerpts to index pages (`/blog`, `/articles`, and the home page) if set in a YAML Front Matter.
+**2016-12-15** Support `title-img` config param to have image in the navbar instead of text
 
-### Fixed
-- Fix Disqus related bugs that were displaying `<noscript>` text on pages that had comments disabled.
-- Fix typos in theme documentation.
+**2016-12-08** Add support for phone numbers in footer; fix #136
 
-## [2.1.0] - 01-22-2015
+**2016-12-06** Update gemfile (#134) (thanks @stephentuso)
 
-## [2.0.0] - 08-08-2014
+**2016-10-09** Add Docker deployment (#114) (thanks @mangar)
 
-## [1.4.0] - 02-12-2014
+**2016-08-06** Add social share buttons for posts (thanks @rtlee9)
 
-### Added
-- Add rake tasks to create new posts or pages: `rake new_post` or `rake new_page`.
+**2016-07-29** Add CSS styling to code chunks
 
-## [1.3.2] - 01-02-2014
+**2016-07-27** Add clickable tags that lead to a tag page (doesn't work for GitHub hosted sites) (thanks @epwalsh)
 
-### Added
-- Add social share links to the sidebar. To enable, add `share: true` to a post's YAML Front Matter.
+**2016-07-21** Add support for twitter cards (sharing on Twitter will be better); fixes #70
 
-## [1.3.1] - 09-12-2013
+**2016-03-18** Support full-width images in page headers; fixes #37
 
-### Changed
-- Change order of navigation and browser upgrade includes. [#32](https://github.com/mmistakes/so-simple-theme/issues/32)
+**2016-03-18** Support menus in navigation bar
 
-### Added
-- Add Grunt build script for easier theme development. Preprocesses Less into CSS, concatenates and minifies JavaScript, and optimizes all images.
-- Add search by post title overlay using Christian Fei’s [Simple Jekyll jQuery plugin](https://github.com/christian-fei/Simple-Jekyll-Search).
+**2016-02-07** Avatar is now conditional (thanks @hristoyankov)
 
-### Fixed
-- Fix menu close action when clicking outside of it. [#29](https://github.com/mmistakes/so-simple-theme/issues/29)
-- Fix jumpy navigation that was being absolutely positioned on click.
+**2016-02-02** Migrate (forced to...) to jekyll 3
 
-## [1.3.0] - 09-11-2013
+**2016-01-22** Make sure not to include JQuery twice, fixes #29
 
-## [1.2.11] - 08-16-2013
+**2015-11-19** Support external links in navigation bar; fixes #3
 
-### Added
-- Add support for summary large image Twitter Cards.
+... Many small changes because the site was in its infancy
 
-### Fixed
-- Fix code syntax highlighting and added back Coderay styles for fenced code blocks.
-
-## [1.2.10] - 08-12-2013
-
-### Changed
-- Update theme preview image.
-- Update documentation.
-
-### Added
-- Add link post type support by adding `link: http://url-you-want-to-link` to a post's YAML Front Matter.
-
-### Fixed
-- Fix external links not being handled correctly in top navigation.
-- Fix code syntax highlighting CSS.
-
-## [1.2.9] - 08-05-2013
-
-### Changed
-- Refactor figure image classes to increase bottom padding when multiple rows of images are added to a figure element.
-
-### Added
-- Add hover effects to linked images in a `figure` element.
-- Add non-intrusive image credit (for feature images).
-
-### Fixed
-- Fix Pygment CSS conflict with MathJax. [#20](https://github.com/mmistakes/so-simple-theme/issues/20)
-- Fix RSS feed link in top navigation. [#21](https://github.com/mmistakes/so-simple-theme/issues/21)
-
-## [1.2.8] - 07-30-2013
-
-### Changed
-- Adjust navigation and site logo animations in header.
-- Adjust masthead feature images.
-
-## [1.2.7] - 07-29-2013
-
-### Fixed
-- Fix typo in `variables.less`. 
-
-## [1.2.6] - 07-26-2013
-
-### Changed
-- Modify hover states of links in the top navigation bar.
-- Lighten body text to a dark gray to improve readability and lessen eye strain.
-
-## [1.2.5] - 07-19-2013
-
-### Changed
-- Increase space around top-navigation text.
-- Make Disqus comments optional and only load when `disqus_shortname` is defined and a post is set to `comments: true`.
-
-### Fixed
-- Fix post index `ul` element.
-
-## [1.2.4] - 07-18-2013
-
-## [1.2.3] - 07-17-2013
-
-## [1.2.1] - 07-12-2013
-
-### Changed
-- Optimize `head` by loading CSS before AdobeEdge webfont JavaScript.
-
-## [1.2.0] - 07-10-2013
-
-### Changed
-- Use [Google's enhance 404 widget](https://support.google.com/webmasters/answer/93641) to embed a search box in `404.md`.
-
-### Added
-- Add a starter 404 page.
-
-## [1.1.0] - 07-03-2013
-
-### Added
-- Add support for configurable external links in `_config.yml`.
-
-## [1.0.0] - 07-03-2013
+**2015-03-12** Beautiful Jekyll version 0.0000001 is released!
