@@ -33,25 +33,25 @@ kramdown:
 ####################################
 #
 owner:
-  name: Leonids
+  name: Miquel Mariano
   avatar: leonids-logo.png
   job: "A jekyll theme"
   bio: "A simple and awesome blog theme powered by jekyll."
   email: miquel.mariano@outlook.com
-  disqus-shortname:
+  disqus-shortname: miquelmariano
   twitter: miquelMariano
   facebook: #username
   google:
     plus: #username
-    analytics:
+    analytics: 'UA-89683320-1'
     verify:
     ad-client:
     ad-slot:
   bing-verify:
-  github: #username
+  github: miquelmariano
   gitlab: #username
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-  linkedin: #username
+  linkedin: miquelmariano
   skype: #username
   xing: #username
   instagram: #username
@@ -61,7 +61,7 @@ owner:
   foursquare: #username
   steam: #username
   dribbble: #username
-  youtube: #username
+  youtube: nbcoratv
   soundcloud: #username
   weibo: #username
   flickr: #username
