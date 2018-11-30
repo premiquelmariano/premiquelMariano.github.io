@@ -3,7 +3,7 @@
 # Site wide configuration
 ####################################
 #
-title: miquelmariano.github.io
+title: Miquel Mariano blog
 email:
 description: A simple and awesome blog theme powered by jekyll.
 url: # the base hostname & protocol for your site
@@ -35,8 +35,8 @@ kramdown:
 owner:
   name: Miquel Mariano
   avatar: FotoFirma2.png
-  job: "A jekyll theme"
-  bio: "A simple and awesome blog theme powered by jekyll."
+  job: "Blog personal"
+  bio: "Consultor TI en Ncora | VCP5/6-DCV | vExpert   Apasionado de la montaña | Bike | Trail | Run | Padre de Aina"
   email: miquel.mariano@outlook.com
   disqus-shortname: miquelmariano
   twitter: miquelMariano
@@ -68,4 +68,4 @@ owner:
   500px: #username
   codepen: #username
   reddit: #username
-  telegram: #username
+  telegram: miquelmariano
