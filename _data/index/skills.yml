@@ -2,5 +2,5 @@
 
 label: Ability
 id : cs
-aspects: Motivation, GitHub, Java, HTML/CSS, Docker, Python
+aspects: vSphere, SDDC, Storage, Automatización, Networking, Scripting
 percentage: 100, 65, 70, 60, 60, 55
