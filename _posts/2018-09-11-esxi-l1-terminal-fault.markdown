@@ -2,7 +2,8 @@
 title: ESXi | L1 Terminal Fault or esx.problem.hyperthreading.unmitigated
 date: '2018-09-11 00:00:00'
 layout: post
-image: /assets/images/posts/2018/09/bug.jpg
+image: 
+	feature: posts/2018/09/bug.jpg
 headerImage: true
 tag:
 - vmware

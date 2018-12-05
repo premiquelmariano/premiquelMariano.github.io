@@ -2,7 +2,8 @@
 title: End of General Support para vSphere 5.5
 date: '2018-09-20 00:00:00'
 layout: post
-image: /assets/images/posts/2018/09/support.png
+image: 
+	feature: posts/2018/09/support.png
 headerImage: true
 tag:
 - vmware

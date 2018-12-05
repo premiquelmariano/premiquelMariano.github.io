@@ -2,7 +2,8 @@
 title: Aumentar tiempo de cierre de sesión en vSphere Client
 date: '2018-07-26 00:00:00'
 layout: post
-image: /assets/images/posts/2018/07/timeout.png
+image: 
+	feature: posts/2018/07/timeout.png
 headerImage: true
 tag:
 - vmware

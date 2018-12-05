@@ -2,7 +2,8 @@
 title: Rollback en VMWare ESXi 6.x
 date: '2018-11-07 00:00:00'
 layout: post
-image: /assets/images/posts/2018/11/esxi-rollback.png
+image: 
+	feature: posts/2018/11/esxi-rollback.png
 headerImage: true
 tag:
 - vmware

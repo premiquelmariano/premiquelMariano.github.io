@@ -2,7 +2,8 @@
 title: Back-to-basics 4 - vSphere HA
 date: '2018-07-11 00:00:00'
 layout: post
-image: /assets/images/posts/2018/06/ha0.png
+image: 
+	feature: posts/2018/06/ha0.png
 headerImage: true
 tag:
 - vmware

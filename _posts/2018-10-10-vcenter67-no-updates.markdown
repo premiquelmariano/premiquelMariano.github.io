@@ -2,7 +2,8 @@
 title: vCenter 6.7 no muestra actualizaciones disponibles
 date: '2018-10-10 00:00:00'
 layout: post
-image: /assets/images/posts/2018/10/timetoupgrade.jpeg
+image: 
+	feature: posts/2018/10/timetoupgrade.jpeg
 headerImage: true
 tag:
 - vcenter

@@ -2,7 +2,8 @@
 title: Mi experiencia con el VCAP6-DCV Deploy
 date: '2018-05-16 00:00:00'
 layout: post
-image: /assets/images/posts/2018/05/vcap6.png
+image: 
+	feature: posts/2018/05/vcap6.png
 headerImage: true
 tag:
 - vmware

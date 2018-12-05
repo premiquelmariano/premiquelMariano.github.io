@@ -2,7 +2,8 @@
 title: Instalar vCenter 6.7 via CLI
 date: '2018-08-23 00:00:00'
 layout: post
-image: /assets/images/posts/2018/08/install_cli.png
+image: 
+    feature: posts/2018/08/install_cli.png
 headerImage: true
 tag:
 - vmware
