@@ -11,6 +11,7 @@ category: blog
 author: miquelMariano
 description: End of General Support para vSphere 5.5
 hidden: false
+comments: true
 ---
 
 Buenos días a todos, como muchos ya sabréis, ayer 19 de septiembre de 2019 vSphere 5.5 se quedó fuera de la fase de "General Support"

@@ -13,6 +13,7 @@ category: blog
 author: miquelMariano
 description: Aumentar tiempo de cierre de sesión en vSphere Client
 hidden: false
+comments: true
 ---
 
 Buenos dias a tod@s!
