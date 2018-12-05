@@ -2,7 +2,8 @@
 title: Cómo desinstalar un software no compatible en ESXi
 date: '2018-11-21 00:00:00'
 layout: post
-image: /assets/images/posts/2018/11/esxi.png
+image: 
+   feature: 2018/11/esxi.png
 headerImage: true
 tag:
 - vmware
