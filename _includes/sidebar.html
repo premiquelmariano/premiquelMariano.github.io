@@ -26,9 +26,6 @@
       <li class="nav-item">
         <a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a>
       </li>
-      <li class="nav-item">
-        <a href="https://miquelmariano.github.io/vcap-experience/">VCAP6-DCV</a>
-      </li>
       {% endif %} {% endfor %}
       <li class="nav-item">
         <link rel="stylesheet" href="https://miquelmariano.github.io/supersearch/super-search.css">
@@ -45,6 +42,9 @@
          <script src="https://miquelmariano.github.io/supersearch/super-search.js"></script>
          <script>superSearch({searchFile: '//miquelmariano.github.io/feed.xml'});
          </script>
+      </li>
+      <li class="nav-item">
+        <a href="{{ site.url }}/vcap-experience/">VCAP6-DCV</a>
       </li>
     </ul>
   </nav>
