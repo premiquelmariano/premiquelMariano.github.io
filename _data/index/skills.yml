@@ -2,5 +2,5 @@
 
 label: Ability
 id : cs
-aspects: vSphere, SDDC, Storage, Automatización, Ansible, PowerCLI, Networking, Scripting, Monitorización
-percentage: 100, 65, 70, 70, 60, 60, 60, 55, 70
+aspects: vSphere, SDDC, DR, Storage, Automatización, Ansible, PowerCLI, Networking, Scripting, Monitorización
+percentage: 95, 95, 80, 90, 80, 80, 60, 50, 60, 80
