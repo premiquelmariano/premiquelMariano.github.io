@@ -3,7 +3,7 @@ title: Back-to-basics 6 - Cambiar política multipath por defecto en hosts ESXi
 date: '2018-12-05 00:00:00'
 layout: post
 image: 
-   feature: /assets/images/posts/2018/12/psa.png
+   feature: 2018/12/psa.png
 headerImage: true
 tag:
 - vmware
