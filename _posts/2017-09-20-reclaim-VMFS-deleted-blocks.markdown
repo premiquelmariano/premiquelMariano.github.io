@@ -73,13 +73,15 @@ for datastore in `esxcli storage filesystem list | grep "NUESTRO_DATASTORE_VMFS"
 done
 ```
 
+El comando `esxcli storage filesystem list` genera la lista de datastores. No quiero que el script se ejecute en datastores locales o NFS, así que con el `grep` filtramos los que nos interesen. La segunda, con el `awk` es lo que nos ayudará a seleccionar el nombre del datastore para luego ejecutar el `esxcli storage vmfs unmap -l $datastore`. 
+
 Una vez ejecutado... 
 
 ```ssh
 [root@formacionesxi03:/tmp] ./unmap.sh
 Performing UNMAP on NCORA_FORM_NLSAS_LUN000 ...
 [root@formacionesxi03:/tmp]
-```
+``
 
 Espero que os sea de utilidad.
 
