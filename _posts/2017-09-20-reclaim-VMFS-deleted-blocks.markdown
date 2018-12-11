@@ -53,46 +53,32 @@ esxcli storage vmfs unmap -l DATASTORE01
 
 5) Con el comando esxtop podremos ver como empieza a marcar bloques como eliminables
 
-
 ![esxtop1]({{ site.imagesposts2017 }}/07/esxtop1.png)
+
+Para obtener esta vista en esxtop (`u` para ver los datastores) es necesario entrar en el menú de selección de columnas pusando `f` y seleccionar  solo las columnas `a` `o` `p`
+Los valores mostrados en la columna Delete es el nº de bloques que se van a eliminar. El valor de cada bloque en VMFS5 es de 1MB
+{: .notice}
 
 También el `/var/log/hostd.log` podremos ver como va haciendo el unmap:
 
 ![hostd-log]({{ site.imagesposts2017 }}/07/hostd-log.png)
 
+Como habréis podido deducir, el reclamado de espacio se tiene que ejecutar sobre cada uno de los datastores VMFS que tengamos en nuestra infraestructura y eso, no siempre es una tarea sencilla. Para ello, podemos utilizar el siguiente script:
 
-Para obtener esta vista en esxtop es necesario entrar en el menú de selección de columnas pusando `f` y seleccionar  solo las columnas `a` `o` `p`
-Los valores mostrados en la columna Delete es el nº de bloques que se van a eliminar. El valor de cada bloque en VMFS5 es de 1MB
-
-
-Como habréis podido deducir, el reclamado de espacio se tiene que ejecutar sobre cada uno de los datastores VMFS que tengamos en nuestra infraestructura y eso, no siempre es una tarea sencilla. Para ello, podemos utilizar [este script](https://miquelmariano.github.io/reclaimZeroPages/)
-
+```ssh
+#!/bin/sh
+for datastore in `esxcli storage filesystem list | grep "NUESTRO_DATASTORE_VMFS" | awk -F " " '{print $2}'`; do
+  echo "Performing UNMAP on $datastore ..."
+  esxcli storage vmfs unmap -l $datastore
+done
+```
 
 Una vez ejecutado... 
 
-```
-python /tmp/reclaimZeroPages.py
-```
-...tendremos una salida similar a esta:
-
-
-```
-* Analizando datatores...
-Thin Provisioning Status: Key naa.60060e801332e000502032e000003106 not found
-VAAI Plugin: Key naa.60060e801332e000502032e000003106 not found
-Zero Status: Key naa.60060e801332e000502032e000003106 not found
-Delete Status: Key naa.60060e801332e000502032e000003106 not found
- 
-* Comandos a lanzar:
- Executing: esxcli storage vmfs unmap -n 200 -l HUS110_Datastore000
- Executing: esxcli storage vmfs unmap -n 200 -l VSPG800_Datastore000
- Executing: esxcli storage vmfs unmap -n 200 -l VSPG800_Datastore002
- Executing: esxcli storage vmfs unmap -n 200 -l VSPG800_Datastore003
- Executing: esxcli storage vmfs unmap -n 200 -l HUSVM_Datastore000
- 
-* Datastore erroneos:
- 
-* Fin.
+```ssh
+[root@formacionesxi03:/tmp] ./unmap.sh
+Performing UNMAP on NCORA_FORM_NLSAS_LUN000 ...
+[root@formacionesxi03:/tmp]
 ```
 
 Espero que os sea de utilidad.
