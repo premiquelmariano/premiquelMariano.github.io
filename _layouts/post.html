@@ -5,18 +5,10 @@ layout: default
 <a class="btn" href= "{{ site.url }}/" >
   Home
 </a>
-{% if page.image %}
+{% if page.headerImage == "true" %}
 <div class="post-image-feature">
   <img class="feature-image" src=
-  {% if page.headerImage contains 'false' %}
-  {% else %}
   "{{ site.url }}{{ page.image }}"
-  {% endif %}
-  alt="{{ page.title | escape }} feature image">
-
-  {% if page.image.credit %}
-  <span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
-  {% endif %}
 </div><!-- /.image-wrap -->
 {% endif %}
 
