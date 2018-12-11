@@ -3,7 +3,7 @@ title: Reclamar bloques eliminados en datastores VMFS
 date: '2017-09-20 00:00:00'
 layout: post
 image: /assets/images/posts/2017/09/vmfs.png
-headerImage: true
+headerImage: false
 tag:
 - vmware
 - vexpert
