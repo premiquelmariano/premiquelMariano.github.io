@@ -53,11 +53,11 @@ Como podemos ver aquí, el arranque principal contiene el código ESXi 6.5 y el 
 ![rollback2]({{ site.imagesposts2018 }}/11/rollback2.png)
 ![rollback3]({{ site.imagesposts2018 }}/11/rollback3.png)
 
-### 2) Durante el boot tendremos que pulsar `shift+R` para entrar en el modo recovery
+### 3) Durante el boot tendremos que pulsar `shift+R` para entrar en el modo recovery
 
 ![rollback4]({{ site.imagesposts2018 }}/11/rollback4.png)
 
-### 2) Nos aparecerá la información de las posibilidades que tenemos y deberemos pulsar "Y"
+### 4) Nos aparecerá la información de las posibilidades que tenemos y deberemos pulsar "Y"
 
 Esta acción va a ser permanente, es decir, una vez tirado el rollback ya no tendremos opción de recuperar la versión mas reciente.
 
