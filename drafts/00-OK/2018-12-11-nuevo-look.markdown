@@ -13,7 +13,7 @@ comments: true
 
 Buenos dias a tod@as!!
 
-Por segundo año al llegar estas fechas, me gustaría dar una apariencia nueva al blog y empezar el año con un nuevo tema de [Jekyll](https://jekyllrb.com/)
+Por segundo año al llegar estas fechas, me gustaría dar una apariencia nueva al blog y empezar el año con un nuevo tema para mi [Jekyll](https://jekyllrb.com/)
 
 ¿Qué os parece?
 
