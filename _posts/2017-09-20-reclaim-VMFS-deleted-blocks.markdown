@@ -15,6 +15,7 @@ category: blog
 author: miquelMariano
 description: Reclamar bloques eliminados en datastores VMFS
 hidden: false
+comments: true
 ---
 
 Buenos días, en el post de hoy vamos a ver como reclamar bloques eliminados en nuestros datastores VMFS3 o VMFS5.

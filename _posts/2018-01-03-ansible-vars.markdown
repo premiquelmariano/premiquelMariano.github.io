@@ -12,6 +12,7 @@ category: blog
 author: miquelMariano
 description: Uso de variables con Ansible
 hidden: false
+comments: true
 o: "{{"
 c: "}}"
 ---

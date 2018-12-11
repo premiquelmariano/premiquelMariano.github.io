@@ -14,6 +14,7 @@ category: blog
 author: miquelMariano
 description: Automatizar configuración de ESXi con Ansible
 hidden: false
+comments: true
 ---
 
 

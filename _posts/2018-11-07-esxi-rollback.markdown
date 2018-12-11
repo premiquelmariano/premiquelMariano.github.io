@@ -16,6 +16,7 @@ category: blog
 author: miquelMariano
 description: Rollback en VMWare ESXi 6.x
 hidden: false
+comments: true
 ---
 
 Buenos días a tod@s.

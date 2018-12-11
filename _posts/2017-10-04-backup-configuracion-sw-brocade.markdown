@@ -14,6 +14,7 @@ category: blog
 author: miquelMariano
 description: Backup de la configuración en Brocade FC Switches
 hidden: false
+comments: true
 ---
 
 Buenos días a tod@s!!!

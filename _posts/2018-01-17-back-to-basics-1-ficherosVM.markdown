@@ -14,6 +14,7 @@ category: blog
 author: miquelMariano
 description: Back-to-basics 1 - Ficheros de una VM
 hidden: false
+comments: true
 ---
 
 Buenos dias a tod@as!!

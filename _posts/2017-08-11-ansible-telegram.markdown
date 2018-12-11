@@ -13,6 +13,7 @@ category: blog
 author: miquelMariano
 description: Módulo de Telegram para Ansible
 hidden: false
+comments: true
 ---
 
 Buenos días a tod@s!

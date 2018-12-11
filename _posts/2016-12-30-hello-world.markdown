@@ -10,6 +10,7 @@ category: blog
 author: miquelMariano
 description: Hola mundo! Mi primer post en el blog
 hidden: false
+comments: true
 ---
 
 Bienvenidos a mi blog!

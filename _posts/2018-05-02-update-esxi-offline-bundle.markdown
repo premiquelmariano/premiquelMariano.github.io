@@ -14,6 +14,7 @@ category: blog
 author: miquelMariano
 description: Actualizar ESXi mediante el bundle offline
 hidden: false
+comments: true
 ---
 
 Hola a tod@as!!

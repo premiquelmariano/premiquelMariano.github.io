@@ -15,6 +15,7 @@ category: blog
 author: miquelMariano
 description: Programar backup automático en VCSA 6.5
 hidden: false
+comments: true
 ---
 
 Buenos dias a tod@s!!

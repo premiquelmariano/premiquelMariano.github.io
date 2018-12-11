@@ -10,6 +10,7 @@ category: blog
 author: miquelMariano
 description: 3er aniversario en el NcoraTeam
 hidden: false
+comments: true
 ---
 
 Buenos dias a tod@as!!

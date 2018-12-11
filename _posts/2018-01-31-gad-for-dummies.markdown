@@ -14,6 +14,7 @@ category: blog
 author: miquelMariano
 description: GAD for dummies
 hidden: false
+comments: true
 ---
 
 Buenos días a tod@dos, queridos lectores del blog.
