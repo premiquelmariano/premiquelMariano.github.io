@@ -8,6 +8,7 @@ category: blog
 author: miquelMariano
 hidden: false
 permalink: /look/
+comments: true
 ---
 
 Buenos dias a tod@as!!
