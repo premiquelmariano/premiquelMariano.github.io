@@ -34,13 +34,13 @@ La solución es bien sencilla y pasa por desinstalar estos paquetes.
 
 Para ello, utilizaremos el comando Esxcli de la siguiente manera.
 
-### 1 Buscaremos el nombre del paquete incompatible:
+### 1) Buscaremos el nombre del paquete incompatible:
 
 ```ssh
 esxcli software vib list | grep scsi-mpt3
 ```
 
-### 2 Lo desinstalaremos con el siguiente comando:
+### 2) Lo desinstalaremos con el siguiente comando:
 
 ```ssh
 esxcli software vib remove -n scsi-mpt3sas
