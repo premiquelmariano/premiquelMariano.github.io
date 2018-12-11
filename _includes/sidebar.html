@@ -31,7 +31,7 @@
         <a href="{{ site.url }}/vcap-experience/">VCAP6-DCV</a>
       </li>
       <li class="nav-item">
-        <link rel="stylesheet" href="https://miquelmariano.github.io/supersearch/super-search.css">
+        <link rel="stylesheet" href="{ site.url }}/assets/super-search.css">
 
                  <a href="javascript:void(0)" title="or press 'ESC' to search" onclick="toggleSearch()"      class="search-btn">
                    search
@@ -42,8 +42,8 @@
           <ul class="super-search__results" id="js-super-search__results"></ul>
          </div>
 
-         <script src="https://miquelmariano.github.io/supersearch/super-search.js"></script>
-         <script>superSearch({searchFile: '//miquelmariano.github.io/feed.xml'});
+         <script src="{{ site.url }}/assets/supersearch/super-search.js"></script>
+         <script>superSearch({searchFile: '{{ site.url }}/feed.xml'});
          </script>
       </li>
     </ul>
