@@ -18,7 +18,7 @@ timezone:          Europe/Madrid
 markdown:          kramdown
 highlighter:       rouge
 excerpt_separator: <!--more-->
-permalink:         /:year-:month/:title
+permalink:         /:year/:month/:title
 
 kramdown:
   auto_ids: true
