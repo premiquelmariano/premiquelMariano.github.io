@@ -50,16 +50,14 @@ Tras unos segundos, veremos el resultado de la acrtualización, con los paquetes
 
 ![offline3]({{ site.imagesposts2018 }}/05/offline3.png)
 
-> #### Actualización 24/08/2018
-> Es probable que os encontreis con algún paquete incompatible.
-> ![actualizacion_offline1]({{ site.imagesposts2018 }}/05/actualizacion_offline1.png)
-> En este caso, el comando a utilizar es el siguiente:
-
-> `esxcli software profile update -d <full_path_to_offline_bundle> -p <Image Profile>`
-
-> Para saber cual es el "Image Profile" podreis ejecutar el comando:
-
-> `esxcli software sources profile list -d <full_path_to_offline_bundle>`
+**Actualización 24/08/2018**
+Es probable que os encontreis con algún paquete incompatible.
+![actualizacion_offline1]({{ site.imagesposts2018 }}/05/actualizacion_offline1.png)
+En este caso, el comando a utilizar es el siguiente:
+`esxcli software profile update -d <full_path_to_offline_bundle> -p <Image Profile>`
+Para saber cual es el "Image Profile" podreis ejecutar el comando:
+`esxcli software sources profile list -d <full_path_to_offline_bundle>`
+{: .notice}
 
 ## 5| Verificar que el host se ha actualizado correctamente.
 
