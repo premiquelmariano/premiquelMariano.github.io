@@ -1,6 +1,6 @@
 ---
 title: Error de certificado al actualizar a vCenter 6.5
-date: '2017-09-22 00:00:00'
+date: '2018-12-20 00:00:00'
 layout: post
 image: /assets/images/posts/2018/12/ssh-banner.jpg
 headerImage: true
