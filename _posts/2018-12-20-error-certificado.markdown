@@ -8,7 +8,7 @@ tag:
 - devops
 category: blog
 author: miquelMariano
-description: Error de certificado al actualizar a vCenter 6.5
+description: Solucionar error de certificado al actualizar un entorno vSphere de VCSA 5.5 a VCSA 6.5
 hidden: false
 ---
 
