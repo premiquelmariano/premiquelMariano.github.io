@@ -20,8 +20,11 @@ Buenos dias a tod@as!!
 
 https://thesolving.com/es/virtualizacion/como-instalar-y-configurar-vmware-powercli-version-10/
 http://thesolving.com/virtualization/how-to-install-and-configure-vmware-powercli-version-10/
+https://ithinkvirtual.com/2018/03/04/install-powershell-and-vmware-powercli-on-macos/
 
 
+Descargar PowerShell Core desde aquí
+https://github.com/PowerShell/PowerShell
 
 
 Un saludo!
