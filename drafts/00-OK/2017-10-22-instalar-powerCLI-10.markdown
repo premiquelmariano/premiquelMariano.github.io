@@ -44,24 +44,30 @@ https://github.com/PowerShell/PowerShell
 
 ![ps6-8]({{ site.imagesposts2019 }}/01/PowerShell6-8.png)
 
+```powershell
+Save-Module -Name VMware.PowerCLI -Path <path>
+```
+
 ![ps6-9]({{ site.imagesposts2019 }}/01/PowerShell6-9.png)
+
+```powershell
+Install-Module -Name VMware.PowerCLI
+```
 
 ![ps6-10]({{ site.imagesposts2019 }}/01/PowerShell6-10.png)
 
 ![ps6-11]({{ site.imagesposts2019 }}/01/PowerShell6-11.png)
 
-![ps6-12]({{ site.imagesposts2019 }}/01/PowerShell6-12.png)
-
-```powershell
-Save-Module -Name VMware.PowerCLI -Path <path>
-```
-```powershell
-Install-Module -Name VMware.PowerCLI
-```
-
 ```powershell
 Get-Module -ListAvailable -Name VMware*
 ```
+
+![ps6-12]({{ site.imagesposts2019 }}/01/PowerShell6-12.png)
+
+
+
+
+
 
 Un saludo!
 
