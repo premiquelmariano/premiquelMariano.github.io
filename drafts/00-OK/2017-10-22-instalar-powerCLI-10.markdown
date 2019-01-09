@@ -5,12 +5,14 @@ layout: post
 image: /assets/images/posts/2019/01/PowerShell6-banner.jpg
 headerImage: true
 tag:
+- vexpert
 - automation
-- ansible
-- devops
+- vsphere
+- vmware
 category: blog
 author: miquelMariano
-description: Cómo instalar y configurar VMware PowerCLI 10
+description: Buenos dias a tod@as!!
+En el post de hoy veremos cómo instalar la última versión de PowerCLI 11.1 sobre windows.
 hidden: false
 permalink: /powercli10/
 ---
@@ -20,7 +22,7 @@ http://thesolving.com/virtualization/how-to-install-and-configure-vmware-powercl
 https://ithinkvirtual.com/2018/03/04/install-powershell-and-vmware-powercli-on-macos/
 
 Buenos dias a tod@as!!
-En el post de hoy veremos cómo instalar la última versión de PowerCLI 11.1 sobre windows
+En el post de hoy veremos cómo instalar la última versión de PowerCLI 11.1 sobre windows.
 
 Como sabeis, VMware PowerCLI es un conjunto de módulos de Powershell que se utilizan para gestionar, administrar,mantener y monitorizar un entorno VMware. 
 Los que ya esteis familizarizados, habreis descubierto que es una poderosa herramienta para cualquier administrador de sistemas y puede utilizarse para recopilar información detallada y/o ejecutar comandos en múltiples máquinas virtuales, hosts etc, etc...
