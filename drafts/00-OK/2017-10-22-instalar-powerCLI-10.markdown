@@ -11,8 +11,7 @@ tag:
 - vmware
 category: blog
 author: miquelMariano
-description: Buenos dias a tod@as!!
-En el post de hoy veremos cómo instalar la última versión de PowerCLI 11.1 sobre windows.
+description: Buenos dias a tod@as!! En el post de hoy veremos cómo instalar la última versión de PowerCLI 11.1 sobre windows
 hidden: false
 permalink: /powercli10/
 ---
