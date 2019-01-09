@@ -2,7 +2,7 @@
 title: Cómo instalar y configurar VMware PowerCLI 10
 date: '2017-09-22 00:00:00'
 layout: post
-image: /assets/images/posts/2018/12/powercli10.png
+image: /assets/images/posts/2019/01/PowerShell6-banner.png
 headerImage: true
 tag:
 - automation
