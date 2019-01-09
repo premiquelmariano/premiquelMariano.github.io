@@ -2,7 +2,7 @@
 title: Cómo instalar y configurar VMware PowerCLI 11.1
 date: '2017-09-22 00:00:00'
 layout: post
-image: /assets/images/posts/2019/01/PowerShell6-banner.png
+image: /assets/images/posts/2019/01/PowerShell6-banner.jpg
 headerImage: true
 tag:
 - automation
