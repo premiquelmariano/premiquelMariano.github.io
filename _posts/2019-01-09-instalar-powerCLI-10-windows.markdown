@@ -27,7 +27,7 @@ Desde la versión 6.5.1, eso cambió, y PowerCLI se instala directamente desde P
 
 Para instralar PowerCLI 11.1 (última version disponible a fecha de hoy) hay que tener PowerShell 3.0 o superior. A continuación vamos a ver cómo instalar la última versión de PowerShell para windows.
 
-### 1) Descargamos la última versión para nuestro SO desde el repositorio oficial.
+### 1) Instalación PowerShell 6.0 Core
 
 Inicialmente, con el comando `$psversiontable` veremos que versión tenemos actualmente de PowerShell, en mi caso una 5.1
 
@@ -51,9 +51,9 @@ Descargamos PowerShell Core desde [aquí](https://github.com/PowerShell/PowerShe
 
 ![ps6-8]({{ site.imagesposts2019 }}/01/PowerShell6-8.png)
 
-### 2) Descargamos modulos PowerCLI en ubicación local
+### 2) Instalación PowerCLI 11.1
 
-Yo me he creado una carpeta en C:\PS6 y el comando es el siguiente:
+Nos descargamos modulos PowerCLI en ubicación local. En mi caso me he creado una carpeta en C:\PS6 y el comando es el siguiente:
 
 ```powershell
 Save-Module -Name VMware.PowerCLI -Path <path>
