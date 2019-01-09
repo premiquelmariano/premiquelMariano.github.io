@@ -26,23 +26,23 @@ https://ithinkvirtual.com/2018/03/04/install-powershell-and-vmware-powercli-on-m
 Descargar PowerShell Core desde aquí
 https://github.com/PowerShell/PowerShell
 
-![ps6-0]({{ site.imagesposts2019 }}/01/PowerShell6-0)
+![ps6-0]({{ site.imagesposts2019 }}/01/PowerShell6-0.png)
 
-![ps6-1]({{ site.imagesposts2019 }}/01/PowerShell6-1)
+![ps6-1]({{ site.imagesposts2019 }}/01/PowerShell6-1.png)
 
-![ps6-2]({{ site.imagesposts2019 }}/01/PowerShell6-2)
+![ps6-2]({{ site.imagesposts2019 }}/01/PowerShell6-2.png)
 
-![ps6-3]({{ site.imagesposts2019 }}/01/PowerShell6-3)
+![ps6-3]({{ site.imagesposts2019 }}/01/PowerShell6-3.png)
 
-![ps6-4]({{ site.imagesposts2019 }}/01/PowerShell6-4)
+![ps6-4]({{ site.imagesposts2019 }}/01/PowerShell6-4.png)
 
-![ps6-5]({{ site.imagesposts2019 }}/01/PowerShell6-5)
+![ps6-5]({{ site.imagesposts2019 }}/01/PowerShell6-5.png)
 
-![ps6-6]({{ site.imagesposts2019 }}/01/PowerShell6-6)
+![ps6-6]({{ site.imagesposts2019 }}/01/PowerShell6-6.png)
 
-![ps6-7]({{ site.imagesposts2019 }}/01/PowerShell6-7)
+![ps6-7]({{ site.imagesposts2019 }}/01/PowerShell6-7.png)
 
-![ps6-8]({{ site.imagesposts2019 }}/01/PowerShell6-8)
+![ps6-8]({{ site.imagesposts2019 }}/01/PowerShell6-8.png)
 
 
 
