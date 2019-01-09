@@ -18,7 +18,7 @@ hidden: false
 Buenos días a tod@as!!
 En el post de hoy veremos cómo instalar la última versión de PowerCLI 11.1 sobre windows.
 
-Como sabéis, VMware PowerCLI es un conjunto de módulos de Powershell que se utilizan para gestionar, administrar,mantener y monitorizar un entorno VMware. 
+Como sabéis, VMware PowerCLI es un conjunto de módulos de Powershell que se utilizan para gestionar, administrar, mantener y monitorizar un entorno VMware. 
 Los que ya estéis familiarizados, habréis descubierto que es una poderosa herramienta para cualquier administrador de sistemas y puede utilizarse para recopilar información detallada y/o ejecutar comandos en múltiples máquinas virtuales, hosts etc, etc...
 
 Tradicionalmente, PowerCLI se instalaba sobre un sistema Windows y VMWare nos proporcionaba un instalador .msi en el que sólo había que seguir el tradicional wizard siguiente>siguiente>fin.
