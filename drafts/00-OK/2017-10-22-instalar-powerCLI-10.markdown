@@ -1,5 +1,5 @@
 ---
-title: Cómo instalar y configurar VMware PowerCLI 10
+title: Cómo instalar y configurar VMware PowerCLI 11.1
 date: '2017-09-22 00:00:00'
 layout: post
 image: /assets/images/posts/2019/01/PowerShell6-banner.png
@@ -15,13 +15,23 @@ hidden: false
 permalink: /powercli10/
 ---
 
-Buenos dias a tod@as!!
-
-
 https://thesolving.com/es/virtualizacion/como-instalar-y-configurar-vmware-powercli-version-10/
 http://thesolving.com/virtualization/how-to-install-and-configure-vmware-powercli-version-10/
 https://ithinkvirtual.com/2018/03/04/install-powershell-and-vmware-powercli-on-macos/
 
+Buenos dias a tod@as!!
+En el post de hoy veremos cómo instalar la última versión de PowerCLI 11.1 sobre windows
+
+Como sabeis, VMware PowerCLI es un conjunto de módulos de Powershell que se utilizan para gestionar, administrar,mantener y monitorizar un entorno VMware. 
+Los que ya esteis familizarizados, habreis descubierto que es una poderosa herramienta para cualquier administrador de sistemas y puede utilizarse para recopilar información detallada y/o ejecutar comandos en múltiples máquinas virtuales, hosts etc, etc...
+
+Tradicionalmente, PowerCLI se instalaba sobre un sistema Windows y VMWare nos proporcionaba un instalador .msi en el que sólo habia que seguir el tradicional wizard siguiente>siguiente>fin.
+
+Desde la versión 6.5.1, eso cambió, y PowerCLI se instala directamente desde PowerShell. Eso abre un amplio abanico de posibilidades ya que también desde la llegada de PowerShell 6.0 Core, se puede instalar sobre Linux e incluso sobre MAC, pero bueno, eso lo veremos en otro post.
+
+Para instralar PowerCLI 11.1 (última version disponible a fecha de hoy) hay que tener PowerShell 3.0 o superior. A continuación vamos a ver como instalar la última versión de PowerShell para windows.
+
+### 1) Descargamos la última versión para nuestro SO desde el repositorio oficial.
 
 Descargar PowerShell Core desde aquí
 https://github.com/PowerShell/PowerShell
