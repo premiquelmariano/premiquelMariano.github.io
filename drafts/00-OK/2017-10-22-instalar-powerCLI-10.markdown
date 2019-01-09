@@ -68,7 +68,7 @@ Get-Module -ListAvailable -Name VMware*
 Set-PowerCLIConfiguration -InvalidCertificateAction:Ignore
 ```
 
-![ps6-12]({{ site.imagesposts2019 }}/01/PowerShell6-12.png)
+![ps6-13]({{ site.imagesposts2019 }}/01/PowerShell6-13.png)
 
 
 
