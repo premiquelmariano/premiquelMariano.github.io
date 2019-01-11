@@ -544,7 +544,7 @@ Created symlink from /etc/systemd/system/multi-user.target.wants/awx-web.service
 
 Se accederá al portal a través de un navegador web:
 
-http://<ip or fqdn>/#/login
+http://ip_or_fqdn/#/login
 
 **Usuario:** admin **Pass**:admin
 {: .notice}
@@ -557,14 +557,10 @@ http://<ip or fqdn>/#/login
 ![awx03]({{ site.imagesposts2019 }}/01/awx03.png)
 
 
-https://galaxy.ansible.com/geerlingguy/awx/
-
-http://khmel.org/?p=1245
-
-https://www.howtoforge.com/tutorial/centos-ansible-awx-installation/
+Ya para finalizar, si quereis dar un paso mas y automatizar el despliegue de AWX, os dejo [este role](https://galaxy.ansible.com/geerlingguy/awx/) que me parece bastante interesante y que el hombre se ha currado un montón ;-)
 
 
-
+Espero que os guste y os sirva de ayuda.
 
 Un saludo!
 
