@@ -48,7 +48,25 @@ Max kernel policy version:      28
 
 **Watch out!** Se puede modificar con el fichero `/etc/selinux/config`
 
+Editamos el fichero de hosts `/etc/hosts` para que se resuelva a si mismo:
 
+```
+[root@localhost ~]# cat /etc/hosts
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+192.168.1.150   ansible-awx
+```
+
+Habilitamos el firewall:
+
+```
+[root@localhost ~]# systemctl enable firewalld
+[root@localhost ~]# systemctl start firewalld
+[root@localhost ~]# firewall-cmd --add-service=http --permanent;firewall-cmd --add-service=https --permanent
+success
+success
+[root@localhost ~]# systemctl restart firewalld
+```
 
 
 ![ps6-0]({{ site.imagesposts2019 }}/01/PowerShell6-0.png)
