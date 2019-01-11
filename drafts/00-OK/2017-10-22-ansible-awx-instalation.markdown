@@ -127,6 +127,48 @@ Instalado:
 [root@localhost ~]#
 ```
 
+Necesitaremos posgresql para instalar AWX así que, habilitamos el repositorio:
+
+```
+[root@localhost ~]# yum install -y https://download.postgresql.org/pub/repos/yum/9.6/redhat/rhel-7-x86_64/pgdg-centos96-9.6-3.noarch.rpm
+Complementos cargados:fastestmirror
+pgdg-centos96-9.6-3.noarch.rpm                                                                                                                                | 4.7 kB  00:00:00
+Examinando /var/tmp/yum-root-0SnzF2/pgdg-centos96-9.6-3.noarch.rpm: pgdg-centos96-9.6-3.noarch
+Marcando /var/tmp/yum-root-0SnzF2/pgdg-centos96-9.6-3.noarch.rpm para ser instalado
+Resolviendo dependencias
+--> Ejecutando prueba de transacción
+---> Paquete pgdg-centos96.noarch 0:9.6-3 debe ser instalado
+--> Resolución de dependencias finalizada
+
+Dependencias resueltas
+
+=====================================================================================================================================================================================
+ Package                                    Arquitectura                        Versión                               Repositorio                                              Tamaño
+=====================================================================================================================================================================================
+Instalando:
+ pgdg-centos96                              noarch                              9.6-3                                 /pgdg-centos96-9.6-3.noarch                              2.7 k
+
+Resumen de la transacción
+=====================================================================================================================================================================================
+Instalar  1 Paquete
+
+Tamaño total: 2.7 k
+Tamaño instalado: 2.7 k
+Downloading packages:
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Instalando    : pgdg-centos96-9.6-3.noarch                                                                                                                                     1/1
+  Comprobando   : pgdg-centos96-9.6-3.noarch                                                                                                                                     1/1
+
+Instalado:
+  pgdg-centos96.noarch 0:9.6-3
+
+¡Listo!
+[root@localhost ~]#
+```
+
 
 
 
