@@ -2,7 +2,7 @@
 title: Ansible AWX - Part 1 - Instalación
 date: '2017-09-22 00:00:00'
 layout: post
-image: /assets/images/posts/2018/08/awx-logo.png
+image: /assets/images/posts/2019/01/awx-logo.png
 headerImage: true
 tag:
 - automation
