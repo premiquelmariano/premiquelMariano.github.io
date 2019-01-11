@@ -22,6 +22,36 @@ Hace unos meses, el gran Jorge de la Cruz, [publicó en su blog un post] (https:
 
 En esta ocasión, a mi me gustaria profundizar un poco mas y ver el paso a paso de cómo seria la instalación sobre CentOS 7, por ejemplo.
 
+### 1) Requisitos del servidor
+
+* CentOS 7
+* 2GB de memoria
+* 1 vCPU
+* 20GB de espacio en disco
+
+Verificamos la configuración SElinux y que esté en modo permisivo:
+
+```
+[root@localhost ~]# sestatus
+SELinux status:                 enabled
+SELinuxfs mount:                /sys/fs/selinux
+SELinux root directory:         /etc/selinux
+Loaded policy name:             targeted
+Current mode:                   permissive
+Mode from config file:          permissive
+Policy MLS status:              enabled
+Policy deny_unknown status:     allowed
+Max kernel policy version:      28
+[root@localhost ~]#
+
+```
+
+**Watch out!** Se puede modificar con el fichero `/etc/selinux/config`
+
+
+
+
+![ps6-0]({{ site.imagesposts2019 }}/01/PowerShell6-0.png)
 
 
 https://galaxy.ansible.com/geerlingguy/awx/
