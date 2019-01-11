@@ -521,10 +521,6 @@ Arrancamos los servicios AWX:
 
 ```
 [root@localhost nginx]# systemctl start awx-cbreceiver
-[root@localhost nginx]# systemctl start awx-celery-beat
-Failed to start awx-celery-beat.service: Unit not found.
-[root@localhost nginx]# systemctl start awx-celery-worker
-Failed to start awx-celery-worker.service: Unit not found.
 [root@localhost nginx]# systemctl start awx-channels-worker
 [root@localhost nginx]# systemctl start awx-daphne
 [root@localhost nginx]# systemctl start awx-web
@@ -535,10 +531,6 @@ Habilitamos los servicio para que arranquen automaticamente:
 ```
 [root@localhost nginx]# systemctl enable awx-cbreceiver
 Created symlink from /etc/systemd/system/multi-user.target.wants/awx-cbreceiver.service to /usr/lib/systemd/system/awx-cbreceiver.service.
-[root@localhost nginx]# systemctl enable awx-celery-beat
-Failed to execute operation: No such file or directory
-[root@localhost nginx]# systemctl enable awx-celery-worker
-Failed to execute operation: No such file or directory
 [root@localhost nginx]# systemctl enable awx-channels-worker
 Created symlink from /etc/systemd/system/multi-user.target.wants/awx-channels-worker.service to /usr/lib/systemd/system/awx-channels-worker.service.
 [root@localhost nginx]# systemctl enable awx-daphne
@@ -558,11 +550,11 @@ http://<ip or fqdn>/#/login
 {: .notice}
 
 
-![awx01]({{ site.imagesposts2019 }}/01/awx01png)
+![awx01]({{ site.imagesposts2019 }}/01/awx01.png)
 
-![awx02]({{ site.imagesposts2019 }}/01/awx02png)
+![awx02]({{ site.imagesposts2019 }}/01/awx02.png)
 
-![awx03]({{ site.imagesposts2019 }}/01/awx03png)
+![awx03]({{ site.imagesposts2019 }}/01/awx03.png)
 
 
 https://galaxy.ansible.com/geerlingguy/awx/
