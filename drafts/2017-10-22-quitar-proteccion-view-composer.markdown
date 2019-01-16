@@ -13,6 +13,7 @@ author: miquelMariano
 description: Configurar SSH Login banner en ESXi
 hidden: false
 permalink: /composer/
+comments:true
 ---
 
 Buenos dias a tod@as!!
