@@ -481,7 +481,7 @@ Added instance localhost.localdomain to tower
 
 ### 3) Configuración NGINX
 
-Inicialmente hacemos un backup de la actualn config:
+Inicialmente hacemos un backup de la actual config:
 
 ```
 [root@localhost ~]# cd /etc/nginx/
