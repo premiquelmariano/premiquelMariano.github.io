@@ -9,7 +9,7 @@ tag:
 - ansible
 - devops
 category: blog
-author: miquelMariano
+author: @miquelMariano
 description: Ansible AWX es la versión open source de Ansible Tower, una interfaz gráfica para manejar Ansible de forma cómoda y mas amigable...
 hidden: false
 comments: true
