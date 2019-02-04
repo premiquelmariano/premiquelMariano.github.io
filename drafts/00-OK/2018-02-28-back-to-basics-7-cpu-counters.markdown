@@ -2,7 +2,7 @@
 title: Back-to-basics 7 - Contadores importantes de CPU
 date: '2018-02-28 00:00:00'
 layout: post
-image: /assets/images/posts/2018/03/logs.png
+image: /assets/images/posts/2019/03/performance.jpg
 headerImage: true
 tag:
 - vmware
@@ -14,10 +14,11 @@ category: blog
 author: miquelMariano
 description: En este post vamos a ver los contadores mas importantes de CPU que nos podemos encontrar en cada VM de nuestro entorno.
 hidden: false
+comments: true
 permalink: /basics7counters/
 ---
 
-http://vsphereworld.com/back-basics-types-virtual-disks-vsphere/
+http://www.yellow-bricks.com/2012/07/17/why-is-wait-so-high/
 
 Buenos dias a tod@as!!
 
