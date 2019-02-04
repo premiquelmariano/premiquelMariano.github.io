@@ -2,7 +2,7 @@
 title: Back-to-basics 7 - Contadores importantes de CPU
 date: '2018-02-28 00:00:00'
 layout: post
-image: /assets/images/posts/2019/03/performance.jpg
+image: /assets/images/posts/2019/02/performance.jpg
 headerImage: true
 tag:
 - vmware
