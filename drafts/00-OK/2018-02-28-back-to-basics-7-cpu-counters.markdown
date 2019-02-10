@@ -22,8 +22,17 @@ http://www.yellow-bricks.com/2012/07/17/why-is-wait-so-high/
 
 Buenos dias a tod@as!!
 
-En esta segunda entrada de la serie [back-to-basics](https://miquelmariano.github.io/tags/#backtobasics), me gustaria dar un repaso al licenciamiento vSphere
+En esta séptima entrada de la serie [back-to-basics](https://miquelmariano.github.io/tags/#backtobasics), me gustaria hablar un poco de los conadores de CPU mas importantes quen podemos encontrar en una máquina virtual.
 
+Todo esto viene a raíz de un debate que tuvimos hace unas semanas el bueno de [Pablo](https://twitter.com/eclat2k) y yo.
+
+
+![esxtop1]({{ site.imagesposts2019 }}/02/esxtop1.png)
+
+RUN - Tiempo que una VM está confumiendo recursos de CPU
+WAIT - Tiempo que una VM está esperando al VMkernel
+READY - Tiempo que la VM está esperando recursos de CPU
+CO-STOP - Tiempo que la VM está esperando que se alineen las CPU para asignarselas (solo en VM con mas de 1 CPU)
 
 
 Un saludo!
