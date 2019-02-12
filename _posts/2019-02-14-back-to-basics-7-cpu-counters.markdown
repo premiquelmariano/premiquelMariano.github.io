@@ -46,7 +46,7 @@ Otros contadores importantes a nivel de CPU podrian ser:
 
 En resumen:
 
-%WAIT +v%RDY +v%CSTP +v%RUN = 100%
+%WAIT + %RDY +v%CSTP + %RUN = 100%
 {: .notice}
 
 Espero que os sirva de ayuda
