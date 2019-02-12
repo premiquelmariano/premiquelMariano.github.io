@@ -39,10 +39,10 @@ Hay que tener en cuenta, que este contador es por world, por lo tento tendremos 
 
 Otros contadores importantes a nivel de CPU podrian ser:
 
-RUN - Tiempo que una VM está consumiendo recursos de CPU
-WAIT - Tiempo que una VM está esperando al VMkernel
-READY - Tiempo que la VM está esperando recursos de CPU
-CO-STOP - Tiempo que la VM está esperando que se alineen las CPU para asignarselas (solo en VM con mas de 1 CPU)
+* RUN - Tiempo que una VM está consumiendo recursos de CPU
+* WAIT - Tiempo que una VM está esperando al VMkernel
+* READY - Tiempo que la VM está esperando recursos de CPU
+* CO-STOP - Tiempo que la VM está esperando que se alineen las CPU para asignarselas (solo en VM con mas de 1 CPU)
 
 En resumen:
 
