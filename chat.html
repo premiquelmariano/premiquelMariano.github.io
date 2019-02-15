@@ -42,7 +42,7 @@ permalink: /chat/
 <script>
     window.intergramId = 6343788;
     window.intergramCustomizations = {
-        closedChatAvatarUrl: 'media/demo_avatar.jpg',
+        closedChatAvatarUrl: '{{ site.url }}{{ site.images }}/{{ author.avatar }}',
         introMessage: 'Hello! How can I help you?',
         closedStyle: 'button', // button or chat
     };
