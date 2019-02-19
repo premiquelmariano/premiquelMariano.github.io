@@ -26,7 +26,9 @@ Get-VM | Get-Snapshot | where {$_.Name -notmatch "Restore Point \w"} | Select VM
 
 Lista de VMs con CD montado
 
+```
 Get-VM | Get-CDDrive | Where-Object {$_.IsoPath -ne $null} | Select Parent,IsoPath 
+```
 
 Desmontar todas las ISOs montadas en todas las VMs
 
