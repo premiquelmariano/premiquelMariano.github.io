@@ -1,19 +1,21 @@
 ---
 title: PowerCLI, comandos útiles sin scripts
-date: '2017-09-22 00:00:00'
+date: '2019-02-20 00:00:00'
 layout: post
 image: /assets/images/posts/2019/02/onliners-banner.png
 headerImage: true
 tag:
-- powercli
+- vexpert
 - automation
 - vsphere
 - vmware
+- powercli
 category: blog
 author: miquelMariano
 description: Hoy, me gustaría compartir con vosotros una lista de commandos que podemos ejecutar sin necesidad de crear ningún script y que nos dan información muy valiosa de nuestro entorno vsphere
 hidden: false
 comments: true
+permalink: /onliners/
 ---
 
 
@@ -25,7 +27,9 @@ Get-VM | Get-Snapshot | where {$_.Name -notmatch "Restore Point \w"} | Select VM
 
 Lista de VMs con CD montado
 
+```powershell
 Get-VM | Get-CDDrive | Where-Object {$_.IsoPath -ne $null} | Select Parent,IsoPath 
+```
 
 Desmontar todas las ISOs montadas en todas las VMs
 
