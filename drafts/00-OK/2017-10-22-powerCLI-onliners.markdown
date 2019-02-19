@@ -2,7 +2,7 @@
 title: PowerCLI, comandos útiles sin scripts
 date: '2017-09-22 00:00:00'
 layout: post
-image: /assets/images/posts/2019/02/onliners-banner.jpg
+image: /assets/images/posts/2019/02/onliners-banner.png
 headerImage: true
 tag:
 - vexpert
