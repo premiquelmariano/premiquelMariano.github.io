@@ -20,7 +20,9 @@ permalink: /onliners/
 
 Lista de VMs con snapshots
 
+```powershell
 Get-VM | Get-Snapshot | where {$_.Name -notmatch "Restore Point \w"} | Select VM,Name,Description,@{Label="Size";Expression={"{0:N2} GB" -f ($_.SizeGB)}},Created | FT -Autosize
+```
 
 Lista de VMs con CD montado
 
