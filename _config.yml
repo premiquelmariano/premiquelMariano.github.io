@@ -6,7 +6,7 @@
 title: Miquel Mariano
 email:
 description: A simple and awesome blog theme powered by jekyll.
-url: https://miquelMariano.github.io
+url: https://premiquelMariano.github.io
 keywords: ["blog", "jekyll"]
 
 #
@@ -31,11 +31,11 @@ kramdown:
 
 
 images: /assets/images
-vcap_images: https://miquelMariano.github.io/assets/images/vcap
-imagesposts2016: https://miquelMariano.github.io/assets/images/posts/2016
-imagesposts2017: https://miquelMariano.github.io/assets/images/posts/2017
-imagesposts2018: https://miquelMariano.github.io/assets/images/posts/2018
-imagesposts2019: https://miquelMariano.github.io/assets/images/posts/2019
+vcap_images: https://premiquelMariano.github.io/assets/images/vcap
+imagesposts2016: https://premiquelMariano.github.io/assets/images/posts/2016
+imagesposts2017: https://premiquelMariano.github.io/assets/images/posts/2017
+imagesposts2018: https://premiquelMariano.github.io/assets/images/posts/2018
+imagesposts2019: https://premiquelMariano.github.io/assets/images/posts/2019
 
 
 ###################################
@@ -57,7 +57,7 @@ owner:
   facebook: #username
   google:
     plus: #username
-    analytics: 'UA-89683320-1'
+#    analytics: 'UA-89683320-1'
     verify:
     ad-client:
     ad-slot:
