@@ -1,8 +1,8 @@
 ---
-title: Cómo instalar y configurar VMware PowerCLI 11.1
+title: PowerCLI, comandos útiles sin scripts
 date: '2017-09-22 00:00:00'
 layout: post
-image: /assets/images/posts/2019/01/PowerShell6-banner.jpg
+image: /assets/images/posts/2019/02/onliners-banner.jpg
 headerImage: true
 tag:
 - vexpert
@@ -11,7 +11,7 @@ tag:
 - vmware
 category: blog
 author: miquelMariano
-description: Buenos dias a tod@as!! En el post de hoy veremos cómo instalar la última versión de PowerCLI 11.1 sobre windows
+description: Hoy, me gustaría compartir con vosotros una lista de commandos que podemos ejecutar sin necesidad de crear ningún script y que nos dan información muy valiosa de nuestro entorno vsphere
 hidden: false
 comments: true
 permalink: /onliners/
