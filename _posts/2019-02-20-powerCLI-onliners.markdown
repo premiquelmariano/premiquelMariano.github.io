@@ -1,11 +1,11 @@
 ---
 title: PowerCLI, comandos útiles sin scripts
-date: '2017-09-22 00:00:00'
+date: '2019-02-20 00:00:00'
 layout: post
 image: /assets/images/posts/2019/02/onliners-banner.png
 headerImage: true
 tag:
-- powercli
+- vexpert
 - automation
 - vsphere
 - vmware
@@ -14,6 +14,7 @@ author: miquelMariano
 description: Hoy, me gustaría compartir con vosotros una lista de commandos que podemos ejecutar sin necesidad de crear ningún script y que nos dan información muy valiosa de nuestro entorno vsphere
 hidden: false
 comments: true
+permalink: /onliners/
 ---
 
 
