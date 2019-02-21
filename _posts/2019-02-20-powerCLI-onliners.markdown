@@ -15,76 +15,101 @@ author: miquelMariano
 description: Hoy, me gustaría compartir con vosotros una lista de commandos que podemos ejecutar sin necesidad de crear ningún script y que nos dan información muy valiosa de nuestro entorno vsphere
 hidden: false
 comments: true
-permalink: /onliners/
 ---
 
+Buenos dias a tod@s!!
 
-Lista de VMs con snapshots
+En el post de hoy me gustaria compartir con todos vosotros una serie de comandos PowerCLI que nos dan información muy útil de nuestro entorno vSphere. Vamos al lio:
+
+Lista de VMs con snapshots:
 
 ```powershell
 Get-VM | Get-Snapshot | where {$_.Name -notmatch "Restore Point \w"} | Select VM,Name,Description,@{Label="Size";Expression={"{0:N2} GB" -f ($_.SizeGB)}},Created | FT -Autosize
 ```
 
-Lista de VMs con CD montado
+Lista de VMs con CD montado:
 
 ```powershell
 Get-VM | Get-CDDrive | Where-Object {$_.IsoPath -ne $null} | Select Parent,IsoPath 
 ```
 
-Desmontar todas las ISOs montadas en todas las VMs
+Desmontar todas las ISOs montadas en todas las VMs:
 
+```powershell
 Get-VM | Get-CDDrive | where {$_.IsoPath -ne $null} | Set-CDDrive -NoMedia -Confirm:$False
+```
 
-Ver estado del servicio SSH
+Ver estado del servicio SSH:
 
+```powershell
 Get-VMHost | Get-VMHostService | Where { $_.Key -eq "TSM-SSH" } |select VMHost, Label, Running
+```
 
-Arrancar servicio SSH
+Arrancar servicio SSH:
 
+```powershell
 Get-VMHost | Foreach {Start-VMHostService -HostService ($_ | Get-VMHostService | Where { $_.Key -eq "TSM-SSH"} )}
+```
 
-Apagar servicio SSH
+Apagar servicio SSH:
 
+```powershell
 Get-VMHost | Foreach {stop-VMHostService -HostService ($_ | Get-VMHostService | Where { $_.Key -eq "TSM-SSH"} )}
+```
 
-Contar numero de VMs por host
+Contar numero de VMs por host:
 
+```powershell
 Get-VMHost | Sort-Object Name | Select Name,@{N="VM";E={ if ($_.ExtensionData.Vm -ne $null) { $_.ExtensionData.Vm.Count } else {0}}}
+```
 
-Contar numero de VMs por datastore
+Contar numero de VMs por datastore:
 
+```posershell
 Get-datastore | Sort-Object Name | Select Name,@{N="VM";E={ if ($_.ExtensionData.Vm -ne $null) { $_.ExtensionData.Vm.Count } else {0}}}
+```
 
-Ver información hardware de los ESXi
+Ver información hardware de los ESXi:
 
+```powershell
 Get-VMHost |Sort Name |Get-View | Select Name, @{N=“Type“;E={$_.Hardware.SystemInfo.Vendor+ “ “ + $_.Hardware.SystemInfo.Model}}, @{N=“CPU“;E={“PROC:“ + $_.Hardware.CpuInfo.NumCpuPackages + “CORES:“ + $_.Hardware.CpuInfo.NumCpuCores + “ MHZ: “ +[math]::round($_.Hardware.CpuInfo.Hz / 1000000, 0)}}, @{N=“MEM“;E={“” + [math]::round($_.Hardware.MemorySize / 1GB, 0) + “GB“}} | FT -autosize
+```
 
-Ver estado de las VMware Tools y Virtual Hardware de las VMs encendidas.
+Ver estado de las VMware Tools y Virtual Hardware de las VMs encendidas:
 
+```posershell
 Get-VM | Select @{N=”VMName”; E={$_.Name}}, @{N=”State”; E={$_.PowerState}},  @{N=”HardwareVersion”; E={$_.Extensiondata.Config.Version}}, @{N=”ToolsVersion”; E={$_.Extensiondata.Config.Tools.ToolsVersion}}, @{N=”ToolsStatus”; E={$_.Extensiondata.Summary.Guest.ToolsStatus}}, @{N=”ToolsVersionStatus”; E={$_.Extensiondata.Summary.Guest.ToolsVersionStatus}}, @{N=”ToolsRunningStatus”; E={$_.Extensiondata.Summary.Guest.ToolsRunningStatus}} | where state -notmatch poweredoff | FT
+```
 
-Ver las VMs que se han creado recientemente
+Ver las VMs que se han creado recientemente:
 
+```powershell
 Get-VIEvent -maxsamples 10000 | Where {$_.Gettype().Name -eq "VmCreatedEvent"} | Select createdTime, UserName, FullFormattedMessage
+```
 
-Ver las VMs que se han eliminado recientemente
+Ver las VMs que se han eliminado recientemente:
 
+```powershell
 Get-VIEvent -maxsamples 10000 | Where {$_.Gettype().Name -eq "VmRemovedEvent"} | Select createdTime, UserName, FullFormattedMessage
+```
 
-Ver errores de la última semana
+Ver errores de la última semana:
 
+```powershell
 Get-VIEvent -maxsamples 10000 -Type Error -Start (get-date).AddDays(-7) | Select createdTime, fullFormattedMessage
+```
 
-Ver VMs con la nic e1000
+Ver VMs con la nic e1000:
 
+```powershell
 get-vm | Get-NetworkAdapter | where {$_.type -match "e1000"} | select-object parent,networkname,name,type
-
-
-
-
-![ps6-13]({{ site.imagesposts2019 }}/01/PowerShell6-13.png)
+```
 
 Espero que os sea de utilidad.
+
+Si vosotros teneis alguno que querais compartir, por vavor, dejalo en los comentarios y lo incorporaremos a la lista.
+
+Muchas gracias.
 
 Un saludo!
 
