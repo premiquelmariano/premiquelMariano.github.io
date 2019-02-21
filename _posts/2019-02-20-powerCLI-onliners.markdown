@@ -65,7 +65,7 @@ Get-VMHost | Sort-Object Name | Select Name,@{N="VM";E={ if ($_.ExtensionData.Vm
 
 Contar numero de VMs por datastore:
 
-```posershell
+```powershell
 Get-datastore | Sort-Object Name | Select Name,@{N="VM";E={ if ($_.ExtensionData.Vm -ne $null) { $_.ExtensionData.Vm.Count } else {0}}}
 ```
 
