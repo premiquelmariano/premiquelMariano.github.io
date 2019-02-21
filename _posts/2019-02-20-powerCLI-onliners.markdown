@@ -17,9 +17,9 @@ hidden: false
 comments: true
 ---
 
-Buenos dias a tod@s!!
+Buenos días a tod@s!!
 
-En el post de hoy me gustaria compartir con todos vosotros una serie de comandos PowerCLI que nos dan información muy útil de nuestro entorno vSphere. Vamos al lio:
+En el post de hoy me gustaría compartir con todos vosotros una serie de comandos PowerCLI que nos dan información muy útil de nuestro entorno vSphere. Vamos al lío:
 
 Lista de VMs con snapshots:
 
@@ -107,7 +107,7 @@ get-vm | Get-NetworkAdapter | where {$_.type -match "e1000"} | select-object par
 
 Espero que os sea de utilidad.
 
-Si vosotros teneis alguno que querais compartir, por vavor, dejalo en los comentarios y lo incorporaremos a la lista.
+Si vosotros tenéis alguno que queráis compartir, por favor, dejado en los comentarios y lo incorporaremos a la lista.
 
 Muchas gracias.
 
