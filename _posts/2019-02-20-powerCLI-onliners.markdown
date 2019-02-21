@@ -77,7 +77,7 @@ Get-VMHost |Sort Name |Get-View | Select Name, @{N=“Type“;E={$_.Hardware.Sys
 
 Ver estado de las VMware Tools y Virtual Hardware de las VMs encendidas:
 
-```posershell
+```powershell
 Get-VM | Select @{N=”VMName”; E={$_.Name}}, @{N=”State”; E={$_.PowerState}},  @{N=”HardwareVersion”; E={$_.Extensiondata.Config.Version}}, @{N=”ToolsVersion”; E={$_.Extensiondata.Config.Tools.ToolsVersion}}, @{N=”ToolsStatus”; E={$_.Extensiondata.Summary.Guest.ToolsStatus}}, @{N=”ToolsVersionStatus”; E={$_.Extensiondata.Summary.Guest.ToolsVersionStatus}}, @{N=”ToolsRunningStatus”; E={$_.Extensiondata.Summary.Guest.ToolsRunningStatus}} | where state -notmatch poweredoff | FT
 ```
 
