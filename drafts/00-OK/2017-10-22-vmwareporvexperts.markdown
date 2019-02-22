@@ -17,6 +17,24 @@ comments: true
 permalink: /vmwareporvexperts/
 ---
 
+Hola a todos, queridos lectores. Hoy vengo con un post autobombo de un proyecto que me gustaria compartir con todos vosotros.
+
+- Jorge de la Cruz | ([@jorgedlcruz](https://twitter.com/jorgedlcruz)) | [https://www.jorgedelacruz.es](https://www.jorgedelacruz.es)
+- Miguel Angel Alonso | ([@MiguelAAlonso](https://twitter.com/jorgedlcruz)) https://www.josemariagonzalez.es/
+- Xavier Genestos | ([@sysadmit](https://twitter.com/jorgedlcruz)) https://www.sysadmit.com/
+- Ricard Ibañez | ([@ricardibanez](https://twitter.com/jorgedlcruz)) www.cenabit.com
+- Gorka Izquierdo | ([@vGorkon](https://twitter.com/jorgedlcruz)) https://aprendiendoavirtualizar.com/
+- Ariel Sanchez | ([@arielsanchezmor](https://twitter.com/jorgedlcruz)) http://blogs.arielsanchezmora.com
+- Miquel Mariano | ([@miquelMariano](https://twitter.com/miquelMariano)) | [https://miquelMariano.github.io](https://miquelMariano.github.io)
+- Xavier Caballé | ([@screenshootsit](https://twitter.com/jorgedlcruz)) https://www.pantallazos.es/
+- Raul Unzué | ([@elblogdenegu](https://twitter.com/jorgedlcruz)) https://www.maquinasvirtuales.eu/
+- Patricio Cerda | ([@patote83](https://twitter.com/jorgedlcruz)) http://www.patriciocerda.com/
+- Hector Herrero | ([@nheobug](https://twitter.com/jorgedlcruz)) http://www.bujarra.com/
+- Leandro Leonhardt | ([@leonhardtla](https://twitter.com/jorgedlcruz)) https://www.blogvmware.com/
+- Daniel Romero | ([@drsromero](https://twitter.com/jorgedlcruz)) https://www.dbigcloud.com/
+- Federico Cinalli | ([@FCinalliP](https://twitter.com/jorgedlcruz)) https://federicocinalli.com
+
+
 Que tal todo¿? Espero que sigais igual de bien como siempre ;-)
 
 No te quiero robar mucho tiempo. Te escribo este correo porque varios vExperts tenemos un proyecto personal entre manos y estamos buscando sponsorización.
@@ -35,20 +53,7 @@ Estamos intentando que nuestro patrocinador principal sea evidentemente VMware, 
 
 ![portada]({{ site.imagesposts2019 }}/03/portada.png)
 
-- Jorge de la Cruz * ([@jorgedlcruz](https://twitter.com/jorgedlcruz)) * [https://www.jorgedelacruz.es](https://www.jorgedelacruz.es)
-Miguel Angel Alonso (@MiguelAAlonso) https://www.josemariagonzalez.es/
-Xavier Genestos (@sysadmit) https://www.sysadmit.com/
-Ricard Ibañez (@ricardibanez) www.cenabit.com
-Gorka Izquierdo (@vGorkon) https://aprendiendoavirtualizar.com/
-Ariel Sanchez (@arielsanchezmor) http://blogs.arielsanchezmora.com
-- Miquel Mariano | ([@miquelMariano](https://twitter.com/miquelMariano)) | [https://miquelMariano.github.io](https://miquelMariano.github.io)
-Xavier Caballé (@screenshootsit) https://www.pantallazos.es/
-Raul Unzué (@elblogdenegu) https://www.maquinasvirtuales.eu/
-Patricio Cerda (@patote83) http://www.patriciocerda.com/
-Hector Herrero (@nheobug) http://www.bujarra.com/
-Leandro Leonhardt (@leonhardtla) https://www.blogvmware.com/
-Daniel Romero (@drsromero) https://www.dbigcloud.com/
-Federico Cinalli (@FCinalliP) https://federicocinalli.com
+
 
 There are two charity projects:
 -Banani Project (see attached file)
