@@ -17,6 +17,22 @@ comments: true
 permalink: /vmwareporvexperts/
 ---
 
+Que tal todo¿? Espero que sigais igual de bien como siempre ;-)
+
+No te quiero robar mucho tiempo. Te escribo este correo porque varios vExperts tenemos un proyecto personal entre manos y estamos buscando sponsorización.
+
+Estamos escribiendo un libro entre 14 vExperts españoles y LATAM el cual nos permita recaudar fondos para 2 organizaciones benéficas.
+
+-Banani Project 
+-CEAFA Alzheimer's organization ( https://www.ceafa.es)
+
+Se trata de un libro muy técnico de todo lo relacionado con el ecosistema VMware, no solo vSphere. La idea a sido juntar perfiles muy diversos para intentar sacar un contenido lo mas extenso posible. A mi me ha tocado escribir sobre automatización con Ansible y PowerCLI, no digo mas ;-)
+
+La idea es que el libro salga a la luz en formato digital y 100% de libre descarga para finales de Marzo y que los fondos se recauden con las empresas que se quieran sumar al proyecto.
+
+Estamos intentando que nuestro patrocinador principal sea evidentemente VMware, pero empresas como Veeam, Vembu, Qloudea, QNAP también están interesadas y algunas ya confirmadas.
+
+
 ![portada]({{ site.imagesposts2019 }}/03/portada.png)
 
 Jorge de la Cruz (@jorgedlcruz ) https://www.jorgedelacruz.es
