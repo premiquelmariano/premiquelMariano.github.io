@@ -35,13 +35,13 @@ Estamos intentando que nuestro patrocinador principal sea evidentemente VMware, 
 
 ![portada]({{ site.imagesposts2019 }}/03/portada.png)
 
-Jorge de la Cruz (@jorgedlcruz ) https://www.jorgedelacruz.es
+- Jorge de la Cruz * ([@jorgedlcruz](https://twitter.com/jorgedlcruz)) * [https://www.jorgedelacruz.es](https://www.jorgedelacruz.es)
 Miguel Angel Alonso (@MiguelAAlonso) https://www.josemariagonzalez.es/
 Xavier Genestos (@sysadmit) https://www.sysadmit.com/
 Ricard Ibañez (@ricardibanez) www.cenabit.com
 Gorka Izquierdo (@vGorkon) https://aprendiendoavirtualizar.com/
 Ariel Sanchez (@arielsanchezmor) http://blogs.arielsanchezmora.com
-Miquel Mariano (@miquelMariano) miquelMariano.github.io
+- Miquel Mariano | ([@miquelMariano](https://twitter.com/miquelMariano)) | [https://miquelMariano.github.io](https://miquelMariano.github.io)
 Xavier Caballé (@screenshootsit) https://www.pantallazos.es/
 Raul Unzué (@elblogdenegu) https://www.maquinasvirtuales.eu/
 Patricio Cerda (@patote83) http://www.patriciocerda.com/
