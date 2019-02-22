@@ -24,7 +24,7 @@ Hola a todos, queridos lectores. Hoy vengo con un post autobombo de un proyecto 
 - Xavier Genestos - ([@sysadmit](https://twitter.com/jorgedlcruz)) - [https://www.sysadmit.com/](https://www.josemariagonzalez.es/)
 - Ricard Ibañez - ([@ricardibanez](https://twitter.com/jorgedlcruz)) - [www.cenabit.com](https://www.josemariagonzalez.es/)
 - Gorka Izquierdo - ([@vGorkon](https://twitter.com/jorgedlcruz)) - [https://aprendiendoavirtualizar.com/](https://www.josemariagonzalez.es/)
-- Ariel Sanchez - ([@arielsanchezmor](https://twitter.com/jorgedlcruz)) - http://blogs.arielsanchezmora.com
+- Ariel Sanchez - ([@arielsanchezmor](https://twitter.com/jorgedlcruz)) - [http://blogs.arielsanchezmora.com](http://blogs.arielsanchezmora.com)
 - Miquel Mariano - ([@miquelMariano](https://twitter.com/miquelMariano)) - [https://miquelMariano.github.io](https://miquelMariano.github.io)
 - Xavier Caballé - ([@screenshootsit](https://twitter.com/jorgedlcruz)) - [https://www.pantallazos.es/](https://www.josemariagonzalez.es/)
 - Raul Unzué - ([@elblogdenegu](https://twitter.com/jorgedlcruz)) - [https://www.maquinasvirtuales.eu/](https://www.josemariagonzalez.es/)
