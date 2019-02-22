@@ -20,19 +20,19 @@ permalink: /vmwareporvexperts/
 Hola a todos, queridos lectores. Hoy vengo con un post autobombo de un proyecto que me gustaria compartir con todos vosotros.
 
 - Jorge de la Cruz | ([@jorgedlcruz](https://twitter.com/jorgedlcruz)) | [https://www.jorgedelacruz.es](https://www.jorgedelacruz.es)
-- Miguel Angel Alonso | ([@MiguelAAlonso](https://twitter.com/jorgedlcruz)) https://www.josemariagonzalez.es/
-- Xavier Genestos | ([@sysadmit](https://twitter.com/jorgedlcruz)) https://www.sysadmit.com/
-- Ricard Ibañez | ([@ricardibanez](https://twitter.com/jorgedlcruz)) www.cenabit.com
-- Gorka Izquierdo | ([@vGorkon](https://twitter.com/jorgedlcruz)) https://aprendiendoavirtualizar.com/
-- Ariel Sanchez | ([@arielsanchezmor](https://twitter.com/jorgedlcruz)) http://blogs.arielsanchezmora.com
+- Miguel Angel Alonso | ([@MiguelAAlonso](https://twitter.com/jorgedlcruz)) | [https://www.josemariagonzalez.es/](https://www.josemariagonzalez.es/)
+- Xavier Genestos | ([@sysadmit](https://twitter.com/jorgedlcruz)) | [https://www.sysadmit.com/](https://www.josemariagonzalez.es/)
+- Ricard Ibañez | ([@ricardibanez](https://twitter.com/jorgedlcruz)) | [www.cenabit.com](https://www.josemariagonzalez.es/)
+- Gorka Izquierdo | ([@vGorkon](https://twitter.com/jorgedlcruz)) | [https://aprendiendoavirtualizar.com/](https://www.josemariagonzalez.es/)
+- Ariel Sanchez | ([@arielsanchezmor](https://twitter.com/jorgedlcruz)) | http://blogs.arielsanchezmora.com
 - Miquel Mariano | ([@miquelMariano](https://twitter.com/miquelMariano)) | [https://miquelMariano.github.io](https://miquelMariano.github.io)
-- Xavier Caballé | ([@screenshootsit](https://twitter.com/jorgedlcruz)) https://www.pantallazos.es/
-- Raul Unzué | ([@elblogdenegu](https://twitter.com/jorgedlcruz)) https://www.maquinasvirtuales.eu/
-- Patricio Cerda | ([@patote83](https://twitter.com/jorgedlcruz)) http://www.patriciocerda.com/
-- Hector Herrero | ([@nheobug](https://twitter.com/jorgedlcruz)) http://www.bujarra.com/
-- Leandro Leonhardt | ([@leonhardtla](https://twitter.com/jorgedlcruz)) https://www.blogvmware.com/
-- Daniel Romero | ([@drsromero](https://twitter.com/jorgedlcruz)) https://www.dbigcloud.com/
-- Federico Cinalli | ([@FCinalliP](https://twitter.com/jorgedlcruz)) https://federicocinalli.com
+- Xavier Caballé | ([@screenshootsit](https://twitter.com/jorgedlcruz)) | [https://www.pantallazos.es/](https://www.josemariagonzalez.es/)
+- Raul Unzué | ([@elblogdenegu](https://twitter.com/jorgedlcruz)) | [https://www.maquinasvirtuales.eu/](https://www.josemariagonzalez.es/)
+- Patricio Cerda | ([@patote83](https://twitter.com/jorgedlcruz)) | [http://www.patriciocerda.com/](http://www.patriciocerda.com/)
+- Hector Herrero | ([@nheobug](https://twitter.com/jorgedlcruz)) | [http://www.bujarra.com/](http://www.patriciocerda.com/)
+- Leandro Leonhardt | ([@leonhardtla](https://twitter.com/jorgedlcruz)) | [https://www.blogvmware.com/](https://www.blogvmware.com/)
+- Daniel Romero | ([@drsromero](https://twitter.com/jorgedlcruz)) | [https://www.dbigcloud.com/](https://www.dbigcloud.com/)
+- Federico Cinalli | ([@FCinalliP](https://twitter.com/jorgedlcruz)) | [https://federicocinalli.com](https://federicocinalli.com)
 
 
 Que tal todo¿? Espero que sigais igual de bien como siempre ;-)
