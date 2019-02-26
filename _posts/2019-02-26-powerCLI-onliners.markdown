@@ -1,6 +1,6 @@
 ---
 title: PowerCLI, comandos útiles sin scripts
-date: '2019-02-20 00:00:00'
+date: '2019-02-26 00:00:00'
 layout: post
 image: /assets/images/posts/2019/02/onliners-banner.png
 headerImage: true
