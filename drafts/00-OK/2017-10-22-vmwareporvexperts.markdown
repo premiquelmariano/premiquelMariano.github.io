@@ -17,32 +17,11 @@ comments: true
 permalink: /vmwareporvexperts/
 ---
 
-Hola a todos, queridos lectores. Hoy vengo con un post autobombo de un proyecto que me gustaria compartir con todos vosotros.
+Hola a todos, queridos lectores. Hoy vengo con un post autobombo de un proyecto que tenemos entre manos y del cual me siento muy orgulloso.
 
+![portada](https://www.vmwareporvexperts.org/wp-content/uploads/2019/02/libro-vmware-por-vexperts-478-677.jpg)
 
-*** Contenido del libro VMware por vExperts:
-1 – Introducción (Xavi Genestós)
-2 – vCenter, ESXi y Maquinas Virtuales (Gorka Izquierdo)
-3 – Instalación y Configuración (Xavi Caballé)
-4 – Networking (Miguel Angel Alonso)
-5 – Almacenamiento (Leandro Ariel Leonhardt)
-6 – vSAN (Federico Cinalli)
-7 – Alta Disponibilidad (Leandro Ariel Leonhardt)
-8 – Backup y Réplicas (Patricio Cerda)
-9 – Monitorización (Jorge de la Cruz)
-10 – NSX (Miguel Angel Alonso)
-11 - VDI’s con Horizon View (Ricard Ibañez)
-12 – Citrix en vSphere (Hector Herrero)
-13 – vRealize Orchestrator (Federico Cinalli)
-14 – PowerCLI (Miquel Mariano)
-15 – vRealize Automation (Federico Cinalli)
-16 – Ansible (Miquel Mariano)
-17 – VMware Code (Daniel Romero)
-18 – Contenedores en vSphere (Raul Unzué)
-19 – VMware Cloud en AWS (Jorge de la Cruz)
-20 – Buenas practicas de diseño (Ariel Sanchez)
-21 – Consejos para equipos que administran VMware (Ariel Sanchez)
-
+Se trata del libro [#VMwareporvExperts](https://www.vmwareporvexperts.org), un libro técnico sobre todo el ecosistema VMWare y creado por 14 bloggers de habla hispana. Es un privilegio para mi, estar junto a tanto crack!!
 
 - Jorge de la Cruz - [@jorgedlcruz](https://twitter.com/jorgedlcruz) - [https://www.jorgedelacruz.es](https://www.jorgedelacruz.es)
 - Miguel Angel Alonso - [@MiguelAAlonso](https://twitter.com/MiguelAAlonso) - [https://www.josemariagonzalez.es/](https://www.josemariagonzalez.es/)
@@ -59,32 +38,52 @@ Hola a todos, queridos lectores. Hoy vengo con un post autobombo de un proyecto 
 - Daniel Romero - [@drsromero](https://twitter.com/drsromero) - [https://www.dbigcloud.com/](https://www.dbigcloud.com/)
 - Federico Cinalli - [@FCinalliP](https://twitter.com/FCinalliP) - [https://federicocinalli.com](https://federicocinalli.com)
 
-
-Que tal todo¿? Espero que sigais igual de bien como siempre ;-)
-
-No te quiero robar mucho tiempo. Te escribo este correo porque varios vExperts tenemos un proyecto personal entre manos y estamos buscando sponsorización.
-
-Estamos escribiendo un libro entre 14 vExperts españoles y LATAM el cual nos permita recaudar fondos para 2 organizaciones benéficas.
-
--Banani Project 
--CEAFA Alzheimer's organization ( https://www.ceafa.es)
-
-Se trata de un libro muy técnico de todo lo relacionado con el ecosistema VMware, no solo vSphere. La idea a sido juntar perfiles muy diversos para intentar sacar un contenido lo mas extenso posible. A mi me ha tocado escribir sobre automatización con Ansible y PowerCLI, no digo mas ;-)
-
-La idea es que el libro salga a la luz en formato digital y 100% de libre descarga para finales de Marzo y que los fondos se recauden con las empresas que se quieran sumar al proyecto.
-
-Estamos intentando que nuestro patrocinador principal sea evidentemente VMware, pero empresas como Veeam, Vembu, Qloudea, QNAP también están interesadas y algunas ya confirmadas.
+Entre todos, hemos intentado diseñar un temario lo suficientemente ámplio para abarcar casi todos los ámbitos relacionados con VMWare. Al final creo que ha salido un contenido de lo mas variado:
 
 
-![portada](https://www.vmwareporvexperts.org/wp-content/uploads/2019/02/libro-vmware-por-vexperts-478-677.jpg)
+### Contenido del libro VMware por vExperts:
+1. Introducción (Xavi Genestós)
+2. vCenter, ESXi y Maquinas Virtuales (Gorka Izquierdo)
+3. Instalación y Configuración (Xavi Caballé)
+4. Networking (Miguel Angel Alonso)
+5. Almacenamiento (Leandro Ariel Leonhardt)
+6. vSAN (Federico Cinalli)
+7. Alta Disponibilidad (Leandro Ariel Leonhardt)
+8. Backup y Réplicas (Patricio Cerda)
+9. Monitorización (Jorge de la Cruz)
+10. NSX (Miguel Angel Alonso)
+11. VDI’s con Horizon View (Ricard Ibañez)
+12. Citrix en vSphere (Hector Herrero)
+13. vRealize Orchestrator (Federico Cinalli)
+14. PowerCLI (Miquel Mariano)
+15. vRealize Automation (Federico Cinalli)
+16. Ansible (Miquel Mariano)
+17. VMware Code (Daniel Romero)
+18. Contenedores en vSphere (Raul Unzué)
+19. VMware Cloud en AWS (Jorge de la Cruz)
+20. Buenas practicas de diseño (Ariel Sanchez)
+21. Consejos para equipos que administran VMware (Ariel Sanchez)
 
+El proyecto en si, tiene un objetivo solidario y es que todo lo que consigamos recaudar irá íntegramente a estas dos asociaciones benéficas:
 
-
-There are two charity projects:
 - [Banani Project](http://www.amafestival.org/es/proyecto-banani)
 - [CEAFA Alzheimer organization](https://www.ceafa.es)
 
 ![banani]({{ site.imagesposts2019 }}/03/CasaBanani.jpeg)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Espero que os sea de utilidad.
 
