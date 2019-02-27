@@ -21,7 +21,7 @@ Hola a todos, queridos lectores. Hoy vengo con un post autobombo de un proyecto 
 
 ![portada](https://www.vmwareporvexperts.org/wp-content/uploads/2019/02/libro-vmware-por-vexperts-478-677.jpg)
 
-Se trata del libro [#VMwareporvExperts](https://www.vmwareporvexperts.org), un libro técnico sobre todo el ecosistema VMWare y creado por 14 bloggers de habla hispana. Es un privilegio para mi, estar junto a tanto crack!!
+Se trata del libro [#VMwareporvExperts](https://www.vmwareporvexperts.org), un libro técnico, de mas de 600 páginas, sobre todo el ecosistema VMWare y creado por 14 bloggers de habla hispana. Es un privilegio para mi, estar junto a tanto crack!!
 
 - Jorge de la Cruz - [@jorgedlcruz](https://twitter.com/jorgedlcruz) - [https://www.jorgedelacruz.es](https://www.jorgedelacruz.es)
 - Miguel Angel Alonso - [@MiguelAAlonso](https://twitter.com/MiguelAAlonso) - [https://www.josemariagonzalez.es/](https://www.josemariagonzalez.es/)
@@ -38,9 +38,9 @@ Se trata del libro [#VMwareporvExperts](https://www.vmwareporvexperts.org), un l
 - Daniel Romero - [@drsromero](https://twitter.com/drsromero) - [https://www.dbigcloud.com/](https://www.dbigcloud.com/)
 - Federico Cinalli - [@FCinalliP](https://twitter.com/FCinalliP) - [https://federicocinalli.com](https://federicocinalli.com)
 
-Entre todos, hemos intentado diseñar un temario lo suficientemente ámplio para abarcar casi todos los ámbitos relacionados con VMWare. Al final creo que ha salido un contenido de lo mas variado:
+Entre todos, hemos intentado diseñar un temario lo suficientemente amplio para abarcar casi todos los ámbitos relacionados con VMWare. Al final creo que ha salido un contenido de lo mas variado:
 
-### Contenido del libro VMware por vExperts:
+### Contenido del libro VMware por vExperts
 
 1. Introducción (Xavi Genestós)
 2. vCenter, ESXi y Maquinas Virtuales (Gorka Izquierdo)
@@ -66,6 +66,8 @@ Entre todos, hemos intentado diseñar un temario lo suficientemente ámplio para
 
 Como veis, a mi me ha tocado escribir sobre automatización, y es que es un tema que me apasiona profundamente. En este blog, ya he escrito algunas veces tanto sobre [PowerCLI](https://miquelmariano.github.io/tags/#powercli) como sobre [Ansible](https://miquelmariano.github.io/tags/#ansible)
 
+### El proyecto
+
 El proyecto en si, tiene un objetivo solidario y es que todo lo que consigamos recaudar irá íntegramente a estas dos asociaciones benéficas:
 
 - [Banani Project](http://www.amafestival.org/es/proyecto-banani)
@@ -73,14 +75,18 @@ El proyecto en si, tiene un objetivo solidario y es que todo lo que consigamos r
 
 ![banani]({{ site.imagesposts2019 }}/03/CasaBanani.jpeg)
 
-La idea del proyecto, es que el libro sea en formato digital y 100% de libre descarga, sin registros. Es por ello, que hemos diseñado un sistema de sponsorización para que todas las empresas que estén interesadas, puedan unirse al proyecto. Muchos de los partners del ecosistema VMWare ya se han unido y esperamos que en los proximos dias puedan confirmar más empresas su participación. Desde aquí agradezco enormemente el esfuerzo que estan haciendo todas ellas.
+La idea del proyecto, es que el libro sea en formato digital y 100% de libre descarga, sin registros. Es por ello, que hemos diseñado un sistema de sponsorización para que todas las empresas que estén interesadas, puedan unirse al proyecto. Muchos de los partners del ecosistema VMWare ya se han unido y esperamos que en los próximos días puedan confirmar más empresas su participación. Desde aquí agradezco enormemente el esfuerzo que están haciendo todas ellas.
 
+### Publicación del libro
 
+Estamos ultimando los últimos detalles y esperamos tener todo listo para que la segunda mitad de Marzo 2019, el proyecto pueda ver la luz
 
+### ¿Qué necesitamos?
 
+Estamos en la recta final, el contenido ya está terminado y el libro está en fase de revisión. Lo que necesitamos ahora es dar la máxima visibilidad posible al proyecto y que llegue no solo a gente interesada en aprender VMware en Español, también a potenciales Sponsors que se puedan sumar a la causa.
 
+Quien quiera apoyarnos, nos podrá ayudar promocionando la [web](https://www.vmwareporvexperts.org) o la cuenta de Twitter [@vmwarevexperts](https://twitter.com/vmwarevexperts) utlizando el hashtag [#VMwarePorvExperts](https://twitter.com/hashtag/vmwareporvexperts?src=hash) 
 
-Espero que os sea de utilidad.
 
 Un saludo!
 
