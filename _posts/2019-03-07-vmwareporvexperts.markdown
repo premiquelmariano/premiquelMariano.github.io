@@ -1,6 +1,6 @@
 ---
 title: VMware por vExperts, el libro definitivo
-date: '2017-09-22 00:00:00'
+date: '2019-03-07 00:00:00'
 layout: post
 image: /assets/images/posts/2019/03/front.png
 headerImage: true
@@ -9,12 +9,13 @@ tag:
 - automation
 - vsphere
 - vmware
+- vmwareporvexpert
+- libro
 category: blog
 author: miquelMariano
-description: Buenos dias a tod@as!! En el post de hoy veremos cómo instalar la última versión de PowerCLI 11.1 sobre windows
+description: VMware por vExperts, el libro técnico que ha juntado a 14 blogers de habla hispana para un proyecto benéfico...
 hidden: false
 comments: true
-permalink: /vmwareporvexperts/
 ---
 
 Hola a todos, queridos lectores. Hoy vengo con un post autobombo de un proyecto que tenemos entre manos y del cual me siento muy orgulloso.
@@ -38,7 +39,7 @@ Se trata del libro [#VMwareporvExperts](https://www.vmwareporvexperts.org), un l
 - Daniel Romero - [@drsromero](https://twitter.com/drsromero) - [https://www.dbigcloud.com/](https://www.dbigcloud.com/)
 - Federico Cinalli - [@FCinalliP](https://twitter.com/FCinalliP) - [https://federicocinalli.com](https://federicocinalli.com)
 
-Entre todos, hemos intentado diseñar un temario lo suficientemente amplio para abarcar casi todos los ámbitos relacionados con VMWare. Al final creo que ha salido un contenido de lo mas variado:
+Entre todos, hemos intentado diseñar un temario lo suficientemente amplio para abarcar casi todos los ámbitos relacionados con VMWare. Al final creo que ha salido un contenido de lo mas variado
 
 ### Contenido del libro VMware por vExperts
 
