@@ -51,13 +51,13 @@ La idea es que el libro salga a la luz en formato digital y 100% de libre descar
 Estamos intentando que nuestro patrocinador principal sea evidentemente VMware, pero empresas como Veeam, Vembu, Qloudea, QNAP también están interesadas y algunas ya confirmadas.
 
 
-![portada]({{ site.imagesposts2019 }}/03/portada.png)
+![portada](https://www.vmwareporvexperts.org/wp-content/uploads/2019/02/libro-vmware-por-vexperts-478-677.jpg)
 
 
 
 There are two charity projects:
--Banani Project (see attached file)
--CEAFA Alzheimer organization ( https://www.ceafa.es)
+- [Banani Project](http://www.amafestival.org/es/proyecto-banani)
+- [CEAFA Alzheimer organization](https://www.ceafa.es)
 
 ![banani]({{ site.imagesposts2019 }}/03/CasaBanani.jpeg)
 
