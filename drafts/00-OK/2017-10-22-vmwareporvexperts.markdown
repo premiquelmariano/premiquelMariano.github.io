@@ -40,8 +40,8 @@ Se trata del libro [#VMwareporvExperts](https://www.vmwareporvexperts.org), un l
 
 Entre todos, hemos intentado diseñar un temario lo suficientemente ámplio para abarcar casi todos los ámbitos relacionados con VMWare. Al final creo que ha salido un contenido de lo mas variado:
 
-
 ### Contenido del libro VMware por vExperts:
+
 1. Introducción (Xavi Genestós)
 2. vCenter, ESXi y Maquinas Virtuales (Gorka Izquierdo)
 3. Instalación y Configuración (Xavi Caballé)
@@ -64,6 +64,8 @@ Entre todos, hemos intentado diseñar un temario lo suficientemente ámplio para
 20. Buenas practicas de diseño (Ariel Sanchez)
 21. Consejos para equipos que administran VMware (Ariel Sanchez)
 
+Como veis, a mi me ha tocado escribir sobre automatización, y es que es un tema que me apasiona profundamente. En este blog, ya he escrito algunas veces tanto sobre [PowerCLI](https://miquelmariano.github.io/tags/#powercli) como sobre [Ansible](https://miquelmariano.github.io/tags/#ansible)
+
 El proyecto en si, tiene un objetivo solidario y es que todo lo que consigamos recaudar irá íntegramente a estas dos asociaciones benéficas:
 
 - [Banani Project](http://www.amafestival.org/es/proyecto-banani)
@@ -71,14 +73,7 @@ El proyecto en si, tiene un objetivo solidario y es que todo lo que consigamos r
 
 ![banani]({{ site.imagesposts2019 }}/03/CasaBanani.jpeg)
 
-
-
-
-
-
-
-
-
+La idea del proyecto, es que el libro sea en formato digital y 100% de libre descarga, sin registros. Es por ello, que hemos diseñado un sistema de sponsorización para que todas las empresas que estén interesadas, puedan unirse al proyecto. Muchos de los partners del ecosistema VMWare ya se han unido y esperamos que en los proximos dias puedan confirmar más empresas su participación. Desde aquí agradezco enormemente el esfuerzo que estan haciendo todas ellas.
 
 
 
