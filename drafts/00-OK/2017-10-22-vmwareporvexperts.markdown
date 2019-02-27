@@ -19,6 +19,31 @@ permalink: /vmwareporvexperts/
 
 Hola a todos, queridos lectores. Hoy vengo con un post autobombo de un proyecto que me gustaria compartir con todos vosotros.
 
+
+*** Contenido del libro VMware por vExperts:
+1 – Introducción (Xavi Genestós)
+2 – vCenter, ESXi y Maquinas Virtuales (Gorka Izquierdo)
+3 – Instalación y Configuración (Xavi Caballé)
+4 – Networking (Miguel Angel Alonso)
+5 – Almacenamiento (Leandro Ariel Leonhardt)
+6 – vSAN (Federico Cinalli)
+7 – Alta Disponibilidad (Leandro Ariel Leonhardt)
+8 – Backup y Réplicas (Patricio Cerda)
+9 – Monitorización (Jorge de la Cruz)
+10 – NSX (Miguel Angel Alonso)
+11 - VDI’s con Horizon View (Ricard Ibañez)
+12 – Citrix en vSphere (Hector Herrero)
+13 – vRealize Orchestrator (Federico Cinalli)
+14 – PowerCLI (Miquel Mariano)
+15 – vRealize Automation (Federico Cinalli)
+16 – Ansible (Miquel Mariano)
+17 – VMware Code (Daniel Romero)
+18 – Contenedores en vSphere (Raul Unzué)
+19 – VMware Cloud en AWS (Jorge de la Cruz)
+20 – Buenas practicas de diseño (Ariel Sanchez)
+21 – Consejos para equipos que administran VMware (Ariel Sanchez)
+
+
 - Jorge de la Cruz - [@jorgedlcruz](https://twitter.com/jorgedlcruz) - [https://www.jorgedelacruz.es](https://www.jorgedelacruz.es)
 - Miguel Angel Alonso - [@MiguelAAlonso](https://twitter.com/MiguelAAlonso) - [https://www.josemariagonzalez.es/](https://www.josemariagonzalez.es/)
 - Xavier Genestos - [@sysadmit](https://twitter.com/sysadmit) - [https://www.sysadmit.com/](https://www.josemariagonzalez.es/)
