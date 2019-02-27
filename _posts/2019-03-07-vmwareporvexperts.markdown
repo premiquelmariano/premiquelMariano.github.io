@@ -74,7 +74,7 @@ El proyecto en si, tiene un objetivo solidario y es que todo lo que consigamos r
 - [Banani Project](http://www.amafestival.org/es/proyecto-banani)
 - [CEAFA Alzheimer organization](https://www.ceafa.es)
 
-![banani](https://federicocinalli.com/images/M_images/aabanani.jpg)
+![banani]({{ site.imagesposts2019 }}/03/CasaBanani.jpeg)
 
 La idea del proyecto, es que el libro sea en formato digital y 100% de libre descarga, sin registros. Es por ello, que hemos diseñado un sistema de sponsorización para que todas las empresas que estén interesadas, puedan unirse al proyecto. Muchos de los partners del ecosistema VMWare ya se han unido y esperamos que en los próximos días puedan confirmar más empresas su participación. Desde aquí agradezco enormemente el esfuerzo que están haciendo todas ellas.
 
