@@ -86,7 +86,9 @@ Estamos ultimando los últimos detalles y esperamos tener todo listo para que la
 
 Estamos en la recta final, el contenido ya está terminado y el libro está en fase de revisión. Lo que necesitamos ahora es dar la máxima visibilidad posible al proyecto y que llegue no solo a gente interesada en aprender VMware en Español, también a potenciales Sponsors que se puedan sumar a la causa.
 
-Quien quiera apoyarnos, nos podrá ayudar promocionando la [web](https://www.vmwareporvexperts.org) o la cuenta de Twitter [@vmwarevexperts](https://twitter.com/vmwarevexperts) utlizando el hashtag [#VMwarePorvExperts](https://twitter.com/hashtag/vmwareporvexperts?src=hash) 
+Quien quiera apoyarnos, nos podrá ayudar promocionando la [web](https://www.vmwareporvexperts.org) o la cuenta de Twitter [@vmwarevexperts](https://twitter.com/vmwarevexperts) utlizando el hashtag [#VMwarePorvExperts](https://twitter.com/hashtag/vmwareporvexperts?src=hash)
+
+![sponsors](https://www.cenabit.com/wp-content/uploads/2019/03/sponsors.jpg)
 
 
 Un saludo!
