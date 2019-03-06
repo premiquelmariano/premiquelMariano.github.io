@@ -18,6 +18,8 @@ hidden: false
 comments: true
 ---
 
+«Hay tres cosas que cada persona debería hacer durante su vida: plantar un árbol, tener un hijo y escribir un libro»
+
 Hola a todos, queridos lectores. Hoy vengo con un post autobombo de un proyecto que tenemos entre manos y del cual me siento muy orgulloso.
 
 ![portada](https://www.vmwareporvexperts.org/wp-content/uploads/2019/02/libro-vmware-por-vexperts-478-677.jpg)
