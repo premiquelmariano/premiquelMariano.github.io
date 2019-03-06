@@ -1,5 +1,5 @@
 ---
-title: VMware por vExperts, el libro definitivo
+title: VMware por vExperts, el libro definitivo sobre virtualización
 date: '2019-03-07 00:00:00'
 layout: post
 image: /assets/images/posts/2019/03/front.png
@@ -18,9 +18,11 @@ hidden: false
 comments: true
 ---
 
-«Hay tres cosas que cada persona debería hacer durante su vida: plantar un árbol, tener un hijo y escribir un libro»
+***«Hay tres cosas que cada persona debería hacer durante su vida: plantar un árbol, tener un hijo y escribir un libro»***
 
-Hola a todos, queridos lectores. Hoy vengo con un post autobombo de un proyecto que tenemos entre manos y del cual me siento muy orgulloso.
+Esta famosa cita, conocida por todos, y que en breve voy a tener la suerte de poder cumplir...
+
+Hoy vengo con un post autobombo, a hablar de un proyecto que tenemos entre manos y del cual me siento muy orgulloso de formar farte.
 
 ![portada]({{ site.imagesposts2019 }}/03/portada.png)
 
@@ -41,7 +43,7 @@ Se trata del libro [#VMwareporvExperts](https://www.vmwareporvexperts.org), un l
 - Daniel Romero - [@drsromero](https://twitter.com/drsromero) - [https://www.dbigcloud.com/](https://www.dbigcloud.com/)
 - Federico Cinalli - [@FCinalliP](https://twitter.com/FCinalliP) - [https://federicocinalli.com](https://federicocinalli.com)
 
-Entre todos, hemos intentado diseñar un temario lo suficientemente amplio para abarcar casi todos los ámbitos relacionados con VMWare. Al final creo que ha salido un contenido de lo mas variado
+Entre todos, hemos intentado diseñar un temario lo suficientemente amplio para abarcar casi todos los ámbitos relacionados con VMware. Al final creo que ha salido un contenido de lo mas variado
 
 ### Contenido del libro VMware por vExperts
 
@@ -80,18 +82,23 @@ El proyecto en si, tiene un objetivo solidario y es que todo lo que consigamos r
 
 La idea del proyecto, es que el libro sea en formato digital y 100% de libre descarga, sin registros. Es por ello, que hemos diseñado un sistema de sponsorización para que todas las empresas que estén interesadas, puedan unirse al proyecto. Muchos de los partners del ecosistema VMWare ya se han unido y esperamos que en los próximos días puedan confirmar más empresas su participación. Desde aquí agradezco enormemente el esfuerzo que están haciendo todas ellas.
 
-### Publicación del libro
+### Sistema de sponsors
 
-Estamos ultimando los últimos detalles y esperamos tener todo listo para que la segunda mitad de Marzo 2019, el proyecto pueda ver la luz
+Hemos ideado un sistema de sponsorización basado en varios niveles que que, no solo los partners que giran alrededor del ecosistema VMware puedan participar, sinó que cualquier empresa interesada en el proyecto, pueda aportar su granito de arena.
 
-### ¿Qué necesitamos?
+![sponsors](https://www.cenabit.com/wp-content/uploads/2019/03/sponsors.jpg)
 
 Estamos en la recta final, el contenido ya está terminado y el libro está en fase de revisión. Lo que necesitamos ahora es dar la máxima visibilidad posible al proyecto y que llegue no solo a gente interesada en aprender VMware en Español, también a potenciales Sponsors que se puedan sumar a la causa.
 
 Quien quiera apoyarnos, nos podrá ayudar promocionando la [web](https://www.vmwareporvexperts.org) o la cuenta de Twitter [@vmwarevexperts](https://twitter.com/vmwarevexperts) utlizando el hashtag [#VMwarePorvExperts](https://twitter.com/hashtag/vmwareporvexperts?src=hash)
 
-![sponsors](https://www.cenabit.com/wp-content/uploads/2019/03/sponsors.jpg)
 
+### Publicación del libro
+
+Como comentaba, estamos ultimando los últimos detalles y esperamos tener todo listo para que la segunda mitad de Marzo 2019, el proyecto pueda ver la luz. Estate atento!!
+
+
+Gracias por leernos y compartir!
 
 Un saludo!
 
