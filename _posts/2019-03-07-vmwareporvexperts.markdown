@@ -22,7 +22,7 @@ comments: true
 
 Esta famosa cita, conocida por todos, y que en breve voy a tener la suerte de poder cumplir...
 
-Hoy vengo con un post autobombo, a hablar de un proyecto que tenemos entre manos y del cual me siento muy orgulloso de formar farte.
+Hoy vengo con un post autobombo, a hablar de un proyecto que tenemos entre manos y del cual me siento muy orgulloso de formar parte.
 
 ![portada]({{ site.imagesposts2019 }}/03/portada.png)
 
@@ -91,6 +91,16 @@ Hemos ideado un sistema de sponsorización basado en varios niveles que que, no 
 Estamos en la recta final, el contenido ya está terminado y el libro está en fase de revisión. Lo que necesitamos ahora es dar la máxima visibilidad posible al proyecto y que llegue no solo a gente interesada en aprender VMware en Español, también a potenciales Sponsors que se puedan sumar a la causa.
 
 Quien quiera apoyarnos, nos podrá ayudar promocionando la [web](https://www.vmwareporvexperts.org) o la cuenta de Twitter [@vmwarevexperts](https://twitter.com/vmwarevexperts) utlizando el hashtag [#VMwarePorvExperts](https://twitter.com/hashtag/vmwareporvexperts?src=hash)
+
+### El prólogo
+
+Siempre quisimos que el prólogo del libro fuese algo especial y que lo escribiera alguien de renombre.
+
+Al final tuvimos que conformarnos con [Duncan Epping](https://twitter.com/duncanyb). Quizás no le conozcais, sólo es CTO of the Storage & Availability BU en VMware, VCDX #007 y autor del blog TOP1 sobre virtualización [Yellow-Bricks](http://www.yellow-bricks.com/)
+
+#ModeIronicOFF
+
+Ahora en serio, es para nosotros todo un honor que Duncan haya aceptado nuestra propuesta mostrando su compromiso con la comunidad y con la parte solidaria del proyecto. Desde aquí mi mas sincero agradecimiento. Thx!!!
 
 
 ### Publicación del libro
