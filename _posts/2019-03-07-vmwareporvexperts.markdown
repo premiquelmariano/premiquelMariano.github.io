@@ -22,7 +22,7 @@ comments: true
 
 Hola a todos, queridos lectores. Hoy vengo con un post autobombo de un proyecto que tenemos entre manos y del cual me siento muy orgulloso.
 
-![portada](https://www.vmwareporvexperts.org/wp-content/uploads/2019/02/libro-vmware-por-vexperts-478-677.jpg)
+![portada]({{ site.imagesposts2019 }}/03/portada.jpg)
 
 Se trata del libro [#VMwareporvExperts](https://www.vmwareporvexperts.org), un libro técnico, de mas de 600 páginas, sobre todo el ecosistema VMWare y creado por 14 bloggers de habla hispana. Es un privilegio para mi, estar junto a tanto crack!!
 
