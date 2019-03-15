@@ -2,7 +2,7 @@
 title: Cómo averiguar las MAC address antiguas que ha tenido una VM
 date: '2017-09-22 00:00:00'
 layout: post
-image: /assets/images/posts/2019/01/PowerShell6-banner.jpg
+image: /assets/images/posts/2019/03/mac.png
 headerImage: true
 tag:
 - vexpert
@@ -17,9 +17,17 @@ comments: true
 permalink: /mac/
 ---
 
-https://communities.vmware.com/thread/308572
+Buenos dias a todos!
 
-Aunque las respuestas anteriores son básicamente correctas, me gustaría agregar que tendrá que buscar en sus archivos vmware * .log o en cualquier aparición de ethernetX.generatedAddress para encontrar las direcciones MAC más antiguas utilizadas por la máquina virtual.
+En el post de hoy, voy a explicar un caso real que me pasó en un cliente no hace mucho tiempo.
+
+Resulta que teniamos una VM con una aplicación que su sistema de licenciamiento estaba basado en la MAC address de la propia VM. Tras una jornada de pruebas de disaster recovery con SRM, resulta que a esta VM se le cambió la MAC y la aplicación dejó de funcionar.
+
+Necesitábamos averiguar cual era su MAC original para volver a ponersela, así que nos pusimos a buscar, y en este [hilo de vmware](https://communities.vmware.com/thread/308572) encontramos la solución.
+
+Esta información, la podremos encontrar en los logs de la propia VM si sabemos que buscar. Recordad que los logs de las VMs se guardan por defecto en la misma ubicación donde está la VM en el datastore. Os recopiendo pasaros por [este post](https://miquelmariano.github.io/2018/01/back-to-basics-1-ficherosVM) para refrescar los ficheros que forman una VM.
+
+En mi caso, estos eran los ficheros de la VM en cuestión:
 
 ```ssh
 [root@S004-ESXI-S1:/vmfs/volumes/5c80bc60-53ab9649-846b-0894ef579574/S101-Ficheros]
@@ -53,21 +61,17 @@ total 479677568
 -rw-r--r--    1 root     root       8789306 Mar  7 05:32 vmware-125.log
 -rw-------    1 root     root        333237 Mar  7 06:28 vmware-126.log
 -rw-------    1 root     root        312547 Mar  7 10:43 vmware.log
-[root@S004-ESXI-S1:/vmfs/volumes/5c80bc60-53ab9649-846b-0894ef579574/S101-Ficheros] cat vmware-12 |grep ethernetX.generatedAddress
-vmware-121.log  vmware-122.log  vmware-123.log  vmware-124.log  vmware-125.log  vmware-126.log
-[root@S004-ESXI-S1:/vmfs/volumes/5c80bc60-53ab9649-846b-0894ef579574/S101-Ficheros] cat vmware-12 |grep ethernetX.generatedAddress
-vmware-121.log  vmware-122.log  vmware-123.log  vmware-124.log  vmware-125.log  vmware-126.log
-[root@S004-ESXI-S1:/vmfs/volumes/5c80bc60-53ab9649-846b-0894ef579574/S101-Ficheros] cat vmware-126.log  |grep ethernetX.generatedAddress
-[root@S004-ESXI-S1:/vmfs/volumes/5c80bc60-53ab9649-846b-0894ef579574/S101-Ficheros]
-[root@S004-ESXI-S1:/vmfs/volumes/5c80bc60-53ab9649-846b-0894ef579574/S101-Ficheros]
-[root@S004-ESXI-S1:/vmfs/volumes/5c80bc60-53ab9649-846b-0894ef579574/S101-Ficheros]
-[root@S004-ESXI-S1:/vmfs/volumes/5c80bc60-53ab9649-846b-0894ef579574/S101-Ficheros]
-[root@S004-ESXI-S1:/vmfs/volumes/5c80bc60-53ab9649-846b-0894ef579574/S101-Ficheros] cat vmware-126.log  |grep generatedAddress
-[root@S004-ESXI-S1:/vmfs/volumes/5c80bc60-53ab9649-846b-0894ef579574/S101-Ficheros] cat vmware.log |grep generatedAddress
-2019-03-07T06:39:54.006Z| vmx| I125: DICT ethernet1.generatedAddress = "00:50:56:b4:dd:83"
-[root@S004-ESXI-S1:/vmfs/volumes/5c80bc60-53ab9649-846b-0894ef579574/S101-Ficheros]
-[root@S004-ESXI-S1:/vmfs/volumes/5c80bc60-53ab9649-846b-0894ef579574/S101-Ficheros]
-[root@S004-ESXI-S1:/vmfs/volumes/5c80bc60-53ab9649-846b-0894ef579574/S101-Ficheros]
+```
+
+En los ficheros de logs, hay que buscar la linea `ethernetX.generatedAddress` con el siguiente comando:
+
+```ssh
+cat vmware.log |grep ethernetX.generatedAddress
+```
+
+Y buscando por los diferentes ficheros de log, encontramos en que momento cambió la MAC address y cual era su original:
+
+```ssh
 [root@S004-ESXI-S1:/vmfs/volumes/5c80bc60-53ab9649-846b-0894ef579574/S101-Ficheros] cat vmware-126.log  |grep generatedAddress
 2019-03-07T05:41:20.183Z| vmx| I125: DICT ethernet1.generatedAddress = "00:50:56:b4:dd:83"
 [root@S004-ESXI-S1:/vmfs/volumes/5c80bc60-53ab9649-846b-0894ef579574/S101-Ficheros]
@@ -75,15 +79,7 @@ vmware-121.log  vmware-122.log  vmware-123.log  vmware-124.log  vmware-125.log  
 [root@S004-ESXI-S1:/vmfs/volumes/5c80bc60-53ab9649-846b-0894ef579574/S101-Ficheros] cat vmware-125.log  |grep generatedAddress
 2019-01-22T14:14:09.993Z| vmx| I125: DICT ethernet1.generatedAddress = "00:50:56:92:a1:f9"
 [root@S004-ESXI-S1:/vmfs/volumes/5c80bc60-53ab9649-846b-0894ef579574/S101-Ficheros]
-[root@S004-ESXI-S1:/vmfs/volumes/5c80bc60-53ab9649-846b-0894ef579574/S101-Ficheros]
-[root@S004-ESXI-S1:/vmfs/volumes/5c80bc60-53ab9649-846b-0894ef579574/S101-Ficheros] cat vmware-124.log  |grep generatedAddress
-2019-01-21T22:35:22.401Z| vmx| I125: DICT ethernet1.generatedAddress = "00:50:56:92:a1:f9"
-[root@S004-ESXI-S1:/vmfs/volumes/5c80bc60-53ab9649-846b-0894ef579574/S101-Ficheros]
-[root@S004-ESXI-S1:/vmfs/volumes/5c80bc60-53ab9649-846b-0894ef579574/S101-Ficheros]
-[root@S004-ESXI-S1:/vmfs/volumes/5c80bc60-53ab9649-846b-0894ef579574/S101-Ficheros]
 ```
-
-
 
 Espero que os sea de utilidad.
 
