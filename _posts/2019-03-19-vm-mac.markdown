@@ -1,6 +1,6 @@
 ---
 title: Cómo averiguar las MAC address antiguas que ha tenido una VM
-date: '2017-09-22 00:00:00'
+date: '2019-03-19 00:00:00'
 layout: post
 image: /assets/images/posts/2019/03/mac.png
 headerImage: true
@@ -14,7 +14,6 @@ author: miquelMariano
 description: Procedimiento sencillo de como averiguar que MAC address tenia una VM tras, ésta, haber cambiado...
 hidden: false
 comments: true
-permalink: /mac/
 ---
 
 Buenos dias a todos!
