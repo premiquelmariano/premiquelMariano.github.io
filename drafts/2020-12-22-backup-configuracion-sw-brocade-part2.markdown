@@ -21,6 +21,9 @@ http://systemadmin.es/2009/04/backup-de-la-configuracion-de-la-san-switch-brocad
 
 Buenos días a tod@s!!!
 
+![brocade1]({{ site.imagesposts2019 }}/04/brocade1.png)
+![brocade2]({{ site.imagesposts2019 }}/04/brocade2.png)
+
 ```ssh
 #!/usr/bin/expect
 
