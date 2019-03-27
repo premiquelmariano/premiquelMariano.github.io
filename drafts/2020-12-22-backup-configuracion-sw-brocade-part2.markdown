@@ -21,6 +21,11 @@ http://systemadmin.es/2009/04/backup-de-la-configuracion-de-la-san-switch-brocad
 
 Buenos días a tod@s!!!
 
+```
+35 10 * * * /home/backups_san_brocade/backup_san_brocade.sh admin password 10.245.58.19 root xorux4you 10.245.56.195 /home/backups_san_brocade/
+40 10 * * * /home/backups_san_brocade/backup_san_brocade.sh admin password 10.245.58.20 root xorux4you 10.245.56.195 /home/backups_san_brocade/
+```
+
 ![brocade1]({{ site.imagesposts2019 }}/04/brocade1.png)
 ![brocade2]({{ site.imagesposts2019 }}/04/brocade2.png)
 
