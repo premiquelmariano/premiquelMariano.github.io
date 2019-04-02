@@ -40,13 +40,10 @@ Para equipos que deban administrar sistemas, instalando siempre los mismos progr
 
 ![expect]({{ site.imagesposts2019 }}/04/expect.png)
 
-El siguiente script está basado en expect
+A continuacion teneis el script, que interpreta los parámetros que pregunta el SW para poder pasarselos correctamente:
 
 ```ssh
 #!/usr/bin/expect
-
-#USAGE
-#[root@xorux tmp]# ./backup_san_brocade.sh admin password 10.245.58.19 root xorux4you 10.245.56.195 /tmp/
 
 set swuser [lindex $argv 0]
 set swpasswd [lindex $argv 1]
@@ -88,9 +85,11 @@ send "exit\r"
 expect eof
 ```
 
+Ya para finalizar, sólo nos quedará configurar un cron para ejecutar periodicamente el script y pasándole por parámetro todos los argumentos necesarios:
+
 ```ssh
-35 10 * * * /home/backups_san_brocade/backup_san_brocade.sh admin password 10.245.58.19 root xorux4you 10.245.56.195 /home/backups_san_brocade/
-40 10 * * * /home/backups_san_brocade/backup_san_brocade.sh admin password 10.245.58.20 root xorux4you 10.245.56.195 /home/backups_san_brocade/
+35 10 * * * /home/backups_san_brocade/backup_san_brocade.sh admin password 10.245.58.19 root xorux4you 10.245.56.195 /home/backups_san_brocade/SWFC01.txt
+40 10 * * * /home/backups_san_brocade/backup_san_brocade.sh admin password 10.245.58.20 root xorux4you 10.245.56.195 /home/backups_san_brocade/SWFC02.txt
 ```
 
 ![brocade2]({{ site.imagesposts2019 }}/04/brocade2.png)
