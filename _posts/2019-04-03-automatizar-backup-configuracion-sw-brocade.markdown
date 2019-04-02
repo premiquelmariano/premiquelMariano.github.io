@@ -29,7 +29,7 @@ Para realizar un bakcup de un sw Brocade, ya lo vimos en su dia:
 
 El problema que tiene este sistema de backup, es que es interactivo, es decir, un administrador debe ir completando los parámetros que el propio switch va preguntando.
 
-Para saltarnos este handicap, tenemos el comando expect
+Para saltarnos este handicap, tenemos el comando expect:
 
 Expect es un programa que habla a otros programas a través de un script. Siguiendo este script, Expect sabe qué salida esperar del programa que ejecuta y responder en consecuencia y, si procede, es posible devolver el control al usuario o revocarlo.
 Resulta muy útil para automatizar tareas repetitivas en sistemas, tanto de forma local como remota, que requieren introducir información manualmente, más aún cuando trabajamos con instrucciones y protocolos como SSH, SCP, SFTP, TELNET o RLOGIN.  
@@ -90,8 +90,6 @@ Ya para finalizar, sólo nos quedará configurar un cron para ejecutar periodica
 35 10 * * * /home/backups_san_brocade/backup_san_brocade.sh admin password 10.245.58.19 root xorux4you 10.245.56.195 /home/backups_san_brocade/SWFC01.txt
 40 10 * * * /home/backups_san_brocade/backup_san_brocade.sh admin password 10.245.58.20 root xorux4you 10.245.56.195 /home/backups_san_brocade/SWFC02.txt
 ```
-
-![brocade2]({{ site.imagesposts2019 }}/04/brocade2.png)
 
 Espero que os sea de utilidad.
 Gracias por compartir
