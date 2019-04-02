@@ -38,6 +38,8 @@ De igual modo, los despliegues de aplicaciones o componentes en máquinas remota
 Para equipos que deban administrar sistemas, instalando siempre los mismos programas o modificando configuraciones a través de la terminal, también resulta una opción a tener en cuenta, ya que se puede desarrollar un script que lance todos esos procesos de una sola vez.
 {: .notice}
 
+![expect]({{ site.imagesposts2019 }}/04/expect.png)
+
 El siguiente script está basado en expect
 
 ```ssh
