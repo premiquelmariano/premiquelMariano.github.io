@@ -25,8 +25,6 @@ La solución es muy sencilla y se podrá realizar siempre y cuando la BBDD del v
 
 Este procedimiento nos servirá, por ejemplo, durante una migración de dominio, en el que el nombre de nuestro vCenter pasa a ser vCenter.dominio-A.local a vCenter.dominio-B.local
 
-En esta segunda entrada de la serie [back-to-basics](https://www.veeam.com/kb1905), me gustaria dar un repaso al licenciamiento vSphere.
-
 Lo primero que os quiero enseñar, es que desde la consola de Veeam B&R la conexión no se puede modificar (tampoco eliminar si hay jobs vinculados a esa conexión)
 
 ![veeam1]({{ site.imagesposts2019 }}/04/veeam1.png)
@@ -55,12 +53,7 @@ Tras estos pasos, será necesario cerrar y abrir de nuevo la consola GUI de Veea
 
 Espero que os sea de utilidad.
 
-Un saludo!
-
-
-
-
-
+Encontrareis la KB oficial de Veeam, [aquí](https://www.veeam.com/kb1905)
 
 Un saludo!
 
