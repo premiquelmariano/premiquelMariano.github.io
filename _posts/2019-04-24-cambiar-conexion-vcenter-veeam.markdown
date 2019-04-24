@@ -15,6 +15,7 @@ author: miquelMariano
 description: En el post de hoy veremos como de forma fácil podemos cambiar la cadena de conexión a nuestro vCenter desde el Veeam Backup...
 hidden: false
 comments: true
+permalink: /veeam/
 ---
 
 
