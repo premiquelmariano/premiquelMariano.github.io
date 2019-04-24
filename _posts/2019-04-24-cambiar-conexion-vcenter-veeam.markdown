@@ -15,22 +15,47 @@ author: miquelMariano
 description: En el post de hoy veremos como de forma fácil podemos cambiar la cadena de conexión a nuestro vCenter desde el Veeam Backup...
 hidden: false
 comments: true
-permalink: /veeam/
 ---
-
-
 
 Buenos dias a tod@as!!
 
-En esta segunda entrada de la serie [back-to-basics](https://www.veeam.com/kb1905), me gustaria dar un repaso al licenciamiento vSphere
+Posiblemente os hayais encontrado alguna vez la necesidad de cambiar la cadena de conexión de nuestro Veeam Backup a nuestro vCenter.
+
+La solución es muy sencilla y se podrá realizar siempre y cuando la BBDD del vCenter no se haya cambiado.
+
+Este procedimiento nos servirá, por ejemplo, durante una migración de dominio, en el que el nombre de nuestro vCenter pasa a ser vCenter.dominio-A.local a vCenter.dominio-B.local
+
+En esta segunda entrada de la serie [back-to-basics](https://www.veeam.com/kb1905), me gustaria dar un repaso al licenciamiento vSphere.
+
+Lo primero que os quiero enseñar, es que desde la consola de Veeam B&R la conexión no se puede modificar (tampoco eliminar si hay jobs vinculados a esa conexión)
 
 ![veeam1]({{ site.imagesposts2019 }}/04/veeam1.png)
 
+Para modificar la conexión sin corromper los jobs y evitar tener que recrearlos de nuevo, abriremos un Power Shell desde el propio Veeam
+
 ![veeam2]({{ site.imagesposts2019 }}/04/veeam2.png)
+
+Con el siguiente comando, crearemos una variable con el nombre actual de nuestro vCenter
+
+```powershell
+$Servers = Get-VBRServer -name "Current-VCName/IP"
+```
+
+Y una vez tengamos la variable, le modificaremos el nombre de la conexión
+
+```powershell
+$Servers.SetName("New-VCName/IP")
+```
 
 ![veeam3]({{ site.imagesposts2019 }}/04/veeam3.png)
 
+Tras estos pasos, será necesario cerrar y abrir de nuevo la consola GUI de Veeam Backup para ver que efectivamente los cambios han surjido efecto.
+
 ![veeam4]({{ site.imagesposts2019 }}/04/veeam4.png)
+
+Espero que os sea de utilidad.
+
+Un saludo!
 
 
 
