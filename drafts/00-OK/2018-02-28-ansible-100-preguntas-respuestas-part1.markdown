@@ -1,5 +1,5 @@
 ---
-title: Back-to-basics 7 - Contadores importantes de CPU
+title: Ansible basics. 100 preguntas y respuestas que quizás desconocias
 date: '2018-02-28 00:00:00'
 layout: post
 image: /assets/images/posts/2019/02/performance.jpg
