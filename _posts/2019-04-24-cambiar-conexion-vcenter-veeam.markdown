@@ -1,6 +1,6 @@
 ---
 title: Cambiar cadena conexión de Veeam Backup
-date: '2018-02-28 00:00:00'
+date: '2019-04-24 00:00:00'
 layout: post
 image: /assets/images/posts/2019/02/performance.jpg
 headerImage: true
