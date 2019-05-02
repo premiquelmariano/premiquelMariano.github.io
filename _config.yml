@@ -1,90 +1,85 @@
-# Welcome to Jekyll!
 #
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
+###################################
+# Site wide configuration
+####################################
 #
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+title: Miquel Mariano
+email:
+description: A simple and awesome blog theme powered by jekyll.
+url: https://premiquelMariano.github.io
+keywords: ["blog", "jekyll"]
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-lang: en-US
-title: Basically Basic
-email: dugan.nash@mailinator.com
-description: "Your new default Jekyll theme"
-baseurl: "/example"  # the subpath of your site, e.g. /blog
-url: ""  # the base hostname & protocol for your site, e.g. http://example.com
-author:
-  name: Dugan Nash
-  twitter: Towlette_Pettetucci
-  picture: https://api.adorable.io/avatars/285/johndoe.png
-twitter_username: Towlette_Pettetucci
-github_username: Towlette_Pettetucci
-logo: /assets/icons/basically-basic-logo-light.svg
-search: true
-search_full_content: true
-search_provider: algolia
-algolia:
-  application_id: QB6HVGBSBA
-  index_name: basically-basic
-  search_only_api_key: 9d5014e5bbc77372547bce778dfa5663
-  powered_by: # true (default), false
+#
+###################################
+# Jekyll configuration
+####################################
+#
+timezone:          Europe/Madrid
+markdown:          kramdown
+highlighter:       rouge
+excerpt_separator: <!--more-->
+permalink:         /:year/:month/:title
 
-# Liquid
-liquid:
-  error_mode: strict
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
 
-# Build settings
-markdown: kramdown
-theme: jekyll-theme-basically-basic
-plugins: # previously gems
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-paginate
-feed:
-  path: atom.xml
+#
 
-# Pagination - https://jekyllrb.com/docs/pagination/
-paginate: 10
-paginate_path: /page:num/
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+images: /assets/images
+vcap_images: https://premiquelMariano.github.io/assets/images/vcap
+imagesposts2016: https://premiquelMariano.github.io/assets/images/posts/2016
+imagesposts2017: https://premiquelMariano.github.io/assets/images/posts/2017
+imagesposts2018: https://premiquelMariano.github.io/assets/images/posts/2018
+imagesposts2019: https://premiquelMariano.github.io/assets/images/posts/2019
 
-# Collections
-collections:
-  recipes:
-    output: true
-    permalink: /:collection/:path/
 
-# Front Matter Defaults
-defaults:
-  # _posts
-  - scope:
-      path: "_posts"
-      type: posts
-    values:
-      layout: post
-      read_time: true
-  # _recipes
-  - scope:
-      path: "_recipes"
-      type: recipes
-    values:
-      layout: post
-      read_time: true
+###################################
+# Site Owner configuration
+####################################
+#
+owner:
+  name: Miquel Mariano
+  avatar: avatar1.jpg
+  job: "Blog personal"
+#  bio: "Consultor TI en Ncora | VCP5/6-DCV | vExpert   Apasionado de la montaña | Bike | Trail | Run | Padre de Aina"
+  bio1: Consultor TI en Ncora 
+  bio2: VCAP6-DCV Deploy | VCP5/6-DCV | vExpert x4
+  bio3: Apasionado de la montaña | Bike | Trail | Run
+  bio4: Padre de Aina ♥
+  email: miquel.mariano@outlook.com
+  disqus-shortname: miquelmariano
+  twitter: miquelMariano
+  facebook: #username
+  google:
+    plus: #username
+#    analytics: 'UA-89683320-1'
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
+  github: miquelmariano
+  gitlab: #username
+  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
+  linkedin: miquelmariano
+  skype: #username
+  xing: #username
+  instagram: #username
+  lastfm: #username
+  tumblr: #username
+  pinterest: #username
+  foursquare: #username
+  steam: #username
+  dribbble: #username
+  youtube: ncoratv
+  soundcloud: #username
+  weibo: #username
+  flickr: #username
+  500px: #username
+  codepen: #username
+  reddit: #username
+  telegram: miquelmariano
