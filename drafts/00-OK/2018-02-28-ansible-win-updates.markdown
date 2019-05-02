@@ -1,8 +1,8 @@
 ---
-title: Back-to-basics 7 - Contadores importantes de CPU
+title: Actualizaciones windows
 date: '2018-02-28 00:00:00'
 layout: post
-image: /assets/images/posts/2019/02/performance.jpg
+image: /assets/images/posts/2019/05/ansible-win.png
 headerImage: true
 tag:
 - vmware
