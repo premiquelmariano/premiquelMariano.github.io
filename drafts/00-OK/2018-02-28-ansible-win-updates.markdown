@@ -5,24 +5,27 @@ layout: post
 image: /assets/images/posts/2019/05/ansible-win.png
 headerImage: true
 tag:
-- vmware
-- vsphere
-- vexpert
+- automation
 - devops
-- backtobasics
+- ansible
+- windows
+- updates
 category: blog
 author: miquelMariano
-description: En este post vamos a ver los contadores mas importantes de CPU que nos podemos encontrar en cada VM de nuestro entorno.
+description: En el post de os os enseñaré un interesante playbook que nos ayudará a comprobar de manera fácil el estado de las actualizaciones de nuestros servidores windows...
 hidden: false
 comments: true
 permalink: /win-updates/
 ---
 
-https://dzone.com/articles/getting-started-with-ansible-tower-hands-on
-
 Buenos dias a tod@as!!
 
-En esta segunda entrada de la serie [back-to-basics](https://miquelmariano.github.io/tags/#backtobasics), me gustaria dar un repaso al licenciamiento vSphere
+Hace ya tiempo, [en este post](https://miquelmariano.github.io/2017/05/ansible-windows-managed-nodes), vimos como configurar nuestros servidores windows para ser manejados con Ansible.
+
+Hoy os voy a compartir un playbook que he ideado para poder comprobar fácilmente el estado de las actualizaciones de windows en nuestros servidores windows.
+
+```yaml
+```
 
 
 
