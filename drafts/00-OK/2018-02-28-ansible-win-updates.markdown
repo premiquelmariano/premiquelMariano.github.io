@@ -59,6 +59,8 @@ formacion-dc02 | SUCCESS => {
 [root@miquel-ansible01 /etc/ansible]#
 ```
 
+Y aqui va el código del playbook:
+
 ```yaml
 ---
 ##EXAMPLE:  ansible-playbook playbooks/win_update.yml -i inventory/servers -e "servers=dc install_updates=false"
