@@ -15,6 +15,8 @@ author: miquelMariano
 description: En el post de os os enseñaré un interesante playbook que nos ayudará a comprobar de manera fácil el estado de las actualizaciones de nuestros servidores windows...
 hidden: false
 comments: true
+o: "{{"
+c: "}}"
 ---
 
 Buenos dias a tod@as!!
@@ -67,7 +69,7 @@ Y aqui va el código del playbook:
 ##############################################################################
 ## Play 1   Search-only, return list of found updates (if any).
 ##############################################################################
-- hosts: "{{ servers }}"
+- hosts: "{{ page.o }} servers {{ page.c }}"
   tasks:
     - name: Search-only, return list of found updates (if any).
       win_updates:
@@ -97,14 +99,14 @@ Y aqui va el código del playbook:
         msg: Host "{{ hostvars[item].inventory_hostname }}" >> "{{ hostvars[item].list_of_found_updates.found_update_count }}" updates found.
 # "{{ hostvars[item].list_of_found_updates.results[0].found_update_count }}" "{{ hostvars[item].list_of_found_updates.results[0].item }}" "{{ hostvars[item].list_of_found_updates.results[1].found_update_count }}" "{{ hostvars[item].list_of_found_updates.results[1].item }}" "{{ hostvars[item].list_of_found_updates.results[2].found_update_count }}" "{{ hostvars[item].list_of_found_updates.results[2].item }}"
       with_items:
-        -  "{{ groups[servers] }}"
+        -  "{{ page.o }} groups[servers] {{ page.c }}"
       ignore_errors: yes
 
 
 ##############################################################################
 #### Play 3    Install all security, critical, and rollup updates when install_updates is true
 ###############################################################################
-- hosts: "{{ servers }}"
+- hosts: "{{ page.o }} servers {{ page.c }}"
   tasks:
     - name: Install all security, critical, and rollup updates
       win_updates:
