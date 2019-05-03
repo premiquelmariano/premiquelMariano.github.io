@@ -1,5 +1,5 @@
 ---
-title: Actualizaciones windows
+title: Comprobar actualizaciones de windows con Ansible
 date: '2018-02-28 00:00:00'
 layout: post
 image: /assets/images/posts/2019/05/ansible-win.png
@@ -103,7 +103,7 @@ formacion-dc02 | SUCCESS => {
 
 
 ##############################################################################
-#### Play 3    Install all security, critical, and rollup updates
+#### Play 3    Install all security, critical, and rollup updates when install_updates is true
 ###############################################################################
 - hosts: "{{ servers }}"
   tasks:
@@ -120,8 +120,11 @@ formacion-dc02 | SUCCESS => {
 
 La salida será algo similar a esto:
 
+Prestar especial atencion en las variables pasadas a la hora de ejecutar el playbook. Definir la variable install_updates a true provocará que se instalen los parches encontrados.
+{: .notice}
+
 ```
-[root@ansible01 /etc/ansible]# ansible-playbook playbooks/win_update.yml -i inventory/servers -e 
+[root@ansible01 /etc/ansible]# ansible-playbook playbooks/win_update.yml -i inventory/servers -e  "servers=dc install_updates=false"
 
 PLAY [dc] ***************************************************************************************************************************************************************************
 
