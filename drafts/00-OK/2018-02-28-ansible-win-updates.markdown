@@ -41,7 +41,6 @@ ansible_ssh_pass: my_pass
 ansible_ssh_port: 5986
 ansible_connection: winrm
 ansible_winrm_server_cert_validation: ignore
-
 ```
 
 Antes de ejecutar cualquier playbook, es conveniente verificar que la conectividad con nuestros servidores está correcta:
@@ -58,7 +57,6 @@ formacion-dc02 | SUCCESS => {
     "ping": "pong"
 }
 [root@miquel-ansible01 /etc/ansible]#
-
 ```
 
 ```yaml
