@@ -183,7 +183,7 @@ localhost                  : ok=2    changed=1    unreachable=0    failed=0
 
 [root@ansible01 /etc/ansible]#
 ```
-
+![ansible-telegram]({{ site.imagesposts2019 }}/05/ansible-telegram.png)
 
 Un saludo!
 
