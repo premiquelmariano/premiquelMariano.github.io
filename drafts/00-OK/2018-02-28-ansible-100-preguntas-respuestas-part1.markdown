@@ -32,13 +32,13 @@ http://aptronnoida.in/iqa/best-ansible-interview-questions-answers/
 https://smconsultant.com/ansible-interview-question-and-answers/
 
 
-## 1. Qué es Ansible?
+## 1. ¿Qué es Ansible?
 
-Answer :
+Ansible es una herramienta que nos permite llevar un control sobre la gestión de la configuración y su automatización. Está escrito en Python.
 
-Ansible is a software tool to deploy application using ssh without sny downtime.It is also used to manage and configure software applications. Ansible is developed by Python language.
+Su web obicial es [www.ansible.com](https://www.ansible.com/)
 
-Question 2. What Are The Advantages Of Ansible?
+## 2. ¿Cuales son las ventajas de Ansible?
 
 Answer :
 
