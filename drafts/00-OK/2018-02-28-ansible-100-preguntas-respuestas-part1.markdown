@@ -1,5 +1,5 @@
 ---
-title: Ansible basics. 100 preguntas y respuestas que quizás desconocias
+title: 100 preguntas y respuestas sobre Ansible que quizás desconoces
 date: '2018-02-28 00:00:00'
 layout: post
 image: /assets/images/posts/2019/02/ansible-logo.png
