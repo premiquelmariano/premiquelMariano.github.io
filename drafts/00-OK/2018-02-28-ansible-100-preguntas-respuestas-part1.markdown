@@ -53,6 +53,21 @@ Ansible es una herramienta que nos permite llevar un control sobre la gestión d
 
 Su web obicial es [www.ansible.com](https://www.ansible.com/)
 
+## x. ¿Por qué automatizar?
+
+- Por la disminución y menor posibilidad de errores
+Siento ser tan directo y deciros esto, pero cometéis errores, cometemos errores. Todos lo hacemos Continuamente, los humanos, malinterpretamos las cosas, leemos mal, nos olvidamos de algunas tareas, hacemos las tareas en el orden equivocado...Eso es así, y es por eso que la automatización nos permite salirnos de la ecuación y dejar que los sistemas hagan por si solos.
+- Por el ahorro de tiempo
+Todo lleva tiempo: iniciar sesión en consolas, buscar configuraciones, conectarse a servidores, escribir comandos. Especialmente cuando, según el punto anterior, arruinamos algo y tenemos que arreglarlo. Una vez más, simplemente dejemos que los sistemas lo hagan. Dediquemos nuestro tiempo a innovar, a pensar cómo automatizar mas cosas.
+- Por la auto documentación
+En nuestro día a día, estamos acostumbrados a tratar con infinidad de documentación de instalación y configuración de nuestros sistemas, tareas y operaciones. Esta documentación requiere de un gran esfuerzo para mantenerla actualizada e inevitablemente en muchos casos se descuida y entra en desuso. Infrastructure as Code / Programmable Infrastructure son conceptos que nos permiten a través de código tener una visión clara tanto de la configuración como de la implementación de un sistema o tarea con sus pasos a seguir bien definidos. Además, en muchos casos, la configuración inicial y el ciclo de vida de un sistema se automatiza. De esta forma siempre tenemos el código con la configuración actual sin necesidad de mantener documentación paralela.
+- Por la reproducibilidad
+Reproducibilidad significa que tenemos que ser capaces de reproducir o recrear nuestro sistema de manera fácil y rápida.
+Se nos puede dar el caso que queramos un entorno paralelo de pruebas para probar nuestros desarrollos o poniéndonos en lo peor, podríamos perder todo nuestro sistema.
+Tenemos un servicio X que funciona perfectamente, pero el día menos pensado tenemos una contingencia grave y se pierde todo.
+Tenemos los datos bien salvaguardados en copias de seguridad, pero hay que montar de nuevo toda la infraestructura y la persona que en su día se encargó ya no está en la empresa y sólo dejo un documento básico de instalación. Seguimos ese documento al pie de la letra, pero no hay manera de que eso funcione L
+Con la automatización y la Infrastructure as Code que comentábamos antes eso es posible, ya que tenemos el código con la última configuración de ese sistema y seriamos capaces de repetir esas configuraciones tantas veces cómo nos sea necesario.
+
 ## 2. ¿Cuales son las ventajas de Ansible?
 
 - Es agent-less, es decir, no requiere de instalación de agentes en los servidores a controlar
