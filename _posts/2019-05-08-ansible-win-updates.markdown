@@ -1,6 +1,6 @@
 ---
 title: Comprobar actualizaciones de windows con Ansible
-date: '2018-02-28 00:00:00'
+date: '2019-05-08 00:00:00'
 layout: post
 image: /assets/images/posts/2019/05/ansible-win.png
 headerImage: true
@@ -15,7 +15,6 @@ author: miquelMariano
 description: En el post de os os enseñaré un interesante playbook que nos ayudará a comprobar de manera fácil el estado de las actualizaciones de nuestros servidores windows...
 hidden: false
 comments: true
-permalink: /win-updates/
 ---
 
 Buenos dias a tod@as!!
@@ -188,6 +187,7 @@ localhost                  : ok=2    changed=1    unreachable=0    failed=0
 ```
 
 Como habeis podido observar en el play 3, he añadido una parte de notificaciones con telegram, que quedaria de la siguiente manera.
+
 ![ansible-telegram]({{ site.imagesposts2019 }}/05/ansible-telegram.png)
 
 
