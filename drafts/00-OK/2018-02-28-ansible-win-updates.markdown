@@ -24,7 +24,98 @@ Hace ya tiempo, [en este post](https://miquelmariano.github.io/2017/05/ansible-w
 
 Hoy os voy a compartir un playbook que he ideado para poder comprobar fácilmente el estado de las actualizaciones de windows en nuestros servidores windows.
 
+En este ejemplo, en mi fichero de inventario he añadido los servidores que quiero comprobar:
+
+```
+[dc]
+formacion-dc01
+formacion-dc02
+```
+
+También es importante añadir las credenciales, tal como explicaba en el [post anterior](https://miquelmariano.github.io/2017/05/ansible-windows-managed-nodes)
+
+```
+[root@ansible01 /etc/ansible]# cat inventory/group_vars/dc.yml
+ansible_ssh_user: administrador
+ansible_ssh_pass: my_pass
+ansible_ssh_port: 5986
+ansible_connection: winrm
+ansible_winrm_server_cert_validation: ignore
+
+```
+
+Antes de ejecutar cualquier playbook, es conveniente verificar que la conectividad con nuestros servidores está correcta:
+
+```
+[root@ansible01 /etc/ansible]# ansible -m win_ping -i inventory/servers dc
+
+formacion-dc01 | SUCCESS => {
+    "changed": false,
+    "ping": "pong"
+}
+formacion-dc02 | SUCCESS => {
+    "changed": false,
+    "ping": "pong"
+}
+[root@miquel-ansible01 /etc/ansible]#
+
+```
+
 ```yaml
+---
+##EXAMPLE:  ansible-playbook playbooks/win_update.yml -i inventory/servers -e "servers=dc install_updates=false"
+
+##############################################################################
+## Play 1   Search-only, return list of found updates (if any).
+##############################################################################
+- hosts: "{{ servers }}"
+  tasks:
+    - name: Search-only, return list of found updates (if any).
+      win_updates:
+        category_names:
+          - SecurityUpdates
+          - CriticalUpdates
+          - UpdateRollups
+        state: searched
+      register: list_of_found_updates
+
+    - debug:
+        var: list_of_found_updates
+
+#    - debug:
+#        var: groups[ "{{ servers }}" ]
+
+##############################################################################
+### Play 2   Send info with telegram
+##############################################################################
+- hosts: localhost
+  connection: local
+  tasks:
+    - name: Send telegram notification
+      telegram:
+        token: 304017237:AAHpKXZBaw_wOF3H-ryhWl3F3wqIVP_Zqf8
+        chat_id: 6343788
+        msg: Host "{{ hostvars[item].inventory_hostname }}" >> "{{ hostvars[item].list_of_found_updates.found_update_count }}" found updates.
+# "{{ hostvars[item].list_of_found_updates.results[0].found_update_count }}" "{{ hostvars[item].list_of_found_updates.results[0].item }}" "{{ hostvars[item].list_of_found_updates.results[1].found_update_count }}" "{{ hostvars[item].list_of_found_updates.results[1].item }}" "{{ hostvars[item].list_of_found_updates.results[2].found_update_count }}" "{{ hostvars[item].list_of_found_updates.results[2].item }}"
+      with_items:
+        -  "{{ groups[servers] }}"
+      ignore_errors: yes
+
+
+##############################################################################
+#### Play 3    Install all security, critical, and rollup updates
+###############################################################################
+- hosts: "{{ servers }}"
+  tasks:
+    - name: Install all security, critical, and rollup updates
+      win_updates:
+        category_names:
+          - SecurityUpdates
+          - CriticalUpdates
+          - UpdateRollups
+        reboot: yes
+      when:
+          - install_updates == true
 ```
 
 
