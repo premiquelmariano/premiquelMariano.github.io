@@ -83,9 +83,6 @@ Y aqui va el código del playbook:
     - debug:
         var: list_of_found_updates
 
-#    - debug:
-#        var: groups[ "{{ servers }}" ]
-
 ##############################################################################
 ### Play 2   Send info with telegram
 ##############################################################################
