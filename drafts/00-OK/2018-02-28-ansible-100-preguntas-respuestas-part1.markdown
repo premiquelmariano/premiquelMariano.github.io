@@ -36,7 +36,7 @@ Hace ya tiempo que tengo en mente escribir esta serie de posts, y es que cada ve
 
 La idea es publicar una serie de posts en donde intentaré resolver de forma clara y directa las preguntas que os puesan venir a la cabeza sobre el mundo Ansible, ahi va, espero os guste:
 
-- [100 preguntas y respuestas sobre Ansible que quizás desconoces. (Parte1)](https://miquelmariano.github.io)
+- [Parte1 (usted está aquí :stuck_out_tongue_winking_eye:)](https://miquelmariano.github.io)
 - [part1](https://miquelmariano.github.io)
 - [part1](https://miquelmariano.github.io)
 - [part1](https://miquelmariano.github.io)
