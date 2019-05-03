@@ -95,7 +95,7 @@ formacion-dc02 | SUCCESS => {
       telegram:
         token: 304017237:AAHpKXZBaw_wOF3H-ryhWl3F3wqIVP_Zqf8
         chat_id: 6343788
-        msg: Host "{{ hostvars[item].inventory_hostname }}" >> "{{ hostvars[item].list_of_found_updates.found_update_count }}" found updates.
+        msg: Host "{{ hostvars[item].inventory_hostname }}" >> "{{ hostvars[item].list_of_found_updates.found_update_count }}" updates found.
 # "{{ hostvars[item].list_of_found_updates.results[0].found_update_count }}" "{{ hostvars[item].list_of_found_updates.results[0].item }}" "{{ hostvars[item].list_of_found_updates.results[1].found_update_count }}" "{{ hostvars[item].list_of_found_updates.results[1].item }}" "{{ hostvars[item].list_of_found_updates.results[2].found_update_count }}" "{{ hostvars[item].list_of_found_updates.results[2].item }}"
       with_items:
         -  "{{ groups[servers] }}"
@@ -118,6 +118,71 @@ formacion-dc02 | SUCCESS => {
           - install_updates == true
 ```
 
+La salida será algo similar a esto:
+
+```
+[root@ansible01 /etc/ansible]# ansible-playbook playbooks/win_update.yml -i inventory/servers -e 
+
+PLAY [dc] ***************************************************************************************************************************************************************************
+
+TASK [Gathering Facts] **************************************************************************************************************************************************************
+ok: [formacion-dc01]
+ok: [formacion-dc02]
+
+TASK [Search-only, return list of found updates (if any).] **************************************************************************************************************************
+ok: [formacion-dc01]
+ok: [formacion-dc02]
+
+TASK [debug] ************************************************************************************************************************************************************************
+ok: [formacion-dc01] => {
+    "list_of_found_updates": {
+        "changed": false,
+        "failed": false,
+        "filtered_updates": {},
+        "found_update_count": 0,
+        "installed_update_count": 0,
+        "reboot_required": false,
+        "updates": {}
+    }
+}
+ok: [formacion-dc02] => {
+    "list_of_found_updates": {
+        "changed": false,
+        "failed": false,
+        "filtered_updates": {},
+        "found_update_count": 0,
+        "installed_update_count": 0,
+        "reboot_required": false,
+        "updates": {}
+    }
+}
+
+PLAY [localhost] ********************************************************************************************************************************************************************
+
+TASK [Gathering Facts] **************************************************************************************************************************************************************
+ok: [localhost]
+
+TASK [Send telegram notification] ***************************************************************************************************************************************************
+changed: [localhost] => (item=formacion-dc01)
+changed: [localhost] => (item=formacion-dc02)
+
+PLAY [dc] ***************************************************************************************************************************************************************************
+
+TASK [Gathering Facts] **************************************************************************************************************************************************************
+ok: [formacion-dc02]
+ok: [formacion-dc01]
+
+TASK [Install all security, critical, and rollup updates] ***************************************************************************************************************************
+skipping: [formacion-dc01]
+skipping: [formacion-dc02]
+
+PLAY RECAP **************************************************************************************************************************************************************************
+formacion-dc01             : ok=4    changed=0    unreachable=0    failed=0
+formacion-dc02             : ok=4    changed=0    unreachable=0    failed=0
+localhost                  : ok=2    changed=1    unreachable=0    failed=0
+
+[root@ansible01 /etc/ansible]#
+```
 
 
 Un saludo!
