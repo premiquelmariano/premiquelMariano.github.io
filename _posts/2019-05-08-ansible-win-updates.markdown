@@ -96,8 +96,7 @@ Y aqui va el código del playbook:
       telegram:
         token: 304017237:AAHpKXZBaw_wOF3H-ryhWl3F3wqIVP_Zqf8
         chat_id: 6343788
-        msg: Host "{{ hostvars[item].inventory_hostname }}" >> "{{ hostvars[item].list_of_found_updates.found_update_count }}" updates found.
-# "{{ hostvars[item].list_of_found_updates.results[0].found_update_count }}" "{{ hostvars[item].list_of_found_updates.results[0].item }}" "{{ hostvars[item].list_of_found_updates.results[1].found_update_count }}" "{{ hostvars[item].list_of_found_updates.results[1].item }}" "{{ hostvars[item].list_of_found_updates.results[2].found_update_count }}" "{{ hostvars[item].list_of_found_updates.results[2].item }}"
+        msg: Host "{{ page.o }} hostvars[item].inventory_hostname {{ page.c }}" >> "{{ page.o }} hostvars[item].list_of_found_updates.found_update_count {{ page.c }}" updates found.
       with_items:
         -  "{{ page.o }} groups[servers] {{ page.c }}"
       ignore_errors: yes
