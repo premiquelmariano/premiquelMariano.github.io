@@ -1,36 +1,59 @@
-<div class="sidebar">
-  <div class="container sidebar-sticky">
-    <div class="sidebar-about">
-      <h1>
-        <a href="{{ site.baseurl }}">
-          {{ site.title }}
-        </a>
-      </h1>
-      <p class="lead">{{ site.description }}</p>
-    </div>
+{% if page.author %} {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.owner %} {% endif %}
 
-    <nav class="sidebar-nav">
-      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
+<div class="cover-card table-cell table-middle">
+  {% if author.avatar %}
+  <a href="{{ site.url }}/">
+    <img src="{{ site.url }}{{ site.images }}/{{ author.avatar }}" alt="" class="avatar">
+  </a>
+  {% endif %}
+  <a href="{{ site.url }}/" class="author_name">{{ author.name }}</a>
+  <span class="author_job">{{ author.job }}</span>
+  <!--
+  <span class="author_bio mbm">{{ author.bio }}</span>
+  -->
+  <div id="typePad">
+        <p class="sentence">{{ author.bio1 }}</p>
+        <p class="sentence">{{ author.bio2 }}</p>
+        <p class="sentence">{{ author.bio3 }}</p>
+        <p class="sentence">{{ author.bio4 }}</p>
+        </div>
+  <nav class="nav">
+    <ul class="nav-list">
+      <li class="nav-item">
+        <a href="{{ site.url }}/">home</a>
+      </li>
+      <li class="nav-item">
+        <a href="{{ site.url }}/archive/">blog</a>
+      </li>
+      <li class="nav-item">
+        <a href="{{ site.url }}/resume/">sobre mi</a>
+      </li>
+      <li class="nav-item">
+        <a href="{{ site.url }}/tags/">tags</a>
+      </li>
+      <li class="nav-item">
+        <a href="{{ site.url }}/vcap-experience/">VCAP6-DCV</a>
+      </li>
+      <li class="nav-item">
+        <link rel="stylesheet" href="{{ site.url }}/assets/supersearch/super-search.css">
 
-      {% comment %}
-        The code below dynamically generates a sidebar nav of pages with
-        `layout: page` in the front-matter. See readme for usage.
-      {% endcomment %}
+                 <a href="javascript:void(0)" title="or press 'ESC' to search" onclick="toggleSearch()"      class="search-btn">
+                   search
+                  </a>
 
-      {% assign pages_list = site.pages %}
-      {% for node in pages_list %}
-        {% if node.title != null %}
-          {% if node.layout == "page" %}
-            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
-          {% endif %}
-        {% endif %}
-      {% endfor %}
+         <div class="super-search" id="js-super-search">
+          <input type="text" placeholder="Type here to search" class="super-search__input" id="js-super-search__input">
+          <ul class="super-search__results" id="js-super-search__results"></ul>
+         </div>
 
-      <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a>
-      <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
-      <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
-    </nav>
-
-    <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
-  </div>
+         <script src="{{ site.url }}/assets/supersearch/super-search.js"></script>
+         <script>superSearch({searchFile: '{{ site.url }}/feed.xml'});
+         </script>
+      </li>
+    </ul>
+  </nav>
+  {% include social-links.html %}
 </div>
+
+<script type="text/javascript" src="https://rawgit.com/ndaidong/typewritter/master/dist/typewritter-effect.min.js"></script>
+<script type="text/javascript" src="/js/typewritter.js"></script>
