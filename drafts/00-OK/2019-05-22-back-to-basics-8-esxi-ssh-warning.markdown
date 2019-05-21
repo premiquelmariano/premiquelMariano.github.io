@@ -2,7 +2,7 @@
 title: Back-to-basics 8 - Eliminar warning esxi al habilitar SSH
 date: '2018-02-28 00:00:00'
 layout: post
-image: /assets/images/posts/2018/03/logs.png
+image: /assets/images/posts/2019/05/ssh-logo.png
 headerImage: true
 tag:
 - vmware
