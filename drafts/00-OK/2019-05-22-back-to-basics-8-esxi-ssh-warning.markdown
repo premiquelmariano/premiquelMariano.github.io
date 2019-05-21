@@ -17,7 +17,7 @@ hidden: false
 permalink: /basics11/
 ---
 
-Buenos dias a tod@as!!
+Buenos días a tod@as!!
 
 Siguiendo con la serie [back-to-basics](https://miquelmariano.github.io/tags/#backtobasics), en el post de hoy veremos como eliminar ese molesto warning que se activa al habilitar SSH a nuestros ESXi.
 
@@ -33,7 +33,7 @@ Tenemos que editar la variable `UserVars.SuppressShellWarning` que por defecto e
 
 ![ssh-warning-3]({{ site.imagesposts2019 }}/05/ssh-warning-3.png)
 
-Una vez guardemos los cambios, automaticamente el warning desaparecerá:
+Una vez guardemos los cambios, automáticamente el warning desaparecerá:
 
 ![ssh-warning-4]({{ site.imagesposts2019 }}/05/ssh-warning-4.png)
 
