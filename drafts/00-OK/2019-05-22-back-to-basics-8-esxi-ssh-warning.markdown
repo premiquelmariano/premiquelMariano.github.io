@@ -30,6 +30,10 @@ Siguiendo con la serie [back-to-basics](https://miquelmariano.github.io/tags/#ba
 ![ssh-warning-4]({{ site.imagesposts2019 }}/05/ssh-warning-4.png)
 
 
+Aprovecho también la ocación, para recordaros que hace ya tiempo, publiqué un post de [cómo manejar ESXi mediante Ansible](https://miquelmariano.github.io/2017/07/esxi-configuration-with-ansible) y que en él explicaba como configurar SSH en los ESXi mediante [este role de galaxy](https://galaxy.ansible.com/miquelMariano/ESXi_ssh)
+
+Espero que os sirva.
+
 Un saludo!
 
 Miquel.
