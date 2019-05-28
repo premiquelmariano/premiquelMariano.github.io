@@ -26,7 +26,7 @@ En el post de hoy, voy a dejaros un pequeño playbook que estoy utilizando para 
 
 Lo primero que necesitaremos es disponer del fichero de inventario correspondiente, con todas las IPs y variables que necesitaremos mas adelante en el playbook.
 
-###Inventario
+### Inventario
 
 ```
 all:vars]
@@ -76,7 +76,7 @@ CPD3-N5K02 host=10.69.69.121
 CONTROL01 host=10.30.30.181
 ```
 
-###¿Qué son estas variables?
+### ¿Qué son estas variables?
 
 En este inventario, tendremos que definir las siguientes variables:
 
@@ -93,7 +93,7 @@ En este inventario, tendremos que definir las siguientes variables:
 En mi caso, el fichero de inventario se llama `cisco` (lo sé, soy muy original..)
 {: .notice}
 
-###El playbook
+### El playbook
 
 A continuacion os paso el playbook `cisco_backup.yml` e intento explicar que hace cada play:
 
@@ -267,7 +267,7 @@ A continuacion os paso el playbook `cisco_backup.yml` e intento explicar que hac
         - cisco_os == 'nxos'
 ```
 
-¿Qué hace cada play?
+### ¿Qué hace cada play?
 
 - `Create root directory if don't exist`  Nos creará la carpeta que utilizaremos como raíz para guardar los backups. La variable estará definida en el fichero de inventario.
 
@@ -287,19 +287,19 @@ A continuacion os paso el playbook `cisco_backup.yml` e intento explicar que hac
 
 - `Save NXOS command output on destination file` Lo mismo que hemos explicado para IOS
 
-###¿Y ahora, cómo lo ejecuto?
+### ¿Y ahora, cómo lo ejecuto?
 
 Para ejecutar este playbook, lo haremos de la siguiente manera:
 
 bla bla bla
 
-###¿Y si lo quiero programar periodicamente?
+### ¿Y si lo quiero programar periodicamente?
 
 Y si queremos programarlo, lo añadiremos al cron de nuestro usuario tal que así:
 
 bla bla bla
 
-###Los resultados
+### Los resultados
 
 bla bla bla
 
