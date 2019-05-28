@@ -16,6 +16,8 @@ description: Ansible playbook para automatizar el backup de nuestros switches de
 hidden: false
 comments: true
 permalink: /cisco/
+o: "{{"
+c: "}}"
 ---
 
 Buenos días a tod@as!!
@@ -24,25 +26,25 @@ Buenos días a tod@as!!
 ```yaml
 ---
 
-- hosts: "{{ sw }}"
+- hosts: "{{ page.o }} sw {{ page.c }}"
   gather_facts: no
   ignore_errors: yes
   serial: 1
   vars:
     creds:
-      host: "{{ host }}"
-      username: "{{ username }}"
-      password: "{{ password }}"
+      host: "{{ page.o }} host {{ page.c }}"
+      username: "{{ page.o }} username {{ page.c }}"
+      password: "{{ page.o }} password {{ page.c }}"
   tasks:
     - name: Create root directory if don't exist
       file:
-        path: "{{ backup_folder }}"
+        path: "{{ page.o }} backup_folder {{ page.c }}"
         state: directory
         mode: 0755
     
     - name: Create individual device folder if don't exist
       file:
-        path: "{{ backup_folder }}{{ inventory_hostname }}"
+        path: "{{ page.o }} backup_folder {{ page.c }}{{ page.o }} inventory_hostname {{ page.o }}"
         state: directory
         mode: 0755
 
@@ -52,8 +54,8 @@ Buenos días a tod@as!!
 
     - name: Execute IOS commands
       ios_command:
-        provider: "{{ creds }}"
-        commands: "{{ item  }}"
+        provider: "{{ page.o }} creds {{ page.c }}"
+        commands: "{{ page.o }} item  {{ page.c }}"
       register: commands_output
       with_items:
         - show run
@@ -70,7 +72,7 @@ Buenos días a tod@as!!
     
     - name: Create IOS command folder if don't exist
       file:
-        path: "{{ backup_folder }}{{ inventory_hostname }}/{{ commands_output.results[item].item }}"
+        path: "{{ page.o }} backup_folder {{ page.c }}{{ page.o }} inventory_hostname {{ page.c }}/{{ page.o }} commands_output.results[item].item {{ page.o }}"
         state: directory
         mode: 0755
       with_items:
@@ -88,8 +90,8 @@ Buenos días a tod@as!!
     
     - name: Save IOS command output on destination file
       copy:
-        content: "{{ commands_output.results[item].stdout[0] }}"
-        dest:  "{{ backup_folder }}{{ inventory_hostname }}/{{ commands_output.results[item].item }}/{{ inventory_hostname }}_{{ commands_output.results[item].item }}_{{ timestamp.stdout }}.txt"
+        content: "{{ page.o }} commands_output.results[item].stdout[0] {{ page.c }}"
+        dest:  "{{ page.o }} backup_folder {{ page.c }}{{ page.o }} inventory_hostname {{ page.c }}/{{ page.o }} commands_output.results[item].item {{ page.c }}/{{ page.o }} inventory_hostname {{ page.c }}_{{ page.o }} commands_output.results[item].item {{ page.c }}_{{ page.o }} timestamp.stdout {{ page.c }}.txt"
       with_items:
         - 0
         - 1
@@ -106,8 +108,8 @@ Buenos días a tod@as!!
 
     - name: Execute NXOS commands
       nxos_command:
-        provider: "{{ creds }}"
-        commands: "{{ item  }}"
+        provider: "{{ page.o }} creds {{ page.c }}"
+        commands: "{{ page.o }} item  {{ page.c }}"
       register: commands_output
       with_items:
         - show run
@@ -135,7 +137,7 @@ Buenos días a tod@as!!
 
     - name: Create IOS command folder if don't exist
       file:
-        path: "{{ backup_folder }}{{ inventory_hostname }}/{{ commands_output.results[item].item }}"
+        path: "{{ page.o }} backup_folder {{ page.c }}{{ page.o }} inventory_hostname {{ page.c }}/{{ page.o }} commands_output.results[item].item {{ page.c }}"
         state: directory
         mode: 0755
       with_items:
@@ -162,14 +164,10 @@ Buenos días a tod@as!!
       when:
         - cisco_os == 'nxos' 
 
-#    - debug: Show commands
-#        var: commands_output.results[{{ item }}].item
-#      with_sequence:  start=0 end=9
-
     - name: Save IOS command output on destination file
       copy:
-        content: "{{ commands_output.results[item].stdout[0] }}"
-        dest:  "{{ backup_folder }}{{ inventory_hostname }}/{{ commands_output.results[item].item }}/{{ inventory_hostname }}_{{ commands_output.results[item].item }}_{{ timestamp.stdout }}.txt"
+        content: "{{ page.o }} commands_output.results[item].stdout[0] {{ page.c }}"
+        dest:  "{{ page.o }} backup_folder {{ page.c }}{{ page.o }} inventory_hostname {{ page.c }}/{{ page.o }} commands_output.results[item].item {{ page.c }}/{{ page.o }} inventory_hostname {{ page.c }}_{{ page.o }} commands_output.results[item].item {{ page.c }}_{{ page.o }} timestamp.stdout {{ page.c }}.txt"
       with_items:
         - 0
         - 1 
