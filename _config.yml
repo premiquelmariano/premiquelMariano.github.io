@@ -22,7 +22,13 @@ title: "So Simple"
 description: "A simple Jekyll theme for words and pictures."
 baseurl: #"/so-simple-theme"
 url: #"https://mmistakes.github.io"
-logo: "/images/so-simple-site-logo.png"
+logo: "/assets/images/perfil.png"
+images: /assets/images
+vcap_images: https://miquelMariano.github.io/assets/images/vcap
+imagesposts2016: https://miquelMariano.github.io/assets/images/posts/2016
+imagesposts2017: https://miquelMariano.github.io/assets/images/posts/2017
+imagesposts2018: https://miquelMariano.github.io/assets/images/posts/2018
+imagesposts2019: https://miquelMariano.github.io/assets/images/posts/2019
 date_format: "%B %-d, %Y"
 read_time: true
 words_per_minute: # 200
