@@ -12,7 +12,13 @@
       {% else %}
         <div class="site-title animated fadeIn"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></div>
       {% endif %}
-      <p class="site-description animated fadeIn" itemprop="description">{{ site.description }}</p>
+      <p class="sentence">{{ site.bio1 }}</p>
+      <p class="sentence">{{ site.bio2 }}</p>
+      <p class="sentence">{{ site.bio3 }}</p>
+      <p class="sentence">{{ site.bio4 }}</p>
     {% endunless %}
   </div>
+
+<script type="text/javascript" src="https://rawgit.com/ndaidong/typewritter/master/dist/typewritter-effect.min.js"></script>
+<script type="text/javascript" src="/js/typewritter.js"></script>  
 </header><!-- /.masthead -->
