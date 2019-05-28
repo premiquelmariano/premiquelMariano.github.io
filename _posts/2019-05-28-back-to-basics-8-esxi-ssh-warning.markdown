@@ -1,6 +1,6 @@
 ---
 title: Back-to-basics 8 - Eliminar warning ESXi al habilitar SSH
-date: '2018-02-28 00:00:00'
+date: '2019-05-28 00:00:00'
 layout: post
 image: /assets/images/posts/2019/05/ssh-logo.png
 headerImage: true
@@ -12,8 +12,9 @@ tag:
 - backtobasics
 category: blog
 author: miquelMariano
-description: Back-to-basics 8 - Eliminar warning esxi al habilitar SSH
+description: En el post de hoy veremos como eliminar ese molesto warning cuando habilitamos el servicio SSH en un host ESXi...º
 hidden: false
+comments: true
 ---
 
 Buenos días a tod@as!!
