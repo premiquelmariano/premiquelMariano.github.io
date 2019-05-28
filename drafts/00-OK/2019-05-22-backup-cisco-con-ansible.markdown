@@ -118,7 +118,7 @@ A continuacion os paso el playbook `cisco_backup.yml` e intento explicar que hac
     
     - name: Create individual device folder if don't exist
       file:
-        path: "{{ page.o }} backup_folder {{ page.c }}{{ page.o }} inventory_hostname {{ page.o }}"
+        path: "{{ page.o }} backup_folder {{ page.c }}{{ page.o }} inventory_hostname {{ page.c }}"
         state: directory
         mode: 0755
 
@@ -146,7 +146,7 @@ A continuacion os paso el playbook `cisco_backup.yml` e intento explicar que hac
     
     - name: Create IOS command folder if don't exist
       file:
-        path: "{{ page.o }} backup_folder {{ page.c }}{{ page.o }} inventory_hostname {{ page.c }}/{{ page.o }} commands_output.results[item].item {{ page.o }}"
+        path: "{{ page.o }} backup_folder {{ page.c }}{{ page.o }} inventory_hostname {{ page.c }}/{{ page.o }} commands_output.results[item].item {{ page.c }}"
         state: directory
         mode: 0755
       with_items:
