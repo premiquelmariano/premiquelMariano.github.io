@@ -112,9 +112,9 @@ defaults:
 
 # Site Author
 author:
-  name: Michael Rose
-  picture: /images/michael-rose-photo.jpg
-  email:
+  name: Miquel Mariano
+  picture: /assets/images/perfil.png
+  email: miquel.mariano@outlook.com
   twitter: mmistakes
   links:
     - title: Twitter
