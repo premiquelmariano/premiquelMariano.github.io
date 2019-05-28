@@ -22,6 +22,70 @@ c: "}}"
 
 Buenos días a tod@as!!
 
+En el post de hoy, voy a dejaros un pequeño playbook que estoy utilizando para realizar backups automaticamente de algunas configuraciones de switches cisco, tanto de la gama Catalyst (IOS) como Nexus (NXOS)
+
+Lo primero que necesitaremos es disponer del fichero de inventario correspondiente, con todas las IPs y variables que necesitaremos mas adelante en el playbook:
+
+```
+all:vars]
+ansible_connection=local
+
+[CPD-1:vars]
+username=admin
+password=MySuperSecretPassword
+backup_folder=/etc/ansible/00-backups-nexus/
+cisco_os=nxos
+
+[CPD-2:vars]
+username=admin
+password=MySuperSecretPassword
+backup_folder=/etc/ansible/00-backups-nexus/
+cisco_os=nxos
+
+[CPD-3:vars]
+username=admin
+password=MySuperSecretPassword
+backup_folder=/etc/ansible/00-backups-nexus/
+cisco_os=nxos
+
+[CPD-4:vars]
+username=admin
+password=MySuperSecretPassword
+backup_folder=/etc/ansible/00-backups-catalyst/
+cisco_os=ios
+
+[CPD-1]
+NX1-CPD1 host=10.30.30.76
+NX2-CPD1 host=10.30.30.75
+
+[CPD-2]
+URNX01 host=10.30.30.110
+URNX02 host=10.30.30.111
+URNX03 host=10.30.30.112
+URNX04 host=10.30.30.113
+
+[CPD-3]
+CPD3-N5K01 host=10.69.69.220
+CPD3-N5K02 host=10.69.69.221
+CPD3-N5K01 host=10.69.69.120
+CPD3-N5K02 host=10.69.69.121
+
+[CPD-4]
+CONTROL01 host=10.30.30.181
+```
+
+En este inventario, tendremos que definir las siguientes variables:
+
+`host` - La IP de management del SW
+`username` - Usuario con privilegios para ejecutar comandos
+`password`- Contraseña del usuario proporcionado en la variable anterior
+`backup_folder` - Ruta que se creará y donde se almacenaran los ficheros con la información que devuelvan los comandos
+`cisco_os` - SO que tienen nuestros SW, utilizaremos esta variable como condicional para ejecutar comandos ios o nxos.    
+
+En mi caso, el fichero de inventario se llama `cisco` (lo sé, soy muy original..)
+{: .notice}
+
+
 
 ```yaml
 ---
