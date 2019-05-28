@@ -1,8 +1,8 @@
 ---
-title: Back-to-basics 8 - Eliminar warning ESXi al habilitar SSH
+title: Backup automático de switches Cisco con Ansible
 date: '2018-02-28 00:00:00'
 layout: post
-image: /assets/images/posts/2019/05/ssh-logo.png
+image: /assets/images/posts/2019/06/Cisco-and-Ansible-Happy.png
 headerImage: true
 tag:
 - vmware
@@ -12,8 +12,9 @@ tag:
 - backtobasics
 category: blog
 author: miquelMariano
-description: Back-to-basics 8 - Eliminar warning esxi al habilitar SSH
+description: Ansible playbook para automatizar el backup de nuestros switches de red Cisco, tanto catalyst como nexus...
 hidden: false
+comments: true
 permalink: /cisco/
 ---
 
