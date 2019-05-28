@@ -128,7 +128,7 @@ author:
       icon: fab fa-github-square
     - title: LinkedIN
       url: https://github.com/mmistakes
-      icon: fab fa-linkedin-square
+      icon: fab fa-linkedin
 
 # Footer Links
 footer_links:
