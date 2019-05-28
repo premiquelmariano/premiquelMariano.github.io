@@ -85,7 +85,7 @@ En este inventario, tendremos que definir las siguientes variables:
 En mi caso, el fichero de inventario se llama `cisco` (lo sé, soy muy original..)
 {: .notice}
 
-
+A continuacion os paso el playbook `cisco_backup.yml` e intento explicar que hace cada play:
 
 ```yaml
 ---
@@ -199,7 +199,7 @@ En mi caso, el fichero de inventario se llama `cisco` (lo sé, soy muy original.
       when: 
         - cisco_os == 'nxos'
 
-    - name: Create IOS command folder if don't exist
+    - name: Create NXOS command folder if don't exist
       file:
         path: "{{ page.o }} backup_folder {{ page.c }}{{ page.o }} inventory_hostname {{ page.c }}/{{ page.o }} commands_output.results[item].item {{ page.c }}"
         state: directory
@@ -228,7 +228,7 @@ En mi caso, el fichero de inventario se llama `cisco` (lo sé, soy muy original.
       when:
         - cisco_os == 'nxos' 
 
-    - name: Save IOS command output on destination file
+    - name: Save NXOS command output on destination file
       copy:
         content: "{{ page.o }} commands_output.results[item].stdout[0] {{ page.c }}"
         dest:  "{{ page.o }} backup_folder {{ page.c }}{{ page.o }} inventory_hostname {{ page.c }}/{{ page.o }} commands_output.results[item].item {{ page.c }}/{{ page.o }} inventory_hostname {{ page.c }}_{{ page.o }} commands_output.results[item].item {{ page.c }}_{{ page.o }} timestamp.stdout {{ page.c }}.txt"
@@ -257,53 +257,25 @@ En mi caso, el fichero de inventario se llama `cisco` (lo sé, soy muy original.
         - cisco_os == 'nxos'
 ```
 
-```
-all:vars]
-ansible_connection=local
+`Create root directory if don't exist` - Nos creará la carpeta que utilizaremos como raíz para guardar los backups. La variable estará definida en el fichero de inventario.
 
-[CPD-1:vars]
-username=admin
-password=MySuperSecretPassword
-backup_folder=/etc/ansible/00-backups-nexus/
-cisco_os=nxos
+`Create individual device folder if don't exist` -  En caso de que no exista, dentro del root directory, nos creará una carpeta con el nombre de cada SW
 
-[CPD-2:vars]
-username=admin
-password=MySuperSecretPassword
-backup_folder=/etc/ansible/00-backups-nexus/
-cisco_os=nxos
+`Register timestamp variable` - Simplemente creará una variable para guardar una marca temporal
 
-[CPD-3:vars]
-username=admin
-password=MySuperSecretPassword
-backup_folder=/etc/ansible/00-backups-nexus/
-cisco_os=nxos
+`Execute IOS commands` - Aquí es donde ejecutamos todos los comandos IOS sobre nuestros SW y guardamos los resultados en una variable.
 
-[CPD-4:vars]
-username=admin
-password=MySuperSecretPassword
-backup_folder=/etc/ansible/00-backups-catalyst/
-cisco_os=ios
+`Create IOS command folder if don't exist` - Dentro de la carpeta de cada SW, crearemos otra carpeta con el nombre del comando ejecutado previamente.
 
-[CPD-1]
-NX1-CPD1 host=10.30.30.76
-NX2-CPD1 host=10.30.30.75
+`Save IOS command output on destination file` - Guardamos el valor de la variale (dónde está la salida de cada comando) en un fichero .txt en la carpeta formada por /root_dorectory/nombre_sw/nombre_comando/nombre_sw_nombre_comando_timestamp.txt
 
-[CPD-2]
-URNX01 host=10.30.30.110
-URNX02 host=10.30.30.111
-URNX03 host=10.30.30.112
-URNX04 host=10.30.30.113
+`Execute NXOS commands` - Lo mismo que hemos explicado para IOS
 
-[CPD-3]
-CPD3-N5K01 host=10.69.69.220
-CPD3-N5K02 host=10.69.69.221
-CPD3-N5K01 host=10.69.69.120
-CPD3-N5K02 host=10.69.69.121
+`Create NXOS command folder if don't exist` - Lo mismo que hemos explicado para IOS
 
-[CPD-4]
-CONTROL01 host=10.30.30.181
-```
+`Save NXOS command output on destination file` - Lo mismo que hemos explicado para IOS
+
+
 
 Siguiendo con la serie [back-to-basics](https://miquelmariano.github.io/tags/#backtobasics), en el post de hoy veremos como eliminar ese molesto warning que se activa al habilitar SSH a nuestros ESXi.
 
