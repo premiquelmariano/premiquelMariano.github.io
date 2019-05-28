@@ -10,6 +10,7 @@ tag:
 - vexpert
 - devops
 - backtobasics
+- ansible
 category: blog
 author: miquelMariano
 description: Ansible playbook para automatizar el backup de nuestros switches de red Cisco, tanto catalyst como nexus...
