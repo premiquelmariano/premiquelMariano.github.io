@@ -193,57 +193,54 @@ Buenos días a tod@as!!
         - 19
       when:
         - cisco_os == 'nxos'
- 
-
 ```
 
 ```
 all:vars]
 ansible_connection=local
 
-[corella:vars]
+[CPD-1:vars]
 username=admin
-password=VmwarE2018!
+password=MySuperSecretPassword
 backup_folder=/etc/ansible/00-backups-nexus/
 cisco_os=nxos
 
-[urnieta:vars]
+[CPD-2:vars]
 username=admin
-password=VmwarE2019!
+password=MySuperSecretPassword
 backup_folder=/etc/ansible/00-backups-nexus/
 cisco_os=nxos
 
-[tata-sarenet:vars]
+[CPD-3:vars]
 username=admin
-password=VmwarE2014
+password=MySuperSecretPassword
 backup_folder=/etc/ansible/00-backups-nexus/
 cisco_os=nxos
 
-[urnieta-ios:vars]
+[CPD-4:vars]
 username=admin
-password=20NxUrnieta19!
+password=MySuperSecretPassword
 backup_folder=/etc/ansible/00-backups-catalyst/
 cisco_os=ios
 
-[corella]
-#NX1-CPD2 host=10.30.30.76
-#NX2-CPD2 host=10.30.30.75
+[CPD-1]
+NX1-CPD1 host=10.30.30.76
+NX2-CPD1 host=10.30.30.75
 
-[urnieta]
+[CPD-2]
 URNX01 host=10.30.30.110
 URNX02 host=10.30.30.111
 URNX03 host=10.30.30.112
 URNX04 host=10.30.30.113
 
-[tata-sarenet]
-TATAN5K01 host=10.69.69.220
-TATAN5K02 host=10.69.69.221
-SAREN5K01 host=10.69.69.120
-SAREN5K02 host=10.69.69.121
+[CPD-3]
+CPD3-N5K01 host=10.69.69.220
+CPD3-N5K02 host=10.69.69.221
+CPD3-N5K01 host=10.69.69.120
+CPD3-N5K02 host=10.69.69.121
 
-[urnieta-ios]
-URCONTROL01 host=10.30.30.181
-
+[CPD-4]
+CONTROL01 host=10.30.30.181
 ```
 
 Siguiendo con la serie [back-to-basics](https://miquelmariano.github.io/tags/#backtobasics), en el post de hoy veremos como eliminar ese molesto warning que se activa al habilitar SSH a nuestros ESXi.
