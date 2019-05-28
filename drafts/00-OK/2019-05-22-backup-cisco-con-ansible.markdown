@@ -275,6 +275,14 @@ A continuacion os paso el playbook `cisco_backup.yml` e intento explicar que hac
 
 `Save NXOS command output on destination file` - Lo mismo que hemos explicado para IOS
 
+Para ejecutar este playbook, lo haremos de la siguiente manera:
+
+bla bla bla
+
+Y si queremos programarlo, lo añadiremos al cron de nuestro usuario tal que así:
+
+bla bla bla
+
 
 
 Siguiendo con la serie [back-to-basics](https://miquelmariano.github.io/tags/#backtobasics), en el post de hoy veremos como eliminar ese molesto warning que se activa al habilitar SSH a nuestros ESXi.
