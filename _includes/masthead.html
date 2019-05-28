@@ -12,10 +12,10 @@
       {% else %}
         <div class="site-title animated fadeIn"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></div>
       {% endif %}
-      <p class="sentence">{{ site.bio1 }}</p>
-      <p class="sentence">{{ site.bio2 }}</p>
-      <p class="sentence">{{ site.bio3 }}</p>
-      <p class="sentence">{{ site.bio4 }}</p>
+      <div id="typePad">
+        <p class="sentence">{{ author.bio1 }}</p>
+        <p class="sentence">{{ author.bio2 }}</p>
+      </div>
     {% endunless %}
   </div>
 </header><!-- /.masthead -->
