@@ -289,38 +289,22 @@ A continuacion os paso el playbook `cisco_backup.yml` e intento explicar que hac
 
 ### ¿Y ahora, cómo lo ejecuto?
 
-Para ejecutar este playbook, lo haremos de la siguiente manera:
+Para ejecutar este playbook, lo llamaremos de la siguiente manera:
 
-bla bla bla
+`ansible-playbook /etc/ansible/playbooks/cisco_backup.yml -i /etc/ansible/inventory/cisco -e "sw=nombre_sw_o_grupo"`
+
+la variable `sw` hace raferencia a los equipos o grupos que hemos definido en el fichero de inventario. Por ejemplon `CPD-1`
+{: .notice}
 
 ### ¿Y si lo quiero programar periodicamente?
 
 Y si queremos programarlo, lo añadiremos al cron de nuestro usuario tal que así:
 
-bla bla bla
+![crontab]({{ site.imagesposts2019 }}/06/crontab.png)
 
 ### Los resultados
 
-bla bla bla
-
-Siguiendo con la serie [back-to-basics](https://miquelmariano.github.io/tags/#backtobasics), en el post de hoy veremos como eliminar ese molesto warning que se activa al habilitar SSH a nuestros ESXi.
-
-
-![ssh-warning-1]({{ site.imagesposts2019 }}/05/ssh-warning-1.png)
-
-Para poder solucionar este warning sin tener que deshabilitar de nuevo ESXi, ya que lo queremos mantener arrancado para tareas de management, tendremos que editar las opciones avanzadas del host:
-
-![ssh-warning-2]({{ site.imagesposts2019 }}/05/ssh-warning-2.png)
-
-Tenemos que editar la variable `UserVars.SuppressShellWarning` que por defecto está a 0 y cambiarlo a 1:
-
-![ssh-warning-3]({{ site.imagesposts2019 }}/05/ssh-warning-3.png)
-
-Una vez guardemos los cambios, automáticamente el warning desaparecerá:
-
-![ssh-warning-4]({{ site.imagesposts2019 }}/05/ssh-warning-4.png)
-
-Aprovecho también la ocación, para recordaros que hace ya tiempo, publiqué un post de [cómo manejar ESXi mediante Ansible](https://miquelmariano.github.io/2017/07/esxi-configuration-with-ansible) y que en él explicaba como configurar SSH en los ESXi mediante [este role de galaxy](https://galaxy.ansible.com/miquelMariano/ESXi_ssh)
+![output-backup-nexus]({{ site.imagesposts2019 }}/06/output-backup-nexus.png)
 
 Espero que os sirva.
 
