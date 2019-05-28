@@ -24,7 +24,9 @@ Buenos días a tod@as!!
 
 En el post de hoy, voy a dejaros un pequeño playbook que estoy utilizando para realizar backups automaticamente de algunas configuraciones de switches cisco, tanto de la gama Catalyst (IOS) como Nexus (NXOS)
 
-Lo primero que necesitaremos es disponer del fichero de inventario correspondiente, con todas las IPs y variables que necesitaremos mas adelante en el playbook:
+Lo primero que necesitaremos es disponer del fichero de inventario correspondiente, con todas las IPs y variables que necesitaremos mas adelante en el playbook.
+
+###Inventario
 
 ```
 all:vars]
@@ -74,16 +76,24 @@ CPD3-N5K02 host=10.69.69.121
 CONTROL01 host=10.30.30.181
 ```
 
+###¿Qué son estas variables?
+
 En este inventario, tendremos que definir las siguientes variables:
 
-`host` - La IP de management del SW
-`username` - Usuario con privilegios para ejecutar comandos
-`password`- Contraseña del usuario proporcionado en la variable anterior
-`backup_folder` - Ruta que se creará y donde se almacenaran los ficheros con la información que devuelvan los comandos
-`cisco_os` - SO que tienen nuestros SW, utilizaremos esta variable como condicional para ejecutar comandos ios o nxos.    
+- `host` La IP de management del SW
+
+- `username` Usuario con privilegios para ejecutar comandos
+
+- `password` Contraseña del usuario proporcionado en la variable anterior
+
+- `backup_folder` Ruta que se creará y donde se almacenaran los ficheros con la información que devuelvan los comandos
+
+- `cisco_os` SO que tienen nuestros SW, utilizaremos esta variable como condicional para ejecutar comandos ios o nxos.    
 
 En mi caso, el fichero de inventario se llama `cisco` (lo sé, soy muy original..)
 {: .notice}
+
+###El playbook
 
 A continuacion os paso el playbook `cisco_backup.yml` e intento explicar que hace cada play:
 
@@ -257,33 +267,41 @@ A continuacion os paso el playbook `cisco_backup.yml` e intento explicar que hac
         - cisco_os == 'nxos'
 ```
 
-`Create root directory if don't exist` - Nos creará la carpeta que utilizaremos como raíz para guardar los backups. La variable estará definida en el fichero de inventario.
+¿Qué hace cada play?
 
-`Create individual device folder if don't exist` -  En caso de que no exista, dentro del root directory, nos creará una carpeta con el nombre de cada SW
+- `Create root directory if don't exist`  Nos creará la carpeta que utilizaremos como raíz para guardar los backups. La variable estará definida en el fichero de inventario.
 
-`Register timestamp variable` - Simplemente creará una variable para guardar una marca temporal
+- `Create individual device folder if don't exist`  En caso de que no exista, dentro del root directory, nos creará una carpeta con el nombre de cada SW
 
-`Execute IOS commands` - Aquí es donde ejecutamos todos los comandos IOS sobre nuestros SW y guardamos los resultados en una variable.
+- `Register timestamp variable` Simplemente creará una variable para guardar una marca temporal
 
-`Create IOS command folder if don't exist` - Dentro de la carpeta de cada SW, crearemos otra carpeta con el nombre del comando ejecutado previamente.
+- `Execute IOS commands` Aquí es donde ejecutamos todos los comandos IOS sobre nuestros SW y guardamos los resultados en una variable.
 
-`Save IOS command output on destination file` - Guardamos el valor de la variale (dónde está la salida de cada comando) en un fichero .txt en la carpeta formada por /root_dorectory/nombre_sw/nombre_comando/nombre_sw_nombre_comando_timestamp.txt
+- `Create IOS command folder if don't exist` Dentro de la carpeta de cada SW, crearemos otra carpeta con el nombre del comando ejecutado previamente.
 
-`Execute NXOS commands` - Lo mismo que hemos explicado para IOS
+- `Save IOS command output on destination file` Guardamos el valor de la variale (dónde está la salida de cada comando) en un fichero .txt en la carpeta formada por /root_dorectory/nombre_sw/nombre_comando/nombre_sw_nombre_comando_timestamp.txt
 
-`Create NXOS command folder if don't exist` - Lo mismo que hemos explicado para IOS
+- `Execute NXOS commands` Lo mismo que hemos explicado para IOS
 
-`Save NXOS command output on destination file` - Lo mismo que hemos explicado para IOS
+- `Create NXOS command folder if don't exist` Lo mismo que hemos explicado para IOS
+
+- `Save NXOS command output on destination file` Lo mismo que hemos explicado para IOS
+
+###¿Y ahora, cómo lo ejecuto?
 
 Para ejecutar este playbook, lo haremos de la siguiente manera:
 
 bla bla bla
 
+###¿Y si lo quiero programar periodicamente?
+
 Y si queremos programarlo, lo añadiremos al cron de nuestro usuario tal que así:
 
 bla bla bla
 
+###Los resultados
 
+bla bla bla
 
 Siguiendo con la serie [back-to-basics](https://miquelmariano.github.io/tags/#backtobasics), en el post de hoy veremos como eliminar ese molesto warning que se activa al habilitar SSH a nuestros ESXi.
 
