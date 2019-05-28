@@ -304,7 +304,7 @@ Y si queremos programarlo, lo añadiremos al cron de nuestro usuario tal que as�
 
 ### Los resultados
 
-Finalmente, así quedaria nuestra estructura de carpetas con los correspondientes txt que guardan la salida de la ejecución de cada comando.
+Finalmente, así quedaria nuestra estructura de carpetas con los correspondientes .txt que guardan la salida de la ejecución de cada comando.
 
 ![output-backup-nexus]({{ site.imagesposts2019 }}/06/output-backup-nexus.png)
 

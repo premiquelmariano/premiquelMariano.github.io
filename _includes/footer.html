@@ -1,17 +1,24 @@
-<footer>
-  &copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}. Powered by <a href="http://jekyllrb.com/">Jekyll</a>, <a href="http://github.com/renyuanz/leonids/">leonids theme</a> made with <i class="fa fa-heart heart-icon"></i>
-</footer>
+<footer id="footer" class="site-footer">
+  {% include footer-custom.html %}
 
-<script>
-    window.intergramId = 6343788;
-    window.intergramCustomizations = {
-        titleClosed: 'Chat',
-        titleOpen: '¿En qué puedo ayudarte?',
-        introMessage: 'Hola, esto es un chat vinculado a mi cuenta personal de telegram',
-        autoResponse: 'Gracias por tu mensaje, espera unos instantes a que Miquel pueda contestarte',
-        autoNoResponse: 'Vaya, parece que me pillas en mal momento y no estoy disponible. Si quieres, escríbeme a miquel.mariano@outlook.com o dejame un comentario en el post ;-)',
-        mainColor: "#E91E63", // Can be any css supported color 'red', 'rgb(255,87,34)', etc
-        alwaysUseFloatingButton: false // Use the mobile floating button also on large screens
-    };
-</script>
-<script id="intergram" type="text/javascript" src="https://www.intergram.xyz/js/widget.js"></script>
+  {%- if site.footer_links -%}
+    <div class="social-icons">
+      {%- for footer_link in site.footer_links -%}
+        {%- if footer_link.url contains "://" -%}
+          {%- assign url = footer_link.url -%}
+        {%- else -%}
+          {%- assign url = footer_link.url | relative_url -%}
+        {%- endif -%}
+        <a class="social-icon" href="{{ url }}"><i class="{{ footer_link.icon | default: 'fas fa-link' }} fa-2x" title="{{ footer_link.title }}"></i></a>
+      {%- endfor -%}
+    </div>
+  {%- endif -%}
+
+  <div class="copyright">
+    {% if site.copyright %}
+      {{ site.copyright | markdownify }}
+    {% else %}
+      <p>&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. {{ site.data.text[site.locale].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/mmistakes/so-simple-theme" rel="nofollow">So Simple</a>.</p>
+    {% endif %}
+  </div>
+</footer>
