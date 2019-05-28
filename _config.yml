@@ -42,8 +42,8 @@ google_analytics: #"UA-2011187-2"
 disqus:
   shortname: "sosimpletheme"
 twitter:
-  username: "mmistakes"
-google_site_verification: "UQj93ERU9zgECodaaXgVpkjrFn9UrDMEzVamacSoQ8Y"
+  username: "miquelmariano"
+google_site_verification: #"UQj93ERU9zgECodaaXgVpkjrFn9UrDMEzVamacSoQ8Y"
 
 # Liquid
 liquid:
@@ -126,6 +126,9 @@ author:
     - title: GitHub
       url: https://github.com/mmistakes
       icon: fab fa-github-square
+    - title: LinkedIN
+      url: https://github.com/mmistakes
+      icon: fab fa-linkedin-square
 
 # Footer Links
 footer_links:
