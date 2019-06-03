@@ -10,15 +10,15 @@ A parte de la tecnología, me encanta el deporte al aire libre. Aunque viva en u
 
 En lo profesional, cuento con mas de 10 años de experiencia en el ámbito de sistemas y en los últimos años he centrado mi trayectoria profesional especializándome en todo lo relacionado con la virtualización y automatización del datacenter:
 
-- Diseño, implementación y administración de grantes entornos VMware vSphere</li>
-- Instalación, configuración y administración de almacenamiento Hitachi HUS, VSP Gx00, EMC VNXe, IBM Storwize, QNAP</li>
-- Instalación, configuración y administración de SAN con Brocade FC Switches</li>
-- Amplios conocimientos en protocolos de almacenamiento: iSCSI, FC, NFS, SMB/CIFS</li>
-- Instalación, configuración y administración de servidores Dell PowerEdge, HP Proliant, Hitachi Compute Blade</li>
-- Disaster Recovery, Veeam Backup & Replication y continuidad de negocio</li>
-- Análisis de carga de trabajo, performance y dimensionamiento de máquinas virtuales</li>
-- Automatización con Ansible, scripting con PowerCLI, bash, …</li>
-- Monitorización con PRTG Network Monitor</li>
+- Diseño, implementación y administración de grantes entornos VMware vSphere
+- Instalación, configuración y administración de almacenamiento Hitachi HUS, VSP Gx00, EMC VNXe, IBM Storwize, QNAP
+- Instalación, configuración y administración de SAN con Brocade FC Switches
+- Amplios conocimientos en protocolos de almacenamiento: iSCSI, FC, NFS, SMB/CIFS
+- Instalación, configuración y administración de servidores Dell PowerEdge, HP Proliant, Hitachi Compute Blade
+- Disaster Recovery, Veeam Backup & Replication y continuidad de negocio
+- Análisis de carga de trabajo, performance y dimensionamiento de máquinas virtuales
+- Automatización con Ansible, scripting con PowerCLI, bash, …
+- Monitorización con PRTG Network Monitor
 
 He tenido la suerte de poder sacarme algunas [certificaciones de VMWare](<a href=")https://www.certmetrics.com/vmware/public/transcript.aspx?transcript=H66R1JVC114EQYC8) y en estos últimos 4 años, VMWare me ha nombrado [vExpert](https://vexpert.vmware.com/directory/753)
 
