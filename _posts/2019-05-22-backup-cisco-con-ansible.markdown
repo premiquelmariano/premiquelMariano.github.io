@@ -7,11 +7,9 @@ image:
    thumbnail: /assets/images/posts/2019/06/Cisco-and-Ansible-Happy.png
 headerImage: false
 tag:
-- vmware
-- vsphere
-- vexpert
+- cisco
+- networking
 - devops
-- backtobasics
 - ansible
 hidden: false
 comments: true
