@@ -4,7 +4,7 @@ layout: page
 permalink: /about/
 ---
 
-Hola, me llamo Miquel Mariano Ramis y actualmente soy Consultor TI en [NCORA](http://www.ncora.com")
+Hola, me llamo Miquel Mariano Ramis y actualmente soy Consultor TI en [NCORA](http://www.ncora.com)
 
 A parte de la tecnología, me encanta el deporte al aire libre. Aunque viva en una isla como Mallorca, soy mas de montaña que de playa, así que es fácil encontrarme por el monte haciendo MTB, corriendo o simplemente practicando algo de senderismo.
 
