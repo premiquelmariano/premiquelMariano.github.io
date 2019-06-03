@@ -113,6 +113,8 @@ defaults:
       layout: post
       comments: true
       share: true
+      
+  # Ansible defaults    
   - scope:
       path: "_ansible"
       type: ansible
