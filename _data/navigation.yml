@@ -12,5 +12,7 @@
   url: /tags/
 - title: Recipes
   url: /recipes/
+- title: Ansible
+  url: /ansible/
 - title: Search
   url: /search/
