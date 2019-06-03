@@ -108,7 +108,7 @@ defaults:
   # Recipe defaults
   - scope:
       path: "_recipes"
-      type: recipes2
+      type: recipes
     values:
       layout: post
       comments: true
