@@ -1,8 +1,7 @@
 ---
 title: About
-layout: search
+layout: page
 permalink: /about/
-sitemap: false
 ---
 
 Hola, me llamo Miquel Mariano Ramis y actualmente soy Consultor TI en <a href="http://www.ncora.com">Ncora</a>
