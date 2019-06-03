@@ -113,6 +113,13 @@ defaults:
       layout: post
       comments: true
       share: true
+  - scope:
+      path: "_ansible"
+      type: ansible
+    values:
+      layout: post
+      comments: true
+      share: true    
 
 # Site Author
 author:
