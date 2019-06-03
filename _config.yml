@@ -38,9 +38,9 @@ read_time: true
 words_per_minute: # 200
 mathjax: true
 google_fonts:
-  - name: "Source Sans Pro"
+  - name: "Mansali"
     weights: "400,400i,700,700i"
-  - name: "Montserrat"
+  - name: "Mandali"
     weights: "400,400i,700,700i"
 google_analytics: #"UA-2011187-2"
 disqus:
