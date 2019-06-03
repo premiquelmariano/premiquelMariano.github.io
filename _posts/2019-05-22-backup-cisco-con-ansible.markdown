@@ -2,7 +2,9 @@
 title: Backup automático de switches Cisco con Ansible
 date: '2019-05-23 00:00:00'
 layout: post
-image: /assets/images/posts/2019/06/Cisco-and-Ansible-Happy.png
+image: 
+   path: /assets/images/posts/2019/06/Cisco-and-Ansible-Happy.png
+   thumbnail: /assets/images/posts/2019/06/Cisco-and-Ansible-Happy.png
 headerImage: false
 tag:
 - vmware
