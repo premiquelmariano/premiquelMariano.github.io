@@ -124,7 +124,15 @@ defaults:
     values:
       layout: post
       comments: true
-      share: true    
+      share: true   
+  # Ansible defaults    
+  - scope:
+      path: "_draft"
+      type: draft
+    values:
+      layout: post
+      comments: true
+      share: true      
            
 
 # Site Author
