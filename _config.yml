@@ -97,6 +97,9 @@ collections:
   ansible:
     output: true
     permalink: /:collection/:path/ 
+  draft:
+    output: true
+    permalink: /:collection/:path/   
 
 
 # Front Matter Defaults
