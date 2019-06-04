@@ -91,15 +91,12 @@ plugins:
 
 # Collections
 collections:
-  recipes:
+  draft:
     output: true
     permalink: /:collection/:path/
   ansible:
     output: true
     permalink: /:collection/:path/ 
-  draft:
-    output: true
-    permalink: /:collection/:path/   
 
 
 # Front Matter Defaults
@@ -114,8 +111,8 @@ defaults:
       share: true
   # Recipe defaults
   - scope:
-      path: "_recipes"
-      type: recipes
+      path: "_draft"
+      type: draft
     values:
       layout: post
       comments: true
@@ -128,14 +125,7 @@ defaults:
       layout: post
       comments: true
       share: true    
-  # Draft defaults
-  - scope:
-      path: "_draft"
-      type: draft
-    values:
-      layout: post
-      comments: true
-      share: true              
+           
 
 # Site Author
 author:
