@@ -109,7 +109,7 @@ defaults:
       layout: post
       comments: true
       share: true
-  # Recipe defaults
+  # Draft defaults
   - scope:
       path: "_draft"
       type: draft
