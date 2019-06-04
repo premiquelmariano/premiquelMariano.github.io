@@ -2,7 +2,7 @@
 title: Borradores
 layout: collection
 permalink: /borradores/
-collection: borradores
+collection: draft
 entries_layout: grid
 ---
 

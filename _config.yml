@@ -97,7 +97,7 @@ collections:
   ansible:
     output: true
     permalink: /:collection/:path/ 
-  borradores:
+  draft:
     output: true
     permalink: /:collection/:path/   
 
@@ -131,8 +131,8 @@ defaults:
       share: true    
 
   - scope:
-      path: "_borradores"
-      type: borradores
+      path: "_draft"
+      type: draft
     values:
       layout: post
       comments: true
