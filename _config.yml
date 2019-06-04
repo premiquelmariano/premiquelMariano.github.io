@@ -97,7 +97,7 @@ collections:
   ansible:
     output: true
     permalink: /:collection/:path/ 
-  draft:
+  br:
     output: true
     permalink: /:collection/:path/   
 
@@ -130,8 +130,8 @@ defaults:
       share: true   
   # Ansible defaults    
   - scope:
-      path: "_draft"
-      type: draft
+      path: "_br"
+      type: br
     values:
       layout: post
       comments: true
