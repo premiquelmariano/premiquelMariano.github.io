@@ -2,7 +2,7 @@
 title: Draft
 layout: collection
 permalink: /draft/
-collection: draft
+collection: br
 entries_layout: grid
 ---
 
