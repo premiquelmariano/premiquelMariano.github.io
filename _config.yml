@@ -131,7 +131,7 @@ defaults:
       comments: true
       share: true   
 
-# Borradores defaults    
+  # Borradores defaults    
   - scope:
       path: "_borradores"
       type: borradores
