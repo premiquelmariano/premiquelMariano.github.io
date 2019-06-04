@@ -91,7 +91,7 @@ plugins:
 
 # Collections
 collections:
-  draft:
+  recipes:
     output: true
     permalink: /:collection/:path/
   ansible:
@@ -111,8 +111,8 @@ defaults:
       share: true
   # Draft defaults
   - scope:
-      path: "_draft"
-      type: draft
+      path: "_recipes"
+      type: recipes
     values:
       layout: post
       comments: true
