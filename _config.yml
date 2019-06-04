@@ -129,16 +129,7 @@ defaults:
     values:
       layout: post
       comments: true
-      share: true   
-
-  # Borradores defaults    
-  - scope:
-      path: "_borradores"
-      type: borradores
-    values:
-      layout: post
-      comments: true
-      share: true          
+      share: true            
 
 # Site Author
 author:
