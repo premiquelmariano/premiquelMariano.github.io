@@ -97,10 +97,6 @@ collections:
   ansible:
     output: true
     permalink: /:collection/:path/  
-  borradores:
-    output: true
-    permalink: /:collection/:path/  
-
 
 
 # Front Matter Defaults
