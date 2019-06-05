@@ -2,11 +2,15 @@
 title: Hello World
 layout: post
 date: 2016-12-30 22:48
-image: 
-  path: /assets/images/posts/2016/12/hello_world.jpg
-  thumbnail: /assets/images/posts/2016/12/hello_world.jpg
+image: /assets/images/posts/2016/12/hello_world.jpg
+headerImage: true
 tag:
 - miscelanea
+category: blog
+author: miquelMariano
+description: Este proyecto personal lleva en mi cabeza rondandome desde hace ya bastantes meses y no se si por pereza, falta de tiempo, miedo o una mezcla de todo hacía que no terminara de decidirme.
+hidden: false
+comments: true
 ---
 
 Bienvenidos a mi blog!
