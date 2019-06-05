@@ -28,13 +28,13 @@ Podréis consultar mas información en mi perfil completo de [LinkedIN](https://
 
 Ah, por cierto, también tengo libro, podreis encontrar toda la info sobre ["VMware por vExperts"](https://twitter.com/vmwarevexperts), el proyecto solidario y la url de descarga gratis desde [aquí](https://www.vmwareporvexperts.org>aquí)
 
-![vExpert]({{ site.url }}{{ site.images }}/logo_vexpert_4.png)
+![vExpert]({{ site.url }}{{ site.images }}/logo_vexpert_4.png){: .align-center}
 
-![vcap]({{ site.url }}{{ site.images }}/logo_vcap6.jpg)
+![vcap]({{ site.url }}{{ site.images }}/logo_vcap6.jpg){: .align-center}
 
-![hds]({{ site.url }}{{ site.images }}/logo_hds.png)
+![hds]({{ site.url }}{{ site.images }}/logo_hds.png){: .align-center}
 
-![content]({{ site.url }}{{ site.images }}/logo_hds_content.png)
+![content]({{ site.url }}{{ site.images }}/logo_hds_content.png){: .align-center}
 
-![vspg]({{ site.url }}{{ site.images }}/logo_hds_vspg.png)
+![vspg]({{ site.url }}{{ site.images }}/logo_hds_vspg.png){: .align-center}
 
