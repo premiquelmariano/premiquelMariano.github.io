@@ -1,6 +1,6 @@
 
 <!-- Si no está definido post dentro de image no se mostrará ninguna imagen-->
-{% if page.image.post %}
+{% if page.image.imagepost %}
   {% assign page_image = page.image.path | default: page.image %}
   {% unless page_image contains '://' %}
     {% assign page_image = page_image | relative_url %}
