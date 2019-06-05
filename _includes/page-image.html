@@ -1,4 +1,3 @@
-#{% if page.image. %}
 {% if page.image.thumbnail %}
   {% assign page_image = page.image.path | default: page.image %}
   {% unless page_image contains '://' %}
