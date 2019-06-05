@@ -2,9 +2,7 @@
 title: Cambiar cadena conexión de Veeam Backup
 date: '2019-04-24 00:00:00'
 layout: post
-image: 
-  path: /assets/images/posts/2019/04/veeam-logo.png
-  thumbnail: /assets/images/posts/2019/04/veeam-logo.png
+image: /assets/images/posts/2019/04/veeam-logo.png
 tag:
 - vmware
 - vsphere
