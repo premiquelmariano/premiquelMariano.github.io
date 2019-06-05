@@ -135,29 +135,32 @@ author:
   twitter: mmistakes
   links:
     - title: Twitter
-      url: https://twitter.com/mmistakes
+      url: https://twitter.com/miquelmariano
       icon: fab fa-twitter-square
     - title: Instagram
-      url: https://instagram.com/mmistakes
+      url: https://instagram.com/miquelmariano
       icon: fab fa-instagram
     - title: GitHub
-      url: https://github.com/mmistakes
+      url: https://github.com/miquelmariano
       icon: fab fa-github-square
     - title: LinkedIN
-      url: https://github.com/mmistakes
+      url: https://www.linkedin.com/in/miquelmariano/
       icon: fab fa-linkedin
 
 # Footer Links
 footer_links:
   - title: Twitter
-    url: https://twitter.com/mmistakes
+    url: https://twitter.com/miquelmariano
     icon: fab fa-twitter-square
-  - title: Instagram
-    url: https://instagram.com/mmistakes
-    icon: fab fa-instagram
+#  - title: Instagram
+#    url: https://instagram.com/mmistakes
+#    icon: fab fa-instagram
   - title: GitHub
-    url: https://github.com/mmistakes
+    url: https://github.com/miquelmariano
     icon: fab fa-github-square
+  - title: LinkedIN
+    url: https://www.linkedin.com/in/miquelmariano/
+    icon: fab fa-linkedin
   - title: Feed
     url: atom.xml
     icon: fas fa-rss-square
