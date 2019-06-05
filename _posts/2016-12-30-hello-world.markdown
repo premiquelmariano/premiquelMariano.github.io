@@ -3,7 +3,6 @@ title: Hello World
 layout: post
 date: 2016-12-30 22:48
 image: 
-  path: /assets/images/posts/2016/12/hello_world.jpg
   thumbnail: /assets/images/posts/2016/12/hello_world.jpg
 tag:
 - miscelanea
