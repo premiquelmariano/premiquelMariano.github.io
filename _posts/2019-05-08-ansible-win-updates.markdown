@@ -2,19 +2,15 @@
 title: Comprobar actualizaciones de windows con Ansible
 date: '2019-05-08 00:00:00'
 layout: post
-image: /assets/images/posts/2019/05/ansible-win.png
-headerImage: true
+image: 
+   path:
+   thumbnail: /assets/images/posts/2019/05/ansible-win.png
 tag:
 - automation
 - devops
 - ansible
 - windows
 - updates
-category: blog
-author: miquelMariano
-description: En el post de os os enseñaré un interesante playbook que nos ayudará a comprobar de manera fácil el estado de las actualizaciones de nuestros servidores windows...
-hidden: false
-comments: true
 o: "{{"
 c: "}}"
 ---
