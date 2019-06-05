@@ -3,7 +3,7 @@ title: Comprobar actualizaciones de windows con Ansible
 date: '2019-05-08 00:00:00'
 layout: post
 image: 
-   path:
+   path: /assets/images/posts/2019/05/ansible-win.png
    thumbnail: /assets/images/posts/2019/05/ansible-win.png
 tag:
 - automation
