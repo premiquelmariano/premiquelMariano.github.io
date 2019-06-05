@@ -97,7 +97,7 @@ collections:
   ansible:
     output: true
     permalink: /:collection/:path/ 
-  br:
+  inprogress:
     output: true
     permalink: /:collection/:path/   
 
@@ -128,10 +128,10 @@ defaults:
       layout: post
       comments: true
       share: true   
-  # Ansible defaults    
+  # In progress defaults    
   - scope:
-      path: "_br"
-      type: br
+      path: "_inprogress"
+      type: inprogress
     values:
       layout: post
       comments: true
