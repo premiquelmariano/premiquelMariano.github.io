@@ -2,8 +2,6 @@
 
 - title: Home
   url: "https://premiquelmariano.github.io"
-- title: About
-  url: /about/
 - title: Posts
   url: /posts/
 #- title: Categories
@@ -15,7 +13,9 @@
 - title: VCAP6-DCV Deploy
   url: "https://premiquelmariano.github.io/vcap-experience/"
 - title: VMware por vExperts
-  url: "https://miquelmariano.github.io/2019/03/vmwareporvexperts"
+  url: "https://premiquelmariano.github.io/2019/03/vmwareporvexperts"
+- title: About
+  url: /about/  
 - title: Search
   url: /search/
 - title: In progress...
