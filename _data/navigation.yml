@@ -10,8 +10,6 @@
 #  url: /categories/
 - title: Tags
   url: /tags/
-- title: Recipes
-  url: /recipes/
 - title: Ansible
   url: /ansible/
 - title: VCAP6-DCV Deploy
