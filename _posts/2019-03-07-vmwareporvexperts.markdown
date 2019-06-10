@@ -3,7 +3,6 @@ title: VMware por vExperts, el libro definitivo sobre virtualización
 date: '2019-03-07 00:00:00'
 layout: post
 image: /assets/images/posts/2019/03/front.png
-   imagepost: 
 headerImage: true
 tag:
 - vexpert

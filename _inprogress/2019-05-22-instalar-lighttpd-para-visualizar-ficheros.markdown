@@ -16,6 +16,22 @@ tag:
 
 En el post de hoy, voy a dejaros un pequeño playbook que estoy utilizando para realizar backups automaticamente de algunas configuraciones de switches cisco, tanto de la gama Catalyst (IOS) como Nexus (NXOS)
 
+Deshabilitar firewall | https://linuxize.com/post/how-to-stop-and-disable-firewalld-on-centos-7/
+sudo systemctl stop firewalld
+sudo systemctl disable firewalld
+
+Instalar lighttpd | https://www.linuxhelp.com/how-to-install-lighttpd-web-server-on-centos-7
+yum install lighttpd -y
+systemctl start lighttpd
+systemctl enable lighttpd
+
+Editar mime para mostrar .yml como yaml
+vim /etc/lighttpd/conf.d/mime.conf
+
+Crear link simbolico de ansible en cd /var/www/lighttpd/ | https://kb.iu.edu/d/abbe
+ln -s source_file myfile
+
+Securizar: https://www.cyberciti.biz/tips/lighttpd-setup-a-password-protected-directory-directories.html
 
 Espero que os sirva.
 
