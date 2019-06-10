@@ -11,6 +11,7 @@ tag:
 - vmware
 - vmwareporvexpert
 - libro
+permalink: /vmwareporvexperts/
 ---
 
 ***«Hay tres cosas que cada persona debería hacer durante su vida: plantar un árbol, tener un hijo y escribir un libro»***
