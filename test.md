@@ -1,5 +1,5 @@
 ---
-title: test
+title: test.
 layout: collection
 permalink: /test/
 collection: test
