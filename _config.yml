@@ -97,6 +97,9 @@ collections:
   inprogress:
     output: true
     permalink: /:collection/:path/   
+  test:
+    output: true
+    permalink: /:collection/:path/    
 
 
 # Front Matter Defaults
@@ -124,7 +127,15 @@ defaults:
     values:
       layout: post
       comments: true
-      share: true      
+      share: true  
+
+   - scope:
+      path: "_test"
+      type: test
+    values:
+      layout: post
+      comments: true
+      share: true         
            
 
 # Site Author
