@@ -1,5 +1,5 @@
 ---
-title: Error de certificado al actualizar el VCSA a vCenter 6.5
+title: Error de certificado al actualizar vCenter Server Appliance a 6.5
 date: '2019-06-19 00:00:00'
 layout: post
 image: /assets/images/posts/2019/06/update-vcenter-server-appliance-6-5.png
