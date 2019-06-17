@@ -2,12 +2,12 @@
 title: Error de certificado al actualizar el VCSA a vCenter 6.5
 date: '2019-06-19 00:00:00'
 layout: post
-image: /assets/images/posts/2018/12/ssh-banner.jpg
+image: /assets/images/posts/2019/06/update-vcenter-server-appliance-6-5.png
 headerImage: true
 tag:
-- automation
-- ansible
-- devops
+- vmware
+- vexpert
+- vcsa
 ---
 
 Buenos dias a tod@as!!
@@ -30,7 +30,9 @@ Verify that the vCenter Server certificate is valid and that it points to the vC
 
 La solución que he encontrado es sencilla, y pasa por regenerar los certificados del propio vCenter y reiniciarlo.
 
-Encontrareis toda la info en la [esta KB](https://kb.vmware.com/s/article/2110772?lang=en_US)
+Encontrareis toda la info y el paso a paso en [esta KB](https://kb.vmware.com/s/article/2110772?lang=en_US)
+
+Espero que os sirva.
 
 Un saludo!
 
