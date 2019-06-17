@@ -1,6 +1,6 @@
 ---
-title: Error de certificado al actualizar a vCenter 6.5
-date: '2018-12-20 00:00:00'
+title: Error de certificado al actualizar el VCSA a vCenter 6.5
+date: '2019-06-19 00:00:00'
 layout: post
 image: /assets/images/posts/2018/12/ssh-banner.jpg
 headerImage: true
@@ -12,7 +12,9 @@ tag:
 
 Buenos dias a tod@as!!
 
-Llevo un par de semanas actualizando varios VCSA 5.5 a VCSA 6.5 y en la mayoria de los casos me he encontrado con un error de certificado durante el proceso de actualización:
+Como sabéis, [la versión 5.5 de vSphere está fuera de soporte desde el pasado septiembre](https://miquelmariano.github.io/2018/09/end-general-support), así que es tiempo de migrar nuestros entornos a una versión superior y soportada.
+
+Llevo ya un par de actualizaciones en varios clientes de VCSA 5.5 a VCSA 6.5 y en la mayoria de los casos me he encontrado con un error de certificado durante el proceso de actualización:
 
 ```
 Error
