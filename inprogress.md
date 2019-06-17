@@ -1,5 +1,5 @@
 ---
-title: In progress..
+title: In progress...
 layout: collection
 permalink: /inprogress/
 collection: inprogress
