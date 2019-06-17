@@ -128,8 +128,8 @@ defaults:
       layout: post
       comments: true
       share: true  
-
-   - scope:
+  # Test defaults
+  - scope:
       path: "_test"
       type: test
     values:
@@ -137,7 +137,6 @@ defaults:
       comments: true
       share: true         
            
-
 # Site Author
 author:
   name: Miquel Mariano
