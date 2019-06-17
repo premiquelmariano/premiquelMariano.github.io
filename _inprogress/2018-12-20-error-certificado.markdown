@@ -8,11 +8,6 @@ tag:
 - automation
 - ansible
 - devops
-category: blog
-author: miquelMariano
-description: Error de certificado al actualizar a vCenter 6.5
-hidden: false
-permalink: /certificado/
 ---
 
 Buenos dias a tod@as!!
