@@ -25,7 +25,7 @@ yum install lighttpd -y
 
 
 Deshabilitar ipv6 en el fichero de configuración
-
+server.use-ipv6 = "disable"
 
 systemctl start lighttpd
 systemctl enable lighttpd
