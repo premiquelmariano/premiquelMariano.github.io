@@ -22,8 +22,17 @@ sudo systemctl disable firewalld
 
 Instalar lighttpd | https://www.linuxhelp.com/how-to-install-lighttpd-web-server-on-centos-7
 yum install lighttpd -y
+
+
+Deshabilitar ipv6 en el fichero de configuración
+
+
 systemctl start lighttpd
 systemctl enable lighttpd
+
+Habilitar dir-listing en el fichero de configuración
+server.dir-listing = "enable"
+server.modules += ( "mod_auth" )
 
 Editar mime para mostrar .yml como yaml
 vim /etc/lighttpd/conf.d/mime.conf
@@ -32,6 +41,8 @@ Crear link simbolico de ansible en cd /var/www/lighttpd/ | https://kb.iu.edu/d/a
 ln -s source_file myfile
 
 Securizar: https://www.cyberciti.biz/tips/lighttpd-setup-a-password-protected-directory-directories.html
+
+
 
 Espero que os sirva.
 
