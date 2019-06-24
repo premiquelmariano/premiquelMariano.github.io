@@ -18,6 +18,9 @@
 - title: About
   url: /about/  
 
+- title: Ansible Galaxy
+  url: "https://galaxy.ansible.com/miquelMariano"
+
 - title: Search
   url: /search/
   
