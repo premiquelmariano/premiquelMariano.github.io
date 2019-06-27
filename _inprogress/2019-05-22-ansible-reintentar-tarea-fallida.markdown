@@ -29,6 +29,7 @@ https://coderwall.com/p/ww4dxw/ansible-retry-task
         ignore_errors: yes
 ```
 
+![ansible-retry]({{ site.imagesposts2019 }}/07/ansible-retry.png)
 
 
 Espero que os sirva.
