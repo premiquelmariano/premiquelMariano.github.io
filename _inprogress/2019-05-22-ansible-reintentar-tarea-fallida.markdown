@@ -14,7 +14,13 @@ tag:
 
 ---
 
-https://coderwall.com/p/ww4dxw/ansible-retry-task
+Muchas veces, cuando trabajamos con tareas de Ansible nos encontramos que en mas de una ocasión, la acción falla.
+
+Evidentemente, si este fallo es debido a una mala configuración del servidor o que Ansible no se encuentra con el estado esperado, tendremos que revisar qué está pasando para poder solucionaro.
+
+En cambio, muchas otras veces, este error es temporal, o bien porque el servidor de destino está ocupado y no puede procesar la operación o simplemente porque se ha dado algún tipo de timeout i simplemente reintentando la tarea, ésta funcionará correctamente.
+
+Para poder reintentar una tarea de Ansible de forma automática, bastará con poner la opción `retries: xx` dónde `xx` será el número de intentos ha hacer. También podemos poner la opción `delay: xx` para indicar cuanto tiempo dejará pasar entre intento y intento.
 
 ```yaml
 ---
