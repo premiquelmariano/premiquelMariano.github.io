@@ -34,13 +34,12 @@ Para poder reintentar una tarea de Ansible de forma automática, necesitaremos r
       retries: 3
       delay: 10
       with_items:
-        - esxcli storage filesystem unmount -l IX_Simplex000_LDEV3000
-        - esxcli storage filesystem unmount -l IX_Simplex001_LDEV3001
-        - esxcli storage filesystem unmount -l IX_Simplex002_LDEV3002
-        - esxcli storage filesystem unmount -l IX_Simplex003_LDEV3003
-        - esxcli storage filesystem unmount -l IX_Simplex004_LDEV3004
-      when: "'loggs' in inventory_hostname "
-      tags: unmount
+        - esxcli storage filesystem unmount -l Datastore_VMFS6_001
+        - esxcli storage filesystem unmount -l Datastore_VMFS6_002
+        - esxcli storage filesystem unmount -l Datastore_VMFS6_003
+        - esxcli storage filesystem unmount -l Datastore_VMFS6_004
+        - esxcli storage filesystem unmount -l Datastore_VMFS6_005
+
 ```
 
 
