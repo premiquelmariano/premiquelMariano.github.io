@@ -9,6 +9,8 @@ tag:
 - vexpert
 - devops
 - backtobasics
+o: "{{"
+c: "}}"
 
 ---
 
@@ -18,7 +20,7 @@ Evidentemente, si este fallo es debido a una mala configuración del servidor o 
 
 En cambio, muchas otras veces, este error es temporal, o bien porque el servidor de destino está ocupado y no puede procesar la operación o simplemente porque se ha dado algún tipo de timeout y simplemente reintentando la tarea, ésta funcionará correctamente.
 
-Para poder reintentar una tarea de Ansible de forma automática, bastará con poner la opción `retries: xx` dónde `xx` será el número de intentos a hacer. También podemos poner la opción `delay: xx` para indicar cuanto tiempo dejará pasar entre intento y intento.
+Para poder reintentar una tarea de Ansible de forma automática, necesitaremos registrar l resultado de la ejecución con `register: task_result`. Una vez tengamos esta variable, haremos los correspondientes reintentos `until: task_result.rc == 0`, con la opción `retries: xx` dónde `xx` será el número de intentos a hacer. También podemos poner la opción `delay: xx` para indicar cuanto tiempo dejará pasar entre intento y intento.
 
 ```yaml
 ---
@@ -26,7 +28,7 @@ Para poder reintentar una tarea de Ansible de forma automática, bastará con po
   connection: local
   tasks:
     - name: Unmount datastores ESXi
-      command: "{{ item }}"
+      command: "{{ page.o }} item {{ page.c }}"
       register: task_result
       until: task_result.rc == 0
       retries: 3
