@@ -1,6 +1,6 @@
 ---
 title: Reintentar tarea fallida en Ansible
-date: '2018-02-28 00:00:00'
+date: '2019-07-17 00:00:00'
 layout: post
 image: /assets/images/posts/2019/07/ansible-retry2.png
 tag:
