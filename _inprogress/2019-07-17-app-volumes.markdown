@@ -25,6 +25,14 @@ http://www.virtuallanger.com/2015/03/23/vmware-appvolumeswritable-volumes/
 
 http://www.virtuallanger.com/2015/02/12/vmware-appvolumes-and-storage-groups/
 
+http://www.virtuallanger.com/2015/03/23/vmware-appvolumeswritable-volumes/
+
+https://www.ageroskam.nl/vmware/create-and-size-a-new-appstack-template/
+
+https://www.ageroskam.nl/app-volumes/install-and-configure-vmware-app-volumes-manager/
+
+https://www.ageroskam.nl/app-volumes/manage-user-profiles-with-writable-volumes/
+
 Espero que os sirva.
 
 Un saludo!
