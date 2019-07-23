@@ -22,16 +22,24 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 
 - [Part 1: Introducción](www.google.com)
 - [Part 2: Preparar servidor SQL](google.com)
-- [Part 3: Preparing Active Directory](google.com)
-- [Part 4: Connection Server Install and Initial Configuration](google.com)
-- [Part 5: Installing a Certificate on the Connection Server (optional)](google.com)
+- [Part 3: Preparar Active Directory](google.com)
+- [Part 4: Instalación y configuración Connection Server](google.com)
+- [Part 5: Instalación certificado (opcional)](google.com)
+
+- [Part 10: Preparar plantilla master Instant Clone](google.com)
+- [Part 11: Configurar un pool de Instant Clone](google.com)
+
+- [Part xx: Intalación y configuración de UAG](google.com)
+
 - [Part 6: Installing App Volumes](google.com)
 - [Part 7: App Volumes Initial Configuration](google.com)
 - [Part 8: Preparing the App Volumes provisioning system](google.com)
-- [Part 9: User Environment Manager Installation](google.com)
-- [Part 10: Preparing the Instant Clone Master VM](google.com)
-- [Part 11: Configuring the Instant Clone Desktop Pool](google.com)
 - [Part 12: Creating an AppStack and Writable Volume](google.com)
+
+- [Part 9: User Environment Manager Installation](google.com)
+
+- [Part xx: Instalación y configuración JMP Server](google.com)
+
 - [Part 13: Using the JMP Desktop](google.com)
 
 ### Introducción
