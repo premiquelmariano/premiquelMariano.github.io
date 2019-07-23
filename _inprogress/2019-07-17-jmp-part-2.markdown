@@ -42,7 +42,7 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 
 - [Part 13: Using the JMP Desktop](google.com)
 
-### Instalación servidor SQL Express 2017
+# Instalación servidor SQL Express 2017
 
 ![sql1]({{ site.imagesposts2019 }}/08/sql1.png)
 ![sql2]({{ site.imagesposts2019 }}/08/sql2.png)
