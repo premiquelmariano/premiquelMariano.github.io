@@ -1,0 +1,73 @@
+---
+title: Construyendo un laboratorio JMP con VMware Horizon - Parte 1
+date: '2019-07-17 00:00:00'
+layout: post
+image: /assets/images/posts/2019/07/horizon-logo.png
+tag:
+- vmware
+- horizon
+- vexpert
+- euc
+- desktop
+- mobility
+permalink: /jmp-part2/
+
+---
+
+https://univirt.wordpress.com/2018/02/20/building-a-horizon-view-jmp-lab-part-1-introduction/
+
+Buenos dias a tod@s!!
+
+En la siguiente serie de posts, pretendo explicar durante las próximas semanas el paso a paso para instalar un entorno JMP (Just-in-Time Management Platform) utilizando VMware Horizon 7 Instant Clones + App Volumes + VMware UEM (User Environment Manager) 
+
+- [Part 1: Introducción](www.google.com)
+- [Part 2: Preparar servidor SQL](google.com)
+- [Part 3: Preparar Active Directory](google.com)
+- [Part 4: Instalación y configuración Connection Server](google.com)
+- [Part 5: Instalación certificado (opcional)](google.com)
+
+- [Part 10: Preparar plantilla master Instant Clone](google.com)
+- [Part 11: Configurar un pool de Instant Clone](google.com)
+
+- [Part xx: Intalación y configuración de UAG](google.com)
+
+- [Part 6: Installing App Volumes](google.com)
+- [Part 7: App Volumes Initial Configuration](google.com)
+- [Part 8: Preparing the App Volumes provisioning system](google.com)
+- [Part 12: Creating an AppStack and Writable Volume](google.com)
+
+- [Part 9: User Environment Manager Installation](google.com)
+
+- [Part xx: Instalación y configuración JMP Server](google.com)
+
+- [Part 13: Using the JMP Desktop](google.com)
+
+### Instalación servidor SQL Express 2017
+
+![sql1]({{ site.imagesposts2019 }}/08/sql1.png)
+![sql2]({{ site.imagesposts2019 }}/08/sql2.png)
+![sql3]({{ site.imagesposts2019 }}/08/sql3.png)
+![sql4]({{ site.imagesposts2019 }}/08/sql4.png)
+![sql5]({{ site.imagesposts2019 }}/08/sql5.png)
+![sql6]({{ site.imagesposts2019 }}/08/sql6.png)
+![sql7]({{ site.imagesposts2019 }}/08/sql7.png)
+![sql8]({{ site.imagesposts2019 }}/08/sql8.png)
+![sql9]({{ site.imagesposts2019 }}/08/sql9.png)
+![sql10]({{ site.imagesposts2019 }}/08/sql10.png)
+![sql11]({{ site.imagesposts2019 }}/08/sql11.png)
+![sql12]({{ site.imagesposts2019 }}/08/sql12.png)
+![sql13]({{ site.imagesposts2019 }}/08/sql13.png)
+![sql14]({{ site.imagesposts2019 }}/08/sql14.png)
+![sql15]({{ site.imagesposts2019 }}/08/sql15.png)
+![sql16]({{ site.imagesposts2019 }}/08/sql16.png)
+![sql17]({{ site.imagesposts2019 }}/08/sql17.png)
+![sql18]({{ site.imagesposts2019 }}/08/sql18.png)
+
+
+Espero que os sirva.
+
+Un saludo!
+
+Miquel.
+
+
