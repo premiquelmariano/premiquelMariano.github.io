@@ -5,20 +5,19 @@ layout: post
 image: /assets/images/posts/2019/07/horizon-logo.png
 tag:
 - vmware
-- vsphere
+- horizon
 - vexpert
-- devops
-- backtobasics
-o: "{{"
-c: "}}"
+- euc
+- desktop
+- mobility
 
 ---
 
 https://univirt.wordpress.com/2018/02/20/building-a-horizon-view-jmp-lab-part-1-introduction/
 
 
-Part 1: Introduction
-Part 2: Preparing the events database
+-[Part 1: Introduction](www.google.com)
+-[Part 2: Preparing the events database](google.com)
 Part 3: Preparing Active Directory
 Part 4: Connection Server Install and Initial Configuration
 Part 5: Installing a Certificate on the Connection Server (optional)
@@ -32,6 +31,8 @@ Part 12: Creating an AppStack and Writable Volume
 Part 13: Using the JMP Desktop
 
 ### Introducción
+
+![jmp1]({{ site.imagesposts2019 }}/07/jmp1.jgp)
 
 Espero que os sirva.
 
