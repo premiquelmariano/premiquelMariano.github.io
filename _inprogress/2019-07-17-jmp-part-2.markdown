@@ -62,6 +62,8 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 ![sql16]({{ site.imagesposts2019 }}/08/sql16.png)
 ![sql17]({{ site.imagesposts2019 }}/08/sql17.png)
 ![sql18]({{ site.imagesposts2019 }}/08/sql18.png)
+![sql19]({{ site.imagesposts2019 }}/08/sql19.png)
+![sql20]({{ site.imagesposts2019 }}/08/sql20.png)
 
 
 Espero que os sirva.
