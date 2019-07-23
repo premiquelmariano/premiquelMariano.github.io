@@ -2,7 +2,7 @@
 title: Construyendo un laboratorio JMP con VMware Horizon - Part 1
 date: '2019-07-17 00:00:00'
 layout: post
-image: /assets/images/posts/2019/07/ansible-retry2.png
+image: /assets/images/posts/2019/07/horizon-logo.png
 tag:
 - vmware
 - vsphere
