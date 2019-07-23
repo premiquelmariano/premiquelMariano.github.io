@@ -20,29 +20,17 @@ Buenos dias a tod@s!!
 En la siguiente serie de posts, pretendo explicar durante las próximas semanas el paso a paso para instalar un entorno JMP (Just-in-Time Management Platform) utilizando VMware Horizon 7 Instant Clones + App Volumes + VMware UEM (User Environment Manager) 
 
 - [Part 1: Introduction](www.google.com)
-
 - [Part 2: Preparing the events database](google.com)
-
 Part 3: Preparing Active Directory
-
 Part 4: Connection Server Install and Initial Configuration
-
 Part 5: Installing a Certificate on the Connection Server (optional)
-
 Part 6: Installing App Volumes
-
 Part 7: App Volumes Initial Configuration
-
 Part 8: Preparing the App Volumes provisioning system
-
 Part 9: User Environment Manager Installation
-
 Part 10: Preparing the Instant Clone Master VM
-
 Part 11: Configuring the Instant Clone Desktop Pool
-
 Part 12: Creating an AppStack and Writable Volume
-
 Part 13: Using the JMP Desktop
 
 ### Introducción
