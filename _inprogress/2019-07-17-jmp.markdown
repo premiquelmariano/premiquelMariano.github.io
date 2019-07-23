@@ -1,5 +1,5 @@
 ---
-title: JMP
+title: Construyendo un laboratorio JMP con VMware Horizon - Part 1
 date: '2019-07-17 00:00:00'
 layout: post
 image: /assets/images/posts/2019/07/ansible-retry2.png
@@ -15,6 +15,23 @@ c: "}}"
 ---
 
 https://univirt.wordpress.com/2018/02/20/building-a-horizon-view-jmp-lab-part-1-introduction/
+
+
+Part 1: Introduction
+Part 2: Preparing the events database
+Part 3: Preparing Active Directory
+Part 4: Connection Server Install and Initial Configuration
+Part 5: Installing a Certificate on the Connection Server (optional)
+Part 6: Installing App Volumes
+Part 7: App Volumes Initial Configuration
+Part 8: Preparing the App Volumes provisioning system
+Part 9: User Environment Manager Installation
+Part 10: Preparing the Instant Clone Master VM
+Part 11: Configuring the Instant Clone Desktop Pool
+Part 12: Creating an AppStack and Writable Volume
+Part 13: Using the JMP Desktop
+
+### Introducción
 
 Espero que os sirva.
 
