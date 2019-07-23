@@ -38,7 +38,7 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 
 - [Part 9: User Environment Manager Installation](google.com)
 
-- [Part xx: Instalación y configuración JMP Server](google.com)
+- [Part xx: Instalación y configuración JMP Server](https://premiquelmariano.github.io/jmp-part99/)
 
 - [Part 13: Using the JMP Desktop](google.com)
 
