@@ -41,22 +41,20 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 
 # Crear nuestro primer App Stack
 
-![appstack1]({{ site.imagesposts2019 }}/08/appstack1.png)
-![appstack2]({{ site.imagesposts2019 }}/08/appstack2.png)
-![appstack3]({{ site.imagesposts2019 }}/08/appstack3.png)
-![appstack4]({{ site.imagesposts2019 }}/08/appstack4.png)
-![appstack5]({{ site.imagesposts2019 }}/08/appstack5.png)
-![appstack6]({{ site.imagesposts2019 }}/08/appstack6.png)
-![appstack7]({{ site.imagesposts2019 }}/08/appstack7.png)
-![appstack8]({{ site.imagesposts2019 }}/08/appstack8.png)
-![appstack9]({{ site.imagesposts2019 }}/08/appstack9.png)
-![appstack10]({{ site.imagesposts2019 }}/08/appstack10.png)
-![appstack11]({{ site.imagesposts2019 }}/08/appstack11.png)
-![appstack12]({{ site.imagesposts2019 }}/08/appstack12.png)
-
-![appstack13]({{ site.imagesposts2019 }}/08/appstack13.png){: .center-image }
-
-![appstack14]({{ site.imagesposts2019 }}/08/appstack14.png)
+![appstack1]({{ site.imagesposts2019 }}/08/appstack1.png){: .align-center}
+![appstack2]({{ site.imagesposts2019 }}/08/appstack2.png){: .align-center}
+![appstack3]({{ site.imagesposts2019 }}/08/appstack3.png){: .align-center}
+![appstack4]({{ site.imagesposts2019 }}/08/appstack4.png){: .align-center}
+![appstack5]({{ site.imagesposts2019 }}/08/appstack5.png){: .align-center}
+![appstack6]({{ site.imagesposts2019 }}/08/appstack6.png){: .align-center}
+![appstack7]({{ site.imagesposts2019 }}/08/appstack7.png){: .align-center}
+![appstack8]({{ site.imagesposts2019 }}/08/appstack8.png){: .align-center}
+![appstack9]({{ site.imagesposts2019 }}/08/appstack9.png){: .align-center}
+![appstack10]({{ site.imagesposts2019 }}/08/appstack10.png){: .align-center}
+![appstack11]({{ site.imagesposts2019 }}/08/appstack11.png){: .align-center}
+![appstack12]({{ site.imagesposts2019 }}/08/appstack12.png){: .align-center}
+![appstack13]({{ site.imagesposts2019 }}/08/appstack13.png){: .align-center}
+![appstack14]({{ site.imagesposts2019 }}/08/appstack14.png){: .align-center}
 
 
 
