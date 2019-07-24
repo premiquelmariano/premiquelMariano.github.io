@@ -1,5 +1,5 @@
 ---
-title: Construyendo un laboratorio JMP con VMware Horizon - Parte 1
+title: Construyendo un laboratorio JMP con VMware Horizon - Parte 13
 date: '2019-07-17 00:00:00'
 layout: post
 image: /assets/images/posts/2019/07/horizon-logo.png
@@ -10,7 +10,7 @@ tag:
 - euc
 - desktop
 - mobility
-permalink: /jmp-part1/
+permalink: /jmp-part13/
 
 ---
 
@@ -39,11 +39,20 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 - [Part 17: Instalación y configuración JMP Server]({{ site.url }}/jmp-part17/)
 - [Part 18: Aprovisionamiento con JMP]({{ site.url }}/jmp-part18/)
 
-### Introducción
+# Crear nuestro primer App Stack
 
-![jmp1]({{ site.imagesposts2019 }}/07/jmp1.jpg)
+![appstack1]({{ site.imagesposts2019 }}/08/appstack1.png)
+![appstack2]({{ site.imagesposts2019 }}/08/appstack2.png)
+![appstack3]({{ site.imagesposts2019 }}/08/appstack3.png)
+![appstack4]({{ site.imagesposts2019 }}/08/appstack4.png)
+![appstack5]({{ site.imagesposts2019 }}/08/appstack5.png)
+![appstack6]({{ site.imagesposts2019 }}/08/appstack6.png)
+![appstack7]({{ site.imagesposts2019 }}/08/appstack7.png)
+![appstack8]({{ site.imagesposts2019 }}/08/appstack8.png)
+![appstack9]({{ site.imagesposts2019 }}/08/appstack9.png)
+![appstack10]({{ site.imagesposts2019 }}/08/appstack10.png)
 
-bla bla bla...
+
 
 Espero que os sirva.
 
