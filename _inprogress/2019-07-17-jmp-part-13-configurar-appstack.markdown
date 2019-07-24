@@ -51,6 +51,10 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 ![appstack8]({{ site.imagesposts2019 }}/08/appstack8.png)
 ![appstack9]({{ site.imagesposts2019 }}/08/appstack9.png)
 ![appstack10]({{ site.imagesposts2019 }}/08/appstack10.png)
+![appstack11]({{ site.imagesposts2019 }}/08/appstack11.png)
+![appstack12]({{ site.imagesposts2019 }}/08/appstack12.png)
+![appstack13]({{ site.imagesposts2019 }}/08/appstack13.png)
+![appstack14]({{ site.imagesposts2019 }}/08/appstack14.png)
 
 
 
