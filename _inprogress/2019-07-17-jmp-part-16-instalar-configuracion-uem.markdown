@@ -1,5 +1,5 @@
 ---
-title: Construyendo un laboratorio JMP con VMware Horizon - Parte 2
+title: Construyendo un laboratorio JMP con VMware Horizon - Parte 16
 date: '2019-07-17 00:00:00'
 layout: post
 image: /assets/images/posts/2019/07/horizon-logo.png
@@ -10,7 +10,7 @@ tag:
 - euc
 - desktop
 - mobility
-permalink: /jmp-part2/
+permalink: /jmp-part16/
 
 ---
 
@@ -39,29 +39,17 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 - [Part 17: Instalación y configuración JMP Server]({{ site.url }}/jmp-part17/)
 - [Part 18: Aprovisionamiento con JMP]({{ site.url }}/jmp-part18/)
 
-# Instalación servidor SQL Express 2017
+# Primeros pasos con UEM
 
-![sql1]({{ site.imagesposts2019 }}/08/sql1.png)
-![sql2]({{ site.imagesposts2019 }}/08/sql2.png)
-![sql3]({{ site.imagesposts2019 }}/08/sql3.png)
-![sql4]({{ site.imagesposts2019 }}/08/sql4.png)
-![sql5]({{ site.imagesposts2019 }}/08/sql5.png)
-![sql6]({{ site.imagesposts2019 }}/08/sql6.png)
-![sql7]({{ site.imagesposts2019 }}/08/sql7.png)
-![sql8]({{ site.imagesposts2019 }}/08/sql8.png)
-![sql9]({{ site.imagesposts2019 }}/08/sql9.png)
-![sql10]({{ site.imagesposts2019 }}/08/sql10.png)
-![sql11]({{ site.imagesposts2019 }}/08/sql11.png)
-![sql12]({{ site.imagesposts2019 }}/08/sql12.png)
-![sql13]({{ site.imagesposts2019 }}/08/sql13.png)
-![sql14]({{ site.imagesposts2019 }}/08/sql14.png)
-![sql15]({{ site.imagesposts2019 }}/08/sql15.png)
-![sql16]({{ site.imagesposts2019 }}/08/sql16.png)
-![sql17]({{ site.imagesposts2019 }}/08/sql17.png)
-![sql18]({{ site.imagesposts2019 }}/08/sql18.png)
-![sql19]({{ site.imagesposts2019 }}/08/sql19.png)
-![sql20]({{ site.imagesposts2019 }}/08/sql20.png)
-![sql21]({{ site.imagesposts2019 }}/08/sql21.png)
+![uem_config1]({{ site.imagesposts2019 }}/08/uem_config1.png)
+![uem_config2]({{ site.imagesposts2019 }}/08/uem_config2.png)
+![uem_config3]({{ site.imagesposts2019 }}/08/uem_config3.png)
+![uem_config4]({{ site.imagesposts2019 }}/08/uem_config4.png)
+![uem_config5]({{ site.imagesposts2019 }}/08/uem_config5.png)
+![uem_config6]({{ site.imagesposts2019 }}/08/uem_config6.png)
+![uem_config7]({{ site.imagesposts2019 }}/08/uem_config7.png)
+![uem_config8]({{ site.imagesposts2019 }}/08/uem_config8.png)
+![uem_config9]({{ site.imagesposts2019 }}/08/uem_config9.png)
 
 
 Espero que os sirva.
