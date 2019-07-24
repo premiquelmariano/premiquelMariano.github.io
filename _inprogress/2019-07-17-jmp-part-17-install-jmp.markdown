@@ -1,5 +1,5 @@
 ---
-title: Construyendo un laboratorio JMP con VMware Horizon - Parte 99
+title: Construyendo un laboratorio JMP con VMware Horizon - Parte 17
 date: '2019-07-17 00:00:00'
 layout: post
 image: /assets/images/posts/2019/07/horizon-logo.png
@@ -10,7 +10,7 @@ tag:
 - euc
 - desktop
 - mobility
-permalink: /jmp-part99/
+permalink: /jmp-part17/
 
 ---
 
