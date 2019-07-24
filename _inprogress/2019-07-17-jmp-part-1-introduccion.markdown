@@ -22,26 +22,28 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 
 - [Part 1: Introducción]({{ site.url }}/jmp-part1/)
 - [Part 2: Preparar servidor SQL]({{ site.url }}/jmp-part2/)
-- [Part 3: Preparar Active Directory](google.com)
-- [Part 4: Instalación y configuración Connection Server](google.com)
-- [Part 4: Instalación y configuración Replica Server](google.com)
-- [Part 5: Intalación y configuración de Security Server](google.com)
-- [Part 6: Intalación y configuración de UAG](google.com)
-- [Part 7: Instalación certificado (opcional)](google.com)
-- [Part 8: Preparar plantilla master para Instant Clone](google.com)
-- [Part 9: Configurar un pool de Instant Clone](google.com)
-- [Part 10: Instalar App Volumes](google.com)
-- [Part 11: Configuración inicial App Volumes](google.com)
-- [Part 12: Crear nuestro primer App Stack](google.com)
-- [Part 13: Trabajando con Writable Volume](google.com)
-- [Part 14: User Environment Manager Installation](google.com)
-- [Part 15: Primeros pasos con UEM](google.com)
-- [Part 16: Instalación y configuración JMP Server]({{ site.url }}/jmp-part99/)
-- [Part 17: Aprovisionamiento con JMP](google.com)
+- [Part 3: Preparar Active Directory]({{ site.url }}/jmp-part3/)
+- [Part 4: Instalación y configuración Connection Server]({{ site.url }}/jmp-part4/)
+- [Part 5: Instalación y configuración Replica Server]({{ site.url }}/jmp-part5/)
+- [Part 6: Intalación y configuración de Security Server]({{ site.url }}/jmp-part6/)
+- [Part 7: Intalación y configuración de UAG](({{ site.url }}/jmp-part7/)
+- [Part 8: Instalación certificado (opcional)]({{ site.url }}/jmp-part8/)
+- [Part 9: Preparar plantilla master para Instant Clone]({{ site.url }}/jmp-part9/)
+- [Part 10: Configurar un pool de Instant Clone]({{ site.url }}/jmp-part10/)
+- [Part 11: Instalar App Volumes]({{ site.url }}/jmp-part11/)
+- [Part 12: Configuración inicial App Volumes]({{ site.url }}/jmp-part12/)
+- [Part 13: Crear nuestro primer App Stack]({{ site.url }}/jmp-part13/)
+- [Part 14: Trabajando con Writable Volumes]({{ site.url }}/jmp-part14/)
+- [Part 15: User Environment Manager Installation]({{ site.url }}/jmp-part15/)
+- [Part 16: Primeros pasos con UEM]({{ site.url }}/jmp-part16/)
+- [Part 17: Instalación y configuración JMP Server]({{ site.url }}/jmp-part17/)
+- [Part 18: Aprovisionamiento con JMP]({{ site.url }}/jmp-part18/)
 
 ### Introducción
 
 ![jmp1]({{ site.imagesposts2019 }}/07/jmp1.jpg)
+
+bla bla bla...
 
 Espero que os sirva.
 
