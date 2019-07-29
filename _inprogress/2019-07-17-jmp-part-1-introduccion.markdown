@@ -41,7 +41,7 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 
 ### Introducción
 
-![jmp1]({{ site.imagesposts2019 }}/07/jmp1.jpg)
+![jmp1]({{ site.imagesposts2019 }}/07/jmp1.jpg){: .align-center}
 
 bla bla bla...
 

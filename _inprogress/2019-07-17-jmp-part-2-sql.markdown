@@ -41,27 +41,27 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 
 # Instalación servidor SQL Express 2017
 
-![sql1]({{ site.imagesposts2019 }}/08/sql1.png)
-![sql2]({{ site.imagesposts2019 }}/08/sql2.png)
-![sql3]({{ site.imagesposts2019 }}/08/sql3.png)
-![sql4]({{ site.imagesposts2019 }}/08/sql4.png)
-![sql5]({{ site.imagesposts2019 }}/08/sql5.png)
-![sql6]({{ site.imagesposts2019 }}/08/sql6.png)
-![sql7]({{ site.imagesposts2019 }}/08/sql7.png)
-![sql8]({{ site.imagesposts2019 }}/08/sql8.png)
-![sql9]({{ site.imagesposts2019 }}/08/sql9.png)
-![sql10]({{ site.imagesposts2019 }}/08/sql10.png)
-![sql11]({{ site.imagesposts2019 }}/08/sql11.png)
-![sql12]({{ site.imagesposts2019 }}/08/sql12.png)
-![sql13]({{ site.imagesposts2019 }}/08/sql13.png)
-![sql14]({{ site.imagesposts2019 }}/08/sql14.png)
-![sql15]({{ site.imagesposts2019 }}/08/sql15.png)
-![sql16]({{ site.imagesposts2019 }}/08/sql16.png)
-![sql17]({{ site.imagesposts2019 }}/08/sql17.png)
-![sql18]({{ site.imagesposts2019 }}/08/sql18.png)
-![sql19]({{ site.imagesposts2019 }}/08/sql19.png)
-![sql20]({{ site.imagesposts2019 }}/08/sql20.png)
-![sql21]({{ site.imagesposts2019 }}/08/sql21.png)
+![sql1]({{ site.imagesposts2019 }}/08/sql1.png){: .align-center}
+![sql2]({{ site.imagesposts2019 }}/08/sql2.png){: .align-center}
+![sql3]({{ site.imagesposts2019 }}/08/sql3.png){: .align-center}
+![sql4]({{ site.imagesposts2019 }}/08/sql4.png){: .align-center}
+![sql5]({{ site.imagesposts2019 }}/08/sql5.png){: .align-center}
+![sql6]({{ site.imagesposts2019 }}/08/sql6.png){: .align-center}
+![sql7]({{ site.imagesposts2019 }}/08/sql7.png){: .align-center}
+![sql8]({{ site.imagesposts2019 }}/08/sql8.png){: .align-center}
+![sql9]({{ site.imagesposts2019 }}/08/sql9.png){: .align-center}
+![sql10]({{ site.imagesposts2019 }}/08/sql10.png){: .align-center}
+![sql11]({{ site.imagesposts2019 }}/08/sql11.png){: .align-center}
+![sql12]({{ site.imagesposts2019 }}/08/sql12.png){: .align-center}
+![sql13]({{ site.imagesposts2019 }}/08/sql13.png){: .align-center}
+![sql14]({{ site.imagesposts2019 }}/08/sql14.png){: .align-center}
+![sql15]({{ site.imagesposts2019 }}/08/sql15.png){: .align-center}
+![sql16]({{ site.imagesposts2019 }}/08/sql16.png){: .align-center}
+![sql17]({{ site.imagesposts2019 }}/08/sql17.png){: .align-center}
+![sql18]({{ site.imagesposts2019 }}/08/sql18.png){: .align-center}
+![sql19]({{ site.imagesposts2019 }}/08/sql19.png){: .align-center}
+![sql20]({{ site.imagesposts2019 }}/08/sql20.png){: .align-center}
+![sql21]({{ site.imagesposts2019 }}/08/sql21.png){: .align-center}
 
 
 Espero que os sirva.

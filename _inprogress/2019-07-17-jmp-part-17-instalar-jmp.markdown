@@ -41,18 +41,18 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 
 # Instalación y configuración JMP Server
 
-![jmp_db1]({{ site.imagesposts2019 }}/08/jmp_db1.png)
-![jmp_db2]({{ site.imagesposts2019 }}/08/jmp_db2.png)
-![jmp_db3]({{ site.imagesposts2019 }}/08/jmp_db3.png)
-![jmp_db4]({{ site.imagesposts2019 }}/08/jmp_db4.png)
-![jmp1]({{ site.imagesposts2019 }}/08/jmp1.png)
-![jmp2]({{ site.imagesposts2019 }}/08/jmp2.png)
-![jmp3]({{ site.imagesposts2019 }}/08/jmp3.png)
-![jmp4]({{ site.imagesposts2019 }}/08/jmp4.png)
-![jmp5]({{ site.imagesposts2019 }}/08/jmp5.png)
-![jmp6]({{ site.imagesposts2019 }}/08/jmp6.png)
-![jmp7]({{ site.imagesposts2019 }}/08/jmp7.png)
-![jmp8]({{ site.imagesposts2019 }}/08/jmp8.png)
+![jmp_db1]({{ site.imagesposts2019 }}/08/jmp_db1.png){: .align-center}
+![jmp_db2]({{ site.imagesposts2019 }}/08/jmp_db2.png){: .align-center}
+![jmp_db3]({{ site.imagesposts2019 }}/08/jmp_db3.png){: .align-center}
+![jmp_db4]({{ site.imagesposts2019 }}/08/jmp_db4.png){: .align-center}
+![jmp1]({{ site.imagesposts2019 }}/08/jmp1.png){: .align-center}
+![jmp2]({{ site.imagesposts2019 }}/08/jmp2.png){: .align-center}
+![jmp3]({{ site.imagesposts2019 }}/08/jmp3.png){: .align-center}
+![jmp4]({{ site.imagesposts2019 }}/08/jmp4.png){: .align-center}
+![jmp5]({{ site.imagesposts2019 }}/08/jmp5.png){: .align-center}
+![jmp6]({{ site.imagesposts2019 }}/08/jmp6.png){: .align-center}
+![jmp7]({{ site.imagesposts2019 }}/08/jmp7.png){: .align-center}
+![jmp8]({{ site.imagesposts2019 }}/08/jmp8.png){: .align-center}
 
 
 Espero que os sirva.
