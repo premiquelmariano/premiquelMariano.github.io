@@ -79,17 +79,17 @@ Al tratarse de un laboratorio, con los parámetros por defecto que nos propone e
 
 ![sql14]({{ site.imagesposts2019 }}/08/sql14.png){: .align-center}
 
-Habilitaremos las conexiones TCP/IP y fijaremos el puerto de escucha el 1433. Hay servicios que no soportan puerto estático, por lo que si lo dejamos configurado en este punto, ya nos evitamos problemas en un futuro.
+Habilitaremos las conexiones TCP/IP y fijaremos el puerto de escucha el 1433. Hay servicios que no soportan puerto dinámico, por lo que si lo dejamos configurado en este punto, ya nos evitamos problemas en un futuro.
 
 ![sql15]({{ site.imagesposts2019 }}/08/sql15.png){: .align-center}
-
-También dejaremos instalado el SQL Management Studio en este mismo servidor.
-
-La descarga la podremos realizar [desde aquí](https://docs.microsoft.com/es-es/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017) y la instalación tampoco tiene mucho mas misterio que ir siguiendo el asistente.
 
 ![sql16]({{ site.imagesposts2019 }}/08/sql16.png){: .align-center}
 
 ![sql17]({{ site.imagesposts2019 }}/08/sql17.png){: .align-center}
+
+También dejaremos instalado el SQL Management Studio en este mismo servidor.
+
+La descarga la podremos realizar [desde aquí](https://docs.microsoft.com/es-es/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017) y la instalación tampoco tiene mucho mas misterio que ir siguiendo el asistente.
 
 ![sql18]({{ site.imagesposts2019 }}/08/sql18.png){: .align-center}
 
