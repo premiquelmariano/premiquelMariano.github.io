@@ -14,8 +14,6 @@ permalink: /jmp-part2/
 
 ---
 
-https://univirt.wordpress.com/2018/02/20/building-a-horizon-view-jmp-lab-part-1-introduction/
-
 Buenos dias a tod@s!!
 
 En la siguiente serie de posts, pretendo explicar durante las próximas semanas el paso a paso para instalar un entorno JMP (Just-in-Time Management Platform) utilizando VMware Horizon 7 Instant Clones + App Volumes + VMware UEM (User Environment Manager) 
@@ -25,8 +23,8 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 - [Part 3: Preparar Active Directory]({{ site.url }}/jmp-part3/)
 - [Part 4: Instalación y configuración Connection Server]({{ site.url }}/jmp-part4/)
 - [Part 5: Instalación y configuración Replica Server]({{ site.url }}/jmp-part5/)
-- [Part 6: Intalación y configuración de Security Server]({{ site.url }}/jmp-part6/)
-- [Part 7: Intalación y configuración de UAG]({{ site.url }}/jmp-part7/)
+- [Part 6: Instalación y configuración de Security Server]({{ site.url }}/jmp-part6/)
+- [Part 7: Instalación y configuración de UAG]({{ site.url }}/jmp-part7/)
 - [Part 8: Instalación certificado (opcional)]({{ site.url }}/jmp-part8/)
 - [Part 9: Preparar plantilla master para Instant Clone]({{ site.url }}/jmp-part9/)
 - [Part 10: Configurar un pool de Instant Clone]({{ site.url }}/jmp-part10/)
