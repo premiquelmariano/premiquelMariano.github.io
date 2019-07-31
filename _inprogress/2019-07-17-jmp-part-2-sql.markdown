@@ -63,6 +63,8 @@ Antes de nada, necesitaremos tener en nuestro servidor, el framework .NET 3.5 in
 
 ![sql9]({{ site.imagesposts2019 }}/08/sql9.png){: .align-center}
 
+Nos podremos descargar el instalador [desde aquí](https://www.microsoft.com/es-es/sql-server/sql-server-editions-express)
+
 ![sql10]({{ site.imagesposts2019 }}/08/sql10.png){: .align-center}
 ![sql11]({{ site.imagesposts2019 }}/08/sql11.png){: .align-center}
 ![sql12]({{ site.imagesposts2019 }}/08/sql12.png){: .align-center}
