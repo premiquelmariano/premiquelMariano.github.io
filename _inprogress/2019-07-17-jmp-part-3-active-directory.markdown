@@ -69,17 +69,17 @@ Accederemos a nuestro vCenter con un usuario con permisos de administración glo
 
 ![ad5]({{ site.imagesposts2019 }}/08/ad5.png){: .align-center}
 
-| Item	              | Permision		            |
-|---------------------|-----------------------------|
-|                     | Delete folder               |
-| VMkernel warnings   | /var/log/vmkwarning.log     |
-| VMkernel summary    | /var/log/vmksummary.log     |
-| ESXi host agent log | /var/log/hostd.log          |
-| vCenter agent log   |                             |
-| Shell log           | /var/log/shell.log          |
-| Authentication      | /var/log/auth.log           |
-| System messages     | /var/log/syslog.log         |
-| Virtual machines    |                             |
+| ITEM      | PERMISION                 |
+|-----------|---------------------------|
+| Folder    | Create folder             |
+|           | Delete folder             |
+| Datastore | Allocate space            |
+|           | Browse datastore          |
+|           | Low level file operations |
+|           |                           |
+|           |                           |
+|           |                           |
+|           |                           |
 
 ![ad6]({{ site.imagesposts2019 }}/08/ad6.png){: .align-center}
 
