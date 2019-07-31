@@ -44,11 +44,11 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 
 Para que nuestro entorno funcione correctamente, necesitaremos de almenos 2 usuarios que tendrán funciones diferentes:
 
-- *Horizon_VC*: Es el usuario que usaremos para conectar el Connection Server con nuestro vCenter y será el encargado de desplegar las máquinas virtuales
+- **Horizon_VC**: Es el usuario que usaremos para conectar el Connection Server con nuestro vCenter y será el encargado de desplegar las máquinas virtuales
 
-- *Horizon_IC*: Este usuario es el que utilizaremos para vincular nuestros VDI a nuestra infraestructura AD. Será el encargado de asignar al dominio nuestros escritorios Instant Clone
+- **Horizon_IC**: Este usuario es el que utilizaremos para vincular nuestros VDI a nuestra infraestructura AD. Será el encargado de asignar al dominio nuestros escritorios Instant Clone
 
-*NOTA:* A mi personalmente me gusta segmentar los usuarios por tareas, pero tampoco habria ningún tipo de problema en utilizar el mismo usuario para ambas cosas.
+**NOTA:** A mi personalmente me gusta segmentar los usuarios por tareas, pero tampoco habria ningún tipo de problema en utilizar el mismo usuario para ambas cosas.
 {: .notice}
 
 ![sql1]({{ site.imagesposts2019 }}/08/sql1.png){: .align-center}
