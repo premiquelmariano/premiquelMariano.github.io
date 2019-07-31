@@ -51,13 +51,25 @@ Para que nuestro entorno funcione correctamente, necesitaremos de almenos 2 usua
 **NOTA:** A mi personalmente me gusta segmentar los usuarios por tareas, pero tampoco habria ningún tipo de problema en utilizar el mismo usuario para ambas cosas.
 {: .notice}
 
+Antes de empezar a crear las cuentas, crearemos una OU llamada **VDI** que va a ser donde estarán los escritorios que se vayan desplegando.
+
 ![ad1]({{ site.imagesposts2019 }}/08/ad1.png){: .align-center}
+
+Creamos el usuario **Horizon_VC**:
 
 ![ad2]({{ site.imagesposts2019 }}/08/ad2.png){: .align-center}
 
 ![ad3]({{ site.imagesposts2019 }}/08/ad3.png){: .align-center}
 
 ![ad4]({{ site.imagesposts2019 }}/08/ad4.png){: .align-center}
+
+Ahora, es el momento de dar permisos al usuario que acabamos de crear a nuestro vCenter para que pueda crear máquinas virtuales.
+
+Accederemos a nuestro vCenter con un usuario con permisos de administración global y nos vamos en el apartado de roles:
+
+![ad5]({{ site.imagesposts2019 }}/08/ad5.png){: .align-center}
+
+![ad6]({{ site.imagesposts2019 }}/08/ad6.png){: .align-center}
 
 
 
