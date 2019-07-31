@@ -60,9 +60,18 @@ Lo que nos proporciona JMP, és una nueva metodología para proporcionar a los u
 
 Para mas información, VMware ha creado la [siguiente guía](https://techzone.vmware.com/resource/jmp-and-vmware-horizon-7-deployment-considerations) con información detallada sobre JMP y Horizon 7
 
-bla bla bla...
+El propósito de esta serie es crear un step-by-step para crear un entorno JMP completamente funcional y los componentes estarán basados en las siguientes versiones:
 
-Espero que os sirva.
+ - Horizon 7 Enterprise v7.8
+ - App Volumes v2.17
+ - UEM v9.8
+ - SQL server express 2017
+ - ESXi v6.7 U2
+ - vCenter v6.7 U2
+ - Para los servidores, Windows Server 2019 Standard
+ - Para la plantilla, Windows 10 LTSC x64
+
+En breve, empezamos con lo divertido de verdadd ;-)
 
 Un saludo!
 
