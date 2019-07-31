@@ -51,11 +51,14 @@ Para que nuestro entorno funcione correctamente, necesitaremos de almenos 2 usua
 **NOTA:** A mi personalmente me gusta segmentar los usuarios por tareas, pero tampoco habria ningún tipo de problema en utilizar el mismo usuario para ambas cosas.
 {: .notice}
 
-![sql1]({{ site.imagesposts2019 }}/08/sql1.png){: .align-center}
+![ad1]({{ site.imagesposts2019 }}/08/ad1.png){: .align-center}
 
+![ad2]({{ site.imagesposts2019 }}/08/ad2.png){: .align-center}
 
+![ad3]({{ site.imagesposts2019 }}/08/ad3.png){: .align-center}
 
-![sql21]({{ site.imagesposts2019 }}/08/sql21.png){: .align-center}
+![ad4]({{ site.imagesposts2019 }}/08/ad4.png){: .align-center}
+
 
 
 Espero que os sirva.
