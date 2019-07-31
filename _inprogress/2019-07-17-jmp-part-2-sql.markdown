@@ -63,6 +63,8 @@ Antes de nada, necesitaremos tener en nuestro servidor, el framework .NET 3.5 in
 
 ![sql9]({{ site.imagesposts2019 }}/08/sql9.png){: .align-center}
 
+Una vez habilitado .NET 3.5, podremos empezar con la instalación de SQL Server Express 2017
+
 Nos podremos descargar el instalador [desde aquí](https://www.microsoft.com/es-es/sql-server/sql-server-editions-express)
 
 Al tratarse de un laboratorio, con los parámetros por defecto que nos propone el instalador será suficiente.
