@@ -1,6 +1,6 @@
 ---
 title: Creando un entorno JMP con VMware Horizon - Parte 3
-date: '2019-07-17 00:00:00'
+date: '2019-07-19 00:00:00'
 layout: post
 image: /assets/images/posts/2019/07/horizon-logo.png
 tag:
