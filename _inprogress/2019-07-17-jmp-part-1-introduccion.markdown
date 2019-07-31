@@ -58,6 +58,8 @@ Lo que nos proporciona JMP, és una nueva metodología para proporcionar a los u
 
 ![jmp1]({{ site.imagesposts2019 }}/07/jmp1.png){: .align-center}
 
+Para mas información, VMware ha creado la [siguiente guía](https://techzone.vmware.com/resource/jmp-and-vmware-horizon-7-deployment-considerations) con información detallada sobre JMP y Horizon 7
+
 bla bla bla...
 
 Espero que os sirva.
