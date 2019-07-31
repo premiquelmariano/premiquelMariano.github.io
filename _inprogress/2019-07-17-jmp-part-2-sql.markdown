@@ -41,15 +41,28 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 
 # Instalación servidor SQL Express 2017
 
+En el entorno que vamos a crear, muchos de los servicios requieren de una BBDD para guardar sus configuraciones. Para no ir dejando servidores de BBDD instalados en local en cada servidor, me he decidido por centralizar y crear un único servidor de BBDD con SQL Express 2017.
+
+Antes de nada, necesitaremos tener en nuestro servidor, el framework .NET 3.5 instalado. Cómo sabeis, en las versiones modernas de windows viene como característica y su instalación es de lo mas sencilla:
+
 ![sql1]({{ site.imagesposts2019 }}/08/sql1.png){: .align-center}
+
 ![sql2]({{ site.imagesposts2019 }}/08/sql2.png){: .align-center}
+
 ![sql3]({{ site.imagesposts2019 }}/08/sql3.png){: .align-center}
+
 ![sql4]({{ site.imagesposts2019 }}/08/sql4.png){: .align-center}
+
 ![sql5]({{ site.imagesposts2019 }}/08/sql5.png){: .align-center}
+
 ![sql6]({{ site.imagesposts2019 }}/08/sql6.png){: .align-center}
+
 ![sql7]({{ site.imagesposts2019 }}/08/sql7.png){: .align-center}
+
 ![sql8]({{ site.imagesposts2019 }}/08/sql8.png){: .align-center}
+
 ![sql9]({{ site.imagesposts2019 }}/08/sql9.png){: .align-center}
+
 ![sql10]({{ site.imagesposts2019 }}/08/sql10.png){: .align-center}
 ![sql11]({{ site.imagesposts2019 }}/08/sql11.png){: .align-center}
 ![sql12]({{ site.imagesposts2019 }}/08/sql12.png){: .align-center}
