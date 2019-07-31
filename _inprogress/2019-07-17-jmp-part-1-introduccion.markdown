@@ -56,7 +56,7 @@ Con la llegada de Horizon, en su versión 7.5, ha llegado también una nueva car
 Lo que nos proporciona JMP, és una nueva metodología para proporcionar a los usuarios la experiencia de un escritorio persistente pero utilizando tecnología de escritorios volátiles (Instant Clones), entrega de aplicaciones en tiempo real (App Volumes) y gestión eficiende de los datos y perfiles de usuario (UEM)
 
 
-![jmp1]({{ site.imagesposts2019 }}/07/jmp1.jpg){: .align-center}
+![jmp1]({{ site.imagesposts2019 }}/07/jmp1.png){: .align-center}
 
 bla bla bla...
 
