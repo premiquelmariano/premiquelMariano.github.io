@@ -76,8 +76,8 @@ Accederemos a nuestro vCenter con un usuario con permisos de administración glo
 | Datastore | Allocate space            |
 |           | Browse datastore          |
 |           | Low level file operations |
-|           |                           |
-|           |                           |
+| Host      | In Inventory              |
+|           | * Modify Cluster          |
 |           |                           |
 |           |                           |
 
