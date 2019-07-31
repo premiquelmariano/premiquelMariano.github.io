@@ -1,5 +1,5 @@
 ---
-title: Construyendo un laboratorio JMP con VMware Horizon - Parte 17
+title: Creando un entorno JMP con VMware Horizon - Parte 17
 date: '2019-07-17 00:00:00'
 layout: post
 image: /assets/images/posts/2019/07/horizon-logo.png
