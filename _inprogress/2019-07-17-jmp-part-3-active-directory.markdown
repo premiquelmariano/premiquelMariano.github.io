@@ -69,7 +69,7 @@ Accederemos a nuestro vCenter con un usuario con permisos de administración glo
 
 ![ad5]({{ site.imagesposts2019 }}/08/ad5.png){: .align-center}
 
-| Folder              | Create folder Delete folder |
+| Item	              | Permision		            |
 |---------------------|-----------------------------|
 |                     | Delete folder               |
 | VMkernel warnings   | /var/log/vmkwarning.log     |
