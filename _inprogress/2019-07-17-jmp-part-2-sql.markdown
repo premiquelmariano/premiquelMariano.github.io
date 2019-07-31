@@ -65,17 +65,38 @@ Antes de nada, necesitaremos tener en nuestro servidor, el framework .NET 3.5 in
 
 Nos podremos descargar el instalador [desde aquí](https://www.microsoft.com/es-es/sql-server/sql-server-editions-express)
 
+Al tratarse de un laboratorio, con los parámetros por defecto que nos propone el instalador será suficiente.
+
 ![sql10]({{ site.imagesposts2019 }}/08/sql10.png){: .align-center}
+
 ![sql11]({{ site.imagesposts2019 }}/08/sql11.png){: .align-center}
+
 ![sql12]({{ site.imagesposts2019 }}/08/sql12.png){: .align-center}
+
 ![sql13]({{ site.imagesposts2019 }}/08/sql13.png){: .align-center}
+
 ![sql14]({{ site.imagesposts2019 }}/08/sql14.png){: .align-center}
+
+Habilitaremos las conexiones TCP/IP y fijaremos el puerto de escucha el 1433. Hay servicios que no soportan puerto estático, por lo que si lo dejamos configurado en este punto, ya nos evitamos problemas en un futuro.
+
 ![sql15]({{ site.imagesposts2019 }}/08/sql15.png){: .align-center}
+
+También dejaremos instalado el SQL Management Studio en este mismo servidor.
+
+La descarga la podremos realizar [desde aquí](https://docs.microsoft.com/es-es/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017) y la instalación tampoco tiene mucho mas misterio que ir siguiendo el asistente.
+
 ![sql16]({{ site.imagesposts2019 }}/08/sql16.png){: .align-center}
+
 ![sql17]({{ site.imagesposts2019 }}/08/sql17.png){: .align-center}
+
 ![sql18]({{ site.imagesposts2019 }}/08/sql18.png){: .align-center}
+
 ![sql19]({{ site.imagesposts2019 }}/08/sql19.png){: .align-center}
+
 ![sql20]({{ site.imagesposts2019 }}/08/sql20.png){: .align-center}
+
+Para finalizar, es interesante también habilitar el SQL Browser para que las aplicaciones puedan hacer descubrimiento de este servidor.
+
 ![sql21]({{ site.imagesposts2019 }}/08/sql21.png){: .align-center}
 
 
