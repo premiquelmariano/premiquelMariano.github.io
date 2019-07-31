@@ -104,6 +104,8 @@ Para finalizar, es interesante también habilitar el SQL Browser para que las ap
 
 Espero que os sirva.
 
+Nos vemos en el próximo post: [Part 3: Preparar Active Directory]({{ site.url }}/jmp-part3/)
+
 Un saludo!
 
 Miquel.
