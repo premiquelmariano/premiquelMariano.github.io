@@ -69,17 +69,45 @@ Accederemos a nuestro vCenter con un usuario con permisos de administración glo
 
 ![ad5]({{ site.imagesposts2019 }}/08/ad5.png){: .align-center}
 
-| ITEM      | PERMISION                 |
-|-----------|---------------------------|
-| Folder    | Create folder             |
-|           | Delete folder             |
-| Datastore | Allocate space            |
-|           | Browse datastore          |
-|           | Low level file operations |
-| Host      | In Inventory              |
-|           | * Modify Cluster          |
-|           |                           |
-|           |                           |
+| Item                   | Permision                                                                                                                                                                                                    |
+|------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Folder                 | Create folder                                                                                                                                                                                                |
+|                        | Delete folder                                                                                                                                                                                                |
+| Datastore              | Allocate space                                                                                                                                                                                               |
+|                        | Browse datastore                                                                                                                                                                                             |
+|                        | Low level file operations                                                                                                                                                                                    |
+| Host                   | In Inventory                                                                                                                                                                                                 |
+|                        | - Modify Cluster                                                                                                                                                                                             |
+| Virtual machine        | In Configuration (all)                                                                                                                                                                                       |
+|                        | In Interaction:                                                                                                                                                                                              |
+|                        | - Power Off                                                                                                                                                                                                  |
+|                        | - Power On                                                                                                                                                                                                   |
+|                        | - Reset                                                                                                                                                                                                      |
+|                        | - Suspend                                                                                                                                                                                                    |
+|                        | - Perform wipe or shrink operations                                                                                                                                                                          |
+|                        | - Device connection                                                                                                                                                                                          |
+|                        | In Inventory (all)                                                                                                                                                                                           |
+|                        | In Snapshot management (all)                                                                                                                                                                                 |
+|                        | In Provisioning:                                                                                                                                                                                             |
+|                        | - Customize                                                                                                                                                                                                  |
+|                        | - Deploy template                                                                                                                                                                                            |
+|                        | - Read customization specifications                                                                                                                                                                          |
+|                        | - Clone template                                                                                                                                                                                             |
+|                        | - Clone Virtual Machine                                                                                                                                                                                      |
+|                        | - Allow disk access                                                                                                                                                                                          |
+| Resource               | Assign virtual machine to resource pool                                                                                                                                                                      |
+|                        | The following privilege is required to perform View Composer rebalance operations.                                                                                                                           |
+|                        | Migrate powered off virtual machine                                                                                                                                                                          |
+| Global                 | Enable methods                                                                                                                                                                                               |
+|                        | Disable methods                                                                                                                                                                                              |
+|                        | System tag                                                                                                                                                                                                   |
+|                        | Manage custom attributes                                                                                                                                                                                     |
+|                        | Set custom attribute                                                                                                                                                                                         |
+|                        | The following privilege is required to implement View Storage Accelerator, which enables ESXi host caching. The vCenter Server user requires this privilege even if you do not use View Storage Accelerator. |
+|                        | Act as vCenter Server                                                                                                                                                                                        |
+| Network                | (all)                                                                                                                                                                                                        |
+| Profile Driven Storage | (all–If you are using Virtual SAN datastores or Virtual Volumes)                                                                                                                                             |
+| Storage views          | View                                                                                                                                                                                                         |
 
 ![ad6]({{ site.imagesposts2019 }}/08/ad6.png){: .align-center}
 
