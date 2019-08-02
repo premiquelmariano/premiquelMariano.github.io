@@ -109,9 +109,50 @@ Accederemos a nuestro vCenter con un usuario con permisos de administración glo
 | Profile Driven Storage | (all–If you are using Virtual SAN datastores or Virtual Volumes)                                                                                                                                             |
 | Storage views          | View                                                                                                                                                                                                         |
 
+Ahora que tenemos el role creado, le asignaremos estos permisos al usuario previamente creado **Horizon_VC** a nivel de vCenter.
+
 ![ad6]({{ site.imagesposts2019 }}/08/ad6.png){: .align-center}
 
+Llegados a este punto, es el momento de crear el usuario que utilizará horizon para crear cuentas de equipo en nuestro Active directory. Crearemos el usuario **Horizon_IC** de igual forma que hemos creado el otro usuario.
 
+![ad7]({{ site.imagesposts2019 }}/08/ad7.png){: .align-center}
+
+A este usuario, deberemos asignarle ciertos permisos especiales sobre la OU dedicada para VDI:
+
+![ad8]({{ site.imagesposts2019 }}/08/ad8.png){: .align-center}
+
+![ad9]({{ site.imagesposts2019 }}/08/ad9.png){: .align-center}
+
+![ad10]({{ site.imagesposts2019 }}/08/ad10.png){: .align-center}
+
+Los permisos a asignar son:
+
+- List Contents
+- Read All Properties
+- Write All Properties
+- Read Permissions
+- Create Computer Objects
+- Delete Computer Objects
+
+Y comprobamos que se han asignado los permisos especiales:
+
+![ad11]({{ site.imagesposts2019 }}/08/ad11.png){: .align-center}
+
+Para finaliar el procedimiento, le tendremos que delegar el control sobre esta OU al usuario que hemos creado de la siguiente forma:
+
+![ad12]({{ site.imagesposts2019 }}/08/ad12.png){: .align-center}
+
+![ad13]({{ site.imagesposts2019 }}/08/ad13.png){: .align-center}
+
+![ad14]({{ site.imagesposts2019 }}/08/ad14.png){: .align-center}
+
+![ad15]({{ site.imagesposts2019 }}/08/ad15.png){: .align-center}
+
+![ad16]({{ site.imagesposts2019 }}/08/ad16.png){: .align-center}
+
+![ad17]({{ site.imagesposts2019 }}/08/ad17.png){: .align-center}
+
+![ad18]({{ site.imagesposts2019 }}/08/ad18.png){: .align-center}
 
 Espero que os sirva.
 
