@@ -138,7 +138,7 @@ Y comprobamos que se han asignado los permisos especiales:
 
 ![ad11]({{ site.imagesposts2019 }}/08/ad11.png){: .align-center}
 
-Para finaliar el procedimiento, le tendremos que delegar el control sobre esta OU al usuario que hemos creado de la siguiente forma:
+Para finaliar el procedimiento, le tendremos que delegar el control sobre esta OU al usuario que hemos creado, de la siguiente forma:
 
 ![ad12]({{ site.imagesposts2019 }}/08/ad12.png){: .align-center}
 
