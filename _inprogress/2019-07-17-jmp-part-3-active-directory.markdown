@@ -14,9 +14,6 @@ permalink: /jmp-part3/
 
 ---
 
-https://univirt.wordpress.com/2018/02/20/building-a-horizon-view-jmp-lab-part-3-preparing-active-directory/
-
-
 Buenos dias a tod@s!!
 
 En la siguiente serie de posts, pretendo explicar durante las próximas semanas el paso a paso para instalar un entorno JMP (Just-in-Time Management Platform) utilizando VMware Horizon 7 Instant Clones + App Volumes + VMware UEM (User Environment Manager) 
