@@ -45,7 +45,23 @@ El Connection Server, o servidor de conexión es el core de nuestra infraestruct
 
 ![con01]({{ site.imagesposts2019 }}/08/con01.png){: .align-center}
 
+![con02]({{ site.imagesposts2019 }}/08/con02.png){: .align-center}
 
+![con03]({{ site.imagesposts2019 }}/08/con03.png){: .align-center}
+
+![con04]({{ site.imagesposts2019 }}/08/con04.png){: .align-center}
+
+![con05]({{ site.imagesposts2019 }}/08/con05.png){: .align-center}
+
+![con06]({{ site.imagesposts2019 }}/08/con06.png){: .align-center}
+
+![con07]({{ site.imagesposts2019 }}/08/con07.png){: .align-center}
+
+![con08]({{ site.imagesposts2019 }}/08/con08.png){: .align-center}
+
+![con09]({{ site.imagesposts2019 }}/08/con09.png){: .align-center}
+
+![con010]({{ site.imagesposts2019 }}/08/con010.png){: .align-center}
 
 
 
