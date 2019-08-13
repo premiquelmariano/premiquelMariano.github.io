@@ -43,6 +43,8 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 
 El Connection Server, o servidor de conexión es el core de nuestra infraestructura VDI, es la pieza mas importante de todo el entorno.
 
+Lo primero que haremos, será descargarnos el instalador desde el portal de [My.VMware](https://my.vmware.com). Como veis hay muchos instaladores. Empezaremos con el View Connection Server (64-bit) que entre otras cosas es el instalador del servidor de conexión :-)
+
 ![con01]({{ site.imagesposts2019 }}/08/con01.png){: .align-center}
 
 ![con02]({{ site.imagesposts2019 }}/08/con02.png){: .align-center}
@@ -66,6 +68,8 @@ El Connection Server, o servidor de conexión es el core de nuestra infraestruct
 ![con11]({{ site.imagesposts2019 }}/08/con11.png){: .align-center}
 
 ![con12]({{ site.imagesposts2019 }}/08/con12.png){: .align-center}
+
+![con13]({{ site.imagesposts2019 }}/08/con13.png){: .align-center}
 
 Espero que os sirva.
 
