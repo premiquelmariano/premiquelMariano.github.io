@@ -71,6 +71,20 @@ Lo primero que haremos, será descargarnos el instalador desde el portal de [My.
 
 ![con13]({{ site.imagesposts2019 }}/08/con13.png){: .align-center}
 
+![con14]({{ site.imagesposts2019 }}/08/con14.png){: .align-center}
+
+![con15]({{ site.imagesposts2019 }}/08/con15.png){: .align-center}
+
+![con16]({{ site.imagesposts2019 }}/08/con16.png){: .align-center}
+
+![con17]({{ site.imagesposts2019 }}/08/con17.png){: .align-center}
+
+![con18]({{ site.imagesposts2019 }}/08/con18.png){: .align-center}
+
+![con19]({{ site.imagesposts2019 }}/08/con19.png){: .align-center}
+
+![con20]({{ site.imagesposts2019 }}/08/con20.png){: .align-center}
+
 Espero que os sirva.
 
 Nos vemos en el próximo post: [Part 5: Instalación y configuración Replica Server]({{ site.url }}/jmp-part5/)
