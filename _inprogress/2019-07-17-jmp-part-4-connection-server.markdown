@@ -61,11 +61,11 @@ El Connection Server, o servidor de conexión es el core de nuestra infraestruct
 
 ![con09]({{ site.imagesposts2019 }}/08/con09.png){: .align-center}
 
-![con010]({{ site.imagesposts2019 }}/08/con010.png){: .align-center}
+![con10]({{ site.imagesposts2019 }}/08/con10.png){: .align-center}
 
-![con011]({{ site.imagesposts2019 }}/08/con011.png){: .align-center}
+![con11]({{ site.imagesposts2019 }}/08/con11.png){: .align-center}
 
-![con012]({{ site.imagesposts2019 }}/08/con012.png){: .align-center}
+![con12]({{ site.imagesposts2019 }}/08/con12.png){: .align-center}
 
 Espero que os sirva.
 
