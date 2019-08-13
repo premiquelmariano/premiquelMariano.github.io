@@ -155,6 +155,8 @@ Para finalizar con esta parte de AD, también crearemos un grupo de seguridad, q
 
 ![ad19]({{ site.imagesposts2019 }}/08/ad19.png){: .align-center}
 
+![ad20]({{ site.imagesposts2019 }}/08/ad20.png){: .align-center}
+
 Espero que os sirva.
 
 Nos vemos en el próximo post: [Part 4: Instalación y configuración Connection Server]({{ site.url }}/jmp-part4/)
