@@ -43,14 +43,15 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 
 El Connection Server, o servidor de conexión es el core de nuestra infraestructura VDI, es la pieza mas importante de todo el entorno.
 
-![appstack1]({{ site.imagesposts2019 }}/08/appstack1.png){: .align-center}
-
+![con01]({{ site.imagesposts2019 }}/08/con01.png){: .align-center}
 
 
 
 
 
 Espero que os sirva.
+
+Nos vemos en el próximo post: [Part 5: Instalación y configuración Replica Server]({{ site.url }}/jmp-part5/)
 
 Un saludo!
 
