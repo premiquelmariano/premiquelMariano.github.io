@@ -41,6 +41,8 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 
 # Instalación y configuración Connection Server
 
+El Connection Server, o servidor de conexión es el core de nuestra infraestructura VDI, es la pieza mas importante de todo el entorno.
+
 ![appstack1]({{ site.imagesposts2019 }}/08/appstack1.png){: .align-center}
 
 
