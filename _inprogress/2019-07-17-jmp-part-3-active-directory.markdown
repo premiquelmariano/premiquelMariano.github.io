@@ -151,6 +151,10 @@ Para finaliar el procedimiento, le tendremos que delegar el control sobre esta O
 
 ![ad18]({{ site.imagesposts2019 }}/08/ad18.png){: .align-center}
 
+Para finalizar con esta parte de AD, también crearemos un grupo de seguridad, que nos servirá para agrupar los usuarios que podrán administrar la plataforma Horizon.
+
+![ad19]({{ site.imagesposts2019 }}/08/ad19.png){: .align-center}
+
 Espero que os sirva.
 
 Nos vemos en el próximo post: [Part 4: Instalación y configuración Connection Server]({{ site.url }}/jmp-part4/)
