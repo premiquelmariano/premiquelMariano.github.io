@@ -10,7 +10,7 @@ tag:
 - euc
 - desktop
 - mobility
-permalink: /jmp-part4/
+permalink: /jmp-part444/
 
 ---
 ola ke ase¿?
