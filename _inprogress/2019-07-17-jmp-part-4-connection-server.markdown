@@ -85,11 +85,15 @@ Después del primer login, lo primero que nos pedirá es instalar una licencia v
 
 ![con13]({{ site.imagesposts2019 }}/08/con13.png){: .align-center}
 
+A continuación, añadiremos la instancia de nuestro vCenter donde se desplegarán los futuros escritorios. Recordar la recomendación de utilizar un usuario de servicio dedicado, tal como vimos en [este post]({{ site.url }}/jmp-part3/)
+
 ![con14]({{ site.imagesposts2019 }}/08/con14.png){: .align-center}
 
 ![con15]({{ site.imagesposts2019 }}/08/con15.png){: .align-center}
 
 ![con16]({{ site.imagesposts2019 }}/08/con16.png){: .align-center}
+
+De momento no tenemos ningún composer server, por lo que nos saltaremos este paso:
 
 ![con17]({{ site.imagesposts2019 }}/08/con17.png){: .align-center}
 
@@ -99,13 +103,19 @@ Después del primer login, lo primero que nos pedirá es instalar una licencia v
 
 ![con20]({{ site.imagesposts2019 }}/08/con20.png){: .align-center}
 
+Para acabar, deberemos configurar una BBDD para guardar los eventos de Horizon. Si seguisteis el post de [cómo reparar un servidor SQL]({{ site.url }}/jmp-part2/) ya podremos pasar directamente a la creación de la BBDD:
+
 ![events01]({{ site.imagesposts2019 }}/08/events01.png){: .align-center}
 
 ![events02]({{ site.imagesposts2019 }}/08/events02.png){: .align-center}
 
 ![events03]({{ site.imagesposts2019 }}/08/events03.png){: .align-center}
 
+Con la BBDD creada, la configuraremos desde el apartado de Configuración de View:
+
 ![events04]({{ site.imagesposts2019 }}/08/events04.png){: .align-center}
+
+Cómo último paso, también dejaremos configurado el usuario de Instant Clone que vimos cómo crear [en este post]({{ site.url }}/jmp-part3/)
 
 ![con21]({{ site.imagesposts2019 }}/08/con21.png){: .align-center}
 
