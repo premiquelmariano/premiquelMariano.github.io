@@ -47,17 +47,25 @@ Lo primero que haremos, será descargarnos el instalador desde el portal de [My.
 
 ![con01]({{ site.imagesposts2019 }}/08/con01.png){: .align-center}
 
+Una vez descargado, ejecutaremos el instalador y seguiremos el asistente de instalación:
+
 ![con02]({{ site.imagesposts2019 }}/08/con02.png){: .align-center}
 
 ![con03]({{ site.imagesposts2019 }}/08/con03.png){: .align-center}
 
 ![con04]({{ site.imagesposts2019 }}/08/con04.png){: .align-center}
 
+En este punto es donde seleccionaremos "Servidor estándar de Horizon 7" ya que es la primera instáncia de nuestra infraestructura:
+
 ![con05]({{ site.imagesposts2019 }}/08/con05.png){: .align-center}
+
+Deberemos especificar una contraseña de recuperación en caso de desastre:
 
 ![con06]({{ site.imagesposts2019 }}/08/con06.png){: .align-center}
 
 ![con07]({{ site.imagesposts2019 }}/08/con07.png){: .align-center}
+
+Aquí es donde especificaremos el usuario o grupo de usuarios que tendrán permisos de administración sobre nuestra plataforma:
 
 ![con08]({{ site.imagesposts2019 }}/08/con08.png){: .align-center}
 
@@ -67,7 +75,13 @@ Lo primero que haremos, será descargarnos el instalador desde el portal de [My.
 
 ![con11]({{ site.imagesposts2019 }}/08/con11.png){: .align-center}
 
+Una vez finalizado el asistente, en el escritorio veremos un icono para acceder al portal Horizon administrator:
+
 ![con12]({{ site.imagesposts2019 }}/08/con12.png){: .align-center}
+
+# Configuración inicial de Horizon
+
+Después del primer login, lo primero que nos pedirá es instalar una licencia válida. Si estamos realizando una demo o PoC, podremos solicitar una licencia de evaluación en el portal de [my.vmware](https://my.vmware.com)
 
 ![con13]({{ site.imagesposts2019 }}/08/con13.png){: .align-center}
 
