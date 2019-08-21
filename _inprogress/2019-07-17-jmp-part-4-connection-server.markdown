@@ -10,10 +10,9 @@ tag:
 - euc
 - desktop
 - mobility
-permalink: /jmp-part444/
+permalink: /jmp-part4/
 
 ---
-ola ke ase¿?
 
 Buenos dias a tod@s!!
 
