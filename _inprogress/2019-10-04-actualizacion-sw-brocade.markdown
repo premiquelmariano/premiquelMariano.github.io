@@ -36,6 +36,8 @@ También disponemos del comando `firmwaredownloadstatus` que nos dará informaci
 
 ![firmware5]({{ site.imagesposts2019 }}/09/firmware5.png){: .align-center}
 
+![firmware6]({{ site.imagesposts2019 }}/09/firmware6.png){: .align-center}
+
 
 Espero que os sea de utilidad.
 Gracias por compartir
