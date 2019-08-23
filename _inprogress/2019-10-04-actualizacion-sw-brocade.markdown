@@ -22,13 +22,15 @@ Como comentaba anteriormente, la actualización de firmeare debe realizarse por 
 
 # Preparar repositorio FTP con el firmware
 
-Para ello los switch Brocade ofrecen la posibilidad de hacer backup mediante scp o ftp. Vamos a ver como implementar los backups mediante el comando `configupload`.
+La mejor opción para cargar el firmware en los switches es hacerlo por FTP, de esta manera nos evitamos el desplazamiento para tener que poner un USB (que es otra forma de cargar el firmware)
 
-En este ejemplo utilizaremos un FTP como repositorio para guardar el backup:
+Hace tiempo, [publiqué un post para montar un pequeño FTP portable](https://miquelmariano.github.io/2017/07/xlight-FTP). Es el momento de ponerlo en práctica :-)
 
-Si no teneis ningún servidor FTP en vuestra infraestructura, os animo que visiteis [este post](https://miquelmariano.github.io/2017/07/xlight-FTP) donde explico como montar uno "portable"
-{: .notice}
+![ftp1]({{ site.imagesposts2019 }}/09/ftp1.png){: .align-center}
 
+![ftp2]({{ site.imagesposts2019 }}/09/ftp2.png){: .align-center}
+
+# Actualización de firmware
 
 
 ![firmware1]({{ site.imagesposts2019 }}/09/firmware1.png){: .align-center}
