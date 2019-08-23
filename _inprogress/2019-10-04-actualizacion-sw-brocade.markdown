@@ -32,6 +32,9 @@ Hace tiempo, [publiqué un post para montar un pequeño FTP portable](https://mi
 
 # Actualización de firmware
 
+**IMPORTANTE** Antes de empezar con la actualización, hay que leerse las RELEASE NOTES de cada versión para ver la correcta compatibilidad con nuestro dispositivo y sobtetodo el "update path" a seguir. El muy probable que tengamos que dar varios saltos antes de llegar a la versión definitiva que queremos dejar.
+{: .notice}
+
 
 ![firmware1]({{ site.imagesposts2019 }}/09/firmware1.png){: .align-center}
 ![firmware2]({{ site.imagesposts2019 }}/09/firmware2.png){: .align-center}
