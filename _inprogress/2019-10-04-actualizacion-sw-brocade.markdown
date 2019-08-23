@@ -35,15 +35,30 @@ Hace tiempo, [publiqué un post para montar un pequeño FTP portable](https://mi
 **IMPORTANTE** Antes de empezar con la actualización, hay que leerse las RELEASE NOTES de cada versión para ver la correcta compatibilidad con nuestro dispositivo y sobtetodo el "update path" a seguir. El muy probable que tengamos que dar varios saltos antes de llegar a la versión definitiva que queremos dejar.
 {: .notice}
 
+El comando que utilizaremos para hacer la actualización es `firmwaredownload`. Con este comando, se nos abrirá un wizard que deberemos de ir completando con los datos de nuestro FTP que hemos preparado anteriormente:
 
 ![firmware1]({{ site.imagesposts2019 }}/09/firmware1.png){: .align-center}
+
+Cuando el firmware esté descargado y comprobado, deberemos confirmar la instalación:
+
 ![firmware2]({{ site.imagesposts2019 }}/09/firmware2.png){: .align-center}
+
+El proceso tardará unos minutos y al finalizar, nos reiniciará la sesión:
+
 ![firmware3]({{ site.imagesposts2019 }}/09/firmware3.png){: .align-center}
+
+El reboot hace referencia a la parte de administración, SSH, telnet, GUI java... El acceso a dato y el IO de los servidores no se pierde
+{: .notice}
+
+Con el comando `firmwareshow` podremos ver la versión de cada "partición" del Switch. Como se ve en la imagen, la partición primaria ya está actualizada y está en proceso la secundaria.
+
 ![firmware4]({{ site.imagesposts2019 }}/09/firmware4.png){: .align-center}
 
 También disponemos del comando `firmwaredownloadstatus` que nos dará información de todo el proceso de actualización:
 
 ![firmware5]({{ site.imagesposts2019 }}/09/firmware5.png){: .align-center}
+
+Al finalizar todo el proceso, ambas particiones deberian estar a la misma versión.
 
 ![firmware6]({{ site.imagesposts2019 }}/09/firmware6.png){: .align-center}
 
