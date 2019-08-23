@@ -32,7 +32,7 @@ Hace tiempo, [publiqué un post para montar un pequeño FTP portable](https://mi
 
 # Actualización de firmware
 
-**IMPORTANTE** Antes de empezar con la actualización, hay que leerse las RELEASE NOTES de cada versión para ver la correcta compatibilidad con nuestro dispositivo y sobretodo el "update path" a seguir. El muy probable que tengamos que dar varios saltos antes de llegar a la versión definitiva que queremos dejar.
+**IMPORTANTE** Antes de empezar con la actualización, hay que leerse las RELEASE NOTES de cada versión para ver la correcta compatibilidad con nuestro dispositivo y sobretodo el "update path" a seguir. El muy probable que tengamos que dar varios saltos antes de llegar a la versión definitiva que queremos dejar. Como norma básica, deberemos ir a la versión última de cada sub­familia para pasar a la primera de la familia siguiente.
 {: .notice}
 
 El comando que utilizaremos para hacer la actualización es `firmwaredownload`. Con este comando, se nos abrirá un wizard que deberemos de ir completando con los datos de nuestro FTP que hemos preparado anteriormente:
