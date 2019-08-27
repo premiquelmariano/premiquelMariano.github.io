@@ -62,7 +62,7 @@ En el siguiente esquema, podreis ver una representación de la topología para d
 
 ![uag3]({{ site.imagesposts2019 }}/09/uag3.png){: .align-center}
 
-Los puertos necesarios para la correcta configuración son los siguientes, y están sacados de la[documentación oficial:](https://docs.vmware.com/en/Unified-Access-Gateway/3.6/com.vmware.uag-36-deploy-config.doc/GUID-F197EB60-3A0C-41DF-8E3E-C99CCBA6A06E.html)
+Los puertos necesarios para la correcta configuración son los siguientes, y están sacados de la [documentación oficial:](https://docs.vmware.com/en/Unified-Access-Gateway/3.6/com.vmware.uag-36-deploy-config.doc/GUID-F197EB60-3A0C-41DF-8E3E-C99CCBA6A06E.html)
 
 Acceso desde cualquier dispositivo de internet hacia el UAG appliance o balanceador:
 
@@ -86,7 +86,20 @@ Acceso desde los UAG appliance hacia los escritorios:
 ![uag1]({{ site.imagesposts2019 }}/09/uag1.png){: .align-center}
 ![uag2]({{ site.imagesposts2019 }}/09/uag2.png){: .align-center}
 
+### Interfaz de administración
 
+![uag4]({{ site.imagesposts2019 }}/09/uag4.png){: .align-center}
+![uag5]({{ site.imagesposts2019 }}/09/uag5.png){: .align-center}
+![uag6]({{ site.imagesposts2019 }}/09/uag6.png){: .align-center}
+![uag7]({{ site.imagesposts2019 }}/09/uag7.png){: .align-center}
+![uag8]({{ site.imagesposts2019 }}/09/uag8.png){: .align-center}
+![uag9]({{ site.imagesposts2019 }}/09/uag9.png){: .align-center}
+![uag10]({{ site.imagesposts2019 }}/09/uag10.png){: .align-center}
+![uag11]({{ site.imagesposts2019 }}/09/uag11.png){: .align-center}
+![uag12]({{ site.imagesposts2019 }}/09/uag12.png){: .align-center}
+![uag13]({{ site.imagesposts2019 }}/09/uag13.png){: .align-center}
+![uag14]({{ site.imagesposts2019 }}/09/uag14.png){: .align-center}
+![uag15]({{ site.imagesposts2019 }}/09/uag15.png){: .align-center}
 
 Y hasta aquí por hoy, en el próximo post veremos cómo crear nuestro primer Pool de Linked Clones
 
