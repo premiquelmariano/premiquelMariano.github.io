@@ -62,7 +62,24 @@ En el siguiente esquema, podreis ver una representación de la topología para d
 
 ![uag3]({{ site.imagesposts2019 }}/09/uag3.png){: .align-center}
 
-Los puertos necesarios para la correcta configuración son los siguientes, y están sacados de la[documentación oficial](https://docs.vmware.com/en/Unified-Access-Gateway/3.6/com.vmware.uag-36-deploy-config.doc/GUID-F197EB60-3A0C-41DF-8E3E-C99CCBA6A06E.html)
+Los puertos necesarios para la correcta configuración son los siguientes, y están sacados de la[documentación oficial:](https://docs.vmware.com/en/Unified-Access-Gateway/3.6/com.vmware.uag-36-deploy-config.doc/GUID-F197EB60-3A0C-41DF-8E3E-C99CCBA6A06E.html)
+
+Acceso desde cualquier dispositivo de internet hacia el UAG appliance o balanceador:
+
+* TCP and UDP 443 (incluye Blast Extreme)
+* TCP and UDP 4172. UDP 4172 debe estar permitido en ambas direcciones. (PCoIP)
+*T CP and UDP 8443 (para HTML Blast)
+
+Acceso desde los UAG appliance hacia los connection servers:
+
+* TCP 443 
+
+Acceso desde los UAG appliance hacia los escritorios:
+
+* TCP and UDP 4172 (PCoIP). UDP 4172 debe estar permitido en ambas direcciones.
+* TCP 32111 (USB Redirection) 
+* TCP and UDP 22443 (Blast Extreme) 
+* TCP 9427 (MMR and CDR) 
 
 ### Despliegue OVA
 
