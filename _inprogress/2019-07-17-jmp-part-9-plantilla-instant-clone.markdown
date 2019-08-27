@@ -82,10 +82,15 @@ Cuando termine la instalación, finalizamos el asistente y reiniciamos la VM:
 
 ![agent7]({{ site.imagesposts2019 }}/09/agent7.png){: .align-center}
 
+Con el agente ya instalado, procederemos a apagar nuestra VM y crear un snapshot del cual partirán nuestros escritorios:
+
+![agent8]({{ site.imagesposts2019 }}/09/agent8.png){: .align-center}
+
+Y hasta aquí por hoy, en el próximo post veremos cómo crear nuestro primer Pool de Linked Clones
 
 Espero que os sirva.
 
-Nos vemos en el próximo post: [Part 6: Instalación y configuración de Security Server]({{ site.url }}/jmp-part6/)
+Nos vemos en el próximo post: [Part 10: Configurar un pool de Instant Clone]({{ site.url }}/jmp-part10/)
 
 Un saludo!
 
