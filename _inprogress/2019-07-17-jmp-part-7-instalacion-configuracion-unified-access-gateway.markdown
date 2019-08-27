@@ -56,6 +56,16 @@ UAG, viene a reemplazar los [ya conocidos Horizon Security Servers]({{ site.url 
 Con todo lo que he expuesto anteriormente, no quiero dar a entender que Horizon Security Server ya no se pueda utilizar. Sigue siendo un producto válido que VMware sigue desarrollando y soportando.
 {: .notice}
 
+### Configuración firewall
+
+En el siguiente esquema, podreis ver una representación de la topología para dar acceso a nuestro entorno VDI desde internet
+
+![uag3]({{ site.imagesposts2019 }}/09/uag3.png){: .align-center}
+
+Los puertos necesarios para la correcta configuración son los siguientes, y están sacados de la[documentación oficial](https://docs.vmware.com/en/Unified-Access-Gateway/3.6/com.vmware.uag-36-deploy-config.doc/GUID-F197EB60-3A0C-41DF-8E3E-C99CCBA6A06E.html)
+
+### Despliegue OVA
+
 ![uag1]({{ site.imagesposts2019 }}/09/uag1.png){: .align-center}
 ![uag2]({{ site.imagesposts2019 }}/09/uag2.png){: .align-center}
 
