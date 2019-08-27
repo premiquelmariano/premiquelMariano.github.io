@@ -41,10 +41,23 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 
 # Instalación y configuración de UAG (Unified Access Gateway)
 
+Unified Access Gateway (UGA) es un componente dentro de la infraestructura Horizon que nos proveerá de conectividad remota hacia nuestros escritorios VDI
 
 ![uag0]({{ site.imagesposts2019 }}/09/uag0.png){: .align-center}
 
+UAG, viene a reemplazar los [ya conocidos Horizon Security Servers]({{ site.url }}/jmp-part6/) y algunos de los beneficios que nos aportan son:
 
+* El emparejamiento ya no es 1:1 como se hacia con la topología de Security Server. Con UAG, un único appliance puede estar emparejado a múltiples connections servers a través de un balanceador.
+
+* La conectividad entre UAG y connection server solo requiere del puerto TCP443 lo que simplifica muchísimo las reglas a nivel de firewall. Eso si, seguiremos necesitando los puertos 4172, 22443, etc. hacia los Horizon Agents.
+
+* Adicionalmente y para una mayor securización, UAG soporta métodos de autenticación como RSA SecurID, Radius, CAC, etc...
+
+Con todo lo que he expuesto anteriormente, no quiero dar a entender que Horizon Security Server ya no se pueda utilizar. Sigue siendo un producto válido que VMware sigue desarrollando y soportando.
+{: .notice}
+
+![uag1]({{ site.imagesposts2019 }}/09/uag1.png){: .align-center}
+![uag2]({{ site.imagesposts2019 }}/09/uag2.png){: .align-center}
 
 
 
