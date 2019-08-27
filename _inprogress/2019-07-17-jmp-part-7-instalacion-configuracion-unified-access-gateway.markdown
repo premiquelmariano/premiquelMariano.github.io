@@ -101,6 +101,19 @@ Acceso desde los UAG appliance hacia los escritorios:
 ![uag14]({{ site.imagesposts2019 }}/09/uag14.png){: .align-center}
 ![uag15]({{ site.imagesposts2019 }}/09/uag15.png){: .align-center}
 
+https://192.168.6.116:9443/admin/index.html#/Login
+
+![uag16]({{ site.imagesposts2019 }}/09/uag16.png){: .align-center}
+![uag17]({{ site.imagesposts2019 }}/09/uag17.png){: .align-center}
+![uag18]({{ site.imagesposts2019 }}/09/uag18.png){: .align-center}
+![uag19]({{ site.imagesposts2019 }}/09/uag19.png){: .align-center}
+![uag20]({{ site.imagesposts2019 }}/09/uag20.png){: .align-center}
+![uag21]({{ site.imagesposts2019 }}/09/uag21.png){: .align-center}
+![uag22]({{ site.imagesposts2019 }}/09/uag22.png){: .align-center}
+![uag23]({{ site.imagesposts2019 }}/09/uag23.png){: .align-center}
+![uag24]({{ site.imagesposts2019 }}/09/uag24.png){: .align-center}
+![uag25]({{ site.imagesposts2019 }}/09/uag25.png){: .align-center}
+
 Y hasta aquí por hoy, en el próximo post veremos cómo crear nuestro primer Pool de Linked Clones
 
 Espero que os sirva.
