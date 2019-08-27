@@ -68,7 +68,7 @@ Acceso desde cualquier dispositivo de internet hacia el UAG appliance o balancea
 
 * TCP and UDP 443 (incluye Blast Extreme)
 * TCP and UDP 4172. UDP 4172 debe estar permitido en ambas direcciones. (PCoIP)
-*T CP and UDP 8443 (para HTML Blast)
+* TCP and UDP 8443 (para HTML Blast)
 
 Acceso desde los UAG appliance hacia los connection servers:
 
