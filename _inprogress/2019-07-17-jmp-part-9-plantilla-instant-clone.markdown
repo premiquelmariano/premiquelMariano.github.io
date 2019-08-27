@@ -51,9 +51,37 @@ Como en esta serie de posts estamos tratando de explicar el paso a paso para cre
 4 VMware App Volumes Agent
 
 En este post, sólo vamos a ver cómo instalar nuestro Horizon Agent, pero hay que tener en cuenta que el orden de instalación de los agentes es importante a la hora de configurar bien nuestra plantilla. Podeis consultar la nota técnica en la [siguiente KB](https://kb.vmware.com/s/article/2118048)
- 
 
-![con21]({{ site.imagesposts2019 }}/08/con21.png){: .align-center}
+Como decia, en este post vamos a ver como configurar una plantilla para Instant Clone, que básicamente se consigue instalando el Horizon Agent con unos parámetros determinados. Vamos a ello...
+
+Arrancamos el instalador y seguimos el wizard:
+
+![agent1]({{ site.imagesposts2019 }}/09/agent1.png){: .align-center}
+
+Aceptamos la licencia y continuamos:
+
+![agent2]({{ site.imagesposts2019 }}/09/agent2.png){: .align-center}
+
+Seleccionamos IPv4 como protocolo predefinido y continuamos:
+
+![agent3]({{ site.imagesposts2019 }}/09/agent3.png){: .align-center}
+
+Aqui es dónde está la parte importante de la instalación. Por defecto, la opción de VMware Horizon View composer está habilitada, pero esta opción sólo nos sirve para la tecnología Linked Clone, no para Instant Clone. Así pues, deberemos desmarcar esta opción y marcar VMware Horizon Instant Clone Agent:
+
+![agent4]({{ site.imagesposts2019 }}/09/agent4.png){: .align-center}
+
+Cómo en todo este proceso vamos a utilizar UEM para la personalización de los escritorios, desmarcaremos también la opción de VMware Horizon 7 Persona Management:
+
+![agent5]({{ site.imagesposts2019 }}/09/agent5.png){: .align-center}
+
+Install...
+
+![agent6]({{ site.imagesposts2019 }}/09/agent6.png){: .align-center}
+
+Cuando termine la instalación, finalizamos el asistente y reiniciamos la VM:
+
+![agent7]({{ site.imagesposts2019 }}/09/agent7.png){: .align-center}
+
 
 Espero que os sirva.
 
