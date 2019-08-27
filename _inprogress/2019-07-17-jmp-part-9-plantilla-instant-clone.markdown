@@ -16,7 +16,7 @@ permalink: /jmp-part9/
 
 https://univirt.wordpress.com/2018/02/20/building-a-horizon-view-jmp-lab-part-4-connection-server-install-and-initial-configuration/
 
-Buenos dias a tod@s!!
+Buenos días a tod@s!!
 
 En la siguiente serie de posts, pretendo explicar durante las próximas semanas el paso a paso para instalar un entorno JMP (Just-in-Time Management Platform) utilizando VMware Horizon 7 Instant Clones + App Volumes + VMware UEM (User Environment Manager) 
 
@@ -27,7 +27,7 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 - [Part 5: Instalación y configuración Replica Server]({{ site.url }}/jmp-part5/)
 - [Part 6: Instalación y configuración de Security Server]({{ site.url }}/jmp-part6/)
 - [Part 7: Instalación y configuración de UAG]({{ site.url }}/jmp-part7/)
-- [Part 8: Insstalación certificado (opcional)]({{ site.url }}/jmp-part8/)
+- [Part 8: Instalación certificado (opcional)]({{ site.url }}/jmp-part8/)
 - [Part 9: Preparar plantilla master para Instant Clone]({{ site.url }}/jmp-part9/)
 - [Part 10: Configurar un pool de Instant Clone]({{ site.url }}/jmp-part10/)
 - [Part 11: Instalar App Volumes]({{ site.url }}/jmp-part11/)
@@ -50,9 +50,9 @@ Como en esta serie de posts estamos tratando de explicar el paso a paso para cre
 3 VMware User Environment Manager (UEM) agent
 4 VMware App Volumes Agent
 
-En este post, sólo vamos a ver cómo instalar nuestro Horizon Agent, pero hay que tener en cuenta que el orden de instalación de los agentes es importante a la hora de configurar bien nuestra plantilla. Podeis consultar la nota técnica en la [siguiente KB](https://kb.vmware.com/s/article/2118048)
+En este post, solo vamos a ver cómo instalar nuestro Horizon Agent, pero hay que tener en cuenta que el orden de instalación de los agentes es importante a la hora de configurar bien nuestra plantilla. Podeis consultar la nota técnica en la [siguiente KB](https://kb.vmware.com/s/article/2118048)
 
-Como decia, en este post vamos a ver como configurar una plantilla para Instant Clone, que básicamente se consigue instalando el Horizon Agent con unos parámetros determinados. Vamos a ello...
+Como decía, en este post vamos a ver como configurar una plantilla para Instant Clone, que básicamente se consigue instalando el Horizon Agent con unos parámetros determinados. Vamos a ello...
 
 Arrancamos el instalador y seguimos el wizard:
 
@@ -66,7 +66,7 @@ Seleccionamos IPv4 como protocolo predefinido y continuamos:
 
 ![agent3]({{ site.imagesposts2019 }}/09/agent3.png){: .align-center}
 
-Aqui es dónde está la parte importante de la instalación. Por defecto, la opción de VMware Horizon View composer está habilitada, pero esta opción sólo nos sirve para la tecnología Linked Clone, no para Instant Clone. Así pues, deberemos desmarcar esta opción y marcar VMware Horizon Instant Clone Agent:
+Aquí es dónde está la parte importante de la instalación. Por defecto, la opción de VMware Horizon View composer está habilitada, pero esta opción solo nos sirve para la tecnología Linked Clone, no para Instant Clone. Así pues, deberemos desmarcar esta opción y marcar VMware Horizon Instant Clone Agent:
 
 ![agent4]({{ site.imagesposts2019 }}/09/agent4.png){: .align-center}
 
