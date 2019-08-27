@@ -113,6 +113,10 @@ https://192.168.6.116:9443/admin/index.html#/Login
 ![uag23]({{ site.imagesposts2019 }}/09/uag23.png){: .align-center}
 ![uag24]({{ site.imagesposts2019 }}/09/uag24.png){: .align-center}
 ![uag25]({{ site.imagesposts2019 }}/09/uag25.png){: .align-center}
+![uag26]({{ site.imagesposts2019 }}/09/uag26.png){: .align-center}
+![uag27]({{ site.imagesposts2019 }}/09/uag27.png){: .align-center}
+![uag28]({{ site.imagesposts2019 }}/09/uag28.png){: .align-center}
+![uag29]({{ site.imagesposts2019 }}/09/uag29.png){: .align-center}
 
 Y hasta aquí por hoy, en el próximo post veremos cómo crear nuestro primer Pool de Linked Clones
 
