@@ -42,7 +42,24 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 # Instalación de un Réplica Server
 
 
-![con21]({{ site.imagesposts2019 }}/08/con21.png){: .align-center}
+![replica1]({{ site.imagesposts2019 }}/09/replica1.png){: .align-center}
+![replica2]({{ site.imagesposts2019 }}/09/replica2.png){: .align-center}
+![replica3]({{ site.imagesposts2019 }}/09/replica3.png){: .align-center}
+![replica4]({{ site.imagesposts2019 }}/09/replica4.png){: .align-center}
+![replica5]({{ site.imagesposts2019 }}/09/replica5.png){: .align-center}
+![replica6]({{ site.imagesposts2019 }}/09/replica6.png){: .align-center}
+![replica7]({{ site.imagesposts2019 }}/09/replica7.png){: .align-center}
+![replica8]({{ site.imagesposts2019 }}/09/replica8.png){: .align-center}
+![replica9]({{ site.imagesposts2019 }}/09/replica9.png){: .align-center}
+![replica10]({{ site.imagesposts2019 }}/09/replica10.png){: .align-center}
+
+repadmin.exe /showrepl localhost:389 DC=vdi,DC=vmware,DC=int
+
+repadmin.exe /replicate localhost-FQDN:389 remote-host-FQDN:389 dc=vdi,dc=vmware,dc=int
+
+https://kb.vmware.com/s/article/1021805
+
+![replica11]({{ site.imagesposts2019 }}/09/replica11.png){: .align-center}
 
 Espero que os sirva.
 
