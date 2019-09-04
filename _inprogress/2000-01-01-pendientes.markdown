@@ -22,6 +22,10 @@ https://github.com/ansible/awx/blob/devel/DATA_MIGRATION.md
 
 tower-cli receive --tower-host http://192.168.6.19 --all | tower-cli send --tower-host http://192.168.6.152
 
+https://www.unixarena.com/2019/03/backup-restore-ansible-awx-tower-cli.html/
+
 ### Comandos brocade
 
 https://thesanguy.com/2013/09/11/useful-brocade-fos-cli-commands/
+
+
