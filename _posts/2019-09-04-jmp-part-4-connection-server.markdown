@@ -39,7 +39,7 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 
 # Instalación y configuración Connection Server
 
-El Connection Server, o servidor de conexión es el core de nuestra infraestructura VDI, es la pieza mas importante de todo el entorno.
+El Connection Server, o servidor de conexión es el core de nuestra infraestructura VDI, es la pieza más importante de todo el entorno.
 
 Lo primero que haremos, será descargarnos el instalador desde el portal de [My.VMware](https://my.vmware.com). Como veis hay muchos instaladores. Empezaremos con el View Connection Server (64-bit) que entre otras cosas es el instalador del servidor de conexión :-)
 
@@ -53,7 +53,7 @@ Una vez descargado, ejecutaremos el instalador y seguiremos el asistente de inst
 
 ![con04]({{ site.imagesposts2019 }}/08/con04.png){: .align-center}
 
-En este punto es donde seleccionaremos "Servidor estándar de Horizon 7" ya que es la primera instáncia de nuestra infraestructura:
+En este punto es donde seleccionaremos "Servidor estándar de Horizon 7" ya que es la primera instancia de nuestra infraestructura:
 
 ![con05]({{ site.imagesposts2019 }}/08/con05.png){: .align-center}
 
