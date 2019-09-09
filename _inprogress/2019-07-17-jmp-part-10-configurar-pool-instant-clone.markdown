@@ -42,9 +42,6 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 # Configurar un pool de Instant Clone
 
 
-
-Arrancamos el instalador y seguimos el wizard:
-
 ![pool-ic01]({{ site.imagesposts2019 }}/10/pool-ic01.png){: .align-center}
 ![pool-ic02]({{ site.imagesposts2019 }}/10/pool-ic02.png){: .align-center}
 ![pool-ic03]({{ site.imagesposts2019 }}/10/pool-ic03.png){: .align-center}
@@ -54,16 +51,16 @@ Arrancamos el instalador y seguimos el wizard:
 ![pool-ic07]({{ site.imagesposts2019 }}/10/pool-ic07.png){: .align-center}
 ![pool-ic08]({{ site.imagesposts2019 }}/10/pool-ic08.png){: .align-center}
 ![pool-ic09]({{ site.imagesposts2019 }}/10/pool-ic09.png){: .align-center}
-![pool-ic010]({{ site.imagesposts2019 }}/10/pool-ic00.png){: .align-center}
-![pool-ic011]({{ site.imagesposts2019 }}/10/pool-ic011.png){: .align-center}
-![pool-ic012]({{ site.imagesposts2019 }}/10/pool-ic012.png){: .align-center}
+![pool-ic10]({{ site.imagesposts2019 }}/10/pool-ic10.png){: .align-center}
+![pool-ic11]({{ site.imagesposts2019 }}/10/pool-ic11.png){: .align-center}
+![pool-ic12]({{ site.imagesposts2019 }}/10/pool-ic12.png){: .align-center}
 
 
 Y hasta aquí por hoy, en el próximo post veremos cómo crear nuestro primer Pool de Linked Clones
 
 Espero que os sirva.
 
-Nos vemos en el próximo post: [Part 10: Configurar un pool de Instant Clone]({{ site.url }}/jmp-part10/)
+Nos vemos en el próximo post: [Part 11: Instalar App Volumes]({{ site.url }}/jmp-part11/)
 
 Un saludo!
 
