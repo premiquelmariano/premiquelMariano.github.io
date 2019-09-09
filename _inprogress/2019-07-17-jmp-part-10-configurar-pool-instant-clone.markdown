@@ -41,50 +41,23 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 
 # Configurar un pool de Instant Clone
 
-Partiremos de la base de que ya hemos elegido nuestro SO base (generalmente un SO cliente) y que ya lo tenemos instalado en nuestra VM que nos servirá como plantilla master.
 
-Como en esta serie de posts estamos tratando de explicar el paso a paso para crear un entorno JMP, necesitaremos instalar varios agentes en nuestra plantilla:
-
-1 VMware Tools
-2 VMware Horizon Agent
-3 VMware User Environment Manager (UEM) agent
-4 VMware App Volumes Agent
-
-En este post, solo vamos a ver cómo instalar nuestro Horizon Agent, pero hay que tener en cuenta que el orden de instalación de los agentes es importante a la hora de configurar bien nuestra plantilla. Podeis consultar la nota técnica en la [siguiente KB](https://kb.vmware.com/s/article/2118048)
-
-Como decía, en este post vamos a ver como configurar una plantilla para Instant Clone, que básicamente se consigue instalando el Horizon Agent con unos parámetros determinados. Vamos a ello...
 
 Arrancamos el instalador y seguimos el wizard:
 
-![agent1]({{ site.imagesposts2019 }}/09/agent1.png){: .align-center}
+![pool-ic01]({{ site.imagesposts2019 }}/10/pool-ic01.png){: .align-center}
+![pool-ic02]({{ site.imagesposts2019 }}/10/pool-ic02.png){: .align-center}
+![pool-ic03]({{ site.imagesposts2019 }}/10/pool-ic03.png){: .align-center}
+![pool-ic04]({{ site.imagesposts2019 }}/10/pool-ic04.png){: .align-center}
+![pool-ic05]({{ site.imagesposts2019 }}/10/pool-ic05.png){: .align-center}
+![pool-ic06]({{ site.imagesposts2019 }}/10/pool-ic06.png){: .align-center}
+![pool-ic07]({{ site.imagesposts2019 }}/10/pool-ic07.png){: .align-center}
+![pool-ic08]({{ site.imagesposts2019 }}/10/pool-ic08.png){: .align-center}
+![pool-ic09]({{ site.imagesposts2019 }}/10/pool-ic09.png){: .align-center}
+![pool-ic010]({{ site.imagesposts2019 }}/10/pool-ic00.png){: .align-center}
+![pool-ic011]({{ site.imagesposts2019 }}/10/pool-ic011.png){: .align-center}
+![pool-ic012]({{ site.imagesposts2019 }}/10/pool-ic012.png){: .align-center}
 
-Aceptamos la licencia y continuamos:
-
-![agent2]({{ site.imagesposts2019 }}/09/agent2.png){: .align-center}
-
-Seleccionamos IPv4 como protocolo predefinido y continuamos:
-
-![agent3]({{ site.imagesposts2019 }}/09/agent3.png){: .align-center}
-
-Aquí es dónde está la parte importante de la instalación. Por defecto, la opción de VMware Horizon View composer está habilitada, pero esta opción solo nos sirve para la tecnología Linked Clone, no para Instant Clone. Así pues, deberemos desmarcar esta opción y marcar VMware Horizon Instant Clone Agent:
-
-![agent4]({{ site.imagesposts2019 }}/09/agent4.png){: .align-center}
-
-Cómo en todo este proceso vamos a utilizar UEM para la personalización de los escritorios, desmarcaremos también la opción de VMware Horizon 7 Persona Management:
-
-![agent5]({{ site.imagesposts2019 }}/09/agent5.png){: .align-center}
-
-Install...
-
-![agent6]({{ site.imagesposts2019 }}/09/agent6.png){: .align-center}
-
-Cuando termine la instalación, finalizamos el asistente y reiniciamos la VM:
-
-![agent7]({{ site.imagesposts2019 }}/09/agent7.png){: .align-center}
-
-Con el agente ya instalado, procederemos a apagar nuestra VM y crear un snapshot del cual partirán nuestros escritorios:
-
-![agent8]({{ site.imagesposts2019 }}/09/agent8.png){: .align-center}
 
 Y hasta aquí por hoy, en el próximo post veremos cómo crear nuestro primer Pool de Linked Clones
 
