@@ -116,9 +116,10 @@ https://192.168.6.116:9443/admin/index.html#/Login
 ![uag26]({{ site.imagesposts2019 }}/09/uag26.png){: .align-center}
 
 Es importante desmarcar todos los túneles, de lo contrario recibiremos un error al conectar con nuestro Horizon Client
+![uag26-1]({{ site.imagesposts2019 }}/09/uag26-1.png){: .align-center}
 {: .notice}
 
-![uag26-1]({{ site.imagesposts2019 }}/09/uag26-1.png){: .align-center}
+
 
 ![uag27]({{ site.imagesposts2019 }}/09/uag27.png){: .align-center}
 ![uag28]({{ site.imagesposts2019 }}/09/uag28.png){: .align-center}
