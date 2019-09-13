@@ -59,6 +59,24 @@ https://kb.vmware.com/s/article/1021805
 
 ![replica11]({{ site.imagesposts2019 }}/09/replica11.png){: .align-center}
 
+# Balanceo de carga con NLB de Windows Server
+
+![nlb1]({{ site.imagesposts2019 }}/09/nlb1.png){: .align-center}
+![nlb2]({{ site.imagesposts2019 }}/09/nlb2.png){: .align-center}
+![nlb3]({{ site.imagesposts2019 }}/09/nlb3.png){: .align-center}
+![nlb4]({{ site.imagesposts2019 }}/09/nlb4.png){: .align-center}
+![nlb5]({{ site.imagesposts2019 }}/09/nlb5.png){: .align-center}
+![nlb6]({{ site.imagesposts2019 }}/09/nlb6.png){: .align-center}
+![nlb7]({{ site.imagesposts2019 }}/09/nlb7.png){: .align-center}
+![nlb8]({{ site.imagesposts2019 }}/09/nlb8.png){: .align-center}
+![nlb9]({{ site.imagesposts2019 }}/09/nlb9.png){: .align-center}
+![nlb10]({{ site.imagesposts2019 }}/09/nlb10.png){: .align-center}
+![nlb11]({{ site.imagesposts2019 }}/09/nlb11.png){: .align-center}
+![nlb12]({{ site.imagesposts2019 }}/09/nlb12.png){: .align-center}
+![nlb13]({{ site.imagesposts2019 }}/09/nlb13.png){: .align-center}
+![nlb14]({{ site.imagesposts2019 }}/09/nlb14.png){: .align-center}
+
+
 Espero que os sirva.
 
 Nos vemos en el próximo post: [Part 6: Instalación y configuración de Security Server]({{ site.url }}/jmp-part6/)
