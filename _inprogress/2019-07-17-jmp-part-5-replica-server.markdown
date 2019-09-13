@@ -75,9 +75,8 @@ https://kb.vmware.com/s/article/1021805
 ![nlb12]({{ site.imagesposts2019 }}/09/nlb12.png){: .align-center}
 ![nlb13]({{ site.imagesposts2019 }}/09/nlb13.png){: .align-center}
 ![nlb14]({{ site.imagesposts2019 }}/09/nlb14.png){: .align-center}
-![nlb15]({{ site.imagesposts2019 }}/09/nlb15.png){: .align-center}
 
-bla bla
+bla
 
 Espero que os sirva.
 
