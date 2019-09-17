@@ -20,6 +20,9 @@
         <h1 class="site-subtitle" itemprop="description">{{ site.subtitle }}</h1>
       {% else %}
         <p class="site-subtitle">{{ site.subtitle }}</p>
+        <div id="typePad">
+        <p class="sentence">{{ site.subtitle }}</p>
+        </div>
       {% endif %}
   </div>
 
@@ -78,3 +81,6 @@
 </nav>
 
 {% include _custom/header.html %}
+
+<script type="text/javascript" src="https://rawgit.com/ndaidong/typewritter/master/dist/typewritter-effect.min.js"></script>
+<script type="text/javascript" src="/js/typewritter.js"></script>
