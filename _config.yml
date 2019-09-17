@@ -216,7 +216,6 @@ font:
 social:
   GitHub: https://github.com/iissnan
   Twitter: https://github.com/iissnan
-  Weibo: https://github.com/iissnan
   LinkedIN: https://github.com/iissnan
 
 
@@ -232,7 +231,7 @@ social_icons:
   GitHub: github
   Twitter: twitter
   Weibo: weibo
-  LinkedIN: linkdedin
+  LinkedIN: linkedin
 
 
 # Sidebar Avatar
