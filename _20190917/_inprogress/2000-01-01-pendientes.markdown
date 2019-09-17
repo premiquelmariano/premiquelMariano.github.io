@@ -13,6 +13,10 @@ tag:
 https://tpetersit.blogspot.com/2018/07/vmware-horizon-75-jmp-integrated.html
 https://www.myvirtualjourney.com/vmfs5-or-vmfs6/
 https://jketels.nl/how-to-setup-rhel7-with-horizon-instant-clones/
+https://medium.com/swlh/ansible-awx-installation-5861b115455a
+
+https://www.howtoforge.com/ansible-awx-guide-basic-usage-and-configuration/
+https://dzone.com/articles/getting-started-with-ansible-tower-hands-on
 
 
 ### Migrar awx a otra instancia para actualizar versión
