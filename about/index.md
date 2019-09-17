@@ -4,6 +4,9 @@ layout: page
 permalink: /about/
 ---
 
+![perfil]({{ site.url }}/{{ site.images }}/perfil.png){: .align-center}
+![perfil2]({{ site.url }}/{{ site.images }}/perfil2.jpg){: .align-center}
+
 Hola, me llamo Miquel Mariano Ramis y actualmente soy Consultor TI en [NCORA](http://www.ncora.com)
 
 A parte de la tecnología, me encanta el deporte al aire libre. Aunque viva en una isla como Mallorca, soy mas de montaña que de playa, así que es fácil encontrarme por el monte haciendo MTB, corriendo o simplemente practicando algo de senderismo.
@@ -28,13 +31,13 @@ Podréis consultar mas información en mi perfil completo de [LinkedIN](https://
 
 Ah, por cierto, también tengo libro, podreis encontrar toda la info sobre ["VMware por vExperts"](https://twitter.com/vmwarevexperts), el proyecto solidario y la url de descarga gratis desde [aquí](https://www.vmwareporvexperts.org)
 
-![vExpert]({{ site.url }}{{ site.images }}/logo_vexpert_4.png){: .align-center}
+![vExpert]({{ site.url }}/{{ site.images }}/logo_vexpert_4.png){: .align-center}
 
-![vcap]({{ site.url }}{{ site.images }}/logo_vcap6.jpg){: .align-center}
+![vcap]({{ site.url }}/{{ site.images }}/logo_vcap6.jpg){: .align-center}
 
-![hds]({{ site.url }}{{ site.images }}/logo_hds.png){: .align-center}
+![hds]({{ site.url }}/{{ site.images }}/logo_hds.png){: .align-center}
 
-![content]({{ site.url }}{{ site.images }}/logo_hds_content.png){: .align-center}
+![content]({{ site.url }}/{{ site.images }}/logo_hds_content.png){: .align-center}
 
-![vspg]({{ site.url }}{{ site.images }}/logo_hds_vspg.png){: .align-center}
+![vspg]({{ site.url }}/{{ site.images }}/logo_hds_vspg.png){: .align-center}
 
