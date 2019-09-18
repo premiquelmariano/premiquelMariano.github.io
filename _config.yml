@@ -4,7 +4,7 @@
 # ---------------------------------------------------------------
 
 # Site
-title: Miquel Mariano
+title: Miquel Mariano Ramis
 subtitle:   Consultor TI en Ncora | VCAP6-DCV Deploy | VCP5/6-DCV | vExpert x4 | Apasionado de la montaña | Bike | Trail | Run | Padre de Aina ♥
 description: descripcion
 author: Miquel Mariano
@@ -236,8 +236,7 @@ social_icons:
 
 # Sidebar Avatar
 # in directory: /assets/images/avatar.gif
-avatar: /assets/images/perfil2017.jpg
-
+avatar: /assets/images/perfil2019-redondo.png
 
 # Table Of Contents in the Sidebar
 toc:
@@ -349,7 +348,7 @@ post_copyright:
 #   image: url-of-image   - Images's url
 custom_logo:
   enabled: true
-  image: /assets/images/perfil2019.jpg
+  image: /assets/images/perfil2019-redondo.png
 
 
 # Code Highlight theme
