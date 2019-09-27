@@ -92,29 +92,51 @@ Y es que hay que recordar, que aunque tengamos bien configurados y replicados nu
 
 A continuación veremos cómo configurar el servicio NLB de Windows Server
 
+## Instalar característica de NLB (Net Load Balancer)
+
+Desde el menú de administración del servidor, nos iremos a la opción de "Agregar roles y características"
+
 ![nlb1]({{ site.imagesposts2019 }}/09/nlb1.png){: .align-center}
 ![nlb2]({{ site.imagesposts2019 }}/09/nlb2.png){: .align-center}
 ![nlb3]({{ site.imagesposts2019 }}/09/nlb3.png){: .align-center}
 ![nlb4]({{ site.imagesposts2019 }}/09/nlb4.png){: .align-center}
 ![nlb5]({{ site.imagesposts2019 }}/09/nlb5.png){: .align-center}
+
+En el menú de Características, marcaremos la opción de "Equilibrio de carga de red"
+
 ![nlb6]({{ site.imagesposts2019 }}/09/nlb6.png){: .align-center}
 ![nlb7]({{ site.imagesposts2019 }}/09/nlb7.png){: .align-center}
 ![nlb8]({{ site.imagesposts2019 }}/09/nlb8.png){: .align-center}
 ![nlb9]({{ site.imagesposts2019 }}/09/nlb9.png){: .align-center}
+
+Una vez finalizao el asistente, en la carpeta de Herramientas administrativas, nos aparecerá el Administrador de NLB:
+
+![nlb9-1]({{ site.imagesposts2019 }}/09/nlb9-1.png){: .align-center}
+
+## Crear nuevo clúster NLB
+
 ![nlb10]({{ site.imagesposts2019 }}/09/nlb10.png){: .align-center}
 ![nlb11]({{ site.imagesposts2019 }}/09/nlb11.png){: .align-center}
 ![nlb12]({{ site.imagesposts2019 }}/09/nlb12.png){: .align-center}
+
+**NOTA:** Antes de proceder a continuar con el asistente, será neceario crear una entrada en nuestro DNS y que luego introduciremos en "Nombre completo de Internet"
+{: .notice}
+
 ![nlb13]({{ site.imagesposts2019 }}/09/nlb13.png){: .align-center}
 ![nlb14]({{ site.imagesposts2019 }}/09/nlb14.png){: .align-center}
 ![nlb15]({{ site.imagesposts2019 }}/09/nlb15.png){: .align-center}
+
+## Agregar nuevo miembro al clúster NLB
+
 ![nlb16]({{ site.imagesposts2019 }}/09/nlb16.png){: .align-center}
 ![nlb17]({{ site.imagesposts2019 }}/09/nlb17.png){: .align-center}
 ![nlb18]({{ site.imagesposts2019 }}/09/nlb18.png){: .align-center}
 ![nlb19]({{ site.imagesposts2019 }}/09/nlb19.png){: .align-center}
 ![nlb20]({{ site.imagesposts2019 }}/09/nlb20.png){: .align-center}
+
+Una vez terminada la configuración y tengamos nuestro clúster activo, ya nos podremos conectar a nuestro entorno Horizon a través del balanceador de carga.
+
 ![nlb21]({{ site.imagesposts2019 }}/09/nlb21.png){: .align-center}
-
-
 
 Espero que os sirva.
 
