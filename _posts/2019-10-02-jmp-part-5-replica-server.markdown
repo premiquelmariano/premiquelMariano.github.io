@@ -1,6 +1,6 @@
 ---
 title: Creando un entorno JMP con VMware Horizon - Parte 5
-date: '2019-07-17 00:00:00'
+date: '2019-10-02 00:00:00'
 layout: post
 image: /assets/images/posts/2019/07/horizon-logo.png
 tag:
@@ -13,8 +13,6 @@ tag:
 permalink: /jmp-part5/
 
 ---
-
-Buenos dias a tod@s!!
 
 En la siguiente serie de posts, pretendo explicar durante las próximas semanas el paso a paso para instalar un entorno JMP (Just-in-Time Management Platform) utilizando VMware Horizon 7 Instant Clones + App Volumes + VMware UEM (User Environment Manager) 
 
@@ -39,25 +37,46 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 
 # Instalación de un Réplica Server
 
+Para la instalación de un Replica server, utilizaremos el mismo instalador que ya utilizamos para instalar el [primer Connection server]({{ site.url }}/jmp-part4/)
+
+A partir de aquí, simplemente tendremos que seguir el instalador:
 
 ![replica1]({{ site.imagesposts2019 }}/09/replica1.png){: .align-center}
 ![replica2]({{ site.imagesposts2019 }}/09/replica2.png){: .align-center}
 ![replica3]({{ site.imagesposts2019 }}/09/replica3.png){: .align-center}
+
+En este punto, es dónde indicaremos que vamos a instalar un réplica server:
+
 ![replica4]({{ site.imagesposts2019 }}/09/replica4.png){: .align-center}
+
+Proporcionaremos el nombre de un connection server desde el cual queramos replicar:
+
 ![replica5]({{ site.imagesposts2019 }}/09/replica5.png){: .align-center}
 ![replica6]({{ site.imagesposts2019 }}/09/replica6.png){: .align-center}
 ![replica7]({{ site.imagesposts2019 }}/09/replica7.png){: .align-center}
 ![replica8]({{ site.imagesposts2019 }}/09/replica8.png){: .align-center}
 ![replica9]({{ site.imagesposts2019 }}/09/replica9.png){: .align-center}
+
+Una vez finalizado, dese el Horizon Administrator, ya nos aparecerá nuestro nuevo servidor de conexión:
+
 ![replica10]({{ site.imagesposts2019 }}/09/replica10.png){: .align-center}
 
+Al igual que un Active Directory, nuestra plataforma Horizon está basada en una ADAM database, por lo que con el siguiente comando, podremos comprobar el estado de la replicación:
+
+```
 repadmin.exe /showrepl localhost:389 DC=vdi,DC=vmware,DC=int
-
-repadmin.exe /replicate localhost-FQDN:389 remote-host-FQDN:389 dc=vdi,dc=vmware,dc=int
-
-https://kb.vmware.com/s/article/1021805
+```
 
 ![replica11]({{ site.imagesposts2019 }}/09/replica11.png){: .align-center}
+
+También podremos forzarla con este comando:
+
+```
+repadmin.exe /replicate localhost-FQDN:389 remote-host-FQDN:389 dc=vdi,dc=vmware,dc=int
+```
+
+Si quereis mas información, no dejeis de consultar [esta KB](https://kb.vmware.com/s/article/1021805)
+{: .notice}
 
 # Balanceo de carga con NLB de Windows Server
 
@@ -75,6 +94,7 @@ https://kb.vmware.com/s/article/1021805
 ![nlb12]({{ site.imagesposts2019 }}/09/nlb12.png){: .align-center}
 ![nlb13]({{ site.imagesposts2019 }}/09/nlb13.png){: .align-center}
 ![nlb14]({{ site.imagesposts2019 }}/09/nlb14.png){: .align-center}
+![nlb15]({{ site.imagesposts2019 }}/09/nlb15.png){: .align-center}
 
 
 bla
