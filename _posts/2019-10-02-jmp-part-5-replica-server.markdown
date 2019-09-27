@@ -77,6 +77,8 @@ También podremos forzarla con este comando:
 repadmin.exe /replicate localhost-FQDN:389 remote-host-FQDN:389 dc=vdi,dc=vmware,dc=int
 ```
 
+![replica12]({{ site.imagesposts2019 }}/09/replica12.png){: .align-center}
+
 Si quereis mas información, no dejeis de consultar [esta KB](https://kb.vmware.com/s/article/1021805)
 {: .notice}
 
