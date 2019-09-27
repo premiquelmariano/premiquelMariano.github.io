@@ -97,9 +97,14 @@ Si quereis mas información, no dejeis de consultar [esta KB](https://kb.vmware.
 ![nlb13]({{ site.imagesposts2019 }}/09/nlb13.png){: .align-center}
 ![nlb14]({{ site.imagesposts2019 }}/09/nlb14.png){: .align-center}
 ![nlb15]({{ site.imagesposts2019 }}/09/nlb15.png){: .align-center}
+![nlb16]({{ site.imagesposts2019 }}/09/nlb16.png){: .align-center}
+![nlb17]({{ site.imagesposts2019 }}/09/nlb17.png){: .align-center}
+![nlb18]({{ site.imagesposts2019 }}/09/nlb18.png){: .align-center}
+![nlb19]({{ site.imagesposts2019 }}/09/nlb19.png){: .align-center}
+![nlb20]({{ site.imagesposts2019 }}/09/nlb20.png){: .align-center}
+![nlb21]({{ site.imagesposts2019 }}/09/nlb21.png){: .align-center}
 
 
-bla
 
 Espero que os sirva.
 
