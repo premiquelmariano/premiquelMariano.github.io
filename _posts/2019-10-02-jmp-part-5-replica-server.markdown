@@ -61,6 +61,8 @@ Una vez finalizado, dese el Horizon Administrator, ya nos aparecerá nuestro nue
 
 ![replica10]({{ site.imagesposts2019 }}/09/replica10.png){: .align-center}
 
+## Comprobación replicación
+
 Al igual que un Active Directory, nuestra plataforma Horizon está basada en una ADAM database, por lo que con el siguiente comando, podremos comprobar el estado de la replicación:
 
 ```
