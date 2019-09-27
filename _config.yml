@@ -122,6 +122,8 @@ menu:
   about: /about/
   archives: /archives/
   tags: /tags/
+  vmwareporvexperts: /vmwareporvexperts/
+  vcap: /vcap-experience/
   #sitemap: /sitemap.xml
   #commonweal: /404.html
 
