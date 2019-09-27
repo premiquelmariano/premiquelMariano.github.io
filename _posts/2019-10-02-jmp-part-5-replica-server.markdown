@@ -84,6 +84,14 @@ Si quereis mas información, no dejeis de consultar [esta KB](https://kb.vmware.
 
 # Balanceo de carga con NLB de Windows Server
 
+Hace ya tiempo, mi amigo Ricard Ibáñez [escribió un post](https://www.cenabit.com/2018/06/balancear-las-conexiones-en-horizon-view/) sobre varios métodos para balancear nuestros Connection Servers.
+
+Y es que hay que recordar, que aunque tengamos bien configurados y replicados nuestros servidores, por defecto no se balancean las conexiones hacia ellos, es por eso que necesitaremos productos de terceros para conseguir ese balanceo.
+
+![lb]({{ site.imagesposts2019 }}/09/uag0.png){: .align-center}
+
+A continuación veremos cómo configurar el servicio NLB de Windows Server
+
 ![nlb1]({{ site.imagesposts2019 }}/09/nlb1.png){: .align-center}
 ![nlb2]({{ site.imagesposts2019 }}/09/nlb2.png){: .align-center}
 ![nlb3]({{ site.imagesposts2019 }}/09/nlb3.png){: .align-center}
