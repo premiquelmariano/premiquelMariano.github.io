@@ -143,8 +143,8 @@ menu_icons:
   tags: tags
   archives: archive
   sitemap: sitemap
-  vmwareporvexperts: sitemap
-  vcap: sitemap
+  vmwareporvexperts: address-book
+  vcap: user-graduate
   commonweal: heartbeat
 
 
