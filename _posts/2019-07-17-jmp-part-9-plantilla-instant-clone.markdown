@@ -14,10 +14,6 @@ permalink: /jmp-part9/
 
 ---
 
-https://univirt.wordpress.com/2018/02/20/building-a-horizon-view-jmp-lab-part-4-connection-server-install-and-initial-configuration/
-
-Buenos días a tod@s!!
-
 En la siguiente serie de posts, pretendo explicar durante las próximas semanas el paso a paso para instalar un entorno JMP (Just-in-Time Management Platform) utilizando VMware Horizon 7 Instant Clones + App Volumes + VMware UEM (User Environment Manager) 
 
 - [Part 1: Introducción]({{ site.url }}/jmp-part1/)
@@ -45,10 +41,10 @@ Partiremos de la base de que ya hemos elegido nuestro SO base (generalmente un S
 
 Como en esta serie de posts estamos tratando de explicar el paso a paso para crear un entorno JMP, necesitaremos instalar varios agentes en nuestra plantilla:
 
-1 VMware Tools
-2 VMware Horizon Agent
-3 VMware User Environment Manager (UEM) agent
-4 VMware App Volumes Agent
+- VMware Tools
+- VMware Horizon Agent
+- VMware User Environment Manager (UEM) agent
+- VMware App Volumes Agent
 
 En este post, solo vamos a ver cómo instalar nuestro Horizon Agent, pero hay que tener en cuenta que el orden de instalación de los agentes es importante a la hora de configurar bien nuestra plantilla. Podeis consultar la nota técnica en la [siguiente KB](https://kb.vmware.com/s/article/2118048)
 
