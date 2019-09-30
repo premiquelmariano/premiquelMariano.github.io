@@ -39,6 +39,10 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 - [Part 17: Instalación y configuración JMP Server]({{ site.url }}/jmp-part17/)
 - [Part 18: Aprovisionamiento con JMP]({{ site.url }}/jmp-part18/)
 
+# Tecnología Instant clone
+
+http://virtual-euc.de/vmware-horizon-7-instant-clones-deep-dive
+
 # Configurar un pool de Instant Clone
 
 
