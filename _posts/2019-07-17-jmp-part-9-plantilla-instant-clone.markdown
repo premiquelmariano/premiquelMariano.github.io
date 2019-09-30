@@ -82,7 +82,7 @@ Con el agente ya instalado, procederemos a apagar nuestra VM y crear un snapshot
 
 ![agent8]({{ site.imagesposts2019 }}/09/agent8.png){: .align-center}
 
-Y hasta aquí por hoy, en el próximo post veremos cómo crear nuestro primer Pool de Linked Clones
+Y hasta aquí por hoy, en el próximo post veremos cómo crear nuestro primer Pool de Instant Clones
 
 Espero que os sirva.
 
