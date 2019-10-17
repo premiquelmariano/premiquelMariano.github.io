@@ -1,5 +1,5 @@
 ---
-title: Creando un entorno JMP con VMware Horizon - Parte 10
+title: Creando un entorno JMP con VMware Horizon - Parte 10 - Configurar un pool de Instant Clone
 date: '2019-07-17 00:00:00'
 layout: post
 image: /assets/images/posts/2019/07/horizon-logo.png
@@ -41,7 +41,16 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 
 # Tecnología Instant clone
 
-http://virtual-euc.de/vmware-horizon-7-instant-clones-deep-dive
+Antes de empezar a ver cómo crear un pool de Instant Clone, me gustaria hacer un pequeño inciso en qué es y cómo funciona esta tecnología de Instant Clone.
+
+Mi amigo [Ricard](https://www.cenabit.com/) escribió un fantástico capítulo en le libro [#VmwarePorvExperts](https://miquelmariano.github.io/vmwareporvexperts/) dónde explica con detalle esta tecnología. Os animo a que le echeis un vistazo.
+
+En esencia Instant Clone es muy parecido a Linked Clone, pero con un funcionamiento a bajo nivel algo diferente. Así como Linked Clone opera a nivel de disco y mantiene un disco en cada escritorio virtual con los datos diferenciales respecto a la VM Réplica, Instant Clone genera en cada escritorio virtual, un disco diferencial y una memoria RAM diferencial respecto a una VM Parent, que se aprovisiona para cada uno de los nodos ESXi y se mantiene encendida.
+
+
+![ic01]({{ site.imagesposts2019 }}/10/ic01.png){: .align-center}
+
+![ic02]({{ site.imagesposts2019 }}/10/ic02.png){: .align-center}
 
 # Configurar un pool de Instant Clone
 
