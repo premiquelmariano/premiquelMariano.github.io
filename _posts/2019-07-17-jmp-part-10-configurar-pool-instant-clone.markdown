@@ -14,8 +14,6 @@ permalink: /jmp-part10/
 
 ---
 
-https://univirt.wordpress.com/2018/02/20/building-a-horizon-view-jmp-lab-part-4-connection-server-install-and-initial-configuration/
-
 Buenos días a tod@s!!
 
 En la siguiente serie de posts, pretendo explicar durante las próximas semanas el paso a paso para instalar un entorno JMP (Just-in-Time Management Platform) utilizando VMware Horizon 7 Instant Clones + App Volumes + VMware UEM (User Environment Manager) 
@@ -47,8 +45,10 @@ Mi amigo [Ricard Ibañez](https://www.cenabit.com/) escribió un fantástico cap
 
 **Instant Clone.** La tecnología Instant Clone es muy parecida en concepto a Linked Clone, pero con una operativa totalmente distinta. Así como Linked Clone opera a nivel de disco y mantiene un disco en cada escritorio virtual con los datos diferenciales respecto a la VM Réplica, Instant Clone genera en cada escritorio virtual, un disco diferencial y una memoria RAM diferencial respecto a una VM Parent, que se aprovisiona para cada uno de los nodos ESXi y se mantiene encendida.
 
-
 ![ic01]({{ site.imagesposts2019 }}/10/ic01.png){: .align-center}
+
+Esta tecnología no permite mantener ningún dato del escritorio virtual de manera persistente, de este modo, cuando el usuario cierra la sesión o reinicia el escritorio, este, se destruye y se genera de nuevo en el mismo estado que la VM Parent.
+Instant Clone genera varias VM en el proceso de aprovisionamiento del Pool, por lo que necesitamos una VM Base con un Snapshot del estado que vamos a aprovisionar. Luego se generará una plantilla, para todo el Pool, del estado de nuestra VM Base con el Snapshot y seguidamente una VM Réplica en cada uno de los Datastores asignados al Pool. Estas VM Réplica serán la que generará las VM Parent en cada uno de los nodos ESXi y en cada Datastore asignado al Pool. Las VM Parent están siempre encendidas y son las encargadas de compartir tanto el disco como la memoria para generar los escritorios virtuales y aprovisionarlos en muy pocos minutos.
 
 ![ic02]({{ site.imagesposts2019 }}/10/ic02.png){: .align-center}
 
@@ -68,6 +68,7 @@ Mi amigo [Ricard Ibañez](https://www.cenabit.com/) escribió un fantástico cap
 ![pool-ic11]({{ site.imagesposts2019 }}/10/pool-ic11.png){: .align-center}
 ![pool-ic12]({{ site.imagesposts2019 }}/10/pool-ic12.png){: .align-center}
 
+# Acceder a nuestro pool a través de Horizon Client
 
 Y hasta aquí por hoy, en el próximo post veremos cómo crear nuestro primer Pool de Linked Clones
 
