@@ -98,8 +98,14 @@ A continuación se nos muestra un pequeño resumen de todas las opciones que hem
 ![pool-ic11]({{ site.imagesposts2019 }}/10/pool-ic11.png){: .align-center}
 
 En caso de no marcar el check anteriormente indicado, desde las propias opciones del pool, podremos entrar en "Autorizaciones" para así autorizar a nuestros usuarios de Active Directory conectarse a nuestro pool.
+
 ![pool-ic12]({{ site.imagesposts2019 }}/10/pool-ic12.png){: .align-center}
 
+Tras finalizar todo el proceso, veremos que empiezan a desplegarse escritorios y aparecen en la carpeta correspondiente en nuestro vCenter
+
+![pool-ic13]({{ site.imagesposts2019 }}/10/pool-ic13.png){: .align-center}
+
+![pool-ic14]({{ site.imagesposts2019 }}/10/pool-ic14.png){: .align-center}
 
 
 # Acceder a nuestro pool a través de Horizon Client
