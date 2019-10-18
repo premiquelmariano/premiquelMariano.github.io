@@ -108,7 +108,20 @@ Tras finalizar todo el proceso, veremos que empiezan a desplegarse escritorios y
 ![pool-ic14]({{ site.imagesposts2019 }}/10/pool-ic14.png){: .align-center}
 
 
-# Acceder a nuestro pool a través de Horizon Client
+# Acceso a nuestra infraestructura VDI
+
+Para que nuestros usuarios puedan acceder a nuestra plataforma VDI, necesitaremos de un cliente. Este cliente puede ser mediante un navegador web o instalando un cliente pesado en nuestro equipo.
+
+## Mediante cliente HTML5
+
+Para poder utilizar este acceso, el pool debe estár configurado esplicitamente, os acordais de esta vendana?
+
+![pool-ic15]({{ site.imagesposts2019 }}/10/pool-ic15.png){: .align-center}
+
+Accederemos con un navegador web a nuestro [connection server]({{ site.url }}/jmp-part4/) 
+
+
+## Mediante Horizon Client
 
 Y hasta aquí por hoy, en el próximo post veremos cómo crear nuestro primer Pool de Linked Clones
 
