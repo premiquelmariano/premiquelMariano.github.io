@@ -54,19 +54,53 @@ Instant Clone genera varias VM en el proceso de aprovisionamiento del Pool, por 
 
 # Configurar un pool de Instant Clone
 
+Para arrancar con el proceso de creación de nuestro pool de Instant clone, lo primero que haremos es conectarnos a nuestro [connection server]({{ site.url }}/jmp-part4/)
+
+Nos dirigiremos en el menú izquierdo "Grupos de escritorio" > "Agregar"
 
 ![pool-ic01]({{ site.imagesposts2019 }}/10/pool-ic01.png){: .align-center}
+
+Seleccionaremos "Grupo de escritorio automatizado"
+
 ![pool-ic02]({{ site.imagesposts2019 }}/10/pool-ic02.png){: .align-center}
+
+Seleccionaremos el tipo de asignación de usuarios "Flotante" para no generar ninguna relación estática entre usuario y escritorio. Los escritorios se irán asignando así como los usuarios los vayan solicitando y de manera aleatoria.
+
 ![pool-ic03]({{ site.imagesposts2019 }}/10/pool-ic03.png){: .align-center}
+
+Como estamos creando un pool de Instant Clone, seleccionaremos esta tecnología en la siguiente ventana del wizard.
+
 ![pool-ic04]({{ site.imagesposts2019 }}/10/pool-ic04.png){: .align-center}
+
+Deberemos poner un identificador al pool y un nombre que será el que los usuarios vean al conectarse. Hay que tener el cuenta que el identificador debe ser único, y no podrá cambiarse una vez creado el pool. El nombre para mostrar, si que se podrá cambiar a posteriori.
+
 ![pool-ic05]({{ site.imagesposts2019 }}/10/pool-ic05.png){: .align-center}
+
+De las opciones de configuración que se muestran a continuación, dependerá de cada entorno, el poner una opción u otra. Para este laboratorio me he decantado por las siguientes:
+
 ![pool-ic06]({{ site.imagesposts2019 }}/10/pool-ic06.png){: .align-center}
 ![pool-ic07]({{ site.imagesposts2019 }}/10/pool-ic07.png){: .align-center}
+
+En nuestro caso, al no tener vSAN no marcaremos esta opción.
+
 ![pool-ic08]({{ site.imagesposts2019 }}/10/pool-ic08.png){: .align-center}
+
+Configuración de nuestro vCenter. En este punto, le indicaremos al pool, las opciones básicas a nivel de vCenter cómo nombre de la [plantilla master]({{ site.url }}/jmp-part9/), snapshot, carpeta dónde ubicar los escritorios, cluster vSphere, datastores, etc etc...
+
 ![pool-ic09]({{ site.imagesposts2019 }}/10/pool-ic09.png){: .align-center}
+
+En este punto, seleccionaremos el dominio y la OU al cual van a pertenecer los escritorios que se desplieguen en este pool.
+
 ![pool-ic10]({{ site.imagesposts2019 }}/10/pool-ic10.png){: .align-center}
+
+A continuación se nos muestra un pequeño resumen de todas las opciones que hemos ido configurando a lo largo del wizard y también podremos marcar el check para asignar los permisos a los diferentes usuarios que van a tener que conectarse a este pool.
+
 ![pool-ic11]({{ site.imagesposts2019 }}/10/pool-ic11.png){: .align-center}
+
+En caso de no marcar el check anteriormente indicado, desde las propias opciones del pool, podremos entrar en "Autorizaciones" para así autorizar a nuestros usuarios de Active Directory conectarse a nuestro pool.
 ![pool-ic12]({{ site.imagesposts2019 }}/10/pool-ic12.png){: .align-center}
+
+
 
 # Acceder a nuestro pool a través de Horizon Client
 
