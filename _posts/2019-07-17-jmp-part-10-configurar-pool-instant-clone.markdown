@@ -112,24 +112,36 @@ Tras finalizar todo el proceso, veremos que empiezan a desplegarse escritorios y
 
 Para que nuestros usuarios puedan acceder a nuestra plataforma VDI, necesitaremos de un cliente. Este cliente puede ser mediante un navegador web o instalando un cliente pesado en nuestro equipo.
 
-## Mediante cliente HTML5
+## Mediante cliente HTML
 
 Para poder utilizar este acceso, el pool debe estár configurado esplicitamente, os acordais de esta vendana?
 
+Será necesario habilitar el acceso HTML en la configuración del pool.
+
 ![pool-ic15]({{ site.imagesposts2019 }}/10/pool-ic15.png){: .align-center}
 
-Accederemos con un navegador web a nuestro [connection server]({{ site.url }}/jmp-part4/) 
+Accederemos con un navegador web a nuestro [connection server]({{ site.url }}/jmp-part4/) y accedemos al portal HTML:
 
 ![pool-ic16]({{ site.imagesposts2019 }}/10/pool-ic16.png){: .align-center}
 
+Accederemos con las credenciales de dominio de algún usuario autorizado a utilizar el Pool
+
 ![pool-ic17]({{ site.imagesposts2019 }}/10/pool-ic17.png){: .align-center}
 
+En el workspace, nos aparecerán los pools a los cuales tenemos acceso. En este caso, solo al que acabamos de crear:
+
 ![pool-ic18]({{ site.imagesposts2019 }}/10/pool-ic18.png){: .align-center}
+
+Una vez accedamos al pool, tendremos nuestro windows completamente funcional:
 
 ![pool-ic19]({{ site.imagesposts2019 }}/10/pool-ic19.png){: .align-center}
 
 
 ## Mediante Horizon Client
+
+El Horizon Client, es un cliente pesado que se puede instalar tanto en Windows, Linux o Mac y nos sirve para conectarnos a nuestros escritorios VDI.
+
+El procedimiento es igual que el acceso mediante cliente HTML:
 
 ![pool-ic20]({{ site.imagesposts2019 }}/10/pool-ic20.png){: .align-center}
 
@@ -137,7 +149,7 @@ Accederemos con un navegador web a nuestro [connection server]({{ site.url }}/jm
 
 ![pool-ic22]({{ site.imagesposts2019 }}/10/pool-ic22.png){: .align-center}
 
-Y hasta aquí por hoy, en el próximo post veremos cómo crear nuestro primer Pool de Linked Clones
+Y hasta aquí por hoy, en el próximo post veremos cómo Instalar App Volumes en nuestro entorno
 
 Espero que os sirva.
 
