@@ -120,6 +120,11 @@ Para poder utilizar este acceso, el pool debe estár configurado esplicitamente,
 
 Accederemos con un navegador web a nuestro [connection server]({{ site.url }}/jmp-part4/) 
 
+![pool-ic16]({{ site.imagesposts2019 }}/10/pool-ic16.png){: .align-center}
+![pool-ic17]({{ site.imagesposts2019 }}/10/pool-ic17.png){: .align-center}
+![pool-ic18]({{ site.imagesposts2019 }}/10/pool-ic18.png){: .align-center}
+![pool-ic19]({{ site.imagesposts2019 }}/10/pool-ic19.png){: .align-center}
+
 
 ## Mediante Horizon Client
 
