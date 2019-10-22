@@ -149,8 +149,6 @@ El procedimiento es igual que el acceso mediante cliente HTML:
 
 ![pool-ic22]({{ site.imagesposts2019 }}/10/pool-ic22.png){: .align-center}
 
-Y hasta aquí por hoy, en el próximo post veremos cómo Instalar App Volumes en nuestro entorno
-
 Espero que os sirva.
 
 Nos vemos en el próximo post: [Part 11: Instalar App Volumes]({{ site.url }}/jmp-part11/)
