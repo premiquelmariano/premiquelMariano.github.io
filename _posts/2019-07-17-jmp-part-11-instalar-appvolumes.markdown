@@ -47,6 +47,10 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 
 # Agregar permisos al usuario en nuestro vCenter
 
+# Crear usuario para la BBDD
+
+https://www.ageroskam.nl/app-volumes/install-and-configure-vmware-app-volumes-manager/
+
 # Instalación de App Volumes
 
 
