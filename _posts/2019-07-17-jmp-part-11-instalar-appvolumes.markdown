@@ -39,9 +39,22 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 - [Part 17: Instalación y configuración JMP Server]({{ site.url }}/jmp-part17/)
 - [Part 18: Aprovisionamiento con JMP]({{ site.url }}/jmp-part18/)
 
-# Habilitar .NET 3.5 en nuestro servidor App Volumes
-
 ![appstack1]({{ site.imagesposts2019 }}/08/appstack1.png){: .align-center}
+
+# Requisitos del servidor
+
+Para la instalación del servidor de App Volumes, necesitaremos una máquina con las siguientes especificaciones:
+
+### Hardware:
+
+- 4 vCPU
+- 2Gb RAM
+- 20Gb Disco
+
+### Software
+
+- Windows Server 2008 R2, 2012 R2, 2016 o 2019 (Standard o Datacenter)
+- Un servidor de BBDD MS SQL Server 2012 SP1 o 2017 (puede ser express)
 
 # Crear usuario de servicio en nuestro directorio activo
 
