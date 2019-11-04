@@ -21,9 +21,15 @@ https://my.vmware.com/group/vmware/patch#search
 
 # Descargar paquete
 
-![uupdate-esxi-without-um-01]({{ site.imagesposts2019 }}/11/update-esxi-without-um-01.png){: .align-center}
+![uppdate-esxi-without-um-01]({{ site.imagesposts2019 }}/11/update-esxi-without-um-01.png){: .align-center}
 
+![uppdate-esxi-without-um-02]({{ site.imagesposts2019 }}/11/update-esxi-without-um-02.png){: .align-center}
 
+![uppdate-esxi-without-um-03]({{ site.imagesposts2019 }}/11/update-esxi-without-um-03.png){: .align-center}
+
+```ssh
+esxcli software vib install -d /vmfs/volumes/LOCAL/update-from-esxi6.7-6.7_update03.zip
+```
 
 Espero que os sirva.
 
