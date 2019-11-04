@@ -19,17 +19,10 @@ https://my.vmware.com/group/vmware/patch#search
 
 
 
-# Primeros pasos con UEM
+# Descargar paquete
 
-![uem_config1]({{ site.imagesposts2019 }}/08/uem_config1.png){: .align-center}
-![uem_config2]({{ site.imagesposts2019 }}/08/uem_config2.png){: .align-center}
-![uem_config3]({{ site.imagesposts2019 }}/08/uem_config3.png){: .align-center}
-![uem_config4]({{ site.imagesposts2019 }}/08/uem_config4.png){: .align-center}
-![uem_config5]({{ site.imagesposts2019 }}/08/uem_config5.png){: .align-center}
-![uem_config6]({{ site.imagesposts2019 }}/08/uem_config6.png){: .align-center}
-![uem_config7]({{ site.imagesposts2019 }}/08/uem_config7.png){: .align-center}
-![uem_config8]({{ site.imagesposts2019 }}/08/uem_config8.png){: .align-center}
-![uem_config9]({{ site.imagesposts2019 }}/08/uem_config9.png){: .align-center}
+![uupdate-esxi-without-um-01]({{ site.imagesposts2019 }}/11/update-esxi-without-um-01.png){: .align-center}
+
 
 
 Espero que os sirva.
