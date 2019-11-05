@@ -31,6 +31,8 @@ https://my.vmware.com/group/vmware/patch#search
 esxcli software vib install -d /vmfs/volumes/LOCAL/update-from-esxi6.7-6.7_update03.zip
 ```
 
+![uppdate-esxi-without-um-04]({{ site.imagesposts2019 }}/11/update-esxi-without-um-04.png){: .align-center}
+
 Espero que os sirva.
 
 Un saludo!
