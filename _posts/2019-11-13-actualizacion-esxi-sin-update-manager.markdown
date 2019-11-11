@@ -1,6 +1,6 @@
 ---
 title: Instalar parches en ESXi sin Update Manager
-date: '2019-11-01 00:00:00'
+date: '2019-11-13 00:00:00'
 layout: post
 image: /assets/images/posts/2019/07/horizon-logo.png
 tag:
