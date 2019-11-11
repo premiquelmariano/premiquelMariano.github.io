@@ -53,7 +53,7 @@ esxcli software vib install -d /vmfs/volumes/LOCAL/update-from-esxi6.7-6.7_updat
 
 Tras la actualización, nos pedirá un reinicio, y al arrancar de nuevo el servidor ESXi, ya podremos ver que se ha actualizado correctamente:
 
-![uppdate-esxi-without-um-5]({{ site.imagesposts2019 }}/11/update-esxi-without-um-5.png){: .align-center}
+![uppdate-esxi-without-um-6]({{ site.imagesposts2019 }}/11/update-esxi-without-um-6.png){: .align-center}
 
 
 Espero que os sirva.
