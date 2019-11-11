@@ -11,13 +11,6 @@ tag:
 
 ---
 
-Ansibilizar también el proceso
-
-https://www.techcrumble.net/2019/05/how-to-update-esxi-without-update-manager/
-
-
-https://neosmart.net/wiki/upgrading-vsphere-esxi-from-the-command-line-automatically/
-
 Buenos días a tod@s.
 
 Hace ya tiempo, [publiqué un post](https://miquelmariano.github.io/2018/05/02/update-esxi-offline-bundle/) en dónde mostraba como actualizar la versión de nuestros ESXi
@@ -58,8 +51,9 @@ esxcli software vib install -d /vmfs/volumes/LOCAL/update-from-esxi6.7-6.7_updat
 
 # Reiniciar y comprobar actualización
 
+Tras la actualización, nos pedirá un reinicio, y al arrancar de nuevo el servidor ESXi, ya podremos ver que se ha actualizado correctamente:
 
-
+![uppdate-esxi-without-um-5]({{ site.imagesposts2019 }}/11/update-esxi-without-um-5.png){: .align-center}
 
 
 Espero que os sirva.
