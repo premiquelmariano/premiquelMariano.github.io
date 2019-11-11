@@ -46,12 +46,19 @@ Via WinSCP o FileZilla o con nuestro cliente preferido, podremos subir el paquet
 
 ![uppdate-esxi-without-um-4]({{ site.imagesposts2019 }}/11/update-esxi-without-um-4.png){: .align-center}
 
+# Instalar paquete
+
+Una vez copiado el paquete en nuestro ESXi, ya sólo nos quedará ejecutar el siguiente comando, para hacer la instalación del mismo:
 
 ```ssh
 esxcli software vib install -d /vmfs/volumes/LOCAL/update-from-esxi6.7-6.7_update03.zip
 ```
 
 ![uppdate-esxi-without-um-5]({{ site.imagesposts2019 }}/11/update-esxi-without-um-5.png){: .align-center}
+
+# Reiniciar y comprobar actualización
+
+
 
 
 
