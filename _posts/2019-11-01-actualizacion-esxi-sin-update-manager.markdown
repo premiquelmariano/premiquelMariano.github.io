@@ -27,7 +27,7 @@ Antes de nada, comprobaremos en que versión de ESXi estamos con el comando `vmw
 
 # Descargar paquete
 
-Para descargarnos el paquete deseado, tendremos que [al repositorio de descargas de VMware](https://my.vmware.com/group/vmware/patch#search)
+Para descargarnos el paquete deseado, tendremos que conectarnos [al repositorio de descargas de VMware](https://my.vmware.com/group/vmware/patch#search)
 
 ![uppdate-esxi-without-um-2]({{ site.imagesposts2019 }}/11/update-esxi-without-um-2.png){: .align-center}
 
