@@ -19,6 +19,11 @@ permalink: /tipsandtricks/
 
 https://blog.ippon.tech/ansible-tips-and-tricks/
 
+https://shadow-soft.com/turbo-charge-your-ansible/
+
+http://acalustra.com/trick-and-tips-en-ansible.html
+
+
 Buenas a tod@as!
 
 
