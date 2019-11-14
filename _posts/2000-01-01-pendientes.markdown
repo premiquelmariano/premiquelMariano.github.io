@@ -74,4 +74,8 @@ https://www.unixarena.com/2019/03/backup-restore-ansible-awx-tower-cli.html/
 
 https://thesanguy.com/2013/09/11/useful-brocade-fos-cli-commands/
 
+### Actualizar VCSA via CLI
+
+https://www.settlersoman.com/how-to-update-or-patch-vcenter-6-appliance-vcsa/
+
 
