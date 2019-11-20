@@ -31,6 +31,8 @@ LATEST_VERSION=$(curl -s https://api.github.com/repos/docker/compose/releases/la
 curl -L "https://github.com/docker/compose/releases/download/$LATEST_VERSION/docker-compose-$(uname -s)-$(uname -m)" > /usr/local/bin/docker-compose
 chmod +x /usr/local/bin/docker-compose
 
+yum install docker-compose
+
 ## Install AWX dependencies
 yum install -y python2-pip
 pip install ansible
