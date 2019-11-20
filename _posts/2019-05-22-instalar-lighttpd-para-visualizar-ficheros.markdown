@@ -15,26 +15,30 @@ c: "}}"
 ---
 
 
-
-Instalar lighttpd | https://www.linuxhelp.com/how-to-install-lighttpd-web-server-on-centos-7
+## Instalar lighttpd | https://www.linuxhelp.com/how-to-install-lighttpd-web-server-on-centos-7
 yum install lighttpd -y
 
 
-Deshabilitar ipv6 en el fichero de configuración
+## Deshabilitar ipv6 en el fichero de configuración ( /etc/lighttpd/lighttpd.conf)
 server.use-ipv6 = "disable"
+
+## Cambiamos el puerto de escucha por defecto
+server.port = 81
+
 
 systemctl start lighttpd
 systemctl enable lighttpd
 
-Habilitar dir-listing en el fichero de configuración
+
+## Habilitar dir-listing en el fichero de configuración
 server.dir-listing = "enable"
 server.modules += ( "mod_auth" )
 
-Editar mime para mostrar .yml como yaml
+## Editar mime para mostrar .yml como yaml
 vim /etc/lighttpd/conf.d/mime.conf
 
-Crear link simbolico de ansible en cd /var/www/lighttpd/ | https://kb.iu.edu/d/abbe
-ln -s source_file myfile
+## Crear link simbolico de ansible en cd /var/www/lighttpd/ | https://kb.iu.edu/d/abbe
+ln -s /etc/ansible /var/www/lighttpd/ansible
 
 Securizar: https://www.cyberciti.biz/tips/lighttpd-setup-a-password-protected-directory-directories.html
 
