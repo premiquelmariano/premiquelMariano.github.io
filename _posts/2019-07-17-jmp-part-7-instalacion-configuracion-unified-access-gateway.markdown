@@ -14,8 +14,6 @@ permalink: /jmp-part7/
 
 ---
 
-https://www.carlstalhood.com/vmware-unified-access-gateway/
-
 Buenos días a tod@s!!
 
 En la siguiente serie de posts, pretendo explicar durante las próximas semanas el paso a paso para instalar un entorno JMP (Just-in-Time Management Platform) utilizando VMware Horizon 7 Instant Clones + App Volumes + VMware UEM (User Environment Manager) 
@@ -83,10 +81,12 @@ Acceso desde los UAG appliance hacia los escritorios:
 
 ### Despliegue OVA
 
+Nos descargaremos la OVA desde nuestro portal de [my.vmware](https://my.vmware.com)
+
 ![uag1]({{ site.imagesposts2019 }}/09/uag1.png){: .align-center}
 ![uag2]({{ site.imagesposts2019 }}/09/uag2.png){: .align-center}
 
-### Interfaz de administración
+El despliegue es relativamente sencillo y simplemente seguiremos el wizard de implementación de OVA en nuestro vCenter:
 
 ![uag4]({{ site.imagesposts2019 }}/09/uag4.png){: .align-center}
 ![uag5]({{ site.imagesposts2019 }}/09/uag5.png){: .align-center}
@@ -101,25 +101,45 @@ Acceso desde los UAG appliance hacia los escritorios:
 ![uag14]({{ site.imagesposts2019 }}/09/uag14.png){: .align-center}
 ![uag15]({{ site.imagesposts2019 }}/09/uag15.png){: .align-center}
 
-https://192.168.6.116:9443/admin/index.html#/Login
+### Interfaz de administración
 
+Una vez finalizada la instalación, accederemos a nuestro UAG desde la siguiente URL
+
+```
+https://uag.demo.corp/admin/index.html#/Login
+```
 ![uag16]({{ site.imagesposts2019 }}/09/uag16.png){: .align-center}
+
+Nos dirigiremos a la opción de "Configurar manualmente"
+
 ![uag17]({{ site.imagesposts2019 }}/09/uag17.png){: .align-center}
+
+y "Configuración Horizon", en donde empezaremos a rellenar los campos.
+
 ![uag18]({{ site.imagesposts2019 }}/09/uag18.png){: .align-center}
 ![uag19]({{ site.imagesposts2019 }}/09/uag19.png){: .align-center}
 ![uag20]({{ site.imagesposts2019 }}/09/uag20.png){: .align-center}
+
+La huella digital la encontraremos al explorar nuestro certificado, desde un navegador web:
+
 ![uag21]({{ site.imagesposts2019 }}/09/uag21.png){: .align-center}
 ![uag22]({{ site.imagesposts2019 }}/09/uag22.png){: .align-center}
+
+Colocaremos la URL del protocolo Blast:
+
 ![uag23]({{ site.imagesposts2019 }}/09/uag23.png){: .align-center}
+
+Y si todo va bien, nos aparecerá el semáforo en verde de que todo está OK:
+
 ![uag24]({{ site.imagesposts2019 }}/09/uag24.png){: .align-center}
 ![uag25]({{ site.imagesposts2019 }}/09/uag25.png){: .align-center}
-![uag26]({{ site.imagesposts2019 }}/09/uag26.png){: .align-center}
 
 Es importante desmarcar todos los túneles, de lo contrario recibiremos un error al conectar con nuestro Horizon Client
+
+![uag26]({{ site.imagesposts2019 }}/09/uag26.png){: .align-center}
 ![uag26-1]({{ site.imagesposts2019 }}/09/uag26-1.png){: .align-center}
-{: .notice}
 
-
+Ahora será el momento de registrar nuestro gateway en nuestro entorno Horizon:
 
 ![uag27]({{ site.imagesposts2019 }}/09/uag27.png){: .align-center}
 ![uag28]({{ site.imagesposts2019 }}/09/uag28.png){: .align-center}
