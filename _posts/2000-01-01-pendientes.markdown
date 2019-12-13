@@ -15,6 +15,8 @@ https://www.myvirtualjourney.com/vmfs5-or-vmfs6/
 https://jketels.nl/how-to-setup-rhel7-with-horizon-instant-clones/
 https://medium.com/swlh/ansible-awx-installation-5861b115455a
 
+https://linuxize.com/post/how-to-install-pip-on-centos-7/
+
 ## Install epel repo and then install jq
 yum install -y epel-release -y && yum install jq
 
