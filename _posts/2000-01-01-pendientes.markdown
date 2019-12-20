@@ -13,7 +13,10 @@ tag:
 https://tpetersit.blogspot.com/2018/07/vmware-horizon-75-jmp-integrated.html
 https://www.myvirtualjourney.com/vmfs5-or-vmfs6/
 https://jketels.nl/how-to-setup-rhel7-with-horizon-instant-clones/
+
+
 https://medium.com/swlh/ansible-awx-installation-5861b115455a
+Este va mejor > https://ahmermansoor.blogspot.com/2019/09/install-ansible-awx-with-docker-compose-on-centos-7.html
 
 https://linuxize.com/post/how-to-install-pip-on-centos-7/
 
@@ -81,5 +84,15 @@ https://thesanguy.com/2013/09/11/useful-brocade-fos-cli-commands/
 ### Actualizar VCSA via CLI
 
 https://www.settlersoman.com/how-to-update-or-patch-vcenter-6-appliance-vcsa/
+
+
+### Content libraty
+
+https://www.vmwareblog.org/vmware-vsphere-content-libraries-nutshell-use-not/
+
+
+### Resetear pasword de root en VCSA
+
+https://www.vmwareblog.org/reset-vcenter-server-appliance-root-password/
 
 
