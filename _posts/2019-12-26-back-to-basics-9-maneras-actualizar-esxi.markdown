@@ -20,17 +20,17 @@ Para todos aquellos que tengan alguna duda sobre que es y como funciona, aquí o
 
 ### 2. A través de script `ks.cfg` 
 
-https://miquelmariano.github.io/2018/05/30/automate-config-ESXi/
+[post](https://miquelmariano.github.io/2018/05/30/automate-config-ESXi/)
 
 ### 3. A través de línea de comandos con `esxcli`
 
-https://miquelmariano.github.io/2018/05/02/update-esxi-offline-bundle/
+[post](https://miquelmariano.github.io/2018/05/02/update-esxi-offline-bundle/)
 
-https://miquelmariano.github.io/2019/11/13/actualizacion-esxi-sin-update-manager/
+[post](https://miquelmariano.github.io/2019/11/13/actualizacion-esxi-sin-update-manager/)
 
 ### 4. vSphere Update Manager
 
 ### 5. vSphere Auto Deploy
 
-https://miquelmariano.github.io/2018/02/14/autodeploy/
+[post](https://miquelmariano.github.io/2018/02/14/autodeploy/)
 
