@@ -17,6 +17,8 @@ https://jketels.nl/how-to-setup-rhel7-with-horizon-instant-clones/
 
 https://medium.com/swlh/ansible-awx-installation-5861b115455a
 Este va mejor > https://ahmermansoor.blogspot.com/2019/09/install-ansible-awx-with-docker-compose-on-centos-7.html
+Si no se instala docker-compose > https://github.com/docker/compose/issues/6617
+pip install docker-compose==1.23.2
 
 https://linuxize.com/post/how-to-install-pip-on-centos-7/
 
@@ -42,6 +44,9 @@ yum install docker-compose
 yum install -y python2-pip
 pip install ansible
 pip install docker-compose
+
+Si no se instala docker-compose > https://github.com/docker/compose/issues/6617
+pip install docker-compose==1.23.2
 
 ## Change dir to the home directory.
 cd ~
