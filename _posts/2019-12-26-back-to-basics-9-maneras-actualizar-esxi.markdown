@@ -16,13 +16,21 @@ Hace un par de días, uno de mis alumnos en el curso [Administración vSphere 6.
 
 Para todos aquellos que tengan alguna duda sobre que es y como funciona, aquí os dejo estre post, dentro de la serie [back-to-basics](https://miquelmariano.github.io/tag/#/backtobasics)
 
-### Modo interactivo
+### 1. Modo interactivo
 
-### Script `ks.cfg` 
+### 2. A través de script `ks.cfg` 
 
-### `esxcli`
+https://miquelmariano.github.io/2018/05/30/automate-config-ESXi/
 
-### vSphere Update Manager
+### 3. A través de línea de comandos con `esxcli`
 
-### vSphere Auto Deploy
+https://miquelmariano.github.io/2018/05/02/update-esxi-offline-bundle/
+
+https://miquelmariano.github.io/2019/11/13/actualizacion-esxi-sin-update-manager/
+
+### 4. vSphere Update Manager
+
+### 5. vSphere Auto Deploy
+
+https://miquelmariano.github.io/2018/02/14/autodeploy/
 
