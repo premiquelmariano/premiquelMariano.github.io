@@ -78,9 +78,9 @@ Para la instalación del servidor de App Volumes, necesitaremos una máquina con
 
 # Crear usuario para la BBDD
 
-![appvol_db01]({{ site.imagesposts2020 }}/01/appvo_db01.png){: .align-center}
-![appvol_db02]({{ site.imagesposts2020 }}/01/appvo_db02.png){: .align-center}
-![appvol_db03]({{ site.imagesposts2020 }}/01/appvo_db03.png){: .align-center}
+![appvol_db01]({{ site.imagesposts2020 }}/01/appvol_db01.png){: .align-center}
+![appvol_db02]({{ site.imagesposts2020 }}/01/appvol_db02.png){: .align-center}
+![appvol_db03]({{ site.imagesposts2020 }}/01/appvol_db03.png){: .align-center}
 
 
 # Instalación de App Volumes
