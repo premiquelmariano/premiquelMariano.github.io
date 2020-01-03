@@ -40,13 +40,28 @@ En caso de ya estar en versión 6.7 y sólo querer actualizar los nuevos parches
 
 ### 4. vSphere Update Manager
 
+También es muy común actualizar nuestros servidores ESXi con Update Manager. Con este método podremos tanto instalar versiones mayores de ESXi como actualizarlo a nivel de parches.
+
+En este punto, os recomiendo pasaros por [este post](http://www.bujarra.com/actualizando-hosts-vsphere-update-manager-6-5/) de Héctor Herrero ([@nheobug](https://twitter.com/nheobug)), co-autor del libro [VMware por vExperts](https://miquelmariano.github.io/vmwareporvexperts/)
+
 ### 5. vSphere Auto Deploy
 
-[post](https://miquelmariano.github.io/2018/02/14/autodeploy/)
+Por último, la última manera que tenemos de actualizar un servidor ESXi es a través de vSphere Auto Deploy. Es quizas la manera menos trivial de todas, pero que si la conseguimos dominar, nos puede ahorrar mucho tiempo tanto en actualizaciones cómo en nuevos desplieges.
+
+En [este post](https://miquelmariano.github.io/2018/02/14/autodeploy/) publiqué hace ya tiempo información bastante extendida de cómo implementar y configurar Auto Deploy en entornos vSphere 6.x
+
+### Rollback
+
+Para finalizar, os dejo también el [enlace a un post](https://miquelmariano.github.io/2018/11/07/esxi-rollback/) en dónde explicaba cómo hacer rollback de un servidor ESXi.
+
+No es muy habitual, pero en caso de que haya una corrupción a nivel de SO y que el ESXi quede en un estado incoherente, no está de mas tener a mano el procedimiento para hacer rollback.
 
 
+Y hasta aquí por hoy.
 
-Rollback
+Nos vemos en el próximo post.
 
-https://miquelmariano.github.io/2018/11/07/esxi-rollback/
+Feliz año!!!
+
+Miquel.
 
