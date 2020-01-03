@@ -66,12 +66,13 @@ Para la instalación del servidor de App Volumes, necesitaremos una máquina con
 ![appvol08]({{ site.imagesposts2020 }}/01/appvol08.png){: .align-center}
 ![appvol09]({{ site.imagesposts2020 }}/01/appvol09.png){: .align-center}
 ![appvol10]({{ site.imagesposts2020 }}/01/appvol10.png){: .align-center}
-![appvol11]({{ site.imagesposts2020 }}/01/appvol11.png){: .align-center}
 ![appvol12]({{ site.imagesposts2020 }}/01/appvol12.png){: .align-center}
 ![appvol13]({{ site.imagesposts2020 }}/01/appvol13.png){: .align-center}
 
 
 # Agregar permisos al usuario en nuestro vCenter
+
+![appvol11]({{ site.imagesposts2020 }}/01/appvol11.png){: .align-center}
 
 # Crear usuario para la BBDD
 
