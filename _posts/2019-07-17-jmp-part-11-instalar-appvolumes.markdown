@@ -39,8 +39,6 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 - [Part 17: Instalación y configuración JMP Server]({{ site.url }}/jmp-part17/)
 - [Part 18: Aprovisionamiento con JMP]({{ site.url }}/jmp-part18/)
 
-![appstack1]({{ site.imagesposts2019 }}/08/appstack1.png){: .align-center}
-
 # Requisitos del servidor
 
 Para la instalación del servidor de App Volumes, necesitaremos una máquina con las siguientes especificaciones:
@@ -57,6 +55,21 @@ Para la instalación del servidor de App Volumes, necesitaremos una máquina con
 - Un servidor de BBDD MS SQL Server 2012 SP1 o 2017 (puede ser express)
 
 # Crear usuario de servicio en nuestro directorio activo
+
+![appvol01]({{ site.imagesposts2020 }}/01/appvol01.png){: .align-center}
+![appvol02]({{ site.imagesposts2020 }}/01/appvol02.png){: .align-center}
+![appvol03]({{ site.imagesposts2020 }}/01/appvol03.png){: .align-center}
+![appvol04]({{ site.imagesposts2020 }}/01/appvol04.png){: .align-center}
+![appvol05]({{ site.imagesposts2020 }}/01/appvol05.png){: .align-center}
+![appvol06]({{ site.imagesposts2020 }}/01/appvol06.png){: .align-center}
+![appvol07]({{ site.imagesposts2020 }}/01/appvol07.png){: .align-center}
+![appvol08]({{ site.imagesposts2020 }}/01/appvol08.png){: .align-center}
+![appvol09]({{ site.imagesposts2020 }}/01/appvol09.png){: .align-center}
+![appvol10]({{ site.imagesposts2020 }}/01/appvol10.png){: .align-center}
+![appvol11]({{ site.imagesposts2020 }}/01/appvol11.png){: .align-center}
+![appvol12]({{ site.imagesposts2020 }}/01/appvol12.png){: .align-center}
+![appvol13]({{ site.imagesposts2020 }}/01/appvol13.png){: .align-center}
+
 
 # Agregar permisos al usuario en nuestro vCenter
 
