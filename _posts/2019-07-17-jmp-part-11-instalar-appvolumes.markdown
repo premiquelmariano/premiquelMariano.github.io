@@ -16,6 +16,8 @@ permalink: /jmp-part11/
 
 https://univirt.wordpress.com/2018/02/20/building-a-horizon-view-jmp-lab-part-6-installing-app-volumes/
 
+https://www.ageroskam.nl/app-volumes/install-and-configure-vmware-app-volumes-manager/
+
 Buenos dias a tod@s!!
 
 En la siguiente serie de posts, pretendo explicar durante las próximas semanas el paso a paso para instalar un entorno JMP (Just-in-Time Management Platform) utilizando VMware Horizon 7 Instant Clones + App Volumes + VMware UEM (User Environment Manager) 
@@ -76,7 +78,10 @@ Para la instalación del servidor de App Volumes, necesitaremos una máquina con
 
 # Crear usuario para la BBDD
 
-https://www.ageroskam.nl/app-volumes/install-and-configure-vmware-app-volumes-manager/
+![appvol_db01]({{ site.imagesposts2020 }}/01/appvo_db01.png){: .align-center}
+![appvol_db02]({{ site.imagesposts2020 }}/01/appvo_db02.png){: .align-center}
+![appvol_db03]({{ site.imagesposts2020 }}/01/appvo_db03.png){: .align-center}
+
 
 # Instalación de App Volumes
 
