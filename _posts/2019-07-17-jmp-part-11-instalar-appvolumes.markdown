@@ -82,9 +82,20 @@ Para la instalación del servidor de App Volumes, necesitaremos una máquina con
 ![appvol_db02]({{ site.imagesposts2020 }}/01/appvol_db02.png){: .align-center}
 ![appvol_db03]({{ site.imagesposts2020 }}/01/appvol_db03.png){: .align-center}
 
-
 # Instalación de App Volumes
 
+![appvol_install01]({{ site.imagesposts2020 }}/01/appvol_install01.png){: .align-center}
+![appvol_install02]({{ site.imagesposts2020 }}/01/appvol_install02.png){: .align-center}
+![appvol_install03]({{ site.imagesposts2020 }}/01/appvol_install03.png){: .align-center}
+![appvol_install04]({{ site.imagesposts2020 }}/01/appvol_install04.png){: .align-center}
+![appvol_install05]({{ site.imagesposts2020 }}/01/appvol_install05.png){: .align-center}
+![appvol_install06]({{ site.imagesposts2020 }}/01/appvol_install06.png){: .align-center}
+![appvol_install07]({{ site.imagesposts2020 }}/01/appvol_install07.png){: .align-center}
+![appvol_install08]({{ site.imagesposts2020 }}/01/appvol_install08.png){: .align-center}
+![appvol_install09]({{ site.imagesposts2020 }}/01/appvol_install09.png){: .align-center}
+![appvol_install10]({{ site.imagesposts2020 }}/01/appvol_install10.png){: .align-center}
+![appvol_install11]({{ site.imagesposts2020 }}/01/appvol_install11.png){: .align-center}
+![appvol_install12]({{ site.imagesposts2020 }}/01/appvol_install12.png){: .align-center}
 
 Espero que os sirva.
 
