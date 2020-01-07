@@ -97,6 +97,8 @@ Para la instalación del servidor de App Volumes, necesitaremos una máquina con
 ![appvol_install11]({{ site.imagesposts2020 }}/01/appvol_install11.png){: .align-center}
 ![appvol_install12]({{ site.imagesposts2020 }}/01/appvol_install12.png){: .align-center}
 
+# Configuración de App Volumes Manager
+
 Espero que os sirva.
 
 Un saludo!
