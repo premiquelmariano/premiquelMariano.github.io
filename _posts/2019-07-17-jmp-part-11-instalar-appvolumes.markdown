@@ -41,6 +41,22 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 - [Part 17: Instalación y configuración JMP Server]({{ site.url }}/jmp-part17/)
 - [Part 18: Aprovisionamiento con JMP]({{ site.url }}/jmp-part18/)
 
+En el post de hoy, hablaremos de VMware App Volumes
+
+# ¿Que es App Volumes?
+
+VMWare App Volumes es una tecnología que nos permite entregar aplicaciones en tiempo real a nuestros usuarios.
+
+Al ser un producto cliente-servidor, podremos entragar aplicaciones a cualquier windows que tenga el App Volumes Agent instalado. Gracias a eso, no se limita sólo a entornos VMware Horizon, sinó que tambien se puede utilizar en Citrix Xen Desktop, Microsoft RDS, o simplemente a cualquier puesto de trabajo que podamos instalar el agente.
+
+App Volumes te permite capturar aplicaciones y empaquetarlas en un disco virtual en formato .vmdk. El resultado de esta captura, es lo que se denomina App Stack.
+
+Un App Stack puede estar formado por 1 o varias aplicaciones y se pueden asignar tanto a usuarios, grupos, incluso a unidades organizativas de nuestro Active Directory.
+
+Además de los AppStack, también disponemos de los Writable Volumes. Estos volúmenes, al igual que los App Stack se empaquetan en un disco .vmdk y nos sirven para que las modificaciones que hace un usuario en su escritorio se guarden en este Writable Volume. De esta manera, conseguimos que las configuraciones que hace un usuario "le sigan" indistintamente del equipo que inicie sesión.
+
+![appvolumesdiagram]({{ site.imagesposts2020 }}/01/app-volumes-diagram.png){: .align-center}
+
 # Requisitos del servidor
 
 Para la instalación del servidor de App Volumes, necesitaremos una máquina con las siguientes especificaciones:
