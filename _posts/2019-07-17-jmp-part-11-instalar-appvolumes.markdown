@@ -59,7 +59,7 @@ Además de los AppStack, también disponemos de los Writable Volumes. Estos vol�
 
 # Requisitos del servidor
 
-Para la instalación del servidor de App Volumes, necesitaremos una máquina con las siguientes especificaciones:
+Para la instalación del servidor de App Volumes, necesitaremos una máquina con las siguientes especificaciones mínimas:
 
 ### Hardware:
 
@@ -74,6 +74,8 @@ Para la instalación del servidor de App Volumes, necesitaremos una máquina con
 
 # Crear usuario de servicio en nuestro directorio activo
 
+Cómo ya vimos en la [parte 3 de esta serie](https://miquelmariano.github.io/jmp-part3/), necesitaremos crear un usuario en nuestro directorio activo para gestionar la parte de App Volumes
+
 ![appvol01]({{ site.imagesposts2020 }}/01/appvol01.png){: .align-center}
 ![appvol02]({{ site.imagesposts2020 }}/01/appvol02.png){: .align-center}
 ![appvol03]({{ site.imagesposts2020 }}/01/appvol03.png){: .align-center}
@@ -87,18 +89,23 @@ Para la instalación del servidor de App Volumes, necesitaremos una máquina con
 ![appvol12]({{ site.imagesposts2020 }}/01/appvol12.png){: .align-center}
 ![appvol13]({{ site.imagesposts2020 }}/01/appvol13.png){: .align-center}
 
-
 # Agregar permisos al usuario en nuestro vCenter
+
+En mi caso, utilizaré el usuario creado anteriormente para asignarle permisos a nuestro vCenter
 
 ![appvol11]({{ site.imagesposts2020 }}/01/appvol11.png){: .align-center}
 
 # Crear usuario para la BBDD
+
+Cómo se especificaba en la parte de requisitos, necesitaremos de una BBDD para que App Volumes guarde su configuración. [Si habeis seguido esta serie desde el principio, deberiais de tener ya un servidor SQL Express](https://miquelmariano.github.io/jmp-part2/) en el que podremos crear la BBDD para App Volumes
 
 ![appvol_db01]({{ site.imagesposts2020 }}/01/appvol_db01.png){: .align-center}
 ![appvol_db02]({{ site.imagesposts2020 }}/01/appvol_db02.png){: .align-center}
 ![appvol_db03]({{ site.imagesposts2020 }}/01/appvol_db03.png){: .align-center}
 
 # Instalación de App Volumes
+
+La instalación es bastante sencilla, bastará con seguir el wizard de instalación tal como os enseño a continuación:
 
 ![appvol_install01]({{ site.imagesposts2020 }}/01/appvol_install01.png){: .align-center}
 ![appvol_install02]({{ site.imagesposts2020 }}/01/appvol_install02.png){: .align-center}
@@ -113,9 +120,7 @@ Para la instalación del servidor de App Volumes, necesitaremos una máquina con
 ![appvol_install11]({{ site.imagesposts2020 }}/01/appvol_install11.png){: .align-center}
 ![appvol_install12]({{ site.imagesposts2020 }}/01/appvol_install12.png){: .align-center}
 
-# Configuración de App Volumes Manager
-
-Espero que os sirva.
+Y hasta aquí por hoy, hasta el próximo capítulo >> [Part 12: Configuración inicial App Volumes]({{ site.url }}/jmp-part12/)
 
 Un saludo!
 
