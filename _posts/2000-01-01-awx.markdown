@@ -1,0 +1,98 @@
+---
+title: AWX
+date: '2000-01-01 00:00:00'
+layout: post
+tag:
+- vmware
+- vsphere
+- vexpert
+- devops
+- backtobasics
+---
+
+
+https://medium.com/swlh/ansible-awx-installation-5861b115455a
+Este va mejor > https://ahmermansoor.blogspot.com/2019/09/install-ansible-awx-with-docker-compose-on-centos-7.html
+Si no se instala docker-compose > https://github.com/docker/compose/issues/6617
+pip install docker-compose==1.23.2
+
+
+
+## Instalar repositorio EPEL
+```
+yum install -y epel-release
+```
+
+## Instalar pre-requisitos de Ansible AWX:
+```
+yum install -y git gcc gcc-c++ nodejs gettext device-mapper-persistent-data lvm2 bzip2 python-pip yum-utils ansible
+```
+
+## Instalar Docker CE (Comunity Edition):
+```
+yum-config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
+```
+
+```
+yum install -y docker-ce
+```
+
+```
+systemctl enable --now docker.service
+```
+
+## Instalar Docker-Compose
+```
+pip install docker-compose
+```
+
+Si no se instala docker-compose > https://github.com/docker/compose/issues/6617
+pip install docker-compose==1.23.2
+
+## Installing Ansible AWX on CentOS 7:
+
+## Change dir to the home directory.
+cd ~
+
+
+https://github.com/ansible/awx/releases
+
+
+## Get the latest release of ansible awx tarball and extract it. 
+LATEST_AWX=$(curl -s https://api.github.com/repos/ansible/awx/tags |egrep name |head -1 |awk '{print $2}' |tr -d '"|,')
+curl -L -o ansible-awx-$LATEST_AWX.tar.gz https://github.com/ansible/awx/archive/$LATEST_AWX.tar.gz
+tar xvfz ansible-awx-$LATEST_AWX.tar.gz
+rm -f ansible-awx-$LATEST_AWX.tar.gz
+
+## Enter awx folder.  
+cd awx-$LATEST_AWX/installer
+
+ansible-playbook -i inventory install.yml
+
+docker ps
+
+firewall-cmd --permanent --add-service=http
+
+firewall-cmd --reload
+
+
+
+
+
+
+
+### Migrar awx a otra instancia para actualizar versión
+
+https://github.com/ansible/awx/blob/devel/DATA_MIGRATION.md
+
+tower-cli receive --tower-host http://192.168.6.154 --all >  /tmp/test.json
+
+tower-cli receive --tower-host http://192.168.6.19 --all | tower-cli send --tower-host http://192.168.6.152
+
+ time tower-cli send --tower-host http://192.168.6.163 awx-backup/20191027-09_30_192.168.6.163.json
+
+https://www.unixarena.com/2019/03/backup-restore-ansible-awx-tower-cli.html/
+
+
+
+
