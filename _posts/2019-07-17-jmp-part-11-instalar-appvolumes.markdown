@@ -49,17 +49,17 @@ VMWare App Volumes es una tecnología que nos permite entregar aplicaciones en t
 
 Al ser un producto cliente-servidor, podremos entragar aplicaciones a cualquier windows que tenga el App Volumes Agent instalado. Gracias a eso, no se limita sólo a entornos VMware Horizon, sinó que tambien se puede utilizar en Citrix Xen Desktop, Microsoft RDS, o simplemente a cualquier puesto de trabajo que podamos instalar el agente.
 
-App Volumes te permite capturar aplicaciones y empaquetarlas en un disco virtual en formato .vmdk. El resultado de esta captura, es lo que se denomina App Stack.
+App Volumes te permite capturar aplicaciones y empaquetarlas en un disco virtual. El resultado de esta captura, es lo que se denomina App Stack.
 
 Un App Stack puede estar formado por 1 o varias aplicaciones y se pueden asignar tanto a usuarios, grupos, incluso a unidades organizativas de nuestro Active Directory.
 
-Además de los AppStack, también disponemos de los Writable Volumes. Estos volúmenes, al igual que los App Stack se empaquetan en un disco .vmdk y nos sirven para que las modificaciones que hace un usuario en su escritorio se guarden en este Writable Volume. De esta manera, conseguimos que las configuraciones que hace un usuario "le sigan" indistintamente del equipo que inicie sesión.
+Además de los AppStack, también disponemos de los Writable Volumes. Estos volúmenes, al igual que los App Stack se empaquetan en un disco virtual y nos sirven para que las modificaciones que hace un usuario en su VDI se guarden en este Writable Volume. De esta manera, conseguimos que las configuraciones que hace un usuario "le sigan" indistintamente del equipo que inicie sesión.
 
 ![appvolumesdiagram]({{ site.imagesposts2020 }}/01/app-volumes-diagram.png){: .align-center}
 
 # Requisitos del servidor
 
-Para la instalación del servidor de App Volumes, necesitaremos una máquina con las siguientes especificaciones mínimas:
+Para la instalación del servidor de App Volumes (App Volumes Manager), necesitaremos una máquina con las siguientes especificaciones mínimas:
 
 ### Hardware:
 
@@ -79,6 +79,9 @@ Cómo ya vimos en la [parte 3 de esta serie](https://miquelmariano.github.io/jmp
 ![appvol01]({{ site.imagesposts2020 }}/01/appvol01.png){: .align-center}
 ![appvol02]({{ site.imagesposts2020 }}/01/appvol02.png){: .align-center}
 ![appvol03]({{ site.imagesposts2020 }}/01/appvol03.png){: .align-center}
+
+También deberemos dar permisos de lectura a este usuario para poder explorar todos los objetos que tiene nuestro Active Directory.
+
 ![appvol04]({{ site.imagesposts2020 }}/01/appvol04.png){: .align-center}
 ![appvol05]({{ site.imagesposts2020 }}/01/appvol05.png){: .align-center}
 ![appvol06]({{ site.imagesposts2020 }}/01/appvol06.png){: .align-center}
@@ -86,6 +89,9 @@ Cómo ya vimos en la [parte 3 de esta serie](https://miquelmariano.github.io/jmp
 ![appvol08]({{ site.imagesposts2020 }}/01/appvol08.png){: .align-center}
 ![appvol09]({{ site.imagesposts2020 }}/01/appvol09.png){: .align-center}
 ![appvol10]({{ site.imagesposts2020 }}/01/appvol10.png){: .align-center}
+
+Para finalizar, a mi me gusta crear un grupo, el cual tendrá los usuarios que van a administrar App Volumes.
+
 ![appvol12]({{ site.imagesposts2020 }}/01/appvol12.png){: .align-center}
 ![appvol13]({{ site.imagesposts2020 }}/01/appvol13.png){: .align-center}
 
@@ -94,6 +100,10 @@ Cómo ya vimos en la [parte 3 de esta serie](https://miquelmariano.github.io/jmp
 En mi caso, utilizaré el usuario creado anteriormente para asignarle permisos a nuestro vCenter
 
 ![appvol11]({{ site.imagesposts2020 }}/01/appvol11.png){: .align-center}
+
+Al ser un laboratorio, le asignaremos permisos de Administrator, pero si queremos afinar más, en la [guía de administración de App Volumes](https://docs.vmware.com/en/VMware-App-Volumes/2.16/App-Volumes-Admin-Guide-216.pdf) se detallan exactamente los permisos que necesita este usuario:
+
+![appvol11_permisions]({{ site.imagesposts2020 }}/01/appvol11_permisions.png){: .align-center}
 
 # Crear usuario para la BBDD
 
