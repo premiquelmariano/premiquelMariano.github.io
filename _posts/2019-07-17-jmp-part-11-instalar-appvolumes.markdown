@@ -128,6 +128,9 @@ La instalación es bastante sencilla, bastará con seguir el wizard de instalaci
 ![appvol_install09]({{ site.imagesposts2020 }}/01/appvol_install09.png){: .align-center}
 ![appvol_install10]({{ site.imagesposts2020 }}/01/appvol_install10.png){: .align-center}
 ![appvol_install11]({{ site.imagesposts2020 }}/01/appvol_install11.png){: .align-center}
+
+Al acabar todo el asistente, en el escritorio nos habrá apacecido un nuevo icono para acceder a App Volumes Manager.
+
 ![appvol_install12]({{ site.imagesposts2020 }}/01/appvol_install12.png){: .align-center}
 
 Y hasta aquí por hoy, hasta el próximo capítulo >> [Part 12: Configuración inicial App Volumes]({{ site.url }}/jmp-part12/)
