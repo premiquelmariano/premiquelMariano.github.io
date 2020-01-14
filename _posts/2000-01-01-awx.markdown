@@ -46,32 +46,39 @@ En caso de que recibamos algún tipo de error y no se instale correctamente, deb
 pip install docker-compose==1.23.2
 ```
 
-## Installing Ansible AWX on CentOS 7:
+## Instalando Ansible AWX on CentOS 7:
 
-## Change dir to the home directory.
-cd ~
+### Cambiamos el directorio de trabajo
+```
+cd /tmp
+```
 
+### Nos descargamos la última versión del repositorio oficial y la descomprimimos
 
-https://github.com/ansible/awx/releases
-
-
-## Get the latest release of ansible awx tarball and extract it. 
+``` 
 LATEST_AWX=$(curl -s https://api.github.com/repos/ansible/awx/tags |egrep name |head -1 |awk '{print $2}' |tr -d '"|,')
 curl -L -o ansible-awx-$LATEST_AWX.tar.gz https://github.com/ansible/awx/archive/$LATEST_AWX.tar.gz
 tar xvfz ansible-awx-$LATEST_AWX.tar.gz
 rm -f ansible-awx-$LATEST_AWX.tar.gz
+```
 
-## Enter awx folder.  
+Si queremos instalar cualquier otra version, simplemente tendremos que dar a la variable LATEST_AWX el valor de la versión que queramos instalar. [Aquí](https://github.com/ansible/awx/releases) encontrareis todas las releases disponibles.
+
+
+### Entramos en la carpeta de instalación y lanzamos el deploy
+```  
 cd awx-$LATEST_AWX/installer
-
 ansible-playbook -i inventory install.yml
+
+### Comprobamos que los contenedores estén arrancados
 
 docker ps
 
+### Configuramos firewall
+```
 firewall-cmd --permanent --add-service=http
-
 firewall-cmd --reload
-
+```
 
 
 
