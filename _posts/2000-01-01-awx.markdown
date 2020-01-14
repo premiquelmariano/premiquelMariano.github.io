@@ -31,9 +31,7 @@ yum install -y git gcc gcc-c++ nodejs gettext device-mapper-persistent-data lvm2
 ## Instalar Docker CE (Comunity Edition):
 ```
 yum-config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
-
 yum install -y docker-ce
-
 systemctl enable --now docker.service
 ```
 
@@ -42,8 +40,11 @@ systemctl enable --now docker.service
 pip install docker-compose
 ```
 
-Si no se instala docker-compose > https://github.com/docker/compose/issues/6617
+En caso de que recibamos algún tipo de error y no se instale correctamente, deberemos instalar una versión anterior, probar con el siguiente comando:
+
+```
 pip install docker-compose==1.23.2
+```
 
 ## Installing Ansible AWX on CentOS 7:
 
