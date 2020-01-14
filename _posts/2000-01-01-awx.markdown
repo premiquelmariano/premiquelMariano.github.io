@@ -92,8 +92,8 @@ Usuario: Admin
 Passsword: Password.
 
 ![awx01]({{ site.imagesposts2020 }}/01/awx01.png)
-![awx01]({{ site.imagesposts2020 }}/01/awx01.png)
-![awx01]({{ site.imagesposts2020 }}/01/awx01.png)
+![awx01]({{ site.imagesposts2020 }}/01/awx02.png)
+![awx01]({{ site.imagesposts2020 }}/01/awx03.png)
 
 ### Actualizar version de Ansible AWX y migrar datos a otra instancia.
 
