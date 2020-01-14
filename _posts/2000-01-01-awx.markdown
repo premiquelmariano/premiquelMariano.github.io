@@ -82,7 +82,18 @@ firewall-cmd --permanent --add-service=http
 firewall-cmd --reload
 ```
 
+## Acceso al portal.
 
+Para acceder a Ansible AWX, desde nuestro navegador favorito accederemos a `https://ip-de-mi-servidor/`
+
+Las credenciales por defecto son:
+
+Usuario: Admin
+Passsword: Password.
+
+![awx01]({{ site.imagesposts2020 }}/01/awx01.png)
+![awx01]({{ site.imagesposts2020 }}/01/awx01.png)
+![awx01]({{ site.imagesposts2020 }}/01/awx01.png)
 
 
 
