@@ -95,21 +95,35 @@ Passsword: Password.
 ![awx01]({{ site.imagesposts2020 }}/01/awx01.png)
 ![awx01]({{ site.imagesposts2020 }}/01/awx01.png)
 
+### Actualizar version de Ansible AWX y migrar datos a otra instancia.
 
+Para actualizar la versión de nuestra instancia de Ansible AWX, no existe un procedimiento cómo tal. El proceso para por destruir nuestros contenedores Docker y volver a generarlos con los binarios de la versión mas reciente siguiendo el anterior procedimiento.
 
+Lo que sí existe, es un procedimiento para migrar los datos de una instancia de AWX a otra. Cosa que nos va a ir de lujo en cualquier actualización de versión.
 
-### Migrar awx a otra instancia para actualizar versión
+En [este enlace](https://github.com/ansible/awx/blob/devel/DATA_MIGRATION.md
+) encontrareis el procedimiento oficial, el cual básicemente explica cómo hacer un backup y luego un restore de la configuración de nuestro Ansible AWX.
 
-https://github.com/ansible/awx/blob/devel/DATA_MIGRATION.md
+## Instalación y configuración de Tower CLI
+```
+pip install ansible-tower-cli
+tower-cli config username admin
+tower-cli config password password
+tower-cli config verify_ssl False
+tower-cli config
+```
 
-tower-cli receive --tower-host http://192.168.6.154 --all >  /tmp/test.json
+Podreis encontrar información extensa sobre la configuración de Tower CLI en [este post](http://yallalabs.com/devops/how-to-install-configure-tower-cli-tool-ansible-tower-awx/)
 
-tower-cli receive --tower-host http://192.168.6.19 --all | tower-cli send --tower-host http://192.168.6.152
+## Backup de la configuración
+```
+tower-cli receive --tower-host http://192.168.6.156 --all >  /tmp/test.json
+```
 
- time tower-cli send --tower-host http://192.168.6.163 awx-backup/20191027-09_30_192.168.6.163.json
-
-https://www.unixarena.com/2019/03/backup-restore-ansible-awx-tower-cli.html/
-
+## Restore de la configuración
+```
+time tower-cli send --tower-host http://192.168.6.152 /tmp/test.json
+```
 
 ## Bibliografía
 
@@ -120,6 +134,8 @@ Este procedimiento es el resultado de la recopilación de información de los si
 [https://medium.com/swlh/ansible-awx-installation-5861b115455a](https://github.com/ansible/awx)
 
 [https://ahmermansoor.blogspot.com/2019/09/install-ansible-awx-with-docker-compose-on-centos-7.html](https://github.com/ansible/awx)
+
+[https://www.unixarena.com/2019/03/backup-restore-ansible-awx-tower-cli.html/](https://www.unixarena.com/2019/03/backup-restore-ansible-awx-tower-cli.html/)
 
 Espero que os guste.
 
