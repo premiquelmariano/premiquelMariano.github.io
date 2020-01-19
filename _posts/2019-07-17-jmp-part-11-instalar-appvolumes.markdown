@@ -14,10 +14,6 @@ permalink: /jmp-part11/
 
 ---
 
-https://univirt.wordpress.com/2018/02/20/building-a-horizon-view-jmp-lab-part-6-installing-app-volumes/
-
-https://www.ageroskam.nl/app-volumes/install-and-configure-vmware-app-volumes-manager/
-
 Buenos dias a tod@s!!
 
 En la siguiente serie de posts, pretendo explicar durante las próximas semanas el paso a paso para instalar un entorno JMP (Just-in-Time Management Platform) utilizando VMware Horizon 7 Instant Clones + App Volumes + VMware UEM (User Environment Manager) 
@@ -47,7 +43,7 @@ En el post de hoy, hablaremos de VMware App Volumes
 
 VMWare App Volumes es una tecnología que nos permite entregar aplicaciones en tiempo real a nuestros usuarios.
 
-Al ser un producto cliente-servidor, podremos entragar aplicaciones a cualquier windows que tenga el App Volumes Agent instalado. Gracias a eso, no se limita sólo a entornos VMware Horizon, sinó que tambien se puede utilizar en Citrix Xen Desktop, Microsoft RDS, o simplemente a cualquier puesto de trabajo que podamos instalar el agente.
+Al ser un producto cliente-servidor, podremos entregar aplicaciones a cualquier windows que tenga el App Volumes Agent instalado. Gracias a eso, no se limita sólo a entornos VMware Horizon, sinó que también se puede utilizar en Citrix Xen Desktop, Microsoft RDS, o simplemente a cualquier puesto de trabajo que podamos instalar el agente.
 
 App Volumes te permite capturar aplicaciones y empaquetarlas en un disco virtual. El resultado de esta captura, es lo que se denomina App Stack.
 
@@ -107,7 +103,7 @@ Al ser un laboratorio, le asignaremos permisos de Administrator, pero si queremo
 
 # Crear usuario para la BBDD
 
-Cómo se especificaba en la parte de requisitos, necesitaremos de una BBDD para que App Volumes guarde su configuración. [Si habeis seguido esta serie desde el principio, deberiais de tener ya un servidor SQL Express](https://miquelmariano.github.io/jmp-part2/) en el que podremos crear la BBDD para App Volumes
+Cómo se especificaba en la parte de requisitos, necesitaremos de una BBDD para que App Volumes guarde su configuración. [Si habéis seguido esta serie desde el principio, deberíais de tener ya un servidor SQL Express](https://miquelmariano.github.io/jmp-part2/) en el que podremos crear la BBDD para App Volumes
 
 ![appvol_db01]({{ site.imagesposts2020 }}/01/appvol_db01.png){: .align-center}
 ![appvol_db02]({{ site.imagesposts2020 }}/01/appvol_db02.png){: .align-center}
@@ -129,7 +125,7 @@ La instalación es bastante sencilla, bastará con seguir el wizard de instalaci
 ![appvol_install10]({{ site.imagesposts2020 }}/01/appvol_install10.png){: .align-center}
 ![appvol_install11]({{ site.imagesposts2020 }}/01/appvol_install11.png){: .align-center}
 
-Al acabar todo el asistente, en el escritorio nos habrá apacecido un nuevo icono para acceder a App Volumes Manager.
+Al acabar todo el asistente, en el escritorio nos habrá aparecido un nuevo icono para acceder a App Volumes Manager.
 
 ![appvol_install12]({{ site.imagesposts2020 }}/01/appvol_install12.png){: .align-center}
 
