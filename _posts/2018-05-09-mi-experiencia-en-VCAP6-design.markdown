@@ -20,9 +20,9 @@ Tenia programado el examen VCAP6-DCV Deploy, una certificación avanzada de VMWa
 
 Este nuevo escalón en el sistema de certificaciones de VMWare era un reto para mí y el cual llevaba ya meses (o años) dándole vueltas, pero que por diferentes motivos había ido dejando caer en mi "ToDo List"
 
-![certificationpath]({{ site.imagesposts2020 }}/01/vcap6-deploy.jpg)
+![certificationpath]({{ site.imagesposts2020 }}/01/vcap6-design.jpg)
 
-![certificationpath]({{ site.imagesposts2020 }}/01/vcix6-dcv.jpg)
+![certificationpath]({{ site.imagesposts2020 }}/01/vcix6-dcv.png)
 
 El objetivo de este post es compartir mi experiencia, cómo prepararlo y algunos consejos a tener en cuenta sobre el examen.
 
