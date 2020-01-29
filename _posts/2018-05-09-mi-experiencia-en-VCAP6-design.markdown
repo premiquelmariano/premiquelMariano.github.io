@@ -22,7 +22,7 @@ Este nuevo escalón en el sistema de certificaciones de VMWare era un reto para 
 
 ![certificationpath]({{ site.imagesposts2020 }}/01/vcap6-design.jpg)
 
-![certificationpath]({{ site.imagesposts2020 }}/01/vcix6-dcv.png)
+![certificationpathvcix]({{ site.imagesposts2020 }}/01/vcix6.png)
 
 El objetivo de este post es compartir mi experiencia, cómo prepararlo y algunos consejos a tener en cuenta sobre el examen.
 
