@@ -1,15 +1,15 @@
 # Site settings
 title: DentistSmile | Dental Jekyll Theme
 description: "A responsive Jekyll theme for dental clinics."
-baseurl: / # the subpath of your site, e.g. /blog
-url: https://premiquelmariano.github.io # the name of your domain
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://premiquelmariano.github.io" # the name of your domain
 logo_url: svg/min/logo.svg
 
 # Hero
 hero: 
     hero_img: hero.jpg
     hero_title: Dra. Planas
-    hero_description: A responsive Jekyll theme for dental clinics.
+    hero_description: Clinica dental bla bla bla
 
 # Contact form
 api_token: # Enter API token here
