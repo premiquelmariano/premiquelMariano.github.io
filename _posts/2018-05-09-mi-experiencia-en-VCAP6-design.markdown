@@ -14,6 +14,8 @@ permalink: /vcap-design-experience/
 
 Buenos días a tod@as!!
 
+Como algunos ya sabeis, el pasado martes tenia en mi calendario marcado a fuego el examen de certificación [VMware Certified Advanced Professional 6.5 – Data Center Virtualization Design](https://www.vmware.com/education-services/certification/vcap6-5-dcv-design-exam.html)
+
 El pasado martes, fue uno de esos días en los que te vas a la cama con una satisfacción especial. Fue un día especial en cuanto a lo profesional se refiere.
 
 Tenia programado el examen VCAP6-DCV Deploy, una certificación avanzada de VMWare la cual certifica que el aspirante cuenta con los conocimientos y experiencia necesarios para dominar cualquier aspecto sobre la virtualización del datacenter o Software Defined Data Center (que parece que en inglés mola más :-))
@@ -30,19 +32,19 @@ El objetivo de este post es compartir mi experiencia, cómo prepararlo y algunos
 
 En cuanto al examen, no tiene mucho secreto. Está todo perfectamente explicado en la página de mylearn.vmware.com 
 
-Nombre: [VMware Certified Advanced Professional 6 – Data Center Virtualization Deployment](https://www.vmware.com/education-services/certification/vcap6-dcv-deploy-exam.html)
+Nombre: [VMware Certified Advanced Professional 6.5 – Data Center Virtualization Design](https://www.vmware.com/education-services/certification/vcap6-5-dcv-design-exam.html)
 
-Código del examen: 3V0-623
+Código del examen: 3V0-624
 
 Certificación requerida: [VCP6-DCV](https://www.vmware.com/education-services/certification/vcp6-dcv-exam.html)
 
-Formato: 100% práctico, utiliza la misma interface que los [HOL](http://labs.hol.vmware.com/HOL/catalogs/catalog/681) de VMWare (recomiendo familiarizarse con este entorno)
+Formato: Multiple choice, matching, drag and drop
 
-Duración: 190 minutos
+Duración: 135 minutos
 
 Puntuación mínima requerida: 300 (sobre un total de 500)
 
-Número de Laboratorios: 27 Laboratorios, en los que nos proponen múltiples tareas a realizar
+Número de preguntas: 60
 
 Precio: 380€
 
