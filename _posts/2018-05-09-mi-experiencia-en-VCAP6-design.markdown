@@ -16,17 +16,10 @@ Buenos días a tod@as!!
 
 Como algunos ya sabeis, el pasado martes tenia en mi calendario marcado a fuego el examen de certificación [VMware Certified Advanced Professional 6.5 – Data Center Virtualization Design](https://www.vmware.com/education-services/certification/vcap6-5-dcv-design-exam.html)
 
-El pasado martes, fue uno de esos días en los que te vas a la cama con una satisfacción especial. Fue un día especial en cuanto a lo profesional se refiere.
-
-Tenia programado el examen VCAP6-DCV Deploy, una certificación avanzada de VMWare la cual certifica que el aspirante cuenta con los conocimientos y experiencia necesarios para dominar cualquier aspecto sobre la virtualización del datacenter o Software Defined Data Center (que parece que en inglés mola más :-))
-
-Este nuevo escalón en el sistema de certificaciones de VMWare era un reto para mí y el cual llevaba ya meses (o años) dándole vueltas, pero que por diferentes motivos había ido dejando caer en mi "ToDo List"
-
-![certificationpath]({{ site.imagesposts2020 }}/01/vcap6-design.jpg)
+Esta certificación, junto con la que [ya conseguí el año pasado](https://miquelmariano.github.io/vcap-experience/) hace que complete el nivel "Advenced Professional" y así conseguir el reconocimiento de "Implementation Expert"
 
 ![certificationpathvcix]({{ site.imagesposts2020 }}/01/vcix6.png)
 
-El objetivo de este post es compartir mi experiencia, cómo prepararlo y algunos consejos a tener en cuenta sobre el examen.
 
 ### Información sobre el examen
 
@@ -52,58 +45,50 @@ Curso requerido: No es requerido ningún curso oficial.
 
 ### Preparación
 
-Como comentaba anteriormente, es una certificación avanzada, por lo que hay que ir mínimamente preparado. No es un examen complicado, pero uno tiene que saber a lo que va, que le preguntarán, y al ser un examen 100% práctico, no confiar en la improvisación (como todos hemos hecho en exámenes tipo test.)
+Aquí es dónde está el kid de la cuestión.
 
-En mi caso, no es una cosa de la que esté demasiado orgulloso, pero hay que decirlo. Me lo preparé mas bien poco. En las últimas semanas llevaba acumulados bastantes proyectos, viajes y mucho curro en general que hicieron que no le pudiera dedicar el tiempo que se merece.
+Hay que tener en cuentra que nos enfrentamos a un examen avanzado y que como tal requiere de muchas horas de preparación.
 
-Básicamente mi preparación se basó en los siguientes aspectos, ordenados para mi, de mas a menos prioritario.
+En mi caso, era la 2ª vez que me enfrentaba a él (por motivos obvios) y tengo que decir que esta experiencia, la de repetir, me ha ayudado a prepararme mejor.
 
-1. [Guía de estudio en PDF](https://miquelmariano.github.io/assets/VCAP6-DCV-Deployment-Study-Guide.pdf)
+El ya saber a lo que me encontraria, me ayudó a entender mejor por donde iban a ir los tiros y que es lo VMware quiere que sepas en profundidad.
 
-2. Material de los blogs. Estos son los 2 que para mi gusto tienen mejor contenido:
+Conceptos clave:
 
-   - [vStellar](http://www.vstellar.com/2017/12/29/vcap6-dcv-deploy-study-guide/)
+- Assumption
+- Requirement
+- Risk
+- Constraint
 
-   - [vJenner](http://www.vjenner.com/vcap6-dcv-deployment-study-guide/)
+Estos, son conceptos básicos desde el punto de vista de diseño y durante el examen nos preguntarán constantemente que los asociemos correctamente a unas situaciones que nos presentarán.
 
-3. [HOL](http://labs.hol.vmware.com/HOL/catalogs/catalog/681)
+Recordad, es muy importante saber saber distinquir un riesgo de una limitación o un requisito de una suposición.
 
-4. Manuales oficiales vSphere 6.0
+Otro pack de conceptos clave:
 
-Aunque os los encontrareis en el escritorio del laboratorio el dia del examen, no está de mas que les deis un repaso antes. Os los dejo [aquí](https://miquelmariano.github.io/assets/vsphere-documentation-60.zip)
+- Manageability
+- Availability
+- Recoverability
+- Security
 
-A parte de material comentado previamente, también es muy importante la práctica. Practicar, practicar, practicar y mas practicar. Hay que tener cierta soltura con el laboratorio y las diferentes interfaces de administración que dispone vSphere. Tendremos "poco" tiempo y esta agilidad sobre el lab será fundamental para ir avanzando.
+Al igual que los anteriores, es muy importante saber diferenciarlos y saber asociarlos correctamente a posibles situaciones.
 
-A mi personalmente, me ha ayudado muchísimo la formación. Pero no como alumno, desde hace mas de 1 año soy instructuctor del curso [Administración de vSphere 6.5](https://www.ncora.com/formacion/administracion-de-vsphere/administracion-vsphere-65-training-pack/) que ofrecemos desde Ncora de forma trimestral y sin duda, el tener que prepararme continuamente este curso, ha sido fundamental para contrarestar la falta de horas de estudio.
+A mi personalmente, me ha ayudado muchísimo [este libro](https://www.amazon.es/gp/product/1789801516/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1)
 
-### El dia "D"
+![book]({{ site.imagesposts2020 }}/01/vcap6-design-book.jpg)
 
-El examen fue el pasado 9 de mayo. Lo programé unos 4 meses antes, entre otras cosas, porque en Palma solo hay un centro Pearson VUE y el calendario estaba bastante saturado. También era una medida de presión para estudiar :)
+Explica bastante bien los conceptos que anteriormente os comentaba y te mete en situaciones que nos podemos encontrar en un diseño real.
 
-Ese día, es muy probable que durmáis poco, a mi me paso. Yo me lo tomé con calma, tenia el examen a las 10:00, por lo que me levanté, desayuné tranquilamente y me fuí para el centro certificador para llegar unos 20-30 minutos antes.
+Otro aspecto que a mi me ha ayudado es que era ya el segundo intento y necesitaba hacerlo bien.
 
-Tenéis que mentalizaros de que os pasareis mas de 3 horas sentados en una silla, puede que no demasiado cómoda, frente a un monitor y que os enzarzareis en una dura batalla contra el lab. A mí personalmente, tanto el aula como el material (mesa, silla, PC) eran bastante adecuados. La conexión con el lab era bastante fluida, así que todo fue bastante rodado.
+El examen, lo tuve que programar unos 3 meses antes. En Mallorca hay 2 centros Pearson, pero la realidad es que siempre me encuentro con poca disponibilidad y me lo tengo que programar con mucha antelación.
 
-Tomáoslo con calma, durante la preparación leí algunas experiencias que contaban lo rudimentario de la conexión con el lab y la lentitud. Supongo que no será lo habitual, pero también hay que contar con ello. No os asustéis.
+Creo que también es un punto a favor el tener el examen programado con bastante antelación. A mi me ayuda muchisimo a marcar los tiempos y ritmos de estudio.
 
-Como comentaba, 3 horas parecen un mundo, pero si no gestionamos bien el tiempo, se pueden quedar realmente cortas. El examen va a contar con 27 laboratorios y las tareas que nos van a pedir, básicamente son:
-
-* Configuración
-* Administración
-* Resolución de problemas
-
-Yo me dividí en examen en horas e intenté resolver 8-9 laboratorios por hora para tener un tiempo final para repasar.
-
-Se trata de sumar puntos, por muy perdidos que vayáis en un laboratorio concreto, intentad hacer algo. Aunque no sepáis resolver la parte importante del lab, al tener que hacer múltiples tareas, seguro que podéis "rascar" algo.
-
-No perdáis mucho tiempo en esas cosas que no sabéis. Es mejor ir avanzando en el laboratorio, os ayudará psicológicamente ver que vais avanzando, y después ya volveréis a los lab mas complejos.
-
-Evidentemente no tendréis al Sr. Google para que os ayude, pero si que tendréis toda la documentación de vSphere 6.0 disponible en el escritorio del lab. No tendréis mucho tiempo para consultarla, pero si que para las preguntas de línea de comandos o configuración avanzada os será muy útil.
 
 ### El resultado
 
-A diferencia de los VCP, que tras finalizar el examen inmediatamente tenemos el resultado, para el VCAP, el resultado se envía por correo tras la finalización del examen.
-En mi caso, no tardó ni una hora (que se hizo eterna) en llegar el ansiado correo con el ansiado resultado.
+A diferencia 
 
 Y.... ....PASSED!!!!!
 
