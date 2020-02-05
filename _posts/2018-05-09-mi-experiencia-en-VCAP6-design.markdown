@@ -92,7 +92,7 @@ A diferencia
 
 Y.... ....PASSED!!!!!
 
-![passed]({{ site.imagesposts2018 }}/05/pass.png)
+![passed]({{ site.imagesposts2020 }}/02/passed.png)
 
 Es una sensación difícil de explicar, solo es una certificación, pero los que estamos en este mundo sabemos lo que cuestan las cosas y la satisfacción tras conseguirlas es tremendamente gratificante.
 
