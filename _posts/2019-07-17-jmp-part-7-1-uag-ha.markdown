@@ -25,7 +25,7 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 - [Part 5: Instalación y configuración Replica Server]({{ site.url }}/jmp-part5/)
 - [Part 6: Intalación y configuración de Security Server]({{ site.url }}/jmp-part6/)
 - [Part 7: Intalación y configuración de UAG]({{ site.url }}/jmp-part7/)
-		- [Part 7.1: Configuración de UAG en HA]({{ site.url }}/jmp-part7-1/)
+ - [Part 7.1: Configuración de UAG en HA]({{ site.url }}/jmp-part7-1/)
 - [Part 8: Instalación certificado (opcional)]({{ site.url }}/jmp-part8/)
 - [Part 9: Preparar plantilla master para Instant Clone]({{ site.url }}/jmp-part9/)
 - [Part 10: Configurar un pool de Instant Clone]({{ site.url }}/jmp-part10/)
@@ -40,9 +40,33 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 
 # Configuración de UAG en HA
 
-![jmp_db1]({{ site.imagesposts2020 }}/02/uag-ha01.png){: .align-center}
+Lo primero que tendremos que hacer para dotar nuestro UAG de alta disponibilidad, será desplegar otra instancia de Unified Access Gateway
 
-[Part 7: Intalación y configuración de UAG]({{ site.url }}/jmp-part7/)
+![uag-ha01]({{ site.imagesposts2020 }}/02/uag-ha01.png){: .align-center}
+
+Para ello, podremos seguir los pasos descritors en la [Part 7: Intalación y configuración de UAG]({{ site.url }}/jmp-part7/)
+
+# Configuración del nuevo UAG
+
+![uag-ha02]({{ site.imagesposts2020 }}/02/uag-ha02.png){: .align-center}
+
+![uag-ha03]({{ site.imagesposts2020 }}/02/uag-ha03.png){: .align-center}
+
+![uag-ha04]({{ site.imagesposts2020 }}/02/uag-ha04.png){: .align-center}
+
+![uag-ha05]({{ site.imagesposts2020 }}/02/uag-ha05.png){: .align-center}
+
+![uag-ha05-1]({{ site.imagesposts2020 }}/02/uag-ha05-1.png){: .align-center}
+
+# Configuración de virtual IP y HA
+
+![uag-ha06]({{ site.imagesposts2020 }}/02/uag-ha06.png){: .align-center}
+
+![uag-ha07]({{ site.imagesposts2020 }}/02/uag-ha06.png){: .align-center}
+
+![uag-ha08]({{ site.imagesposts2020 }}/02/uag-ha08.png){: .align-center}
+
+![uag-ha09]({{ site.imagesposts2020 }}/02/uag-ha09.png){: .align-center}
 
 Espero que os sirva.
 
