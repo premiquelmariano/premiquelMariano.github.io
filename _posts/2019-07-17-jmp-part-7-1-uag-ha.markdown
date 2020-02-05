@@ -68,6 +68,14 @@ Para ello, podremos seguir los pasos descritors en la [Part 7: Intalación y con
 
 ![uag-ha09]({{ site.imagesposts2020 }}/02/uag-ha09.png){: .align-center}
 
+# Pruebas
+
+![uag-ha10]({{ site.imagesposts2020 }}/02/uag-ha10.png){: .align-center}
+
+![uag-ha11]({{ site.imagesposts2020 }}/02/uag-ha11.png){: .align-center}
+
+![uag-ha12]({{ site.imagesposts2020 }}/02/uag-ha12.png){: .align-center}
+
 Espero que os sirva.
 
 Un saludo!
