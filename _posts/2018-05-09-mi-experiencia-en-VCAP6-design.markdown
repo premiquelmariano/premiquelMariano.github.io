@@ -25,23 +25,23 @@ Esta certificación, junto con la que [ya conseguí el año pasado](https://miqu
 
 En cuanto al examen, no tiene mucho secreto. Está todo perfectamente explicado en la página de mylearn.vmware.com 
 
-Nombre: [VMware Certified Advanced Professional 6.5 – Data Center Virtualization Design](https://www.vmware.com/education-services/certification/vcap6-5-dcv-design-exam.html)
+**Nombre:** [VMware Certified Advanced Professional 6.5 – Data Center Virtualization Design](https://www.vmware.com/education-services/certification/vcap6-5-dcv-design-exam.html)
 
-Código del examen: 3V0-624
+**Código del examen:** 3V0-624
 
-Certificación requerida: [VCP6-DCV](https://www.vmware.com/education-services/certification/vcp6-dcv-exam.html)
+**Certificación requerida:** [VCP6-DCV](https://www.vmware.com/education-services/certification/vcp6-dcv-exam.html)
 
-Formato: Multiple choice, matching, drag and drop
+**Formato:** Multiple choice, matching, drag and drop
 
-Duración: 135 minutos
+**Duración:** 135 minutos
 
-Puntuación mínima requerida: 300 (sobre un total de 500)
+**Puntuación mínima requerida:** 300 (sobre un total de 500)
 
-Número de preguntas: 60
+**Número de preguntas:** 60
 
-Precio: 380€
+**Precio:** 380€
 
-Curso requerido: No es requerido ningún curso oficial.
+**Curso requerido:** No es requerido ningún curso oficial.
 
 ### Preparación
 
