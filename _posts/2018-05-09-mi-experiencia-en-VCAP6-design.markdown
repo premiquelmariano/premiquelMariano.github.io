@@ -47,11 +47,11 @@ Curso requerido: No es requerido ningún curso oficial.
 
 Aquí es dónde está el kid de la cuestión.
 
-Hay que tener en cuentra que nos enfrentamos a un examen avanzado y que como tal requiere de muchas horas de preparación.
+Hay que tener en cuenta que nos enfrentamos a un examen avanzado y que como tal requiere de muchas horas de preparación.
 
 En mi caso, era la 2ª vez que me enfrentaba a él (por motivos obvios) y tengo que decir que esta experiencia, la de repetir, me ha ayudado a prepararme mejor.
 
-El ya saber a lo que me encontraria, me ayudó a entender mejor por donde iban a ir los tiros y que es lo VMware quiere que sepas en profundidad.
+El ya saber a lo que me encontraría, me ayudó a entender mejor por donde iban a ir los tiros y que es lo VMware quiere que sepas en profundidad.
 
 Conceptos clave:
 
@@ -62,7 +62,7 @@ Conceptos clave:
 
 Estos, son conceptos básicos desde el punto de vista de diseño y durante el examen nos preguntarán constantemente que los asociemos correctamente a unas situaciones que nos presentarán.
 
-Recordad, es muy importante saber saber distinquir un riesgo de una limitación o un requisito de una suposición.
+Recordad, es muy importante saber saber distinguir un riesgo de una limitación o un requisito de una suposición.
 
 Otro pack de conceptos clave:
 
@@ -83,7 +83,7 @@ Otro aspecto que a mi me ha ayudado es que era ya el segundo intento y necesitab
 
 El examen, lo tuve que programar unos 3 meses antes. En Mallorca hay 2 centros Pearson, pero la realidad es que siempre me encuentro con poca disponibilidad y me lo tengo que programar con mucha antelación.
 
-Creo que también es un punto a favor el tener el examen programado con bastante antelación. A mi me ayuda muchisimo a marcar los tiempos y ritmos de estudio.
+Creo que también es un punto a favor el tener el examen programado con bastante antelación. A mi me ayuda muchísimo a marcar los tiempos y ritmos de estudio.
 
 ### El resultado
 
