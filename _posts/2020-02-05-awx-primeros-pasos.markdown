@@ -1,6 +1,6 @@
 ---
 title: Primeros pasos con Ansible AWX
-date: '2018-02-28 00:00:00'
+date: '2020-02-05 00:00:00'
 layout: post
 image: /assets/images/posts/2019/02/performance.jpg
 tag:
