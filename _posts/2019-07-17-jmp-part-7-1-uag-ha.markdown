@@ -1,5 +1,5 @@
 ---
-title: Creando un entorno JMP con VMware Horizon - Parte 17
+title: Creando un entorno JMP con VMware Horizon - Parte 7 - Configuración de UAG en HA
 date: '2019-07-17 00:00:00'
 layout: post
 image: /assets/images/posts/2019/07/horizon-logo.png
@@ -13,10 +13,6 @@ tag:
 permalink: /jmp-part7-1/
 
 ---
-
-https://univirt.wordpress.com/2018/02/20/building-a-horizon-view-jmp-lab-part-1-introduction/
-
-https://www.ageroskam.nl/vmware/jmp-installing-and-configuring-part-one/
 
 Buenos dias a tod@s!!
 
