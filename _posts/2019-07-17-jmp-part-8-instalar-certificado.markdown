@@ -1,5 +1,5 @@
 ---
-title: Creando un entorno JMP con VMware Horizon - Parte 7.1 - Configuración de UAG en HA
+title: Creando un entorno JMP con VMware Horizon - Parte 8 - Instalación certificado
 date: '2019-07-17 00:00:00'
 layout: post
 image: /assets/images/posts/2019/07/horizon-logo.png
@@ -42,39 +42,11 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 
 Lo primero que tendremos que hacer para dotar nuestro UAG de alta disponibilidad, será desplegar otra instancia de Unified Access Gateway
 
-![uag-ha01]({{ site.imagesposts2020 }}/02/uag-ha01.png){: .align-center}
+![certificado-01]({{ site.imagesposts2020 }}/02/certificado-01.png){: .align-center}
+![certificado-02]({{ site.imagesposts2020 }}/02/certificado-02.png){: .align-center}
+![certificado-03]({{ site.imagesposts2020 }}/02/certificado-03.png){: .align-center}
+![certificado-04]({{ site.imagesposts2020 }}/02/certificado-04.png){: .align-center}
 
-Para ello, podremos seguir los pasos descritors en la [Part 7: Intalación y configuración de UAG]({{ site.url }}/jmp-part7/)
-
-# Configuración del nuevo UAG
-
-![uag-ha02]({{ site.imagesposts2020 }}/02/uag-ha02.png){: .align-center}
-
-![uag-ha03]({{ site.imagesposts2020 }}/02/uag-ha03.png){: .align-center}
-
-![uag-ha04]({{ site.imagesposts2020 }}/02/uag-ha04.png){: .align-center}
-
-![uag-ha05]({{ site.imagesposts2020 }}/02/uag-ha05.png){: .align-center}
-
-![uag-ha05-1]({{ site.imagesposts2020 }}/02/uag-ha05-1.png){: .align-center}
-
-# Configuración de virtual IP y HA
-
-![uag-ha06]({{ site.imagesposts2020 }}/02/uag-ha06.png){: .align-center}
-
-![uag-ha07]({{ site.imagesposts2020 }}/02/uag-ha06.png){: .align-center}
-
-![uag-ha08]({{ site.imagesposts2020 }}/02/uag-ha08.png){: .align-center}
-
-![uag-ha09]({{ site.imagesposts2020 }}/02/uag-ha09.png){: .align-center}
-
-# Pruebas
-
-![uag-ha10]({{ site.imagesposts2020 }}/02/uag-ha10.png){: .align-center}
-
-![uag-ha11]({{ site.imagesposts2020 }}/02/uag-ha11.png){: .align-center}
-
-![uag-ha12]({{ site.imagesposts2020 }}/02/uag-ha12.png){: .align-center}
 
 Espero que os sirva.
 
