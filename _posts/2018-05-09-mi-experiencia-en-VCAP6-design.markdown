@@ -18,7 +18,7 @@ Como algunos ya sabeis, el pasado martes tenia en mi calendario marcado a fuego 
 
 Esta certificación, junto con la que [ya conseguí el año pasado](https://miquelmariano.github.io/vcap-experience/) hace que complete el nivel "Advenced Professional" y así conseguir el reconocimiento de "Implementation Expert"
 
-![certificationpathvcix]({{ site.imagesposts2020 }}/01/vcix6.png)
+![certificationpathvcix]({{ site.imagesposts2020 }}/02/vcix6.png)
 
 
 ### Información sobre el examen
@@ -75,7 +75,7 @@ Al igual que los anteriores, es muy importante saber diferenciarlos y saber asoc
 
 A mi personalmente, me ha ayudado muchísimo [este libro](https://www.amazon.es/gp/product/1789801516/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1)
 
-![book]({{ site.imagesposts2020 }}/01/vcap6-design-book.jpg)
+![book]({{ site.imagesposts2020 }}/02/vcap6-design-book.jpg)
 
 Explica bastante bien los conceptos que anteriormente os comentaba y te mete en situaciones que nos podemos encontrar en un diseño real.
 
@@ -85,19 +85,13 @@ El examen, lo tuve que programar unos 3 meses antes. En Mallorca hay 2 centros P
 
 Creo que también es un punto a favor el tener el examen programado con bastante antelación. A mi me ayuda muchisimo a marcar los tiempos y ritmos de estudio.
 
-
 ### El resultado
 
-A diferencia 
+A diferencia del otro examen VCAP6-DCV Deploy, en éste, el resultado lo tienes justo al enviar la prueba. Así que no te has levantado de la silla y ya sabes si has aprobado o no.
 
-Y.... ....PASSED!!!!!
+Cómo decia, era la segunda vez que me presentaba y me costó bastante dar al botón final de "submit", pero finalmente apareció ese ansiado mensaje de "Congratulations you are passed the exam!!!!!" 
 
 ![passed]({{ site.imagesposts2020 }}/02/passed.png)
-
-Es una sensación difícil de explicar, solo es una certificación, pero los que estamos en este mundo sabemos lo que cuestan las cosas y la satisfacción tras conseguirlas es tremendamente gratificante.
-
-Desde aquí animo a todos los que os estéis planteando este tipo de examen, ya que es totalmente asequible con un poco de dedicación y si os puedo ayudar en algo, ya sabéis ;-)
-
 
 Un abrazo!
 
