@@ -38,21 +38,11 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 - [Part 17: Instalación y configuración JMP Server]({{ site.url }}/jmp-part17/)
 - [Part 18: Aprovisionamiento con JMP]({{ site.url }}/jmp-part18/)
 
-# Instalación y configuración JMP Server
+# Configuración de UAG en HA
 
-![jmp_db1]({{ site.imagesposts2019 }}/08/jmp_db1.png){: .align-center}
-![jmp_db2]({{ site.imagesposts2019 }}/08/jmp_db2.png){: .align-center}
-![jmp_db3]({{ site.imagesposts2019 }}/08/jmp_db3.png){: .align-center}
-![jmp_db4]({{ site.imagesposts2019 }}/08/jmp_db4.png){: .align-center}
-![jmp1]({{ site.imagesposts2019 }}/08/jmp1.png){: .align-center}
-![jmp2]({{ site.imagesposts2019 }}/08/jmp2.png){: .align-center}
-![jmp3]({{ site.imagesposts2019 }}/08/jmp3.png){: .align-center}
-![jmp4]({{ site.imagesposts2019 }}/08/jmp4.png){: .align-center}
-![jmp5]({{ site.imagesposts2019 }}/08/jmp5.png){: .align-center}
-![jmp6]({{ site.imagesposts2019 }}/08/jmp6.png){: .align-center}
-![jmp7]({{ site.imagesposts2019 }}/08/jmp7.png){: .align-center}
-![jmp8]({{ site.imagesposts2019 }}/08/jmp8.png){: .align-center}
+![jmp_db1]({{ site.imagesposts2020 }}/02/uag-ha01.png){: .align-center}
 
+[Part 7: Intalación y configuración de UAG]({{ site.url }}/jmp-part7/)
 
 Espero que os sirva.
 
