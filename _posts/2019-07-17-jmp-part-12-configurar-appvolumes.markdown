@@ -74,7 +74,6 @@ En este punto, registraremos los datastores en dónde queramos que por defecto s
 Para finalizar, también podremos configurar una serie de parámetros genéricos como el timeout de la sesión, zona horaria, etc, etc...
 
 ![appvol_config13]({{ site.imagesposts2020 }}/01/appvol_config13.png){: .align-center}
-![appvol_config14]({{ site.imagesposts2020 }}/01/appvol_config14.png){: .align-center}
 
 Y hasta aquí por hoy, en el próximo post veremos cómo crear nuestro primer App Stack.
 
