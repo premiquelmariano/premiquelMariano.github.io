@@ -26,28 +26,36 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 - [Part 2: Preparar servidor SQL]({{ site.url }}/jmp-part2/)
 - [Part 3: Preparar Active Directory]({{ site.url }}/jmp-part3/)
 - [Part 4: Instalación y configuración Connection Server]({{ site.url }}/jmp-part4/)
-- [Part 5: Instalación y configuración Replica Server]({{ site.url }}/jmp-part5/)
-- [Part 6: Intalación y configuración de Security Server]({{ site.url }}/jmp-part6/)
-- [Part 7: Intalación y configuración de UAG]({{ site.url }}/jmp-part7/)
-- [Part 8: Instalación certificado (opcional)]({{ site.url }}/jmp-part8/)
+- [Part 5: Instalación y configuración Replica Server (opcional)]({{ site.url }}/jmp-part5/)
+- Part 6: Instalación y configuración de Security Server (opcional)
+- [Part 7: Instalación y configuración de UAG (opcional)]({{ site.url }}/jmp-part7/)
+- Part 8: Instalación certificado (opcional)
 - [Part 9: Preparar plantilla master para Instant Clone]({{ site.url }}/jmp-part9/)
 - [Part 10: Configurar un pool de Instant Clone]({{ site.url }}/jmp-part10/)
 - [Part 11: Instalar App Volumes]({{ site.url }}/jmp-part11/)
 - [Part 12: Configuración inicial App Volumes]({{ site.url }}/jmp-part12/)
-- [Part 13: Crear nuestro primer App Stack]({{ site.url }}/jmp-part13/)
-- [Part 14: Trabajando con Writable Volumes]({{ site.url }}/jmp-part14/)
-- [Part 15: User Environment Manager Installation]({{ site.url }}/jmp-part15/)
-- [Part 16: Primeros pasos con UEM]({{ site.url }}/jmp-part16/)
-- [Part 17: Instalación y configuración JMP Server]({{ site.url }}/jmp-part17/)
-- [Part 18: Aprovisionamiento con JMP]({{ site.url }}/jmp-part18/)
+- Part 13: Crear nuestro primer App Stack
+- Part 14: Trabajando con Writable Volumes
+- Part 15: User Environment Manager Installation
+- Part 16: Primeros pasos con UEM
+- Part 17: Instalación y configuración JMP Server
+- Part 18: Aprovisionamiento con JMP
 
-
-
+Si habeis seguido el proceso de [Instalar App Volumes]({{ site.url }}/jmp-part11/), la primera vez que os conecteis al App Volumes Manager, aparecerá el wizard de configuración inicial:
 
 ![appvol_config1]({{ site.imagesposts2020 }}/01/appvol_config1.png){: .align-center}
+
+Por defecto, viene con una licencia pre-instalada, que cómo veis tiene algunas limitaciones:
+
 ![appvol_config2]({{ site.imagesposts2020 }}/01/appvol_config2.png){: .align-center}
+
+Configuraremos nuestro dominio de Active Directory. Mi recomendación es que creeis un usuario dedicado para App Volumes [tal como ya hicimos con otros servicios de Horizon.]({{ site.url }}/jmp-part3/)
+
 ![appvol_config3]({{ site.imagesposts2020 }}/01/appvol_config3.png){: .align-center}
 ![appvol_config4]({{ site.imagesposts2020 }}/01/appvol_config4.png){: .align-center}
+
+Añadiremos el grupo que va a ser administrador de App Volumes:
+
 ![appvol_config5]({{ site.imagesposts2020 }}/01/appvol_config5.png){: .align-center}
 ![appvol_config6]({{ site.imagesposts2020 }}/01/appvol_config6.png){: .align-center}
 ![appvol_config7]({{ site.imagesposts2020 }}/01/appvol_config7.png){: .align-center}
