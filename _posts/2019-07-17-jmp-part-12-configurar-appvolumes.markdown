@@ -58,13 +58,28 @@ Añadiremos el grupo que va a ser administrador de App Volumes:
 
 ![appvol_config5]({{ site.imagesposts2020 }}/01/appvol_config5.png){: .align-center}
 ![appvol_config6]({{ site.imagesposts2020 }}/01/appvol_config6.png){: .align-center}
+
+Cómo estamos trabajando con un entorno virtualizado. En la pestaña de Managers registraremos nuestro vCenter.
+
 ![appvol_config7]({{ site.imagesposts2020 }}/01/appvol_config7.png){: .align-center}
 ![appvol_config8]({{ site.imagesposts2020 }}/01/appvol_config8.png){: .align-center}
 ![appvol_config9]({{ site.imagesposts2020 }}/01/appvol_config9.png){: .align-center}
+
+En este punto, registraremos los datastores en dónde queramos que por defecto se guarden nuestros App Stacks y nuestros Writable Volumes.
+
 ![appvol_config10]({{ site.imagesposts2020 }}/01/appvol_config10.png){: .align-center}
 ![appvol_config11]({{ site.imagesposts2020 }}/01/appvol_config11.png){: .align-center}
 ![appvol_config12]({{ site.imagesposts2020 }}/01/appvol_config12.png){: .align-center}
+
+Para finalizar, también podremos configurar una serie de parámetros genéricos como el timeout de la sesión, zona horaria, etc, etc...
+
 ![appvol_config13]({{ site.imagesposts2020 }}/01/appvol_config13.png){: .align-center}
 ![appvol_config14]({{ site.imagesposts2020 }}/01/appvol_config14.png){: .align-center}
+
+Y hasta aquí por hoy, en el próximo post veremos cómo crear nuestro primer App Stack.
+
+Un saludo!
+
+Miquel.
 
 
