@@ -75,7 +75,7 @@ Para finalizar, también podremos configurar una serie de parámetros genéricos
 
 ![appvol_config13]({{ site.imagesposts2020 }}/01/appvol_config13.png){: .align-center}
 
-Y hasta aquí por hoy, en el próximo post veremos cómo crear nuestro primer App Stack.
+Y hasta aquí por hoy, en el próximo post veremos [cómo crear nuestro primer App Stack]({{ site.url }}/jmp-part13/)
 
 Un saludo!
 
