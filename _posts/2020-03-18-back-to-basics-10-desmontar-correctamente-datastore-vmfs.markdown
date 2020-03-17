@@ -28,29 +28,29 @@ Mover máquinas virtuales es fácil, simplemente tendremos que ejecutar un vMoti
 
 En caso de tener ISOs u otros ficheros en los cuales no podemos hacer vMotion, desde el propio vCenter dispondremos de la opción de "Transferir a"
 
-![basics10-01]({{ site.imagesposts2020 }}/03/basics10-01.png){: .align-center
+![basics10-01]({{ site.imagesposts2020 }}/03/basics10-01.png){: .align-center}
 
-![basics10-02]({{ site.imagesposts2020 }}/03/basics10-02.png){: .align-center
+![basics10-02]({{ site.imagesposts2020 }}/03/basics10-02.png){: .align-center}
 
 ### 2. Desmontar
 
-![basics10-03]({{ site.imagesposts2020 }}/03/basics10-03.png){: .align-center
+![basics10-03]({{ site.imagesposts2020 }}/03/basics10-03.png){: .align-center}
 
-![basics10-04]({{ site.imagesposts2020 }}/03/basics10-04.png){: .align-center
+![basics10-04]({{ site.imagesposts2020 }}/03/basics10-04.png){: .align-center}
 
-![basics10-05]({{ site.imagesposts2020 }}/03/basics10-05.png){: .align-center
+![basics10-05]({{ site.imagesposts2020 }}/03/basics10-05.png){: .align-center}
 
 ### 3. Detach LUNS
 
-![basics10-06]({{ site.imagesposts2020 }}/03/basics10-06.png){: .align-center
+![basics10-06]({{ site.imagesposts2020 }}/03/basics10-06.png){: .align-center}
 
 ### 4. Eliminar presentación de LUNS
 
 ### 5. Rescan
 
-![basics10-07]({{ site.imagesposts2020 }}/03/basics10-07.png){: .align-center
+![basics10-07]({{ site.imagesposts2020 }}/03/basics10-07.png){: .align-center}
 
-![basics10-08]({{ site.imagesposts2020 }}/03/basics10-08.png){: .align-center
+![basics10-08]({{ site.imagesposts2020 }}/03/basics10-08.png){: .align-center}
 
 ### 6. ¿Y la opción de eliminar?
 
