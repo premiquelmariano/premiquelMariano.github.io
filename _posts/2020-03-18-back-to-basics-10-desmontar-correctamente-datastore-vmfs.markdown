@@ -12,10 +12,9 @@ tag:
 - backtobasics
 ---
 
-
 Buenos dias a tod@as!!
 
-Por suerte, VMWare ha mejorado mucho versión a versión en cuanto a almacenamiento y ya no es tan frecuente ver errores o inestabilidades en un ESXi si se le quita brúscamente su almacenamiento. Ha habido mucha mejora en cómo los ESXi se comportan ante un APD (All path down) o eventos PDL (Permanent Device Lost) pero aún se ve algún que otro caso de tener que reiniciar un host ESXi tras eliminar de forma incorrecta un datastore.
+Por suerte, VMWare ha mejorado mucho versión a versión en cuanto a almacenamiento y ya no es tan frecuente ver errores o inestabilidades en un ESXi si se le quita bruscamente su almacenamiento. Ha habido mucha mejora en cómo los ESXi se comportan ante un APD (All path down) o eventos PDL (Permanent Device Lost) pero aún se ve algún que otro caso de tener que reiniciar un host ESXi tras eliminar de forma incorrecta un datastore.
 
 En esta nueva entrada de la serie [back-to-basics](https://miquelmariano.github.io/tags/#backtobasics), me gustaría enseñaros el procedimiento correcto para desmontar un datastore VMFS.
 
@@ -52,7 +51,7 @@ Una vez finalizado, nos aparecerá el datastore desmontado como "inaccesible"
 
 ### 3. Detach LUNS
 
-Hacer el "Detach" significa que aunque el host ESXi todavia tenga visibilidad física de la LUN, a nivel de SO no será accesible.
+Hacer el "Detach" significa que aunque el host ESXi todavía tenga visibilidad física de la LUN, a nivel de SO no será accesible.
 
 Localizaremos la LUN correspondiente y opción "separar"
 
@@ -68,7 +67,7 @@ Básicament en este punto, le eliminaremos al ESXi el acceso físico al disco.
 
 ### 5. Rescan
 
-Para finalizar, será necesario hacer un rescar a nuestro clúster.
+Para finalizar, será necesario hacer un rescan a nuestro clúster.
 
 Seleccionaremos la opción Almacenamiento > Volver a examinar almacenamiento...
 
@@ -90,7 +89,7 @@ Esá opcion está ahi, y se puede usar, pero a mí personalmente no me gusta y o
 
 - En caso de que ese datastore está presentado a diferentes entornos (diferentes hosts de diferentes vCenter) le estaremos quitando "a lo bruto" un datastore a un host ESXi, que cómo comentaba al principio del host, puede provocar errores de APD o PDL o incluso inestabilidad en el host.
 
-Por todo esto, os recomiendo no "Eliminar almacén de datos" si no estais completamente seguros de que ese datastore nunca mas se va a volver a necesitar. El eliminar, es una acción irreversible.
+Por todo esto, os recomiendo no "Eliminar almacén de datos" si no estáis completamente seguros de que ese datastore nunca mas se va a volver a necesitar. El eliminar, es una acción irreversible.
 
 Espero que os haya gustado.
 
