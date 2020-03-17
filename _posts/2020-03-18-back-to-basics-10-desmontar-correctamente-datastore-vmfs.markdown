@@ -1,6 +1,6 @@
 ---
 title: Back-to-basics 10 - ¿Cómo eliminar correctamente un datastore VMFS?
-date: '2018-02-28 00:00:00'
+date: '2020-03-18 00:00:00'
 layout: post
 image: /assets/images/posts/2018/03/logs.png
 headerImage: true
@@ -30,13 +30,27 @@ En caso de tener ISOs u otros ficheros en los cuales no podemos hacer vMotion, d
 
 ![basics10-01]({{ site.imagesposts2020 }}/03/basics10-01.png){: .align-center
 
+![basics10-02]({{ site.imagesposts2020 }}/03/basics10-02.png){: .align-center
+
 ### 2. Desmontar
 
+![basics10-03]({{ site.imagesposts2020 }}/03/basics10-03.png){: .align-center
+
+![basics10-04]({{ site.imagesposts2020 }}/03/basics10-04.png){: .align-center
+
+![basics10-05]({{ site.imagesposts2020 }}/03/basics10-05.png){: .align-center
+
 ### 3. Detach LUNS
+
+![basics10-06]({{ site.imagesposts2020 }}/03/basics10-06.png){: .align-center
 
 ### 4. Eliminar presentación de LUNS
 
 ### 5. Rescan
+
+![basics10-07]({{ site.imagesposts2020 }}/03/basics10-07.png){: .align-center
+
+![basics10-08]({{ site.imagesposts2020 }}/03/basics10-08.png){: .align-center
 
 ### 6. ¿Y la opción de eliminar?
 
