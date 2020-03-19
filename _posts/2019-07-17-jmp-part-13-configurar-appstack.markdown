@@ -14,12 +14,6 @@ permalink: /jmp-part13/
 
 ---
 
-https://univirt.wordpress.com/2018/02/20/building-a-horizon-view-jmp-lab-part-1-introduction/
-
-https://univirt.wordpress.com/2018/02/20/building-a-horizon-view-jmp-lab-part-6-installing-app-volumes/
-
-https://www.ageroskam.nl/app-volumes/install-and-configure-vmware-app-volumes-manager/
-
 Buenos dias a tod@s!!
 
 En la siguiente serie de posts, pretendo explicar durante las próximas semanas el paso a paso para instalar un entorno JMP (Just-in-Time Management Platform) utilizando VMware Horizon 7 Instant Clones + App Volumes + VMware UEM (User Environment Manager) 
@@ -43,11 +37,34 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 - [Part 17: Instalación y configuración JMP Server]({{ site.url }}/jmp-part17/)
 - [Part 18: Aprovisionamiento con JMP]({{ site.url }}/jmp-part18/)
 
-# Crear nuestro primer App Stack
+Si habeis seguido la serie con atención, en este punto ya tendreis [instalado]({{ site.url }}/jmp-part11/) y [configurado]({{ site.url }}/jmp-part12/) vuestro entorno con App Volumes.
+
+Es el momento ahora de ver cómo se crea nuestro primer AppStack.
+
+Un AppStack es un disco, generalmente un .vmdk, de sólo lectura que contiene una o múltiples aplicaciones ya instaladas. Estos AppStack los podremos asignar a usuarios, unidades organizativas (OU), cuantas de equipo, etc, etc.. con el fin de permitir la entrega y uso de estas aplicaciones a nuestros usuarios finales.
+
+Es posible combinar diferentes aplicaciones en un mismo AppStack, lo que nos permitirá agrupar, por ejemplo, las aplicaciones "core" de nuestra empresa y distribuirlas conjuntamente.
+
+Una vez tengamos creados los AppStack, se montarán en modo sólo lectura y serán compartidos entre los escritorios de nuestros usuarios dentro del datacenter.
+
+Vamos al lio!
+
+Al entrar en nuestro App Volumes Manager, nos dirigiremos en la pestaña "Volumes" > "AppStacks" y pulsaremos sobre el botón "Create"
 
 ![appstack1]({{ site.imagesposts2019 }}/08/appstack1.png){: .align-center}
+
+Se nos abrirá el menú de creación, en dónde especificaremos los siguientes parámetros:
+
+Name: Nombre descriptivo del AppStack
+Storage: Se refiere al datastore en dónde se guardará el disco .vmdk con las aplicaciones instaladas
+Path: Hace referencia a la ruta dentro del datastore previamente seleccionado
+Template: La plantilla en la que se basará el nuevo .vmdk que crearemos. La plantilla por defecto es de 20Gb y será suficiente para la gran mayoria de aplicaciones.
+Description: Por si queremos poner una descripción
+
 ![appstack2]({{ site.imagesposts2019 }}/08/appstack2.png){: .align-center}
+
 ![appstack3]({{ site.imagesposts2019 }}/08/appstack3.png){: .align-center}
+
 ![appstack4]({{ site.imagesposts2019 }}/08/appstack4.png){: .align-center}
 ![appstack5]({{ site.imagesposts2019 }}/08/appstack5.png){: .align-center}
 ![appstack6]({{ site.imagesposts2019 }}/08/appstack6.png){: .align-center}
