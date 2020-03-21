@@ -99,9 +99,18 @@ Y listo, ya tenemos nuestro primer App Stack listo para assignarlo a nuestros us
 
 ![appstack14]({{ site.imagesposts2019 }}/08/appstack14.png){: .align-center}
 
+Es una buena práctica, que la gestión de asignaciones se haga a través de nuestro directorio activo. En mi caso, he creado unos grupos en mi dominio con nombre ***g_appstack_xxx***. De esta manera con sólo asignar usuarios a estos grupos, automáticamente ya podrán acceder a las aplicaciones.
 
+![appstack15]({{ site.imagesposts2019 }}/08/appstack15.png){: .align-center}
 
-Espero que os sirva.
+Y por fin, así verán nuestros usuarios las aplicaciones en su VDI
+
+![appstack16]({{ site.imagesposts2019 }}/08/appstack16.png){: .align-center}
+
+Podemos ver cómo aparece el icono de Notepad++ en el escritorio, incluso en programas y características aparece cómo un programa mas.
+En el administrador de discos podemos ver un nuevo disco, que corresponde al AppStack, pero sin embargo no se monta cómo una una unidad más y es totalmente transparente para el usuario
+
+Espero que os guste.
 
 Un saludo!
 
