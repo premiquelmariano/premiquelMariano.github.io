@@ -14,7 +14,7 @@ permalink: /jmp-part14/
 
 ---
 
-https://ageroskam.nl/app-volumes-2-x/manage-user-profiles-with-writable-volumes/
+https://blogs.vmware.com/consulting/2014/12/app-volumes-appstacks-vs-writable-volumes.html
 
 Buenos dias a tod@s!!
 
@@ -39,7 +39,7 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 - [Part 17: Instalación y configuración JMP Server]({{ site.url }}/jmp-part17/)
 - [Part 18: Aprovisionamiento con JMP]({{ site.url }}/jmp-part18/)
 
-![writable_volumes001]({{ site.imagesposts2020 }}/04/writable_volumes001.png){: .align-center}
+https://blogs.vmware.com/consulting/2014/12/app-volumes-appstacks-vs-writable-volumes.html
 
 ![writable_volumes000]({{ site.imagesposts2020 }}/04/writable_volumes000.png){: .align-center}
 
