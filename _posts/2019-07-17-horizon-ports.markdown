@@ -54,8 +54,8 @@ Buenos dias a tod@s!!
 |Horizon Connection Server|vCenter Server			 |443	   |TCP		   |SOAP				   |
 |Horizon Connection Server|BBDD (eventos)			 |1443	   |TCP		   |Microsoft SQL Server   |
 |Horizon Connection Server|BBDD (eventos)			 |1521	   |TCP		   |Oracle server 		   |
-
-
+|Horizon Connection Server|JMP server 				 |443	   |TCP		   |					   |
+|Horizon Connection Server|View Composer			 |18443	   |TCP		   |SOAP				   |
 
 
 
