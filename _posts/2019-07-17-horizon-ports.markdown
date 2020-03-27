@@ -56,11 +56,11 @@ Buenos dias a tod@s!!
 |Horizon Connection Server|BBDD (eventos)			 |1521	   |TCP		   |Oracle server 		   |
 |Horizon Connection Server|JMP server 				 |443	   |TCP		   |					   |
 |Horizon Connection Server|View Composer			 |18443	   |TCP		   |SOAP				   |
-
-
-
-
-
+|Horizon Connection Server|Security Server			 |500	   |UDP		   |IPsec				   |
+|Horizon Connection Server|Security Server			 |4500	   |UDP		   |NAT-T ISAKMP		   |
+|Horizon Connection Server|UAG						 |9443	   |TCP		   |					   |
+|Horizon Connection Server|App Volumes Manager		 |443	   |TCP		   |					   |
+|Horizon Connection Server|RSA SecurID Authentication Manager		 |5500	   |UDP		   |Autenticación doble factor					   |
 
 Espero que os sirva.
 
