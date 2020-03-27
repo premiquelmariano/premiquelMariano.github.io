@@ -19,7 +19,7 @@ Buenos dias a tod@s!!
 #	Horizon Agent y Horizon Client
 
 | Origen        | Puerto        | Destino  |Puerto  |Protocolo  |Descripción  |
-| ------------- |:-------------:| --------:|-------:|----------:|------------:|
+| :------------:|:-------------:| :-------:|:------:|:---------:|:-----------:|
 | col 3 is      | right-aligned | $1600    |		|			|			  |
 | col 2 is      | centered      |   $12    |		|			|			  |
 | zebra stripes | are neat      |    $1    |		|			|			  |
