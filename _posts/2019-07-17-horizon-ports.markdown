@@ -16,6 +16,10 @@ tag:
 
 Buenos dias a tod@s!!
 
+En el post de hoy pretendo recoger de forma fácil todos los requerimientos a nivel de conectividad que necesita un entorno Horizon 7
+
+Toda la información aquí expuesta ha sido sacada de la guia oficial [Network Ports in VMware Horizon 7](https://techzone.vmware.com/resource/network-ports-vmware-horizon-7)
+
 # 	Conexiones cliente
 
 ###	Conexión interna
@@ -98,7 +102,7 @@ Buenos dias a tod@s!!
 |Horizon Agent   		  |Horizon Connection Server |389	   |TCP		   |						   	   |
 |App Volumes Agent 		  |App Volumes Manager		 |443	   |TCP		   |Puerto 80 si la comunicación no usa SSL	   |
 |App Volumes Agent 		  |App Volumes Manager		 |5985	   |TCP		   |PowerShell web services 	   |
-|DEM Agentes 			  |File Share				 |445	   |TCP		   |Acceso al recurso SMB	 	   |
+|DEM Agentes			  |File Share				 |445	   |TCP		   |Acceso al recurso SMB	 	   |
 
 
 
@@ -109,5 +113,4 @@ Un saludo!
 Miquel.
 
 
-Toda la información aquí expuesta ha sido sacada de la guia oficial [Network Ports in VMware Horizon 7](https://techzone.vmware.com/resource/network-ports-vmware-horizon-7)
 
