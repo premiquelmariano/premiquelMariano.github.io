@@ -20,11 +20,11 @@ Buenos dias a tod@s!!
 
 | Origen          | Puerto          | Destino     |Puerto  |Protocolo  |Descripción  |
 | :--------------:|:---------------:| :----------:|:------:|:---------:|:-----------:|
-|Horizon Client   | *			    |Horizon Agent|3389	   |TCP		   |	         |
-|Horizon Client   | *			    |Horizon Agent|9427	   |TCP		   |	         |
-|Horizon Client   | *			    |Horizon Agent|32111   |TCP		   |	         |
-|Horizon Client   | *			    |Horizon Agent|4172	   |TCP	y UDP  |	         |
-|Horizon Client   | *			    |Horizon Agent|22443   |TCP	y UDP  |	         |
+|Horizon Client   | *			    |Horizon Agent|3389	   |TCP		   |Microsoft RDP	         |
+|Horizon Client   | *			    |Horizon Agent|9427	   |TCP		   |Redirección Windows media MMR	         |
+|Horizon Client   | *			    |Horizon Agent|32111   |TCP		   |Redirección USB	         |
+|Horizon Client   | *			    |Horizon Agent|4172	   |TCP	y UDP  |PCoIP	         |
+|Horizon Client   | *			    |Horizon Agent|22443   |TCP	y UDP  |Blast	         |
 |Connection Server y security server| *			    |Horizon Agent|3389	   |TCP 	   |	         |
 
 
