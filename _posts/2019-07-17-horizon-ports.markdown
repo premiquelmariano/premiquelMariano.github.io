@@ -62,6 +62,38 @@ Buenos dias a tod@s!!
 |Horizon Connection Server|App Volumes Manager		 |443	   |TCP		   |					   |
 |Horizon Connection Server|RSA SecurID Authentication Manager		 |5500	   |UDP		   |Autenticación doble factor					   |
 
+#	Unified Access Gateway
+
+| Origen    		      |  Destino    			 |Puerto   |Protocolo  |Descripción    		   |
+|:-----------------------:|:------------------------:|:-------:|:---------:|:---------------------:|
+|Unified Access Gateway	  |Horizon Connection Server |443	   |TCP		   |Login			   	   |
+|Unified Access Gateway	  |Horizon Agent			 |22443	   |TCP	y UDP  |Blast Extreme     	   |
+|Unified Access Gateway	  |Horizon Agent			 |4172	   |TCP	y UDP  |PCoIP			  	   |
+|Unified Access Gateway	  |Horizon Agent			 |3389	   |TCP		   |RDP				  	   |
+|Unified Access Gateway	  |Horizon Agent			 |9427	   |TCP		   |CDR (client drive redirection)	y MMR (multimedia redirection)		  |
+|Unified Access Gateway	  |Horizon Agent			 |3211	   |TCP		   |Redirección USB	  	   |
+
+# 	App Volumes
+
+| Origen    		      |  Destino    			 |Puerto   |Protocolo  |Descripción    		   |
+|:-----------------------:|:------------------------:|:-------:|:---------:|:---------------------:|
+|App Volumes Manager	  |vCenter server 			 |443	   |TCP		   |SOAP			   	   |
+|App Volumes Manager	  |ESXi						 |443	   |TCP		   |Hostd			   	   |
+|App Volumes Manager	  |BBDD			 			 |1443	   |TCP		   |Puerto por defecto MS SQL Server			   	   |
+
+#	Agentes
+
+| Origen    		      |  Destino    			 |Puerto   |Protocolo  |Descripción    				   |
+|:-----------------------:|:------------------------:|:-------:|:---------:|:-----------------------------:|
+|Horizon Agent   		  |Horizon Connection Server |4002	   |TCP		   |Java Message Service (JMS)	   |
+|Horizon Agent   		  |Horizon Connection Server |4001	   |TCP		   |JMS (Legacy)			   	   |
+|Horizon Agent   		  |Horizon Connection Server |389	   |TCP		   |						   	   |
+|App Volumes Agent 		  |App Volumes Manager		 |443	   |TCP		   |Puerto 80 si la comunicación no usa SSL	   |
+|App Volumes Agent 		  |App Volumes Manager		 |5985	   |TCP		   |PowerShell web services 	   |
+|DEM Agentes 			  |File Share				 |445	   |TCP		   |Acceso al recurso SMB	 	   |
+
+
+
 Espero que os sirva.
 
 Un saludo!
