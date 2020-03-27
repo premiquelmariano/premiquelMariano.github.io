@@ -10,14 +10,15 @@ tag:
 - euc
 - desktop
 - mobility
-permalink: /ports/
+- networking
 
 ---
 
 Buenos dias a tod@s!!
 
+# 	Conexiones cliente
 
-#	Conexión interna
+###	Conexión interna
 
 | Origen    	      |  Destino    			 |Puerto   |Protocolo  |Descripción    		   |
 |:-------------------:|:------------------------:|:-------:|:---------:|:---------------------:|
@@ -29,7 +30,7 @@ Buenos dias a tod@s!!
 |Horizon Client       |Horizon Agent			 |3211	   |TCP		   |Redirección USB	  	   |
 |Navegador Web        |Horizon Agent			 |8443	   |TCP		   |Horizon 7 HTML Access  |
 
-#	Conexión externa
+###	Conexión externa
 
 | Origen    	      |  Destino    			 |Puerto   |Protocolo  |Descripción    		   |
 |:-------------------:|:------------------------:|:-------:|:---------:|:---------------------:|
@@ -61,6 +62,13 @@ Buenos dias a tod@s!!
 |Horizon Connection Server|UAG						 |9443	   |TCP		   |					   |
 |Horizon Connection Server|App Volumes Manager		 |443	   |TCP		   |					   |
 |Horizon Connection Server|RSA SecurID Authentication Manager		 |5500	   |UDP		   |Autenticación doble factor					   |
+
+#	View Composer
+
+| Origen    		      |  Destino    			 |Puerto   |Protocolo  |Descripción    		   |
+|:-----------------------:|:------------------------:|:-------:|:---------:|:---------------------:|
+|View Composer			  |vCenter server 			 |443	   |TCP		   |SOAP			   	   |
+|View Composer			  |ESXi						 |902	   |TCP		   |SOAP			   	   |
 
 #	Unified Access Gateway
 
@@ -100,4 +108,6 @@ Un saludo!
 
 Miquel.
 
+
+Toda la información aquí expuesta ha sido sacada de la guia oficial [Network Ports in VMware Horizon 7](https://techzone.vmware.com/resource/network-ports-vmware-horizon-7)
 
