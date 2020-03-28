@@ -59,6 +59,7 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 ![certificado-connection-server-17]({{ site.imagesposts2020 }}/02/certificado-connection-server-17.png){: .align-center}
 ![certificado-connection-server-18]({{ site.imagesposts2020 }}/02/certificado-connection-server-18.png){: .align-center}
 ![certificado-connection-server-19]({{ site.imagesposts2020 }}/02/certificado-connection-server-19.png){: .align-center}
+![certificado-connection-server-20]({{ site.imagesposts2020 }}/02/certificado-connection-server-20.png){: .align-center}
 
 # Instalación de certificado wildcard en Unified Access Gateway
 
