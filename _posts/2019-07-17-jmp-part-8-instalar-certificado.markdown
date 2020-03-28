@@ -38,14 +38,16 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 - [Part 17: Instalación y configuración JMP Server]({{ site.url }}/jmp-part17/)
 - [Part 18: Aprovisionamiento con JMP]({{ site.url }}/jmp-part18/)
 
-# Configuración de UAG en HA
+# Instalación de certificado wildcard en Connection Server
 
-Lo primero que tendremos que hacer para dotar nuestro UAG de alta disponibilidad, será desplegar otra instancia de Unified Access Gateway
+![certificado-connection-server-01]({{ site.imagesposts2020 }}/02/certificado-connection-server-01.png){: .align-center}
 
-![certificado-01]({{ site.imagesposts2020 }}/02/certificado-01.png){: .align-center}
-![certificado-02]({{ site.imagesposts2020 }}/02/certificado-02.png){: .align-center}
-![certificado-03]({{ site.imagesposts2020 }}/02/certificado-03.png){: .align-center}
-![certificado-04]({{ site.imagesposts2020 }}/02/certificado-04.png){: .align-center}
+# Instalación de certificado wildcard en Unified Access Gateway
+
+![certificado-uag-01]({{ site.imagesposts2020 }}/02/certificado-uag-01.png){: .align-center}
+![certificado-uag-02]({{ site.imagesposts2020 }}/02/certificado-uag-02.png){: .align-center}
+![certificado-uag-03]({{ site.imagesposts2020 }}/02/certificado-uag-03.png){: .align-center}
+![certificado-uag-04]({{ site.imagesposts2020 }}/02/certificado-uag-04.png){: .align-center}
 
 
 Espero que os sirva.
