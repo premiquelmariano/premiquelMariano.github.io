@@ -1,5 +1,5 @@
 ---
-title: Creando un entorno JMP con VMware Horizon - Parte 13
+title: Creando un entorno JMP con VMware Horizon - Parte 13 - Crear nuestro primer App Stack
 date: '2019-07-17 00:00:00'
 layout: post
 image: /assets/images/posts/2019/07/horizon-logo.png
@@ -49,6 +49,8 @@ Una vez tengamos creados los AppStack, se montarán en modo sólo lectura y ser�
 
 Vamos al lio!
 
+#	Creación de nuestro primer App Stack
+
 Al entrar en nuestro App Volumes Manager, nos dirigiremos en la pestaña "Volumes" > "AppStacks" y pulsaremos sobre el botón "Create"
 
 ![appstack1]({{ site.imagesposts2019 }}/08/appstack1.png){: .align-center}
@@ -81,7 +83,7 @@ Ojo, no pulsar en "Aceptar", ahora es el momento de instalar todas nuestras apli
 
 ![appstack7]({{ site.imagesposts2019 }}/08/appstack7.png){: .align-center}
 
-Tras instalar todas las aplicaciones, en mi caso Google Chrome, será el momento de pulsar en el botón de "Aceptar"
+Tras instalar todas las aplicaciones, en mi caso Notepad++, será el momento de pulsar en el botón de "Aceptar"
 
 Empezará el proceso de analizar todos los cambios que ha habido en el sistema y finalmente nos pedirá un reinicio.
 
@@ -98,6 +100,8 @@ Tras el reinicio, nos aparecerá otro pop-up indicando que el aprovisionamiento 
 Y listo, ya tenemos nuestro primer App Stack listo para assignarlo a nuestros usuarios.
 
 ![appstack14]({{ site.imagesposts2019 }}/08/appstack14.png){: .align-center}
+
+#	Asignación de usuarios
 
 Es una buena práctica, que la gestión de asignaciones se haga a través de nuestro directorio activo. En mi caso, he creado unos grupos en mi dominio con nombre ***g_appstack_xxx***. De esta manera con sólo asignar usuarios a estos grupos, automáticamente ya podrán acceder a las aplicaciones.
 
