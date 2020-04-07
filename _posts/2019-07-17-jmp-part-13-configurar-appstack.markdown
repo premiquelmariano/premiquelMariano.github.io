@@ -14,9 +14,7 @@ permalink: /jmp-part13/
 
 ---
 
-Buenos dias a tod@s!!
-
-En la siguiente serie de posts, pretendo explicar durante las próximas semanas el paso a paso para instalar un entorno JMP (Just-in-Time Management Platform) utilizando VMware Horizon 7 Instant Clones + App Volumes + VMware UEM (User Environment Manager) 
+Si habeis seguido la serie con atención, en este punto ya tendreis [instalado]({{ site.url }}/jmp-part11/) y [configurado]({{ site.url }}/jmp-part12/) vuestro entorno con App Volumes.
 
 - [Part 1: Introducción]({{ site.url }}/jmp-part1/)
 - [Part 2: Preparar servidor SQL]({{ site.url }}/jmp-part2/)
@@ -37,7 +35,6 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 - [Part 17: Instalación y configuración JMP Server]({{ site.url }}/jmp-part17/)
 - [Part 18: Aprovisionamiento con JMP]({{ site.url }}/jmp-part18/)
 
-Si habeis seguido la serie con atención, en este punto ya tendreis [instalado]({{ site.url }}/jmp-part11/) y [configurado]({{ site.url }}/jmp-part12/) vuestro entorno con App Volumes.
 
 Es el momento ahora de ver cómo se crea nuestro primer AppStack.
 
