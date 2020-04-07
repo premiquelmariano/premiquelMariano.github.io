@@ -42,6 +42,8 @@ Un AppStack es un disco, generalmente un .vmdk, de sólo lectura que contiene un
 
 Es posible combinar diferentes aplicaciones en un mismo AppStack, lo que nos permitirá agrupar, por ejemplo, las aplicaciones "core" de nuestra empresa y distribuirlas conjuntamente.
 
+![appstack00]({{ site.imagesposts2019 }}/08/appstack00.png){: .align-center}
+
 Una vez tengamos creados los AppStack, se montarán en modo sólo lectura y serán compartidos entre los escritorios de nuestros usuarios dentro del datacenter.
 
 Vamos al lio!
