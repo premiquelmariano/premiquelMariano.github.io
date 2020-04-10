@@ -14,7 +14,10 @@ permalink: /jmp-part14/
 
 ---
 
-Siguiendo con la serie de posts sobre VMware Horizon 7 y JMP, hoy vamos a seguir hablando sobre App Volumes, en concreto, de los Writable Volumes
+https://blogs.vmware.com/consulting/2014/12/app-volumes-appstacks-vs-writable-volumes.html
+
+
+Siguiendo con la serie de posts sobre VMware Horizon 7 y JMP, hoy vamos a seguir hablando sobre App Volumes, en concreto, de los Writable Volumes.
 
 - [Part 1: Introducción]({{ site.url }}/jmp-part1/)
 - [Part 2: Preparar servidor SQL]({{ site.url }}/jmp-part2/)
@@ -34,6 +37,20 @@ Siguiendo con la serie de posts sobre VMware Horizon 7 y JMP, hoy vamos a seguir
 - [Part 16: Primeros pasos con UEM]({{ site.url }}/jmp-part16/)
 - [Part 17: Instalación y configuración JMP Server]({{ site.url }}/jmp-part17/)
 - [Part 18: Aprovisionamiento con JMP]({{ site.url }}/jmp-part18/)
+
+#	¿Qué es Writable Volumes?
+
+Sacado de la documentación oficial, los Writable Volumes, son volúmenes dónde los usuarios pueden guardar sus propios datos y configuraciones específicos de su perfil. Este volúmen se asigna a cada usuario y los datos que ahí se almacenan se migran con el usuario en las diferentes máquinas donde se inicie sesión.
+
+Un Writable Volume, es un disco .vmdk (o .vhd si no estamos en un entorno virtualizado) vacío que se asigna a cada usuario.
+
+#	¿Para qué se usan los Writable Volumes?
+
+#	Diferentes perfiles de Writable Volumes
+
+#	¿Cómo editar un template de Writable Volumes?
+
+#	Diferencias entre un App Stack y Writable Volumes
 
 ![writable_volumes001]({{ site.imagesposts2020 }}/04/writable_volumes001.png){: .align-center}
 
