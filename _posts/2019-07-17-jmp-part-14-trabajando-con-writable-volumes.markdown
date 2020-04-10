@@ -14,9 +14,6 @@ permalink: /jmp-part14/
 
 ---
 
-https://blogs.vmware.com/consulting/2014/12/app-volumes-appstacks-vs-writable-volumes.html
-
-
 Siguiendo con la serie de posts sobre VMware Horizon 7 y JMP, hoy vamos a seguir hablando sobre App Volumes, en concreto, de los Writable Volumes.
 
 - [Part 1: Introducción]({{ site.url }}/jmp-part1/)
@@ -52,12 +49,20 @@ Un Writable Volume, es un disco .vmdk (o .vhd si no estamos en un entorno virtua
 
 #	Diferencias entre un App Stack y Writable Volumes
 
+https://blogs.vmware.com/consulting/2014/12/app-volumes-appstacks-vs-writable-volumes.html
+
+
+
+
+
+
+
+
 ![writable_volumes001]({{ site.imagesposts2020 }}/04/writable_volumes001.png){: .align-center}
 
 ![writable_volumes000]({{ site.imagesposts2020 }}/04/writable_volumes000.png){: .align-center}
 
-Podemos ver cómo aparece el icono de Notepad++ en el escritorio, incluso en programas y características aparece cómo un programa mas.
-En el administrador de discos podemos ver un nuevo disco, que corresponde al AppStack, pero sin embargo no se monta cómo una una unidad más y es totalmente transparente para el usuario
+
 
 Espero que os guste.
 
