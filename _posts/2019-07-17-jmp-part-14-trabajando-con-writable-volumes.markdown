@@ -39,11 +39,15 @@ Siguiendo con la serie de posts sobre VMware Horizon 7 y JMP, hoy vamos a seguir
 
 Sacado de la documentación oficial, los Writable Volumes, son volúmenes dónde los usuarios pueden guardar sus propios datos y configuraciones específicos de su perfil. Este volúmen se asigna a cada usuario y los datos que ahí se almacenan se migran con el usuario en las diferentes máquinas donde se inicie sesión.
 
-Un Writable Volume, es un disco .vmdk (o .vhd si no estamos en un entorno virtualizado) vacío que se asigna a cada usuario.
+![writable_volumes001]({{ site.imagesposts2020 }}/04/writable_volumes001.png){: .align-center}
 
 #	¿Para qué se usan los Writable Volumes?
 
+https://docs.vmware.com/en/VMware-App-Volumes/2.12/com.vmware.appvolumes.user.doc/GUID-EF439E8C-E102-4ECD-A9F5-BA1280FDFD83.html
+
 #	Diferentes perfiles de Writable Volumes
+
+https://ageroskam.nl/app-volumes-2-x/manage-user-profiles-with-writable-volumes/
 
 #	Creación de Writable Volumes
 
@@ -58,27 +62,12 @@ http://www.virtualizationblog.com/managing-user-installed-applications-user-prof
 ![writable_volumes006]({{ site.imagesposts2020 }}/04/writable_volumes006.png){: .align-center}
 ![writable_volumes007]({{ site.imagesposts2020 }}/04/writable_volumes007.png){: .align-center}
 
-
 #	¿Cómo editar un template de Writable Volumes?
 
-#	Diferencias entre un App Stack y Writable Volumes
-
-https://blogs.vmware.com/consulting/2014/12/app-volumes-appstacks-vs-writable-volumes.html
+https://ageroskam.nl/app-volumes-2-x/manage-user-profiles-with-writable-volumes/
 
 
 
-
-
-
-
-
-![writable_volumes001]({{ site.imagesposts2020 }}/04/writable_volumes001.png){: .align-center}
-
-
-
-
-
-Espero que os guste.
 
 Un saludo!
 
