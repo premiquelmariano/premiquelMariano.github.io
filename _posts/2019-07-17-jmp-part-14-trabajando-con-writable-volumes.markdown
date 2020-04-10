@@ -45,6 +45,20 @@ Un Writable Volume, es un disco .vmdk (o .vhd si no estamos en un entorno virtua
 
 #	Diferentes perfiles de Writable Volumes
 
+#	Creación de Writable Volumes
+
+http://www.virtualizationblog.com/managing-user-installed-applications-user-profile-using-vmware-app-volumes/
+
+![writable_volumes000]({{ site.imagesposts2020 }}/04/writable_volumes000.png){: .align-center}
+
+![writable_volumes002]({{ site.imagesposts2020 }}/04/writable_volumes002.png){: .align-center}
+![writable_volumes003]({{ site.imagesposts2020 }}/04/writable_volumes003.png){: .align-center}
+![writable_volumes004]({{ site.imagesposts2020 }}/04/writable_volumes004.png){: .align-center}
+![writable_volumes005]({{ site.imagesposts2020 }}/04/writable_volumes005.png){: .align-center}
+![writable_volumes006]({{ site.imagesposts2020 }}/04/writable_volumes006.png){: .align-center}
+![writable_volumes007]({{ site.imagesposts2020 }}/04/writable_volumes007.png){: .align-center}
+
+
 #	¿Cómo editar un template de Writable Volumes?
 
 #	Diferencias entre un App Stack y Writable Volumes
@@ -60,7 +74,7 @@ https://blogs.vmware.com/consulting/2014/12/app-volumes-appstacks-vs-writable-vo
 
 ![writable_volumes001]({{ site.imagesposts2020 }}/04/writable_volumes001.png){: .align-center}
 
-![writable_volumes000]({{ site.imagesposts2020 }}/04/writable_volumes000.png){: .align-center}
+
 
 
 
