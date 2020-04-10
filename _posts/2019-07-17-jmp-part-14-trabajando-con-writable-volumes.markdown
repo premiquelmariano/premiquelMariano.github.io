@@ -14,11 +14,7 @@ permalink: /jmp-part14/
 
 ---
 
-https://ageroskam.nl/app-volumes-2-x/manage-user-profiles-with-writable-volumes/
-
-Buenos dias a tod@s!!
-
-En la siguiente serie de posts, pretendo explicar durante las próximas semanas el paso a paso para instalar un entorno JMP (Just-in-Time Management Platform) utilizando VMware Horizon 7 Instant Clones + App Volumes + VMware UEM (User Environment Manager) 
+Siguiendo con la serie de posts sobre VMware Horizon 7 y JMP, hoy vamos a seguir hablando sobre App Volumes, en concreto, de los Writable Volumes
 
 - [Part 1: Introducción]({{ site.url }}/jmp-part1/)
 - [Part 2: Preparar servidor SQL]({{ site.url }}/jmp-part2/)
