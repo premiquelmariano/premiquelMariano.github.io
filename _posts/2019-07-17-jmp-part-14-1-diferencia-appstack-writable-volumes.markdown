@@ -10,7 +10,7 @@ tag:
 - euc
 - desktop
 - mobility
-permalink: /jmp-part14/
+permalink: /jmp-part14-1/
 
 ---
 
