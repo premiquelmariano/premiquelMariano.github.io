@@ -15,6 +15,8 @@ tag:
 
 https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vcenter.install.doc/GUID-28156B0F-09AD-4B44-BC29-BFA91773DD46.html#GUID-28156B0F-09AD-4B44-BC29-BFA91773DD46__FIG_A94B7B89-5EC6-4C26-8730-534A15EEDCE1
 
+https://virtualtassie.com/2018/vcenter-6-7-cross-sso-domain-repointing/
+
 
 cmsso-util domain-repoint -m pre-check --src-emb-admin Administrator --replication-partner-fqdn vcenter-p --replication-partner-admin administrator --dest-domain-name vsphere.local
 

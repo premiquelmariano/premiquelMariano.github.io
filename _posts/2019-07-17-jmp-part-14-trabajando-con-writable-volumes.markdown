@@ -50,16 +50,29 @@ https://docs.vmware.com/en/VMware-App-Volumes/2.12/com.vmware.appvolumes.user.do
 https://ageroskam.nl/app-volumes-2-x/manage-user-profiles-with-writable-volumes/
 
 #	Creación de Writable Volumes
-
 http://www.virtualizationblog.com/managing-user-installed-applications-user-profile-using-vmware-app-volumes/
+
+
+El proceso de creación de un Writable Volume es tremendamente sencillo y consta de las siguientes fases:
 
 ![writable_volumes000]({{ site.imagesposts2020 }}/04/writable_volumes000.png){: .align-center}
 
+En la pestaña Writables > Create
 ![writable_volumes002]({{ site.imagesposts2020 }}/04/writable_volumes002.png){: .align-center}
+
+Buscaremos al usuario o grupo de usuarios al que queramos asociar ese Writable Volume así cómo el datastore donde se almacenará y la plantilla en la que nos basaremos.
 ![writable_volumes003]({{ site.imagesposts2020 }}/04/writable_volumes003.png){: .align-center}
+
+Creamos el volúmen en background
 ![writable_volumes004]({{ site.imagesposts2020 }}/04/writable_volumes004.png){: .align-center}
+
+Y ya tendremos el volúmen. De momento en estado "Detached"
 ![writable_volumes005]({{ site.imagesposts2020 }}/04/writable_volumes005.png){: .align-center}
+
+Al iniciar sesión en nuestro VDI con el App Volumes Agent instalado, automáticamente se nos vinculará otro disco correspondiente a nuestro Writable Volume
 ![writable_volumes006]({{ site.imagesposts2020 }}/04/writable_volumes006.png){: .align-center}
+
+Y desde el App Volumes Manager, veremos que el estado a pasado a "Attached"
 ![writable_volumes007]({{ site.imagesposts2020 }}/04/writable_volumes007.png){: .align-center}
 
 #	¿Cómo editar un template de Writable Volumes?
