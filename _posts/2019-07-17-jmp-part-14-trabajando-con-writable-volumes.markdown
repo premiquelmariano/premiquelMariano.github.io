@@ -39,15 +39,33 @@ Siguiendo con la serie de posts sobre VMware Horizon 7 y JMP, hoy vamos a seguir
 
 Sacado de la documentación oficial, los Writable Volumes, son volúmenes dónde los usuarios pueden guardar sus propios datos y configuraciones específicos de su perfil. Este volúmen se asigna a cada usuario y los datos que ahí se almacenan se migran con el usuario en las diferentes máquinas donde se inicie sesión.
 
-![writable_volumes001]({{ site.imagesposts2020 }}/04/writable_volumes001.png){: .align-center}
+Sería un sistema parecido a los tradicionales Persistent Disk que se usan en los escritorios Linked Clone. La principal ventaja de un Writable Volume frente a un Persistent Disk es que el Writable va siempre con el usuario, mientras que un Persistent Disk, a parte de estar atado a un usuario, también lo está a un escritorio.
+
+Con persistent disk, si un usuario tiene varios escritorios Linked Clone deberá tener múltiples Persistent Disk uno por escriorio. Con Writable Volumes, el usuario podrá iniciar sesión en múltiples escritorios (mo de forma simultánea) y sus datos se vincularán automáticamente a cada escritorio.
 
 #	¿Para qué se usan los Writable Volumes?
 
-https://docs.vmware.com/en/VMware-App-Volumes/2.12/com.vmware.appvolumes.user.doc/GUID-EF439E8C-E102-4ECD-A9F5-BA1280FDFD83.html
+Los writable volumes básicamente están diseñados para garantizar y dar continuidad a los datos de usuario en entornos no-persistentes. Configuraciones de aplicación, perfil de usuario, información de licencia, ficheros de configuración o incluso aplicaciones instaladas por el propio usuario son algunos ejemplos de lo que se guardará en este volúmen.
 
-#	Diferentes perfiles de Writable Volumes
+![writable_volumes001]({{ site.imagesposts2020 }}/04/writable_volumes001.png){: .align-center}
 
-https://ageroskam.nl/app-volumes-2-x/manage-user-profiles-with-writable-volumes/
+#	Diferentes plantillas de Writable Volumes
+
+Una plantilla, en Writable Volumes, es un disco .vmdk en dónde se especifica qué datos de usuario se guardarán. A partir de esta plantilla, se crearán los Writable Volumes de cada usuario y dependiendo de ella, se guardará una u otra información.
+
+Por defecto, en cualquier instalación de App Volumes están disponibles 3 plantillas:
+
+- template_profile_only.vmdk (10Gb)
+- template_uia_only.vmdk (10Gb)
+- template_uia_plus_profile.vmdk (10Gb)
+
+**User Profile Data Only**: Guarda únicamente datos del perfil de usuario
+**User Installed Applications Only** Guarda únicamente aplicaciones que el usuario se pueda instalar en su escritorio
+**Both Profile Data and User Installed Applications** Guarda las 2 cosas, el perfil del usuario y las aplicaciones.
+
+Por defecto, estos perfiles tienen una capacidad de 10Gb., más adelante veremos cómo modificarlos y crear nuestros propios perfiles.
+
+
 
 #	Creación de Writable Volumes
 http://www.virtualizationblog.com/managing-user-installed-applications-user-profile-using-vmware-app-volumes/
