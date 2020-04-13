@@ -59,10 +59,8 @@ Por defecto, en cualquier instalación de App Volumes están disponibles 3 plant
 - template_uia_only.vmdk (10Gb)
 - template_uia_plus_profile.vmdk (10Gb)
 
-**User Profile Data Only**: Guarda únicamente datos del perfil de usuario
-
-**User Installed Applications Only** Guarda únicamente aplicaciones que el usuario se pueda instalar en su escritorio
-
+**User Profile Data Only**: Guarda únicamente datos del perfil de usuario.
+**User Installed Applications Only** Guarda únicamente aplicaciones que el usuario se pueda instalar en su escritorio.
 **Both Profile Data and User Installed Applications** Guarda las 2 cosas, el perfil del usuario y las aplicaciones.
 
 Por defecto, estos perfiles tienen una capacidad de 10Gb., más adelante veremos cómo modificarlos y crear nuestros propios perfiles.
