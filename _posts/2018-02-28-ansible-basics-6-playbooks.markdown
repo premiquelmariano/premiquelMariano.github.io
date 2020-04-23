@@ -1,5 +1,5 @@
 ---
-title: Back-to-basics 3
+title: Back-to-basics 3a
 date: '2018-02-28 00:00:00'
 lastmod: 2020-02-28 00:00:00
 layout: post
@@ -11,7 +11,7 @@ tag:
 - vexpert
 - devops
 - backtobasics
-category: blog
+categories: blog
 author: miquelMariano
 description: Back-to-basics 2 - ESXi logs
 hidden: false
