@@ -1,7 +1,7 @@
 ---
-title: Back-to-basics 3 - ESXi logs - TEST
+title: Back-to-basics 3 - ESXi logs - TEST - Prueba
 date: '2018-02-28 00:00:00'
-update: 2020-02-28 00:00:00
+last_modified_at: 2020-02-28 00:00:00
 layout: post
 image: /assets/images/posts/2018/03/logs.png
 headerImage: true
