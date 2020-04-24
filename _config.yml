@@ -22,7 +22,7 @@ url: 'https://premiquelmariano.github.io'
 
 author: Miquel Mariano                  # change to your full name
 
-avatar: /assets/img/sample/avatar.jpg   # support internet resources
+avatar: /assets/images/perfil2019-redondo.png   # support internet resources
 
 vcap_images: https://premiquelMariano.github.io/assets/images/vcap
 imagesposts2016: https://premiquelMariano.github.io/assets/images/posts/2016
@@ -60,7 +60,7 @@ timezone: Europe/Madrid
 
 google_analytics:
   # Fill with your Google Analytics ID
-  id: ''
+  id: "UA-89683320-1"
   # The Google Analytics pageviews switch.
 
   pv:
