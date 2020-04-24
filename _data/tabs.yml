@@ -29,6 +29,6 @@
   path: tabs
   url: about
 -
-  name: Test
+  name: Test-hola
   icon: "fas fa-test"
   url: https://miquelmariano.github.io/vmwareporvexperts/
