@@ -6,7 +6,7 @@
 
 
 -
-  name: Home
+  name: Inicio
   icon: "fas fa-home"
 -
   name: Categorias
@@ -19,27 +19,12 @@
   path: tabs
   url: tags
 -
-  name: "Archives"
+  name: "Archivo"
   path: tabs
   url: archives
   icon: "fas fa-archive"
 -
-  name: "About"
+  name: "Sobre mí"
   icon: "fas fa-info"
   path: tabs
   url: about
- -
-  name: "#vmwareporvexperts"
-  icon: "fas fa-info"
-  path: tabs
-  url: https://miquelmariano.github.io/vmwareporvexperts/
- -
-  name: "VCAP6-Deploy"
-  icon: "fas fa-info"
-  path: tabs
-  url: https://miquelmariano.github.io/vcap-experience/
- -
-  name: "VCAP6-Design"
-  icon: "fas fa-info"
-  path: tabs
-  url: https://miquelmariano.github.io/vcap-design-experience/
