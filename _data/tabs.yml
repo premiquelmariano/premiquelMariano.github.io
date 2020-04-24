@@ -28,3 +28,18 @@
   icon: "fas fa-info"
   path: tabs
   url: about
+ -
+  name: "#vmwareporvexperts"
+  icon: "fas fa-info"
+  path: tabs
+  url: https://miquelmariano.github.io/vmwareporvexperts/
+ -
+  name: "VCAP6-Deploy"
+  icon: "fas fa-info"
+  path: tabs
+  url: https://miquelmariano.github.io/vcap-experience/
+ -
+  name: "VCAP6-Design"
+  icon: "fas fa-info"
+  path: tabs
+  url: https://miquelmariano.github.io/vcap-design-experience/
