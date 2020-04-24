@@ -24,6 +24,13 @@ author: Miquel Mariano                  # change to your full name
 
 avatar: /assets/img/sample/avatar.jpg   # support internet resources
 
+vcap_images: https://premiquelMariano.github.io/assets/images/vcap
+imagesposts2016: https://premiquelMariano.github.io/assets/images/posts/2016
+imagesposts2017: https://premiquelMariano.github.io/assets/images/posts/2017
+imagesposts2018: https://premiquelMariano.github.io/assets/images/posts/2018
+imagesposts2019: https://premiquelMariano.github.io/assets/images/posts/2019
+imagesposts2020: https://premiquelMariano.github.io/assets/images/posts/2020
+
 github:
   username: github_username             # change to your github username
 
