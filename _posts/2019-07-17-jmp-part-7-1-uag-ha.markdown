@@ -14,7 +14,7 @@ permalink: /jmp-part7-1/
 
 ---
 
-En el capítulo de hoy de la serie "Creando un entorno JMP con VMware Horizon" veremos cómo dodar a nuestro UAG de alta disponibilidad y eliminar así un único punto de fallo.
+En el capítulo de hoy de la serie "Creando un entorno JMP con VMware Horizon" veremos cómo dotar a nuestro UAG de alta disponibilidad y eliminar así un único punto de fallo.
 
 Os dejo a continuación el índice de toda la serie:
 
@@ -22,27 +22,27 @@ Os dejo a continuación el índice de toda la serie:
 - [Part 2: Preparar servidor SQL]({{ site.url }}/jmp-part2/)
 - [Part 3: Preparar Active Directory]({{ site.url }}/jmp-part3/)
 - [Part 4: Instalación y configuración Connection Server]({{ site.url }}/jmp-part4/)
-- [Part 5: Instalación y configuración Replica Server]({{ site.url }}/jmp-part5/)
-- [Part 6: Intalación y configuración de Security Server]({{ site.url }}/jmp-part6/)
-- [Part 7: Intalación y configuración de UAG]({{ site.url }}/jmp-part7/)
-    - [Part 7.1: Configuración de UAG en HA]({{ site.url }}/jmp-part7-1/)
-- [Part 8: Instalación certificado (opcional)]({{ site.url }}/jmp-part8/)
+- [Part 5: Instalación y configuración Replica Server (opcional)]({{ site.url }}/jmp-part5/)
+- Part 6: Instalación y configuración de Security Server (opcional)
+- [Part 7: Instalación y configuración de UAG (opcional)]({{ site.url }}/jmp-part7/)
+		- [Part 7.1: Configuración de UAG en HA]({{ site.url }}/jmp-part7-1/)
+- Part 8: Instalación certificado (opcional)
 - [Part 9: Preparar plantilla master para Instant Clone]({{ site.url }}/jmp-part9/)
 - [Part 10: Configurar un pool de Instant Clone]({{ site.url }}/jmp-part10/)
 - [Part 11: Instalar App Volumes]({{ site.url }}/jmp-part11/)
 - [Part 12: Configuración inicial App Volumes]({{ site.url }}/jmp-part12/)
 - [Part 13: Crear nuestro primer App Stack]({{ site.url }}/jmp-part13/)
-- [Part 14: Trabajando con Writable Volumes]({{ site.url }}/jmp-part14/)
-- [Part 15: User Environment Manager Installation]({{ site.url }}/jmp-part15/)
-- [Part 16: Primeros pasos con UEM]({{ site.url }}/jmp-part16/)
-- [Part 17: Instalación y configuración JMP Server]({{ site.url }}/jmp-part17/)
-- [Part 18: Aprovisionamiento con JMP]({{ site.url }}/jmp-part18/)
+- Part 14: Trabajando con Writable Volumes
+- Part 15: User Environment Manager Installation
+- Part 16: Primeros pasos con UEM
+- Part 17: Instalación y configuración JMP Server
+- Part 18: Aprovisionamiento con JMP
 
 # Despliegue de un nuevo UAG
 
 Lo primero que tendremos que hacer para dotar nuestro UAG de alta disponibilidad, será desplegar otra instancia de Unified Access Gateway
 
-Para ello, podremos seguir los pasos descritors en la [Part 7: Intalación y configuración de UAG]({{ site.url }}/jmp-part7/)
+Para ello, podremos seguir los pasos descritos en la [Part 7: Instalación y configuración de UAG]({{ site.url }}/jmp-part7/)
 
 ![uag-ha01]({{ site.imagesposts2020 }}/02/uag-ha01.png){: .align-center}
 
@@ -102,7 +102,7 @@ Si apagamos el UAG02, observamos que la VIP pasa a estar levantada en el UAG01 y
 
 Y hasta aquí por hoy. Espero que os haya gustado.
 
-Un saludo!
+¡Un saludo!
 
 Miquel.
 
