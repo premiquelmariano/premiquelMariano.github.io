@@ -62,9 +62,9 @@ Evidentemente, con este import, la configuración será idéntica, y deberemos d
 
 ![uag-ha04]({{ site.imagesposts2020 }}/02/uag-ha04.png){: .align-center}
 
-En el apartado de configuración del sistema, cambiaremos también el nombre de la instáncia.
-
 ![uag-ha05]({{ site.imagesposts2020 }}/02/uag-ha05.png){: .align-center}
+
+En el apartado de configuración del sistema, cambiaremos también el nombre de la instáncia.
 
 ![uag-ha05-1]({{ site.imagesposts2020 }}/02/uag-ha05-1.png){: .align-center}
 
