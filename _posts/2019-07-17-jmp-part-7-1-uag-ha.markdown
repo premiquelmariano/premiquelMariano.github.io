@@ -14,9 +14,9 @@ permalink: /jmp-part7-1/
 
 ---
 
-Buenos dias a tod@s!!
+En el capítulo de hoy de la serie "Creando un entorno JMP con VMware Horizon" veremos cómo dodar a nuestro UAG de alta disponibilidad y eliminar así un único punto de fallo.
 
-En la siguiente serie de posts, pretendo explicar durante las próximas semanas el paso a paso para instalar un entorno JMP (Just-in-Time Management Platform) utilizando VMware Horizon 7 Instant Clones + App Volumes + VMware UEM (User Environment Manager) 
+Os dejo a continuación el índice de toda la serie:
 
 - [Part 1: Introducción]({{ site.url }}/jmp-part1/)
 - [Part 2: Preparar servidor SQL]({{ site.url }}/jmp-part2/)
@@ -38,21 +38,31 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 - [Part 17: Instalación y configuración JMP Server]({{ site.url }}/jmp-part17/)
 - [Part 18: Aprovisionamiento con JMP]({{ site.url }}/jmp-part18/)
 
-# Configuración de UAG en HA
+# Despliegue de un nuevo UAG
 
 Lo primero que tendremos que hacer para dotar nuestro UAG de alta disponibilidad, será desplegar otra instancia de Unified Access Gateway
 
-![uag-ha01]({{ site.imagesposts2020 }}/02/uag-ha01.png){: .align-center}
-
 Para ello, podremos seguir los pasos descritors en la [Part 7: Intalación y configuración de UAG]({{ site.url }}/jmp-part7/)
+
+![uag-ha01]({{ site.imagesposts2020 }}/02/uag-ha01.png){: .align-center}
 
 # Configuración del nuevo UAG
 
+Una vez realizado el despliegue, para no tener que realizar la configuración desde cero, vamos a utilizar la función de exportar/importar para copiar la configuración del UAG original al que acabamos de instalar.
+
+Haremos la exportación de la config.
+
 ![uag-ha02]({{ site.imagesposts2020 }}/02/uag-ha02.png){: .align-center}
+
+Desde el nuevo UAG, realizaremos la importación del fichero .json que acabamos de exportar.
 
 ![uag-ha03]({{ site.imagesposts2020 }}/02/uag-ha03.png){: .align-center}
 
+Evidentemente, con este import, la configuración será idéntica, y deberemos de revisar las URLs para cambiar a la IP correcta correspondiente al nuevo UAG.
+
 ![uag-ha04]({{ site.imagesposts2020 }}/02/uag-ha04.png){: .align-center}
+
+En el apartado de configuración del sistema, cambiaremos también el nombre de la instáncia.
 
 ![uag-ha05]({{ site.imagesposts2020 }}/02/uag-ha05.png){: .align-center}
 
