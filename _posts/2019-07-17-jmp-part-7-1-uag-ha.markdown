@@ -82,11 +82,17 @@ En el apartado de Configuración avanzada > Configuración de Alta disponibilida
 
 ![uag-ha09]({{ site.imagesposts2020 }}/02/uag-ha09.png){: .align-center}
 
-# Pruebas
+# Pruebas de HA
+
+Para probar que la configuración realizada está funcionando correctamente y que realmente tenemos alta disponibilidad, probaremos de apagar uno de nuestros servidores.
+
+En las siguientes capturas, vemos que el UAG02 es realmente el que está activo y el que tiene la VIP levantada.
 
 ![uag-ha10]({{ site.imagesposts2020 }}/02/uag-ha10.png){: .align-center}
 
 ![uag-ha11]({{ site.imagesposts2020 }}/02/uag-ha11.png){: .align-center}
+
+Si apagamos el UAG02, observamos que la VIP pasa a estar levantada en el UAG01 y el ping no se ha perdido en ningún momento.
 
 ![uag-ha12]({{ site.imagesposts2020 }}/02/uag-ha12.png){: .align-center}
 
