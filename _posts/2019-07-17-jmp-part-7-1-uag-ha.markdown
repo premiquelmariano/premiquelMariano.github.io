@@ -70,9 +70,13 @@ En el apartado de configuración del sistema, cambiaremos también el nombre de 
 
 # Configuración de virtual IP y HA
 
+Con los 2 UAGs ya instalados y configurados, pasaremos a la configuración de la Virtual IP.
+
+En el apartado de Configuración avanzada > Configuración de Alta disponibilidad
+
 ![uag-ha06]({{ site.imagesposts2020 }}/02/uag-ha06.png){: .align-center}
 
-![uag-ha07]({{ site.imagesposts2020 }}/02/uag-ha06.png){: .align-center}
+![uag-ha07]({{ site.imagesposts2020 }}/02/uag-ha07.png){: .align-center}
 
 ![uag-ha08]({{ site.imagesposts2020 }}/02/uag-ha08.png){: .align-center}
 
