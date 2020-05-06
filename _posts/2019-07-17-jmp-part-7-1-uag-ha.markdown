@@ -50,11 +50,11 @@ Para ello, podremos seguir los pasos descritors en la [Part 7: Intalación y con
 
 Una vez realizado el despliegue, para no tener que realizar la configuración desde cero, vamos a utilizar la función de exportar/importar para copiar la configuración del UAG original al que acabamos de instalar.
 
-Haremos la exportación de la config.
+Haremos la exportación de la config:
 
 ![uag-ha02]({{ site.imagesposts2020 }}/02/uag-ha02.png){: .align-center}
 
-Desde el nuevo UAG, realizaremos la importación del fichero .json que acabamos de exportar.
+Desde el nuevo UAG, realizaremos la importación del fichero .json que acabamos de exportar:
 
 ![uag-ha03]({{ site.imagesposts2020 }}/02/uag-ha03.png){: .align-center}
 
@@ -64,19 +64,23 @@ Evidentemente, con este import, la configuración será idéntica, y deberemos d
 
 ![uag-ha05]({{ site.imagesposts2020 }}/02/uag-ha05.png){: .align-center}
 
-En el apartado de configuración del sistema, cambiaremos también el nombre de la instáncia.
+En el apartado de configuración del sistema, cambiaremos también el nombre de la instancia:
 
 ![uag-ha05-1]({{ site.imagesposts2020 }}/02/uag-ha05-1.png){: .align-center}
 
 # Configuración de virtual IP y HA
 
-Con los 2 UAGs ya instalados y configurados, pasaremos a la configuración de la Virtual IP.
+Con los 2 UAGs ya instalados y configurados, pasaremos a la configuración de la Virtual IP. Los siguientes pasos deben realizarse en ambos UAG y con los mismos parámetros.
 
-En el apartado de Configuración avanzada > Configuración de Alta disponibilidad
+En el apartado de Configuración avanzada > Configuración de Alta disponibilidad:
 
 ![uag-ha06]({{ site.imagesposts2020 }}/02/uag-ha06.png){: .align-center}
 
+Habilitamos el modo de Alta disponibilidad, añadiremos la VIP y definiremos un ID de grupo (esta configuración debe ser idéntica en ambos nodos)
+
 ![uag-ha07]({{ site.imagesposts2020 }}/02/uag-ha07.png){: .align-center}
+
+Si comparamos ambos UAGs, observamos que la configuración de HA se habrán configurado cómo "Principal" y "Copia de seguridad"
 
 ![uag-ha08]({{ site.imagesposts2020 }}/02/uag-ha08.png){: .align-center}
 
