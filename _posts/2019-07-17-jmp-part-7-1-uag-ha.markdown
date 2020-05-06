@@ -96,7 +96,7 @@ Si apagamos el UAG02, observamos que la VIP pasa a estar levantada en el UAG01 y
 
 ![uag-ha12]({{ site.imagesposts2020 }}/02/uag-ha12.png){: .align-center}
 
-Espero que os sirva.
+Y hasta aquí por hoy. Espero que os haya gustado.
 
 Un saludo!
 
