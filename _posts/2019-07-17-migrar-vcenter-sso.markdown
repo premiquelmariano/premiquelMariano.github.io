@@ -18,9 +18,9 @@ https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vcenter.install.doc/GUI
 https://virtualtassie.com/2018/vcenter-6-7-cross-sso-domain-repointing/
 
 
-cmsso-util domain-repoint -m pre-check --src-emb-admin Administrator --replication-partner-fqdn vc02.miquelmariano.github.io --replication-partner-admin administrator --dest-domain-name vsphere.local
+cmsso-util domain-repoint -m pre-check --src-emb-admin Administrator --replication-partner-fqdn vcenter-p.miquelmariano.github.io --replication-partner-admin administrator --dest-domain-name vsphere.local
 
-cmsso-util domain-repoint -m execute --src-emb-admin administrator --replication-partner-fqdn vcenter-s.miquelmariano.github.io --replication-partner-admin administrator --dest-domain-name vsphere.local
+cmsso-util domain-repoint -m execute --src-emb-admin administrator@vsphere.local --replication-partner-fqdn vcenter-p.miquelmariano.github.io --replication-partner-admin administrator@vsphere.local --dest-domain-name vsphere.local
 
 cmsso-util domain-repoint -m execute --src-emb-admin Administrator  --dest-domain-name vsphere.local
 
