@@ -108,17 +108,25 @@ Para poder customizar a nuestro gusto un template, lo que os recomiendo es hacer
 Seleccionaremos la plantilla y Copiar en:
 ![writable_volumes008]({{ site.imagesposts2020 }}/04/writable_volumes008.png){: .align-center}
 
-Generaremos una cópia en la carpeta cloudvolumes ya que no puede haber 2 ficheros con el mismo nombre en una carpeta:
+Generaremos una copia en la carpeta cloudvolumes ya que no puede haber 2 ficheros con el mismo nombre en una carpeta:
 ![writable_volumes008]({{ site.imagesposts2020 }}/04/writable_volumes008.png){: .align-center}
 
-Le cambiaremos el nombre y posteriormente lo volveremos a dejar en la carpeta writable_templates:
 ![writable_volumes009]({{ site.imagesposts2020 }}/04/writable_volumes009.png){: .align-center}
 
+Le cambiaremos el nombre y posteriormente lo volveremos a dejar en la carpeta writable_templates:
 ![writable_volumes010]({{ site.imagesposts2020 }}/04/writable_volumes010.png){: .align-center}
 
 ![writable_volumes011]({{ site.imagesposts2020 }}/04/writable_volumes011.png){: .align-center}
 
 ![writable_volumes012]({{ site.imagesposts2020 }}/04/writable_volumes012.png){: .align-center}
+
+Cuando tengamos el nuevo template clonado, lo vincularemos a una VM para editarlo. **Es importante que esta VM no tenga el App Volumes Agent instalado, por lo tango, que no sea uno de nuestros VDI**:
+![writable_volumes013]({{ site.imagesposts2020 }}/04/writable_volumes013.png){: .align-center}
+
+En la VM a la cual le hemos vinculado el nuevo .vmdk, nos aparecerá con un nuevo disco que pondremos online:
+![writable_volumes014]({{ site.imagesposts2020 }}/04/writable_volumes014.png){: .align-center}
+
+
 
 Un saludo!
 
