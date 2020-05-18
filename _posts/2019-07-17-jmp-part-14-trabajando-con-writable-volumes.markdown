@@ -37,7 +37,7 @@ Siguiendo con la serie de posts sobre VMware Horizon 7 y JMP, hoy vamos a seguir
 
 #	¿Qué es Writable Volumes?
 
-Sacado de la documentación oficial, los Writable Volumes, son volúmenes dónde los usuarios pueden guardar sus propios datos y configuraciones específicos de su perfil. Este volúmen se asigna a cada usuario y los datos que ahí se almacenan se migran con el usuario en las diferentes máquinas donde se inicie sesión.
+Sacado de la documentación oficial, los Writable Volumes, son volúmenes dónde los usuarios pueden guardar sus propios datos y configuraciones específicos de su perfil. Este volumen se asigna a cada usuario y los datos que ahí se almacenan se migran con el usuario en las diferentes máquinas donde se inicie sesión.
 
 Sería un sistema parecido a los tradicionales Persistent Disk que se usan en los escritorios Linked Clone. La principal ventaja de un Writable Volume frente a un Persistent Disk es que el Writable va siempre con el usuario, mientras que un Persistent Disk, a parte de estar atado a un usuario, también lo está a un escritorio.
 
