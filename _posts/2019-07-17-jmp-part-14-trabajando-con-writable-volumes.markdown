@@ -95,7 +95,28 @@ Y desde el App Volumes Manager, veremos que el estado a pasado a "Attached"
 
 https://ageroskam.nl/app-volumes-2-x/manage-user-profiles-with-writable-volumes/
 
+Toda la configuración de un writable volume está en un fichero llamado **snapvol.cfg**. Este fichero está en la carpeta raíz de cualquier writable volume, también en los templates.
 
+El fichero contiene la información referente a qué debe ser capturado y qué no en ese writable volume. Este fichero de configuración no solo contiene los path de las carpetas que se tienen que guardar o excluir, sinó que también incluye ramas del registro que se deben capturar.
+
+En definitiva, con esta fichero podremos customizar a medida el comportamiento que tendrán nuestros writable volumes en función de nuestras necesidades.
+
+## ¿Cómo editar el fichero snapvol.cfg?
+
+Para poder customizar a nuestro gusto un template, lo que os recomiendo es hacer un clon de uno existente que nos sirva de base.
+
+Seleccionaremos la plantilla y Copiar en:
+![writable_volumes008]({{ site.imagesposts2020 }}/04/writable_volumes008.png){: .align-center}
+
+Generaremos una cópia en la carpeta cloudvolumes ya que no puede haber 2 ficheros con el mismo nombre en una carpeta:
+![writable_volumes008]({{ site.imagesposts2020 }}/04/writable_volumes008.png){: .align-center}
+
+Le cambiaremos el nombre y posteriormente lo volveremos a dejar en la carpeta writable_templates:
+![writable_volumes009]({{ site.imagesposts2020 }}/04/writable_volumes009.png){: .align-center}
+
+![writable_volumes010]({{ site.imagesposts2020 }}/04/writable_volumes010.png){: .align-center}
+
+![writable_volumes011]({{ site.imagesposts2020 }}/04/writable_volumes011.png){: .align-center}
 
 
 Un saludo!
