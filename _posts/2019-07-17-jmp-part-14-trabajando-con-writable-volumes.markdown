@@ -118,6 +118,7 @@ Le cambiaremos el nombre y posteriormente lo volveremos a dejar en la carpeta wr
 
 ![writable_volumes011]({{ site.imagesposts2020 }}/04/writable_volumes011.png){: .align-center}
 
+![writable_volumes012]({{ site.imagesposts2020 }}/04/writable_volumes012.png){: .align-center}
 
 Un saludo!
 
