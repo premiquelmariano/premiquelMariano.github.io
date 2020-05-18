@@ -41,7 +41,7 @@ Sacado de la documentación oficial, los Writable Volumes, son volúmenes dónde
 
 Sería un sistema parecido a los tradicionales Persistent Disk que se usan en los escritorios Linked Clone. La principal ventaja de un Writable Volume frente a un Persistent Disk es que el Writable va siempre con el usuario, mientras que un Persistent Disk, a parte de estar atado a un usuario, también lo está a un escritorio.
 
-Con persistent disk, si un usuario tiene varios escritorios Linked Clone deberá tener múltiples Persistent Disk uno por escriorio. Con Writable Volumes, el usuario podrá iniciar sesión en múltiples escritorios (mo de forma simultánea) y sus datos se vincularán automáticamente a cada escritorio.
+Con persistent disk, si un usuario tiene varios escritorios Linked Clone deberá tener múltiples Persistent Disk uno por escriorio. Con Writable Volumes, el usuario podrá iniciar sesión en múltiples escritorios (no de forma simultánea) y sus datos se vincularán automáticamente a cada escritorio.
 
 #	¿Para qué se usan los Writable Volumes?
 
@@ -60,11 +60,12 @@ Por defecto, en cualquier instalación de App Volumes están disponibles 3 plant
 - template_uia_plus_profile.vmdk (10Gb)
 
 **User Profile Data Only**: Guarda únicamente datos del perfil de usuario.
+
 **User Installed Applications Only** Guarda únicamente aplicaciones que el usuario se pueda instalar en su escritorio.
+
 **Both Profile Data and User Installed Applications** Guarda las 2 cosas, el perfil del usuario y las aplicaciones.
 
 Por defecto, estos perfiles tienen una capacidad de 10Gb., más adelante veremos cómo modificarlos y crear nuestros propios perfiles.
-
 
 #	Creación de Writable Volumes
 http://www.virtualizationblog.com/managing-user-installed-applications-user-profile-using-vmware-app-volumes/
