@@ -68,8 +68,6 @@ Por defecto, en cualquier instalación de App Volumes están disponibles 3 plant
 Por defecto, estos perfiles tienen una capacidad de 10Gb., más adelante veremos cómo modificarlos y crear nuestros propios perfiles.
 
 #	Creación de Writable Volumes
-http://www.virtualizationblog.com/managing-user-installed-applications-user-profile-using-vmware-app-volumes/
-
 
 El proceso de creación de un Writable Volume es tremendamente sencillo y consta de las siguientes fases:
 
