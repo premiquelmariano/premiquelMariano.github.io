@@ -118,7 +118,8 @@ Le cambiaremos el nombre y posteriormente lo volveremos a dejar en la carpeta wr
 
 ![writable_volumes012]({{ site.imagesposts2020 }}/04/writable_volumes012.png){: .align-center}
 
-Cuando tengamos el nuevo template clonado, lo vincularemos a una VM para editarlo. **Es importante que esta VM no tenga el App Volumes Agent instalado, por lo tango, que no sea uno de nuestros VDI**:
+Cuando tengamos el nuevo template clonado, lo vincularemos a una VM para editarlo.
+ **Es importante que esta VM no tenga el App Volumes Agent instalado, por lo tanto, que no sea uno de nuestros VDI**:
 ![writable_volumes013]({{ site.imagesposts2020 }}/04/writable_volumes013.png){: .align-center}
 
 En la VM a la cual le hemos vinculado el nuevo .vmdk, nos aparecerá con un nuevo disco que pondremos online y asignarle una letra de unidad:
