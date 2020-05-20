@@ -148,16 +148,23 @@ El proceso de añadir un writable volume lo hemos visto mas arriba:
 
 Buscaremos el usuario y en el desplegable de templates, seleccionaremos la nueva plantilla que acabamos de crear.
 
-![writable_volumes018]({{ site.imagesposts2020 }}/04/writable_volumes018.png){: .align-center}
+![writable_volumes019]({{ site.imagesposts2020 }}/04/writable_volumes019.png){: .align-center}
 
+Una vez vinculado el writtable volume, iniciaremos sesión en el VDI y en la siguiente ruta podremos ver el contenido del writtable volume:
 
+`C:\SnapVolumesTemp\MountPoints\{GUID}\SVROOT\USERS\<Username>`
 
+Cómo veis, la carpeta Downloads no está, tal cómo le hemos indicado en el template.
 
+![writable_volumes020]({{ site.imagesposts2020 }}/04/writable_volumes020.png){: .align-center}
 
+Si intentamos acceder a la carpeta desde el inicio rápido, nos enseñará un error de que la ubicación no existe.
 
+![writable_volumes020]({{ site.imagesposts2020 }}/04/writable_volumes020.png){: .align-center}
 
+Y hasta aquí la entrega de hoy.
 
-
+Espero que sea de vuestro interés
 
 Un saludo!
 
