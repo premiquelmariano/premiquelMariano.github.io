@@ -123,10 +123,24 @@ Le cambiaremos el nombre y posteriormente lo volveremos a dejar en la carpeta wr
 Cuando tengamos el nuevo template clonado, lo vincularemos a una VM para editarlo. **Es importante que esta VM no tenga el App Volumes Agent instalado, por lo tango, que no sea uno de nuestros VDI**:
 ![writable_volumes013]({{ site.imagesposts2020 }}/04/writable_volumes013.png){: .align-center}
 
-En la VM a la cual le hemos vinculado el nuevo .vmdk, nos aparecerá con un nuevo disco que pondremos online:
+En la VM a la cual le hemos vinculado el nuevo .vmdk, nos aparecerá con un nuevo disco que pondremos online y asignarle una letra de unidad:
 ![writable_volumes014]({{ site.imagesposts2020 }}/04/writable_volumes014.png){: .align-center}
 
 ![writable_volumes015]({{ site.imagesposts2020 }}/04/writable_volumes015.png){: .align-center}
+
+Abriremos un explorador y con nuestro editor preferido podremos abrir el fichero **snapvol.cfg:**
+![writable_volumes016]({{ site.imagesposts2020 }}/04/writable_volumes016.png){: .align-center}
+
+Esta es la parte mas importante del proceso. Navagando a través del fichero podremos excluir los ficheros, carpetas, claves de registro, etc etc que no queramos que capture nuestro writable volume.
+
+Yo por ejemplo, he metido una exclusión para que la carpeta Downloads no se incluya en el Writable Volume:
+![writable_volumes017]({{ site.imagesposts2020 }}/04/writable_volumes017.png){: .align-center}
+
+
+
+
+
+
 
 
 
