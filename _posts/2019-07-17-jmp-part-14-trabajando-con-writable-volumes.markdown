@@ -93,8 +93,6 @@ Y desde el App Volumes Manager, veremos que el estado a pasado a "Attached"
 
 #	¿Cómo editar un template de Writable Volumes?
 
-https://ageroskam.nl/app-volumes-2-x/manage-user-profiles-with-writable-volumes/
-
 Toda la configuración de un writable volume está en un fichero llamado **snapvol.cfg**. Este fichero está en la carpeta raíz de cualquier writable volume, también en los templates.
 
 El fichero contiene la información referente a qué debe ser capturado y qué no en ese writable volume. Este fichero de configuración no solo contiene los path de las carpetas que se tienen que guardar o excluir, sinó que también incluye ramas del registro que se deben capturar.
