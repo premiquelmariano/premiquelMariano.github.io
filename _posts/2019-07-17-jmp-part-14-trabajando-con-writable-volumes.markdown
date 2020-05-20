@@ -160,7 +160,7 @@ Cómo veis, la carpeta Downloads no está, tal cómo le hemos indicado en el tem
 
 Si intentamos acceder a la carpeta desde el inicio rápido, nos enseñará un error de que la ubicación no existe.
 
-![writable_volumes020]({{ site.imagesposts2020 }}/04/writable_volumes020.png){: .align-center}
+![writable_volumes021]({{ site.imagesposts2020 }}/04/writable_volumes021.png){: .align-center}
 
 Y hasta aquí la entrega de hoy.
 
