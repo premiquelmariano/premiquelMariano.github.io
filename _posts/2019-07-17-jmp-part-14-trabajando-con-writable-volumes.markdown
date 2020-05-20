@@ -136,6 +136,19 @@ Esta es la parte mas importante del proceso. Navagando a través del fichero pod
 Yo por ejemplo, he metido una exclusión para que la carpeta Downloads no se incluya en el Writable Volume:
 ![writable_volumes017]({{ site.imagesposts2020 }}/04/writable_volumes017.png){: .align-center}
 
+Tras finalizar la edición, podremos cerrar el editor y desde el vCenter eliminar ya el vínculo del template con la VM que nos ha servido para editarlo.
+Ojo, es importante no marchar el check de eliminar el archivo del datastore.
+![writable_volumes018]({{ site.imagesposts2020 }}/04/writable_volumes018.png){: .align-center}
+
+## ¿Cómo probar el nuevo template?
+
+Ahora que ya tenemos el fichero **snapvol.cfg** customizado es momento de probarlo.
+
+El proceso de añadir un writable volume lo hemos visto mas arriba:
+
+Buscaremos el usuario y en el desplegable de templates, seleccionaremos la nueva plantilla que acabamos de crear.
+
+![writable_volumes018]({{ site.imagesposts2020 }}/04/writable_volumes018.png){: .align-center}
 
 
 
