@@ -126,6 +126,10 @@ Cuando tengamos el nuevo template clonado, lo vincularemos a una VM para editarl
 En la VM a la cual le hemos vinculado el nuevo .vmdk, nos aparecerá con un nuevo disco que pondremos online:
 ![writable_volumes014]({{ site.imagesposts2020 }}/04/writable_volumes014.png){: .align-center}
 
+![writable_volumes015]({{ site.imagesposts2020 }}/04/writable_volumes015.png){: .align-center}
+
+
+
 
 
 Un saludo!
