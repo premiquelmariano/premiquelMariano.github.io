@@ -136,7 +136,7 @@ Yo por ejemplo, he metido una exclusión para que la carpeta Downloads no se inc
 ![writable_volumes017]({{ site.imagesposts2020 }}/04/writable_volumes017.png){: .align-center}
 
 Tras finalizar la edición, podremos cerrar el editor y desde el vCenter eliminar ya el vínculo del template con la VM que nos ha servido para editarlo.
-Ojo, es importante no marchar el check de eliminar el archivo del datastore.
+**Ojo, es importante no marchar el check de eliminar el archivo del datastore.**
 ![writable_volumes018]({{ site.imagesposts2020 }}/04/writable_volumes018.png){: .align-center}
 
 ## ¿Cómo probar el nuevo template?
