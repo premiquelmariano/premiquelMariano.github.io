@@ -4,16 +4,19 @@ date: '2018-02-28 00:00:00'
 layout: post
 image: /assets/images/posts/2019/06/Cisco-and-Ansible-Happy.png
 tag:
-- vmware
-- vsphere
-- vexpert
 - devops
-- backtobasics
+- linux
+- centos7
+- ansible
+- cisco
 
 o: "{{"
 c: "}}"
 ---
 
+Hace tiempo os enseñé [cómo hacer backup automático de switches Cisco con Ansible](https://miquelmariano.github.io/2019/06/05/backup-cisco-con-ansible/). Pues bién, en el post de hoy, quiero mostraros el cómo visualizar esta información de forma fácil.
+
+Utilizaremos lighttpd cómo servidor web para mostrar nuestros ficheros de texto a través del navegador.
 
 ## Instalar lighttpd | https://www.linuxhelp.com/how-to-install-lighttpd-web-server-on-centos-7
 yum install lighttpd -y
