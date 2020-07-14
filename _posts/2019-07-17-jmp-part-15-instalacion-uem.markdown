@@ -54,7 +54,7 @@ A fecha de edición de este post, la última versión disponible es la  9.11, as
 
 En el fichero que nos descargemos, encontraremos una carpeta con unas plantillas .admx y sus correspondientes ficheros de idioma. Tendremos que copiarlos en nuestro DC para poder crear posteriormente las GPO
 
-![uem_config1]({{ site.imagesposts2020 }}/07/uem_config1.png){: .align-center}
+![uem_config1]({{ site.imagesposts2020 }}/07/dem_config1.png){: .align-center}
 
 # Crear carpetas compartidas y configuración permisos
 Cómo hemos comentado al principio, DEM no es una aplicación cliente-servidor, sinó que el agente tiene que conectarse a un recurso compartido de red para buscar la configuración.
