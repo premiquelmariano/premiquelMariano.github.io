@@ -43,7 +43,7 @@ Todo esto, lo gestionaremos desde una GUI que podremos instalar en cualquier win
 
 ![dem_esquema]({{ site.imagesposts2020 }}/07/dem_esquema.png){: .align-center}
 
-Vamos al lio.
+Vamos al lío.
 
 # Descargar última versión e instalación plantillas ADMX
 
