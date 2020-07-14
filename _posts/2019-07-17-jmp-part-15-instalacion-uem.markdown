@@ -85,7 +85,15 @@ A nivel de share, daremos control total a todos los usuarios, ya que controlarem
 
 ![dem_permisos04]({{ site.imagesposts2019 }}/08/dem_permisos04.png){: .align-center}
 
-# Instalación
+## DEM_LOGS
+
+*Administradores:* Control total
+*Usuarios:* Lectura/ejecución (sólo en esta carpeta)
+*Propietario:* Control total
+
+![dem_permisos05]({{ site.imagesposts2019 }}/08/dem_permisos05.png){: .align-center}
+
+# Instalación DEM Management Console
 
 ![dem_instalation01]({{ site.imagesposts2019 }}/08/dem_instalation01.png){: .align-center}
 ![dem_instalation02]({{ site.imagesposts2019 }}/08/dem_instalation02png){: .align-center}
@@ -96,14 +104,23 @@ A nivel de share, daremos control total a todos los usuarios, ya que controlarem
 ![dem_instalation07]({{ site.imagesposts2019 }}/08/dem_instalation07.png){: .align-center}
 ![dem_instalation08]({{ site.imagesposts2019 }}/08/dem_instalation08.png){: .align-center}
 
-![uem_config2]({{ site.imagesposts2019 }}/08/uem_config2.png){: .align-center}
-![uem_config3]({{ site.imagesposts2019 }}/08/uem_config3.png){: .align-center}
-![uem_config4]({{ site.imagesposts2019 }}/08/uem_config4.png){: .align-center}
-![uem_config5]({{ site.imagesposts2019 }}/08/uem_config5.png){: .align-center}
-![uem_config6]({{ site.imagesposts2019 }}/08/uem_config6.png){: .align-center}
-![uem_config7]({{ site.imagesposts2019 }}/08/uem_config7.png){: .align-center}
-![uem_config8]({{ site.imagesposts2019 }}/08/uem_config8.png){: .align-center}
-![uem_config9]({{ site.imagesposts2019 }}/08/uem_config9.png){: .align-center}
+# Configuración GPO
+
+![dem_gpo01]({{ site.imagesposts2019 }}/08/dem_gpo01.png){: .align-center}
+![dem_gpo02]({{ site.imagesposts2019 }}/08/dem_gpo02.png){: .align-center}
+
+![dem_gpo03]({{ site.imagesposts2019 }}/08/dem_gpo03.png){: .align-center}
+![dem_gpo04]({{ site.imagesposts2019 }}/08/dem_gpo04.png){: .align-center}
+![dem_gpo05]({{ site.imagesposts2019 }}/08/dem_gpo05.png){: .align-center}
+![dem_gpo06]({{ site.imagesposts2019 }}/08/dem_gpo06.png){: .align-center}
+![dem_gpo07]({{ site.imagesposts2019 }}/08/dem_gpo07.png){: .align-center}
+![dem_gpo08]({{ site.imagesposts2019 }}/08/dem_gpo08.png){: .align-center}
+![dem_gpo09]({{ site.imagesposts2019 }}/08/dem_gpo09.png){: .align-center}
+![dem_gpo10]({{ site.imagesposts2019 }}/08/dem_gpo10.png){: .align-center}
+![dem_gpo11]({{ site.imagesposts2019 }}/08/dem_gpo11.png){: .align-center}
+
+# Instalación DEM agent
+
 
 
 Espero que os sirva.
