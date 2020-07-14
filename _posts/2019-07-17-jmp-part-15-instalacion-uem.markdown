@@ -121,6 +121,14 @@ A nivel de share, daremos control total a todos los usuarios, ya que controlarem
 
 # Instalación DEM agent
 
+![dem_instalation_a01]({{ site.imagesposts2019 }}/08/dem_instalation_a01.png){: .align-center}
+![dem_instalation_a02]({{ site.imagesposts2019 }}/08/dem_instalation_a02png){: .align-center}
+![dem_instalation_a03]({{ site.imagesposts2019 }}/08/dem_instalation_a03.png){: .align-center}
+![dem_instalation_a04]({{ site.imagesposts2019 }}/08/dem_instalation_a04.png){: .align-center}
+![dem_instalation_a05]({{ site.imagesposts2019 }}/08/dem_instalation_a05.png){: .align-center}
+![dem_instalation_a06]({{ site.imagesposts2019 }}/08/dem_instalation_a06.png){: .align-center}
+![dem_instalation_a07]({{ site.imagesposts2019 }}/08/dem_instalation_a07.png){: .align-center}
+![dem_instalation_a08]({{ site.imagesposts2019 }}/08/dem_instalation_a08.png){: .align-center}
 
 
 Espero que os sirva.
