@@ -20,20 +20,20 @@ Seguimos con la serie de posts sobre Horizon7. En el capítulo de hoy, hablaremo
 - [Part 2: Preparar servidor SQL]({{ site.url }}/jmp-part2/)
 - [Part 3: Preparar Active Directory]({{ site.url }}/jmp-part3/)
 - [Part 4: Instalación y configuración Connection Server]({{ site.url }}/jmp-part4/)
-- [Part 5: Instalación y configuración Replica Server]({{ site.url }}/jmp-part5/)
-- [Part 6: Intalación y configuración de Security Server]({{ site.url }}/jmp-part6/)
-- [Part 7: Intalación y configuración de UAG]({{ site.url }}/jmp-part7/)
-- [Part 8: Instalación certificado (opcional)]({{ site.url }}/jmp-part8/)
+- [Part 5: Instalación y configuración Replica Server (opcional)]({{ site.url }}/jmp-part5/)
+- [Part 6: Instalación y configuración de UAG (opcional)]({{ site.url }}/jmp-part6/)
+- [Part 7: Configuración de UAG en HA]({{ site.url }}/jmp-part7/)
+- Part 8: Instalación certificado (opcional)
 - [Part 9: Preparar plantilla master para Instant Clone]({{ site.url }}/jmp-part9/)
 - [Part 10: Configurar un pool de Instant Clone]({{ site.url }}/jmp-part10/)
 - [Part 11: Instalar App Volumes]({{ site.url }}/jmp-part11/)
 - [Part 12: Configuración inicial App Volumes]({{ site.url }}/jmp-part12/)
 - [Part 13: Crear nuestro primer App Stack]({{ site.url }}/jmp-part13/)
 - [Part 14: Trabajando con Writable Volumes]({{ site.url }}/jmp-part14/)
-- [Part 15: User Environment Manager Installation]({{ site.url }}/jmp-part15/)
-- [Part 16: Primeros pasos con UEM]({{ site.url }}/jmp-part16/)
-- [Part 17: Instalación y configuración JMP Server]({{ site.url }}/jmp-part17/)
-- [Part 18: Aprovisionamiento con JMP]({{ site.url }}/jmp-part18/)
+- [Part 15: Instalación Dynamic Environment Manager]({{ site.url }}/jmp-part14/)
+- Part 16: Primeros pasos con UEM
+- Part 17: Instalación y configuración JMP Server
+- Part 18: Aprovisionamiento con JMP
 
 Dynamic Environment Manager, es una solución que nos provee una forma robusta i ágil de gestión del perfil de nuestros usuarios y gestión de su espacio de trabajo en general. Con esta herramienta podremos centralizar las configuraciones en un share y dar persistencia a nuestros usuarios.
 
@@ -41,7 +41,7 @@ DEM, no es una aplicación cliente-servidor cómo pueda ser App Volumes. DEM est
 
 Todo esto, lo gestionaremos desde una GUI que podremos instalar en cualquier windows.
 
-![dem_esquema]({{ site.imagesposts2019 }}/08/dem_esquema.png){: .align-center}
+![dem_esquema]({{ site.imagesposts2020 }}/07/dem_esquema.png){: .align-center}
 
 Vamos al lio.
 
@@ -50,11 +50,11 @@ Vamos al lio.
 Lo primero que haremos, será descargarnos del portal de my.vmware la última versión de DEM.
 
 A fecha de edición de este post, la última versión disponible es la  9.11, así que nos descargaremos esa versión
-![dem_download]({{ site.imagesposts2019 }}/08/dem_download01.png){: .align-center}
+![dem_download]({{ site.imagesposts2020 }}/07/dem_download01.png){: .align-center}
 
 En el fichero que nos descargemos, encontraremos una carpeta con unas plantillas .admx y sus correspondientes ficheros de idioma. Tendremos que copiarlos en nuestro DC para poder crear posteriormente las GPO
 
-![uem_config1]({{ site.imagesposts2019 }}/08/uem_config1.png){: .align-center}
+![uem_config1]({{ site.imagesposts2020 }}/07/uem_config1.png){: .align-center}
 
 # Crear carpetas compartidas y configuración permisos
 Cómo hemos comentado al principio, DEM no es una aplicación cliente-servidor, sinó que el agente tiene que conectarse a un recurso compartido de red para buscar la configuración.
@@ -68,7 +68,7 @@ De entrada, necesitaremos 3 carpetas compartidas
 
 A nivel de share, daremos control total a todos los usuarios, ya que controlaremos los accesos a nivel de NTFS
 
-![dem_permisos01]({{ site.imagesposts2019 }}/08/dem_permisos01.png){: .align-center}
+![dem_permisos01]({{ site.imagesposts2020 }}/07/dem_permisos01.png){: .align-center}
 
 ## DEM_CONFIG
 
@@ -76,7 +76,7 @@ A nivel de share, daremos control total a todos los usuarios, ya que controlarem
 
 **Usuarios:** Lectura
 
-![dem_permisos02]({{ site.imagesposts2019 }}/08/dem_permisos02.png){: .align-center}
+![dem_permisos02]({{ site.imagesposts2020 }}/07/dem_permisos02.png){: .align-center}
 
 ## DEM_PROFILE
 
@@ -86,7 +86,7 @@ A nivel de share, daremos control total a todos los usuarios, ya que controlarem
 
 **Propietario:** Control total
 
-![dem_permisos03]({{ site.imagesposts2019 }}/08/dem_permisos03.png){: .align-center}
+![dem_permisos03]({{ site.imagesposts2020 }}/07/dem_permisos03.png){: .align-center}
 
 ## DEM_FOLDERREDIRECTION
 
@@ -96,7 +96,7 @@ A nivel de share, daremos control total a todos los usuarios, ya que controlarem
 
 **Propietario:** Control total
 
-![dem_permisos04]({{ site.imagesposts2019 }}/08/dem_permisos04.png){: .align-center}
+![dem_permisos04]({{ site.imagesposts2020 }}/07/dem_permisos04.png){: .align-center}
 
 ## DEM_LOGS
 
@@ -106,58 +106,56 @@ A nivel de share, daremos control total a todos los usuarios, ya que controlarem
 
 **Propietario:** Control total
 
-![dem_permisos05]({{ site.imagesposts2019 }}/08/dem_permisos05.png){: .align-center}
+![dem_permisos05]({{ site.imagesposts2020 }}/07/dem_permisos05.png){: .align-center}
 
 # Instalación DEM Management Console
 La instalación de la Management Consola es muy senzilla y puede instalarse en cualquier máquina windows desde la que queramos administrar nuestro entorno. Simplemente ejecutaremos el instalador correspondiente a nuestro SO y siguiente, siguiente, fin...
 
-![dem_instalation01]({{ site.imagesposts2019 }}/08/dem_instalacion01.png){: .align-center}
-![dem_instalation02]({{ site.imagesposts2019 }}/08/dem_instalacion02.png){: .align-center}
-![dem_instalation03]({{ site.imagesposts2019 }}/08/dem_instalacion03.png){: .align-center}
-![dem_instalation04]({{ site.imagesposts2019 }}/08/dem_instalacion04.png){: .align-center}
+![dem_instalation01]({{ site.imagesposts2020 }}/07/dem_instalacion01.png){: .align-center}
+![dem_instalation02]({{ site.imagesposts2020 }}/07/dem_instalacion02.png){: .align-center}
+![dem_instalation03]({{ site.imagesposts2020 }}/07/dem_instalacion03.png){: .align-center}
+![dem_instalation04]({{ site.imagesposts2020 }}/07/dem_instalacion04.png){: .align-center}
 Aquí deberemos seleccionar la opción de Management Console
-![dem_instalation05]({{ site.imagesposts2019 }}/08/dem_instalacion05.png){: .align-center}
-![dem_instalation06]({{ site.imagesposts2019 }}/08/dem_instalacion06.png){: .align-center}
-![dem_instalation07]({{ site.imagesposts2019 }}/08/dem_instalacion07.png){: .align-center}
+![dem_instalation05]({{ site.imagesposts2020 }}/07/dem_instalacion05.png){: .align-center}
+![dem_instalation06]({{ site.imagesposts2020 }}/07/dem_instalacion06.png){: .align-center}
+![dem_instalation07]({{ site.imagesposts2020 }}/07/dem_instalacion07.png){: .align-center}
 Tras finalizar, conectaremos la Management Console a la carpeta compartida dónde guardaremos toda la configuración.
-![dem_instalation08]({{ site.imagesposts2019 }}/08/dem_instalacion08.png){: .align-center}
+![dem_instalation08]({{ site.imagesposts2020 }}/07/dem_instalacion08.png){: .align-center}
 
 # Configuración GPO
 El entorno DEM está basado en 2 GPOs:
 
 ## GPO de Equipo, aplicable a los VDI
 
-![dem_gpo01]({{ site.imagesposts2019 }}/08/dem_gpo01.png){: .align-center}
-![dem_gpo02]({{ site.imagesposts2019 }}/08/dem_gpo02.png){: .align-center}
+![dem_gpo01]({{ site.imagesposts2020 }}/07/dem_gpo01.png){: .align-center}
+![dem_gpo02]({{ site.imagesposts2020 }}/07/dem_gpo02.png){: .align-center}
 
 ## GPO de Usuario, aplicable a los usuarios que utilizarán DEM
 
-![dem_gpo03]({{ site.imagesposts2019 }}/08/dem_gpo03.png){: .align-center}
-![dem_gpo04]({{ site.imagesposts2019 }}/08/dem_gpo04.png){: .align-center}
-![dem_gpo05]({{ site.imagesposts2019 }}/08/dem_gpo05.png){: .align-center}
-![dem_gpo06]({{ site.imagesposts2019 }}/08/dem_gpo06.png){: .align-center}
-![dem_gpo07]({{ site.imagesposts2019 }}/08/dem_gpo07.png){: .align-center}
-![dem_gpo08]({{ site.imagesposts2019 }}/08/dem_gpo08.png){: .align-center}
-![dem_gpo09]({{ site.imagesposts2019 }}/08/dem_gpo09.png){: .align-center}
-![dem_gpo10]({{ site.imagesposts2019 }}/08/dem_gpo10.png){: .align-center}
-![dem_gpo11]({{ site.imagesposts2019 }}/08/dem_gpo11.png){: .align-center}
+![dem_gpo03]({{ site.imagesposts2020 }}/07/dem_gpo03.png){: .align-center}
+![dem_gpo04]({{ site.imagesposts2020 }}/07/dem_gpo04.png){: .align-center}
+![dem_gpo05]({{ site.imagesposts2020 }}/07/dem_gpo05.png){: .align-center}
+![dem_gpo06]({{ site.imagesposts2020 }}/07/dem_gpo06.png){: .align-center}
+![dem_gpo07]({{ site.imagesposts2020 }}/07/dem_gpo07.png){: .align-center}
+![dem_gpo08]({{ site.imagesposts2020 }}/07/dem_gpo08.png){: .align-center}
+![dem_gpo09]({{ site.imagesposts2020 }}/07/dem_gpo09.png){: .align-center}
+![dem_gpo10]({{ site.imagesposts2020 }}/07/dem_gpo10.png){: .align-center}
+![dem_gpo11]({{ site.imagesposts2020 }}/07/dem_gpo11.png){: .align-center}
 
 # Instalación DEM agent
 Al igual que la Management Console. El DEM Agent se instala con el mismo instalador. Simplemente en uno de los pasos, indicaremos que queremos instalar el agente y no la Management Console
 
-![dem_instalation_a01]({{ site.imagesposts2019 }}/08/dem_instalacion_a01.png){: .align-center}
-![dem_instalation_a02]({{ site.imagesposts2019 }}/08/dem_instalacion_a02.png){: .align-center}
-![dem_instalation_a03]({{ site.imagesposts2019 }}/08/dem_instalacion_a03.png){: .align-center}
-![dem_instalation_a04]({{ site.imagesposts2019 }}/08/dem_instalacion_a04.png){: .align-center}
+![dem_instalation_a01]({{ site.imagesposts2020 }}/07/dem_instalacion_a01.png){: .align-center}
+![dem_instalation_a02]({{ site.imagesposts2020 }}/07/dem_instalacion_a02.png){: .align-center}
+![dem_instalation_a03]({{ site.imagesposts2020 }}/07/dem_instalacion_a03.png){: .align-center}
+![dem_instalation_a04]({{ site.imagesposts2020 }}/07/dem_instalacion_a04.png){: .align-center}
 Aquí es dónde indicamos que esta instalación va a ser en modo Agente.
-![dem_instalation_a05]({{ site.imagesposts2019 }}/08/dem_instalacion_a05.png){: .align-center}
-![dem_instalation_a06]({{ site.imagesposts2019 }}/08/dem_instalacion_a06.png){: .align-center}
-![dem_instalation_a07]({{ site.imagesposts2019 }}/08/dem_instalacion_a07.png){: .align-center}
-![dem_instalation_a08]({{ site.imagesposts2019 }}/08/dem_instalacion_a08.png){: .align-center}
+![dem_instalation_a05]({{ site.imagesposts2020 }}/07/dem_instalacion_a05.png){: .align-center}
+![dem_instalation_a06]({{ site.imagesposts2020 }}/07/dem_instalacion_a06.png){: .align-center}
+![dem_instalation_a07]({{ site.imagesposts2020 }}/07/dem_instalacion_a07.png){: .align-center}
+![dem_instalation_a08]({{ site.imagesposts2020 }}/07/dem_instalacion_a08.png){: .align-center}
 
 Y hasta aquí la introducción e instalación de DEM, en el próximo post, veremos los [Primeros pasos con UEM]({{ site.url }}/jmp-part16/)
-
-Espero que os sirva.
 
 Un saludo!
 
