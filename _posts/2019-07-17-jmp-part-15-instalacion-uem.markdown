@@ -41,7 +41,7 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 - [Part 17: Instalación y configuración JMP Server]({{ site.url }}/jmp-part17/)
 - [Part 18: Aprovisionamiento con JMP]({{ site.url }}/jmp-part18/)
 
-# Primeros pasos con UEM
+# Descargar última versión e instalación plantillas ADMX
 
 A fecha de edición de este post, la última versión disponible es la  9.11, así que nos descargaremos esa versión
 ![dem_download]({{ site.imagesposts2019 }}/08/dem_download01.png){: .align-center}
@@ -49,6 +49,9 @@ A fecha de edición de este post, la última versión disponible es la  9.11, as
 En el fichero que nos descargemos, encontraremos una carpeta con unas plantillas .admx y sus correspondientes ficheros de idioma. Tendremos que copiarlos en nuestro DC para poder crear posteriormente las GPO
 
 ![uem_config1]({{ site.imagesposts2019 }}/08/uem_config1.png){: .align-center}
+
+# Crear carpetas compartidas y configuración permisos
+
 ![uem_config2]({{ site.imagesposts2019 }}/08/uem_config2.png){: .align-center}
 ![uem_config3]({{ site.imagesposts2019 }}/08/uem_config3.png){: .align-center}
 ![uem_config4]({{ site.imagesposts2019 }}/08/uem_config4.png){: .align-center}
