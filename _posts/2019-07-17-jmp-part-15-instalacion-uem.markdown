@@ -47,6 +47,8 @@ Vamos al lio.
 
 # Descargar última versión e instalación plantillas ADMX
 
+Lo primero que haremos, será descargarnos del portal de my.vmware la última versión de DEM.
+
 A fecha de edición de este post, la última versión disponible es la  9.11, así que nos descargaremos esa versión
 ![dem_download]({{ site.imagesposts2019 }}/08/dem_download01.png){: .align-center}
 
@@ -55,12 +57,14 @@ En el fichero que nos descargemos, encontraremos una carpeta con unas plantillas
 ![uem_config1]({{ site.imagesposts2019 }}/08/uem_config1.png){: .align-center}
 
 # Crear carpetas compartidas y configuración permisos
+Cómo hemos comentado al principio, DEM no es una aplicación cliente-servidor, sinó que el agente tiene que conectarse a un recurso compartido de red para buscar la configuración.
 
 De entrada, necesitaremos 3 carpetas compartidas
 
-* DEM_CONFIG > Se almacenará la configuración general de DEM
-* DEM_PROFILES > Dónde cada usuario almacenará la información relacionada con su perfil
-* DEM_FOLDERREDIRECTION > Dónde configuraremos la redirección de carpetas cómo el Escritorio, Mis Docuentos, Favoritos, etc etc.
+* **DEM_CONFIG** > Se almacenará la configuración general de DEM
+* **DEM_PROFILES** > Dónde cada usuario almacenará la información relacionada con su perfil
+* **DEM_FOLDERREDIRECTION** > Dónde configuraremos la redirección de carpetas cómo el Escritorio, Mis Docuentos, Favoritos, etc etc.
+* **DEM_LOGS** > Guardaremos todos los logs referentes a DEM
 
 A nivel de share, daremos control total a todos los usuarios, ya que controlaremos los accesos a nivel de NTFS
 
@@ -68,8 +72,9 @@ A nivel de share, daremos control total a todos los usuarios, ya que controlarem
 
 ## DEM_CONFIG
 
-*Administradores:* Control total
-*Usuarios:* Lectura
+**Administradores:** Control total
+
+**Usuarios:** Lectura
 
 ![dem_permisos02]({{ site.imagesposts2019 }}/08/dem_permisos02.png){: .align-center}
 
