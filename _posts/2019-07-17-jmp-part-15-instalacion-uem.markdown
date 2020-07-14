@@ -71,25 +71,25 @@ A nivel de share, daremos control total a todos los usuarios, ya que controlarem
 
 ## DEM_PROFILE
 
-*Administradores:* Control total
-*Usuarios:* Lectura/ejecución (sólo en esta carpeta)
-*Propietario:* Control total
+**Administradores:** Control total
+**Usuarios:** Lectura/ejecución (sólo en esta carpeta)
+**Propietario:** Control total
 
 ![dem_permisos03]({{ site.imagesposts2019 }}/08/dem_permisos03.png){: .align-center}
 
 ## DEM_FOLDERREDIRECTION
 
-*Administradores:* Control total
-*Usuarios:* Lectura/ejecución (sólo en esta carpeta)
-*Propietario:* Control total
+**Administradores:** Control total
+**Usuarios:** Lectura/ejecución (sólo en esta carpeta)
+**Propietario:** Control total
 
 ![dem_permisos04]({{ site.imagesposts2019 }}/08/dem_permisos04.png){: .align-center}
 
 ## DEM_LOGS
 
-*Administradores:* Control total
-*Usuarios:* Lectura/ejecución (sólo en esta carpeta)
-*Propietario:* Control total
+**Administradores:** Control total
+**Usuarios:** Lectura/ejecución (sólo en esta carpeta)
+**Propietario:** Control total
 
 ![dem_permisos05]({{ site.imagesposts2019 }}/08/dem_permisos05.png){: .align-center}
 
