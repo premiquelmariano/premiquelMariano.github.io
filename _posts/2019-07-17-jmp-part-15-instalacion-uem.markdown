@@ -95,14 +95,14 @@ A nivel de share, daremos control total a todos los usuarios, ya que controlarem
 
 # Instalación DEM Management Console
 
-![dem_instalation01]({{ site.imagesposts2019 }}/08/dem_instalation01.png){: .align-center}
-![dem_instalation02]({{ site.imagesposts2019 }}/08/dem_instalation02png){: .align-center}
-![dem_instalation03]({{ site.imagesposts2019 }}/08/dem_instalation03.png){: .align-center}
-![dem_instalation04]({{ site.imagesposts2019 }}/08/dem_instalation04.png){: .align-center}
-![dem_instalation05]({{ site.imagesposts2019 }}/08/dem_instalation05.png){: .align-center}
-![dem_instalation06]({{ site.imagesposts2019 }}/08/dem_instalation06.png){: .align-center}
-![dem_instalation07]({{ site.imagesposts2019 }}/08/dem_instalation07.png){: .align-center}
-![dem_instalation08]({{ site.imagesposts2019 }}/08/dem_instalation08.png){: .align-center}
+![dem_instalation01]({{ site.imagesposts2019 }}/08/dem_instalacion01.png){: .align-center}
+![dem_instalation02]({{ site.imagesposts2019 }}/08/dem_instalacion02png){: .align-center}
+![dem_instalation03]({{ site.imagesposts2019 }}/08/dem_instalacion03.png){: .align-center}
+![dem_instalation04]({{ site.imagesposts2019 }}/08/dem_instalacion04.png){: .align-center}
+![dem_instalation05]({{ site.imagesposts2019 }}/08/dem_instalacion05.png){: .align-center}
+![dem_instalation06]({{ site.imagesposts2019 }}/08/dem_instalacion06.png){: .align-center}
+![dem_instalation07]({{ site.imagesposts2019 }}/08/dem_instalacion07.png){: .align-center}
+![dem_instalation08]({{ site.imagesposts2019 }}/08/dem_instalacion08.png){: .align-center}
 
 # Configuración GPO
 
@@ -121,14 +121,14 @@ A nivel de share, daremos control total a todos los usuarios, ya que controlarem
 
 # Instalación DEM agent
 
-![dem_instalation_a01]({{ site.imagesposts2019 }}/08/dem_instalation_a01.png){: .align-center}
-![dem_instalation_a02]({{ site.imagesposts2019 }}/08/dem_instalation_a02png){: .align-center}
-![dem_instalation_a03]({{ site.imagesposts2019 }}/08/dem_instalation_a03.png){: .align-center}
-![dem_instalation_a04]({{ site.imagesposts2019 }}/08/dem_instalation_a04.png){: .align-center}
-![dem_instalation_a05]({{ site.imagesposts2019 }}/08/dem_instalation_a05.png){: .align-center}
-![dem_instalation_a06]({{ site.imagesposts2019 }}/08/dem_instalation_a06.png){: .align-center}
-![dem_instalation_a07]({{ site.imagesposts2019 }}/08/dem_instalation_a07.png){: .align-center}
-![dem_instalation_a08]({{ site.imagesposts2019 }}/08/dem_instalation_a08.png){: .align-center}
+![dem_instalation_a01]({{ site.imagesposts2019 }}/08/dem_instalacion_a01.png){: .align-center}
+![dem_instalation_a02]({{ site.imagesposts2019 }}/08/dem_instalacion_a02png){: .align-center}
+![dem_instalation_a03]({{ site.imagesposts2019 }}/08/dem_instalacion_a03.png){: .align-center}
+![dem_instalation_a04]({{ site.imagesposts2019 }}/08/dem_instalacion_a04.png){: .align-center}
+![dem_instalation_a05]({{ site.imagesposts2019 }}/08/dem_instalacion_a05.png){: .align-center}
+![dem_instalation_a06]({{ site.imagesposts2019 }}/08/dem_instalacion_a06.png){: .align-center}
+![dem_instalation_a07]({{ site.imagesposts2019 }}/08/dem_instalacion_a07.png){: .align-center}
+![dem_instalation_a08]({{ site.imagesposts2019 }}/08/dem_instalacion_a08.png){: .align-center}
 
 
 Espero que os sirva.
