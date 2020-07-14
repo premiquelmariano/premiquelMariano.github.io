@@ -64,21 +64,37 @@ A nivel de share, daremos control total a todos los usuarios, ya que controlarem
 
 ## DEM_CONFIG
 
-Administradores > Control total
-Usuarios > Lectura
+*Administradores:* Control total
+*Usuarios:* Lectura
 
 ![dem_permisos02]({{ site.imagesposts2019 }}/08/dem_permisos02.png){: .align-center}
 
 ## DEM_PROFILE
 
-Administradores > Control total
-Usuarios > Lectura/ejecución (sólo en esta carpeta)
-Propietario > Control total
+*Administradores:* Control total
+*Usuarios:* Lectura/ejecución (sólo en esta carpeta)
+*Propietario:* Control total
 
 ![dem_permisos03]({{ site.imagesposts2019 }}/08/dem_permisos03.png){: .align-center}
 
+## DEM_FOLDERREDIRECTION
 
+*Administradores:* Control total
+*Usuarios:* Lectura/ejecución (sólo en esta carpeta)
+*Propietario:* Control total
 
+![dem_permisos04]({{ site.imagesposts2019 }}/08/dem_permisos04.png){: .align-center}
+
+# Instalación
+
+![dem_instalation01]({{ site.imagesposts2019 }}/08/dem_instalation01.png){: .align-center}
+![dem_instalation02]({{ site.imagesposts2019 }}/08/dem_instalation02png){: .align-center}
+![dem_instalation03]({{ site.imagesposts2019 }}/08/dem_instalation03.png){: .align-center}
+![dem_instalation04]({{ site.imagesposts2019 }}/08/dem_instalation04.png){: .align-center}
+![dem_instalation05]({{ site.imagesposts2019 }}/08/dem_instalation05.png){: .align-center}
+![dem_instalation06]({{ site.imagesposts2019 }}/08/dem_instalation06.png){: .align-center}
+![dem_instalation07]({{ site.imagesposts2019 }}/08/dem_instalation07.png){: .align-center}
+![dem_instalation08]({{ site.imagesposts2019 }}/08/dem_instalation08.png){: .align-center}
 
 ![uem_config2]({{ site.imagesposts2019 }}/08/uem_config2.png){: .align-center}
 ![uem_config3]({{ site.imagesposts2019 }}/08/uem_config3.png){: .align-center}
