@@ -109,20 +109,28 @@ A nivel de share, daremos control total a todos los usuarios, ya que controlarem
 ![dem_permisos05]({{ site.imagesposts2019 }}/08/dem_permisos05.png){: .align-center}
 
 # Instalación DEM Management Console
+La instalación de la Management Consola es muy senzilla y puede instalarse en cualquier máquina windows desde la que queramos administrar nuestro entorno. Simplemente ejecutaremos el instalador correspondiente a nuestro SO y siguiente, siguiente, fin...
 
 ![dem_instalation01]({{ site.imagesposts2019 }}/08/dem_instalacion01.png){: .align-center}
-![dem_instalation02]({{ site.imagesposts2019 }}/08/dem_instalacion02png){: .align-center}
+![dem_instalation02]({{ site.imagesposts2019 }}/08/dem_instalacion02.png){: .align-center}
 ![dem_instalation03]({{ site.imagesposts2019 }}/08/dem_instalacion03.png){: .align-center}
 ![dem_instalation04]({{ site.imagesposts2019 }}/08/dem_instalacion04.png){: .align-center}
+Aquí deberemos seleccionar la opción de Management Console
 ![dem_instalation05]({{ site.imagesposts2019 }}/08/dem_instalacion05.png){: .align-center}
 ![dem_instalation06]({{ site.imagesposts2019 }}/08/dem_instalacion06.png){: .align-center}
 ![dem_instalation07]({{ site.imagesposts2019 }}/08/dem_instalacion07.png){: .align-center}
+Tras finalizar, conectaremos la Management Console a la carpeta compartida dónde guardaremos toda la configuración.
 ![dem_instalation08]({{ site.imagesposts2019 }}/08/dem_instalacion08.png){: .align-center}
 
 # Configuración GPO
+El entorno DEM está basado en 2 GPOs:
+
+## GPO de Equipo, aplicable a los VDI
 
 ![dem_gpo01]({{ site.imagesposts2019 }}/08/dem_gpo01.png){: .align-center}
 ![dem_gpo02]({{ site.imagesposts2019 }}/08/dem_gpo02.png){: .align-center}
+
+## GPO de Usuario, aplicable a los usuarios que utilizarán DEM
 
 ![dem_gpo03]({{ site.imagesposts2019 }}/08/dem_gpo03.png){: .align-center}
 ![dem_gpo04]({{ site.imagesposts2019 }}/08/dem_gpo04.png){: .align-center}
@@ -135,11 +143,13 @@ A nivel de share, daremos control total a todos los usuarios, ya que controlarem
 ![dem_gpo11]({{ site.imagesposts2019 }}/08/dem_gpo11.png){: .align-center}
 
 # Instalación DEM agent
+Al igual que la Management Console. El DEM Agent se instala con el mismo instalador. Simplemente en uno de los pasos, indicaremos que queremos instalar el agente y no la Management Console
 
 ![dem_instalation_a01]({{ site.imagesposts2019 }}/08/dem_instalacion_a01.png){: .align-center}
-![dem_instalation_a02]({{ site.imagesposts2019 }}/08/dem_instalacion_a02png){: .align-center}
+![dem_instalation_a02]({{ site.imagesposts2019 }}/08/dem_instalacion_a02.png){: .align-center}
 ![dem_instalation_a03]({{ site.imagesposts2019 }}/08/dem_instalacion_a03.png){: .align-center}
 ![dem_instalation_a04]({{ site.imagesposts2019 }}/08/dem_instalacion_a04.png){: .align-center}
+Aquí es dónde indicamos que esta instalación va a ser en modo Agente.
 ![dem_instalation_a05]({{ site.imagesposts2019 }}/08/dem_instalacion_a05.png){: .align-center}
 ![dem_instalation_a06]({{ site.imagesposts2019 }}/08/dem_instalacion_a06.png){: .align-center}
 ![dem_instalation_a07]({{ site.imagesposts2019 }}/08/dem_instalacion_a07.png){: .align-center}
