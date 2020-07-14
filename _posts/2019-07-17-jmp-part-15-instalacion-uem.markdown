@@ -52,6 +52,34 @@ En el fichero que nos descargemos, encontraremos una carpeta con unas plantillas
 
 # Crear carpetas compartidas y configuración permisos
 
+De entrada, necesitaremos 3 carpetas compartidas
+
+* DEM_CONFIG > Se almacenará la configuración general de DEM
+* DEM_PROFILES > Dónde cada usuario almacenará la información relacionada con su perfil
+* DEM_FOLDERREDIRECTION > Dónde configuraremos la redirección de carpetas cómo el Escritorio, Mis Docuentos, Favoritos, etc etc.
+
+A nivel de share, daremos control total a todos los usuarios, ya que controlaremos los accesos a nivel de NTFS
+
+![dem_permisos01]({{ site.imagesposts2019 }}/08/dem_permisos01.png){: .align-center}
+
+## DEM_CONFIG
+
+Administradores > Control total
+Usuarios > Lectura
+
+![dem_permisos02]({{ site.imagesposts2019 }}/08/dem_permisos02.png){: .align-center}
+
+## DEM_PROFILE
+
+Administradores > Control total
+Usuarios > Lectura/ejecución (sólo en esta carpeta)
+Propietario > Control total
+
+![dem_permisos03]({{ site.imagesposts2019 }}/08/dem_permisos03.png){: .align-center}
+
+
+
+
 ![uem_config2]({{ site.imagesposts2019 }}/08/uem_config2.png){: .align-center}
 ![uem_config3]({{ site.imagesposts2019 }}/08/uem_config3.png){: .align-center}
 ![uem_config4]({{ site.imagesposts2019 }}/08/uem_config4.png){: .align-center}
