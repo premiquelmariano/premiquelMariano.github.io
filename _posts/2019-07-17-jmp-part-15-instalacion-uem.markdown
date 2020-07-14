@@ -43,7 +43,10 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 
 # Primeros pasos con UEM
 
+A fecha de edición de este post, la última versión disponible es la  9.11, así que nos descargaremos esa versión
 ![dem_download]({{ site.imagesposts2019 }}/08/dem_download01.png){: .align-center}
+
+En el fichero que nos descargemos, encontraremos una carpeta con unas plantillas .admx y sus correspondientes ficheros de idioma. Tendremos que copiarlos en nuestro DC para poder crear posteriormente las GPO
 
 ![uem_config1]({{ site.imagesposts2019 }}/08/uem_config1.png){: .align-center}
 ![uem_config2]({{ site.imagesposts2019 }}/08/uem_config2.png){: .align-center}
