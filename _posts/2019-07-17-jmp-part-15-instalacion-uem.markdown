@@ -1,5 +1,5 @@
 ---
-title: Creando un entorno JMP con VMware Horizon - Parte 15
+title: Creando un entorno JMP con VMware Horizon - Parte 15 - Instalación Dynamic Environment Manager
 date: '2019-07-17 00:00:00'
 layout: post
 image: /assets/images/posts/2019/07/horizon-logo.png
@@ -42,6 +42,8 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 - [Part 18: Aprovisionamiento con JMP]({{ site.url }}/jmp-part18/)
 
 # Primeros pasos con UEM
+
+![dem_download]({{ site.imagesposts2019 }}/08/dem_download01.png){: .align-center}
 
 ![uem_config1]({{ site.imagesposts2019 }}/08/uem_config1.png){: .align-center}
 ![uem_config2]({{ site.imagesposts2019 }}/08/uem_config2.png){: .align-center}
