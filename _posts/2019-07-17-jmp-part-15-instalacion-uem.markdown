@@ -14,13 +14,7 @@ permalink: /jmp-part15/
 
 ---
 
-https://univirt.wordpress.com/2018/02/20/building-a-horizon-view-jmp-lab-part-1-introduction/
-
-https://www.sistel.es/gestion-del-entorno-del-usuario-horizon-7-uem
-
-Buenos dias a tod@s!!
-
-En la siguiente serie de posts, pretendo explicar durante las próximas semanas el paso a paso para instalar un entorno JMP (Just-in-Time Management Platform) utilizando VMware Horizon 7 Instant Clones + App Volumes + VMware UEM (User Environment Manager) 
+Seguimos con la serie de posts sobre Horizon7. En el capítulo de hoy, hablaremos sobre Dynamic Environment Manager.
 
 - [Part 1: Introducción]({{ site.url }}/jmp-part1/)
 - [Part 2: Preparar servidor SQL]({{ site.url }}/jmp-part2/)
@@ -40,6 +34,16 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 - [Part 16: Primeros pasos con UEM]({{ site.url }}/jmp-part16/)
 - [Part 17: Instalación y configuración JMP Server]({{ site.url }}/jmp-part17/)
 - [Part 18: Aprovisionamiento con JMP]({{ site.url }}/jmp-part18/)
+
+Dynamic Environment Manager, es una solución que nos provee una forma robusta i ágil de gestión del perfil de nuestros usuarios y gestión de su espacio de trabajo en general. Con esta herramienta podremos centralizar las configuraciones en un share y dar persistencia a nuestros usuarios.
+
+DEM, no es una aplicación cliente-servidor cómo pueda ser App Volumes. DEM está basado en carpetas compartidas en dónde se almacenará la configuración y que los DEM Agent consultarán a través de una GPO de usuario.
+
+Todo esto, lo gestionaremos desde una GUI que podremos instalar en cualquier windows.
+
+![dem_esquema]({{ site.imagesposts2019 }}/08/dem_esquema.png){: .align-center}
+
+Vamos al lio.
 
 # Descargar última versión e instalación plantillas ADMX
 
