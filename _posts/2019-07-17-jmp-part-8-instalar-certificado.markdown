@@ -10,7 +10,6 @@ tag:
 - euc
 - desktop
 - mobility
-permalink: /jmp-part8/
 
 ---
 
@@ -37,6 +36,10 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 - [Part 16: Primeros pasos con UEM]({{ site.url }}/jmp-part16/)
 - [Part 17: Instalación y configuración JMP Server]({{ site.url }}/jmp-part17/)
 - [Part 18: Aprovisionamiento con JMP]({{ site.url }}/jmp-part18/)
+
+# Crear certificado SSL wildcard con OpenSSL
+
+A continuación veremos el procedimiento a seguir para generar un certificado SSL windcard emitido por una entidad certificadora pública. GoDaddy por ejemplo
 
 # Instalación de certificado wildcard en Connection Server
 
