@@ -19,6 +19,7 @@ Buenos dias a todos, recientemente se ha publicado la nueva versión de Horizon 
 Lo primero que tendremos que verificar es el "update path" y consultar en la [guía de compatibilidad](https://www.vmware.com/resources/compatibility/sim/interop_matrix.php) a ver si desde nuestra versión actual es posible actualizar a Horzion 8
 ![update01]({{ site.imagesposts2020 }}/08/update01.png){: .align-center}
 
+Una vez comprobada la compatibilidad, podremos comprobar en la [update sequence for Horizon](https://kb.vmware.com/s/article/78445) el orden correcto para actualizar nuestros componentes.
 ![update02]({{ site.imagesposts2020 }}/08/update02.png){: .align-center}
 ![update03]({{ site.imagesposts2020 }}/08/update03.png){: .align-center}
 ![update04]({{ site.imagesposts2020 }}/08/update04.png){: .align-center}
