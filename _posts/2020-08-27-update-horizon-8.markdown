@@ -1,6 +1,6 @@
 ---
 title: Actualizar Horizon 7.x a Horizon 8 (2006)
-date: '2019-07-17 00:00:00'
+date: '2020-08-27 00:00:00'
 layout: post
 image: /assets/images/posts/2019/07/horizon-logo.png
 tag:
@@ -10,7 +10,6 @@ tag:
 - euc
 - desktop
 - mobility
-permalink: /jmp-part18/
 
 ---
 
