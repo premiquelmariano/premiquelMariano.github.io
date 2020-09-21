@@ -19,9 +19,11 @@ En esta ocasion el libro se llamará Cloud por vExperts y es que hemos querido e
 
 ![portada]({{ site.imagesposts2020 }}/09/portada-cloud-por-vexexperts.png){: .align-center}
 
+### Los autores
+
 Al igual que la primera edición, se trata de un libro técnico en el que un grupo de bloggers de habla hispana han dedicado su tiempo y conocimientos aportando su granito de arena en forma de capítulo. 
 
-Se trata del libro [#VMwareporvExperts](https://www.vmwareporvexperts.org), un libro técnico, de mas de 600 páginas, sobre todo el ecosistema VMWare y creado por 14 bloggers de habla hispana. Es un privilegio para mi, estar junto a tanto crack!!
+Desde aquí, quiero dar la bienvenida a los amigos que se suman al proyecto, Jorge Torres, Celia, Elver y Iván
 
 - Jorge de la Cruz - [@jorgedlcruz](https://twitter.com/jorgedlcruz) - [https://www.jorgedelacruz.es](https://www.jorgedelacruz.es)
 - Xavier Genestos - [@sysadmit](https://twitter.com/sysadmit) - [https://www.sysadmit.com/](https://www.josemariagonzalez.es/)
@@ -40,9 +42,9 @@ Se trata del libro [#VMwareporvExperts](https://www.vmwareporvexperts.org), un l
 - Elver Sena Sosa - [@ELVERs_Opinion](https://twitter.com/ELVERs_Opinion)
 - Jorge Torres - [@J_Kolkes](https://twitter.com/J_Kolkes) - [https://www.kolkes.com/](https://www.kolkes.com/)
 
-Entre todos, hemos intentado diseñar un temario lo suficientemente amplio para abarcar casi todos los ámbitos relacionados con VMware. Al final creo que ha salido un contenido de lo más variado.
-
 ### Contenido del libro VMware por vExperts
+
+Cómo comentaba, este año hay mucho contenido sobre NSX, Kubernetes, etc, etc, y es que hemos querido dar algo mas de progagonismo a las nuevas tecnologias Cloud native apps y cloud en general. Ahí va el temario por autor.
 
 **Héctor Herrero:** Novedades vSphere 7
 **Xavier Caballé:** Instalación y Actualización a vSphere 7
@@ -60,8 +62,6 @@ Entre todos, hemos intentado diseñar un temario lo suficientemente amplio para 
 **Daniel Romero:** Del Datacenter físico a las nubes
 **Ariel Sanchez:** Comunidad en IT
 **Celia Cristaldo:** Gestión del Stress en TI
-
-Como veis, a mi me ha tocado escribir sobre automatización, y es que es un tema que me apasiona profundamente. En este blog, ya he escrito algunas veces tanto sobre [PowerCLI](https://miquelmariano.github.io/tags/#powercli) como sobre [Ansible](https://miquelmariano.github.io/tags/#ansible)
 
 ### El proyecto
 
