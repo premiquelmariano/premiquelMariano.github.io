@@ -63,7 +63,9 @@ Cómo comentaba, este año hay mucho contenido sobre NSX, Kubernetes, etc, etc, 
 **Ariel Sanchez:** Comunidad en IT
 **Celia Cristaldo:** Gestión del Stress en TI
 
-En esta ocasión, escribo Site Recovery Manager y a continuación os muestro el índice de todo lo que os encontrareis en el libro:
+En esta ocasión, escribo Site Recovery Manager, son 55 páginas en las que hablo desde la instalación y configuración inicial hasta los posibles escenarios de contingencia, pasando por la configuración de los múltiples métodos de replicación soportados.
+
+A cntinuación os muestro el índice de todo lo que os encontrareis en el libro:
 
 ¿Qué es SRM?	
 Replicación basada en array vs vSphere Replication	
