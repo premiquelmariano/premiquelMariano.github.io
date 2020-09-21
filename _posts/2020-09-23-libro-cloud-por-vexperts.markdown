@@ -63,6 +63,37 @@ Cómo comentaba, este año hay mucho contenido sobre NSX, Kubernetes, etc, etc, 
 **Ariel Sanchez:** Comunidad en IT
 **Celia Cristaldo:** Gestión del Stress en TI
 
+En esta ocasión, escribo Site Recovery Manager y a continuación os muestro el índice de todo lo que os encontrareis en el libro:
+
+¿Qué es SRM?	
+Replicación basada en array vs vSphere Replication	
+Licenciamiento	
+Bussiness Continuity & Disaster Recovery	
+   RPO (Recovery Point Objective)	
+   RTO (Recovery Time Objective)	
+   WRT (Work Recovery Time)	
+Laboratorio	
+Instalación vSphere Replication 8.3	
+   Configuración inicial vSphere Replication	
+Instalación SRM 8.3	
+   Configuración inicial SRM	
+   Configurar par de sitios	
+   Resource Mappings	
+         Almacenes de marcador de posición	
+Operaciones con SRM	
+   Crear replica entre sites	
+   Grupos de protección	
+   Planes de recuperación	
+Pruebas de contingencia	
+   Probar	
+        Limpieza	
+   Ejecutar	
+        Reproteger	
+Documentación OFICIAL	
+
+
+
+
 ### El proyecto
 
 El proyecto en si, tiene un objetivo solidario y es que todo lo que consigamos recaudar irá íntegramente a estas dos asociaciones benéficas:
