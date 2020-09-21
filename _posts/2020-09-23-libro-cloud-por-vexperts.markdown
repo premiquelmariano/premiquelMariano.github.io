@@ -67,31 +67,31 @@ En esta ocasión, escribo Site Recovery Manager, son 55 páginas en las que habl
 
 A cntinuación os muestro el índice de todo lo que os encontrareis en el libro:
 
-¿Qué es SRM?	
-Replicación basada en array vs vSphere Replication	
-Licenciamiento	
-Bussiness Continuity & Disaster Recovery	
-   RPO (Recovery Point Objective)	
-   RTO (Recovery Time Objective)	
-   WRT (Work Recovery Time)	
-Laboratorio	
-Instalación vSphere Replication 8.3	
-   Configuración inicial vSphere Replication	
-Instalación SRM 8.3	
-   Configuración inicial SRM	
-   Configurar par de sitios	
-   Resource Mappings	
-         Almacenes de marcador de posición	
-Operaciones con SRM	
-   Crear replica entre sites	
-   Grupos de protección	
-   Planes de recuperación	
-Pruebas de contingencia	
-   Probar	
-        Limpieza	
-   Ejecutar	
-        Reproteger	
-Documentación OFICIAL	
+- ¿Qué es SRM?	
+- Replicación basada en array vs vSphere Replication	
+- Licenciamiento	
+- Bussiness Continuity & Disaster Recovery	
+   - RPO (Recovery Point Objective)	
+   - RTO (Recovery Time Objective)	
+   - WRT (Work Recovery Time)	
+- Laboratorio	
+- Instalación vSphere Replication 8.3	
+   - Configuración inicial vSphere Replication	
+- Instalación SRM 8.3	
+   - Configuración inicial SRM	
+   - Configurar par de sitios	
+   - Resource Mappings	
+         - Almacenes de marcador de posición	
+- Operaciones con SRM	
+   - Crear replica entre sites	
+   - Grupos de protección	
+   - Planes de recuperación	
+- Pruebas de contingencia	
+   - Probar	
+        - Limpieza	
+   - Ejecutar	
+        - Reproteger	
+- Documentación OFICIAL	
 
 
 
