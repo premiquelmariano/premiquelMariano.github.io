@@ -19,7 +19,7 @@ Esta famosa cita, conocida por todos, y que en breve voy a tener la suerte de po
 
 Hoy vengo con un post autobombo, a hablar de un proyecto que tenemos entre manos y del cual me siento muy orgulloso de formar parte.
 
-![portada]({{ site.imagesposts2019 }}/03/portada.png){: .align-center}
+![portada]({{ site.imagesposts2020 }}/09/portada-cloud-por-vexexperts.png){: .align-center}
 
 Se trata del libro [#VMwareporvExperts](https://www.vmwareporvexperts.org), un libro técnico, de mas de 600 páginas, sobre todo el ecosistema VMWare y creado por 14 bloggers de habla hispana. Es un privilegio para mi, estar junto a tanto crack!!
 
