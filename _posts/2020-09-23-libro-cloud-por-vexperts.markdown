@@ -46,22 +46,22 @@ Desde aquí, quiero dar la bienvenida a los amigos que se suman al proyecto, Jor
 
 Cómo comentaba, este año hay mucho contenido sobre NSX, Kubernetes, etc, etc, y es que hemos querido dar algo mas de progagonismo a las nuevas tecnologias Cloud native apps y cloud en general. Ahí va el temario por autor.
 
-**Héctor Herrero:** Novedades vSphere 7
-**Xavier Caballé:** Instalación y Actualización a vSphere 7
-**Gorka Izquierdo:** Línea de comandos en ESXi
-**Patricio Cerda:** NSX-T
-**Ricard Ibáñez:** Horizon 7, Acceso externo y Consola HTML5
-**Jorge de la Cruz:** Monitorización de vSphere y vSAN con Wavefront
-**Miquel Mariano:** Site Recovery Manager
-**Xavier Genestos:** Novedades Veeam Backup & Replication
-**Federico Cinalli:** Cloud Native Apps para Administradores de vSphere
-**Ivan Camargo:** Ecosistema Cloud Native, Impacto, presente y futuro
-**Raúl Unzué:** Kubernetes desde cero
-**Jorge Torres:** Tanzu Mission Control
-**Elver Sena Sosa:** NSX-T y Microservicios
-**Daniel Romero:** Del Datacenter físico a las nubes
-**Ariel Sanchez:** Comunidad en IT
-**Celia Cristaldo:** Gestión del Stress en TI
+- **Héctor Herrero:** Novedades vSphere 7
+- **Xavier Caballé:** Instalación y Actualización a vSphere 7
+- **Gorka Izquierdo:** Línea de comandos en ESXi
+- **Patricio Cerda:** NSX-T
+- **Ricard Ibáñez:** Horizon 7, Acceso externo y Consola HTML5
+- **Jorge de la Cruz:** Monitorización de vSphere y vSAN con Wavefront
+- **Miquel Mariano:** Site Recovery Manager
+- **Xavier Genestos:** Novedades Veeam Backup & Replication
+- **Federico Cinalli:** Cloud Native Apps para Administradores de vSphere
+- **Ivan Camargo:** Ecosistema Cloud Native, Impacto, presente y futuro
+- **Raúl Unzué:** Kubernetes desde cero
+- **Jorge Torres:** Tanzu Mission Control
+- **Elver Sena Sosa:** NSX-T y Microservicios
+- **Daniel Romero:** Del Datacenter físico a las nubes
+- **Ariel Sanchez:** Comunidad en IT
+- **Celia Cristaldo:** Gestión del Stress en TI
 
 En esta ocasión, escribo Site Recovery Manager, son 55 páginas en las que hablo desde la instalación y configuración inicial hasta los posibles escenarios de contingencia, pasando por la configuración de los múltiples métodos de replicación soportados.
 
