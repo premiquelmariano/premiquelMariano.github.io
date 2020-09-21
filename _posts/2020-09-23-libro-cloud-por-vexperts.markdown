@@ -17,7 +17,7 @@ Se acerca el dia. Queda menos de una semana para que vea la luz la segunda edici
 
 En esta ocasion el libro se llamará Cloud por vExperts y es que hemos querido enfocar el temario un poco más a tecnologías cloud.
 
-![portada]({{ site.imagesposts2020 }}/09/portada-cloud-por-vexexperts.png){: .align-center}
+![portada]({{ site.imagesposts2020 }}/09/portada-cloud-por-vexperts.png){: .align-center}
 
 ### Los autores
 
