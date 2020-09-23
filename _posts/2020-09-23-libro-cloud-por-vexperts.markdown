@@ -44,6 +44,10 @@ Desde aquí, quiero dar la bienvenida a los amigos que se suman al proyecto, Jor
 - Elver Sena Sosa - [@ELVERs_Opinion](https://twitter.com/ELVERs_Opinion)
 - Jorge Torres - [@J_Kolkes](https://twitter.com/J_Kolkes) - [https://www.kolkes.com/](https://www.kolkes.com/)
 
+También otro aliciente que no quiero dejar pasar es que hemos convencido a [Rick Vanover](https://twitter.com/rickvanover?lang=es) para que nos haga el prólogo.
+
+Rick actualmente trabaja para Veeam y es un actor importante en la comunidad IT.
+
 ### Contenido del libro VMware por vExperts
 
 Cómo comentaba, este año hay mucho contenido sobre NSX, Kubernetes, etc, etc, y es que hemos querido dar algo mas de progagonismo a las nuevas tecnologias Cloud native apps y cloud en general. Ahí va el temario por autor.
