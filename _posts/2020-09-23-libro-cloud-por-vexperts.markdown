@@ -102,32 +102,24 @@ Cómo no podia ser de otra manera, el proyecto vuelve a tener un fondo benéfico
 
 "Alimentar mentes" es el lema de esta ONG que trata el problema de la inmigración en África y pretende poner el foco en los paises de origen.
 
-[![video]({{ site.imagesposts2020 }}/09/video-ousman-umar.png){: .align-center}](https://www.youtube.com/watch?v=sXhA8MbaaZA&t=127s)
+Os recomiendo que veais [el video de Ousman Umar](https://www.youtube.com/watch?v=sXhA8MbaaZA&t=127s), fundador de la ONG, en el que cuenta su história.
 
-### Sistema de sponsors
+![video]({{ site.imagesposts2020 }}/09/nasco.png){: .align-center}
 
-Hemos ideado un sistema de sponsorización basado en varios niveles que que, no solo los partners que giran alrededor del ecosistema VMware puedan participar, sinó que cualquier empresa interesada en el proyecto, pueda aportar su granito de arena.
+### Sponsors
+
+Seguimos en busca de sponsors que se quieran unir a la causa, el año pasado conseguimos mas de 28.000€, sabemos que el liston está alto, pero todavia hay tiempo.
+
+Empresas como [OVHcloud](https://www.ovh.es/), [Kio Networks](https://www.kionetworks.com/), [Veeam](https://www.veeam.com/es), [Adistec](https://adistec.com/), [IPM Ricoh](https://www.ipm.es/), [Altaro](https://www.altaro.com/) ya han confirmado su participación
+
+Contactad con nosotros si estais interesados y quereis participar. Toda ayuda será muy bienvenida.
 
 ![sponsors](https://www.cenabit.com/wp-content/uploads/2019/03/sponsors.jpg){: .align-center}
 
-Estamos en la recta final, el contenido ya está terminado y el libro está en fase de revisión. Lo que necesitamos ahora es dar la máxima visibilidad posible al proyecto y que llegue no solo a gente interesada en aprender VMware en Español, también a potenciales Sponsors que se puedan sumar a la causa.
 
-Quien quiera apoyarnos, nos podrá ayudar promocionando la [web](https://www.vmwareporvexperts.org) o la cuenta de Twitter [@vmwarevexperts](https://twitter.com/vmwarevexperts) utlizando el hashtag [#VMwarePorvExperts](https://twitter.com/hashtag/vmwareporvexperts?src=hash)
+### Fecha de lanzamiento
 
-### El prólogo
-
-Siempre quisimos que el prólogo del libro fuese algo especial y que lo escribiera alguien de renombre.
-
-Al final tuvimos que conformarnos con [Duncan Epping](https://twitter.com/duncanyb). Quizás no le conozcais, sólo es CTO of the Storage & Availability BU en VMware, VCDX #007 y autor del blog TOP1 sobre virtualización [Yellow-Bricks](http://www.yellow-bricks.com/)
-
-#ModeIronicOFF
-
-Ahora en serio, es para nosotros todo un honor que Duncan haya aceptado nuestra propuesta, mostrando una vez más su compromiso con la comunidad y con la parte solidaria del proyecto. Desde aquí mi mas sincero agradecimiento. Thx!!!
-
-
-### Publicación del libro
-
-Como comentaba, estamos ultimando los últimos detalles y esperamos tener todo listo para que la segunda mitad de Marzo 2019, el proyecto pueda ver la luz. Estate atento!!
+28/09/2020, esta es la fecha. Estar atentos a nuestras RRSS, que ahi publicaremos toda la información y la URL de descarga.
 
 
 Gracias por leernos y compartir!
