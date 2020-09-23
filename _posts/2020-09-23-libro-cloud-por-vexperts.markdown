@@ -15,6 +15,8 @@ tag:
 
 Se acerca el dia. Queda menos de una semana para que vea la luz la segunda edición de [#VMwareporvExperts](https://www.vmwareporvexperts.org).
 
+En la primera edición conseguimos mas de 18k descargas y cerca de 28k € para asociaciones benéficas y esperamos que en esta segunda edicición mejorar nuestros propios números.
+
 En esta ocasion el libro se llamará Cloud por vExperts y es que hemos querido enfocar el temario un poco más a tecnologías cloud.
 
 ![portada]({{ site.imagesposts2020 }}/09/portada-cloud-por-vexperts.png){: .align-center}
@@ -63,9 +65,9 @@ Cómo comentaba, este año hay mucho contenido sobre NSX, Kubernetes, etc, etc, 
 - **Ariel Sanchez:** Comunidad en IT
 - **Celia Cristaldo:** Gestión del Stress en TI
 
-En esta ocasión, escribo Site Recovery Manager, son 55 páginas en las que hablo desde la instalación y configuración inicial hasta los posibles escenarios de contingencia, pasando por la configuración de los múltiples métodos de replicación soportados.
+En esta ocasión, escribo sobre Site Recovery Manager, son 55 páginas en las que hablo desde la instalación y configuración inicial hasta los posibles escenarios de contingencia, pasando por la configuración de los múltiples métodos de replicación soportados.
 
-A cntinuación os muestro el índice de todo lo que os encontrareis en el libro:
+A continuación os muestro el índice de todo lo que os encontrareis en el libro:
 
 - ¿Qué es SRM?	
 - Replicación basada en array vs vSphere Replication	
@@ -94,18 +96,13 @@ A cntinuación os muestro el índice de todo lo que os encontrareis en el libro:
 - Documentación OFICIAL	
 
 
-
-
 ### El proyecto
 
-El proyecto en si, tiene un objetivo solidario y es que todo lo que consigamos recaudar irá íntegramente a estas dos asociaciones benéficas:
+Cómo no podia ser de otra manera, el proyecto vuelve a tener un fondo benéfico. En esta ocasión, todo lo recaudado irá a beneficio de [NASCO feeding minds](https://nascoict.org/) 
 
-- [Banani Project](http://www.amafestival.org/es/proyecto-banani)
-- [CEAFA Alzheimer organization](https://www.ceafa.es)
+"Alimentar mentes" es el lema de esta ONG que trata el problema de la inmigración en África y pretende poner el foco en los paises de origen.
 
-![banani]({{ site.imagesposts2019 }}/03/CasaBanani.jpeg){: .align-center}
-
-La idea del proyecto, es que el libro sea en formato digital y 100% de libre descarga, sin registros. Es por ello, que hemos diseñado un sistema de sponsorización para que todas las empresas que estén interesadas, puedan unirse al proyecto. Muchos de los partners del ecosistema VMWare ya se han unido y esperamos que en los próximos días puedan confirmar más empresas su participación. Desde aquí agradezco enormemente el esfuerzo que están haciendo todas ellas.
+[![video]({{ site.imagesposts2020 }}/09/video-ousman-umar.png){: .align-center}](https://www.youtube.com/watch?v=sXhA8MbaaZA&t=127s)
 
 ### Sistema de sponsors
 
