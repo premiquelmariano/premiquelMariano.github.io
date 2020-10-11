@@ -18,22 +18,11 @@ Es lógico, que para montar nuestro App Volumes Manager en alta disponibilidad p
 
 ![appvolumes-diagram]({{ site.imagesposts2020 }}/10/appvolumes-diagram.png){: .align-center} 
 
+# Instalación segundo App Volumes Manager
+
+
+
 https://www.simonlong.co.uk/blog/2015/04/11/appvolumes-add-multiple-app-volume-manager-addresses-to-the-app-volumes-agent/
-
-# Instalación y configuración JMP Server
-
-![jmp_db1]({{ site.imagesposts2019 }}/08/jmp_db1.png){: .align-center}
-![jmp_db2]({{ site.imagesposts2019 }}/08/jmp_db2.png){: .align-center}
-![jmp_db3]({{ site.imagesposts2019 }}/08/jmp_db3.png){: .align-center}
-![jmp_db4]({{ site.imagesposts2019 }}/08/jmp_db4.png){: .align-center}
-![jmp1]({{ site.imagesposts2019 }}/08/jmp1.png){: .align-center}
-![jmp2]({{ site.imagesposts2019 }}/08/jmp2.png){: .align-center}
-![jmp3]({{ site.imagesposts2019 }}/08/jmp3.png){: .align-center}
-![jmp4]({{ site.imagesposts2019 }}/08/jmp4.png){: .align-center}
-![jmp5]({{ site.imagesposts2019 }}/08/jmp5.png){: .align-center}
-![jmp6]({{ site.imagesposts2019 }}/08/jmp6.png){: .align-center}
-![jmp7]({{ site.imagesposts2019 }}/08/jmp7.png){: .align-center}
-![jmp8]({{ site.imagesposts2019 }}/08/jmp8.png){: .align-center}
 
 
 Espero que os sirva.
