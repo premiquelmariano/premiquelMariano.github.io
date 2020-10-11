@@ -16,7 +16,9 @@ Hace ya varios meses, en la serie [Creando un entorno JMP con VMware Horizon]({{
 
 Es lógico, que para montar nuestro App Volumes Manager en alta disponibilidad primeramente tengamos nuestra BBDD en un servidor independiente, fuera del propio App Volumes Manager. En [este post](https://miquelmariano.github.io/jmp-part11/) explicábamos la parte de nuestro servidor SQL.
 
+![appvolumes-diagram]({{ site.imagesposts2020 }}/10/appvolumes-diagram.png){: .align-center} 
 
+https://www.simonlong.co.uk/blog/2015/04/11/appvolumes-add-multiple-app-volume-manager-addresses-to-the-app-volumes-agent/
 
 # Instalación y configuración JMP Server
 
