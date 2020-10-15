@@ -20,7 +20,12 @@ Es lógico, que para montar nuestro App Volumes Manager en alta disponibilidad p
 
 # Instalación segundo App Volumes Manager
 
-
+![appvolumes-install-01]({{ site.imagesposts2020 }}/10/appvolumes-install-01.png){: .align-center} 
+![appvolumes-install-02]({{ site.imagesposts2020 }}/10/appvolumes-install-02.png){: .align-center} 
+![appvolumes-install-03]({{ site.imagesposts2020 }}/10/appvolumes-install-03.png){: .align-center} 
+![appvolumes-install-04]({{ site.imagesposts2020 }}/10/appvolumes-install-04.png){: .align-center} 
+![appvolumes-install-05]({{ site.imagesposts2020 }}/10/appvolumes-install-05.png){: .align-center} 
+![appvolumes-install-06]({{ site.imagesposts2020 }}/10/appvolumes-install-06.png){: .align-center} 
 
 https://www.simonlong.co.uk/blog/2015/04/11/appvolumes-add-multiple-app-volume-manager-addresses-to-the-app-volumes-agent/
 
