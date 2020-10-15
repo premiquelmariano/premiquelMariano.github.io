@@ -39,6 +39,10 @@ Es lógico, que para montar nuestro App Volumes Manager en alta disponibilidad p
 
 # Reconfigurar App Volumes Agent
 
+![appvolumes-install-14]({{ site.imagesposts2020 }}/10/appvolumes-install-14.png){: .align-center} 
+
+HKLM\System\CurrentControlSet\services\svservice\parameters 
+
 https://www.simonlong.co.uk/blog/2015/04/11/appvolumes-add-multiple-app-volume-manager-addresses-to-the-app-volumes-agent/
 
 
