@@ -26,6 +26,18 @@ Es lógico, que para montar nuestro App Volumes Manager en alta disponibilidad p
 ![appvolumes-install-04]({{ site.imagesposts2020 }}/10/appvolumes-install-04.png){: .align-center} 
 ![appvolumes-install-05]({{ site.imagesposts2020 }}/10/appvolumes-install-05.png){: .align-center} 
 ![appvolumes-install-06]({{ site.imagesposts2020 }}/10/appvolumes-install-06.png){: .align-center} 
+![appvolumes-install-07]({{ site.imagesposts2020 }}/10/appvolumes-install-07.png){: .align-center} 
+![appvolumes-install-08]({{ site.imagesposts2020 }}/10/appvolumes-install-08.png){: .align-center} 
+![appvolumes-install-09]({{ site.imagesposts2020 }}/10/appvolumes-install-09.png){: .align-center} 
+![appvolumes-install-10]({{ site.imagesposts2020 }}/10/appvolumes-install-10.png){: .align-center} 
+![appvolumes-install-11]({{ site.imagesposts2020 }}/10/appvolumes-install-11.png){: .align-center} 
+![appvolumes-install-12]({{ site.imagesposts2020 }}/10/appvolumes-install-12.png){: .align-center} 
+
+# Configurar NLB
+
+![appvolumes-install-13]({{ site.imagesposts2020 }}/10/appvolumes-install-13.png){: .align-center} 
+
+# Reconfigurar App Volumes Agent
 
 https://www.simonlong.co.uk/blog/2015/04/11/appvolumes-add-multiple-app-volume-manager-addresses-to-the-app-volumes-agent/
 
