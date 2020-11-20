@@ -41,7 +41,7 @@ Vamos al lio:
 ![update_appvolumes_14]({{ site.imagesposts2020 }}/11/update_appvolumes_14.png){: .align-center}
 ![update_appvolumes_15]({{ site.imagesposts2020 }}/11/update_appvolumes_15.png){: .align-center}
 
-Espero que os sirva.
+Y hasta aquí el post de hoy ;-)
 
 Un saludo!
 
