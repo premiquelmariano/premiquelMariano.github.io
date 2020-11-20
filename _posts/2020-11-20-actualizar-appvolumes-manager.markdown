@@ -14,6 +14,13 @@ tag:
 
 ---
 
+En el post de hoy veremos de forma fácil y rápida, cómo actualizar nuestros servidores de App Volumes.
+
+En posts anteriores, ya vimos [cómo nstalar App Volumes]({{ site.url }}/jmp-part11/) y también [cómo configurarlo en HA](https://miquelmariano.github.io/2020/10/21/vmware-app-volumes-en-ha/)
+
+A dia de hoy, la última versión disponible de App Volumes es la 4.2.0.48.
+
+Vamos al lio:
 
 
 
