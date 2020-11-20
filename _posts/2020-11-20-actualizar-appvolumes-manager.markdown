@@ -10,8 +10,6 @@ tag:
 - euc
 - desktop
 - mobility
-
-
 ---
 
 En posts anteriores, ya vimos [cómo nstalar App Volumes]({{ site.url }}/jmp-part11/) y también [cómo configurarlo en HA](https://miquelmariano.github.io/2020/10/21/vmware-app-volumes-en-ha/)
@@ -29,7 +27,11 @@ Vamos al lio:
 En mi caso, partimos de una versión no demasiada antigua, la 4.1.0.59. En cualquier caso, os recomiendo visitar el [Upgrade Path del producto](https://www.vmware.com/resources/compatibility/sim/interop_matrix.php#upgrade&solution=131) para verificar que no haya "saltos" intermedios.
 
 ![update_appvolumes_00]({{ site.imagesposts2020 }}/11/update_appvolumes_00.png){: .align-center}
+
+Al tener una arquitectura en HA, lo primero que vamos a hacer es sacar del balanceador el servidor que vayamos a actualizar.
 ![update_appvolumes_01]({{ site.imagesposts2020 }}/11/update_appvolumes_01.png){: .align-center}
+
+Ejecutamos el instalador y nos dejamos quiar por el asistente. El propio asistente ya detectará una instalación previa y simplemente tenemos que hacer el famoso next > next > next > finish
 ![update_appvolumes_02]({{ site.imagesposts2020 }}/11/update_appvolumes_02.png){: .align-center}
 ![update_appvolumes_03]({{ site.imagesposts2020 }}/11/update_appvolumes_03.png){: .align-center}
 ![update_appvolumes_04]({{ site.imagesposts2020 }}/11/update_appvolumes_04.png){: .align-center}
@@ -42,10 +44,16 @@ En mi caso, partimos de una versión no demasiada antigua, la 4.1.0.59. En cualq
 ![update_appvolumes_11]({{ site.imagesposts2020 }}/11/update_appvolumes_11.png){: .align-center}
 ![update_appvolumes_12]({{ site.imagesposts2020 }}/11/update_appvolumes_12.png){: .align-center}
 ![update_appvolumes_13]({{ site.imagesposts2020 }}/11/update_appvolumes_13.png){: .align-center}
+
+Una vez finalizado, veremos en la pestaña "Managers" cómo el primero de ellos ya está a la última versión
 ![update_appvolumes_14]({{ site.imagesposts2020 }}/11/update_appvolumes_14.png){: .align-center}
+
+Para finalizar, tendremos que meter de nuevo el servidor en el balanceador.
 ![update_appvolumes_15]({{ site.imagesposts2020 }}/11/update_appvolumes_15.png){: .align-center}
 
-Y hasta aquí el post de hoy ;-)
+Finalmente, repetiremos estos mismos pasos en el otro u otros managers que conformen nuestra infraestructura de App Volumes.
+
+Y hasta aquí el post de hoy, nos "vemos" en el próximo post ;-)
 
 Un saludo!
 
