@@ -12,6 +12,8 @@ tag:
 - mobility
 ---
 
+Los UAG es quizás uno de los componentes mas fáciles de actualizar de nuestra plataforma de VMware Horizon
+
 # Actualizar Unified Access Gateway
 
 ![update-uag-00]({{ site.imagesposts2020 }}/11/update-uag-00.png){: .align-center}
