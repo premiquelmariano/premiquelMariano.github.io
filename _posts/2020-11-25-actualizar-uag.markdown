@@ -1,6 +1,6 @@
 ---
 title: Actualizar Unified Access Gateway
-date: '2019-07-17 00:00:00'
+date: '2020-11-25 00:00:00'
 layout: post
 image: /assets/images/posts/2019/07/horizon-logo.png
 tag:
