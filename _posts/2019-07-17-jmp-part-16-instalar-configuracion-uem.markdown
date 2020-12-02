@@ -77,16 +77,50 @@ En la siguiente captura, os muestro por ejemplo la configuración para Adobe Rea
 La parte buena de esto es que en la mayoria de casos no tendremos que customizar "a mano" nuestra aplicación.
 VMware tiene una biblioteca pública, de la cual nos podremos descargar estas configuraciones sin tener que hacerlas manualmente.
 
-Con el botón "Download Config Template" podremos conectarnos a este repositorio público y buscar la a plicación que necesitemos e importarla.
+Con el botón "Download Config Template" podremos conectarnos a este repositorio público y buscar la aplicación que necesitemos e importarla.
 
 ![dem-primeros-pasos-12]({{ site.imagesposts2020 }}/12/dem-primeros-pasos-12.png){: .align-center}
 ![dem-primeros-pasos-13]({{ site.imagesposts2020 }}/12/dem-primeros-pasos-13.png){: .align-center}
 ![dem-primeros-pasos-14]({{ site.imagesposts2020 }}/12/dem-primeros-pasos-14.png){: .align-center}
 
-
 # Pestaña User Environment
 
+En esta pestaña, es dónde podremos empezar a hacer personalizaciones a nuestros usuarios.
+
+* Mapeo de unidades de red
+* Mapeo de impresoras
+* Crear ficheros o carpetas
+* Crear accesos directos
+* Configurar scripts en el login o logof del usuario
+* Etc. etc...
+
+En el siguiente ejemplo, vemos cómo podemos crear un fichero txt en el escritorio de nuestos usuarios. Y como en el VDI aparece este fichero
+
+![dem-primeros-pasos-15]({{ site.imagesposts2020 }}/12/dem-primeros-pasos-15.png){: .align-center}
+![dem-primeros-pasos-16]({{ site.imagesposts2020 }}/12/dem-primeros-pasos-16.png){: .align-center}
+
+También vemos cómo he podido crear un acceso directo en el escritorio para que los usaurios fácilmente puedan cerrar sesión en sus VDIs
+
+![dem-primeros-pasos-17]({{ site.imagesposts2020 }}/12/dem-primeros-pasos-17.png){: .align-center}
+![dem-primeros-pasos-18]({{ site.imagesposts2020 }}/12/dem-primeros-pasos-18.png){: .align-center}
+
 # Pestaña Computer Environment
+
+Esta pestaña es relatavamente nueva, y lo que nos permite es hacer configuraciones no solo en los usuarios, sinó también en sus equipos.
+Está basado en políticas y sus correspondientes plantillas, por lo que inicialmente nos tendremos que descargar estas .admx
+
+Con el botón "Manage Templates", podremos indicarle a DEM en que carpeta están las plantillas .admx que posteriormente usaremos
+
+![dem-primeros-pasos-19]({{ site.imagesposts2020 }}/12/dem-primeros-pasos-19.png){: .align-center}
+
+Y ya podremos crear una nueva política con DEM
+
+![dem-primeros-pasos-20]({{ site.imagesposts2020 }}/12/dem-primeros-pasos-20.png){: .align-center}
+
+Una vez seleccionadas las categorias, ya podremos editar la política con un editor muy similar al que estamos acostumbrados a utilizar, solo que en esta ocasión, solo nos mostrará las opciones disponibles en las categorias seleccionadas.
+
+![dem-primeros-pasos-21]({{ site.imagesposts2020 }}/12/dem-primeros-pasos-21.png){: .align-center}
+
 
 # Pestaña Condition Sets
 
