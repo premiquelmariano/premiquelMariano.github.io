@@ -48,6 +48,21 @@ El instalador para la management console es el mismo que utilizamos para instala
 
 # Configuración inicial
 
+![dem-primeros-pasos-07]({{ site.imagesposts2020 }}/12/dem-primeros-pasos-07.png){: .align-center}
+![dem-primeros-pasos-08]({{ site.imagesposts2020 }}/12/dem-primeros-pasos-08.png){: .align-center}
+![dem-primeros-pasos-09]({{ site.imagesposts2020 }}/12/dem-primeros-pasos-09.png){: .align-center}
+
+
+# Pestaña personalization
+
+# Pestaña User Environment
+
+# Pestaña Computer Environment
+
+# Pestaña Condition Sets
+
+# Pestaña Application Migration
+
 
 
 Espero que os sirva.
