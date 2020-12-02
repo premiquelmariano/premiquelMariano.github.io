@@ -144,9 +144,18 @@ Os abreis dado cuenta de que no existe ninguna condición que nos permita filtra
 
 ![dem-primeros-pasos-23]({{ site.imagesposts2020 }}/12/dem-primeros-pasos-23.png){: .align-center}
 
+Como comentaba, estas condiciones se pueden aplicar en casi todos los objetos, así que nos facilita mucho el trabajo a la hora de tener diferentes configuraciones en funcion al usuario o departamento de nuestra empresa.
+
+![dem-primeros-pasos-24]({{ site.imagesposts2020 }}/12/dem-primeros-pasos-24.png){: .align-center}
+![dem-primeros-pasos-25]({{ site.imagesposts2020 }}/12/dem-primeros-pasos-25.png){: .align-center}
+
 # Pestaña Application Migration
 
+Con "Aplication Migration" lo que vamos a poder hacer es migrar la configuración de una aplicación a otra. No es muy común utilizar esta opción, pero si tenemos aplicaciones muy complejas y que tengan mucha configuración, con esta opción podriamos migrar de una a otra.
 
+La siguiente captura sólo es para enseñaros como es este proceso, evidentemente no tienen ningún sentido que el origen sea Google Chrome y el destino
+
+![dem-primeros-pasos-26]({{ site.imagesposts2020 }}/12/dem-primeros-pasos-26.png){: .align-center}
 
 Espero que os sirva.
 
