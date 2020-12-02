@@ -121,8 +121,28 @@ Una vez seleccionadas las categorias, ya podremos editar la política con un edi
 
 ![dem-primeros-pasos-21]({{ site.imagesposts2020 }}/12/dem-primeros-pasos-21.png){: .align-center}
 
-
 # Pestaña Condition Sets
+
+Es una parte muy importante de DEM, ya que nos permitirá configurar condiciones a cada una de las configuraciones disponibles.
+
+Es obvio que no todos los usuarios van a ser iguales y que por lo tanto, cada uno tendrá su propio entorno de trabajo y sus configuraciones. 
+
+Con los "condition sets" podremos conseguir este comportamiento diferente dependiendo de una condición.
+
+Existes muchas condiciones que podemos utilizar, las mas comunes:
+
+* Filtrar por atributo en nuestro AD
+* Filtrar por grupo de AD
+* Filtrar por nombre de usuario
+* Filtrar por OU
+* Filtrar por IP
+* etc, etc...
+
+![dem-primeros-pasos-22]({{ site.imagesposts2020 }}/12/dem-primeros-pasos-22.png){: .align-center}
+
+Os abreis dado cuenta de que no existe ninguna condición que nos permita filtrar por usuario. Para ello, utilizaremos la condición "Environment Variable" y la variable "username", de esta forma podremos filtrar por nombre de usuario.
+
+![dem-primeros-pasos-23]({{ site.imagesposts2020 }}/12/dem-primeros-pasos-23.png){: .align-center}
 
 # Pestaña Application Migration
 
