@@ -60,7 +60,9 @@ Cómo en la ruta, inicialmente no hay ningún tipo de información, nos aparecer
 
 # Pestaña "Personalization"
 
-En esta pestaña, lo que vamos a poder configurar son los datos de personalización que queremos que sean persistentes de cara al usuario.
+En esta pestaña, aunque se llame Personalization, no podremos hacer ninguna customización. Este nombre, hace referencia a las posibles personalizaciones que el usuario pueda hacer en su entorno de trabajo y que debamos conservar.
+
+Lo que vamos a poder configurar son los datos de personalización que queremos que sean persistentes de cara al usuario.
 Esas configuraciónes que el usuario hará en sus aplicaciones y que queremos conservar una vez se volatilice el escritorio.
 
 Vereis que hay muchas opciones y sub pestañas disponibles, no voy a explicar cada una de ellas, eso me lo reservo para otro post pas avanzado xD
