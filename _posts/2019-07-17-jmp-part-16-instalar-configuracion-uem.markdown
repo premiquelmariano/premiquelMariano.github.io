@@ -41,9 +41,16 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 
 # Instalación Dynamic Environment Manager console
 
-Para poder administrar nuestro entorno DEM, lo primero que haremos será instalar 
+Para poder administrar nuestro entorno DEM, lo primero que haremos será instalar la "Management Console"
 
-![dem-primeros-pasos]({{ site.imagesposts2020 }}/08/dem-primeros-pasos-00.png){: .align-center}
+![dem-primeros-pasos-00]({{ site.imagesposts2020 }}/08/dem-primeros-pasos-00.png){: .align-center}
+![dem-primeros-pasos-01]({{ site.imagesposts2020 }}/08/dem-primeros-pasos-01.png){: .align-center}
+![dem-primeros-pasos-02]({{ site.imagesposts2020 }}/08/dem-primeros-pasos-02.png){: .align-center}
+![dem-primeros-pasos-03]({{ site.imagesposts2020 }}/08/dem-primeros-pasos-03.png){: .align-center}
+![dem-primeros-pasos-04]({{ site.imagesposts2020 }}/08/dem-primeros-pasos-04.png){: .align-center}
+![dem-primeros-pasos-05]({{ site.imagesposts2020 }}/08/dem-primeros-pasos-05.png){: .align-center}
+![dem-primeros-pasos-06]({{ site.imagesposts2020 }}/08/dem-primeros-pasos-06.png){: .align-center}
+
 
 
 
