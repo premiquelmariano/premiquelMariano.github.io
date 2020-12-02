@@ -58,8 +58,19 @@ Cómo en la ruta, inicialmente no hay ningún tipo de información, nos aparecer
 ![dem-primeros-pasos-09]({{ site.imagesposts2020 }}/12/dem-primeros-pasos-09.png){: .align-center}
 ![dem-primeros-pasos-10]({{ site.imagesposts2020 }}/12/dem-primeros-pasos-10.png){: .align-center}
 
+# Pestaña "Personalization"
 
-# Pestaña personalization
+En esta pestaña, lo que vamos a poder configurar son los datos de personalización que queremos que sean persistentes de cara al usuario.
+Esas configuraciónes que el usuario hará en sus aplicaciones y que queremos conservar una vez se volatilice el escritorio.
+
+Vereis que hay muchas opciones y sub pestañas disponibles, no voy a explicar cada una de ellas, eso me lo reservo para otro post pas avanzado xD
+
+La pestaña Import / Export es la que nos permitirá indicar que queremos que se exporte/importe cuando el usuario haga logoff/login.
+Aquí, básicamente podremos configurar rutas del sistema de ficheros o ramas del registro que queramos conservar.
+
+En la siguiente captura, os muestro por ejemplo la configuración para Adobe Reader. Podemos ver que con DEM se "capturan" 4 ramas del registro y el AppData de esta aplicación
+
+![dem-primeros-pasos-11]({{ site.imagesposts2020 }}/12/dem-primeros-pasos-11.png){: .align-center}
 
 # Pestaña User Environment
 
