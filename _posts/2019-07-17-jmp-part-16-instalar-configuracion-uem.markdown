@@ -1,6 +1,6 @@
 ---
-title: Creando un entorno JMP con VMware Horizon - Parte 16
-date: '2019-07-17 00:00:00'
+title: Creando un entorno JMP con VMware Horizon - Primeros pasos con DEM
+date: '2020-12-02 00:00:00'
 layout: post
 image: /assets/images/posts/2019/07/horizon-logo.png
 tag:
@@ -39,17 +39,13 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 - [Part 17: Instalación y configuración JMP Server]({{ site.url }}/jmp-part17/)
 - [Part 18: Aprovisionamiento con JMP]({{ site.url }}/jmp-part18/)
 
-# Primeros pasos con UEM
+# Instalación Dynamic Environment Manager console
 
-![uem_config1]({{ site.imagesposts2019 }}/08/uem_config1.png){: .align-center}
-![uem_config2]({{ site.imagesposts2019 }}/08/uem_config2.png){: .align-center}
-![uem_config3]({{ site.imagesposts2019 }}/08/uem_config3.png){: .align-center}
-![uem_config4]({{ site.imagesposts2019 }}/08/uem_config4.png){: .align-center}
-![uem_config5]({{ site.imagesposts2019 }}/08/uem_config5.png){: .align-center}
-![uem_config6]({{ site.imagesposts2019 }}/08/uem_config6.png){: .align-center}
-![uem_config7]({{ site.imagesposts2019 }}/08/uem_config7.png){: .align-center}
-![uem_config8]({{ site.imagesposts2019 }}/08/uem_config8.png){: .align-center}
-![uem_config9]({{ site.imagesposts2019 }}/08/uem_config9.png){: .align-center}
+Para poder administrar nuestro entorno DEM, lo primero que haremos será instalar 
+
+![dem-primeros-pasos]({{ site.imagesposts2020 }}/08/dem-primeros-pasos-00.png){: .align-center}
+
+
 
 
 Espero que os sirva.
