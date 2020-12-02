@@ -72,6 +72,16 @@ En la siguiente captura, os muestro por ejemplo la configuración para Adobe Rea
 
 ![dem-primeros-pasos-11]({{ site.imagesposts2020 }}/12/dem-primeros-pasos-11.png){: .align-center}
 
+La parte buena de esto es que en la mayoria de casos no tendremos que customizar "a mano" nuestra aplicación.
+VMware tiene una biblioteca pública, de la cual nos podremos descargar estas configuraciones sin tener que hacerlas manualmente.
+
+Con el botón "Download Config Template" podremos conectarnos a este repositorio público y buscar la a plicación que necesitemos e importarla.
+
+![dem-primeros-pasos-12]({{ site.imagesposts2020 }}/12/dem-primeros-pasos-12.png){: .align-center}
+![dem-primeros-pasos-13]({{ site.imagesposts2020 }}/12/dem-primeros-pasos-13.png){: .align-center}
+![dem-primeros-pasos-14]({{ site.imagesposts2020 }}/12/dem-primeros-pasos-14.png){: .align-center}
+
+
 # Pestaña User Environment
 
 # Pestaña Computer Environment
