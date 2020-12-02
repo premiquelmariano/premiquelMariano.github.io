@@ -48,9 +48,15 @@ El instalador para la management console es el mismo que utilizamos para instala
 
 # Configuración inicial
 
+Tras instalar la management console y ejecutarla por primera vez, lo primero que nos preguntará es una ruta UNC para guardar la configuración. Esta ruta, ya vimos cómo crearla y que permisos asignarle, también en el [post anterior]({{ site.url }}/jmp-part15/).
+
 ![dem-primeros-pasos-07]({{ site.imagesposts2020 }}/12/dem-primeros-pasos-07.png){: .align-center}
+
+Cómo en la ruta, inicialmente no hay ningún tipo de información, nos aparecerá la opción de "Easy Start", este botón, lo que hará es crear toda la estructura y ficheros necesarios para que DEM funcione.
+
 ![dem-primeros-pasos-08]({{ site.imagesposts2020 }}/12/dem-primeros-pasos-08.png){: .align-center}
 ![dem-primeros-pasos-09]({{ site.imagesposts2020 }}/12/dem-primeros-pasos-09.png){: .align-center}
+![dem-primeros-pasos-10]({{ site.imagesposts2020 }}/12/dem-primeros-pasos-10.png){: .align-center}
 
 
 # Pestaña personalization
