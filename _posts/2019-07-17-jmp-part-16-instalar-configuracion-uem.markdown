@@ -153,7 +153,7 @@ Como comentaba, estas condiciones se pueden aplicar en casi todos los objetos, a
 
 Con "Aplication Migration" lo que vamos a poder hacer es migrar la configuración de una aplicación a otra. No es muy común utilizar esta opción, pero si tenemos aplicaciones muy complejas y que tengan mucha configuración, con esta opción podriamos migrar de una a otra.
 
-La siguiente captura sólo es para enseñaros como es este proceso, evidentemente no tienen ningún sentido que el origen sea Google Chrome y el destino
+La siguiente captura sólo es para enseñaros como es este proceso, evidentemente no tienen ningún sentido que el origen sea Google Chrome y el destino Notepad++
 
 ![dem-primeros-pasos-26]({{ site.imagesposts2020 }}/12/dem-primeros-pasos-26.png){: .align-center}
 
