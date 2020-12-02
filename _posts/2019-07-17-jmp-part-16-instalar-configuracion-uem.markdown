@@ -157,7 +157,9 @@ La siguiente captura sólo es para enseñaros como es este proceso, evidentement
 
 ![dem-primeros-pasos-26]({{ site.imagesposts2020 }}/12/dem-primeros-pasos-26.png){: .align-center}
 
-Espero que os sirva.
+Y hasta aquí por hoy.
+
+Hasta el próximo post.
 
 Un saludo!
 
