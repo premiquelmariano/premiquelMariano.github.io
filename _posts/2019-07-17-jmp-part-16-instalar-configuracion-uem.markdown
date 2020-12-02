@@ -41,7 +41,8 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 
 # Instalación Dynamic Environment Manager console
 
-Para poder administrar nuestro entorno DEM, lo primero que haremos será instalar la "Management Console"
+Para poder administrar nuestro entorno DEM, lo primero que haremos será instalar la "Management Console".
+El instalador para la management console es el mismo que utilizamos para instalar el agente en el [post anterior]({{ site.url }}/jmp-part15/).
 
 ![dem-primeros-pasos-00]({{ site.imagesposts2020 }}/08/dem-primeros-pasos-00.png){: .align-center}
 ![dem-primeros-pasos-01]({{ site.imagesposts2020 }}/08/dem-primeros-pasos-01.png){: .align-center}
