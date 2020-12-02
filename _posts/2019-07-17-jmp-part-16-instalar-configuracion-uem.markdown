@@ -65,7 +65,7 @@ En esta pestaña, aunque se llame Personalization, no podremos hacer ninguna cus
 Lo que vamos a poder configurar son los datos de personalización que queremos que sean persistentes de cara al usuario.
 Esas configuraciónes que el usuario hará en sus aplicaciones y que queremos conservar una vez se volatilice el escritorio.
 
-Vereis que hay muchas opciones y sub pestañas disponibles, no voy a explicar cada una de ellas, eso me lo reservo para otro post pas avanzado xD
+Veréis que hay muchas opciones y sub pestañas disponibles, no voy a explicar cada una de ellas, eso me lo reservo para otro post pas avanzado xD
 
 La pestaña Import / Export es la que nos permitirá indicar que queremos que se exporte/importe cuando el usuario haga logoff/login.
 Aquí, básicamente podremos configurar rutas del sistema de ficheros o ramas del registro que queramos conservar.
@@ -94,7 +94,7 @@ En esta pestaña, es dónde podremos empezar a hacer personalizaciones a nuestro
 * Configurar scripts en el login o logof del usuario
 * Etc. etc...
 
-En el siguiente ejemplo, vemos cómo podemos crear un fichero txt en el escritorio de nuestos usuarios. Y como en el VDI aparece este fichero
+En el siguiente ejemplo, vemos cómo podemos crear un fichero txt en el escritorio de nuestros usuarios. Y como en el VDI aparece este fichero
 
 ![dem-primeros-pasos-15]({{ site.imagesposts2020 }}/12/dem-primeros-pasos-15.png){: .align-center}
 ![dem-primeros-pasos-16]({{ site.imagesposts2020 }}/12/dem-primeros-pasos-16.png){: .align-center}
@@ -106,7 +106,7 @@ También vemos cómo he podido crear un acceso directo en el escritorio para que
 
 # Pestaña Computer Environment
 
-Esta pestaña es relatavamente nueva, y lo que nos permite es hacer configuraciones no solo en los usuarios, sinó también en sus equipos.
+Esta pestaña es relativamente nueva, y lo que nos permite es hacer configuraciones no solo en los usuarios, sinó también en sus equipos.
 Está basado en políticas y sus correspondientes plantillas, por lo que inicialmente nos tendremos que descargar estas .admx
 
 Con el botón "Manage Templates", podremos indicarle a DEM en que carpeta están las plantillas .admx que posteriormente usaremos
@@ -140,7 +140,7 @@ Existes muchas condiciones que podemos utilizar, las mas comunes:
 
 ![dem-primeros-pasos-22]({{ site.imagesposts2020 }}/12/dem-primeros-pasos-22.png){: .align-center}
 
-Os abreis dado cuenta de que no existe ninguna condición que nos permita filtrar por usuario. Para ello, utilizaremos la condición "Environment Variable" y la variable "username", de esta forma podremos filtrar por nombre de usuario.
+Os abréis dado cuenta de que no existe ninguna condición que nos permita filtrar por usuario. Para ello, utilizaremos la condición "Environment Variable" y la variable "username", de esta forma podremos filtrar por nombre de usuario.
 
 ![dem-primeros-pasos-23]({{ site.imagesposts2020 }}/12/dem-primeros-pasos-23.png){: .align-center}
 
