@@ -14,45 +14,39 @@ permalink: /jmp-part16/
 
 ---
 
-https://univirt.wordpress.com/2018/02/20/building-a-horizon-view-jmp-lab-part-1-introduction/
-
-Buenos dias a tod@s!!
-
-En la siguiente serie de posts, pretendo explicar durante las próximas semanas el paso a paso para instalar un entorno JMP (Just-in-Time Management Platform) utilizando VMware Horizon 7 Instant Clones + App Volumes + VMware UEM (User Environment Manager) 
+Tras mas de 1 año desde la [primera entrada]({{ site.url }}/jmp-part1/) de esta serie, hoy vamos a ver la última entrega de cómo configurar cuales son los primeros pasos en nuestro entorno DEM. Os dejo aquí el índice de toda la serie:
 
 - [Part 1: Introducción]({{ site.url }}/jmp-part1/)
 - [Part 2: Preparar servidor SQL]({{ site.url }}/jmp-part2/)
 - [Part 3: Preparar Active Directory]({{ site.url }}/jmp-part3/)
 - [Part 4: Instalación y configuración Connection Server]({{ site.url }}/jmp-part4/)
-- [Part 5: Instalación y configuración Replica Server]({{ site.url }}/jmp-part5/)
-- [Part 6: Intalación y configuración de Security Server]({{ site.url }}/jmp-part6/)
-- [Part 7: Intalación y configuración de UAG]({{ site.url }}/jmp-part7/)
-- [Part 8: Instalación certificado (opcional)]({{ site.url }}/jmp-part8/)
+- [Part 5: Instalación y configuración Replica Server (opcional)]({{ site.url }}/jmp-part5/)
+- [Part 6: Instalación y configuración de UAG (opcional)]({{ site.url }}/jmp-part6/)
+- [Part 7: Configuración de UAG en HA]({{ site.url }}/jmp-part7/)
+- Part 8: Instalación certificado (opcional)
 - [Part 9: Preparar plantilla master para Instant Clone]({{ site.url }}/jmp-part9/)
 - [Part 10: Configurar un pool de Instant Clone]({{ site.url }}/jmp-part10/)
 - [Part 11: Instalar App Volumes]({{ site.url }}/jmp-part11/)
 - [Part 12: Configuración inicial App Volumes]({{ site.url }}/jmp-part12/)
 - [Part 13: Crear nuestro primer App Stack]({{ site.url }}/jmp-part13/)
 - [Part 14: Trabajando con Writable Volumes]({{ site.url }}/jmp-part14/)
-- [Part 15: User Environment Manager Installation]({{ site.url }}/jmp-part15/)
-- [Part 16: Primeros pasos con UEM]({{ site.url }}/jmp-part16/)
-- [Part 17: Instalación y configuración JMP Server]({{ site.url }}/jmp-part17/)
-- [Part 18: Aprovisionamiento con JMP]({{ site.url }}/jmp-part18/)
+- [Part 15: Instalación Dynamic Environment Manager]({{ site.url }}/jmp-part15/)
+- [Part 16: Primeros pasos con DEM]({{ site.url }}/jmp-part16/)
 
 # Instalación Dynamic Environment Manager console
 
 Para poder administrar nuestro entorno DEM, lo primero que haremos será instalar la "Management Console".
 El instalador para la management console es el mismo que utilizamos para instalar el agente en el [post anterior]({{ site.url }}/jmp-part15/).
 
-![dem-primeros-pasos-00]({{ site.imagesposts2020 }}/08/dem-primeros-pasos-00.png){: .align-center}
-![dem-primeros-pasos-01]({{ site.imagesposts2020 }}/08/dem-primeros-pasos-01.png){: .align-center}
-![dem-primeros-pasos-02]({{ site.imagesposts2020 }}/08/dem-primeros-pasos-02.png){: .align-center}
-![dem-primeros-pasos-03]({{ site.imagesposts2020 }}/08/dem-primeros-pasos-03.png){: .align-center}
-![dem-primeros-pasos-04]({{ site.imagesposts2020 }}/08/dem-primeros-pasos-04.png){: .align-center}
-![dem-primeros-pasos-05]({{ site.imagesposts2020 }}/08/dem-primeros-pasos-05.png){: .align-center}
-![dem-primeros-pasos-06]({{ site.imagesposts2020 }}/08/dem-primeros-pasos-06.png){: .align-center}
+![dem-primeros-pasos-00]({{ site.imagesposts2020 }}/12/dem-primeros-pasos-00.png){: .align-center}
+![dem-primeros-pasos-01]({{ site.imagesposts2020 }}/12/dem-primeros-pasos-01.png){: .align-center}
+![dem-primeros-pasos-02]({{ site.imagesposts2020 }}/12/dem-primeros-pasos-02.png){: .align-center}
+![dem-primeros-pasos-03]({{ site.imagesposts2020 }}/12/dem-primeros-pasos-03.png){: .align-center}
+![dem-primeros-pasos-04]({{ site.imagesposts2020 }}/12/dem-primeros-pasos-04.png){: .align-center}
+![dem-primeros-pasos-05]({{ site.imagesposts2020 }}/12/dem-primeros-pasos-05.png){: .align-center}
+![dem-primeros-pasos-06]({{ site.imagesposts2020 }}/12/dem-primeros-pasos-06.png){: .align-center}
 
-
+# Configuración inicial
 
 
 
