@@ -53,23 +53,28 @@ Esto nos exportará la configuración en formato .json
 Antes de endender el nuevo UAG y ahora que tenemos la configuración exportada, procedemos a apagar el UAG original.
 ![update-uag-15]({{ site.imagesposts2020 }}/11/update-uag-15.png){: .align-center}
 
-Encendemos el nuevo UAG, hacemos login y nos dirigimos a la opción de "Importar configuración"
+Encendemos el nuevo UAG, hacemos login y nos dirigimos a la opción de "Importar configuración" para hacer la importación del fichero .json que previamente hemos exportado
 ![update-uag-14]({{ site.imagesposts2020 }}/11/update-uag-14.png){: .align-center}
 
 ![update-uag-16]({{ site.imagesposts2020 }}/11/update-uag-16.png){: .align-center}
 ![update-uag-17]({{ site.imagesposts2020 }}/11/update-uag-17.png){: .align-center}
 ![update-uag-18]({{ site.imagesposts2020 }}/11/update-uag-18.png){: .align-center}
 ![update-uag-19]({{ site.imagesposts2020 }}/11/update-uag-19.png){: .align-center}
+
+Si queremos mantener la misma IP, será necesario hacer el cambio. Éste es el único parámetro que no importaremos con el fichero, el restro, estará tal cual al UAG original.
+
 ![update-uag-20]({{ site.imagesposts2020 }}/11/update-uag-20.png){: .align-center}
+
+Verificamos los parámetros y que los servicios están OK
 ![update-uag-21]({{ site.imagesposts2020 }}/11/update-uag-21.png){: .align-center}
 ![update-uag-22]({{ site.imagesposts2020 }}/11/update-uag-22.png){: .align-center}
+
+En el Horizon Administrator, tendremos que cambiar nuestro nuevo UAG. Será tan fácil como eliminar el registro actual que aparecerá con error y añadir el nuevo UAG
 ![update-uag-23]({{ site.imagesposts2020 }}/11/update-uag-23.png){: .align-center}
 ![update-uag-24]({{ site.imagesposts2020 }}/11/update-uag-24.png){: .align-center}
 ![update-uag-25]({{ site.imagesposts2020 }}/11/update-uag-25.png){: .align-center}
 ![update-uag-26]({{ site.imagesposts2020 }}/11/update-uag-26.png){: .align-center}
 ![update-uag-27]({{ site.imagesposts2020 }}/11/update-uag-27.png){: .align-center}
-![update-uag-28]({{ site.imagesposts2020 }}/11/update-uag-28.png){: .align-center}
-
 
 
 Espero que os sirva.
