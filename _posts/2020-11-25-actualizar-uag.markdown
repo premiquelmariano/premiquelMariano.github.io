@@ -12,12 +12,25 @@ tag:
 - mobility
 ---
 
-Los UAG es quizás uno de los componentes mas fáciles de actualizar de nuestra plataforma de VMware Horizon
+El componente UAG es quizás uno de los componentes mas fáciles de actualizar de nuestra plataforma de VMware Horizon. Hace ya tiempo, en [este post](https://miquelmariano.github.io/jmp-part6/), ya vimos como hacer su instalación y configuración.
+
+El "proceso" de actualización, es básicamente desplegar un nuevo appliance en última versión e importar la configuración existente. ¿Fácil, no?
+
+Vamos a lio...
 
 # Actualizar Unified Access Gateway
 
+Desde el portal de [my.vmware](my.vmware.com), nos descargaremos la última versión disponible en formato .ova
+
 ![update-uag-00]({{ site.imagesposts2020 }}/11/update-uag-00.png){: .align-center}
+
+Es importante que repasemos la [matriz de interoperabilidad de productos VMware](https://www.vmware.com/resources/compatibility/sim/interop_matrix.php), desde aquí, podremos ver qué versión de UAG es compatible con nuestro entorno horizon y el "Upgrade Path" a seguir.
+
+En mi caso, partimos de unos UAG en versión 3.6
+
 ![update-uag-01]({{ site.imagesposts2020 }}/11/update-uag-01.png){: .align-center}
+
+Desplegaremos nuestros nuevos UAG igual que hacemos con cualquier otro appliance en formato .ova y seguimos el asistente.
 ![update-uag-02]({{ site.imagesposts2020 }}/11/update-uag-02.png){: .align-center}
 ![update-uag-03]({{ site.imagesposts2020 }}/11/update-uag-03.png){: .align-center}
 ![update-uag-04]({{ site.imagesposts2020 }}/11/update-uag-04.png){: .align-center}
@@ -28,10 +41,21 @@ Los UAG es quizás uno de los componentes mas fáciles de actualizar de nuestra 
 ![update-uag-09]({{ site.imagesposts2020 }}/11/update-uag-09.png){: .align-center}
 ![update-uag-10]({{ site.imagesposts2020 }}/11/update-uag-10.png){: .align-center}
 ![update-uag-11]({{ site.imagesposts2020 }}/11/update-uag-11.png){: .align-center}
+
+Una vez tengamos desplegado nuestro nuevo UAG y antes de arrancarlo, deberemos exportal la configuración del UAG el cual vamos a substituir.
+
+Configurar manualmente > Exportar la configuración de Unified Access Gateway
+
+Esto nos exportará la configuración en formato .json
 ![update-uag-12]({{ site.imagesposts2020 }}/11/update-uag-12.png){: .align-center}
 ![update-uag-13]({{ site.imagesposts2020 }}/11/update-uag-13.png){: .align-center}
-![update-uag-14]({{ site.imagesposts2020 }}/11/update-uag-14.png){: .align-center}
+
+Antes de endender el nuevo UAG y ahora que tenemos la configuración exportada, procedemos a apagar el UAG original.
 ![update-uag-15]({{ site.imagesposts2020 }}/11/update-uag-15.png){: .align-center}
+
+Encendemos el nuevo UAG, hacemos login y nos dirigimos a la opción de "Importar configuración"
+![update-uag-14]({{ site.imagesposts2020 }}/11/update-uag-14.png){: .align-center}
+
 ![update-uag-16]({{ site.imagesposts2020 }}/11/update-uag-16.png){: .align-center}
 ![update-uag-17]({{ site.imagesposts2020 }}/11/update-uag-17.png){: .align-center}
 ![update-uag-18]({{ site.imagesposts2020 }}/11/update-uag-18.png){: .align-center}
