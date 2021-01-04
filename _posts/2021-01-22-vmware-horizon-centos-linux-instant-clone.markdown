@@ -65,6 +65,14 @@ Estos últimos días me ha dado por trastear con CentOS 8 y queria ver si era ca
 
 ## VMware Tools
 
+![agentes-00]({{ site.imagesposts2021 }}/01/agentes-00.png){: .align-center}
+![agentes-01]({{ site.imagesposts2021 }}/01/agentes-01.png){: .align-center}
+![agentes-02]({{ site.imagesposts2021 }}/01/agentes-02.png){: .align-center}
+![agentes-03]({{ site.imagesposts2021 }}/01/agentes-03.png){: .align-center}
+![agentes-04]({{ site.imagesposts2021 }}/01/agentes-04png){: .align-center}
+![agentes-05]({{ site.imagesposts2021 }}/01/agentes-05.png){: .align-center}
+![agentes-06]({{ site.imagesposts2021 }}/01/agentes-06.png){: .align-center}
+
 ## Horizon Agent
 
 # Meter plantilla en dominio
