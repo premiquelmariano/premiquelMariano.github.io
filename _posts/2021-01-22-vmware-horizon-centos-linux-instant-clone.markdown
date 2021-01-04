@@ -54,6 +54,12 @@ Estos últimos días me ha dado por trastear con CentOS 8 y queria ver si era ca
 ![instalar-so-28]({{ site.imagesposts2021 }}/01/instalar-so-28.png){: .align-center}
 ![instalar-so-29]({{ site.imagesposts2021 }}/01/instalar-so-29.png){: .align-center}
 ![instalar-so-30]({{ site.imagesposts2021 }}/01/instalar-so-30.png){: .align-center}
+![instalar-so-31]({{ site.imagesposts2021 }}/01/instalar-so-31.png){: .align-center}
+![instalar-so-32]({{ site.imagesposts2021 }}/01/instalar-so-32.png){: .align-center}
+![instalar-so-33]({{ site.imagesposts2021 }}/01/instalar-so-33.png){: .align-center}
+![instalar-so-34]({{ site.imagesposts2021 }}/01/instalar-so-34.png){: .align-center}
+![instalar-so-35]({{ site.imagesposts2021 }}/01/instalar-so-35.png){: .align-center}
+![instalar-so-36]({{ site.imagesposts2021 }}/01/instalar-so-36.png){: .align-center}
 
 # Instalar agentes
 
