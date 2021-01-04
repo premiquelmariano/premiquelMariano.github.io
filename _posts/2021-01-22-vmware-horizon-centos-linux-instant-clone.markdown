@@ -18,7 +18,7 @@ https://computingforgeeks.com/join-centos-rhel-system-to-active-directory-domain
 
 Estos últimos días me ha dado por trastear con CentOS 8 y queria ver si era capaz de montar un pool de Instant Clones con Horizon 8. No ha sido tarea fácil, pero creo que lo he conseguido. Ahí va el proceso que he seguido:
 
-# Instalar nueva plantilla base
+# Desplegar nueva VM plantilla
 
 ![instalar-so-00]({{ site.imagesposts2021 }}/01/instalar-so-00.png){: .align-center}
 ![instalar-so-01]({{ site.imagesposts2021 }}/01/instalar-so-01.png){: .align-center}
@@ -35,6 +35,9 @@ Estos últimos días me ha dado por trastear con CentOS 8 y queria ver si era ca
 ![instalar-so-12]({{ site.imagesposts2021 }}/01/instalar-so-12.png){: .align-center}
 ![instalar-so-13]({{ site.imagesposts2021 }}/01/instalar-so-13.png){: .align-center}
 ![instalar-so-14]({{ site.imagesposts2021 }}/01/instalar-so-14.png){: .align-center}
+
+# Instalar sistema operativo
+
 ![instalar-so-15]({{ site.imagesposts2021 }}/01/instalar-so-15.png){: .align-center}
 ![instalar-so-16]({{ site.imagesposts2021 }}/01/instalar-so-16.png){: .align-center}
 ![instalar-so-17]({{ site.imagesposts2021 }}/01/instalar-so-17.png){: .align-center}
@@ -53,6 +56,10 @@ Estos últimos días me ha dado por trastear con CentOS 8 y queria ver si era ca
 ![instalar-so-30]({{ site.imagesposts2021 }}/01/instalar-so-30.png){: .align-center}
 
 # Instalar agentes
+
+## VMware Tools
+
+## Horizon Agent
 
 # Meter plantilla en dominio
 
