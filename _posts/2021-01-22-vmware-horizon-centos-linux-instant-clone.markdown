@@ -191,13 +191,27 @@ NetbiosDomain = MYDOMAIN
 
 # Desplegar nuevo deskop pool de Instant Clone
 
+![pool-ic-00]({{ site.imagesposts2021 }}/01/pool-ic-00.png){: .align-center}
+![pool-ic-01]({{ site.imagesposts2021 }}/01/pool-ic-01.png){: .align-center}
+![pool-ic-02]({{ site.imagesposts2021 }}/01/pool-ic-02.png){: .align-center}
+![pool-ic-03]({{ site.imagesposts2021 }}/01/pool-ic-03.png){: .align-center}
+![pool-ic-04]({{ site.imagesposts2021 }}/01/pool-ic-04.png){: .align-center}
+![pool-ic-05]({{ site.imagesposts2021 }}/01/pool-ic-05.png){: .align-center}
+![pool-ic-06]({{ site.imagesposts2021 }}/01/pool-ic-06.png){: .align-center}
+![pool-ic-07]({{ site.imagesposts2021 }}/01/pool-ic-07.png){: .align-center}
+![pool-ic-08]({{ site.imagesposts2021 }}/01/pool-ic-08.png){: .align-center}
+![pool-ic-09]({{ site.imagesposts2021 }}/01/pool-ic-09.png){: .align-center}
+![pool-ic-10]({{ site.imagesposts2021 }}/01/pool-ic-10.png){: .align-center}
+![pool-ic-11]({{ site.imagesposts2021 }}/01/pool-ic-11.png){: .align-center}
+
+
+
 # Principal handicap
 
 Gestión de perfiles y datos de usuario
 Soporte 1:1 con FD para no necesitar gestión de perfiles
 
 https://communities.vmware.com/t5/Dynamic-Environment-Manager/UEM-and-Horizon-Linux-Desktop/m-p/1386499
-
 
 ![instalar-so-00]({{ site.imagesposts2021 }}/01/instalar-so-00.png){: .align-center}
 
