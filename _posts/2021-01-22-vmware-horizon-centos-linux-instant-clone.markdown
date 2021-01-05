@@ -97,6 +97,85 @@ scsi0:0.ctkEnabled = FALSE
 
 # Meter plantilla en dominio
 
+* Verificar la conexión con nuestro dominio
+
+```
+realm discover mydomain.com
+```
+
+![dominio-00]({{ site.imagesposts2021 }}/01/dominio-00.png){: .align-center}
+
+* Instalamos dependencias
+
+```
+yum install oddjob oddjob-mkhomedir sssd adcli samba-common-tools -y 
+```
+
+![dominio-01]({{ site.imagesposts2021 }}/01/dominio-01.png){: .align-center}
+
+* Añadir al dominio
+
+```
+realm join --verbose mydomain.com -U administrator
+```
+
+![dominio-02]({{ site.imagesposts2021 }}/01/dominio-02.png){: .align-center}
+
+* Modificar fichero `*/etc/sssd/sssd.conf*`
+
+```
+[sssd]
+domains = mydomain.com
+config_file_version = 2
+services = nss, pam
+ 
+[domain/mydomain.com]
+ad_domain = mydomain.com
+krb5_realm = IMYDOMAIN.COM
+realmd_tags = manages-system joined-with-adcli
+cache_credentials = True
+id_provider = ad
+krb5_store_password_if_offline = True
+default_shell = /bin/bash
+ldap_id_mapping = True
+use_fully_qualified_names = False        <---------------- Use short name for user
+fallback_homedir = /home/%u@%d
+access_provider = ad
+ad_gpo_map_interactive = +gdm-vmwcred    <---------------- Add this line for SSO
+ 
+[pam]                                    <---------------- Add pam section for certificate logon
+pam_cert_auth = True                     <---------------- Add this line to enable certificate logon for system
+pam_p11_allowed_services = +gdm-vmwcred  <---------------- Add this line to enable certificate logon for VMware Horizon Agent
+ 
+[certmap/mydomain.com/truesso]          <---------------- Add this section and following lines to set match and map rule for certificate user
+matchrule = <EKU>msScLogin
+maprule = (|(userPrincipal={subject_principal})(samAccountName={subject_principal.short_name}))
+domains = mydomain.com
+priority = 10
+```
+
+![dominio-03]({{ site.imagesposts2021 }}/01/dominio-03.png){: .align-center}
+
+* Comandos finales
+
+```
+authselect select sssd
+authselect select sssd with-mkhomedir
+systemctl restart sssd
+systemctl status sssd
+```
+
+![dominio-04]({{ site.imagesposts2021 }}/01/dominio-04.png){: .align-center}
+
+* Comprobar integración buscando un usuario
+
+```
+id miquel.mariano
+```
+
+![dominio-05]({{ site.imagesposts2021 }}/01/dominio-05.png){: .align-center}
+
+
 # Desplegar nuevo deskop pool de Instant Clone
 
 # Principal handicap
