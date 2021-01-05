@@ -187,6 +187,8 @@ Hay que modificar la siguiente linea en el fichero `/etc/vmware/viewagent-custom
 NetbiosDomain = MYDOMAIN
 ```
 
+![horizon-agent-04]({{ site.imagesposts2021 }}/01/horizon-agent-04.png){: .align-center}
+
 # Desplegar nuevo deskop pool de Instant Clone
 
 # Principal handicap
