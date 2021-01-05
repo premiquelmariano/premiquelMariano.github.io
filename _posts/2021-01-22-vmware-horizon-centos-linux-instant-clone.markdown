@@ -77,9 +77,7 @@ scsi0:0.ctkEnabled = FALSE
 ![instalar-so-35]({{ site.imagesposts2021 }}/01/instalar-so-35.png){: .align-center}
 ![instalar-so-36]({{ site.imagesposts2021 }}/01/instalar-so-36.png){: .align-center}
 
-# Instalar agentes
-
-## VMware Tools
+# Instalar VMware Tools
 
 ![agentes-00]({{ site.imagesposts2021 }}/01/agentes-00.png){: .align-center}
 ![agentes-01]({{ site.imagesposts2021 }}/01/agentes-01.png){: .align-center}
@@ -90,10 +88,6 @@ scsi0:0.ctkEnabled = FALSE
 ![agentes-06]({{ site.imagesposts2021 }}/01/agentes-06.png){: .align-center}
 ![agentes-07]({{ site.imagesposts2021 }}/01/agentes-07.png){: .align-center}
 ![agentes-08]({{ site.imagesposts2021 }}/01/agentes-08.png){: .align-center}
-
-## Horizon Agent
-
-![horizon-agent-00]({{ site.imagesposts2021 }}/01/horizon-agent-00.png){: .align-center}
 
 # Meter plantilla en dominio
 
@@ -121,7 +115,7 @@ realm join --verbose mydomain.com -U administrator
 
 ![dominio-02]({{ site.imagesposts2021 }}/01/dominio-02.png){: .align-center}
 
-* Modificar fichero `*/etc/sssd/sssd.conf*`
+* Modificar fichero `/etc/sssd/sssd.conf`
 
 ```
 [sssd]
@@ -175,6 +169,23 @@ id miquel.mariano
 
 ![dominio-05]({{ site.imagesposts2021 }}/01/dominio-05.png){: .align-center}
 
+# Instalar Horizon Agent
+
+![horizon-agent-00]({{ site.imagesposts2021 }}/01/horizon-agent-00.png){: .align-center}
+![horizon-agent-01]({{ site.imagesposts2021 }}/01/horizon-agent-01.png){: .align-center}
+
+```
+./install_viewagent.sh -T yes
+```
+
+![horizon-agent-02]({{ site.imagesposts2021 }}/01/horizon-agent-02.png){: .align-center}
+![horizon-agent-03]({{ site.imagesposts2021 }}/01/horizon-agent-03.png){: .align-center}
+
+Hay que modificar la siguiente linea en el fichero `/etc/vmware/viewagent-custom.conf`
+
+```
+NetbiosDomain = MYDOMAIN
+```
 
 # Desplegar nuevo deskop pool de Instant Clone
 
