@@ -4,13 +4,14 @@ date: '2021-01-22 00:00:00'
 layout: post
 image: /assets/images/posts/2018/12/ssh-banner.jpg
 tag:
-- esxi
-- vsphere
+- vmware
+- horizon
 - vexpert
+- euc
+- desktop
+- mobility
+- centos8
 ---
-
-
-
 
 https://tech.iot-it.no/vmware-horizon-centos-linux-8-instant-clone-desktop-pool/
 
@@ -19,6 +20,8 @@ https://computingforgeeks.com/join-centos-rhel-system-to-active-directory-domain
 Estos últimos días me ha dado por trastear con CentOS 8 y queria ver si era capaz de montar un pool de Instant Clones con Horizon 8. No ha sido tarea fácil, pero creo que lo he conseguido. Ahí va el proceso que he seguido:
 
 # Desplegar nueva VM plantilla
+
+Cómo siempre que trabajamos con VDI, necesitaremos una plantilla base, a partir de la cual, se desplegaran los escritorios. La plantilla que he creado para CentOS 8 tiene los siguientes parámetros:
 
 ![instalar-so-00]({{ site.imagesposts2021 }}/01/instalar-so-00.png){: .align-center}
 ![instalar-so-01]({{ site.imagesposts2021 }}/01/instalar-so-01.png){: .align-center}
@@ -31,6 +34,19 @@ Estos últimos días me ha dado por trastear con CentOS 8 y queria ver si era ca
 ![instalar-so-08]({{ site.imagesposts2021 }}/01/instalar-so-08.png){: .align-center}
 ![instalar-so-09]({{ site.imagesposts2021 }}/01/instalar-so-09.png){: .align-center}
 ![instalar-so-10]({{ site.imagesposts2021 }}/01/instalar-so-10.png){: .align-center}
+
+En la KB ["Changed Block Tracking (CBT) on virtual machines (1020128)](https://kb.vmware.com/s/article/1020128) especifica lo siguiente:
+
+“If you are using VMware Horizon View and linked clone or instant clone virtual machines, you should not be using CBT. Always ensure that CBT is disabled for the parent virtual machine.”
+{: .alert .alert-warning}
+
+Para ello, añadiremos estos dos parámetros en la configuración avanzada de la VM
+
+```
+ctkEnabled = FALSE
+scsi0:0.ctkEnabled = FALSE
+```
+
 ![instalar-so-11]({{ site.imagesposts2021 }}/01/instalar-so-11.png){: .align-center}
 ![instalar-so-12]({{ site.imagesposts2021 }}/01/instalar-so-12.png){: .align-center}
 ![instalar-so-13]({{ site.imagesposts2021 }}/01/instalar-so-13.png){: .align-center}
