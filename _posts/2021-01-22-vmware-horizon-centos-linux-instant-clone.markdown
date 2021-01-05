@@ -181,10 +181,13 @@ id miquel.mariano
 ![horizon-agent-02]({{ site.imagesposts2021 }}/01/horizon-agent-02.png){: .align-center}
 ![horizon-agent-03]({{ site.imagesposts2021 }}/01/horizon-agent-03.png){: .align-center}
 
-Hay que modificar la siguiente linea en el fichero `/etc/vmware/viewagent-custom.conf`
+Hay que modificar las siguientes linea en el fichero `/etc/vmware/viewagent-custom.conf`
 
 ```
 NetbiosDomain = MYDOMAIN
+SSOUserFormat=username]@[domain]
+KeyboardLayoutSync=FALSE
+OfflineJoinDomain=none
 ```
 
 ![horizon-agent-04]({{ site.imagesposts2021 }}/01/horizon-agent-04.png){: .align-center}
