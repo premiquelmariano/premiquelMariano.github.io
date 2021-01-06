@@ -208,28 +208,12 @@ SSODesktopType=UseGnomeClassic
 ![pool-ic-10]({{ site.imagesposts2021 }}/01/pool-ic-10.png){: .align-center}
 ![pool-ic-11]({{ site.imagesposts2021 }}/01/pool-ic-11.png){: .align-center}
 
-
-
 # Principal handicap
 
 Gestión de perfiles y datos de usuario
 Soporte 1:1 con FD para no necesitar gestión de perfiles
 
-# Bibliografía
-
-https://tech.iot-it.no/vmware-horizon-centos-linux-8-instant-clone-desktop-pool/
-
-https://computingforgeeks.com/join-centos-rhel-system-to-active-directory-domain/
-
-https://docs.vmware.com/en/VMware-Horizon-7/7.11/linux-desktops-setup/GUID-38E33D0D-45D3-4B79-A756-963374831725.html
-
-https://rguske.github.io/post/a-linux-development-desktop-with-vmware-horizon-part-i-horizon/
-
-https://communities.vmware.com/t5/Dynamic-Environment-Manager/UEM-and-Horizon-Linux-Desktop/m-p/1386499
-
 ¿Qué os parece?
-
-Por cierto, si quereis hacer algún tipo de extravagancia, esta [herramienta online](http://patorjk.com/software/taag/#p=testall&f=Arrows&t=miquelmariano.github.io) que me he encontrado está muy bien
 
 Espero que os guste ;-)
 
@@ -238,3 +222,16 @@ Saludos!
 Miquel.
 
 
+# Bibliografía
+
+https://tech.iot-it.no/vmware-horizon-centos-linux-8-instant-clone-desktop-pool/
+
+https://computingforgeeks.com/join-centos-rhel-system-to-active-directory-domain/
+
+https://docs.vmware.com/en/VMware-Horizon/2006/linux-desktops-setup/GUID-38E33D0D-45D3-4B79-A756-963374831725.html
+
+https://rguske.github.io/post/a-linux-development-desktop-with-vmware-horizon-part-i-horizon/
+
+https://communities.vmware.com/t5/Dynamic-Environment-Manager/UEM-and-Horizon-Linux-Desktop/m-p/1386499
+
+https://support.oneidentity.com/es-es/safeguard-authentication-services/kb/319675/vmware-horizon-agent-single-sign-on-not-working-with-authentication-services-installed-on-linux
