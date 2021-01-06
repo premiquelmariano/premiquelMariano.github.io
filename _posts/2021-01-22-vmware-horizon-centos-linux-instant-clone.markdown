@@ -13,10 +13,6 @@ tag:
 - centos8
 ---
 
-https://tech.iot-it.no/vmware-horizon-centos-linux-8-instant-clone-desktop-pool/
-
-https://computingforgeeks.com/join-centos-rhel-system-to-active-directory-domain/
-
 Estos últimos días me ha dado por trastear con CentOS 8 y queria ver si era capaz de montar un pool de Instant Clones con Horizon 8. No ha sido tarea fácil, pero creo que lo he conseguido. Ahí va el proceso que he seguido:
 
 # Desplegar nueva VM plantilla
@@ -132,20 +128,10 @@ id_provider = ad
 krb5_store_password_if_offline = True
 default_shell = /bin/bash
 ldap_id_mapping = True
-use_fully_qualified_names = False        <---------------- Use short name for user
+use_fully_qualified_names = False        
 fallback_homedir = /home/%u@%d
 access_provider = ad
-ad_gpo_map_interactive = +gdm-vmwcred    <---------------- Add this line for SSO
- 
-[pam]                                    <---------------- Add pam section for certificate logon
-pam_cert_auth = True                     <---------------- Add this line to enable certificate logon for system
-pam_p11_allowed_services = +gdm-vmwcred  <---------------- Add this line to enable certificate logon for VMware Horizon Agent
- 
-[certmap/mydomain.com/truesso]          <---------------- Add this section and following lines to set match and map rule for certificate user
-matchrule = <EKU>msScLogin
-maprule = (|(userPrincipal={subject_principal})(samAccountName={subject_principal.short_name}))
-domains = mydomain.com
-priority = 10
+ad_gpo_map_interactive = +gdm-vmwcred
 ```
 
 ![dominio-03]({{ site.imagesposts2021 }}/01/dominio-03.png){: .align-center}
@@ -160,6 +146,20 @@ systemctl status sssd
 ```
 
 ![dominio-04]({{ site.imagesposts2021 }}/01/dominio-04.png){: .align-center}
+
+* Configurar sesión Gnome Classic
+
+```
+cd /usr/share/xsessions/
+ls -rtl
+-rw-r--r--. 1 root root 8471 May 15  2019 gnome-custom-session.desktop
+-rw-r--r--. 1 root root 1303 May 15  2019 gnome.desktop
+-rw-r--r--. 1 root root 1303 May 15  2019 gnome-xorg.desktop
+-rw-r--r--. 1 root root 1394 May 17  2019 gnome-classic.desktop
+sudo mkdir backup
+sudo mv *.desktop backup/
+sudo mv backup/gnome-classic.desktop ./
+```
 
 * Comprobar integración buscando un usuario
 
@@ -188,6 +188,7 @@ NetbiosDomain = MYDOMAIN
 SSOUserFormat=username]@[domain]
 KeyboardLayoutSync=FALSE
 OfflineJoinDomain=none
+SSODesktopType=UseGnomeClassic
 ```
 
 ![horizon-agent-04]({{ site.imagesposts2021 }}/01/horizon-agent-04.png){: .align-center}
@@ -214,9 +215,17 @@ OfflineJoinDomain=none
 Gestión de perfiles y datos de usuario
 Soporte 1:1 con FD para no necesitar gestión de perfiles
 
-https://communities.vmware.com/t5/Dynamic-Environment-Manager/UEM-and-Horizon-Linux-Desktop/m-p/1386499
+# Bibliografía
 
-![instalar-so-00]({{ site.imagesposts2021 }}/01/instalar-so-00.png){: .align-center}
+https://tech.iot-it.no/vmware-horizon-centos-linux-8-instant-clone-desktop-pool/
+
+https://computingforgeeks.com/join-centos-rhel-system-to-active-directory-domain/
+
+https://docs.vmware.com/en/VMware-Horizon-7/7.11/linux-desktops-setup/GUID-38E33D0D-45D3-4B79-A756-963374831725.html
+
+https://rguske.github.io/post/a-linux-development-desktop-with-vmware-horizon-part-i-horizon/
+
+https://communities.vmware.com/t5/Dynamic-Environment-Manager/UEM-and-Horizon-Linux-Desktop/m-p/1386499
 
 ¿Qué os parece?
 
