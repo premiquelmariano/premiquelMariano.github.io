@@ -34,7 +34,6 @@ Cómo siempre que trabajamos con VDI, necesitaremos una plantilla base, a partir
 En la KB ["Changed Block Tracking (CBT) on virtual machines (1020128)](https://kb.vmware.com/s/article/1020128) especifica lo siguiente:
 
 “If you are using VMware Horizon View and linked clone or instant clone virtual machines, you should not be using CBT. Always ensure that CBT is disabled for the parent virtual machine.”
-{: .alert .alert-warning}
 
 Para ello, añadiremos estos dos parámetros en la configuración avanzada de la VM
 
