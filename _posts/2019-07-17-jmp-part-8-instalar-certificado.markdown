@@ -41,6 +41,49 @@ En la siguiente serie de posts, pretendo explicar durante las próximas semanas 
 
 A continuación veremos el procedimiento a seguir para generar un certificado SSL windcard emitido por una entidad certificadora pública. GoDaddy por ejemplo
 
+* Desde cualquier equipo, instalar OpenSSL (http://gnuwin32.sourceforge.net/packages/openssl.htm)
+
+![openssl-create-00]({{ site.imagesposts2021 }}/02/openssl-create-00.png){: .align-center}
+![openssl-create-01]({{ site.imagesposts2021 }}/02/openssl-create-01.png){: .align-center}
+![openssl-create-02]({{ site.imagesposts2021 }}/02/openssl-create-02.png){: .align-center}
+![openssl-create-03]({{ site.imagesposts2021 }}/02/openssl-create-03.png){: .align-center}
+![openssl-create-04]({{ site.imagesposts2021 }}/02/openssl-create-04.png){: .align-center}
+![openssl-create-05]({{ site.imagesposts2021 }}/02/openssl-create-05.png){: .align-center}
+![openssl-create-06]({{ site.imagesposts2021 }}/02/openssl-create-06.png){: .align-center}
+![openssl-create-07]({{ site.imagesposts2021 }}/02/openssl-create-07.png){: .align-center}
+![openssl-create-08]({{ site.imagesposts2021 }}/02/openssl-create-08.png){: .align-center}
+
+* Crearemos un directorio de trabajo y un fichero de configuración con la información del certificado
+
+![openssl-create-09]({{ site.imagesposts2021 }}/02/openssl-create-09.png){: .align-center}
+
+```
+[ req ]
+default_bits = 2048
+distinguished_name = req_distinguished_name
+req_extensions = req_ext
+
+[ req_distinguished_name ]
+countryName = ES
+stateOrProvinceName = Tu_Comunidad_Autonoma
+localityName = Tu_Ciudad
+organizationName = Nombre_organización
+commonName = *.tudominio.com
+
+[ req_ext ]
+subjectAltName = @alt_names
+[alt_names]
+DNS.1 = *.tudominio.com
+DNS.2 = tudominio.com
+```
+
+* Generar CSR en base al certificado deseado. Ejecutando el siguiente comand0
+
+`openssl req -new -keyout <your.domain.com>.key -out <your.domain.com>.csr -nodes -newkey rsa:4096 -config <path>/openssl.cnf`
+
+![openssl-create-10]({{ site.imagesposts2021 }}/02/openssl-create-10.png){: .align-center}
+![openssl-create-11]({{ site.imagesposts2021 }}/02/openssl-create-11.png){: .align-center}
+
 # Instalación de certificado wildcard en Connection Server
 
 ![certificado-connection-server-01]({{ site.imagesposts2020 }}/02/certificado-connection-server-01.png){: .align-center}
