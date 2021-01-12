@@ -77,9 +77,13 @@ DNS.1 = *.tudominio.com
 DNS.2 = tudominio.com
 ```
 
-* Generar CSR en base al certificado deseado. Ejecutando el siguiente comand0
+* Generar CSR en base al certificado deseado. 
+
+Ejecutaremos el siguiente comando:
 
 `openssl req -new -keyout <your.domain.com>.key -out <your.domain.com>.csr -nodes -newkey rsa:4096 -config <path>/openssl.cnf`
+
+Es necesario que volvamos a introducir los datos de configuración ya que de lo contrario, recibiremos un error.
 
 ![openssl-create-10]({{ site.imagesposts2021 }}/02/openssl-create-10.png){: .align-center}
 ![openssl-create-11]({{ site.imagesposts2021 }}/02/openssl-create-11.png){: .align-center}
