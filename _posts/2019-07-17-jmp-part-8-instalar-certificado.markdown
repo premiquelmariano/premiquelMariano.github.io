@@ -102,6 +102,8 @@ Con el siguiente comando, podremos combinar el certificado de la CA .crt con la 
 
 `OpenSSL.exe pkcs12 -export -out <your.domain.com>.p12 -inkey <your.domain.com>.key -in "c41a3a446823203d.crt"`
 
+Se puede generar el certificado en formato .p12 o .pfx
+
 Al combinar ambos ficheros, nos pedirá una contraseña. Esta contraseña será de vital importancia, ya que se nos requerirá a la hora de instalar el certificado en los servidores de conexión de Horizon o los UAG.
 
 ![openssl-create-13]({{ site.imagesposts2021 }}/02/openssl-create-13.png){: .align-center}
