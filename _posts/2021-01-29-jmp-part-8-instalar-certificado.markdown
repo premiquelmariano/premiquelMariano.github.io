@@ -1,6 +1,6 @@
 ---
 title: Creando un entorno JMP con VMware Horizon - Parte 8 - Instalación certificado
-date: '2019-07-17 00:00:00'
+date: '2021-01-29 00:00:00'
 layout: post
 image: /assets/images/posts/2019/07/horizon-logo.png
 tag:
@@ -10,7 +10,6 @@ tag:
 - euc
 - desktop
 - mobility
-
 ---
 
 Buenos dias a tod@s!!
