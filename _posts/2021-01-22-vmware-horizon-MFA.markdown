@@ -20,11 +20,11 @@ bla bla bla
 
 Cómo siempre que trabajamos con VDI, necesitaremos una plantilla base, a partir de la cual, se desplegaran los escritorios. La plantilla que he creado para CentOS 8 tiene los siguientes parámetros:
 
-![duo-install-01]({{ site.imagesposts2021 }}/01/duo-install-01.png){: .align-center}
-![duo-install-02]({{ site.imagesposts2021 }}/01/duo-install-02.png){: .align-center}
-![duo-install-03]({{ site.imagesposts2021 }}/01/duo-install-03.png){: .align-center}
-![duo-install-03]({{ site.imagesposts2021 }}/01/duo-install-04.png){: .align-center}
-![duo-install-03]({{ site.imagesposts2021 }}/01/duo-install-05.png){: .align-center}
+![duo-install-01]({{ site.imagesposts2021 }}/03/duo-install-01.png){: .align-center}
+![duo-install-02]({{ site.imagesposts2021 }}/03/duo-install-02.png){: .align-center}
+![duo-install-03]({{ site.imagesposts2021 }}/03/duo-install-03.png){: .align-center}
+![duo-install-03]({{ site.imagesposts2021 }}/03/duo-install-04.png){: .align-center}
+![duo-install-03]({{ site.imagesposts2021 }}/03/duo-install-05.png){: .align-center}
 
 
 
