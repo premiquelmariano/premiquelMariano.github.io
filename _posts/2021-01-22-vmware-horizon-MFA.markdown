@@ -23,6 +23,8 @@ Cómo siempre que trabajamos con VDI, necesitaremos una plantilla base, a partir
 ![duo-install-01]({{ site.imagesposts2021 }}/01/duo-install-01.png){: .align-center}
 ![duo-install-02]({{ site.imagesposts2021 }}/01/duo-install-02.png){: .align-center}
 ![duo-install-03]({{ site.imagesposts2021 }}/01/duo-install-03.png){: .align-center}
+![duo-install-03]({{ site.imagesposts2021 }}/01/duo-install-04.png){: .align-center}
+![duo-install-03]({{ site.imagesposts2021 }}/01/duo-install-05.png){: .align-center}
 
 
 
