@@ -61,6 +61,11 @@ Single Sign-On > Add source > Add an Acrive Directory > Add Authentication Proxy
 ![duo-install-07]({{ site.imagesposts2021 }}/03/duo-install-07.png){: .align-center}
 ![duo-install-08]({{ site.imagesposts2021 }}/03/duo-install-08.png){: .align-center}
 
+Con el proxy ya configurado, haremos la configuración de nuestro Active Directory
+
+![duo-install-09]({{ site.imagesposts2021 }}/03/duo-install-09.png){: .align-center}
+![duo-install-10]({{ site.imagesposts2021 }}/03/duo-install-10.png){: .align-center}
+
 Todo el detalle de la config está en esta [documentación oficial](https://duo.com/docs/sso#enable-duo-single-sign-on)
 
 
