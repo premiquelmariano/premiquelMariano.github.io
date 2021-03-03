@@ -38,6 +38,8 @@ Una vez nos hayamos registrado en el portal de DUO, el primer paso será conecta
 
 ![duo-install-00]({{ site.imagesposts2021 }}/03/duo-install-00.png){: .align-center}
 
+En el [este enlace](https://duo.com/docs/checksums#duo-authentication-proxy) encontraremos todos los binarios para windows y para linux. Es un instalador siguiente > siguiente > fin.
+
 ![duo-install-01]({{ site.imagesposts2021 }}/03/duo-install-01.png){: .align-center}
 ![duo-install-02]({{ site.imagesposts2021 }}/03/duo-install-02.png){: .align-center}
 ![duo-install-03]({{ site.imagesposts2021 }}/03/duo-install-03.png){: .align-center}
