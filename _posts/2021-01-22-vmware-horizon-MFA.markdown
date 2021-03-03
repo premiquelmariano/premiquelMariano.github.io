@@ -45,7 +45,7 @@ En el [este enlace](https://duo.com/docs/checksums#duo-authentication-proxy) enc
 
 Toda la configuración se encuentra en el fichero `C:\Program Files\Duo Security Authentication Proxy\conf\authproxy.cfg`
 
-La configuración que viene por defecto se puede borrar, ya que solo son ejemplos
+La configuración que viene por defecto se puede borrar, ya que sólo son ejemplos
 
 ![duo-install-04]({{ site.imagesposts2021 }}/03/duo-install-04.png){: .align-center}
 
