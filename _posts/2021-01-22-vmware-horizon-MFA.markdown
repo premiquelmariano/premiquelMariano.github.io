@@ -26,5 +26,19 @@ Cómo siempre que trabajamos con VDI, necesitaremos una plantilla base, a partir
 ![duo-install-03]({{ site.imagesposts2021 }}/03/duo-install-04.png){: .align-center}
 ![duo-install-03]({{ site.imagesposts2021 }}/03/duo-install-05.png){: .align-center}
 
+## Configuración DUO Authentication Proxy
+
+## Configuración SSO con Active Directory
+
+## Sincronizar usuarios AD
+
+## Enroll Users
+
+# Desplegar aplicación View
+
+## Configurar Connection Server
+
+# Test
+
 
 
