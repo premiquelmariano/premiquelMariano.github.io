@@ -88,8 +88,18 @@ Es importante que después de cualquier modificación en el fichero de configura
 Terminamos con la configuración del AD
 
 ![duo-install-15]({{ site.imagesposts2021 }}/03/duo-install-15.png){: .align-center}
+![duo-install-16]({{ site.imagesposts2021 }}/03/duo-install-16.png){: .align-center}
 
 ## Enroll Users
+
+Una vez tengamos nuestros usuarios ya sincronizados con DUO, es el momento de enviarles las instrucciones para que se activen y cada usuario pueda instalar la aplicación móvil.
+
+![duo-install-17]({{ site.imagesposts2021 }}/03/duo-install-17.png){: .align-center}
+
+Cada uno de nuestros usuarios recibirá un correo con un enlace único el cual servirá para registrar el usuario y activar la aplicación para la autenticación
+
+![duo-install-18]({{ site.imagesposts2021 }}/03/duo-install-18.png){: .align-center}
+
 
 # Desplegar aplicación View
 
