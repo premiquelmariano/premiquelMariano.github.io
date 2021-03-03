@@ -52,9 +52,15 @@ La configuración que viene por defecto se puede borrar, ya que solo son ejemplo
 
 ## Configuración SSO con Active Directory
 
-Aquí es dónde configuraremos la conexión de nuestro proxy recién instalado con la cuenta de DUO. Todo el detalle de la config está en esta [documentación oficial](https://duo.com/docs/sso#enable-duo-single-sign-on)
+Aquí es dónde configuraremos la conexión de nuestro proxy recién instalado con la cuenta de DUO. 
 
 ![duo-install-05]({{ site.imagesposts2021 }}/03/duo-install-05.png){: .align-center}
+![duo-install-06]({{ site.imagesposts2021 }}/03/duo-install-06.png){: .align-center}
+![duo-install-07]({{ site.imagesposts2021 }}/03/duo-install-07.png){: .align-center}
+
+
+
+Todo el detalle de la config está en esta [documentación oficial](https://duo.com/docs/sso#enable-duo-single-sign-on)
 
 
 ## Sincronizar usuarios AD
