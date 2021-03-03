@@ -54,6 +54,8 @@ La configuración que viene por defecto se puede borrar, ya que solo son ejemplo
 
 Aquí es dónde configuraremos la conexión de nuestro proxy recién instalado con la cuenta de DUO. 
 
+Single Sign-On > Add source > Add an Acrive Directory > Add Authentication Proxy
+
 ![duo-install-05]({{ site.imagesposts2021 }}/03/duo-install-05.png){: .align-center}
 ![duo-install-06]({{ site.imagesposts2021 }}/03/duo-install-06.png){: .align-center}
 ![duo-install-07]({{ site.imagesposts2021 }}/03/duo-install-07.png){: .align-center}
