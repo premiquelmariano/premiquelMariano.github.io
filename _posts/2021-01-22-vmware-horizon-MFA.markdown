@@ -96,33 +96,65 @@ Terminamos con la configuración del AD
 
 Una vez tengamos nuestros usuarios ya sincronizados con DUO, es el momento de enviarles las instrucciones para que se activen y cada usuario pueda instalar la aplicación móvil.
 
+Dashboard > Users > Bulk Enroll Users
+
 ![duo-install-17]({{ site.imagesposts2021 }}/03/duo-install-17.png){: .align-center}
 
-Cada uno de nuestros usuarios recibirá un correo con un enlace único el cual servirá para registrar el usuario y activar la aplicación para la autenticación
+Cada uno de nuestros usuarios recibirá un correo con un enlace único el cual servirá para registrar el usuario y activar la aplicación para la autenticación. Es un wizard sumamente intuitivo para que nuestros usuarios se lo puedan configurar por si mismos.
 
 ![duo-install-18]({{ site.imagesposts2021 }}/03/duo-install-18.png){: .align-center}
 
 # Desplegar aplicación View
 
-https://duo.com/docs/vmwareview
+Con toda la integración finalizada y funcionando, es el momento de proteger nuestra primera aplicación con DUO. En nuestro caso, Horizon View.
+
+Dashboard > Application > Protect an Application
 
 ![duo-install-19]({{ site.imagesposts2021 }}/03/duo-install-19.png){: .align-center}
 ![duo-install-20]({{ site.imagesposts2021 }}/03/duo-install-20.png){: .align-center}
 ![duo-install-21]({{ site.imagesposts2021 }}/03/duo-install-21.png){: .align-center}
+
+En el fichero de configuración deberemos añadir una sección [radius_server_chagellge] con los parámetros marcados en el portal.
+En caso de tener mas de un servidor de conexión, añadiremos un bloque adicional para cada IP
+
 ![duo-install-22]({{ site.imagesposts2021 }}/03/duo-install-22.png){: .align-center}
 
+Para mas detalle de esta configuración, podeis consultar la [documentación oficial](https://duo.com/docs/vmwareview)
+
 ## Configurar Connection Server
+
+Llegó el momento de integrar nuestro entorno Horizon con 2FA.
+
+Desde el Horizon Administrator, nos dirigiremos a la pestaña Servidores y editaremos la config de nuestros Connection Servers
 
 ![duo-install-23]({{ site.imagesposts2021 }}/03/duo-install-23.png){: .align-center}
 ![duo-install-24]({{ site.imagesposts2021 }}/03/duo-install-24.png){: .align-center}
 ![duo-install-25]({{ site.imagesposts2021 }}/03/duo-install-25.png){: .align-center}
+
+Añadimos un nuevo servidor radius correspondiente al servidor con DUO Auth. Proxy
+
 ![duo-install-26]({{ site.imagesposts2021 }}/03/duo-install-26.png){: .align-center}
+
+El secreto compartido debe coincidir con el definido en el fichero de configuración del proxy, de lo contrario, no establecerá comunicación.
+
 ![duo-install-27]({{ site.imagesposts2021 }}/03/duo-install-27.png){: .align-center}
+
+Para entornos productivos, existe la posibilidad de añadir un servidor adicional a la configuración.
+
 ![duo-install-28]({{ site.imagesposts2021 }}/03/duo-install-28.png){: .align-center}
 
-# Test
+# Probar autenticación doble factor
+
+Con todo configurado, vamos a abrir nuestro Horizon Client y probar si la autenticación de doble factor está funcionando.
+
+De entrada, ya podemos ver que nos da información de nuestro servidor RADIUS. Deberemos completar la autenticación principal con los datos de nuestro Active Directory
 
 ![duo-install-29]({{ site.imagesposts2021 }}/03/duo-install-29.png){: .align-center}
+
+Una vez autenticada la primera fase, DUO sos
+
+![duo-install-30]({{ site.imagesposts2021 }}/03/duo-install-30.png){: .align-center}
+
 ![duo-install-31]({{ site.imagesposts2021 }}/03/duo-install-31.png){: .align-center}
 
 
