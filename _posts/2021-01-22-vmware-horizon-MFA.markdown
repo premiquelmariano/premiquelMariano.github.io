@@ -68,8 +68,20 @@ Con el proxy ya configurado, haremos la configuración de nuestro Active Directo
 
 Todo el detalle de la config está en esta [documentación oficial](https://duo.com/docs/sso#enable-duo-single-sign-on)
 
-
 ## Sincronizar usuarios AD
+
+Con la configuración de nuestro SSO es el momento de sincronizar nuestros usuarios del directorio activo
+
+![duo-install-11]({{ site.imagesposts2021 }}/03/duo-install-11.png){: .align-center}
+
+Asignaremos un nombre a nuestro registro y configuraremos el Proxy para que se conecte con nuestro AD
+
+![duo-install-12]({{ site.imagesposts2021 }}/03/duo-install-12.png){: .align-center}
+
+Los datos de configuración los tendremos que configurar en el fichero de configuración del proxy y para mayor comodidad, el propio asistente nos deja descargar ese fichero pre-configurado.
+
+![duo-install-13]({{ site.imagesposts2021 }}/03/duo-install-13.png){: .align-center}
+![duo-install-14]({{ site.imagesposts2021 }}/03/duo-install-14.png){: .align-center}
 
 ## Enroll Users
 
