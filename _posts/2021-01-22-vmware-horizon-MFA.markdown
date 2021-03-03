@@ -57,8 +57,7 @@ Aquí es dónde configuraremos la conexión de nuestro proxy recién instalado c
 ![duo-install-05]({{ site.imagesposts2021 }}/03/duo-install-05.png){: .align-center}
 ![duo-install-06]({{ site.imagesposts2021 }}/03/duo-install-06.png){: .align-center}
 ![duo-install-07]({{ site.imagesposts2021 }}/03/duo-install-07.png){: .align-center}
-
-
+![duo-install-08]({{ site.imagesposts2021 }}/03/duo-install-08.png){: .align-center}
 
 Todo el detalle de la config está en esta [documentación oficial](https://duo.com/docs/sso#enable-duo-single-sign-on)
 
