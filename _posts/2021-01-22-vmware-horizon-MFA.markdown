@@ -106,12 +106,21 @@ https://duo.com/docs/vmwareview
 
 ![duo-install-19]({{ site.imagesposts2021 }}/03/duo-install-19.png){: .align-center}
 ![duo-install-20]({{ site.imagesposts2021 }}/03/duo-install-20.png){: .align-center}
-![duo-install-20]({{ site.imagesposts2021 }}/03/duo-install-21.png){: .align-center}
-![duo-install-20]({{ site.imagesposts2021 }}/03/duo-install-22.png){: .align-center}
+![duo-install-21]({{ site.imagesposts2021 }}/03/duo-install-21.png){: .align-center}
+![duo-install-22]({{ site.imagesposts2021 }}/03/duo-install-22.png){: .align-center}
 
 ## Configurar Connection Server
 
+![duo-install-23]({{ site.imagesposts2021 }}/03/duo-install-23.png){: .align-center}
+![duo-install-24]({{ site.imagesposts2021 }}/03/duo-install-24.png){: .align-center}
+![duo-install-25]({{ site.imagesposts2021 }}/03/duo-install-25.png){: .align-center}
+![duo-install-26]({{ site.imagesposts2021 }}/03/duo-install-26.png){: .align-center}
+![duo-install-27]({{ site.imagesposts2021 }}/03/duo-install-27.png){: .align-center}
+![duo-install-28]({{ site.imagesposts2021 }}/03/duo-install-28.png){: .align-center}
+
 # Test
 
+![duo-install-29]({{ site.imagesposts2021 }}/03/duo-install-29.png){: .align-center}
+![duo-install-31]({{ site.imagesposts2021 }}/03/duo-install-31.png){: .align-center}
 
 
