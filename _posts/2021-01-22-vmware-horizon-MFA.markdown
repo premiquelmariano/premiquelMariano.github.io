@@ -100,8 +100,14 @@ Cada uno de nuestros usuarios recibirá un correo con un enlace único el cual s
 
 ![duo-install-18]({{ site.imagesposts2021 }}/03/duo-install-18.png){: .align-center}
 
-
 # Desplegar aplicación View
+
+https://duo.com/docs/vmwareview
+
+![duo-install-19]({{ site.imagesposts2021 }}/03/duo-install-19.png){: .align-center}
+![duo-install-20]({{ site.imagesposts2021 }}/03/duo-install-20.png){: .align-center}
+![duo-install-20]({{ site.imagesposts2021 }}/03/duo-install-21.png){: .align-center}
+![duo-install-20]({{ site.imagesposts2021 }}/03/duo-install-22.png){: .align-center}
 
 ## Configurar Connection Server
 
