@@ -54,7 +54,7 @@ La configuración que viene por defecto se puede borrar, ya que solo son ejemplo
 
 Aquí es dónde configuraremos la conexión de nuestro proxy recién instalado con la cuenta de DUO. Todo el detalle de la config está en esta [documentación oficial](https://duo.com/docs/sso#enable-duo-single-sign-on)
 
-![duo-install-03]({{ site.imagesposts2021 }}/03/duo-install-05.png){: .align-center}
+![duo-install-05]({{ site.imagesposts2021 }}/03/duo-install-05.png){: .align-center}
 
 
 ## Sincronizar usuarios AD
