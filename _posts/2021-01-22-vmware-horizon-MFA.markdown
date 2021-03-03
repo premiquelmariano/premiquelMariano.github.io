@@ -151,10 +151,26 @@ De entrada, ya podemos ver que nos da información de nuestro servidor RADIUS. D
 
 ![duo-install-29]({{ site.imagesposts2021 }}/03/duo-install-29.png){: .align-center}
 
-Una vez autenticada la primera fase, DUO sos
+Una vez autenticada la primera fase, DUO nos permitirá autenticar con doble factor y nos permite 4 posibilidades:
+
+- 1. Notificación push en la aplicación móvil (Opción recomendada)
+- 2. Llamada de telefono en el nº registrado para el usuario
+- 3. Codigo enviado por SMS
+- 4. Codigo aleatorio que nos muestra la aplicación (Si, aunque no aparezca esta opción, podemos poner el código mostrado en la aplicación móvil)
 
 ![duo-install-30]({{ site.imagesposts2021 }}/03/duo-install-30.png){: .align-center}
 
+Si optamos por la opcion 1 > Iniciar Sesión, recibiremos esta notificación push en el móvil que deberemos aceptar para poder iniciar sesión.
+
 ![duo-install-31]({{ site.imagesposts2021 }}/03/duo-install-31.png){: .align-center}
+
+Y hasta aquí por hoy.
+
+Espero que os guste.
+
+Un saludo!
+
+
+Miquel.
 
 
