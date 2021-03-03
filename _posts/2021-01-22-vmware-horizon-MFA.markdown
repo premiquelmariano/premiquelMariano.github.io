@@ -12,6 +12,9 @@ tag:
 - mobility
 - mfa
 - 2fa
+- mfa
+- duo
+- security
 ---
 
 bla bla bla
