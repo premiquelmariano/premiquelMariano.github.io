@@ -43,7 +43,15 @@ En el [este enlace](https://duo.com/docs/checksums#duo-authentication-proxy) enc
 ![duo-install-01]({{ site.imagesposts2021 }}/03/duo-install-01.png){: .align-center}
 ![duo-install-02]({{ site.imagesposts2021 }}/03/duo-install-02.png){: .align-center}
 ![duo-install-03]({{ site.imagesposts2021 }}/03/duo-install-03.png){: .align-center}
-![duo-install-03]({{ site.imagesposts2021 }}/03/duo-install-04.png){: .align-center}
+
+Toda la configuración se encuentra en el fichero `C:\Program Files\Duo Security Authentication Proxy\conf\authproxy.cfg`
+
+La configuración que viene por defecto se puede borrar, ya que solo son ejemplos
+
+![duo-install-04]({{ site.imagesposts2021 }}/03/duo-install-04.png){: .align-center}
+
+
+
 ![duo-install-03]({{ site.imagesposts2021 }}/03/duo-install-05.png){: .align-center}
 
 ## Configuración SSO con Active Directory
