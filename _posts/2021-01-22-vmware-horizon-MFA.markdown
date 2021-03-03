@@ -34,7 +34,9 @@ Cómo cualquier servicio cloud, está basado en el pago por uso y la parte buena
 
 # Instalación DUO Authentication Proxy
 
-Cómo siempre que trabajamos con VDI, necesitaremos una plantilla base, a partir de la cual, se desplegaran los escritorios. La plantilla que he creado para CentOS 8 tiene los siguientes parámetros:
+Una vez nos hayamos registrado en el portal de DUO, el primer paso será conectar nuestro entorno on-premise con la cuenta cloud.
+
+![duo-install-00]({{ site.imagesposts2021 }}/03/duo-install-01.png){: .align-center}
 
 ![duo-install-01]({{ site.imagesposts2021 }}/03/duo-install-01.png){: .align-center}
 ![duo-install-02]({{ site.imagesposts2021 }}/03/duo-install-02.png){: .align-center}
