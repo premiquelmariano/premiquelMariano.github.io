@@ -83,6 +83,12 @@ Los datos de configuración los tendremos que configurar en el fichero de config
 ![duo-install-13]({{ site.imagesposts2021 }}/03/duo-install-13.png){: .align-center}
 ![duo-install-14]({{ site.imagesposts2021 }}/03/duo-install-14.png){: .align-center}
 
+Es importante que después de cualquier modificación en el fichero de configuración se reinicie el servicio.
+
+Terminamos con la configuración del AD
+
+![duo-install-15]({{ site.imagesposts2021 }}/03/duo-install-15.png){: .align-center}
+
 ## Enroll Users
 
 # Desplegar aplicación View
