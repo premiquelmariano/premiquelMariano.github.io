@@ -1,5 +1,5 @@
 ---
-title: Configurar VMware Horizon con doble factor de autenticación 2FA MFA
+title: Acceso seguro a nuestro entrono VDI con DUO Security
 date: '2021-01-22 00:00:00'
 layout: post
 image: /assets/images/posts/2018/12/ssh-banner.jpg
