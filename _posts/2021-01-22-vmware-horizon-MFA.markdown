@@ -46,9 +46,9 @@ En el [este enlace](https://duo.com/docs/checksums#duo-authentication-proxy) enc
 ![duo-install-03]({{ site.imagesposts2021 }}/03/duo-install-04.png){: .align-center}
 ![duo-install-03]({{ site.imagesposts2021 }}/03/duo-install-05.png){: .align-center}
 
-## Configuración DUO Authentication Proxy
-
 ## Configuración SSO con Active Directory
+
+https://duo.com/docs/sso#enable-duo-single-sign-on
 
 ## Sincronizar usuarios AD
 
