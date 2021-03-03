@@ -69,7 +69,9 @@ Todo el detalle de la config está en esta [documentación oficial](https://duo.
 
 ## Sincronizar usuarios AD
 
-Con la configuración de nuestro SSO es el momento de sincronizar nuestros usuarios del directorio activo
+Con la configuración de nuestro SSO es el momento de sincronizar nuestros usuarios del directorio activo.
+
+Dashboard > Users > Directory Sync > AD Sync
 
 ![duo-install-11]({{ site.imagesposts2021 }}/03/duo-install-11.png){: .align-center}
 
@@ -77,12 +79,13 @@ Asignaremos un nombre a nuestro registro y configuraremos el Proxy para que se c
 
 ![duo-install-12]({{ site.imagesposts2021 }}/03/duo-install-12.png){: .align-center}
 
-Los datos de configuración los tendremos que configurar en el fichero de configuración del proxy y para mayor comodidad, el propio asistente nos deja descargar ese fichero pre-configurado.
+Los datos de configuración los tendremos que configurar en el fichero de configuración del proxy y para mayor comodidad, el propio asistente nos deja descargar ese fichero pre-configurado para añadir la sección [cloud].
 
 ![duo-install-13]({{ site.imagesposts2021 }}/03/duo-install-13.png){: .align-center}
 ![duo-install-14]({{ site.imagesposts2021 }}/03/duo-install-14.png){: .align-center}
 
-Es importante que después de cualquier modificación en el fichero de configuración se reinicie el servicio.
+**NOTA:** Es importante que después de cualquier modificación en el fichero de configuración se reinicie el servicio.
+{: .note}
 
 Terminamos con la configuración del AD
 
