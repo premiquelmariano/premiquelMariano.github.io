@@ -33,7 +33,7 @@ Será necesario también instalar las funciones avanzadas para Horizon. En [este
 
 La última versión del script, la podreis encontrar [aquí](https://raw.githubusercontent.com/miquelMariano/prtg-scripts/master/vmware/vmware_horizon_pool_stats.ps1)
 
-Básicamente lo que hacemos es pasarle por parámetro
+Básicamente lo que hacemos es pasarle por parámetro las opciones de conexión y eso nos genera un log con toda la información
 
 ```
 4-03-21 12:46:58 |  Disconnect Connection Server indarview.ingeteam.com!
@@ -153,4 +153,13 @@ Básicamente lo que hacemos es pasarle por parámetro
 24-03-21 12:46:55 |  Connecting to Connection Server indarview.ingeteam.com...
 24-03-21 12:46:55 |  Start Check
 ```
+
+# Sensor PRTG
+
+El script, está pensado de tal manera que lo podamos ejecutar el sensor [EXE/Script Advanced Sensor](https://www.paessler.com/manuals/prtg/exe_script_advanced_sensor)
+
+El resultado seria el siguiente:
+
+![powercli-horizon-01]({{ site.imagesposts2021 }}/03/powercli-horizon-02.png){: .align-center}
+
 
