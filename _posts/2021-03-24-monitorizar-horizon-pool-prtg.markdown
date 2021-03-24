@@ -159,6 +159,6 @@ El script, está pensado de tal manera que lo podamos ejecutar el sensor [EXE/Sc
 
 El resultado seria el siguiente:
 
-![powercli-horizon-01]({{ site.imagesposts2021 }}/03/powercli-horizon-02.png){: .align-center}
+![powercli-horizon-02]({{ site.imagesposts2021 }}/03/powercli-horizon-02.png){: .align-center}
 
 
