@@ -35,7 +35,7 @@ La última versión del script, la podreis encontrar [aquí](https://raw.githubu
 Básicamente lo que hacemos es pasarle por parámetro las opciones de conexión y eso nos genera un log con toda la información
 
 ```
-4-03-21 12:46:58 |  Disconnect Connection Server indarview.ingeteam.com!
+4-03-21 12:46:58 |  Disconnect Connection Server vdi.mydomain.com
 24-03-21 12:46:58 |  Total VMs ------------------ 100
 24-03-21 12:46:58 |  Available ------------------ 19
 24-03-21 12:46:58 |  Connected ------------------ 78
@@ -148,8 +148,8 @@ Básicamente lo que hacemos es pasarle por parámetro las opciones de conexión 
 24-03-21 12:46:58 |  Desktop IC-VSAN-050 is in a CONNECTED state.
 24-03-21 12:46:58 |  Desktop IC-VSAN-091 is in a CONNECTED state.
 24-03-21 12:46:58 |  Desktop IC-VSAN-017 is in a CONNECTED state.
-24-03-21 12:46:57 |  Connection Server indarview.ingeteam.com connected well!
-24-03-21 12:46:55 |  Connecting to Connection Server indarview.ingeteam.com...
+24-03-21 12:46:57 |  Connection Server vdi.mydomain.com connected well!
+24-03-21 12:46:55 |  Connecting to Connection Server vdi.mydomain.com...
 24-03-21 12:46:55 |  Start Check
 ```
 
