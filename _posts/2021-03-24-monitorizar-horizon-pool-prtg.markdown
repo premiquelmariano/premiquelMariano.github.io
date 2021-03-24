@@ -9,7 +9,6 @@ tag:
 - euc
 - desktop
 - mobility
-- centos8
 - powershell
 - powercli
 ---
