@@ -32,7 +32,9 @@ Será necesario también instalar las funciones avanzadas para Horizon. En [este
 
 La última versión del script, la podreis encontrar [aquí](https://raw.githubusercontent.com/miquelMariano/prtg-scripts/master/vmware/vmware_horizon_pool_stats.ps1)
 
-Básicamente lo que hacemos es pasarle por parámetro las opciones de conexión y eso nos genera un log con toda la información
+Básicamente lo que hacemos es pasarle por parámetro las opciones de conexión y eso nos genera un log con toda la información.
+
+Podemos medir la cantidad de escritorios disponibles en el pool, si hay errores de aprovisionamiento o si nuestros usuarios se desconectan sin cerrar sesión entre otras cosas
 
 ```
 24-03-21 12:46:58 |  Disconnect Connection Server vdi.mydomain.com
@@ -157,8 +159,18 @@ Básicamente lo que hacemos es pasarle por parámetro las opciones de conexión 
 
 El script, está pensado de tal manera que lo podamos ejecutar el sensor [EXE/Script Advanced Sensor](https://www.paessler.com/manuals/prtg/exe_script_advanced_sensor)
 
+La información que recoge y muestra en el log también la expone en formato xml para que el PRTG sea capaz de interpretarlo y hacer una gráfica
+
 El resultado seria el siguiente:
 
 ![powercli-horizon-02]({{ site.imagesposts2021 }}/03/powercli-horizon-02.png){: .align-center}
+
+![powercli-horizon-03]({{ site.imagesposts2021 }}/03/powercli-horizon-03.png){: .align-center}
+
+Espero que os sirva.
+
+Un saludo!
+
+Miquel.
 
 
