@@ -32,3 +32,5 @@ tag:
 ![fslogix-00]({{ site.imagesposts2021 }}/04/fslogix-11.png){: .align-center}
 ![fslogix-00]({{ site.imagesposts2021 }}/04/fslogix-12.png){: .align-center}
 
+https://minarik.io/fslogix-and-horizon-quick-and-dirty-setup/
+https://docs.microsoft.com/es-es/azure/virtual-desktop/fslogix-containers-azure-files
