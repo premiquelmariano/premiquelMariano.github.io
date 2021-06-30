@@ -103,6 +103,18 @@ Empezará el proceso de migración de datos
 
 ![update-vcenter-22]({{ site.imagesposts2021 }}/06/update-vcenter-22.png){: .align-center}
 
+![update-vcenter-23]({{ site.imagesposts2021 }}/06/update-vcenter-23.png){: .align-center}
+
+![update-vcenter-24]({{ site.imagesposts2021 }}/06/update-vcenter-24.png){: .align-center}
+
+![update-vcenter-25]({{ site.imagesposts2021 }}/06/update-vcenter-25.png){: .align-center}
+
+Espero que sea de utilidad.
+
+Un saludo!
+
+Miquel.
+
 
 
 
