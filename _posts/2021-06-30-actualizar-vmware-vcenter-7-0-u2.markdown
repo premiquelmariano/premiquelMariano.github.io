@@ -103,9 +103,15 @@ Empezará el proceso de migración de datos
 
 ![update-vcenter-22]({{ site.imagesposts2021 }}/06/update-vcenter-22.png){: .align-center}
 
+Finalizado el proceso nos mostrará algunos mensajes de información
+
 ![update-vcenter-23]({{ site.imagesposts2021 }}/06/update-vcenter-23.png){: .align-center}
 
+Y veremos que el proceso se ha completado correctamente
+
 ![update-vcenter-24]({{ site.imagesposts2021 }}/06/update-vcenter-24.png){: .align-center}
+
+Al hacer login de nuevo en el vSphere Client veremos la nueva versión del vCenter
 
 ![update-vcenter-25]({{ site.imagesposts2021 }}/06/update-vcenter-25.png){: .align-center}
 
