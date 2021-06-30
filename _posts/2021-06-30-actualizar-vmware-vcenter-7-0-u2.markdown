@@ -79,6 +79,30 @@ Seguimos el asistente en el stage 2
 
 ![update-vcenter-16]({{ site.imagesposts2021 }}/06/update-vcenter-16.png){: .align-center}
 
+Definiremos los datos de conexión al vCenter y ESXi
+
+![update-vcenter-17]({{ site.imagesposts2021 }}/06/update-vcenter-17.png){: .align-center}
+
+Es posible que nos advierta de algunos warnings
+
+![update-vcenter-18]({{ site.imagesposts2021 }}/06/update-vcenter-18.png){: .align-center}
+
+Indicamos los datos que queremos migrar
+
+![update-vcenter-19]({{ site.imagesposts2021 }}/06/update-vcenter-19.png){: .align-center}
+
+Nos da la opción de participar en el programa de mejora de VMware
+
+![update-vcenter-20]({{ site.imagesposts2021 }}/06/update-vcenter-20.png){: .align-center}
+
+Resumen final y "Finish"
+
+![update-vcenter-21]({{ site.imagesposts2021 }}/06/update-vcenter-21.png){: .align-center}
+
+Empezará el proceso de migración de datos
+
+![update-vcenter-22]({{ site.imagesposts2021 }}/06/update-vcenter-22.png){: .align-center}
+
 
 
 
