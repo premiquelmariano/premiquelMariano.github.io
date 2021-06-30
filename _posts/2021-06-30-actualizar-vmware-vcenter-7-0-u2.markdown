@@ -1,5 +1,5 @@
 ---
-title: Actualizar nuestro VMware vCenter a la última versión 7.0U2b
+title: Actualizar nuestro VMware vCenter 6.7 a la última versión 7.0U2b
 date: '2021-06-30 00:00:00'
 layout: post
 image: /assets/images/posts/2018/12/ssh-banner.jpg
@@ -11,7 +11,7 @@ tag:
 
 Buenos dias a todos. En el post de hoy veremos cómo actualizar nuestro vCenter a la última versión disponible. La 7.0 U2b
 
-# Actualizar nuestro VMware vCenter a la última versión 7.0U2b
+# Actualizar nuestro VMware vCenter 6.7 a la última versión 7.0U2b
 
 Lo primero quen haremos será descargar la iso correspondiente a la última versión desde el portal de [my.vmware](my.vmware.com)
 
@@ -66,4 +66,20 @@ Comprobaremos que los datos introducidos son correctos y "Finish"
 Vemos cómo se lanza el proceso de Deploy y cómo aparece la nueva VM en el inventario del vCenter
 
 ![update-vcenter-13]({{ site.imagesposts2021 }}/06/update-vcenter-13.png){: .align-center}
+
+Pasados unos minutos, veremos como el nuevo vCenter empieza a responder con la IP temporal
+
+![update-vcenter-14]({{ site.imagesposts2021 }}/06/update-vcenter-14.png){: .align-center}
+
+Finalizado el Stage 1 de despliegue, continuaremos con el Stage 2 de configuración
+
+![update-vcenter-15]({{ site.imagesposts2021 }}/06/update-vcenter-15.png){: .align-center}
+
+Seguimos el asistente en el stage 2
+
+![update-vcenter-16]({{ site.imagesposts2021 }}/06/update-vcenter-16.png){: .align-center}
+
+
+
+
 
