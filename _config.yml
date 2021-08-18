@@ -23,7 +23,7 @@ email: mail@brennanbrown.ca
 description: >- # this means to ignore newlines until "baseurl:"
   AConsultor TI en Ncora | VCAP6-DCV Deploy | VCP5/6-DCV | vExpert x4 | Apasionado de la montaña | Bike | Trail | Run | Padre de Aina ♥
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://purelog.netlify.app" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://premiquelmariano.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 repository: brennanbrown/purelog
 twitter: brennankbrown
 github: brennanbrown
@@ -34,7 +34,7 @@ google_analytics:
 comments: true
 disqus: purelog-jekyll
 
-author: Brennan K. Brown
+author: Miquel Mariano
 author_bio: >-
   Hey there! 😄 My name is Brennan, I'm a 25-year-old Métis web developer and 
   content strategist from Winnipeg, Manitoba and currently reside in Calgary, 
