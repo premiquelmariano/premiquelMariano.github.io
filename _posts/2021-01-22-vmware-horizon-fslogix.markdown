@@ -2,7 +2,6 @@
 title: FSLogix
 date: '2021-04-22 00:00:00'
 layout: post
-image: /assets/images/posts/2018/12/ssh-banner.jpg
 tag:
 - vmware
 - horizon
@@ -13,9 +12,25 @@ tag:
 - fslogix
 ---
 
+# Que es FSLogix?
 
+Cogiendo la definición oficial de la [documentación de Microsoft](https://docs.microsoft.com/en-us/fslogix/overview)
 
-# FSLogix
+"FSLogix is a set of solutions that enhance, enable, and simplify non-persistent Windows computing environments. FSLogix solutions are appropriate for Virtual environments in both public and private clouds. FSLogix solutions may also be used to create more portable computing sessions when using physical devices."
+
+Dicho de otra manera. FSLogix, es una solución de gestión de perfiles de usuarios que almacena todos los datos del usuario en un disco VDH montado independientemente. Para los que son del mundo Horizon, seria (salvando las distancias) como el persistent disk que teniamos antaño con los Linked Clone
+
+# Cómo encaja FSLogix en el resto de productos del stack Horizon?
+
+Me he encontrado por ahi este maravilloso diagrama que me parece que explica a la perfección en que lugar queda FSLogix
+
+![fslogix-schema]({{ site.imagesposts2021 }}/04/fslogix-schema.png){: .align-center}
+
+Básicamente, con FSLogix capturaremos los datos de usuario (Escritorio, Mis Documentos, Descargas, etc etc...) y también la configuración, el AppData del usuario.
+
+Luego está DEM que gestiona las configuraciones pre-definidas y el propio entorno del usuario, aunque también pueda capturar la configuración (AppData)
+
+Por último, aunque APP Volumes también permite "Writtable Volumes", nació cómo una funcionalidad nativa de virtualización de aplicaciones.
 
 
 ![fslogix-00]({{ site.imagesposts2021 }}/04/fslogix-00.png){: .align-center}
