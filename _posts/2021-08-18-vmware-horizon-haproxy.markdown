@@ -9,6 +9,14 @@ tag:
 - vexpert
 ---
 
+En el post de hoy veremos cómo podemos balancear y dotar de alta disponibilidad a nuestros servidores de conexión de VMware Horizon y a nuestros AppVolumes Managers.
+
+Para que mentalmente os podais hacer una idea de lo que vamos ha hacer, os dejo con el siguiente esquema
+
+![Horizon8-architecture-design]({{ site.imagesposts2021 }}/08/Horizon8-architecture-design.png){: .align-center}
+
+En él, podeis ver cómo añadiremos 2 nuevos servidores a nuestra infraestructura e instalaremos HAProxy + Keepalive en ellos.
+
 # Despiegue Photon OS
 
 ![haproxy-00]({{ site.imagesposts2021 }}/08/haproxy-00.png){: .align-center}
@@ -30,4 +38,4 @@ tag:
 
 
 
-df
+Horizon8-architecture-design.png
