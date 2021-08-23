@@ -36,6 +36,42 @@ En él, podeis ver cómo añadiremos 2 nuevos servidores a nuestra infraestructu
 ![haproxy-14]({{ site.imagesposts2021 }}/08/haproxy-14.png){: .align-center}
 ![haproxy-15]({{ site.imagesposts2021 }}/08/haproxy-15.png){: .align-center}
 
+# Configuración inicial
 
+Una vez tengamos desplegadas las 2 VMs haremos una pequeña configuración inicial para empezar.
 
-Horizon8-architecture-design.png
+- Actualizamos el SO
+
+```ssh
+tdnf upgrade -y
+
+```
+
+- Configurar IP estática
+Por defecto, el fichero de configuración de IP se encuentra en `/etc/systemd/network/99-dhcp-en.network`
+
+Con nuestro editor de textos preferido (vim, por ejemplo), deshabilitaremos DHCP
+```ssh
+[Match]
+Name=e*
+[Network]
+DHCP=no
+
+```
+
+Crearemos un nuevo fichero de configuración con la siguiente configuración y lo llamaremos `/etc/systemd/network/10-static-en.network`
+```ssh
+[Match]
+
+Name=eth0
+[Network]
+Address=192.168.6.120/24
+Gateway=192.168.6.1
+DNS=192.168.6.100
+[DHCP]
+UseDNS=false
+```
+
+Pondremos la IP correspondiente a cada uno de los servidores
+{: .alert .alert-warning}
+
