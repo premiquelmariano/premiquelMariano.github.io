@@ -75,3 +75,18 @@ UseDNS=false
 Pondremos la IP correspondiente a cada uno de los servidores
 {: .alert .alert-warning}
 
+- Cambiaremos el propietario del fichero con el siguiente comando: `chown systemd-network:systemd-network /etc/systemd/network/10-static-en.network`
+
+Para poder usar las VIP en ambos nodos de Keepalive y HAProxy, será necesario realizar ciertos cambios para permitir el reenvio a nivel IP y permitir que ambos servicios usen una IP que no está definida en la interfaz física de la VM.
+
+Por defecto, PhotonOS tiene este comportamiento deshabilitado y lo podremos habilitar de la siguiente manera:
+
+- Editamos el fichero de configuración `etc/sysctl.d/55-keepalived.conf`
+
+```ssh
+#Enable IPv4 Forwarding
+net.ipv4.ip_forward = 1
+#Enable non-local IP bind
+net.ipv4.ip_nonlocal_bind = 1
+
+```
