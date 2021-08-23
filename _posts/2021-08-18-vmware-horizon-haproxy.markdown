@@ -70,8 +70,7 @@ DNS=192.168.6.100
 UseDNS=false
 ```
 
-Pondremos la IP correspondiente a cada uno de los servidores
-{: .alert .alert-warning}
+> **_NOTA:_** Pondremos la IP correspondiente a cada uno de los servidores
 
 - Cambiaremos el propietario del fichero con el siguiente comando: `chown systemd-network:systemd-network /etc/systemd/network/10-static-en.network`
 
@@ -87,3 +86,7 @@ net.ipv4.ip_forward = 1
 #Enable non-local IP bind
 net.ipv4.ip_nonlocal_bind = 1
 ```
+
+> **_NOTA:_** Fijaros que en la misma carpeta, está un fichero llamado `50-security-hardening.conf`. Al usar nosotros un numero superior en el fichero creado, es posible que se sobreescriban algunas configuraciones definidas por defecto.
+
+
