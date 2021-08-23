@@ -44,7 +44,6 @@ Una vez tengamos desplegadas las 2 VMs haremos una pequeña configuración inici
 
 ```ssh
 tdnf upgrade -y
-
 ```
 
 - Configurar IP estática
@@ -56,7 +55,6 @@ Con nuestro editor de textos preferido (vim, por ejemplo), deshabilitaremos DHCP
 Name=e*
 [Network]
 DHCP=no
-
 ```
 
 Crearemos un nuevo fichero de configuración con la siguiente configuración y lo llamaremos `/etc/systemd/network/10-static-en.network`
@@ -88,5 +86,4 @@ Por defecto, PhotonOS tiene este comportamiento deshabilitado y lo podremos habi
 net.ipv4.ip_forward = 1
 #Enable non-local IP bind
 net.ipv4.ip_nonlocal_bind = 1
-
 ```
