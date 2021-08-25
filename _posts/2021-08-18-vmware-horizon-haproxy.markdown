@@ -17,7 +17,12 @@ Para que mentalmente os podais hacer una idea de lo que vamos ha hacer, os dejo 
 
 En él, podeis ver cómo añadiremos 2 nuevos servidores a nuestra infraestructura e instalaremos HAProxy + Keepalive en ellos.
 
+Utilizaremos PhotonOS 3.0 revision3 para montar los servidores. PhotonOS es una versión optimizada para entornos vSphere con unos recursos mínimos.
+Podremos descargar la OVA with virtual hardware v13 (UEFI Secure Boot) desde [aquí](https://github.com/vmware/photon/wiki/Downloading-Photon-OS)
+
 # Despiegue Photon OS
+
+El despliegue de la OVA es muy sencillo y solo tendremos que seguir el asistente del propio vCenter
 
 ![haproxy-00]({{ site.imagesposts2021 }}/08/haproxy-00.png){: .align-center}
 ![haproxy-01]({{ site.imagesposts2021 }}/08/haproxy-01.png){: .align-center}
@@ -37,6 +42,12 @@ En él, podeis ver cómo añadiremos 2 nuevos servidores a nuestra infraestructu
 ![haproxy-15]({{ site.imagesposts2021 }}/08/haproxy-15.png){: .align-center}
 
 # Configuración inicial
+
+Por defecto, la ova de PhotonOS está configurada para coger IP por DHCP y SSH está habilitado en el arranque
+
+Nos conectaremos por SSH a la IP que nos ha proporcionado y accederemos con las credenciales por defecto (admin/changeme). La primera vez que hagamos login nos pedirá cambiar la contraseña
+
+![changeme]({{ site.imagesposts2021 }}/08/changeme.png){: .align-center}
 
 Una vez tengamos desplegadas las 2 VMs haremos una pequeña configuración inicial para empezar.
 
@@ -361,4 +372,38 @@ backend appvol
 ######
 
 ```
+
+** Statistics & Admin configuration: ** En esta parte creamos 2 grupos y 2 usuarios (Uno admin y otro read-only). Este grupo se usará para ver las estadísticas de HAProxy y para poner los servidores de backend en modo mantenimiento. Definimos el frontend para que acepte conexiones a cualquier ip `bind: *:8404` Este es el puerto que definimos en ipetables, os acordais? Para acceder al frontend y poder ver las estadísticas y habilitar/deshabilitar backend nos conectaremos a la URL http://192.168.6.122:8404/stats
+
+** Horizon Connection Servers: ** La primera parte sólo hacemos una redirección de HTTP a HTTPS. A continuación, la interfaz se configura utilizando la VIP para Horizon. En el backend se especifican los servidores de conexión y el algoritmo de equilibrio de carga.
+La opción ssl-hello-chk es necesaria para asegurarse de que HAProxy no solo verifique si el puerto 443 está abierto en el backend para configurar el backend como activo, sino también para verificar que realmente haya una conexión SSL válida al backend. Si no especificamos esto, el backend se activará para HAProxy, mientras que es posible que los servicios de Horizon aún se estén iniciando y aún no estén disponibles para su uso.
+En condiciones normales, cada 30 segundos se comprueban los backends. Cuando un backend está inactivo, la verificación se realiza cada 5 s (downinter 5s), y cuando una verificación falla o tiene éxito después de una falla anterior, los backends se verifican cada 2s (fastinter 2s).
+
+** AppVolumes Managers: ** Esta sección es similar a la de los Connection Server
+
+Una vez tengamos la configuración hecha en ambos servidores, es momento de arrancar el servicio
+
+```ssh
+systemctl start haproxy
+```
+
+La salida del comando `journalctl -r` deberia ser similar a esta:
+
+```ssh
+systemd[1]: Starting HAProxy Load Balancer...
+haproxy[3143]: [NOTICE] 040/100726 (3143) : New worker #1 (3145) forked
+systemd[1]: Started HAProxy Load Balancer.
+Keepalived_vrrp[3127]: Script `chk_haproxy` now returning 0
+Keepalived_vrrp[3127]: VRRP_Script(chk_haproxy) succeeded
+Keepalived_vrrp[3127]: (LB_VIP) Changing effective priority from 101 to 103
+```
+
+Para acabar, habilitaremos el servicio haproxy para que arranque durante el boot del servidor.
+
+```ssh
+systemctl enable haproxy
+```
+
+Si todo ha ido bien y los servicios han arrancado sin errores, nos podremos conectar al portal de estadísticas en la url http://192.168.6.122:8404/stats (nos pedirá el usuario/contraseña que hemos definido en la configuración de haproxy)
+
 
