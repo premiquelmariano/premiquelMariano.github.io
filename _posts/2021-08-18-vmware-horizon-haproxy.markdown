@@ -91,6 +91,8 @@ net.ipv4.ip_nonlocal_bind = 1
 
 Finalmente, necesitaremos configurar iptables para permitir el acceso http/https.
 
+> **_NOTA:_** Añadiremos también el puerto 8404 para configurar el acceso al portal de estadísticas de HAProxy. Lo veremos mas adelante.
+
 Añadiremos estas 4 lineas:
 
 ```ssh
@@ -123,9 +125,240 @@ Quedando un fichero similar a este:
 COMMIT
 ```
 
-# Instanación alta disponibilidad con Keepalived
+# Instalación alta disponibilidad con Keepalived
 
+Para dotar de alta disponibilidad a nuestro balanceador, usaremos Keepalived.
+Keepalived utiliza VRRP (Virtual Router Redundancy Protocol) para asignar una virtual IP (VIP) al nodo master de HAProxy y que así esté siempre disponible.
 
+Instalaremos keepalived en ambos nodos con el siguiente comando:
 
+```ssh
+tdnf install keepalived -y
+```
 
+Una vez instalado haremos un backup de la configuración antes de modificarla.
+
+```ssh
+mv /etc/keepalived/keepalived.conf /etc/keepalived/keepalived-original.conf
+```
+
+Y crearemos un nuevo fichero de configuración similar a este:
+
+** Nodo MSTER: PhotonLB-01 **
+
+```ssh
+! Configuration File for keepalived PhotonLB-01
+
+global_defs {
+   router_id PhotonLB-01
+   vrrp_skip_check_adv_addr
+   vrrp_garp_interval 0
+   vrrp_gna_interval 0
+}
+vrrp_script chk_haproxy {
+  script "/usr/bin/kill -0 haproxy"
+  interval 2
+  weight 2
+}
+vrrp_instance LB_VIP {
+  interface eth0
+  state MASTER                  # BACKUP on PhotonLB-02
+  priority 101                  # 100 on PhotonLB-02
+  virtual_router_id 11          # same on all peers
+  authentication {              # same on all peers
+    auth_type AH
+    auth_pass Pass1234
+  }
+  unicast_src_ip 192.168.6.120    # real IP of MASTER peer
+  unicast_peer {
+    192.168.1.121                 # real IP of BACKUP peer
+  }
+  virtual_ipaddress {
+    192.168.6.122                 # Virtual IP for HAProxy loadbalancer
+    192.168.6.123                 # Virtual IP for Horizon
+    192.168.6.124                 # Virtual IP for AppVolumes Manager
+  }
+  track_script {
+    chk_haproxy                 # if HAProxy is not running on this peer, start failover
+  }
+}
+
+```
+
+** Nodo SLAVE: PhotonLB-02 **
+
+```ssh
+! Configuration File for keepalived PhotonLB-02
+
+global_defs {
+   router_id PhotonLB-02
+   vrrp_skip_check_adv_addr
+   vrrp_garp_interval 0
+   vrrp_gna_interval 0
+}
+vrrp_script chk_haproxy {
+  script "/usr/bin/kill -0 haproxy"
+  interval 2
+  weight 2
+}
+vrrp_instance LB_VIP {
+  interface eth0
+  state BACKUP                  # MASTER on PhotonLB-01
+  priority 100                  # 101 on PhotonLB-01
+  virtual_router_id 11          # same on all peers
+  authentication {              # same on all peers
+    auth_type AH
+    auth_pass Pass1234
+  }
+  unicast_src_ip 192.168.6.121    # real IP of BACKUP peer
+  unicast_peer {
+    192.168.1.120                 # real IP of MASTER peer
+  }
+  virtual_ipaddress {
+    192.168.6.122                 # Virtual IP for HAProxy loadbalancer
+    192.168.6.123                 # Virtual IP for Horizon
+    192.168.6.124                 # Virtual IP for AppVolumes Manager
+  }
+  track_script {
+    chk_haproxy                 # if HAProxy is not running on this peer, start failover
+  }
+}
+
+```
+
+Resumiendo:
+
+* El nodo MASTER tiene una prioridad 101 y el BACKUP 100
+* Cada 2 segundos Keepalived chequea que HAProxy esté corriendo. Si está UP incrementa en 2 la prioridad y si está DOWN la baja 2
+* Mientras HAProxy esté UP en ambos servidores, el que tenga prioridad mas alta será MASTER
+* Si HAProxy se para en el nodo MASTER, la prioridad bajará y el BACKUP se convertirá en MASTER
+
+En este punto, ya tenemos la configuración básica de keepalive. Se puede arrancar pero dará algunos fallos ya que todavia no tenemos instalado HAProxy y el script de chequeo fallará.
+
+```ssh
+systemctl start keepalived
+```
+
+> **_NOTA:_** Con el comando `journalctl -r` podemos ver el registro de logs
+
+En el log veremos una salida similar a esta, el servicio se ha arrancado correctamente pero el script de HAProxy falla porque aún no está instalado.
+
+```ssh
+Keepalived_vrrp[777]: Script `chk_haproxy` now returning 1
+Keepalived_vrrp[777]: VRRP_Script(chk_haproxy) failed (exited with status 1)
+Keepalived_vrrp[777]: (LB_VIP) Receive advertisement timeout
+Keepalived_vrrp[777]: (LB_VIP) Entering MASTER STATE
+
+Keepalived_vrrp[777]: (LB_VIP) setting VIPs.
+```
+
+Para acabar, habilitaremos el servicio keepalived para que arranque durante el boot del servidor.
+
+```ssh
+systemctl enable keepalived
+```
+
+# Instalación de HAProxy
+
+Isnstalamos HAProxy con el siguiente comando:
+
+```ssh
+tdnf install haproxy -y
+```
+
+Antes de empezar con la config, crearemos un directorio extra donde guardaremos información de estadísticas.
+
+```ssh
+mkdir /var/lib/haproxy
+chmod 755 /var/lib/haproxy
+```
+
+Al igual que con el fichero de configuración de keepalived, haremos un backup previo de la configuración original.
+
+```ssh
+mv /etc/haproxy/haproxy.cfg /etc/haproxy/haproxy-original.cfg
+```
+
+> **_NOTA:_** A diferencia que keepalived, HAProxy tiene que tener idéntica configuración en ambos servidores. Así que asegurate de que los cambios que se realicen, se hagan de forma idéntica en ambos nodos.
+
+El nuevo fichero de configuración tendrá la siguiente información:
+
+```ssh
+# HAProxy configuration
+
+#Global definitions
+global
+  chroot /var/lib/haproxy
+  stats socket /var/lib/haproxy/stats
+  daemon
+
+defaults
+  timeout connect 5s
+  timeout client 30s
+  timeout server 30s
+
+### Statistics & Admin configuration ###
+userlist stats-auth
+  group admin   users admin
+  user admin insecure-password LetMeIn
+  group ro users stats
+  user stats insecure-password ReadOnly
+frontend stats-http8404
+  mode http
+  bind *:8404
+  default_backend statistics
+backend statistics
+  mode http
+  stats enable
+  stats show-legends
+  stats show-node
+  stats refresh 30s
+  acl AUTH http_auth(stats-auth)
+  acl AUTH_ADMIN http_auth_group(stats-auth) admin
+  stats http-request auth unless AUTH
+  stats admin if AUTH_ADMIN
+  stats uri /stats
+  server PhotonLB01 192.168.6.120:8408 weight 1 check inter 30s fastinter 2s downinter 5s rise 3 fall 3
+  server PhotonLB02 192.168.6.121:8404 weight 1 check inter 30s fastinter 2s downinter 5s rise 3 fall 3
+
+######
+
+### Horizon Connection servers ###
+frontend horizon-http
+  mode http
+  bind 192.168.6.123:80
+  # Redirect http to https
+  redirect scheme https if !{ ssl_fc }
+
+frontend horizon-https
+  mode tcp
+  bind 192.168.6.123:443
+  default_backend horizon
+backend horizon
+  mode tcp
+  option ssl-hello-chk
+  balance source
+  server Horizon_Connection_Server_01 192.168.6.113:443 weight 1 check inter 30s fastinter 2s downinter 5s rise 3 fall 3
+  server Horizon_Connection_Server_02 192.168.6.114:443 weight 1 check inter 30s fastinter 2s downinter 5s rise 3 fall 3
+######
+
+### AppVolume Managers ###
+frontend appvol-http
+  mode http
+  bind 192.168.6.124:80
+  redirect scheme https if !{ ssl_fc }
+frontend appvol-https
+  mode tcp
+  bind 192.168.6.124:443
+  default_backend appvol
+
+backend appvol
+  mode tcp
+  option ssl-hello-chk
+  balance source
+  server AppVolumes_Manager_01 192.168.6.118:443 weight 1 check inter 30s fastinter 2s downinter 5s rise 3 fall 3
+  server AppVolumes_Manager_02 192.168.6.119:443 weight 1 check inter 30s fastinter 2s downinter 5s rise 3 fall 3
+######
+
+```
 
