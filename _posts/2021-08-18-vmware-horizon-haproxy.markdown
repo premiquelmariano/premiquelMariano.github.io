@@ -89,4 +89,43 @@ net.ipv4.ip_nonlocal_bind = 1
 
 > **_NOTA:_** Fijaros que en la misma carpeta, está un fichero llamado `50-security-hardening.conf`. Al usar nosotros un numero superior en el fichero creado, es posible que se sobreescriban algunas configuraciones definidas por defecto.
 
+Finalmente, necesitaremos configurar iptables para permitir el acceso http/https.
+
+Añadiremos estas 4 lineas:
+
+```ssh
+-A INPUT -p icmp -m icmp --icmp-type 8 -j ACCEPT
+-A INPUT -p tcp --dport 80 -j ACCEPT
+-A INPUT -p tcp --dport 443 -j ACCEPT
+-A INPUT -p tcp --dport 8404 -j ACCEPT
+```
+
+Quedando un fichero similar a este:
+
+```ssh
+# init
+*filter
+:INPUT DROP [0:0]
+:FORWARD DROP [0:0]
+:OUTPUT DROP [0:0]
+# Allow local-only connections
+-A INPUT -i lo -j ACCEPT
+-A INPUT -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+#keep commented till upgrade issues are sorted
+#-A INPUT -j LOG --log-prefix "FIREWALL:INPUT "
+-A INPUT -p tcp -m tcp --dport 22 -j ACCEPT
+-A INPUT -p icmp -m icmp --icmp-type 8 -j ACCEPT
+-A INPUT -p tcp --dport 80 -j ACCEPT
+-A INPUT -p tcp --dport 443 -j ACCEPT
+-A INPUT -p tcp --dport 8404 -j ACCEPT
+
+-A OUTPUT -j ACCEPT
+COMMIT
+```
+
+# Instanación alta disponibilidad con Keepalived
+
+
+
+
 
