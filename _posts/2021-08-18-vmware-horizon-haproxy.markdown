@@ -15,7 +15,7 @@ tag:
 
 En el post de hoy veremos cómo podemos balancear y dotar de alta disponibilidad a nuestros servidores de conexión de VMware Horizon y a nuestros AppVolumes Managers.
 
-Para que mentalmente os podais hacer una idea de lo que vamos a hacer, os dejo con el siguiente esquema
+Para que mentalmente os podais hacer una idea de lo que vamos a hacer, os dejo con el siguiente esquema:
 
 ![Horizon8-architecture-design]({{ site.imagesposts2021 }}/08/Horizon8-architecture-design.png){: .align-center}
 
@@ -47,9 +47,9 @@ El despliegue de la OVA es muy sencillo y solo tendremos que seguir el asistente
 
 # Configuración inicial
 
-Por defecto, la ova de PhotonOS está configurada para coger IP por DHCP y SSH está habilitado en el arranque
+Por defecto, la ova de PhotonOS está configurada para coger IP por DHCP y SSH está habilitado en el arranque.
 
-Nos conectaremos por SSH a la IP que nos ha proporcionado y accederemos con las credenciales por defecto (admin/changeme). La primera vez que hagamos login nos pedirá cambiar la contraseña
+Nos conectaremos por SSH a la IP que nos ha proporcionado y accederemos con las credenciales por defecto (admin/changeme). La primera vez que hagamos login nos pedirá cambiar la contraseña.
 
 ![changeme]({{ site.imagesposts2021 }}/08/changeme.png){: .align-center}
 
@@ -108,7 +108,7 @@ net.ipv4.ip_nonlocal_bind = 1
 
 > **_NOTA:_** Fijaros que en la misma carpeta, está un fichero llamado `50-security-hardening.conf`. Al usar nosotros un numero superior en el fichero creado, es posible que se sobreescriban algunas configuraciones definidas por defecto.
 
-Finalmente, necesitaremos configurar iptables para permitir el acceso http/https. `/etc/systemd/scripts/ip4save
+Finalmente, necesitaremos configurar iptables para permitir el acceso http/https. `/etc/systemd/scripts/ip4save`
 
 > **_NOTA:_** Añadiremos también el puerto 8404 para configurar el acceso al portal de estadísticas de HAProxy. Lo veremos mas adelante.
 
@@ -280,7 +280,7 @@ systemctl enable keepalived
 
 # Instalación de HAProxy
 
-Isnstalamos HAProxy con el siguiente comando:
+Instalamos HAProxy con el siguiente comando:
 
 ```ssh
 tdnf install haproxy -y
