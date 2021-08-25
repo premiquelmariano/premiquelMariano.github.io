@@ -135,7 +135,6 @@ Quedando un fichero similar a este:
 -A INPUT -p tcp --dport 80 -j ACCEPT
 -A INPUT -p tcp --dport 443 -j ACCEPT
 -A INPUT -p tcp --dport 8404 -j ACCEPT
-
 -A OUTPUT -j ACCEPT
 COMMIT
 ```
