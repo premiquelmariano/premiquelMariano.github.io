@@ -17,7 +17,7 @@ En el post de hoy veremos cómo podemos balancear y dotar de alta disponibilidad
 
 Para que mentalmente os podais hacer una idea de lo que vamos a hacer, os dejo con el siguiente esquema:
 
-![Horizon8-architecture-design]({{ site.imagesposts2021 }}/08/Horizon8-architecture-design.png){: .align-center}
+![Horizon8-architecture-design]({{ site.imagesposts2021 }}/08/Horizon8-Architecture-design.png){: .align-center}
 
 En él, podeis ver cómo añadiremos 2 nuevos servidores a nuestra infraestructura e instalaremos HAProxy + Keepalive en ellos.
 
