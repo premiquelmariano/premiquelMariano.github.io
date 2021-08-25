@@ -83,13 +83,17 @@ UseDNS=false
 
 > **_NOTA:_** Pondremos la IP correspondiente a cada uno de los servidores
 
-- Cambiaremos el propietario del fichero con el siguiente comando: `chown systemd-network:systemd-network /etc/systemd/network/10-static-en.network`
+- Cambiaremos el propietario del fichero con el siguiente comando: 
+
+```ssh
+chown systemd-network:systemd-network /etc/systemd/network/10-static-en.network
+```
 
 Para poder usar las VIP en ambos nodos de Keepalive y HAProxy, será necesario realizar ciertos cambios para permitir el reenvio a nivel IP y permitir que ambos servicios usen una IP que no está definida en la interfaz física de la VM.
 
 Por defecto, PhotonOS tiene este comportamiento deshabilitado y lo podremos habilitar de la siguiente manera:
 
-- Editamos el fichero de configuración `etc/sysctl.d/55-keepalived.conf`
+- Creamos y editamos el fichero de configuración `/etc/sysctl.d/55-keepalived.conf`
 
 ```ssh
 #Enable IPv4 Forwarding
@@ -100,7 +104,7 @@ net.ipv4.ip_nonlocal_bind = 1
 
 > **_NOTA:_** Fijaros que en la misma carpeta, está un fichero llamado `50-security-hardening.conf`. Al usar nosotros un numero superior en el fichero creado, es posible que se sobreescriban algunas configuraciones definidas por defecto.
 
-Finalmente, necesitaremos configurar iptables para permitir el acceso http/https.
+Finalmente, necesitaremos configurar iptables para permitir el acceso http/https. `/etc/systemd/scripts/ip4save
 
 > **_NOTA:_** Añadiremos también el puerto 8404 para configurar el acceso al portal de estadísticas de HAProxy. Lo veremos mas adelante.
 
@@ -135,6 +139,8 @@ Quedando un fichero similar a este:
 -A OUTPUT -j ACCEPT
 COMMIT
 ```
+
+Reiniciamos el servidor con el comando `reboot`
 
 # Instalación alta disponibilidad con Keepalived
 
