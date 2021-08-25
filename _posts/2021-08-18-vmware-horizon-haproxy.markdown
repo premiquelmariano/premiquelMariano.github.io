@@ -382,7 +382,7 @@ backend appvol
 
 ```
 
-- **Statistics & Admin configuration:** En esta parte creamos 2 grupos y 2 usuarios (Uno admin y otro read-only). Este grupo se usará para ver las estadísticas de HAProxy y para poner los servidores de backend en modo mantenimiento. Definimos el frontend para que acepte conexiones a cualquier ip `bind: *:8404` Este es el puerto que definimos en ipetables, os acordais? Para acceder al frontend y poder ver las estadísticas y habilitar/deshabilitar backend nos conectaremos a la URL http://192.168.6.122:8404/stats
+- **Statistics & Admin configuration:** En esta parte creamos 2 grupos y 2 usuarios (Uno admin y otro read-only). Este grupo se usará para ver las estadísticas de HAProxy y para poner los servidores de backend en modo mantenimiento. Definimos el frontend para que acepte conexiones a cualquier ip `bind: *:8404` Este es el puerto que definimos en iptables, os acordais? Para acceder al frontend y poder ver las estadísticas y habilitar/deshabilitar backend nos conectaremos a la URL http://192.168.6.122:8404/stats
 
 - **Horizon Connection Servers:** La primera parte sólo hacemos una redirección de HTTP a HTTPS. A continuación, la interfaz se configura utilizando la VIP para Horizon. En el backend se especifican los servidores de conexión y el algoritmo de equilibrio de carga.
 La opción ssl-hello-chk es necesaria para asegurarse de que HAProxy no solo verifique si el puerto 443 está abierto en el backend para configurar el backend como activo, sino también para verificar que realmente haya una conexión SSL válida al backend. Si no especificamos esto, el backend se activará para HAProxy, mientras que es posible que los servicios de Horizon aún se estén iniciando y aún no estén disponibles para su uso.
