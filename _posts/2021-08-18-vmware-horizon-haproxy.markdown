@@ -160,7 +160,7 @@ mv /etc/keepalived/keepalived.conf /etc/keepalived/keepalived-original.conf
 
 Y crearemos un nuevo fichero de configuración similar a este:
 
-** Nodo MSTER: PhotonLB-01 **
+**Nodo MSTER: PhotonLB-01**
 
 ```ssh
 ! Configuration File for keepalived PhotonLB-01
@@ -201,7 +201,7 @@ vrrp_instance LB_VIP {
 
 ```
 
-** Nodo SLAVE: PhotonLB-02 **
+**Nodo SLAVE: PhotonLB-02**
 
 ```ssh
 ! Configuration File for keepalived PhotonLB-02
@@ -378,13 +378,13 @@ backend appvol
 
 ```
 
-** Statistics & Admin configuration: ** En esta parte creamos 2 grupos y 2 usuarios (Uno admin y otro read-only). Este grupo se usará para ver las estadísticas de HAProxy y para poner los servidores de backend en modo mantenimiento. Definimos el frontend para que acepte conexiones a cualquier ip `bind: *:8404` Este es el puerto que definimos en ipetables, os acordais? Para acceder al frontend y poder ver las estadísticas y habilitar/deshabilitar backend nos conectaremos a la URL http://192.168.6.122:8404/stats
+**Statistics & Admin configuration:** En esta parte creamos 2 grupos y 2 usuarios (Uno admin y otro read-only). Este grupo se usará para ver las estadísticas de HAProxy y para poner los servidores de backend en modo mantenimiento. Definimos el frontend para que acepte conexiones a cualquier ip `bind: *:8404` Este es el puerto que definimos en ipetables, os acordais? Para acceder al frontend y poder ver las estadísticas y habilitar/deshabilitar backend nos conectaremos a la URL http://192.168.6.122:8404/stats
 
-** Horizon Connection Servers: ** La primera parte sólo hacemos una redirección de HTTP a HTTPS. A continuación, la interfaz se configura utilizando la VIP para Horizon. En el backend se especifican los servidores de conexión y el algoritmo de equilibrio de carga.
+**Horizon Connection Servers:** La primera parte sólo hacemos una redirección de HTTP a HTTPS. A continuación, la interfaz se configura utilizando la VIP para Horizon. En el backend se especifican los servidores de conexión y el algoritmo de equilibrio de carga.
 La opción ssl-hello-chk es necesaria para asegurarse de que HAProxy no solo verifique si el puerto 443 está abierto en el backend para configurar el backend como activo, sino también para verificar que realmente haya una conexión SSL válida al backend. Si no especificamos esto, el backend se activará para HAProxy, mientras que es posible que los servicios de Horizon aún se estén iniciando y aún no estén disponibles para su uso.
 En condiciones normales, cada 30 segundos se comprueban los backends. Cuando un backend está inactivo, la verificación se realiza cada 5 s (downinter 5s), y cuando una verificación falla o tiene éxito después de una falla anterior, los backends se verifican cada 2s (fastinter 2s).
 
-** AppVolumes Managers: ** Esta sección es similar a la de los Connection Server
+**AppVolumes Managers:** Esta sección es similar a la de los Connection Server
 
 Una vez tengamos la configuración hecha en ambos servidores, es momento de arrancar el servicio
 
