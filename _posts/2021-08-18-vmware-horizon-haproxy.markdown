@@ -1,12 +1,16 @@
 ---
-title: VMware Horizon/AppVolumes LB with HAProxy and Keepalived on PhotonOS
+title: VMware Horizon/AppVolumes Load Balancer con HAProxy y Keepalived sobre PhotonOS
 date: '2021-08-18 00:00:00'
 layout: post
 image: /assets/images/posts/2018/12/ssh-banner.jpg
 tag:
-- esxi
-- vsphere
+- euc
+- vmware
 - vexpert
+- haproxy
+- pothonos
+- keepalived
+- haproxy
 ---
 
 En el post de hoy veremos cómo podemos balancear y dotar de alta disponibilidad a nuestros servidores de conexión de VMware Horizon y a nuestros AppVolumes Managers.
@@ -334,7 +338,7 @@ backend statistics
   stats http-request auth unless AUTH
   stats admin if AUTH_ADMIN
   stats uri /stats
-  server PhotonLB01 192.168.6.120:8408 weight 1 check inter 30s fastinter 2s downinter 5s rise 3 fall 3
+  server PhotonLB01 192.168.6.120:8404 weight 1 check inter 30s fastinter 2s downinter 5s rise 3 fall 3
   server PhotonLB02 192.168.6.121:8404 weight 1 check inter 30s fastinter 2s downinter 5s rise 3 fall 3
 
 ######
@@ -411,4 +415,37 @@ systemctl enable haproxy
 
 Si todo ha ido bien y los servicios han arrancado sin errores, nos podremos conectar al portal de estadísticas en la url http://192.168.6.122:8404/stats (nos pedirá el usuario/contraseña que hemos definido en la configuración de haproxy)
 
+![stats]({{ site.imagesposts2021 }}/08/stats.png){: .align-center}
 
+# Comprobar estado keepalive
+
+No quiero despedirme sin antes enseñaros un pequeño método para verificar el estado del Keepalive y quien es MASTER y quien es BACKUP
+
+Con el siguiente comando, podremos verificar el "role" que tiene cada servidor:
+
+```ssh
+root@PhotonLB-01 [ ~ ]# journalctl -u keepalived |grep Entering
+Aug 25 12:27:01 PhotonLB-01 Keepalived_vrrp[539]: (LB_VIP) Entering MASTER STATE
+```
+
+Y con este la prioridad que tiene cada uno de ellos
+
+```ssh
+root@PhotonLB-01 [ ~ ]# journalctl -u keepalived |grep effective
+Aug 25 12:26:58 PhotonLB-01 Keepalived_vrrp[539]: (LB_VIP) Changing effective priority from 101 to 103
+```
+
+También otro comando interesante es el que vacia el log, por si tenemos muchos registros y nos cuesta indentificar cada acción
+
+```ssh
+journalctl --rotate
+journalctl --vacuum-time=1s
+```
+
+Y hasta aquí el post de hoy.
+
+Espero sea de utilidad.
+
+Un saludo!
+
+Miquel.
