@@ -13,27 +13,30 @@ En el dia de hoy os traigo un pequeño manual para comprobar cual es el disco de
 
 Este post, forma parte de la serie [back to basics](https://miquelmariano.github.io/tag/#/backtobasics), que hacia tiempo que no actualizaba ;-)
 
+# 1. Habilitamos el servicio SSH en nuestro servidor ESXi
 
+# 2. Hacemos login a nuestro SSH utilizando un usuario con privilegios de root
 
-If you need to see the current boot device of ESXi or from which device ESXi is running then follow below steps. 
+# 3. Ejecutamos el siguiente comando para ver el volumen de arranque
 
-
-1. Enable SSH on ESXi host. 
-
-2. Login to ESXi server using root and its password.
-
-3. Run below Command to get boot volume 
-
+```
 #ls -l /bootbank | awk -F"-> " '{print $2}'
+```
 
-E.g output
+Deberiamos tener una salida similar a esta:
+
+```
 [root@esxi01:~] ls -l /bootbank | awk -F"-> " '{print $2}'
 /vmfs/volumes/50705ae3-b08ce25f-a1b8-bc56258253ad
+```
 
- 4. Copy vmfs volume and run below command to get more details about volume. 
+# 4. Copy vmfs volume and run below command to get more details about volume. 
 
+```
 #vmkfstools -P vmfsVolumeID
+```
 
+```
 [root@esxi01:~] vmkfstools -P /vmfs/volumes/50705ae3-b08ce25f-a1b8-bc56258253ad
 vfat-0.04 (Raw Major Version: 0) file system spanning 1 partitions.
 File system label (if any):
@@ -43,11 +46,15 @@ UUID: 50705ae3-b08ce25f-a1b8-bc56258253ad
 Partitions spanned (on "disks"):
         eui.00a0504658335330:5
 Is Native Snapshot Capable: NO
+```
 
-5. From above command output copy the disks/partition UID and run below command to get device details. 
+# 5. From above command output copy the disks/partition UID and run below command to get device details. 
 
+```
 #esxcli storage core device list | grep -A27 deviceID
+```
 
+```
 [root@esxi01:~] esxcli storage core device list | grep -A27 eui.00a0504658335330
 eui.00a0504658335330
    Display Name: Local USB Direct-Access (eui.00a0504658335330)
@@ -83,6 +90,7 @@ eui.00a0504658335330
    Is Boot Device: true
    Device Max Queue Depth: 1
    No of outstanding IOs with competing worlds: 32
+```
 
 In above command you can see, this ESXi host is booted and running from USB device. 
 
