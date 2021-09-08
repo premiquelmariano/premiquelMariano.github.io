@@ -7,6 +7,7 @@ tag:
 - esxi
 - vsphere
 - vexpert
+- backtobasics
 ---
 
 En el dia de hoy os traigo un pequeño manual para comprobar cual es el disco de arranque de nuestros servidores ESXi. 
@@ -30,7 +31,7 @@ Deberiamos tener una salida similar a esta:
 /vmfs/volumes/50705ae3-b08ce25f-a1b8-bc56258253ad
 ```
 
-# 4. Copy vmfs volume and run below command to get more details about volume. 
+# 4. Copiamos el volumen vmfs y ejecutamos el siguiente comando para obtener mas detalle
 
 ```
 #vmkfstools -P vmfsVolumeID
@@ -48,7 +49,7 @@ Partitions spanned (on "disks"):
 Is Native Snapshot Capable: NO
 ```
 
-# 5. From above command output copy the disks/partition UID and run below command to get device details. 
+# 5. Con la salida del comando anterior, copiamos el UUID del disco y ejecutemos el siguiente comando 
 
 ```
 #esxcli storage core device list | grep -A27 deviceID
@@ -92,14 +93,7 @@ eui.00a0504658335330
    No of outstanding IOs with competing worlds: 32
 ```
 
-In above command you can see, this ESXi host is booted and running from USB device. 
-
-Above process looks simple and useful. 
-If you have large number of ESXi hosts and want to export all ESXi hosts boot device then you can automate it using PowerShell and bash scripting. 
-
-
-
-
+En este ejemplo, podemos ver que el disco de arranque de nuestro ESXi es un disco USB.
 
 Espero que os guste ;-)
 
