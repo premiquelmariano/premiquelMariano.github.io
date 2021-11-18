@@ -23,34 +23,70 @@ De cara a esta necesidad para que los ESXi sean compatibles con otras soluciones
 
 Con la nueva arquitectura de particiones en vSphere 7.0, sólo la partición de arranque del sistema es de tamaño fijo. El resto de particiones son dinámicas, por lo que el tamaño se determinará en función del tamaño del dispositivo de arranque.
 
-
 ![boot-media-1]({{ site.imagesposts2021 }}/11/boot-media-1.png){: .align-center}
 
+Otro cambio significativo es la partición ESX-OSDATA. Todas las particiones que no son de arranque, como el coredump, locker, scratch ahora se incluyen en esta partición (VMFS-L)
 
+Esta partición debe de crearse en un dispositivo persistente de alta resistencia, ya que el numero de IOPS al ESX-OSDATA se ha incrementado notablemente debido a múltiples factores:
 
+- Mayor número de peticiones de health check del estado del dispositivo
 
+- Scripts programados para hacer backups del estado del sistema y timestamp también contribuyen al aumento de IOPS
 
+- Otras funciones que almacenan el estado de la configuración en el ESX-OSData
 
-https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vcenter.install.doc/GUID-28156B0F-09AD-4B44-BC29-BFA91773DD46.html#GUID-28156B0F-09AD-4B44-BC29-BFA91773DD46__FIG_A94B7B89-5EC6-4C26-8730-534A15EEDCE1
+![boot-media-2]({{ site.imagesposts2021 }}/11/boot-media-2.png){: .align-center}
 
-https://virtualtassie.com/2018/vcenter-6-7-cross-sso-domain-repointing/
+## Posibles problemas con ESXi 7 con tarjetas SD o dispositivos USB
 
+1. Posible corrupción de la partición VMFS-L (ESX-OSDATA)
+Los dispositivos de baja resistencia como tarjetas SD o USB se descastan/rompen rápidamente debido a la alta frecuéncia de IOPS. La razón más común son las operaciones de lectura en los archivos VMTools a los que acceden las VMs. Una forma de mitigar esto es descargar estas operaciones en el disco RAM lo que reduce significativamente las IOPS enviadas a las SD o USB. or el momento, la solución está en mover las VMTools a RAMDisk habiliando la opción ToolsRamDisk de forma manual >> [KB83376](https://kb.vmware.com/s/article/83376)
 
-cmsso-util domain-repoint -m pre-check --src-emb-admin Administrator --replication-partner-fqdn vcenter-p.miquelmariano.github.io --replication-partner-admin administrator --dest-domain-name vsphere.local
+2. "/bootbank" missing
+Las tarjetas SD o dispositivos USB suelen tener gran latencia, lo que genera grandes colas en la pila de almacenamiento y el consiguiente timeout. >> [KB83963](https://kb.vmware.com/s/article/83963)
 
-cmsso-util domain-repoint -m execute --src-emb-admin administrator@vsphere.local --replication-partner-fqdn vcenter-p.miquelmariano.github.io --replication-partner-admin administrator@vsphere.local --dest-domain-name vsphere.local
+## Plan para remediar el uso de tarjetas SD o unidades USB como medio de arranque
 
-cmsso-util domain-repoint -m execute --src-emb-admin Administrator  --dest-domain-name vsphere.local
+### Limitaciones:
+1. El uso de tarjetas SD o unidades USB sin ningún dispositivo adicional para la partición ESX-OSDATA está obsoleto en vSphere 7 Update 3 y no será compatible en futuras versiones
 
+2. En las próximas versiones, la única configuración admitida con SD o USB será con unidades de 8Gb + un dispositivo de almacenamiento persistente conectado localmente para la partición ESX-OSDATA.
 
-![writable_volumes000]({{ site.imagesposts2020 }}/04/writable_volumes000.png){: .align-center}
+3. En cualquier caso, si se utiliza finalmente SD o USB como medio de arranque, hay que seguir estas instrucciones para reducir la cantidad de IOPS enviadas.
 
+        - [Habilitar ToolsRamDisk](https://kb.vmware.com/s/article/83376)
+        - [Configurar /scratch en almacenamiento persistente](https://kb.vmware.com/s/article/1033696)
+        - [Configurar ESXi Dump Collector](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.install.doc/GUID-85D78165-E590-42CF-80AC-E78CBA307232.html)
 
+4. Asegurarse de que nuestros ESXi están actualizados a la versión vSphere 7.0 U2c o superior para evitar el error ["/bootbank" missing](https://kb.vmware.com/s/article/83963)
+
+5. Un dispositivo con tarjeta SD dual no es una solución en la que los clientes deban confiar
+
+6. Si nuestro ESXi ya está actualizado a 7.x, podemos agegar un dispositivo de almacenamiento local y establecer AutoPartition = True. De esta manera, este almacenamiento se utilizará para la partición ESX-OSDATA >> [KB77009](https://kb.vmware.com/s/article/77009)
+
+## Consideraciones sobre el arranque de ESXi.
+A dia de hoy, la mejor opción es tener un dispositivo de almacenamiento persistente conectado localmente.
+
+![boot-media-3]({{ site.imagesposts2021 }}/11/boot-media-3.png){: .align-center}
+![boot-media-4]({{ site.imagesposts2021 }}/11/boot-media-4.png){: .align-center}
+
+## Arranque de ESXi desde un almacenamiento local en un entorno vSAN
+VMware no recomienda arrancar un ESXi desde la misma controladora de discos compartida por los discos de la vSAN. Los clientes pueden considerar la posibilidad de añadir una controladora adicional para gestionar el dispositivo de arranque.
+
+## Conclusión
+VMware se está distanciando del soporte de tarjetas SD y dispositivos USB como medios de arranque. La configuración del arranque sólo con SD o USB está obsoleta con vSphere 7.0 U3. En futuras versiones, esta configuración no será admitida y se recomienda a los clientes que se migren completamente de tarjetas SD o unidades USB.
+
+Si esta opción no es posible, hay que asegurarse de que la tarjeta SD o USB es de 8Gb y disponemos de un dispositivo de alta resistencia conectado localmente para alojar la partición ESX-OSDATA
+
+Y como nota final, recordar que si estamos en esta situación, deberemos actualizar a la versión 7.0 U2c o superior ya que contiene correcciones para algunos de los problemas anteriormente descritos.
 
 Espero que os guste.
 
 Un saludo!
 
 Miquel.
+
+
+P.D. Podeis leer la nota oficial, [aquí](https://blogs.vmware.com/vsphere/2021/09/esxi-7-boot-media-consideration-vmware-technical-guidance.html)
 
 
