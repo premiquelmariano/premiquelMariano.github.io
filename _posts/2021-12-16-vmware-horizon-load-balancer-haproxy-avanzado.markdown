@@ -36,8 +36,8 @@ backend horizon
   option ssl-hello-chk
   balance source
   option httpchk HEAD /favicon.ico
-  server Horizon_Connection_Server_01 192.168.6.113:443 weight 1 check inter 30s fastinter 2s downinter 5s rise 3 fall 3
-  server Horizon_Connection_Server_02 192.168.6.114:443 weight 1 check inter 30s fastinter 2s downinter 5s rise 3 fall 3
+  server Horizon_Connection_Server_01 192.168.6.113:443 weight 1 check check-ssl verify none inter 30s fastinter 2s downinter 5s rise 3 fall 3
+  server Horizon_Connection_Server_02 192.168.6.114:443 weight 1 check check-ssl verify none inter 30s fastinter 2s downinter 5s rise 3 fall 3
 ...
 ```
 
@@ -53,6 +53,33 @@ Al habilitar el conection server de nuevo, el servidor se recuperará y volverá
 
 ![cs-disabled-05]({{ site.imagesposts2021 }}/12/cs-disabled-05.png){: .align-center}
 ![cs-disabled-06]({{ site.imagesposts2021 }}/12/cs-disabled-06.png){: .align-center}
+
+A parte de esto, VMware también recomienda una frecuencia de chequeo que no sobrecargue en esceso los servidores. VMware recomienda una frecuentcia de 30 segundos entre chequeos y 91 segundos de timeout (3 check + 1 segundo). Así pues, la configuración quedaria de la siguiente manera:
+
+```ssh
+...
+frontend horizon-https
+  mode tcp
+  bind 192.168.6.123:443
+  timeout client 91s
+  default_backend horizon
+backend horizon
+  mode tcp
+  option ssl-hello-chk
+  balance source
+  option httpchk HEAD /favicon.ico
+  timeout client 91s
+  server Horizon_Connection_Server_01 192.168.6.113:443 weight 1 check inter 30s fastinter 2s downinter 5s rise 3 fall 3
+  server Horizon_Connection_Server_02 192.168.6.114:443 weight 1 check inter 30s fastinter 2s downinter 5s rise 3 fall 3
+...
+```
+
+> Añadiremos las líneas **_timeout client 91s_** tanto en el bloque de frontend como en backend.
+
+Para acabar, una última optimización que me parece interesante es cambiar el modo de balanceo de "source" a "leastconn", de esta manera, nos aseguraremos que HAProxy enviará la petición al connection server menos sobrecargado.
+
+Sin embargo, debemos asegurarnos de que la persistencia de la fuente esté habilitada para que un cliente no cambie los servidores de conexión entre 2 conexiones porque eso obligaría al cliente a volver a iniciar sesión en el otro servidor de conexión. En HAProxy podemos crear una tabla de IP y decirle a HAproxy que mantenga las conexiones “fijas” según la dirección IP. Al configurar la tabla de IP, debe especificar un temporizador de vencimiento. Para calcular este temporizador, debe saber qué opciones ha configurado en Horizon para la configuración global "Desconectar por la fuerza a los usuarios" y "Desconectar aplicaciones y descartar las credenciales de SSO para los usuarios inactivos".
+
 
 
 En el post de hoy veremos cómo podemos balancear y dotar de alta disponibilidad a nuestros servidores de conexión de VMware Horizon y a nuestros AppVolumes Managers.
