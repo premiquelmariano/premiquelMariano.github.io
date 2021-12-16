@@ -43,6 +43,17 @@ backend horizon
 
 > Añadiremos la línea **_option httpchk HEAD /favicon.ico_** y también añadiremos el **_check-ssl verify none_** en las 2 líneas de los server.
 
+Tendremos que reiniciar el servicio de ambos servidores con el comando `check-ssl verify none`
+
+Una vez arrancado con la nueva config, el el portal de estadísticas veremos cómo declara el servidor en DOWN porque ha recibido un 503
+
+![cs-disabled-04]({{ site.imagesposts2021 }}/12/cs-disabled-04.png){: .align-center}
+
+Al habilitar el conection server de nuevo, el servidor se recuperará y volverá a aceptar peticiones:
+
+![cs-disabled-05]({{ site.imagesposts2021 }}/12/cs-disabled-05.png){: .align-center}
+![cs-disabled-06]({{ site.imagesposts2021 }}/12/cs-disabled-06.png){: .align-center}
+
 
 En el post de hoy veremos cómo podemos balancear y dotar de alta disponibilidad a nuestros servidores de conexión de VMware Horizon y a nuestros AppVolumes Managers.
 
