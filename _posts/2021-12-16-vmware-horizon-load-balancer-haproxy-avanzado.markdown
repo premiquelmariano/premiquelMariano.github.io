@@ -1,6 +1,6 @@
 ---
-title: VMware Horizon/AppVolumes Load Balancer con HAProxy y Keepalived sobre PhotonOS
-date: '2021-09-08 00:00:00'
+title: Monitorización avanzada del estado de Horizon Conection Server para balanceo de carga con HAproxy
+date: '2021-12-16 00:00:00'
 layout: post
 image: /assets/images/posts/2018/12/ssh-banner.jpg
 tag:
@@ -14,6 +14,35 @@ tag:
 - loadbalancer
 - ha
 ---
+
+Tiempo atrás [escribí una entrada](https://miquelmariano.github.io/2021/09/08/vmware-horizon-haproxy/) en la que hablaba sobre balancear nuestros servicios de Horizon Connection Server y App Volumes con HAProxy y Keepalived sobre una VM Photon OS.
+
+En el post de hoy, quiero dar una vuelta de tuerca mas a esta arquitectura para monitorizar de forma más exhaustiva si los servicios por detrás del balanceador (HAproxy) están o no realmente disponibles. En el [post original](https://miquelmariano.github.io/2021/09/08/vmware-horizon-haproxy/) haciamos una comprobación muy básica del estado de los connection servers o app volumes manager y sólo comprobabamos si el servidor web contestaba o no.
+
+Esto nos puede llevar a una situación no deseada, ya que desde el Horizon Administrator es posible deshabilitar un Connection Server de forma administrativa. El servior web sigue levantado y por lo tanto HAProxy le sigue enviando peticiones, con el consiguiente "deny" del connection server.
+
+Para evitar este escencario he averiguado que podemos monitorizar "connnection-server-url/favicon.ico". Si el servidor está OK y aceptando sesiones devolverá un código 200, en cambio, si está deshabilitado administrativamente, devolverá un código 503
+
+![cs-disabled-01]({{ site.imagesposts2021 }}/12/cs-disabled-01.png){: .align-center}
+![cs-disabled-02]({{ site.imagesposts2021 }}/12/cs-disabled-02.png){: .align-center}
+![cs-disabled-03]({{ site.imagesposts2021 }}/12/cs-disabled-03.png){: .align-center}
+
+Con HAProxy podemos verificar esto y declarar un servidor de backend en "down" si el código devuelto es diferente a 200. Para eso, necesitaremos modificar el fichero de configuración `/etc/haproxy/haproxy.cfg` y ajustar la configuración:
+
+```ssh
+...
+backend horizon
+  mode tcp
+  option ssl-hello-chk
+  balance source
+  option httpchk HEAD /favicon.ico
+  server Horizon_Connection_Server_01 192.168.6.113:443 weight 1 check inter 30s fastinter 2s downinter 5s rise 3 fall 3
+  server Horizon_Connection_Server_02 192.168.6.114:443 weight 1 check inter 30s fastinter 2s downinter 5s rise 3 fall 3
+...
+```
+
+> Añadiremos la línea **_option httpchk HEAD /favicon.ico_** y también añadiremos el **_check-ssl verify none_** en las 2 líneas de los server.
+
 
 En el post de hoy veremos cómo podemos balancear y dotar de alta disponibilidad a nuestros servidores de conexión de VMware Horizon y a nuestros AppVolumes Managers.
 
