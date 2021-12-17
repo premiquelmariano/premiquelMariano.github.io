@@ -105,7 +105,7 @@ backend horizon
 ...
 ```
 
-> Añadiremos las líneas **_tbalance leastconn_** **_ttick-table type ip size 1m expire 200m_** **_stick on src_** 
+> Añadiremos las líneas **_tbalance leastconn_**, **_stick-table type ip size 1m expire 200m_** y **_stick on src_** 
 
 Cómo resumen final, el bloque de nuestros connection servers en la configuración del HAProxy debería quedar similar a esto:
 
