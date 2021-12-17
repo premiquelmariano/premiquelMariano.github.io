@@ -1,6 +1,6 @@
 ---
-title: Monitorización avanzada del estado de Horizon Conection Server para balanceo de carga con HAproxy
-date: '2021-12-16 00:00:00'
+title: Monitorización avanzada del estado de Horizon Conection Server para balanceo de carga con HAproxy y keepalived
+date: '2021-12-17 00:00:00'
 layout: post
 image: /assets/images/posts/2018/12/ssh-banner.jpg
 tag:
