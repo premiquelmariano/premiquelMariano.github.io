@@ -43,7 +43,7 @@ backend horizon
 
 > Añadiremos la línea **_option httpchk HEAD /favicon.ico_** y también añadiremos el **_check-ssl verify none_** en las 2 líneas de los server.
 
-Tendremos que reiniciar el servicio de ambos servidores con el comando `check-ssl verify none`
+Tendremos que reiniciar el servicio de ambos servidores con el comando `systemctl restart haproxy`
 
 Una vez arrancado con la nueva config, en el portal de estadísticas veremos cómo declara el servidor en DOWN porque ha recibido un 503
 
