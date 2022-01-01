@@ -3,12 +3,8 @@ layout: post
 title: Image caption in Jekyll
 description: Using an image caption in Jekyll
 summary: Using an image caption in Jekyll.
-tags: jekyll coding
-minute: 1
+tags: [jekyll, coding]
 ---
-
-![](https://images.unsplash.com/photo-1573481193569-c00872fb99fb?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=k-mitch-hodge-yTVqCMI2yPY-unsplash.jpg&w=2400)
-*Photo by <a href="https://unsplash.com/@kmitchhodge?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">K. Mitch Hodge</a> on <a href="https://unsplash.com/collections/8725460/sky?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>*
 
 Lorem ipsum dolor amet tousled viral art party blue bottle single-origin coffee cardigan, selvage man braid helvetica. Banh mi taxidermy meditation microdosing. Selvage cornhole YOLO, small batch vexillologist raclette VHS prism sustainable 8-bit ugh semiotics letterpress disrupt pop-up. Celiac shabby chic ugh, jianbing whatever kitsch tattooed edison bulb kogi irony etsy.
 
