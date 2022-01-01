@@ -1,6 +1,8 @@
 ---
-layout: layout
+layout: default
 ---
 
-{% assign __ = site.data.languages[site.language] %}
-{% include page.html %}
+<section class="post">
+  <h2>{{ page.title }}</h2>
+  {{ content }}
+</section>
