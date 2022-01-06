@@ -1,5 +1,5 @@
 ---
-title: Cloud por vExperts, segunda edición
+title: Cloud por vExperts
 date: '2020-09-23 00:00:00'
 layout: post
 image: /assets/images/posts/2019/03/front.png
