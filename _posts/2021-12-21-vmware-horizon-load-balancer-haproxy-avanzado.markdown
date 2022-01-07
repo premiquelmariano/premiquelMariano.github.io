@@ -10,6 +10,7 @@ tag:
 - haproxy
 - loadbalancer
 - ha
+- test
 style: fill
 color: warning
 description: Hola hola
