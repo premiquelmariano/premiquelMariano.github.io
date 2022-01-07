@@ -1,8 +1,5 @@
 ---
 title: Monitorización avanzada del estado de Horizon Conection Server para balanceo de carga con HAproxy y keepalived
-date: '2021-12-21 00:00:00'
-layout: post
-image: /assets/images/posts/2018/12/ssh-banner.jpg
 tag:
 - euc
 - vmware
@@ -13,6 +10,9 @@ tag:
 - haproxy
 - loadbalancer
 - ha
+style: fill
+color: warning
+description: Hola hola
 ---
 
 Tiempo atrás [escribí una entrada](https://miquelmariano.github.io/2021/09/08/vmware-horizon-haproxy/) en la que hablaba sobre balancear nuestros servicios de Horizon Connection Server y App Volumes con HAProxy y Keepalived sobre una VM Photon OS.
