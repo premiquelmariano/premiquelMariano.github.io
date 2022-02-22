@@ -10,51 +10,29 @@ tag:
 - vexpert
 ---
 
-Docu ForensiT
-https://www.forensit.com/support-downloads.html
+El post de hoy va a ser muy breve, pero os voy a enseñar una pequeña herramienta muy útil para los que trabajamos en entornos VDI o entornos de escritorio en general.
 
-Como último paso, me gusta modificar el perfil por defecto que tiene Windows almacenado, el cual
+Se trata de una pequeña utilidad que nos va a servir para modificar el perfil predeterminado en W10 para que todos nuestros usuarios partan de una misma configuración pre establecida al iniciar sesión por primera vez en nuestros escritorios.
 
-genera ciertos iconos en el escritorio, barra de tareas, así como establecer un fondo de pantalla y los
-colores del tema de Windows 10.
-Para que en la creación de un nuevo perfil en nuestro escritorio virtual sea lo más estándar y no tengamos que retocarlo, lo mejor es modificar el perfil por defecto y que de esta manera todos los usuarios al iniciar por primera vez les aparezca el mismo escritorio.
-Para conseguir esto de manera sencilla, existe una herramienta llamada Defprof, la cual clona un perfil de usuario que hayamos personalizado sobre el perfil por defecto de Windows.
-Para poder realizar el proceso debemos arrancar nuestro Windows con un usuario cualquiera y personalizar el escritorio, los iconos, fondo de pantalla y aspecto que consideremos.
-Una vez terminado, accedemos con un usuario Administrador distinto al que hemos personalizado y lanzamos el programa mediante la Línea de Comandos, indicando el perfil del usuario que hemos personalizado.
+Se llama **Docu ForensiT** y se puede descargar fácilmente y sin registros desde [aquí](https://www.forensit.com/support-downloads.html)
 
-
-Creamos un usuario, que nos servirá para hacer toda la configuración predeterminada que queremos aplicar en todos nuestros usuarios.
+Inicialmente, crearemos un usuario, que nos servirá para hacer toda la configuración predeterminada que queremos hacer predeterminada y aplicar en todos nuestros usuarios.
 
 ![default-profile-00]({{ site.imagesposts2022 }}/02/default-profile-00.png){: .align-center}
 
+En mi caso, a este usuario le he cambiado el fondo de escritorio, le he puesto una serie de iconos y accesos directos tanto en el escritorio como en la barra de tareas
+
 ![default-profile-01]({{ site.imagesposts2022 }}/02/default-profile-01.png){: .align-center}
+
+Una vez tengamos al usuario predeterminado completamente configurado a nuestro gusto y necesidad, cerraremos la sesión e iniciaremos con el usuario administrador local.
+Ejecutaremos un cmd como administrador y la utilidad defprof.exe con el usuario que queramos hacer predeterminado.
 
 ![default-profile-02]({{ site.imagesposts2022 }}/02/default-profile-02.png){: .align-center}
 
+Una vez tengamos ya el perfil predeterminado a partir del usuario que hemos configurado, todos los perfiles que se creen tendrán la configuración pre establecida.
 
-
-
-
-
-Hoy os traigo otro post de la serie [back to basics](https://miquelmariano.github.io/tag/#/backtobasics), que hace tiempo que no actualizaba.
-
-Se trata de un post corto y sencillo pero que mucha gente desconoce. Se trata de ver cómo configurar un banner al hacer login en nuestros servidores ESXi por SSH.
-
-El proceso es muy sencillo, simplemente tendremos que editar el fichero  `vi /etc/issue` con el mensaje que queramos mostrar.
-
-Una vez editado el fichero, reiniciaremos SSH con el siguiente comando:
-
-```ssh
-/etc/init.d/SSH restart
-```
-
-En mi caso, el resultado es este:
-
-![esxi-banner]({{ site.imagesposts2021 }}/01/esxi-banner.png){: .align-center}
 
 ¿Qué os parece?
-
-Por cierto, si quereis hacer algún tipo de extravagancia, esta [herramienta online](http://patorjk.com/software/taag/#p=testall&f=Arrows&t=miquelmariano.github.io) que me he encontrado está muy bien
 
 Espero que os guste ;-)
 
