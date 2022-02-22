@@ -31,6 +31,8 @@ Ejecutaremos un cmd como administrador y la utilidad defprof.exe con el usuario 
 
 Una vez tengamos ya el perfil predeterminado a partir del usuario que hemos configurado, todos los perfiles que se creen tendrán la configuración pre establecida.
 
+![default-profile-03]({{ site.imagesposts2022 }}/02/default-profile-03.png){: .align-center}
+
 
 ¿Qué os parece?
 
