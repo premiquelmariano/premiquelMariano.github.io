@@ -1,22 +1,23 @@
 ---
-title: Modificar perfil predeterminado W10 para entornos VDI VMware Horizon
+title: Modificar perfil predeterminado en Windows 10 para entornos VDI VMware Horizon
 date: '2022-02-22 00:00:00'
 layout: post
 image: /assets/images/posts/2018/12/ssh-banner.jpg
 tag:
-- esxi
 - euc
+- horizon
 - vdi
 - vexpert
+- windows 10
 ---
 
 El post de hoy va a ser muy breve, pero os voy a enseñar una pequeña herramienta muy útil para los que trabajamos en entornos VDI o entornos de escritorio en general.
 
-Se trata de una pequeña utilidad que nos va a servir para modificar el perfil predeterminado en W10 para que todos nuestros usuarios partan de una misma configuración pre establecida al iniciar sesión por primera vez en nuestros escritorios.
+Se trata de una pequeña utilidad que nos va a servir para modificar el perfil predeterminado en Windows 10 para que todos nuestros usuarios partan de una misma configuración pre establecida al iniciar sesión por primera vez en nuestros escritorios.
 
 Se llama **Docu ForensiT** y se puede descargar fácilmente y sin registros desde [aquí](https://www.forensit.com/support-downloads.html)
 
-Inicialmente, crearemos un usuario, que nos servirá para hacer toda la configuración predeterminada que queremos hacer predeterminada y aplicar en todos nuestros usuarios.
+Inicialmente, crearemos un usuario en la [plantilla VDI](https://miquelmariano.github.io/jmp-part9/), que nos servirá para hacer toda la configuración que queremos hacer predeterminada y aplicar en todos nuestros usuarios.
 
 ![default-profile-00]({{ site.imagesposts2022 }}/02/default-profile-00.png){: .align-center}
 
