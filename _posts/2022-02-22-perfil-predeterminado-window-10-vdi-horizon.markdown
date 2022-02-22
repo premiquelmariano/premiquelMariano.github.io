@@ -23,8 +23,15 @@ Para poder realizar el proceso debemos arrancar nuestro Windows con un usuario c
 Una vez terminado, accedemos con un usuario Administrador distinto al que hemos personalizado y lanzamos el programa mediante la Línea de Comandos, indicando el perfil del usuario que hemos personalizado.
 
 
+Creamos un usuario, que nos servirá para hacer toda la configuración predeterminada que queremos aplicar en todos nuestros usuarios.
 
 ![default-profile-00]({{ site.imagesposts2022 }}/02/default-profile-00.png){: .align-center}
+
+![default-profile-01]({{ site.imagesposts2022 }}/02/default-profile-01.png){: .align-center}
+
+![default-profile-02]({{ site.imagesposts2022 }}/02/default-profile-02.png){: .align-center}
+
+
 
 
 
