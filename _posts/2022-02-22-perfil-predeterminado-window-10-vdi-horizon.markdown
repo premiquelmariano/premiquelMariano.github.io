@@ -24,6 +24,10 @@ Una vez terminado, accedemos con un usuario Administrador distinto al que hemos 
 
 
 
+![default-profile-00]({{ site.imagesposts2022 }}/02/default-profile-00.png){: .align-center}
+
+
+
 
 Hoy os traigo otro post de la serie [back to basics](https://miquelmariano.github.io/tag/#/backtobasics), que hace tiempo que no actualizaba.
 
