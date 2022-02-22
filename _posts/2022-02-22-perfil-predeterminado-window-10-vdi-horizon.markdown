@@ -34,7 +34,6 @@ Una vez tengamos ya el perfil predeterminado a partir del usuario que hemos conf
 
 ![default-profile-03]({{ site.imagesposts2022 }}/02/default-profile-03.png){: .align-center}
 
-
 ¿Qué os parece?
 
 Espero que os guste ;-)
