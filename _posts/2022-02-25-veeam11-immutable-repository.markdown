@@ -75,6 +75,9 @@ https://nolabnoparty.com/en/veeam-v11-hardened-repository-immutability-pt-1/
 ![veeam-immutable-repository-58]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-58.png){: .align-center}
 ![veeam-immutable-repository-59]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-59.png){: .align-center}
 ![veeam-immutable-repository-60]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-60.png){: .align-center}
+![veeam-immutable-repository-61]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-61.png){: .align-center}
+![veeam-immutable-repository-62]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-62.png){: .align-center}
+![veeam-immutable-repository-63]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-63.png){: .align-center}
 
 
 
