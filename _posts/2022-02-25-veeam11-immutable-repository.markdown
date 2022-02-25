@@ -1,6 +1,6 @@
 ---
 title: Repositorio immutable en Veeam 11 - Parte 1
-date: '2022-03-15 00:00:00'
+date: '2022-02-25 00:00:00'
 layout: post
 image: /assets/images/posts/2018/03/logs.png
 headerImage: true
