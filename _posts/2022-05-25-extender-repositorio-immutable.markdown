@@ -1,5 +1,5 @@
 ---
-title: Repositorio immutable en Veeam 11
+title: Extender particiones
 date: '2022-02-25 00:00:00'
 layout: post
 tag:
