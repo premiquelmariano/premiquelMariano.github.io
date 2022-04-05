@@ -14,6 +14,17 @@ tag:
 ---
 https://nolabnoparty.com/en/veeam-v11-hardened-repository-immutability-pt-1/
 
+Con la nueva versión de [Veeam Backup & Replication 11](https://nolabnoparty.com/en/veeam-v11-whats-new-and-upgrade-procedure/) viene incluida una nueva funcionalidad que nos permite hacer inmutables los backups de nuestro entorno utilizando un 'Hardened Repository' montado sobre un sistema linux.
+
+En este post, veremos su instalación y configuración paso a paso.
+
+![veeam-immutable-repository-00]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-00.png){: .align-center}
+
+# Requisitos
+
+- Veeam Backup & Replication v11
+- Una distribución de linux 64bits. En este post utilizaremos una Ubuntu server
+- La distribución debe soportar el sistema de ficheros XFS
 
 ![veeam-immutable-repository-01]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-01.png){: .align-center}
 ![veeam-immutable-repository-02]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-02.png){: .align-center}
