@@ -26,29 +26,70 @@ En este post, veremos su instalación y configuración paso a paso.
 - Una distribución de linux 64bits. En este post utilizaremos una Ubuntu server
 - La distribución debe soportar el sistema de ficheros XFS
 
+# Instalación Ubuntu Server 20.04 LTS
+
+En este laboratorio, utilizaremos un Ubuntu Server 20.04 LTS, el cual podremos descargar desde [aquí](https://ubuntu.com/download/server)
+
+Crearemos una VM con los siguientes parámetros:
+
+- 1 vVPU
+- 1 Gb Ram
+- 20Gb HDD 1 (Para instalar SO)
+- 500Gb HDD2 (Para el repositorio XFS)
+
 ![veeam-immutable-repository-01]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-01.png){: .align-center}
+
+Arrancamos la VM con el live CD y seguimos el asistente:
+
 ![veeam-immutable-repository-02]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-02.png){: .align-center}
 ![veeam-immutable-repository-03]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-03.png){: .align-center}
 ![veeam-immutable-repository-04]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-04.png){: .align-center}
 ![veeam-immutable-repository-05]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-05.png){: .align-center}
 ![veeam-immutable-repository-06]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-06.png){: .align-center}
 ![veeam-immutable-repository-07]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-07.png){: .align-center}
+
+Seleccionaremos la opción para configurar manualmente la parte de storage
+
 ![veeam-immutable-repository-08]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-08.png){: .align-center}
+
+Crearemos la partición GPT en el disco de SO en formato ext4 y el punto de montaje raiz / 
 ![veeam-immutable-repository-09]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-09.png){: .align-center}
 ![veeam-immutable-repository-10]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-10.png){: .align-center}
+
+Con el disco de datos, haremos lo mismo, pero esta vez, el formato será xfs y el punto de montaje /mnt/veeamrepo01
+
 ![veeam-immutable-repository-11]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-11.png){: .align-center}
 ![veeam-immutable-repository-12]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-12.png){: .align-center}
+
+Verificaremos que hemos definido los parámetros correctos y se crearán las particiones
 ![veeam-immutable-repository-13]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-13.png){: .align-center}
 ![veeam-immutable-repository-14]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-14.png){: .align-center}
+
+Configuraremos parámetros básicos de usuario, nombre del servidor y credenciales. También instalaremos OpenSSH
 ![veeam-immutable-repository-15]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-15.png){: .align-center}
 ![veeam-immutable-repository-16]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-16.png){: .align-center}
 ![veeam-immutable-repository-17]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-17.png){: .align-center}
 ![veeam-immutable-repository-18]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-18.png){: .align-center}
 ![veeam-immutable-repository-19]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-19.png){: .align-center}
+
+Veremos el proceso de instalación y al finalizar reiniciaremos el sistema
 ![veeam-immutable-repository-20]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-20.png){: .align-center}
+
+# Configuración del repositorio inmutable
+
+Con el SO instalado, ya nos podremos conectar con el usuario administrador previamente creado
 ![veeam-immutable-repository-21]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-21.png){: .align-center}
+
+Lanzamos actualización del SO y verificamos que tenemos el disco montado en xfs
+
+```ssh
+# sudo apt-get upgrade
+# df -Th
+```
 ![veeam-immutable-repository-22]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-22.png){: .align-center}
 ![veeam-immutable-repository-23]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-23.png){: .align-center}
+
+
 ![veeam-immutable-repository-24]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-24.png){: .align-center}
 ![veeam-immutable-repository-25]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-25.png){: .align-center}
 ![veeam-immutable-repository-26]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-26.png){: .align-center}
