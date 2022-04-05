@@ -2,8 +2,6 @@
 title: Repositorio immutable en Veeam 11
 date: '2022-02-25 00:00:00'
 layout: post
-image: /assets/images/posts/2018/03/logs.png
-headerImage: true
 tag:
 - vmware
 - vsphere
@@ -95,7 +93,7 @@ Lanzamos actualización del SO y verificamos que tenemos el disco montado en xfs
 
 ## Creación usuario local
 
-Este usuario se utilizará para el *Veeam Transport Service* poder montar el repositorio.
+Este usuario se usará para el *Veeam Transport Service* poder montar el repositorio.
 Creamos una nueva cuenta de la siguiente manera:
 
 ```ssh
@@ -114,7 +112,7 @@ De manera temporal, este usuario necesitará privilegios de root para instalar l
 
 # Configuración punto de montaje
 
-Para poder utilizar la tecnología de Fast-Clone, deberemos habilitar primero Reflink en ubuntu, que por defecto viene deshabilitado.
+Para poder usar la tecnología de Fast-Clone, deberemos habilitar primero Reflink en ubuntu, que por defecto viene deshabilitado.
 Esta configuración nos ayudará a optimizar el espacio y rendimiento durante las operaciones de synthetic full.
 
 Veeam requiere que el filesystem esté formateado con reflink para habilitar la funcionalidad de Fast-Clone.
@@ -199,7 +197,7 @@ Añadiremos un nuevo repositorio desde *Backup Infrastructure*
 ![veeam-immutable-repository-48]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-48.png){: .align-center}
 ![veeam-immutable-repository-49]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-49.png){: .align-center}
 
-Aquí es donde definimos la inmutabilidad de los datos del repositorio en dias
+Aquí es donde definimos la inmutabilidad de los datos del repositorio en días
 
 ![veeam-immutable-repository-50]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-50.png){: .align-center}
 ![veeam-immutable-repository-51]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-51.png){: .align-center}
