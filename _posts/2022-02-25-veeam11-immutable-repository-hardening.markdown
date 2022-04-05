@@ -89,17 +89,84 @@ Lanzamos actualización del SO y verificamos que tenemos el disco montado en xfs
 ![veeam-immutable-repository-22]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-22.png){: .align-center}
 ![veeam-immutable-repository-23]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-23.png){: .align-center}
 
+## Creación usuario local
+
+Este usuario se utilizará para el *Veeam Transport Service* poder montar el repositorio.
+Creamos una nueva cuenta de la siguiente manera:
+
+```ssh
+# sudo useradd locveeam --create-home -s /bin/bash
+# sudo passwd locveeam
+```
 
 ![veeam-immutable-repository-24]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-24.png){: .align-center}
+
+De manera temporal, este usuario necesitará privilegios de root para instalar los servicios de Veeam
+
+```ssh
+# sudo usermod -a -G sudo localveeam
+```
 ![veeam-immutable-repository-25]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-25.png){: .align-center}
+
+# Configuración punto de montaje
+
+Para poder utilizar la tecnología de Fast-Clone, deberemos habilitar primero Reflink en ubuntu, que por defecto viene deshabilitado.
+Esta configuración nos ayudará a optimizar el espacio y rendimiento durante las operaciones de synthetic full.
+
+Veeam requiere que el filesystem esté formateado con reflink para habilitar la funcionalidad de Fast-Clone.
+
+Localizamos el disco utilizado como repositorio con el siguiente comando
+
+```ssh
+sudo fdisk -l
+```
+
 ![veeam-immutable-repository-26]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-26.png){: .align-center}
+
+Como la partición se montó durante el proceso de instalación del SO, deberemos desmontarla primero
+
+```ssh
+# sudo umount /mnt/veeamrepo01
+```
 ![veeam-immutable-repository-27]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-27.png){: .align-center}
+
+Con la partición desmontada, podremos formatearla con los parámetros requeridos por Veeam
+
+```ssh
+ sudo mkfs.xfs -b size=4096 -m reflink=1,crc=1 /dev/sdb -f
+```
 ![veeam-immutable-repository-28]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-28.png){: .align-center}
+
+Como el UUID de la partición habrá cambiado, necesitamos modificar el fstab para que se monte la partición automaticamente tras un reinicio
+
+```ssh
+sudo blkid /dev/sdb
+sudo vi /etc/fstab
+sudo mount -a
+```
+
 ![veeam-immutable-repository-29]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-29.png){: .align-center}
 ![veeam-immutable-repository-30]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-30.png){: .align-center}
 ![veeam-immutable-repository-31]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-31.png){: .align-center}
+
+# Asignar permisos al punto de montaje
+Asignaremos permisos al usuario local creado previamente con los siguientes comandos
+
+```ssh
+# sudo chown -R localveeam:localveeam /mnt/veeamrepo01/
+# sudo chmod 700 /mnt/veeamrepo
+```
+
 ![veeam-immutable-repository-32]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-32.png){: .align-center}
+
+Verificamos los permisos asignados
+```ssh
+# ll /mnt
+```
 ![veeam-immutable-repository-33]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-33.png){: .align-center}
+
+# Configuración repositorio Veeam
+Añadiremos el nuevo servidor linux siguiendo el wizard
 ![veeam-immutable-repository-34]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-34.png){: .align-center}
 ![veeam-immutable-repository-35]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-35.png){: .align-center}
 ![veeam-immutable-repository-36]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-36.png){: .align-center}
@@ -110,28 +177,52 @@ Lanzamos actualización del SO y verificamos que tenemos el disco montado en xfs
 ![veeam-immutable-repository-41]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-41.png){: .align-center}
 ![veeam-immutable-repository-42]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-42.png){: .align-center}
 ![veeam-immutable-repository-43]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-43.png){: .align-center}
+
+Una vez los servicios de veeam están instalados con el usuario *localveeam*, podremos sacar los privilegios de sudo. En cualquier caso, es importante recalcar que las credenciales de este usuario no se han almacenado en Veeam al utilizar la opción de "Single-use credentials for hardened repository"
+
+```ssh
+# sudo deluser localveeam sudo
+```
 ![veeam-immutable-repository-44]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-44.png){: .align-center}
+
+Añadiremos un nuevo repositorio desde *Backup Infrastructure*
 ![veeam-immutable-repository-45]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-45.png){: .align-center}
 ![veeam-immutable-repository-46]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-46.png){: .align-center}
 ![veeam-immutable-repository-47]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-47.png){: .align-center}
 ![veeam-immutable-repository-48]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-48.png){: .align-center}
 ![veeam-immutable-repository-49]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-49.png){: .align-center}
+
+Aquí es donde definimos la inmutabilidad de los datos del repositorio en dias
 ![veeam-immutable-repository-50]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-50.png){: .align-center}
 ![veeam-immutable-repository-51]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-51.png){: .align-center}
 ![veeam-immutable-repository-52]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-52.png){: .align-center}
 ![veeam-immutable-repository-53]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-53.png){: .align-center}
 ![veeam-immutable-repository-54]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-54.png){: .align-center}
 ![veeam-immutable-repository-55]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-55.png){: .align-center}
+
+Configuramos un nuevo job con el nuevo repositorio inmutable
 ![veeam-immutable-repository-56]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-56.png){: .align-center}
 ![veeam-immutable-repository-57]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-57.png){: .align-center}
 ![veeam-immutable-repository-58]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-58.png){: .align-center}
+
+Los repositorios inmutables de Veeam requieren de forward incremental. No está soportado reverse incremental
 ![veeam-immutable-repository-59]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-59.png){: .align-center}
 ![veeam-immutable-repository-60]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-60.png){: .align-center}
+
+# Pruebas de inmutabilidad
+Si intentamos eliminar un objeto del repositorio, nos indicará que es inmutable y no se puede eliminar
 ![veeam-immutable-repository-61]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-61.png){: .align-center}
 ![veeam-immutable-repository-62]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-62.png){: .align-center}
+
+Desde la linea de comandos, también podremos comprobar la inmutabilidad de los backups.
+
+```ssh
+# lsattr
+# lsattr -l
+```
 ![veeam-immutable-repository-63]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-63.png){: .align-center}
 
-
+Podemos ver que los ficheros de backup aparecen como inmutables. Sólo el fichero .vbm no tiene este atributo y es debido a que veeam lo necesita actualizar continuamente durante las sesiones de backup.
 
 Un saludo!
 
