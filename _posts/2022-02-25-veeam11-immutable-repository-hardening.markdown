@@ -12,7 +12,6 @@ tag:
 - ramsonware
 - inmutable
 ---
-https://nolabnoparty.com/en/veeam-v11-hardened-repository-immutability-pt-1/
 
 Con la nueva versión de [Veeam Backup & Replication 11](https://nolabnoparty.com/en/veeam-v11-whats-new-and-upgrade-procedure/) viene incluida una nueva funcionalidad que nos permite hacer inmutables los backups de nuestro entorno utilizando un 'Hardened Repository' montado sobre un sistema linux.
 
@@ -53,6 +52,7 @@ Seleccionaremos la opción para configurar manualmente la parte de storage
 ![veeam-immutable-repository-08]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-08.png){: .align-center}
 
 Crearemos la partición GPT en el disco de SO en formato ext4 y el punto de montaje raiz / 
+
 ![veeam-immutable-repository-09]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-09.png){: .align-center}
 ![veeam-immutable-repository-10]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-10.png){: .align-center}
 
@@ -62,10 +62,12 @@ Con el disco de datos, haremos lo mismo, pero esta vez, el formato será xfs y e
 ![veeam-immutable-repository-12]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-12.png){: .align-center}
 
 Verificaremos que hemos definido los parámetros correctos y se crearán las particiones
+
 ![veeam-immutable-repository-13]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-13.png){: .align-center}
 ![veeam-immutable-repository-14]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-14.png){: .align-center}
 
 Configuraremos parámetros básicos de usuario, nombre del servidor y credenciales. También instalaremos OpenSSH
+
 ![veeam-immutable-repository-15]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-15.png){: .align-center}
 ![veeam-immutable-repository-16]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-16.png){: .align-center}
 ![veeam-immutable-repository-17]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-17.png){: .align-center}
@@ -73,11 +75,13 @@ Configuraremos parámetros básicos de usuario, nombre del servidor y credencial
 ![veeam-immutable-repository-19]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-19.png){: .align-center}
 
 Veremos el proceso de instalación y al finalizar reiniciaremos el sistema
+
 ![veeam-immutable-repository-20]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-20.png){: .align-center}
 
 # Configuración del repositorio inmutable
 
 Con el SO instalado, ya nos podremos conectar con el usuario administrador previamente creado
+
 ![veeam-immutable-repository-21]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-21.png){: .align-center}
 
 Lanzamos actualización del SO y verificamos que tenemos el disco montado en xfs
@@ -166,7 +170,9 @@ Verificamos los permisos asignados
 ![veeam-immutable-repository-33]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-33.png){: .align-center}
 
 # Configuración repositorio Veeam
+
 Añadiremos el nuevo servidor linux siguiendo el wizard
+
 ![veeam-immutable-repository-34]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-34.png){: .align-center}
 ![veeam-immutable-repository-35]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-35.png){: .align-center}
 ![veeam-immutable-repository-36]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-36.png){: .align-center}
@@ -186,6 +192,7 @@ Una vez los servicios de veeam están instalados con el usuario *localveeam*, po
 ![veeam-immutable-repository-44]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-44.png){: .align-center}
 
 Añadiremos un nuevo repositorio desde *Backup Infrastructure*
+
 ![veeam-immutable-repository-45]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-45.png){: .align-center}
 ![veeam-immutable-repository-46]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-46.png){: .align-center}
 ![veeam-immutable-repository-47]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-47.png){: .align-center}
@@ -193,6 +200,7 @@ Añadiremos un nuevo repositorio desde *Backup Infrastructure*
 ![veeam-immutable-repository-49]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-49.png){: .align-center}
 
 Aquí es donde definimos la inmutabilidad de los datos del repositorio en dias
+
 ![veeam-immutable-repository-50]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-50.png){: .align-center}
 ![veeam-immutable-repository-51]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-51.png){: .align-center}
 ![veeam-immutable-repository-52]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-52.png){: .align-center}
@@ -201,16 +209,20 @@ Aquí es donde definimos la inmutabilidad de los datos del repositorio en dias
 ![veeam-immutable-repository-55]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-55.png){: .align-center}
 
 Configuramos un nuevo job con el nuevo repositorio inmutable
+
 ![veeam-immutable-repository-56]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-56.png){: .align-center}
 ![veeam-immutable-repository-57]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-57.png){: .align-center}
 ![veeam-immutable-repository-58]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-58.png){: .align-center}
 
 Los repositorios inmutables de Veeam requieren de forward incremental. No está soportado reverse incremental
+
 ![veeam-immutable-repository-59]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-59.png){: .align-center}
 ![veeam-immutable-repository-60]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-60.png){: .align-center}
 
 # Pruebas de inmutabilidad
+
 Si intentamos eliminar un objeto del repositorio, nos indicará que es inmutable y no se puede eliminar
+
 ![veeam-immutable-repository-61]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-61.png){: .align-center}
 ![veeam-immutable-repository-62]({{ site.imagesposts2022 }}/03/veeam-immutable-repository-62.png){: .align-center}
 
