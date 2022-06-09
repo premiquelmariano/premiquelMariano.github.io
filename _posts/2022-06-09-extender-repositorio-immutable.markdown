@@ -1,5 +1,5 @@
 ---
-title: Extender particiones
+title: Extender particiones xfs y repositorio immutable Veeam
 date: '2022-06-09 00:00:00'
 layout: post
 tag:
@@ -21,6 +21,25 @@ En el post de hoy, vamos a ver de forma sencilla como extender una partición cu
 ```ssh
 ls /sys/class/scsi_disk/
 ```
+
+- Realizaremos un escaneo del disco usando el identificador previo para refrescar la capacidad del disco. En mi caso el identificador es 2:0:1:0
+
+```ssh
+echo 1 > /sys/class/scsi_device/2:0:1:0/device/rescan
+```
+
+![xfs1]({{ site.imagesposts2022 }}/06/xfs1.png){: .align-center}
+
+- Comprobaremos el estado de los discos y podremos ver como el tamaño del disco es mayor que el de la partición de sistema:
+
+```ssh
+fdisk -l
+```
+
+![xfs2]({{ site.imagesposts2022 }}/06/xfs2.png){: .align-center}
+
+- 
+
 
 Con la nueva versión de [Veeam Backup & Replication 11](https://nolabnoparty.com/en/veeam-v11-whats-new-and-upgrade-procedure/) viene incluida una nueva funcionalidad que nos permite hacer inmutables los backups de nuestro entorno utilizando un 'Hardened Repository' montado sobre un sistema linux.
 
