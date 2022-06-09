@@ -12,7 +12,7 @@ tag:
 ---
 
 Semanas atrás, publiqué un post en donde se explicaba [como montar repositorios immutables con Veeam 11](https://miquelmariano.github.io/2022/04/05/veeam11-immutable-repository-hardening/).
-En el post de hoy, vamos a ver de forma sencilla como extender una partición cuando el sistema de ficheros es xfs y por lo tanto extender un repositorio immutable. Vamos a ello ;-)
+En el post de hoy, vamos a ver de forma sencilla como extender una partición cuando el sistema de ficheros es xfs y, por lo tanto, extender un repositorio immutable. Vamos a ello ;-)
 
 - Como paso previo, lo primero que tendremos que hacer es ampliar nuestro disco. Ya bien desde nuestro vCenter en caso de ser un disco virtual o desde nuestro sistema de almacenamiento en caso de utilizar discos RDM.
 
@@ -38,13 +38,13 @@ fdisk -l
 
 ![xfs2]({{ site.imagesposts2022 }}/06/xfs2.png){: .align-center}
 
-- Redimensimensionaremos la partición con el siguiente comando:
+- Redimensionaremos la partición con el siguiente comando:
 
 ```ssh
 parted /dev/sdX
 ```
 
-Con el comando `print` podremos mostrar el listado de particiones. En mi caso, la partición a ampliar es la 1 (aceptamos la advertenia con `fix`)
+Con el comando `print` podremos mostrar el listado de particiones. En mi caso, la partición a ampliar es la 1 (aceptamos la advertencia con `fix`)
 
 ![xfs3]({{ site.imagesposts2022 }}/06/xfs3.png){: .align-center}
 
