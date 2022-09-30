@@ -1,5 +1,5 @@
 ---
-title: Script para apagar/encender VM repositorio immutable Veeam
+title: Securizar entorno Horizon con Azure MFA y Horizon TrueSSO - Part 1
 date: '2022-09-07 00:00:00'
 layout: post
 tag:
