@@ -1,35 +1,21 @@
 ---
-layout: default
+layout: page
+# The layout for Tag page
 ---
 
-
-
-<section class="posts">
-  <div class="flex-row-between">
-    <h1>Tag #{{page.tag}}</h1>
-    <a href="{{ site.url }}{{ site.baseurl }}"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
-  </div>
-  <ul>
-    {% for post in site.posts %}
-    {% if post.tags contains page.tag %}
-    <li><a class="post" href="{{ site.url }}{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a><time
-        datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time></li>
-    {% endif %}
+<div id="page-tag">
+  <h1 class="pl-lg-2">
+    <i class="fa fa-tag fa-fw text-muted"></i>
+    {{ page.title }}
+    <span class="lead text-muted pl-2">{{ page.posts | size }}</span>
+  </h1>
+  <ul class="post-content pl-0">
+    {% for post in page.posts %}
+    <li class="d-flex justify-content-between pl-md-3 pr-md-3">
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <span class="dash flex-grow-1"></span>
+      {% include datetime.html date=post.date wrap='span' class='text-muted small' %}
+    </li>
     {% endfor %}
   </ul>
-</section>
-
-<section class="tags">
-  <h2>All tags:</h2>
-  {% assign tags = site.tags | sort %}
-  {% for tag in tags %}
-  <ul>
-    <li>
-	    <a class="posts" href="{{ site.url }}{{ site.baseurl }}/tag/{{ tag | first | slugify }}/">{{ tag[0] | replace:'-', ' '
-        }} ({{ tag | last | size
-        }}){% unless forloop.last %}, {% endunless %}
-      </a>
-    </li>
-  </ul>
-  {% endfor %}
-</section>
+</div>

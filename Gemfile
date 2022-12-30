@@ -1,12 +1,19 @@
+# frozen_string_literal: true
+
 source "https://rubygems.org"
-gem 'jekyll'
-gem 'jekyll-paginate'
-gem 'jekyll-sitemap'
-gem 'jekyll-relative-links'
-gem "tzinfo-data", "~> 1.2021"
 
-# windows specific
-gem 'wdm', '>= 0.1.0'
+gemspec
 
-# update ruby version
-gem 'webrick'
+group :test do
+  gem "html-proofer", "~> 3.18"
+end
+
+# Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
+# and associated library.
+install_if -> { RUBY_PLATFORM =~ %r!mingw|mswin|java! } do
+  gem "tzinfo", "~> 1.2"
+  gem "tzinfo-data"
+end
+
+# Performance-booster for watching directories on Windows
+gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
