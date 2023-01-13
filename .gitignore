@@ -5,6 +5,6 @@ _site
 .DS_Store
 node_modules
 npm-debug.log
-gemfile.locke
+gemfile.lock
 
 *.icloud
