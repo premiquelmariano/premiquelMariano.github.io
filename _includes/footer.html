@@ -1,36 +1,77 @@
-<!-- The Footer -->
-
-<footer>
-  <div class="container pl-lg-4 pr-lg-4">
-    <div class="d-flex justify-content-between align-items-center text-muted ml-md-3 mr-md-3">
-      <div class="footer-left">
-        <p class="mb-0">
-          © {{ 'now' | date: "%Y" }}
-          <a href="{{ site.social.links[0] }}">{{ site.social.name }}</a>.
-          {% if site.data.locales[site.lang].copyright.brief %}
-          <span data-toggle="tooltip" data-placement="top"
-            title="{{ site.data.locales[site.lang].copyright.verbose }}">{{ site.data.locales[site.lang].copyright.brief }}</span>
-          {% endif %}
-        </p>
-      </div>
-
-      <div class="footer-right">
-        <p class="mb-0">
-
-          {%- capture _platform -%}
-          <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a>
-          {%- endcapture -%}
-
-          {%- capture _theme -%}
-          <a href="https://github.com/cotes2020/jekyll-theme-chirpy" target="_blank" rel="noopener">Chirpy</a>
-          {%- endcapture -%}
-
-          {{ site.data.locales[site.lang].meta
-            | default: 'Using the :PLATFORM theme :THEME.'
-            | replace: ':PLATFORM', _platform | replace: ':THEME', _theme
-          }}
-        </p>
-      </div>
+<!-- FOOTER -->
+<footer class="page-footer font-small blue" id="footer">
+    <div class="container-fluid text-sm-left">
+        <div class="row">
+            <div class="col-sm-6 mt-sm-0 my-3">
+                <h2 class="text-uppercase text-center">About
+                    {{ site.title }}</h2>
+                <p class="text-justify text-white mx-3">
+                    <small>{{ site.footer_description }}</small>
+                </p>
+            </div>
+            <div class="col-sm-3 col-6 mb-sm-0 mb-1">
+                <h2 class="text-uppercase">Directory</h2>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="/home">
+                            <i class="fas fa-home"></i>
+                            Home Page</a>
+                    </li>
+                    <li>
+                        <a href="/about">
+                            <i class="fas fa-signature"></i>
+                            About</a>
+                    </li>
+                    <li>
+                        <a href="/posts">
+                            <i class="fas fa-flag"></i>
+                            Blog Posts</a>
+                    </li>
+                    <li>
+                        <a href="/feeds">
+                            <i class="fas fa-rss-square"></i>
+                            RSS Feeds</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-3 col-6 mb-sm-0 mb-1">
+                <h2 class="text-uppercase">Other Places</h2>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="{{ site.github }}">
+                            <i class="fab fa-github"></i>
+                            GitHub</a>
+                    </li>
+                    <li>
+                        <a href="{{ site.twitter }}">
+                            <i class="fab fa-twitter"></i>
+                            Twitter</a>
+                    </li>
+                    <li>
+                        <a href="{{ site.portfolio }}">
+                            <i class="fas fa-briefcase"></i>
+                            Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="mailto:{{ site.email }}">
+                            <i class="fas fa-envelope"></i>
+                            E-mail</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-  </div>
+    <div class="footer-copyright text-center py-1 px-5">
+        Source Code licensed
+        <a href="{{ site.repository }}/blob/master/LICENSE">MIT</a>
+        {{ site.time | date: '%Y' }}.
+        <br/>
+        Website content licensed
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
+        |
+        <a href="{{ site.repository }}">
+            View Source Code
+        </a>
+
+    </div>
 </footer>

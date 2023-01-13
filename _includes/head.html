@@ -1,115 +1,53 @@
-<!--
-  The Head
--->
+<!-- HEAD -->
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- More information: https://htmlhead.dev/ -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta content="Jekyll" name="generator">
+    <link href="LICENSE" rel="license">
 
-  {% if page.layout == 'home' or page.layout == 'post' %}
+    <meta content="{{ site.title }}" property="og:site_name"/>
+    <meta content="{{ site.description }}" property="og:description">
+    <meta content="{{ site.url }}/about/" property="article:author">
+    <meta name="Description" content="{{ site.description }}">
 
-    {% if site.google_analytics.pv.proxy_endpoint %}
-      <meta name="pv-proxy-endpoint" content="{{ site.google_analytics.pv.proxy_endpoint }}">
-    {% endif %}
+    {%- if page.title -%}
+        <meta content="{{ page.title }}" property="og:title">
+        <meta content="article" property="og:type">
+        <meta content="{{ site.url }}{{ page.url }}" property="og:url">
+    {%- else -%}
+        <meta content="website" property="og:type">
+        <meta content="{{ site.url }}{{ page.url }}" property="og:url">
+    {%- endif -%}
 
-    {% if site.google_analytics.pv.cache_path %}
-      <meta name="pv-cache-path" content="{{ site.google_analytics.pv.cache_path | relative_url }}">
-    {% endif %}
+    <title>{{site.title}}
+        {% if page.title %}|
+            {{page.title}}{%endif%}</title>
 
-  {% endif %}
+        <meta name="application-name" content="{{ site.title }}">
+        <meta name="theme-color" content="{{ site.theme_color }}">
+        <link rel="archives" href="{{site.url}}/archives/">
 
-  {% capture seo_tags %}
-    {% seo title=false %}
-  {% endcapture %}
+        <meta content="index,follow" name="robots"><!-- All Search Engines -->
+        <meta content="index,follow" name="googlebot"><!-- Google Specific -->
+        
+            <!-- Font Awesome 5 -->
+        <script crossorigin="anonymous" src="https://kit.fontawesome.com/e9dddf84a6.js"></script>
 
-  {% if page.image %}
-    {% assign img = page.image.path | default: page.image %}
+        <link rel="icon" href="{{site.favicon}}" type="image/png" sizes="16x16"/>
+        <link rel="canonical" href="{{site.url}}{{page.url}}">
+        <link rel="apple-touch-icon" href="{{site.profile_pic}}">
 
-    {% unless img contains '://' %}
-      {% assign img_path = page.img_path | append: '/' | append: img | replace: '//', '/' %}
-      {% capture target %}"{{ img | absolute_url }}"{% endcapture %}
+        <!-- Bootstrap core CSS -->
+        <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" rel="stylesheet">
+        <!-- CSS -->
+        <link class="default" href="/assets/css/style.css" media="all" rel="stylesheet"/>
 
-      {% if site.img_cdn contains '//' %}
-        <!-- it's a cross-origin URL -->
-        {% capture replacement %}"{{ site.img_cdn }}{{ img_path }}"{% endcapture %}
-      {% else %}
-        <!-- it's a local file path -->
-        {%- capture replacement -%}
-          "{{ site.img_cdn | append: '/' | append: img_path | replace: '//', '/' | absolute_url }}"
-        {%- endcapture -%}
-      {% endif %}
-
-      {% assign seo_tags = seo_tags | replace: target, replacement %}
-
-    {% endunless %}
-
-  {% endif %}
-
-  {{ seo_tags }}
-
-  <title>
-  {%- unless page.layout == "home" -%}
-    {{ page.title | append: " | "}}
-  {%- endunless -%}
-    {{ site.title }}
-  </title>
-
-  {% include favicons.html %}
-
-  {% if site.resources.ignore_env != jekyll.environment and site.resources.self_hosted %}
-
-    <link href="{{ site.data.assets[origin].webfonts | relative_url }}" rel="stylesheet">
-
-  {% else %}
-
-    {% for cdn in site.data.assets[origin].cdns %}
-      <link rel="preconnect" href="{{ cdn.url }}" {{ cdn.args }}>
-      <link rel="dns-prefetch" href="{{ cdn.url }}" {{ cdn.args }}>
-    {% endfor %}
-
-    <link rel="stylesheet" href="{{ site.data.assets[origin].webfonts | relative_url }}">
-
-  {% endif %}
-
-  <!-- GA -->
-  {% if jekyll.environment == 'production'
-      and site.google_analytics.id != empty and site.google_analytics.id %}
-    <link rel="preconnect" href="https://www.google-analytics.com" crossorigin="use-credentials">
-    <link rel="dns-prefetch" href="https://www.google-analytics.com">
-
-    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin="anonymous">
-    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-
-    {% if site.google_analytics.pv.proxy_endpoint %}
-      {% assign proxy_url = site.google_analytics.pv.proxy_endpoint
-          | replace: "https://", "" | split: "/" | first | prepend: "https://" %}
-      <link rel="preconnect" href="{{ proxy_url }}" crossorigin="use-credentials">
-      <link rel="dns-prefetch" href="{{ proxy_url }}">
-    {% endif %}
-  {% endif %}
-
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="{{ site.data.assets[origin].bootstrap.css | relative_url}}">
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="{{ site.data.assets[origin].fontawesome.css | relative_url }}">
-
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-
-  {% if site.toc and page.toc %}
-    <link rel="stylesheet" href="{{ site.data.assets[origin].bootstrap-toc.css | relative_url }}">
-  {% endif %}
-
-  {% if page.layout == 'page' or page.layout == 'post' %}
-    <!-- Manific Popup -->
-    <link rel="stylesheet" href="{{ site.data.assets[origin].magnific-popup.css | relative_url }}">
-  {% endif %}
-
-  <!-- JavaScript -->
-
-  <script src="{{ site.data.assets[origin].jquery.js | relative_url }}"></script>
-
-  {% unless site.theme_mode %}
-    {% include mode-toggle.html %}
-  {% endunless %}
+        <!--[if IE]>
+        <link href="/assets/css/ie-target.css" rel="stylesheet" type="text/css"/>
+        <![endif]-->
+            <!--<link href="/assets/css/prism.css" rel="stylesheet" />-->
+        <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml">
+    </head
 </head>
