@@ -1,11 +1,13 @@
 ---
-title: Introducción a HPE Morpheus VM Essentials software - Parte 1
+title: Introducción a HPE Morpheus VM Essentials software
+subtitle: Parte 1
 date: '2025-10-17 00:00:00'
 layout: post
 thumbnail-img: https://miquelmariano.github.io/assets/images/posts/2025/10/hpe_morpheus_01.jpg
-cover-img: https://miquelmariano.github.io/assets/images/posts/2025/10/hpe_morpheus_01.jpg
+cover-img: https://miquelmariano.github.io/assets/images/posts/2025/10/HPE-VM-Essentials-Overview.png
 share-img: https://miquelmariano.github.io/assets/images/posts/2025/10/hpe_morpheus_01.jpg
 published: true
+author: Sharon Smith and Barry Simpson
 tag:
 - kvm
 - hpe
@@ -15,7 +17,7 @@ tag:
 - ha
 ---
 
-# HPE Morpheus VM Essentials: La alternativa de virtualización y gestión híbrida de HPE
+HPE Morpheus VM Essentials: La alternativa de virtualización y gestión híbrida de HPE
 
 En el cambiante panorama de las infraestructuras virtuales, las organizaciones buscan constantemente soluciones que ofrezcan flexibilidad, control de costes y agilidad. HPE ha respondido a esta demanda con el lanzamiento de HPE Morpheus VM Essentials Software, una solución de virtualización y gestión unificada que ha surgido como una alternativa estratégica en un mercado dominado en los últimos años por VMware (ahora Broadcom). 
 Esta oferta es el resultado de una importante adquisición que ha redefinido la propuesta de nube privada de HPE.
