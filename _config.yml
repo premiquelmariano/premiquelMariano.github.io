@@ -306,12 +306,12 @@ plugins:
 # 2fc73a3a967e97599c9763d05e564189
 
 images: assets/images
-imagesposts2016: "{{ site. }}/assets/images/posts/2016"
-imagesposts2017: "{{ site. }}/assets/images/posts/2017"
-imagesposts2018: "{{ site. }}o/assets/images/posts/2018"
-imagesposts2019: "{{ site. }}/assets/images/posts/2019"
-imagesposts2020: "{{ site. }}/assets/images/posts/2020"
-imagesposts2021: "{{ site. }}/assets/images/posts/2021"
-imagesposts2022: "{{ site. }}/assets/images/posts/2022"
-imagesposts2023: "{{ site. }}/assets/images/posts/2023"
-imagesposts2025: "{{ site. }}/assets/images/posts/2025"
+imagesposts2016: "{{ site }}/assets/images/posts/2016"
+imagesposts2017: "{{ site }}/assets/images/posts/2017"
+imagesposts2018: "{{ site }}o/assets/images/posts/2018"
+imagesposts2019: "{{ site }}/assets/images/posts/2019"
+imagesposts2020: "{{ site }}/assets/images/posts/2020"
+imagesposts2021: "{{ site }}/assets/images/posts/2021"
+imagesposts2022: "{{ site }}/assets/images/posts/2022"
+imagesposts2023: "{{ site }}/assets/images/posts/2023"
+imagesposts2025: "{{ site }}/assets/images/posts/2025"
