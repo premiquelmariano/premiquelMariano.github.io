@@ -7,7 +7,7 @@ thumbnail-img: https://miquelmariano.github.io/assets/images/posts/2025/10/hpe_m
 cover-img: https://miquelmariano.github.io/assets/images/posts/2025/10/HPE-VM-Essentials-Overview.png
 share-img: https://miquelmariano.github.io/assets/images/posts/2025/10/hpe_morpheus_01.jpg
 published: true
-author: Sharon Smith and Barry Simpson
+author: Miquel Mariano
 tag:
 - kvm
 - hpe
