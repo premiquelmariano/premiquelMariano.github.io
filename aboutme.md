@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: Sobre mí
+subtitle: VCIX-DCV 2020 | vSAN Specialist 2020 | vExpert x7 | Nutanix NCP-MCI | vExpert EUC 2021 | Co-autor VMware por vExperts & Cloud por vExperts
 ---
 
 Hola, me llamo Miquel Mariano Ramis y actualmente soy Consultor TI en [NCORA](http://www.ncora.com)
