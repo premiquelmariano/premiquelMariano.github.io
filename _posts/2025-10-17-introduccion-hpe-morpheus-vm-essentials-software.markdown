@@ -4,7 +4,7 @@ subtitle: Parte 1
 date: '2025-10-17 00:00:00'
 layout: post
 thumbnail-img: https://miquelmariano.github.io/assets/images/posts/2025/10/hpe_morpheus_01.jpg
-cover-img: https://premiquelmariano.github.io/assets/images/posts/2025/10/HPE-VM-Essentials-Overview.png
+#cover-img: https://premiquelmariano.github.io/assets/images/posts/2025/10/HPE-VM-Essentials-Overview.png
 share-img: https://miquelmariano.github.io/assets/images/posts/2025/10/hpe_morpheus_01.jpg
 published: true
 author: Miquel Mariano
