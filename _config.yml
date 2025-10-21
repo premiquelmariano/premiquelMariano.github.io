@@ -10,7 +10,7 @@
 ############################
 
 # Name of website
-title: Home
+title: Inicio
 
 # Your name to show in the footer
 author: Miquel Mariano
@@ -33,7 +33,7 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "https://miquelmariano.github.io/assets/images/perfil2025.png"
+avatar: "{{ site }}/assets/images/perfil2025.png"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
@@ -305,12 +305,12 @@ plugins:
 # 2fc73a3a967e97599c9763d05e564189
 
 images: assets/images
-imagesposts2016: https://premiquelMariano.github.io/assets/images/posts/2016
-imagesposts2017: https://premiquelMariano.github.io/assets/images/posts/2017
-imagesposts2018: https://premiquelMariano.github.io/assets/images/posts/2018
-imagesposts2019: https://premiquelMariano.github.io/assets/images/posts/2019
-imagesposts2020: https://premiquelMariano.github.io/assets/images/posts/2020
-imagesposts2021: https://premiquelMariano.github.io/assets/images/posts/2021
-imagesposts2022: https://premiquelMariano.github.io/assets/images/posts/2022
-imagesposts2023: https://premiquelMariano.github.io/assets/images/posts/2023
-imagesposts2025: https://premiquelMariano.github.io/assets/images/posts/2025
+imagesposts2016: "{{ site. }}/assets/images/posts/2016"
+imagesposts2017: "{{ site. }}/assets/images/posts/2017"
+imagesposts2018: "{{ site. }}o/assets/images/posts/2018"
+imagesposts2019: "{{ site. }}/assets/images/posts/2019"
+imagesposts2020: "{{ site. }}/assets/images/posts/2020"
+imagesposts2021: "{{ site. }}/assets/images/posts/2021"
+imagesposts2022: "{{ site. }}/assets/images/posts/2022"
+imagesposts2023: "{{ site. }}/assets/images/posts/2023"
+imagesposts2025: "{{ site. }}/assets/images/posts/2025"
