@@ -10,7 +10,7 @@
 ############################
 
 # Name of website
-title: Miquel Mariano 
+title: Inicio
 
 # Your name to show in the footer
 author: Miquel Mariano
@@ -51,14 +51,14 @@ round-avatar: true
 # You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
+  email: "miquel.mariano@outlook.com"
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: "@daattali"
-  whatsapp: 15551212
+#  facebook: deanattali
+  github: miquelmariano
+  twitter: miquelmariano
+#  patreon: DeanAttali
+#  youtube: "@daattali"
+#  whatsapp: 15551212
 #  medium: yourname
 #  reddit: yourname or r/yoursubreddit
 #  linkedin: daattali
@@ -71,7 +71,7 @@ social-network-links:
 #  steam: deanat78
 #  twitch: yourname
 #  yelp: yourname
-#  telegram: yourname
+  telegram: miquelmariano
 #  calendly: yourname
 #  mastodon: instance.url/@username
 #  bluesky: yourname
@@ -198,7 +198,7 @@ footer-hover-col: "#0085A1"
 ####################
 
 # To use Disqus comments, sign up to https://disqus.com and fill in your Disqus shortname (NOT the userid)
-#disqus: ""
+disqus: "miquelmariano"
 
 # To use Facebook Comments, create a Facebook app and fill in the Facebook App ID
 #fb_comment_id: ""
@@ -304,3 +304,13 @@ plugins:
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
 
+images: assets/images
+imagesposts2016: "https://miquelmariano.github.io/assets/images/posts/2016"
+imagesposts2017: "https://miquelmariano.github.io/assets/images/posts/2017"
+imagesposts2018: "https://miquelmariano.github.io/assets/images/posts/2018"
+imagesposts2019: "https://miquelmariano.github.io/assets/images/posts/2019"
+imagesposts2020: "https://miquelmariano.github.io/assets/images/posts/2020"
+imagesposts2021: "https://miquelmariano.github.io/assets/images/posts/2021"
+imagesposts2022: "https://miquelmariano.github.io/assets/images/posts/2022"
+imagesposts2023: "https://miquelmariano.github.io/assets/images/posts/2023"
+imagesposts2025: "https://miquelmariano.github.io/assets/images/posts/2025"
