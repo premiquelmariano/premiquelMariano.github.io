@@ -23,9 +23,9 @@ navbar-links:
   Sobre mí: "aboutme"
   Etiquetas: "tags"
   Libros:
-    - VMware por vExperts: "/vmwareporvexperts/"
-    - Cloud por vExperts: "/2020/09/23/libro-cloud-por-vexperts/"
-  VCIX: "https://miquelmariano.github.io/tag/#/vcix6"
+    - VMware por vExperts: "vmwareporvexperts"
+    - Cloud por vExperts: "2020-09-23-libro-cloud-por-vexperts"
+  VCIX: "tag/#/vcix6"
 
 ################
 # --- Logo --- #
