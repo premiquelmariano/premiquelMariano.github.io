@@ -2,6 +2,7 @@
 title: Introducción a HPE Morpheus VM Essentials software - Parte 1
 date: '2025-10-17 00:00:00'
 layout: post
+thumbnail-img: https://miquelmariano.github.io/assets/images/posts/2025/10/hpe_morpheus_01.jpg
 published: true
 tag:
 - kvm
