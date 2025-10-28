@@ -31,6 +31,8 @@ tag:
 - [Parte 10 - Comandos útiles]
 </details>
 
+# Nuevo instalador unificado
+
 El software de HPE VM Essentials corre sobre Ubuntu 24.x. Desde las primeras versiones, era necesario primero instalar el SO, actualizarlo, configuración básica, etc etc antes de poder instalar el software de VME
 
 Es aquí, desde la versión 8.0.8, que HPE ha sacado un instalador unificado que nos ayuda a simplificar el despliegue.
