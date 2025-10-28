@@ -3,9 +3,9 @@ title: Procedimiento instalación nodo VME
 subtitle: Parte 2
 date: '2025-10-28 00:00:00'
 layout: post
-thumbnail-img: https://miquelmariano.github.io/assets/images/posts/2025/10/hpe_morpheus_01.jpg
+thumbnail-img: https://miquelmariano.github.io/assets/images/posts/2025/10/unified_iso.png
 cover-img: https://miquelmariano.github.io/assets/images/fondos/08.jpg
-share-img: https://miquelmariano.github.io/assets/images/posts/2025/10/hpe_morpheus_01.jpg
+share-img: https://miquelmariano.github.io/assets/images/posts/2025/10/unified_iso.png
 published: true
 author: Miquel Mariano
 tag:
