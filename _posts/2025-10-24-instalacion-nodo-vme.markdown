@@ -1,7 +1,7 @@
 ---
 title: Procedimiento instalación nodo VME
 subtitle: Parte 2
-date: '2025-10-17 00:00:00'
+date: '2025-10-28 00:00:00'
 layout: post
 thumbnail-img: https://miquelmariano.github.io/assets/images/posts/2025/10/hpe_morpheus_01.jpg
 cover-img: https://miquelmariano.github.io/assets/images/fondos/08.jpg
@@ -16,6 +16,26 @@ tag:
 - morpheus
 - ha
 ---
+
+<details markdown="1">
+<summary>VER TODA LA SERIE DE POSTS</summary>
+- [Parte 1 - Introducción a HPE Morpheus VM Essentials software](https://miquelmariano.github.io/2025/10/17/introduccion-hpe-morpheus-vm-essentials-software/)
+- [Parte 2 - Instalación VM Essentials software]
+- [Parte 3 - Instalación VME Manager]
+- [Parte 4 - Configuración inicial]
+- [Parte 5 - Creación cluster Ceph]
+- [Parte 6 - Desplegar nuestra primera VM]
+- [Parte 7 - Backups]
+- [Parte 8 - Pruebas de HA]
+- [Parte 9 - Migración de VMs desde vSphere]
+- [Parte 10 - Comandos útiles]
+</details>
+
+El software de HPE VM Essentials corre sobre Ubuntu 24.x. Desde las primeras versiones, era necesario primero instalar el SO, actualizarlo, configuración básica, etc etc antes de poder instalar el software de VME
+
+Es aquí, desde la versión 8.0.8, que HPE ha sacado un instalador unificado que nos ayuda a simplificar el despliegue.
+
+![HPE_Morpheus_VM_Essentials_Unified_ISO]({{ site.imagesposts2025 }}/10/unified_iso.png){: .mx-auto.d-block :}
 
 # HPE Morpheus VM Essentials: La alternativa de virtualización y gestión híbrida de HPE
 
