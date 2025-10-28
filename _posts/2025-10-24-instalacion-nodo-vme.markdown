@@ -37,7 +37,14 @@ Es aquí, desde la versión 8.0.8, que HPE ha sacado un instalador unificado que
 
 ![HPE_Morpheus_VM_Essentials_Unified_ISO]({{ site.imagesposts2025 }}/10/unified_iso.png){: .mx-auto.d-block :}
 
-# HPE Morpheus VM Essentials: La alternativa de virtualización y gestión híbrida de HPE
+# Descarga de la ISO
+
+La descarga de la ISO la podremos realizar desde el [Download Center de HPE](https://myenterpriselicense.hpe.com/cwp-ui/product-download-info/HPE_VME_EVAL/-/sw360_eval_customer?&)
+
+![Descarga]({{ site.imagesposts2025 }}/10/download_iso.png){: .mx-auto.d-block :}
+
+{: .box-warning}
+**Warning:** En caso de que no podamos acceder a la descarga, revisar que nuestro perfil de usuario está completo y que los campos no campos no contengan carácteres extraños o acentos. https://auth.hpe.com/profile/UserProfile
 
 En el cambiante panorama de las infraestructuras virtuales, las organizaciones buscan constantemente soluciones que ofrezcan flexibilidad, control de costes y agilidad. HPE ha respondido a esta demanda con el lanzamiento de HPE Morpheus VM Essentials Software, una solución de virtualización y gestión unificada que ha surgido como una alternativa estratégica en un mercado dominado en los últimos años por VMware (ahora Broadcom). 
 Esta oferta es el resultado de una importante adquisición que ha redefinido la propuesta de nube privada de HPE.
