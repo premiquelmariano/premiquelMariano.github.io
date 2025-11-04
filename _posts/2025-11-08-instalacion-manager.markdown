@@ -41,69 +41,42 @@ La opción de instalar el Manager sobre un entorno VME es la preferida y recomen
 
 Esta ISO la deberemos montar a través de la iDRAC, iLO, XCC de turno a nuestro nodo VME o en mi caso (que es una VM, vincular la iso a través de vSphere)
 
+Una vez montada la ISO, la montaremos a nuestro nodo y ejecutaremos el comando `sudo hpe-vm``
+
 ![HPE_Morpheus_VM_Essentials_Manager_install_1]({{ site.imagesposts2025 }}/11/umanager1.png){: .mx-auto.d-block :}
+
+{: .box-note}
+**Nota:** `hpe-vm` es la TUI (Text User Interface) que de momento tenemos disponible para operar con un nodo independiente de VME. Se espera que en futuras releases HPE implemente una GUI al estilo vSphere Host Client que tenemos en VMware
+
+Para instalar el Manager a la opción **"Install VME Manager"**
+
 ![HPE_Morpheus_VM_Essentials_Manager_install_2]({{ site.imagesposts2025 }}/11/umanager2.png){: .mx-auto.d-block :}
+
+Completaremos las opciones básicas de configuración IP y credenciales y en **"Image URI"** podremos explorar la ISO que anteriormente hemos montado para seleccionar el fichero .qcow de imagen
 ![HPE_Morpheus_VM_Essentials_Manager_install_3]({{ site.imagesposts2025 }}/11/umanager3.png){: .mx-auto.d-block :}
 ![HPE_Morpheus_VM_Essentials_Manager_install_4]({{ site.imagesposts2025 }}/11/umanager4.png){: .mx-auto.d-block :}
+
+En este momento, arrancará el poceso de despliegue de la imagen QCOW sobre nuestro nodo VME. Tardará unos pocos minutos...
+
 ![HPE_Morpheus_VM_Essentials_Manager_install_5]({{ site.imagesposts2025 }}/11/umanager5.png){: .mx-auto.d-block :}
 ![HPE_Morpheus_VM_Essentials_Manager_install_6]({{ site.imagesposts2025 }}/11/umanager6.png){: .mx-auto.d-block :}
 ![HPE_Morpheus_VM_Essentials_Manager_install_7]({{ site.imagesposts2025 }}/11/umanager7.png){: .mx-auto.d-block :}
+
+Una vez finalizado, nos aparecerá el siguiente mensaje
+
 ![HPE_Morpheus_VM_Essentials_Manager_install_8]({{ site.imagesposts2025 }}/11/umanager8.png){: .mx-auto.d-block :}
+
+Podremos ver si la nueva VM está bien implementada y ejecutandose desde el menu de **"Virtual Machines"**
+
 ![HPE_Morpheus_VM_Essentials_Manager_install_9]({{ site.imagesposts2025 }}/11/umanager9.png){: .mx-auto.d-block :}
+
+Si todo ha ido bien, podremos abrir un explorador web y acceder por HTTPS al nuevo manager que acabamos de desplegar
+
 ![HPE_Morpheus_VM_Essentials_Manager_install_10]({{ site.imagesposts2025 }}/11/umanager10.png){: .mx-auto.d-block :}
 
-# Nuevo instalador unificado
+**Nota:** Los servicios tardan unos minutos en arrancar, no te impacientes al terminar podremos hacer login por primera vez en nuestro VME Manager ;-)
 
-El software de HPE VM Essentials corre sobre Ubuntu 24.x. Desde las primeras versiones, era necesario primero instalar el SO, actualizarlo, configuración básica, etc etc antes de poder instalar el software de VME
-
-Es aquí, desde la versión 8.0.8, que HPE ha sacado un instalador unificado que nos ayuda a simplificar el despliegue.
-
-![HPE_Morpheus_VM_Essentials_Unified_ISO]({{ site.imagesposts2025 }}/10/unified_iso.png){: .mx-auto.d-block :}
-
-# Descarga de la ISO
-
-La descarga de la ISO la podremos realizar desde el [Download Center de HPE](https://myenterpriselicense.hpe.com/cwp-ui/product-download-info/HPE_VME_EVAL/-/sw360_eval_customer?&)
-
-El instalador unificado es la HVM_install_xxxxxxxxx.iso
-
-![Descarga]({{ site.imagesposts2025 }}/10/download_iso.png){: .mx-auto.d-block :}
-
-{: .box-warning}
-**Warning:** En caso de que no podamos acceder a la descarga, revisar que nuestro perfil de usuario está completo y que los campos no campos no contengan carácteres extraños o acentos. https://auth.hpe.com/profile/UserProfile
-
-# Instalación
-
-Para redactar estos posts he montado un entorno "nested" sobre VMware, por lo que mis nodos VME en realidad son VMs.
-
-Crearemos una nueva VM con los siguientes parámetros y le conectaremos la ISO previamente descargada.
-
-![Proceso_instalacion_01]({{ site.imagesposts2025 }}/10/vme_instalacion_01.png){: .mx-auto.d-block :}
-
-Para que nos funcione la virtualización anidada, deberemos habilitar esta check en la configuración de la VM
-
-![Proceso_instalacion_02]({{ site.imagesposts2025 }}/10/vme_instalacion_02.png){: .mx-auto.d-block :}
-
-A partir de aquí, seguiremos el procedimiento básico de instalación de un Ubuntu.
-
-![Proceso_instalacion_03]({{ site.imagesposts2025 }}/10/vme_instalacion_03.png){: .mx-auto.d-block :}
-![Proceso_instalacion_04]({{ site.imagesposts2025 }}/10/vme_instalacion_04.png){: .mx-auto.d-block :}
-![Proceso_instalacion_05]({{ site.imagesposts2025 }}/10/vme_instalacion_05.png){: .mx-auto.d-block :}
-![Proceso_instalacion_06]({{ site.imagesposts2025 }}/10/vme_instalacion_06.png){: .mx-auto.d-block :}
-![Proceso_instalacion_07]({{ site.imagesposts2025 }}/10/vme_instalacion_07.png){: .mx-auto.d-block :}
-![Proceso_instalacion_08]({{ site.imagesposts2025 }}/10/vme_instalacion_08.png){: .mx-auto.d-block :}
-![Proceso_instalacion_09]({{ site.imagesposts2025 }}/10/vme_instalacion_09.png){: .mx-auto.d-block :}
-
-Antes de reiniciar, desconectaremos el CD si no queremos recibir el siguiente error
-
-![Proceso_instalacion_10]({{ site.imagesposts2025 }}/10/vme_instalacion_10.png){: .mx-auto.d-block :}
-
-Una vez reiniciado, ya tendremos acceso a nuestro primer nodo
-
-![Proceso_instalacion_11]({{ site.imagesposts2025 }}/10/vme_instalacion_11.png){: .mx-auto.d-block :}
-
-Seguiremos el mismo procedimiento tantas veces como nodos queramos desplegar en nuestro entorno de laboratorio
-
-En el próximo post, veremos como desplegar el manager y tener así una interfaz GUI de gestión de la plataforma
+En el próximo post, veremos el primer inicio de sesión y los primeros pasos para configurar el Manager
 
 Un saludo
 
