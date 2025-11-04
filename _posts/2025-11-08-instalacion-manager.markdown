@@ -50,7 +50,7 @@ Una vez montada la ISO, la montaremos a nuestro nodo y ejecutaremos el comando `
 {: .box-note}
 **Nota:** `hpe-vm` es la TUI (Text User Interface) que de momento tenemos disponible para operar con un nodo independiente de VME. Se espera que en futuras releases HPE implemente una GUI al estilo vSphere Host Client que tenemos en VMware
 
-Para instalar el Manager a la opción **"Install VME Manager"**
+Para instalar el Manager iremos a la opción **"Install VME Manager"**
 
 ![HPE_Morpheus_VM_Essentials_Manager_install_2]({{ site.imagesposts2025 }}/11/manager2.png){: .mx-auto.d-block :}
 
