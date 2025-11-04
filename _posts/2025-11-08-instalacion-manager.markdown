@@ -50,16 +50,19 @@ Una vez montada la ISO, la montaremos a nuestro nodo y ejecutaremos el comando `
 
 Para instalar el Manager a la opción **"Install VME Manager"**
 
-![HPE_Morpheus_VM_Essentials_Manager_install_2]({{ site.imagesposts2025 }}/11/umanager2.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_Manager_install_2]({{ site.imagesposts2025 }}/11/manager2.png){: .mx-auto.d-block :}
 
 Completaremos las opciones básicas de configuración IP y credenciales y en **"Image URI"** podremos explorar la ISO que anteriormente hemos montado para seleccionar el fichero .qcow de imagen
 ![HPE_Morpheus_VM_Essentials_Manager_install_3]({{ site.imagesposts2025 }}/11/manager3.png){: .mx-auto.d-block :}
+
 ![HPE_Morpheus_VM_Essentials_Manager_install_4]({{ site.imagesposts2025 }}/11/manager4.png){: .mx-auto.d-block :}
 
 En este momento, arrancará el poceso de despliegue de la imagen QCOW sobre nuestro nodo VME. Tardará unos pocos minutos...
 
 ![HPE_Morpheus_VM_Essentials_Manager_install_5]({{ site.imagesposts2025 }}/11/manager5.png){: .mx-auto.d-block :}
+
 ![HPE_Morpheus_VM_Essentials_Manager_install_6]({{ site.imagesposts2025 }}/11/manager6.png){: .mx-auto.d-block :}
+
 ![HPE_Morpheus_VM_Essentials_Manager_install_7]({{ site.imagesposts2025 }}/11/manager7.png){: .mx-auto.d-block :}
 
 Una vez finalizado, nos aparecerá el siguiente mensaje
