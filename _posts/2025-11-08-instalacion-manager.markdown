@@ -19,7 +19,7 @@ tag:
 
 Para la instalación del VME Manager disponemos de 2 opciones:
 - La que veremos hoy, que consiste en desplegar la instancia sobre un nodo de HVM
-- [Instalar el software del Manager sobre una máquina Ubuntu 24 ya sea en otro entorno de virtualización o incluso en físico](https://miquelmariano.github.io/pdte)
+- [Instalar manualmente el software del Manager sobre una máquina Ubuntu 24 ya sea en otro entorno de virtualización o incluso en físico](https://miquelmariano.github.io/pdte)
 
 Os recuerdo que este post está incluido en la serie sobre HPE VM Essentials
 
