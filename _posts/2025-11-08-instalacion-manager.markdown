@@ -41,7 +41,7 @@ La opción de instalar el Manager sobre un entorno VME es la preferida y recomen
 
 Esta ISO la deberemos montar a través de la iDRAC, iLO, XCC de turno a nuestro nodo VME o en mi caso (que es una VM, vincular la iso a través de vSphere)
 
-Una vez montada la ISO, la montaremos a nuestro nodo y ejecutaremos el comando `sudo hpe-vm``
+Una vez montada la ISO, la montaremos a nuestro nodo y ejecutaremos el comando `sudo hpe-vm`
 
 ![HPE_Morpheus_VM_Essentials_Manager_install_1]({{ site.imagesposts2025 }}/11/manager1.png){: .mx-auto.d-block :}
 
