@@ -55,6 +55,7 @@ Para instalar el Manager iremos a la opción **"Install VME Manager"**
 ![HPE_Morpheus_VM_Essentials_Manager_install_2]({{ site.imagesposts2025 }}/11/manager2.png){: .mx-auto.d-block :}
 
 Completaremos las opciones básicas de configuración IP y credenciales y en **"Image URI"** podremos explorar la ISO que anteriormente hemos montado para seleccionar el fichero .qcow de imagen
+
 ![HPE_Morpheus_VM_Essentials_Manager_install_3]({{ site.imagesposts2025 }}/11/manager3.png){: .mx-auto.d-block :}
 
 ![HPE_Morpheus_VM_Essentials_Manager_install_4]({{ site.imagesposts2025 }}/11/manager4.png){: .mx-auto.d-block :}
