@@ -77,6 +77,7 @@ Si todo ha ido bien, podremos abrir un explorador web y acceder por HTTPS al nue
 
 ![HPE_Morpheus_VM_Essentials_Manager_install_10]({{ site.imagesposts2025 }}/11/manager10.png){: .mx-auto.d-block :}
 
+{: .box-note}
 **Nota:** Los servicios tardan unos minutos en arrancar, no te impacientes al terminar podremos hacer login por primera vez en nuestro VME Manager ;-)
 
 En el próximo post, veremos el primer inicio de sesión y los primeros pasos para configurar el Manager
