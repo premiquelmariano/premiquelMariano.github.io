@@ -3,9 +3,9 @@ title: Configuración inicial y primeros pasos en HPE VM Essentials
 subtitle: Parte 4
 date: '2025-11-20 00:00:00'
 layout: post
-thumbnail-img: https://miquelmariano.github.io/assets/images/posts/2025/11/manager2.png
+thumbnail-img: https://miquelmariano.github.io/assets/images/posts/2025/11/primeros-pasos01.png
 cover-img: https://miquelmariano.github.io/assets/images/fondos/10.jpg
-share-img: https://miquelmariano.github.io/assets/images/posts/2025/11/manager2.png
+share-img: https://miquelmariano.github.io/assets/images/posts/2025/11/primeros-pasos01.png
 published: true
 author: Miquel Mariano
 tag:
@@ -19,13 +19,13 @@ tag:
 
 La serie sobre VM Essentials ya va cogiendo forma poco a poco y en este nuevo post, vamos a ver la configuración y primeros pasos dentro de VM Essentials manager.
 
-Recordar que venimos de [hacer una instalación desde 0](https://miquelmariano.github.io/2025/11/08/instalacion-manager/)
+Recordemos que venimos de [hacer una instalación desde 0](https://miquelmariano.github.io/2025/11/08/instalacion-manager/)
 
 <details markdown="1">
 <summary>VER TODA LA SERIE DE POSTS</summary>
 - [Parte 1 - Introducción a HPE Morpheus VM Essentials software](https://miquelmariano.github.io/2025/10/17/introduccion-hpe-morpheus-vm-essentials-software/)
 - [Parte 2 - Instalación VM Essentials software](https://miquelmariano.github.io/2025/10/17/instalacion-nodo-vme/)
-- [Parte 3 - Instalación VME Manager](https://miquelmariano.github.io/2025/11/08/instalacion-manager/)
+- [Parte 3 - Instalación VME Manager](https://miquelmariano.github.io/2025/11/07/instalacion-manager/)
 - [Parte 4 - Configuración inicial](https://miquelmariano.github.io/2025/11/20/configuracion-inicial-primeros-pasos-vm-essentials)
 - [Parte 5 - Creación cluster Ceph]
 - [Parte 6 - Desplegar nuestra primera VM]
@@ -45,7 +45,7 @@ Crearemos el primer usuario de la plataforma y por tanto el que será superadmin
 
 ![HPE_Morpheus_VM_Essentials_primeros_pasos2]({{ site.imagesposts2025 }}/11/primeros-pasos02.png){: .mx-auto.d-block :}
 
-El check de "Enable Backups" por defecto viene deshabilitado y por tanto se recomienda habilitarlo para que automáticamente se realice backup del propio manager (en futuros posts hablaremos mas en detalle del capítulo backups)
+El check de "Enable Backups" por defecto viene deshabilitado y por tanto se recomienda habilitarlo para que automáticamente se realice backup del propio manager (en futuros posts hablaremos más en detalle del capítulo backups)
 
 ![HPE_Morpheus_VM_Essentials_primeros_pasos3]({{ site.imagesposts2025 }}/11/primeros-pasos03.png){: .mx-auto.d-block :}
 
@@ -59,9 +59,9 @@ Y ya finalmente entraríamos en el panel principal de administración.
 
 # Configuración User Settings
 
-Antes de nada, en el panel nde "User Settings", podremos personalizar nuestro perfil, añadirle una foto, etc etc.
+Antes de nada, en el panel de "User Settings", podremos personalizar nuestro perfil, añadirle una foto, etc etc.
 
-Os recomiendo que seleccioneis el idioma en inglés, ya que algunos menús no están del todo bien traducidos y puede inducir a confusión.
+Os recomiendo que seleccionéis el idioma en inglés, ya que algunos menús no están del todo bien traducidos y puede inducir a confusión.
 
 ![HPE_Morpheus_VM_Essentials_primeros_pasos6]({{ site.imagesposts2025 }}/11/primeros-pasos06.png){: .mx-auto.d-block :}
 
@@ -69,18 +69,18 @@ Os recomiendo que seleccioneis el idioma en inglés, ya que algunos menús no es
 
 No podremos agregar nuestro primer clúster HVM sin tener previamente definido un Grupo o Nube.
 
-Los grupos definen agrupaciones lógicas de recursos y los usuarios acceden a ellos según las asociaciones que tengas a sus respectivos roles. Seria el concepto de "Resource Group" en un ecosistema Azure por ejemplo.
+Los grupos definen agrupaciones lógicas de recursos y los usuarios acceden a ellos según las asociaciones que tengas a sus respectivos roles. Sería el concepto de "Resource Group" en un ecosistema Azure por ejemplo.
 
 Las nubes o clouds representan la agrupación de clústers HVM o una conexión a un entorno VMware vCenter
 
-Para definir un grupo, sólo necesitamos un nombre como mínimo y obviamente cuanto mas descriptivo sea mejor. Por ejemplo, podriamos crear un grupo por ubicación geográfica
+Para definir un grupo, sólo necesitamos un nombre como mínimo y obviamente cuanto más descriptivo sea mejor. Por ejemplo, podríamos crear un grupo por ubicación geográfica
 
 ![HPE_Morpheus_VM_Essentials_primeros_pasos7]({{ site.imagesposts2025 }}/11/primeros-pasos07.png){: .mx-auto.d-block :}
 ![HPE_Morpheus_VM_Essentials_primeros_pasos8]({{ site.imagesposts2025 }}/11/primeros-pasos08.png){: .mx-auto.d-block :}
 
 A continuación, crearemos una nube o cloud.
 En el menú Infraestructura > Nubes > +AGREGAR
-Como deciamos, una nube no sólo es una agregación lógica de clusters HVM sinó que también puede servir para conectar a un entorno específico vSphere
+Como decíamos, una nube no sólo es una agregación lógica de clusters HVM sino que también puede servir para conectar a un entorno específico vSphere
 
 ![HPE_Morpheus_VM_Essentials_primeros_pasos9]({{ site.imagesposts2025 }}/11/primeros-pasos09.png){: .mx-auto.d-block :}
 ![HPE_Morpheus_VM_Essentials_primeros_pasos10]({{ site.imagesposts2025 }}/11/primeros-pasos10.png){: .mx-auto.d-block :}
@@ -88,7 +88,7 @@ Como deciamos, una nube no sólo es una agregación lógica de clusters HVM sin�
 ![HPE_Morpheus_VM_Essentials_primeros_pasos12]({{ site.imagesposts2025 }}/11/primeros-pasos12.png){: .mx-auto.d-block :}
 ![HPE_Morpheus_VM_Essentials_primeros_pasos13]({{ site.imagesposts2025 }}/11/primeros-pasos13.png){: .mx-auto.d-block :}
 
-Y aquí ya podriamos crear nuestro primer clúster HVM
+Y aquí ya podríamos crear nuestro primer clúster HVM
 
 {: .box-warning}
 **Nota:** Es importante que tanto manager como los nodos HVM sean capaces de resolverse mutuamente los DNS
