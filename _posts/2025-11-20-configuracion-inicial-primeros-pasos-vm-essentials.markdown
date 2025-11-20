@@ -17,9 +17,9 @@ tag:
 - ha
 ---
 
-En este nuevo post, vamos a ver la configuración y primeros pasos dentro de VM Essentials manager.
+La serie sobre VM Essentials ya va cogiendo forma poco a poco y en este nuevo post, vamos a ver la configuración y primeros pasos dentro de VM Essentials manager.
 
-Recordar que venimos de hacer una instalación desde 0 y a continuación os dejo el índice con toda la serie
+Recordar que venimos de [hacer una instalación desde 0](https://miquelmariano.github.io/2025/11/08/instalacion-manager/)
 
 <details markdown="1">
 <summary>VER TODA LA SERIE DE POSTS</summary>
