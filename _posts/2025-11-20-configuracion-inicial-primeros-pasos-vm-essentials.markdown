@@ -35,96 +35,78 @@ Recordar que venimos de [hacer una instalación desde 0](https://miquelmariano.g
 - [Parte 10 - Comandos útiles]
 </details>
 
+# Crear nuevo tenant
+
+Con el primer inicio de sesión, deberemos seguir un simple asistente que nos guiará para configurar los datos básicos de nuestro tenant
+
 ![HPE_Morpheus_VM_Essentials_primeros_pasos1]({{ site.imagesposts2025 }}/11/primeros-pasos01.png){: .mx-auto.d-block :}
+
+Crearemos el primer usuario de la plataforma y por tanto el que será superadmin de la misma.
+
 ![HPE_Morpheus_VM_Essentials_primeros_pasos2]({{ site.imagesposts2025 }}/11/primeros-pasos02.png){: .mx-auto.d-block :}
+
+El check de "Enable Backups" por defecto viene deshabilitado y por tanto se recomienda habilitarlo para que automáticamente se realice backup del propio manager (en futuros posts hablaremos mas en detalle del capítulo backups)
+
 ![HPE_Morpheus_VM_Essentials_primeros_pasos3]({{ site.imagesposts2025 }}/11/primeros-pasos03.png){: .mx-auto.d-block :}
+
+En caso de disponer de una licencia, la podremos instalar en este paso. De lo contrario, entraremos en un período de evaluación de 60 días
+
 ![HPE_Morpheus_VM_Essentials_primeros_pasos4]({{ site.imagesposts2025 }}/11/primeros-pasos04.png){: .mx-auto.d-block :}
+
+Y ya finalmente entraríamos en el panel principal de administración.
+
 ![HPE_Morpheus_VM_Essentials_primeros_pasos5]({{ site.imagesposts2025 }}/11/primeros-pasos05.png){: .mx-auto.d-block :}
+
+# Configuración User Settings
+
+Antes de nada, en el panel nde "User Settings", podremos personalizar nuestro perfil, añadirle una foto, etc etc.
+
+Os recomiendo que seleccioneis el idioma en inglés, ya que algunos menús no están del todo bien traducidos y puede inducir a confusión.
+
 ![HPE_Morpheus_VM_Essentials_primeros_pasos6]({{ site.imagesposts2025 }}/11/primeros-pasos06.png){: .mx-auto.d-block :}
+
+# Concepto de "Group" y "Cloud"
+
+No podremos agregar nuestro primer clúster HVM sin tener previamente definido un Grupo o Nube.
+
+Los grupos definen agrupaciones lógicas de recursos y los usuarios acceden a ellos según las asociaciones que tengas a sus respectivos roles. Seria el concepto de "Resource Group" en un ecosistema Azure por ejemplo.
+
+Las nubes o clouds representan la agrupación de clústers HVM o una conexión a un entorno VMware vCenter
+
+Para definir un grupo, sólo necesitamos un nombre como mínimo y obviamente cuanto mas descriptivo sea mejor. Por ejemplo, podriamos crear un grupo por ubicación geográfica
+
 ![HPE_Morpheus_VM_Essentials_primeros_pasos7]({{ site.imagesposts2025 }}/11/primeros-pasos07.png){: .mx-auto.d-block :}
 ![HPE_Morpheus_VM_Essentials_primeros_pasos8]({{ site.imagesposts2025 }}/11/primeros-pasos08.png){: .mx-auto.d-block :}
+
+A continuación, crearemos una nube o cloud.
+En el menú Infraestructura > Nubes > +AGREGAR
+Como deciamos, una nube no sólo es una agregación lógica de clusters HVM sinó que también puede servir para conectar a un entorno específico vSphere
+
 ![HPE_Morpheus_VM_Essentials_primeros_pasos9]({{ site.imagesposts2025 }}/11/primeros-pasos09.png){: .mx-auto.d-block :}
 ![HPE_Morpheus_VM_Essentials_primeros_pasos10]({{ site.imagesposts2025 }}/11/primeros-pasos10.png){: .mx-auto.d-block :}
 ![HPE_Morpheus_VM_Essentials_primeros_pasos11]({{ site.imagesposts2025 }}/11/primeros-pasos11.png){: .mx-auto.d-block :}
 ![HPE_Morpheus_VM_Essentials_primeros_pasos12]({{ site.imagesposts2025 }}/11/primeros-pasos12.png){: .mx-auto.d-block :}
 ![HPE_Morpheus_VM_Essentials_primeros_pasos13]({{ site.imagesposts2025 }}/11/primeros-pasos13.png){: .mx-auto.d-block :}
+
+Y aquí ya podriamos crear nuestro primer clúster HVM
+
+{: .box-warning}
+**Nota:** Es importante que tanto manager como los nodos HVM sean capaces de resolverse mutuamente los DNS
+
 ![HPE_Morpheus_VM_Essentials_primeros_pasos14]({{ site.imagesposts2025 }}/11/primeros-pasos14.png){: .mx-auto.d-block :}
 ![HPE_Morpheus_VM_Essentials_primeros_pasos15]({{ site.imagesposts2025 }}/11/primeros-pasos15.png){: .mx-auto.d-block :}
 ![HPE_Morpheus_VM_Essentials_primeros_pasos16]({{ site.imagesposts2025 }}/11/primeros-pasos16.png){: .mx-auto.d-block :}
 ![HPE_Morpheus_VM_Essentials_primeros_pasos17]({{ site.imagesposts2025 }}/11/primeros-pasos17.png){: .mx-auto.d-block :}
 ![HPE_Morpheus_VM_Essentials_primeros_pasos18]({{ site.imagesposts2025 }}/11/primeros-pasos18.png){: .mx-auto.d-block :}
+
+Aquí es donde indicaremos la conexión con los hosts, credenciales, interface de management, etc etc
+
 ![HPE_Morpheus_VM_Essentials_primeros_pasos19]({{ site.imagesposts2025 }}/11/primeros-pasos19.png){: .mx-auto.d-block :}
 ![HPE_Morpheus_VM_Essentials_primeros_pasos20]({{ site.imagesposts2025 }}/11/primeros-pasos20.png){: .mx-auto.d-block :}
 
-----
+Y hasta aquí por hoy.
 
-Para la instalación del VME Manager disponemos de 2 opciones:
-- La que veremos hoy, que consiste en desplegar la instancia sobre un nodo de HVM
-- [Instalar manualmente el software del Manager sobre una máquina Ubuntu 24 ya sea en otro entorno de virtualización o incluso en físico](https://miquelmariano.github.io/pdte)
-
-Os recuerdo que este post está incluido en la serie sobre HPE VM Essentials
-
-<details markdown="1">
-<summary>VER TODA LA SERIE DE POSTS</summary>
-- [Parte 1 - Introducción a HPE Morpheus VM Essentials software](https://miquelmariano.github.io/2025/10/17/introduccion-hpe-morpheus-vm-essentials-software/)
-- [Parte 2 - Instalación VM Essentials software](https://miquelmariano.github.io/2025/10/17/instalacion-nodo-vme/)
-- [Parte 3 - Instalación VME Manager](https://miquelmariano.github.io/2025/11/08/instalacion-manager/)
-- [Parte 4 - Configuración inicial]
-- [Parte 5 - Creación cluster Ceph]
-- [Parte 6 - Desplegar nuestra primera VM]
-- [Parte 7 - Backups]
-- [Parte 8 - Pruebas de HA]
-- [Parte 9 - Migración de VMs desde vSphere]
-- [Parte 10 - Comandos útiles]
-</details>
-
-La opción de instalar el Manager sobre un entorno VME es la preferida y recomendada y para ello necesitaremos descargar la ISO con el software del portal de HPE
-
-![HPE_Morpheus_VM_Essentials_Manager_install_0]({{ site.imagesposts2025 }}/11/manager0.png){: .mx-auto.d-block :}
-
-Esta ISO la deberemos montar a través de la iDRAC, iLO, XCC de turno a nuestro nodo VME o en mi caso (que es una VM, vincular la iso a través de vSphere)
-
-Una vez montada la ISO, la montaremos a nuestro nodo y ejecutaremos el comando `sudo hpe-vm`
-
-![HPE_Morpheus_VM_Essentials_Manager_install_1]({{ site.imagesposts2025 }}/11/manager1.png){: .mx-auto.d-block :}
-
-{: .box-note}
-**Nota:** `hpe-vm` es la TUI (Text User Interface) que de momento tenemos disponible para operar con un nodo independiente de VME. Se espera que en futuras releases HPE implemente una GUI al estilo vSphere Host Client que tenemos en VMware
-
-Para instalar el Manager iremos a la opción **"Install VME Manager"**
-
-![HPE_Morpheus_VM_Essentials_Manager_install_2]({{ site.imagesposts2025 }}/11/manager2.png){: .mx-auto.d-block :}
-
-Completaremos las opciones básicas de configuración IP y credenciales y en **"Image URI"** podremos explorar la ISO que anteriormente hemos montado para seleccionar el fichero .qcow de imagen
-
-![HPE_Morpheus_VM_Essentials_Manager_install_3]({{ site.imagesposts2025 }}/11/manager3.png){: .mx-auto.d-block :}
-
-![HPE_Morpheus_VM_Essentials_Manager_install_4]({{ site.imagesposts2025 }}/11/manager4.png){: .mx-auto.d-block :}
-
-En este momento, arrancará el poceso de despliegue de la imagen QCOW sobre nuestro nodo VME. Tardará unos pocos minutos...
-
-![HPE_Morpheus_VM_Essentials_Manager_install_5]({{ site.imagesposts2025 }}/11/manager5.png){: .mx-auto.d-block :}
-
-![HPE_Morpheus_VM_Essentials_Manager_install_6]({{ site.imagesposts2025 }}/11/manager6.png){: .mx-auto.d-block :}
-
-![HPE_Morpheus_VM_Essentials_Manager_install_7]({{ site.imagesposts2025 }}/11/manager7.png){: .mx-auto.d-block :}
-
-Una vez finalizado, nos aparecerá el siguiente mensaje
-
-![HPE_Morpheus_VM_Essentials_Manager_install_8]({{ site.imagesposts2025 }}/11/manager8.png){: .mx-auto.d-block :}
-
-Podremos ver si la nueva VM está bien implementada y ejecutandose desde el menu de **"Virtual Machines"**
-
-![HPE_Morpheus_VM_Essentials_Manager_install_9]({{ site.imagesposts2025 }}/11/manager9.png){: .mx-auto.d-block :}
-
-Si todo ha ido bien, podremos abrir un explorador web y acceder por HTTPS al nuevo manager que acabamos de desplegar
-
-![HPE_Morpheus_VM_Essentials_Manager_install_10]({{ site.imagesposts2025 }}/11/manager10.png){: .mx-auto.d-block :}
-
-{: .box-note}
-**Nota:** Los servicios tardan unos minutos en arrancar, no te impacientes, al terminar podremos hacer login por primera vez en nuestro VME Manager ;-)
-
-En el próximo post, veremos el primer inicio de sesión y los primeros pasos para configurar el Manager
+En el próximo post, veremos como desplegar un cluster HCI con Ceph
 
 Un saludo
 
