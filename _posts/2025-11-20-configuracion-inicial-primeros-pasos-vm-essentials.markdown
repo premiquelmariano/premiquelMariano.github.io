@@ -35,6 +35,27 @@ Recordar que venimos de hacer una instalación desde 0 y a continuación os dejo
 - [Parte 10 - Comandos útiles]
 </details>
 
+![HPE_Morpheus_VM_Essentials_primeros_pasos1]({{ site.imagesposts2025 }}/11/primeros-pasos01.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_primeros_pasos2]({{ site.imagesposts2025 }}/11/primeros-pasos02.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_primeros_pasos3]({{ site.imagesposts2025 }}/11/primeros-pasos03.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_primeros_pasos4]({{ site.imagesposts2025 }}/11/primeros-pasos04.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_primeros_pasos5]({{ site.imagesposts2025 }}/11/primeros-pasos05.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_primeros_pasos6]({{ site.imagesposts2025 }}/11/primeros-pasos06.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_primeros_pasos7]({{ site.imagesposts2025 }}/11/primeros-pasos07.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_primeros_pasos8]({{ site.imagesposts2025 }}/11/primeros-pasos08.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_primeros_pasos9]({{ site.imagesposts2025 }}/11/primeros-pasos09.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_primeros_pasos10]({{ site.imagesposts2025 }}/11/primeros-pasos10.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_primeros_pasos11]({{ site.imagesposts2025 }}/11/primeros-pasos11.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_primeros_pasos12]({{ site.imagesposts2025 }}/11/primeros-pasos12.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_primeros_pasos13]({{ site.imagesposts2025 }}/11/primeros-pasos13.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_primeros_pasos14]({{ site.imagesposts2025 }}/11/primeros-pasos14.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_primeros_pasos15]({{ site.imagesposts2025 }}/11/primeros-pasos15.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_primeros_pasos16]({{ site.imagesposts2025 }}/11/primeros-pasos16.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_primeros_pasos17]({{ site.imagesposts2025 }}/11/primeros-pasos17.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_primeros_pasos18]({{ site.imagesposts2025 }}/11/primeros-pasos18.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_primeros_pasos19]({{ site.imagesposts2025 }}/11/primeros-pasos19.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_primeros_pasos20]({{ site.imagesposts2025 }}/11/primeros-pasos20.png){: .mx-auto.d-block :}
+
 ----
 
 Para la instalación del VME Manager disponemos de 2 opciones:
