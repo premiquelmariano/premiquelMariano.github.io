@@ -1,6 +1,5 @@
 ---
-title: 2
-Configuración inicial y primeros pasos en HPE VM Essentials
+title: 2Configuración inicial y primeros pasos en HPE VM Essentials
 subtitle: Parte 4
 date: '2025-11-20 00:00:00'
 layout: post
