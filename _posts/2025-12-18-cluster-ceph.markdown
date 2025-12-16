@@ -49,6 +49,28 @@ Esto lo convierte en la elección predilecta para infraestructuras de virtualiza
 
 ![HPE_Morpheus_VM_Essentials_ceph-cluster-00]({{ site.imagesposts2025 }}/12/ceph-00.png){: .mx-auto.d-block :}
 
+# Documentación
+
+La documentación oficlal la podrememos encontrar [aquí](https://support.hpe.com/hpesc/public/docDisplay?docId=sd00006775en_us&docLocale=en_US&page=GUID-9886AD4A-5C64-4E09-A106-B14419362757.html#ariaid-title1)
+
+Por el momento HPE VM Essentials sólo se permite crear el cluster HCI con un único disco por nodo. El resto de discos los deberemos de ayadir al cluster ceph a través de cli y los comandos nativos ceph
+
+En un futuro se espera poder seleccionar mas discos.
+
+
+# Laboratorio
+
+
+
+
+
+
+
+
+
+
+
+
 La serie sobre VM Essentials ya va cogiendo forma poco a poco y en este nuevo post, vamos a ver la configuración y primeros pasos dentro de VM Essentials manager.
 
 Recordemos que venimos de [hacer una instalación desde 0](https://miquelmariano.github.io/2025/11/08/instalacion-manager/)
