@@ -60,7 +60,26 @@ En un futuro se espera poder seleccionar mas discos.
 
 # Laboratorio
 
+![HPE_Morpheus_VM_Essentials_ceph-cluster-00]({{ site.imagesposts2025 }}/12/ceph-00.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_ceph-cluster-01]({{ site.imagesposts2025 }}/12/ceph-01.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_ceph-cluster-02]({{ site.imagesposts2025 }}/12/ceph-02.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_ceph-cluster-03]({{ site.imagesposts2025 }}/12/ceph-03.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_ceph-cluster-04]({{ site.imagesposts2025 }}/12/ceph-04.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_ceph-cluster-05]({{ site.imagesposts2025 }}/12/ceph-05.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_ceph-cluster-06]({{ site.imagesposts2025 }}/12/ceph-06.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_ceph-cluster-07]({{ site.imagesposts2025 }}/12/ceph-07.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_ceph-cluster-08]({{ site.imagesposts2025 }}/12/ceph-08.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_ceph-cluster-09]({{ site.imagesposts2025 }}/12/ceph-09.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_ceph-cluster-10]({{ site.imagesposts2025 }}/12/ceph-10.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_ceph-cluster-11]({{ site.imagesposts2025 }}/12/ceph-11.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_ceph-cluster-12]({{ site.imagesposts2025 }}/12/ceph-12.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_ceph-cluster-13]({{ site.imagesposts2025 }}/12/ceph-13.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_ceph-cluster-14]({{ site.imagesposts2025 }}/12/ceph-14.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_ceph-cluster-15]({{ site.imagesposts2025 }}/12/ceph-15.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_ceph-cluster-16]({{ site.imagesposts2025 }}/12/ceph-16.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_ceph-cluster-17]({{ site.imagesposts2025 }}/12/ceph-17.png){: .mx-auto.d-block :}
 
+# Comandos útiles ceph
 
 
 
