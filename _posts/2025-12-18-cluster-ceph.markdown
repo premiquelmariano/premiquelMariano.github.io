@@ -1,7 +1,7 @@
 ---
-title: Configuración inicial y primeros pasos en HPE VM Essentials
-subtitle: Parte 4
-date: '2025-11-20 00:00:00'
+title: Cluster Ceph en HPE VM Essentials
+subtitle: Parte 5
+date: '2025-12-18 00:00:00'
 layout: post
 thumbnail-img: https://miquelmariano.github.io/assets/images/posts/2025/12/ceph-00.png
 cover-img: https://miquelmariano.github.io/assets/images/fondos/11.jpg
@@ -17,12 +17,7 @@ tag:
 - ha
 ---
 
-
-![HPE_Morpheus_VM_Essentials_ceph-cluster-00]({{ site.imagesposts2025 }}/12/ceph-00.png){: .mx-auto.d-block :}
-
-La serie sobre VM Essentials ya va cogiendo forma poco a poco y en este nuevo post, vamos a ver la configuración y primeros pasos dentro de VM Essentials manager.
-
-Recordemos que venimos de [hacer una instalación desde 0](https://miquelmariano.github.io/2025/11/08/instalacion-manager/)
+Hoy seguimos con la serie sobre VM Essentials y hablaremos sobre sobe almacenamiento Ceph
 
 <details markdown="1">
 <summary>VER TODA LA SERIE DE POSTS</summary>
@@ -37,6 +32,28 @@ Recordemos que venimos de [hacer una instalación desde 0](https://miquelmariano
 - [Parte 9 - Migración de VMs desde vSphere]
 - [Parte 10 - Comandos útiles]
 </details>
+
+ # ¿Pero, qué es un Cluster Ceph?
+
+Un cluster Ceph es una avanzada plataforma de almacenamiento distribuido y de código abierto (Software-Defined Storage o SDS) que transforma servidores commodity en una única y masiva fuente de datos. Su diseño se enfoca en la escalabilidad horizontal (maneja fácilmente petabytes de datos) y en la tolerancia a fallos, eliminando cualquier punto único de fallo.
+
+Ceph está basado en un sistema de almacenamiento de objetos (RADOS), donde los datos se dividen y se replican inteligentemente a través de la red en componentes llamados OSDs (Object Storage Devices). El algoritmo CRUSH determina la ubicación óptima de los datos, asegurando que estén distribuidos para prevenir pérdidas si algún disco o nodo falla.
+
+**Servicios Unificados**
+La gran ventaja de Ceph es su capacidad para ofrecer tres interfaces de almacenamiento principales de forma simultánea y unificada:
+    1. Almacenamiento de Objetos: Compatible con APIs REST como Amazon S3 y OpenStack Swift (a través de RGW).
+    2. Almacenamiento por Bloques: Discos virtuales para máquinas virtuales o contenedores (a través de RBD).
+    3. Sistema de Archivos: Un sistema de archivos POSIX compatible (a través de CephFS).
+Esto lo convierte en la elección predilecta para infraestructuras de virtualización (como Proxmox o OpenStack) y entornos de cloud computing que requieren flexibilidad, rendimiento y una solidez a prueba de fallos. Es, básicamente, un sistema de almacenamiento que sabe hacer de todo y no se rompe fácilmente.
+
+
+![HPE_Morpheus_VM_Essentials_ceph-cluster-00]({{ site.imagesposts2025 }}/12/ceph-00.png){: .mx-auto.d-block :}
+
+La serie sobre VM Essentials ya va cogiendo forma poco a poco y en este nuevo post, vamos a ver la configuración y primeros pasos dentro de VM Essentials manager.
+
+Recordemos que venimos de [hacer una instalación desde 0](https://miquelmariano.github.io/2025/11/08/instalacion-manager/)
+
+
 
 # Crear nuevo tenant
 
