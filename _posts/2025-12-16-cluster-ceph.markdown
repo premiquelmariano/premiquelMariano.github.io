@@ -17,7 +17,7 @@ tag:
 - ha
 ---
 
-Hoy seguimos con la serie sobre VM Essentials y hablaremos sobre sobe almacenamiento Ceph
+Hoy seguimos con la serie sobre VM Essentials y hablaremos sobre sobe almacenamiento Ceph y como utilizar la hiperconvergencia en un entorno VME
 
 <details markdown="1">
 <summary>VER TODA LA SERIE DE POSTS</summary>
@@ -33,7 +33,7 @@ Hoy seguimos con la serie sobre VM Essentials y hablaremos sobre sobe almacenami
 - [Parte 10 - Comandos útiles]
 </details>
 
- # ¿Pero, qué es un Cluster Ceph?
+ # Qué es un Cluster Ceph?
 
 Un cluster Ceph es una avanzada plataforma de almacenamiento distribuido y de código abierto (Software-Defined Storage o SDS) que transforma servidores commodity en una única y masiva fuente de datos. Su diseño se enfoca en la escalabilidad horizontal (maneja fácilmente petabytes de datos) y en la tolerancia a fallos, eliminando cualquier punto único de fallo.
 
@@ -41,11 +41,12 @@ Ceph está basado en un sistema de almacenamiento de objetos (RADOS), donde los 
 
 **Servicios Unificados**
 La gran ventaja de Ceph es su capacidad para ofrecer tres interfaces de almacenamiento principales de forma simultánea y unificada:
-    1. Almacenamiento de Objetos: Compatible con APIs REST como Amazon S3 y OpenStack Swift (a través de RGW).
-    2. Almacenamiento por Bloques: Discos virtuales para máquinas virtuales o contenedores (a través de RBD).
-    3. Sistema de Archivos: Un sistema de archivos POSIX compatible (a través de CephFS).
-Esto lo convierte en la elección predilecta para infraestructuras de virtualización (como Proxmox o OpenStack) y entornos de cloud computing que requieren flexibilidad, rendimiento y una solidez a prueba de fallos. Es, básicamente, un sistema de almacenamiento que sabe hacer de todo y no se rompe fácilmente.
 
+    - Almacenamiento de Objetos: Compatible con APIs REST como Amazon S3 y OpenStack Swift (a través de RGW).
+    - Almacenamiento por Bloques: Discos virtuales para máquinas virtuales o contenedores (a través de RBD).
+    - Sistema de Archivos: Un sistema de archivos POSIX compatible (a través de CephFS).
+
+Esto lo convierte en la elección predilecta para infraestructuras de virtualización (como Proxmox o OpenStack) y entornos de cloud computing que requieren flexibilidad, rendimiento y una solidez a prueba de fallos. Es, básicamente, un sistema de almacenamiento que sabe hacer de todo y no se rompe fácilmente.
 
 ![HPE_Morpheus_VM_Essentials_ceph-cluster-00]({{ site.imagesposts2025 }}/12/ceph-00.png){: .mx-auto.d-block :}
 
@@ -57,10 +58,8 @@ Por el momento HPE VM Essentials sólo se permite crear el cluster HCI con un ú
 
 En un futuro se espera poder seleccionar mas discos.
 
-
 # Laboratorio
 
-![HPE_Morpheus_VM_Essentials_ceph-cluster-00]({{ site.imagesposts2025 }}/12/ceph-00.png){: .mx-auto.d-block :}
 ![HPE_Morpheus_VM_Essentials_ceph-cluster-01]({{ site.imagesposts2025 }}/12/ceph-01.png){: .mx-auto.d-block :}
 ![HPE_Morpheus_VM_Essentials_ceph-cluster-02]({{ site.imagesposts2025 }}/12/ceph-02.png){: .mx-auto.d-block :}
 ![HPE_Morpheus_VM_Essentials_ceph-cluster-03]({{ site.imagesposts2025 }}/12/ceph-03.png){: .mx-auto.d-block :}
