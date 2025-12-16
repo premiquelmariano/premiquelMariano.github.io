@@ -94,11 +94,23 @@ Una vez finalizado el despliegue, nos aparecerá como disponible un nuevo clúst
 
 ![HPE_Morpheus_VM_Essentials_ceph-cluster-15]({{ site.imagesposts2025 }}/12/ceph-15.png){: .mx-auto.d-block :}
 ![HPE_Morpheus_VM_Essentials_ceph-cluster-16]({{ site.imagesposts2025 }}/12/ceph-16.png){: .mx-auto.d-block :}
+
+Y ya veremos nuestro RBD Pool con la suma de los 3 nodos (150Gb por nodo)
+
 ![HPE_Morpheus_VM_Essentials_ceph-cluster-17]({{ site.imagesposts2025 }}/12/ceph-17.png){: .mx-auto.d-block :}
 
 # Comandos útiles ceph
 
+En [este post](https://www.redhat.com/en/blog/10-commands-every-ceph-administrator-should-know) de la misma comunidad redhat he encontrado algunos comandos interesantes para validar el buen estado de salud del cluster
 
+Ver estado de salud global del cluster
+`ceph status || ceph -w`
+
+Ver el espacio libre en los diferentes Pools
+`ceph df`
+
+Ver el estado de los discos y el host que los aporta
+`ceph osd tree`
 
 Y hasta aquí por hoy.
 
