@@ -52,7 +52,7 @@ Esto lo convierte en la elección predilecta para infraestructuras de virtualiza
 
 # Documentación
 
-La documentación oficlal la podrememos encontrar [aquí](https://support.hpe.com/hpesc/public/docDisplay?docId=sd00006775en_us&docLocale=en_US&page=GUID-9886AD4A-5C64-4E09-A106-B14419362757.html#ariaid-title1)
+La documentación oficial la podrememos encontrar [aquí](https://support.hpe.com/hpesc/public/docDisplay?docId=sd00006775en_us&docLocale=en_US&page=GUID-9886AD4A-5C64-4E09-A106-B14419362757.html#ariaid-title1)
 
 Por el momento HPE VM Essentials sólo se permite crear el cluster HCI con un único disco por nodo. El resto de discos los deberemos de ayadir al cluster ceph a través de cli y los comandos nativos ceph
 
@@ -68,31 +68,41 @@ Y cada uno de ellos con un disco adicional de 150Gb que será el que nos aportar
 Arrancamos el asistente para agregar nuevo cluster de HVM
 
 ![HPE_Morpheus_VM_Essentials_ceph-cluster-02]({{ site.imagesposts2025 }}/12/ceph-02.png){: .mx-auto.d-block :}
+
 ![HPE_Morpheus_VM_Essentials_ceph-cluster-03]({{ site.imagesposts2025 }}/12/ceph-03.png){: .mx-auto.d-block :}
+
 ![HPE_Morpheus_VM_Essentials_ceph-cluster-04]({{ site.imagesposts2025 }}/12/ceph-04.png){: .mx-auto.d-block :}
+
+![HPE_Morpheus_VM_Essentials_ceph-cluster-05]({{ site.imagesposts2025 }}/12/ceph-05.png){: .mx-auto.d-block :}
 
 En este punto, en el desplegable seleccionaremos la opción de cluster HCI Ceph y añadiremos los 3 hosts mínimos necesarios para su creación.
 
-![HPE_Morpheus_VM_Essentials_ceph-cluster-05]({{ site.imagesposts2025 }}/12/ceph-05.png){: .mx-auto.d-block :}
 ![HPE_Morpheus_VM_Essentials_ceph-cluster-06]({{ site.imagesposts2025 }}/12/ceph-06.png){: .mx-auto.d-block :}
+
 ![HPE_Morpheus_VM_Essentials_ceph-cluster-07]({{ site.imagesposts2025 }}/12/ceph-07.png){: .mx-auto.d-block :}
 
 Veremos como arranca el proceso de aprovisionamiento y en el submenú de history iremos viendo todo el proceso
 
 ![HPE_Morpheus_VM_Essentials_ceph-cluster-08]({{ site.imagesposts2025 }}/12/ceph-08.png){: .mx-auto.d-block :}
+
 ![HPE_Morpheus_VM_Essentials_ceph-cluster-09]({{ site.imagesposts2025 }}/12/ceph-09.png){: .mx-auto.d-block :}
 
 Desplegando cada uno de los nodos, podremos ir viendo las operaciones que se están realizando y en caso de algún error, nos será muy cómodo analizar la posible causa
 
 ![HPE_Morpheus_VM_Essentials_ceph-cluster-10]({{ site.imagesposts2025 }}/12/ceph-10.png){: .mx-auto.d-block :}
+
 ![HPE_Morpheus_VM_Essentials_ceph-cluster-11]({{ site.imagesposts2025 }}/12/ceph-11.png){: .mx-auto.d-block :}
+
 ![HPE_Morpheus_VM_Essentials_ceph-cluster-12]({{ site.imagesposts2025 }}/12/ceph-12.png){: .mx-auto.d-block :}
+
 ![HPE_Morpheus_VM_Essentials_ceph-cluster-13]({{ site.imagesposts2025 }}/12/ceph-13.png){: .mx-auto.d-block :}
+
 ![HPE_Morpheus_VM_Essentials_ceph-cluster-14]({{ site.imagesposts2025 }}/12/ceph-14.png){: .mx-auto.d-block :}
+
+![HPE_Morpheus_VM_Essentials_ceph-cluster-15]({{ site.imagesposts2025 }}/12/ceph-15.png){: .mx-auto.d-block :}
 
 Una vez finalizado el despliegue, nos aparecerá como disponible un nuevo clúster de computo del tipo HCI Ceph
 
-![HPE_Morpheus_VM_Essentials_ceph-cluster-15]({{ site.imagesposts2025 }}/12/ceph-15.png){: .mx-auto.d-block :}
 ![HPE_Morpheus_VM_Essentials_ceph-cluster-16]({{ site.imagesposts2025 }}/12/ceph-16.png){: .mx-auto.d-block :}
 
 Y ya veremos nuestro RBD Pool con la suma de los 3 nodos (150Gb por nodo)
