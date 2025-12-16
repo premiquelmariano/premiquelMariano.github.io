@@ -115,12 +115,15 @@ En [este post](https://www.redhat.com/en/blog/10-commands-every-ceph-administrat
 
 Ver estado de salud global del cluster
 `ceph status || ceph -w`
+![HPE_Morpheus_VM_Essentials_ceph-cluster-18]({{ site.imagesposts2025 }}/12/ceph-18.png){: .mx-auto.d-block :}
 
 Ver el espacio libre en los diferentes Pools
 `ceph df`
+![HPE_Morpheus_VM_Essentials_ceph-cluster-19]({{ site.imagesposts2025 }}/12/ceph-19.png){: .mx-auto.d-block :}
 
 Ver el estado de los discos y el host que los aporta
 `ceph osd tree`
+![HPE_Morpheus_VM_Essentials_ceph-cluster-20]({{ site.imagesposts2025 }}/12/ceph-20.png){: .mx-auto.d-block :}
 
 Y hasta aquí por hoy.
 
