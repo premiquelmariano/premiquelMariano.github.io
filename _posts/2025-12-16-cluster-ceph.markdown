@@ -4,7 +4,7 @@ subtitle: Parte 5
 date: '2025-12-16 00:00:00'
 layout: post
 thumbnail-img: https://miquelmariano.github.io/assets/images/posts/2025/12/ceph-00.png
-cover-img: https://miquelmariano.github.io/assets/images/fondos/11.jpg
+cover-img: https://miquelmariano.github.io/assets/images/fondos/01.jpg
 share-img: https://miquelmariano.github.io/assets/images/posts/2025/12/ceph-00.png
 published: true
 author: Miquel Mariano
