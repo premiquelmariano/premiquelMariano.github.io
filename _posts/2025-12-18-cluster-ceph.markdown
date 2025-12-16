@@ -3,9 +3,9 @@ title: Configuración inicial y primeros pasos en HPE VM Essentials
 subtitle: Parte 4
 date: '2025-11-20 00:00:00'
 layout: post
-thumbnail-img: https://miquelmariano.github.io/assets/images/posts/2025/11/primeros-pasos01.png
-cover-img: https://miquelmariano.github.io/assets/images/fondos/10.jpg
-share-img: https://miquelmariano.github.io/assets/images/posts/2025/11/primeros-pasos01.png
+thumbnail-img: https://miquelmariano.github.io/assets/images/posts/2025/12/ceph-00.png
+cover-img: https://miquelmariano.github.io/assets/images/fondos/11.jpg
+share-img: https://miquelmariano.github.io/assets/images/posts/2025/12/ceph-00.png
 published: true
 author: Miquel Mariano
 tag:
@@ -18,7 +18,7 @@ tag:
 ---
 
 
-![HPE_Morpheus_VM_Essentials_primeros_pasos1]({{ site.imagesposts2025 }}/12/ceph-00.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_ceph-cluster-00]({{ site.imagesposts2025 }}/12/ceph-00.png){: .mx-auto.d-block :}
 
 La serie sobre VM Essentials ya va cogiendo forma poco a poco y en este nuevo post, vamos a ver la configuración y primeros pasos dentro de VM Essentials manager.
 
