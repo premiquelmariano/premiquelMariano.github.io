@@ -1,11 +1,11 @@
 ---
-title: Cluster Ceph en HPE VM Essentials
-subtitle: Parte 5
-date: '2025-12-16 00:00:00'
+title: Creación de nuestra primera VM en HPE VM Essentials
+subtitle: Parte 6
+date: '2026-01-04 00:00:00'
 layout: post
-thumbnail-img: https://miquelmariano.github.io/assets/images/posts/2025/12/ceph-00.png
-cover-img: https://miquelmariano.github.io/assets/images/fondos/01.jpg
-share-img: https://miquelmariano.github.io/assets/images/posts/2025/12/ceph-00.png
+thumbnail-img: https://miquelmariano.github.io/assets/images/posts/2026/01/primera-vm-01.png
+cover-img: https://miquelmariano.github.io/assets/images/fondos/02.jpg
+share-img: https://miquelmariano.github.io/assets/images/posts/2026/01/primera-vm-01.png
 published: true
 author: Miquel Mariano
 tag:
@@ -17,7 +17,9 @@ tag:
 - ha
 ---
 
-Hoy seguimos con la serie sobre VM Essentials y hablaremos sobre sobe almacenamiento Ceph y como utilizar la hiperconvergencia en un entorno VME
+Arrancamos el año con una nueva entrada en la serie sobre VM Essentials. En esta ocasión vamos a ver cómo crear nuestra primera VM.
+
+Aprovecho a continuación para recordar el índice de toda la serie.
 
 <details markdown="1">
 <summary>VER TODA LA SERIE DE POSTS</summary>
@@ -25,7 +27,7 @@ Hoy seguimos con la serie sobre VM Essentials y hablaremos sobre sobe almacenami
 - [Parte 2 - Instalación VM Essentials software](https://miquelmariano.github.io/2025/10/17/instalacion-nodo-vme/)
 - [Parte 3 - Instalación VME Manager](https://miquelmariano.github.io/2025/11/07/instalacion-manager/)
 - [Parte 4 - Configuración inicial](https://miquelmariano.github.io/2025/11/20/configuracion-inicial-primeros-pasos-vm-essentials)
-- [Parte 5 - Creación cluster Ceph]
+- [Parte 5 - Creación cluster Ceph](https://miquelmariano.github.io/2025/11/20/primera-vm-en-vmessentials)
 - [Parte 6 - Desplegar nuestra primera VM]
 - [Parte 7 - Backups]
 - [Parte 8 - Pruebas de HA]
@@ -33,22 +35,29 @@ Hoy seguimos con la serie sobre VM Essentials y hablaremos sobre sobe almacenami
 - [Parte 10 - Comandos útiles]
 </details>
 
- # Qué es un Cluster Ceph
+ # Nuestra primera VM
 
-Un cluster Ceph es una avanzada plataforma de almacenamiento distribuido y de código abierto (Software-Defined Storage o SDS) que transforma servidores commodity en una única y masiva fuente de datos. Su diseño se enfoca en la escalabilidad horizontal (maneja fácilmente petabytes de datos) y en la tolerancia a fallos, eliminando cualquier punto único de fallo.
+![HPE_Morpheus_VM_Essentials_primera-vm-01]({{ site.imagesposts2026 }}/01/primera-vm-01.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_primera-vm-02]({{ site.imagesposts2026 }}/01/primera-vm-02.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_primera-vm-03]({{ site.imagesposts2026 }}/01/primera-vm-03.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_primera-vm-04]({{ site.imagesposts2026 }}/01/primera-vm-04.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_primera-vm-05]({{ site.imagesposts2026 }}/01/primera-vm-05.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_primera-vm-06]({{ site.imagesposts2026 }}/01/primera-vm-06.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_primera-vm-07]({{ site.imagesposts2026 }}/01/primera-vm-07.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_primera-vm-08]({{ site.imagesposts2026 }}/01/primera-vm-08.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_primera-vm-09]({{ site.imagesposts2026 }}/01/primera-vm-09.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_primera-vm-10]({{ site.imagesposts2026 }}/01/primera-vm-10.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_primera-vm-11]({{ site.imagesposts2026 }}/01/primera-vm-11.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_primera-vm-12]({{ site.imagesposts2026 }}/01/primera-vm-12.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_primera-vm-13]({{ site.imagesposts2026 }}/01/primera-vm-13.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_primera-vm-14]({{ site.imagesposts2026 }}/01/primera-vm-14.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_primera-vm-15]({{ site.imagesposts2026 }}/01/primera-vm-15.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_primera-vm-16]({{ site.imagesposts2026 }}/01/primera-vm-16.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_primera-vm-17]({{ site.imagesposts2026 }}/01/primera-vm-17.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_primera-vm-18]({{ site.imagesposts2026 }}/01/primera-vm-18.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_primera-vm-19]({{ site.imagesposts2026 }}/01/primera-vm-19.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_primera-vm-20]({{ site.imagesposts2026 }}/01/primera-vm-20.png){: .mx-auto.d-block :}
 
-Ceph está basado en un sistema de almacenamiento de objetos (RADOS), donde los datos se dividen y se replican inteligentemente a través de la red en componentes llamados OSDs (Object Storage Devices). El algoritmo CRUSH determina la ubicación óptima de los datos, asegurando que estén distribuidos para prevenir pérdidas si algún disco o nodo falla.
-
-**Servicios Unificados**
-La gran ventaja de Ceph es su capacidad para ofrecer tres interfaces de almacenamiento principales de forma simultánea y unificada:
-
-- Almacenamiento de Objetos: Compatible con APIs REST como Amazon S3 y OpenStack Swift (a través de RGW).
-- Almacenamiento por Bloques: Discos virtuales para máquinas virtuales o contenedores (a través de RBD).
-- Sistema de Archivos: Un sistema de archivos POSIX compatible (a través de CephFS).
-
-Esto lo convierte en la elección predilecta para infraestructuras de virtualización (como Proxmox o OpenStack) y entornos de cloud computing que requieren flexibilidad, rendimiento y una solidez a prueba de fallos. Es, básicamente, un sistema de almacenamiento que sabe hacer de todo y no se rompe fácilmente.
-
-![HPE_Morpheus_VM_Essentials_ceph-cluster-00]({{ site.imagesposts2025 }}/12/ceph-00.png){: .mx-auto.d-block :}
 
 # Documentación
 
