@@ -37,10 +37,23 @@ Aprovecho a continuación para recordar el índice de toda la serie.
 
  # Nuestra primera VM
 
+Arrancaremos el asistente de despliegue de una nueva instancia desde el menú de "Provisioning" >> "Add"
+
 ![HPE_Morpheus_VM_Essentials_primera-vm-01]({{ site.imagesposts2026 }}/01/primera-vm-01.png){: .mx-auto.d-block :}
+
+Seleccionaremos que timpo de instancia vamos a desplegar, en nuestro caso desplegaremos sobre un cluster HVM
+
 ![HPE_Morpheus_VM_Essentials_primera-vm-02]({{ site.imagesposts2026 }}/01/primera-vm-02.png){: .mx-auto.d-block :}
+
+Completamos información básica de la instancia, como nombre, grupo, en que cloud desplegaremos, etc etc...
 ![HPE_Morpheus_VM_Essentials_primera-vm-03]({{ site.imagesposts2026 }}/01/primera-vm-03.png){: .mx-auto.d-block :}
+
+Aquí es donde definiremos el "sabor" de la instancia, el tamaño y número de discos, su ubicación en los datastores, la red, la iso, etc etc
+
 ![HPE_Morpheus_VM_Essentials_primera-vm-04]({{ site.imagesposts2026 }}/01/primera-vm-04.png){: .mx-auto.d-block :}
+
+En las opciones avanzadas es importante conectar las VirtIO para poder instalar el driver durante la instalación, de lo contrario, Windows será incapaz de detectar el disco para realizar la instalación
+
 ![HPE_Morpheus_VM_Essentials_primera-vm-05]({{ site.imagesposts2026 }}/01/primera-vm-05.png){: .mx-auto.d-block :}
 ![HPE_Morpheus_VM_Essentials_primera-vm-06]({{ site.imagesposts2026 }}/01/primera-vm-06.png){: .mx-auto.d-block :}
 ![HPE_Morpheus_VM_Essentials_primera-vm-07]({{ site.imagesposts2026 }}/01/primera-vm-07.png){: .mx-auto.d-block :}
