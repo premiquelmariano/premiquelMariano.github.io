@@ -71,6 +71,18 @@ En las opciones avanzadas es importante conectar las VirtIO para poder instalar 
 ![HPE_Morpheus_VM_Essentials_primera-vm-19]({{ site.imagesposts2026 }}/01/primera-vm-19.png){: .mx-auto.d-block :}
 ![HPE_Morpheus_VM_Essentials_primera-vm-20]({{ site.imagesposts2026 }}/01/primera-vm-20.png){: .mx-auto.d-block :}
 
+![HPE_Morpheus_VM_Essentials_primera-vm-21]({{ site.imagesposts2026 }}/01/primera-vm-20.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_primera-vm-22]({{ site.imagesposts2026 }}/01/primera-vm-20.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_primera-vm-23]({{ site.imagesposts2026 }}/01/primera-vm-20.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_primera-vm-24]({{ site.imagesposts2026 }}/01/primera-vm-20.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_primera-vm-25]({{ site.imagesposts2026 }}/01/primera-vm-20.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_primera-vm-26]({{ site.imagesposts2026 }}/01/primera-vm-20.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_primera-vm-27]({{ site.imagesposts2026 }}/01/primera-vm-20.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_primera-vm-28]({{ site.imagesposts2026 }}/01/primera-vm-20.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_primera-vm-29]({{ site.imagesposts2026 }}/01/primera-vm-20.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_primera-vm-20]({{ site.imagesposts2026 }}/01/primera-vm-20.png){: .mx-auto.d-block :}
+![HPE_Morpheus_VM_Essentials_primera-vm-31]({{ site.imagesposts2026 }}/01/primera-vm-20.png){: .mx-auto.d-block :}
+
 Y hasta aquí por hoy.
 
 Un saludo
