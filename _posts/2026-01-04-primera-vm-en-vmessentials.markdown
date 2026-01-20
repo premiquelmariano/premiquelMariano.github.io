@@ -23,12 +23,12 @@ Aprovecho para recordar el índice de toda la serie.
 
 <details markdown="1">
 <summary>VER TODA LA SERIE DE POSTS</summary>
-- [Parte 1 - Introducción a HPE Morpheus VM Essentials software](https://miquelmariano.github.io/2025/10/17/introduccion-hpe-morpheus-vm-essentials-software/)
-- [Parte 2 - Instalación VM Essentials software](https://miquelmariano.github.io/2025/10/17/instalacion-nodo-vme/)
-- [Parte 3 - Instalación VME Manager](https://miquelmariano.github.io/2025/11/07/instalacion-manager/)
-- [Parte 4 - Configuración inicial](https://miquelmariano.github.io/2025/11/20/configuracion-inicial-primeros-pasos-vm-essentials)
-- [Parte 5 - Creación cluster Ceph](https://miquelmariano.github.io/2025/11/20/primera-vm-en-vmessentials)
-- [Parte 6 - Desplegar nuestra primera VM]
+- [Parte 1 - Introducción a HPE Morpheus VM Essentials software](https://miquelmariano.github.io/introduccion-hpe-morpheus-vm-essentials-software/)
+- [Parte 2 - Instalación VM Essentials software](https://miquelmariano.github.io/instalacion-nodo-vme/)
+- [Parte 3 - Instalación VME Manager](https://miquelmariano.github.io/instalacion-manager/)
+- [Parte 4 - Configuración inicial](https://miquelmariano.github.io/configuracion-inicial-primeros-pasos-vm-essentials)
+- [Parte 5 - Creación cluster Ceph](https://miquelmariano.github.io/cluster-ceph/)
+- [Parte 6 - Desplegar nuestra primera VM](https://miquelmariano.github.io/primera-vm-en-vmessentials/)
 - [Parte 7 - Backups]
 - [Parte 8 - Pruebas de HA]
 - [Parte 9 - Migración de VMs desde vSphere]
