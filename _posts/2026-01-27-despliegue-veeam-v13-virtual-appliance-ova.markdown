@@ -9,12 +9,9 @@ share-img: https://miquelmariano.github.io/assets/images/posts/2026/01/primera-v
 published: true
 author: Miquel Mariano
 tag:
-- kvm
-- hpe
-- vme
-- cloud
-- morpheus
-- ha
+- veeam
+- backup
+- ramsonware
 ---
 
 Cómo muchos ya sabréis, el pasado mes de septiembre Veeam lanzó la versión 13 de su producto estrella Veeam Backup & Replication.
