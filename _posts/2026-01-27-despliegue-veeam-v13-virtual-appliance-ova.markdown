@@ -42,7 +42,13 @@ Este lanzamiento marca uno de los mayores cambios en el producto con la introduc
 
 # Despliegue virtual appliance en vSphere
 
-![HPE_Morpheus_VM_Essentials_primera-vm-01]({{ site.imagesposts2026 }}/01/primera-vm-01.png){: .mx-auto.d-block :}
+![Despliegue-veeam-virtual-appliance-01]({{ site.imagesposts2026 }}/02/veeam-ova-01.png){: .mx-auto.d-block :}
+![Despliegue-veeam-virtual-appliance-02]({{ site.imagesposts2026 }}/02/veeam-ova-02.png){: .mx-auto.d-block :}
+![Despliegue-veeam-virtual-appliance-03]({{ site.imagesposts2026 }}/02/veeam-ova-03.png){: .mx-auto.d-block :}
+![Despliegue-veeam-virtual-appliance-04]({{ site.imagesposts2026 }}/02/veeam-ova-04.png){: .mx-auto.d-block :}
+![Despliegue-veeam-virtual-appliance-05]({{ site.imagesposts2026 }}/02/veeam-ova-05.png){: .mx-auto.d-block :}
+![Despliegue-veeam-virtual-appliance-06]({{ site.imagesposts2026 }}/02/veeam-ova-06.png){: .mx-auto.d-block :}
+![Despliegue-veeam-virtual-appliance-07]({{ site.imagesposts2026 }}/02/veeam-ova-07.png){: .mx-auto.d-block :}
 
 # Configuración inicial
 
