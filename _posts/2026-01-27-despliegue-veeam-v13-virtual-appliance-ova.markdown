@@ -52,7 +52,21 @@ Este lanzamiento marca uno de los mayores cambios en el producto con la introduc
 
 # Configuración inicial
 
-![HPE_Morpheus_VM_Essentials_primera-vm-01]({{ site.imagesposts2026 }}/01/primera-vm-01.png){: .mx-auto.d-block :}
+![Configuracion-veeam-virtual-appliance-01]({{ site.imagesposts2026 }}/02/veeam-install-01.png){: .mx-auto.d-block :}
+![Configuracion-veeam-virtual-appliance-02]({{ site.imagesposts2026 }}/02/veeam-install-02.png){: .mx-auto.d-block :}
+![Configuracion-veeam-virtual-appliance-03]({{ site.imagesposts2026 }}/02/veeam-install-03.png){: .mx-auto.d-block :}
+![Configuracion-veeam-virtual-appliance-04]({{ site.imagesposts2026 }}/02/veeam-install-04.png){: .mx-auto.d-block :}
+![Configuracion-veeam-virtual-appliance-05]({{ site.imagesposts2026 }}/02/veeam-install-05.png){: .mx-auto.d-block :}
+![Configuracion-veeam-virtual-appliance-06]({{ site.imagesposts2026 }}/02/veeam-install-06.png){: .mx-auto.d-block :}
+![Configuracion-veeam-virtual-appliance-07]({{ site.imagesposts2026 }}/02/veeam-install-07.png){: .mx-auto.d-block :}
+![Configuracion-veeam-virtual-appliance-08]({{ site.imagesposts2026 }}/02/veeam-install-08.png){: .mx-auto.d-block :}
+![Configuracion-veeam-virtual-appliance-09]({{ site.imagesposts2026 }}/02/veeam-install-09.png){: .mx-auto.d-block :}
+![Configuracion-veeam-virtual-appliance-10]({{ site.imagesposts2026 }}/02/veeam-install-10.png){: .mx-auto.d-block :}
+![Configuracion-veeam-virtual-appliance-11]({{ site.imagesposts2026 }}/02/veeam-install-11.png){: .mx-auto.d-block :}
+![Configuracion-veeam-virtual-appliance-12]({{ site.imagesposts2026 }}/02/veeam-install-12.png){: .mx-auto.d-block :}
+![Configuracion-veeam-virtual-appliance-13]({{ site.imagesposts2026 }}/02/veeam-install-13.png){: .mx-auto.d-block :}
+![Configuracion-veeam-virtual-appliance-14]({{ site.imagesposts2026 }}/02/veeam-install-14.png){: .mx-auto.d-block :}
+![Configuracion-veeam-virtual-appliance-15]({{ site.imagesposts2026 }}/02/veeam-install-15.png){: .mx-auto.d-block :}
 
 Y hasta aquí por hoy, en entorno ya va cogiendo forma poco a poco y ya tenemos nuestra primera VM desplegada.
 
