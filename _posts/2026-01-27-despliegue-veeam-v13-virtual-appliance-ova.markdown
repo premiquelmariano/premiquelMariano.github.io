@@ -21,23 +21,27 @@ Cómo muchos ya sabréis, el pasado mes de septiembre Veeam lanzó la versión 1
 
 Este lanzamiento marca uno de los mayores cambios en el producto con la introducción de una versión appliance basada en Linux como forma principal de despliegue, además de la opción tradicional Windows.
 
-🚀 Puntos clave de Veeam v13
+# Puntos clave de Veeam v13
+
 1. Nuevo enfoque: appliance Linux (Veeam Software Appliance)
-    • Veeam deja gradualmente la necesidad de Windows Server para el backup core, ofreciendo una appliance Linux preconfigurada y endurecida (JeOS) para mayor seguridad y simplicidad. 
-    • Se distribuye en ISO y OVA para entornos físicos y virtuales. 
+- Veeam deja gradualmente la necesidad de Windows Server para el backup core, ofreciendo una appliance Linux preconfigurada y endurecida (JeOS) para mayor seguridad y simplicidad. 
+- Se distribuye en ISO y OVA para entornos físicos y virtuales. 
+
 2. Seguridad reforzada
-    • Hardened by default: SELinux, servicios mínimos, actualizaciones automatizadas y menor superficie de ataque. 
-    • Integración con SSO (SAML), RBAC avanzado y detección mejorada de amenazas. 
+- Hardened by default: SELinux, servicios mínimos, actualizaciones automatizadas y menor superficie de ataque. 
+- Integración con SSO (SAML), RBAC avanzado y detección mejorada de amenazas. 
+
 3. Interfaz moderna
-    • Nueva consola web HTTPS para gestión moderna y accesible desde navegador, junto con compatibilidad con roles y SSO. 
+-  Nueva consola web HTTPS para gestión moderna y accesible desde navegador, junto con compatibilidad con roles y SSO. 
+
 4. Operaciones y resiliencia
-    • Alta disponibilidad nativa planeada en appliance. 
-    • Automatización de despliegue y menor mantenimiento OS. 
+- Alta disponibilidad nativa planeada en appliance. 
+- Automatización de despliegue y menor mantenimiento OS. 
+
 5. Mejoras ampliadas de plataforma
-(más allá de la appliance, parte del release v13)
-    • Seguridad y protección avanzada: detección de malware, inmutabilidad por defecto y análisis inteligente. 
-    • Cloud y recuperación: recuperación instantánea a Microsoft Azure y mejoras de integración cloud. 
-    • Performance y escalabilidad: arquitectura 64-bit, mejoras en engine y más paralelismo. 
+- Seguridad y protección avanzada: detección de malware, inmutabilidad por defecto y análisis inteligente. 
+- Cloud y recuperación: recuperación instantánea a Microsoft Azure y mejoras de integración cloud. 
+- Performance y escalabilidad: arquitectura 64-bit, mejoras en engine y más paralelismo. 
 
 # Nuestra primera VM
 
