@@ -72,11 +72,11 @@ Ya con el nuevo binario instalado, ejecutaremos la reconfiguración con el coman
 
 Podremos validar que todos los servicios han arrancado de nuevo con el comando `sudo morpheus-ctl status`
 
-![updates-10]({{ site.imagesposts2026 }}/02/updates10.png){: .mx-auto.d-block :}
+![updates-10]({{ site.imagesposts2026 }}/02/updates-10.png){: .mx-auto.d-block :}
 
 Y podremos volver a validar la versión final en la parte inferior derecha
 
-![updates-11]({{ site.imagesposts2026 }}/02/updates11.png){: .mx-auto.d-block :}
+![updates-11]({{ site.imagesposts2026 }}/02/updates-11.png){: .mx-auto.d-block :}
 
 # Actualización agentes HVM
 
@@ -86,9 +86,9 @@ Desde el menú de Infrastructure > Compute > node veremos que aparece una notifi
 
 Es tan fácil como iniciar la actualización de los agentes desde el botón de Actions > Upgrade Agent
 
-![updates-12]({{ site.imagesposts2026 }}/02/updates12.png){: .mx-auto.d-block :}
+![updates-12]({{ site.imagesposts2026 }}/02/updates-12.png){: .mx-auto.d-block :}
 
-![updates-13]({{ site.imagesposts2026 }}/02/updates13.png){: .mx-auto.d-block :}
+![updates-13]({{ site.imagesposts2026 }}/02/updates-13.png){: .mx-auto.d-block :}
 
 Como podeis ver, el proceso es relativamente sencillo y tardaremos pocos minutos en actualizar nuestro entorno de HPE VM Essentials
 
