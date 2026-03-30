@@ -3,9 +3,9 @@ title: Backups nativos en VM Essentials
 subtitle: Modulo integrado de protección
 date: '2026-03-30 00:00:00'
 layout: post
-thumbnail-img: https://miquelmariano.github.io/assets/images/posts/2026/02/updates-01.png
+thumbnail-img: https://miquelmariano.github.io/assets/images/posts/2026/03/vme-backups-01.png
 cover-img: https://miquelmariano.github.io/assets/images/fondos/05.jpg
-share-img: https://miquelmariano.github.io/assets/images/posts/2026/01/updates-01.png
+share-img: https://miquelmariano.github.io/assets/images/posts/2026/03/vme-backups-01.png
 published: true
 author: Miquel Mariano
 tag:
