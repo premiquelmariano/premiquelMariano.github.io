@@ -36,7 +36,7 @@ En este post vamos a ver cómo HPE VM Essentials implementa de forma nativa herr
 - [Parte 11 - Gestión de actualizaciones en HPE VM Essentials](https://miquelmariano.github.io/actualizaciones-vme-manager-y-nodos-hvm)
 </details>
 
-# VM Essentials manager
+# Backup de VME manager
 
 Antes de nada, os recomiento que le equeis un vistazo a [la documentación oficial tanto para hacer backups como los restores](https://support.hpe.com/hpesc/public/docDisplay?docId=sd00007322en_us&page=GUID-1E710344-0932-4A51-B605-18AEF716E46F.html)
 
@@ -51,11 +51,38 @@ De forma nativa, existe un job llamado "Morpheus Appliance" que es el encargado 
 
 ![vme-backups-02]({{ site.imagesposts2026 }}/03/vme-backups-02.png){: .mx-auto.d-block :}
 
+# Restauración de VME manager
+
+El procedimiento de restore es relativamente sencillo. Básicamente consiste en restaurar el dump de la BBDD previamente creado y reiniciar los servicios. Vamos a ello…
+
+1. Descomprimir el backup
+El backup se descarga como un archivo ZIP. Lo descomprimimos:
+unzip backup.1.20251030121307.zip
+El fichero que nos interesa dentro del ZIP es el que se llama morpheus, que contiene el dump de la BBDD.
+
+2. Parar el servicio de la UI
+morpheus-ctl stop morpheus-ui
+
+3. Obtener la contraseña de la BBDD
+La contraseña del usuario de MySQL se puede obtener del fichero de configuración:
+cat /etc/morpheus/morpheus-secrets.json | grep morpheus_password
+
+4. Restaurar el dump
+Con la contraseña en mano, ejecutamos el restore:
+/opt/morpheus/embedded/mysql/bin/mysql -u morpheus -h 127.0.0.1 morpheus -p \
+  < /var/opt/morpheus/bitcan/backup/backup.1/morpheus
+
+5. Arrancar de nuevo los servicios
+morpheus-ctl start morpheus-ui
+
+Y ya tendríamos nuestro Manager completamente operativo y funcional.
+
+
 ![vme-backups-03]({{ site.imagesposts2026 }}/03/vme-backups-03.png){: .mx-auto.d-block :}
 
 ![vme-backups-04]({{ site.imagesposts2026 }}/03/vme-backups-04.png){: .mx-auto.d-block :}
 
-El propio VM Essentials manager
+
 
 https://support.hpe.com/hpesc/public/docDisplay?docId=sd00007322en_us&page=GUID-1E710344-0932-4A51-B605-18AEF716E46F.html
 
