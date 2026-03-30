@@ -17,7 +17,7 @@ tag:
 - ha
 ---
 
-Seguimos avanzando con la serie de posts sobre HPE VM Essentials. Una parte importante al desplegar nuestras infraestructuras virtuales es contemplar los mecanismos de protección y copia de seguridad que vamos a implementar para dar continuidad a nuestros servicios.
+Seguimos avanzando con la serie de posts sobre HPE VM Essentials, y es que una parte importante al desplegar nuestras infraestructuras virtuales es contemplar los mecanismos de protección y copia de seguridad que vamos a implementar para dar continuidad a nuestros servicios.
 
 En este post vamos a ver cómo HPE VM Essentials implementa de forma nativa herramientas de backup tanto para el VME Manager como para las propias VMs alojadas en la infraestructura.
 
