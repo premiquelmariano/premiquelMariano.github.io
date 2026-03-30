@@ -40,7 +40,8 @@ En este post vamos a ver cómo HPE VM Essentials implementa de forma nativa herr
 
 Antes de nada, os recomiento que le equeis un vistazo a [la documentación oficial tanto para hacer backups como los restores](https://support.hpe.com/hpesc/public/docDisplay?docId=sd00007322en_us&page=GUID-1E710344-0932-4A51-B605-18AEF716E46F.html)
 
-Empezamos por la parte más sencilla: proteger el propio Manager. La configuración de Morpheus se almacena en una base de datos MySQL, y el proceso de backup consiste básicamente en un dump de esa BBDD.
+Empezamos por la parte más sencilla: proteger el propio Manager. 
+La configuración de Morpheus se almacena en una base de datos MySQL, y el proceso de backup consiste básicamente en un dump de esa BBDD.
 
 Por defecto, si no tenemos ningún repositorio externo configurado, el sistema nos avisará desde el menú principal y los backups se guardarán en el sistema de ficheros local del Manager, en la ruta:
 `/var/opt/morpheus/bitcan/backup/backup.1`
@@ -57,28 +58,27 @@ El procedimiento de restore es relativamente sencillo. Básicamente consiste en 
 
 1. Descomprimir el backup
 El backup se descarga como un archivo ZIP. Lo descomprimimos:
-unzip backup.1.20251030121307.zip
-El fichero que nos interesa dentro del ZIP es el que se llama morpheus, que contiene el dump de la BBDD.
+`unzip backup.1.20251030121307.zip`
+El fichero que nos interesa dentro del ZIP es el que se llama `morpheus`, que contiene el dump de la BBDD.
+
+![vme-backups-03]({{ site.imagesposts2026 }}/03/vme-backups-03.png){: .mx-auto.d-block :}
 
 2. Parar el servicio de la UI
-morpheus-ctl stop morpheus-ui
+`morpheus-ctl stop morpheus-ui`
 
 3. Obtener la contraseña de la BBDD
 La contraseña del usuario de MySQL se puede obtener del fichero de configuración:
-cat /etc/morpheus/morpheus-secrets.json | grep morpheus_password
+`cat /etc/morpheus/morpheus-secrets.json | grep morpheus_password`
 
 4. Restaurar el dump
 Con la contraseña en mano, ejecutamos el restore:
-/opt/morpheus/embedded/mysql/bin/mysql -u morpheus -h 127.0.0.1 morpheus -p \
-  < /var/opt/morpheus/bitcan/backup/backup.1/morpheus
+`/opt/morpheus/embedded/mysql/bin/mysql -u morpheus -h 127.0.0.1 morpheus -p \
+  < /var/opt/morpheus/bitcan/backup/backup.1/morpheus`
 
 5. Arrancar de nuevo los servicios
-morpheus-ctl start morpheus-ui
+`morpheus-ctl start morpheus-ui`
 
 Y ya tendríamos nuestro Manager completamente operativo y funcional.
-
-
-![vme-backups-03]({{ site.imagesposts2026 }}/03/vme-backups-03.png){: .mx-auto.d-block :}
 
 ![vme-backups-04]({{ site.imagesposts2026 }}/03/vme-backups-04.png){: .mx-auto.d-block :}
 
