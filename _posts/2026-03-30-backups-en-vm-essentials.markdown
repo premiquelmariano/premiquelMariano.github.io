@@ -130,7 +130,7 @@ Seleccionamos la instancia concreta y le damos un nombre descriptivo al backup.
 ![vme-backups-12]({{ site.imagesposts2026 }}/03/vme-backups-12.png){: .mx-auto.d-block :}
 
 
-### Paso 3: Info (asignar al Job)
+### Paso 3: Asignar al Job
 En este último paso definimos el tipo de backup, el repositorio de almacenamiento (S3) y lo añadimos al Job que hemos definido previamente.
 ![vme-backups-13]({{ site.imagesposts2026 }}/03/vme-backups-13.png){: .mx-auto.d-block :}
 
@@ -142,9 +142,8 @@ Finalmente, para comprobar que lo hemos definido correctamente lo haremos desde 
 También desde este mismo menú de la instancia podremos ejecutar el backup sin esperar a la programación
 
 ![vme-backups-16]({{ site.imagesposts2026 }}/03/vme-backups-16.png){: .mx-auto.d-block :}
+
 ![vme-backups-17]({{ site.imagesposts2026 }}/03/vme-backups-17.png){: .mx-auto.d-block :}
-
-
 
 Nos vemos en el próximo post ;-)
 
