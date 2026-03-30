@@ -58,91 +58,89 @@ El procedimiento de restore es relativamente sencillo. Básicamente consiste en 
 
 1. Descomprimir el backup
 El backup se descarga como un archivo ZIP. Lo descomprimimos:
+
 `unzip backup.1.20251030121307.zip`
+
 El fichero que nos interesa dentro del ZIP es el que se llama `morpheus`, que contiene el dump de la BBDD.
 
 ![vme-backups-03]({{ site.imagesposts2026 }}/03/vme-backups-03.png){: .mx-auto.d-block :}
 
 2. Parar el servicio de la UI
+
 `morpheus-ctl stop morpheus-ui`
 
 3. Obtener la contraseña de la BBDD
 La contraseña del usuario de MySQL se puede obtener del fichero de configuración:
+
 `cat /etc/morpheus/morpheus-secrets.json | grep morpheus_password`
 
 4. Restaurar el dump
 Con la contraseña en mano, ejecutamos el restore:
+
 `/opt/morpheus/embedded/mysql/bin/mysql -u morpheus -h 127.0.0.1 morpheus -p \
   < /var/opt/morpheus/bitcan/backup/backup.1/morpheus`
 
 5. Arrancar de nuevo los servicios
+
 `morpheus-ctl start morpheus-ui`
 
 Y ya tendríamos nuestro Manager completamente operativo y funcional.
 
 ![vme-backups-04]({{ site.imagesposts2026 }}/03/vme-backups-04.png){: .mx-auto.d-block :}
 
+# Backups de VMs
+
+Así como el Manager puede guardar sus backups en el sistema de ficheros local, para las VMs es recomendable configurar un repositorio externo debido a su tamaño. En mi caso he creado un repositorio S3 para alojar estos backups.
+
+![vme-backups-05]({{ site.imagesposts2026 }}/03/vme-backups-05.png){: .mx-auto.d-block :}
+
+## Configurar la programación (Execute Scheduling)
+Lo primero que haremos para configurar un backup es definir una periodicidad. Para ello iremos al menú:
+
+Library » Automation » Execute Scheduling » Add
+
+En mi caso, crearé una programación de Lunes a Viernes a las 17:00.
+
+![vme-backups-06]({{ site.imagesposts2026 }}/03/vme-backups-06.png){: .mx-auto.d-block :}
+
+![vme-backups-07]({{ site.imagesposts2026 }}/03/vme-backups-07.png){: .mx-auto.d-block :}
+
+## Crear el Job de Backup
+Con la programación creada, el siguiente paso es crear el Job. Para ello vamos a:
+
+Backups » Add
+
+Le daremos un nombre, una retención en días y asignaremos la programación que acabamos de crear.
+
+![vme-backups-08]({{ site.imagesposts2026 }}/03/vme-backups-08.png){: .mx-auto.d-block :}
+
+![vme-backups-09]({{ site.imagesposts2026 }}/03/vme-backups-09.png){: .mx-auto.d-block :}
+
+## Crear la definición del Backup
+Con el Job creado, deberemos crear la definición del backup propiamente dicho. Para eso vamos de nuevo al menú Backups » Add y seguimos el asistente de tres pasos:
+
+### Paso 1: Select Source
+Seleccionaremos como origen una instancia de VME (HVM).
+![vme-backups-10]({{ site.imagesposts2026 }}/03/vme-backups-10.png){: .mx-auto.d-block :}
+
+![vme-backups-11]({{ site.imagesposts2026 }}/03/vme-backups-11.png){: .mx-auto.d-block :}
+
+### Paso 2: Name/Type
+Seleccionamos la instancia concreta y le damos un nombre descriptivo al backup.
+[Captura: Create Backup - Paso 2: selección de instancia y nombre del backup]
+### Paso 3: Info (asignar al Job)
+En este último paso definimos el tipo de backup, el repositorio de almacenamiento (S3) y lo añadimos al Job que hemos definido previamente.
+[Captura: Create Backup - Paso 3: tipo KVM Incremental, storage S3, asignación al Job]
+[Captura: Listado de backups - backup de VM visible con su estado]
+
+![vme-backups-12]({{ site.imagesposts2026 }}/03/vme-backups-12.png){: .mx-auto.d-block :}
+![vme-backups-13]({{ site.imagesposts2026 }}/03/vme-backups-13.png){: .mx-auto.d-block :}
+![vme-backups-14]({{ site.imagesposts2026 }}/03/vme-backups-14.png){: .mx-auto.d-block :}
+![vme-backups-15]({{ site.imagesposts2026 }}/03/vme-backups-15.png){: .mx-auto.d-block :}
+![vme-backups-16]({{ site.imagesposts2026 }}/03/vme-backups-16.png){: .mx-auto.d-block :}
+![vme-backups-17]({{ site.imagesposts2026 }}/03/vme-backups-17.png){: .mx-auto.d-block :}
 
 
-https://support.hpe.com/hpesc/public/docDisplay?docId=sd00007322en_us&page=GUID-1E710344-0932-4A51-B605-18AEF716E46F.html
-
-Antes de empezar, es altamente recomendable revisar el upgrade path entre versiones. Esto lo podremos encontrar en la documentación oficial del producto, [aquí](https://support.hpe.com/hpesc/public/docDisplay?docId=sd00007027en_us&page=GUID-B7279DC1-CAB8-4172-8874-29A0FE86C772.html)
-
-En mi caso, pretendo subir de la versión 8.0.10 a la 8.0.11
-
-![updates-01]({{ site.imagesposts2026 }}/02/updates-01.png){: .mx-auto.d-block :}
-
-Como comento, en mi laboratorio partiremos de la versión 8.0.10 que podremos validar en la parte inferior derecha.
-
-![updates-02]({{ site.imagesposts2026 }}/02/updates-02.png){: .mx-auto.d-block :}
-
-# Procedimiento actualización VME Manager
-
-Iniciaremos el procedimiento subiendo el binario que previamente hemos descargado del portal de licencias de HPE a nuestro manager. Por ejemplo con WinSCP
-
-![updates-03]({{ site.imagesposts2026 }}/02/updates-03.png){: .mx-auto.d-block :}
-
-![updates-04]({{ site.imagesposts2026 }}/02/updates-04.png){: .mx-auto.d-block :}
-
-Detendremos el servicio UI con el comando `sudo morpheus-ctl stop morpheus-ui`
-
-![updates-05]({{ site.imagesposts2026 }}/02/updates-05.png){: .mx-auto.d-block :}
-
-Lanzaremos la actualización con el comando `sudo dpkg -i HPE_VM_Essentials_vXXXXXXX....`
-
-![updates-06]({{ site.imagesposts2026 }}/02/updates-06.png){: .mx-auto.d-block :}
-
-Durante el procedimiento de actualización veremos de la versión que venimos y hacia a la que vamos y finalmente el proceso de actualización finalizará.
-
-![updates-07]({{ site.imagesposts2026 }}/02/updates-07.png){: .mx-auto.d-block :}
-
-Ya con el nuevo binario instalado, ejecutaremos la reconfiguración con el comando `sudo morpheus-ctl reconfigure`
-
-![updates-08]({{ site.imagesposts2026 }}/02/updates-08.png){: .mx-auto.d-block :}
-
-![updates-09]({{ site.imagesposts2026 }}/02/updates-09.png){: .mx-auto.d-block :}
-
-Podremos validar que todos los servicios han arrancado de nuevo con el comando `sudo morpheus-ctl status`
-
-![updates-10]({{ site.imagesposts2026 }}/02/updates-10.png){: .mx-auto.d-block :}
-
-Y podremos volver a validar la versión final en la parte inferior derecha
-
-![updates-11]({{ site.imagesposts2026 }}/02/updates-11.png){: .mx-auto.d-block :}
-
-# Actualización agentes HVM
-
-Tras la actualización del Manager, nos quedará actualizar los nodos HVM.
-
-Desde el menú de Infrastructure > Compute > node veremos que aparece una notificación que nos recomienda actualizar.
-
-Es tan fácil como iniciar la actualización de los agentes desde el botón de Actions > Upgrade Agent
-
-![updates-12]({{ site.imagesposts2026 }}/02/updates-12.png){: .mx-auto.d-block :}
-
-![updates-13]({{ site.imagesposts2026 }}/02/updates-13.png){: .mx-auto.d-block :}
-
-Como podeis ver, el proceso es relativamente sencillo y tardaremos pocos minutos en actualizar nuestro entorno de HPE VM Essentials
 
 Nos vemos en el próximo post ;-)
 
