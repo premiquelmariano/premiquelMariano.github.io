@@ -16,20 +16,8 @@ tag:
 - morpheus
 - ha
 ---
-
-![vme-backups-01]({{ site.imagesposts2026 }}/04/ha-01.png){: .mx-auto.d-block :}
-![vme-backups-02]({{ site.imagesposts2026 }}/04/ha-02.png){: .mx-auto.d-block :}
-![vme-backups-03]({{ site.imagesposts2026 }}/04/ha-03.png){: .mx-auto.d-block :}
-![vme-backups-04]({{ site.imagesposts2026 }}/04/ha-04.png){: .mx-auto.d-block :}
-![vme-backups-05]({{ site.imagesposts2026 }}/04/ha-05.png){: .mx-auto.d-block :}
-![vme-backups-06]({{ site.imagesposts2026 }}/04/ha-06.png){: .mx-auto.d-block :}
-![vme-backups-07]({{ site.imagesposts2026 }}/04/ha-07.png){: .mx-auto.d-block :}
-![vme-backups-08]({{ site.imagesposts2026 }}/04/ha-08.png){: .mx-auto.d-block :}
-
-
-Seguimos avanzando con la serie de posts sobre HPE VM Essentials, y es que, una parte importante al desplegar nuestras infraestructuras virtuales es contemplar los mecanismos de protección y copia de seguridad que vamos a implementar para dar continuidad a nuestros servicios.
-
-En este post vamos a ver cómo HPE VM Essentials implementa de forma nativa herramientas de backup tanto para el VME Manager como para las propias VMs alojadas en la infraestructura.
+ 
+Vamos a ver en el post de hoy como HPE VM Essentials dispone nativamente de un mecanismo de alta disponibilidad o HA para poder dar alta resilencia a nuestros servicios en caso de una falla hardware en alguno de los nodos.
 
 <details markdown="1">
 <summary>VER TODA LA SERIE DE POSTS</summary>
@@ -40,120 +28,45 @@ En este post vamos a ver cómo HPE VM Essentials implementa de forma nativa herr
 - [Parte 5 - Creación cluster Ceph](https://miquelmariano.github.io/cluster-ceph/)
 - [Parte 6 - Desplegar nuestra primera VM](https://miquelmariano.github.io/primera-vm-en-vmessentials/)
 - [Parte 7 - Backups](https://miquelmariano.github.io/backups-en-vm-essentials/)
-- [Parte 8 - Pruebas de HA]
+- [Parte 8 - Pruebas de HA](https://miquelmariano.github.io/ha-en-vm-essentials/)
 - [Parte 9 - Migración de VMs desde vSphere]
 - [Parte 10 - Comandos útiles]
 - [Parte 11 - Gestión de actualizaciones en HPE VM Essentials](https://miquelmariano.github.io/actualizaciones-vme-manager-y-nodos-hvm)
 </details>
 
-# Backup de VME manager
+Antes de nada, para que el mecanismo de HA funcione, es necesario habilitar heartbeat en nuestros datastores. De est manera, todos los miembros del cluster se "comunican" a través de este datastore para determinar si estan o no OK
 
-Antes de nada, os recomiento que le equeis un vistazo a [la documentación oficial tanto para hacer backups como los restores](https://support.hpe.com/hpesc/public/docDisplay?docId=sd00007322en_us&page=GUID-1E710344-0932-4A51-B605-18AEF716E46F.html)
+![vme-backups-07]({{ site.imagesposts2026 }}/04/ha-07.png){: .mx-auto.d-block :}
 
-Empezamos por la parte más sencilla: proteger el propio Manager. 
+Arrancamos las pruebas validando inicialmente en que nodo tenemos nuestra VM. Recordar que para mover VMs entre los diferentes nodos usaremos la acción de "Manage Placement"
 
-La configuración de Morpheus se almacena en una base de datos MySQL, y el proceso de backup consiste básicamente en un dump de esa BBDD.
+En mi caso, tenemos la VM corriendo sobre el nodo-2
 
-Por defecto, si no tenemos ningún repositorio externo configurado, el sistema nos avisará desde el menú principal y los backups se guardarán en el sistema de ficheros local del Manager, en la ruta:
+![vme-backups-01]({{ site.imagesposts2026 }}/04/ha-01.png){: .mx-auto.d-block :}
 
-`/var/opt/morpheus/bitcan/backup/backup.1`
+También es necesario que la VM esté alojada en un repositorio compartido. En nuestro caso, está sobre un Datastore CEPH
 
-![vme-backups-01]({{ site.imagesposts2026 }}/03/vme-backups-01.png){: .mx-auto.d-block :}
+![vme-backups-02]({{ site.imagesposts2026 }}/04/ha-02.png){: .mx-auto.d-block :}
 
-De forma nativa, existe un job llamado "Morpheus Appliance" que es el encargado de proteger toda la configuración del Manager. Este job se ejecuta de forma automática y genera el dump de MySQL.
+Validamos que la VM está encendida, está accesible y contesta a ping.
 
-![vme-backups-02]({{ site.imagesposts2026 }}/03/vme-backups-02.png){: .mx-auto.d-block :}
+![vme-backups-03]({{ site.imagesposts2026 }}/04/ha-03.png){: .mx-auto.d-block :}
 
-# Restauración de VME manager
+Como el nodo-2 en realidad es una VM vSphere, nos conectamos al vCenter y apagamos directamente la VM
 
-El procedimiento de restore es relativamente sencillo. Básicamente consiste en restaurar el dump de la BBDD previamente creado y reiniciar los servicios. Vamos a ello…
+![vme-backups-04]({{ site.imagesposts2026 }}/04/ha-04.png){: .mx-auto.d-block :}
 
-## Descomprimir el backup
-El backup se descarga como un archivo ZIP. Lo descomprimimos:
+La VM se cae y deja de responder
 
-`unzip backup.1.20251030121307.zip`
+![vme-backups-05]({{ site.imagesposts2026 }}/04/ha-05.png){: .mx-auto.d-block :}
 
-El fichero que nos interesa dentro del ZIP es el que se llama `morpheus`, que contiene el dump de la BBDD.
+El cluster detecta la caída
 
-![vme-backups-03]({{ site.imagesposts2026 }}/03/vme-backups-03.png){: .mx-auto.d-block :}
+![vme-backups-06]({{ site.imagesposts2026 }}/04/ha-06.png){: .mx-auto.d-block :}
 
-## Parar el servicio de la UI
+Finalmente, vemos como automáticamente la VM arranca en otro nodo del cluster y nos vuelve a contestar a ping
 
-`morpheus-ctl stop morpheus-ui`
-
-## Obtener la contraseña de la BBDD
-La contraseña del usuario de MySQL se puede obtener del fichero de configuración:
-
-`cat /etc/morpheus/morpheus-secrets.json | grep morpheus_password`
-
-## Restaurar el dump
-Con la contraseña en mano, ejecutamos el restore:
-
-`/opt/morpheus/embedded/mysql/bin/mysql -u morpheus -h 127.0.0.1 morpheus -p \
-  < /var/opt/morpheus/bitcan/backup/backup.1/morpheus`
-
-## Arrancar de nuevo los servicios
-
-`morpheus-ctl start morpheus-ui`
-
-Y ya tendríamos nuestro Manager completamente operativo y funcional.
-
-![vme-backups-04]({{ site.imagesposts2026 }}/03/vme-backups-04.png){: .mx-auto.d-block :}
-
-# Backups de VMs
-
-Así como el Manager puede guardar sus backups en el sistema de ficheros local, para las VMs es recomendable configurar un repositorio externo debido a su tamaño. En mi caso he creado un repositorio S3 para alojar estos backups.
-
-![vme-backups-05]({{ site.imagesposts2026 }}/03/vme-backups-05.png){: .mx-auto.d-block :}
-
-## Configurar la programación
-Lo primero que haremos para configurar un backup es definir una periodicidad. Para ello iremos al menú: Library » Automation » Execute Scheduling » Add
-
-En mi caso, crearé una programación de Lunes a Viernes a las 17:00.
-
-![vme-backups-06]({{ site.imagesposts2026 }}/03/vme-backups-06.png){: .mx-auto.d-block :}
-
-![vme-backups-07]({{ site.imagesposts2026 }}/03/vme-backups-07.png){: .mx-auto.d-block :}
-
-## Crear el Job de Backup
-Con la programación creada, el siguiente paso es crear el Job. Para ello vamos a: Backups » Add
-
-Le daremos un nombre, una retención en días y asignaremos la programación que acabamos de crear.
-
-![vme-backups-08]({{ site.imagesposts2026 }}/03/vme-backups-08.png){: .mx-auto.d-block :}
-
-![vme-backups-09]({{ site.imagesposts2026 }}/03/vme-backups-09.png){: .mx-auto.d-block :}
-
-![vme-backups-091]({{ site.imagesposts2026 }}/03/vme-backups-091.png){: .mx-auto.d-block :}
-
-## Crear la definición del Backup
-Con el Job creado, deberemos crear la definición del backup propiamente dicho. Para eso vamos de nuevo al menú Backups » Add y seguimos el asistente de tres pasos:
-
-### Paso 1: Select Source
-Seleccionaremos como origen una instancia de VME (HVM).
-![vme-backups-10]({{ site.imagesposts2026 }}/03/vme-backups-10.png){: .mx-auto.d-block :}
-
-![vme-backups-11]({{ site.imagesposts2026 }}/03/vme-backups-11.png){: .mx-auto.d-block :}
-
-### Paso 2: Name/Type
-Seleccionamos la instancia concreta y le damos un nombre descriptivo al backup.
-![vme-backups-12]({{ site.imagesposts2026 }}/03/vme-backups-12.png){: .mx-auto.d-block :}
-
-
-### Paso 3: Asignar al Job
-En este último paso definimos el tipo de backup, el repositorio de almacenamiento (S3) y lo añadimos al Job que hemos definido previamente.
-![vme-backups-13]({{ site.imagesposts2026 }}/03/vme-backups-13.png){: .mx-auto.d-block :}
-
-![vme-backups-14]({{ site.imagesposts2026 }}/03/vme-backups-14.png){: .mx-auto.d-block :}
-
-Finalmente, para comprobar que lo hemos definido correctamente lo haremos desde la pestaña Backups de la propia instancia
-![vme-backups-15]({{ site.imagesposts2026 }}/03/vme-backups-15.png){: .mx-auto.d-block :}
-
-También desde este mismo menú de la instancia podremos ejecutar el backup sin esperar a la programación
-
-![vme-backups-16]({{ site.imagesposts2026 }}/03/vme-backups-16.png){: .mx-auto.d-block :}
-
-![vme-backups-17]({{ site.imagesposts2026 }}/03/vme-backups-17.png){: .mx-auto.d-block :}
+![vme-backups-08]({{ site.imagesposts2026 }}/04/ha-08.png){: .mx-auto.d-block :}
 
 Nos vemos en el próximo post ;-)
 
