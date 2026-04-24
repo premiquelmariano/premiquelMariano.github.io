@@ -34,7 +34,7 @@ Vamos a ver en el post de hoy como HPE VM Essentials dispone nativamente de un m
 - [Parte 11 - Gestión de actualizaciones en HPE VM Essentials](https://miquelmariano.github.io/actualizaciones-vme-manager-y-nodos-hvm)
 </details>
 
-Antes de nada, para que el mecanismo de HA funcione, es necesario habilitar heartbeat en nuestros datastores. De est manera, todos los miembros del cluster se "comunican" a través de este datastore para determinar si estan o no OK
+Antes de nada, para que el mecanismo de HA funcione, es necesario habilitar heartbeat en nuestros datastores a nivel de clúster. De esta manera, todos los miembros del cluster se "comunican" a través de este datastore para determinar si estan o no OK
 
 ![vme-backups-07]({{ site.imagesposts2026 }}/04/ha-07.png){: .mx-auto.d-block :}
 
