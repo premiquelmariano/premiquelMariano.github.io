@@ -1,11 +1,11 @@
 ---
-title: Backups nativos en VM Essentials
-subtitle: Modulo integrado de protección
-date: '2026-03-30 00:00:00'
+title: Pruebas de HA en VM Essentials
+subtitle: Alta disponibilidad nativa
+date: '2026-04-24 00:00:00'
 layout: post
-thumbnail-img: https://miquelmariano.github.io/assets/images/posts/2026/03/vme-backups-01.png
-cover-img: https://miquelmariano.github.io/assets/images/fondos/05.jpg
-share-img: https://miquelmariano.github.io/assets/images/posts/2026/03/vme-backups-01.png
+thumbnail-img: https://miquelmariano.github.io/assets/images/posts/2026/04/ha-01.png
+cover-img: https://miquelmariano.github.io/assets/images/fondos/06.jpg
+share-img: https://miquelmariano.github.io/assets/images/posts/2026/04/ha-01.png
 published: true
 author: Miquel Mariano
 tag:
@@ -16,6 +16,16 @@ tag:
 - morpheus
 - ha
 ---
+
+![vme-backups-01]({{ site.imagesposts2026 }}/04/ha-01.png){: .mx-auto.d-block :}
+![vme-backups-02]({{ site.imagesposts2026 }}/04/ha-02.png){: .mx-auto.d-block :}
+![vme-backups-03]({{ site.imagesposts2026 }}/04/ha-03.png){: .mx-auto.d-block :}
+![vme-backups-04]({{ site.imagesposts2026 }}/04/ha-04.png){: .mx-auto.d-block :}
+![vme-backups-05]({{ site.imagesposts2026 }}/04/ha-05.png){: .mx-auto.d-block :}
+![vme-backups-06]({{ site.imagesposts2026 }}/04/ha-06.png){: .mx-auto.d-block :}
+![vme-backups-07]({{ site.imagesposts2026 }}/04/ha-07.png){: .mx-auto.d-block :}
+![vme-backups-08]({{ site.imagesposts2026 }}/04/ha-08.png){: .mx-auto.d-block :}
+
 
 Seguimos avanzando con la serie de posts sobre HPE VM Essentials, y es que, una parte importante al desplegar nuestras infraestructuras virtuales es contemplar los mecanismos de protección y copia de seguridad que vamos a implementar para dar continuidad a nuestros servicios.
 
