@@ -1,6 +1,6 @@
 ---
 title: Migración de VMs Windows desde vSphere a HPE VM Essentials
-subtitle: Parte 9 - Migración nativa con Migration Plans
+subtitle: Migración nativa con planes de migración de VME
 date: '2026-06-08 00:00:00'
 layout: post
 thumbnail-img: https://miquelmariano.github.io/assets/images/posts/2026/04/ha-01.png
@@ -53,7 +53,7 @@ La documentación oficial de HPE para este proceso la encontraréis [aquí:](htt
 
 # FASE 1 — Inyección de drivers VirtIO
 
-El corazón del problema al migrar de VMware a KVM es que el hipervisor destino necesita sus propios drivers de almacenamiento (**VirtIO**). Sin ellos, Windows no será capaz de acceder al disco en el nuevo entorno y simplemente no arrancará.
+El problema principal al migrar de VMware a KVM es que el hipervisor destino necesita sus propios drivers de almacenamiento (**VirtIO**). Sin ellos, Windows no será capaz de acceder al disco en el nuevo entorno y simplemente no arrancará.
 
 Lo que haremos es inyectar estos drivers directamente en la imagen del sistema operativo **antes de apagar la VM para migrarla**.
 
@@ -61,7 +61,7 @@ Lo que haremos es inyectar estos drivers directamente en la imagen del sistema o
 
 La última versión la encontraréis [aquí:](https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.285-1/)
 
-Subirla a vCenter y montarla como CD-ROM en la VM.
+Nos descargaremos el último fichero .iso y lo subiremos a un datastore de nuestro entorno vSphere para montarla como CD-ROM en la VM.
 
 ## Arrancar en Windows Recovery Environment (WinRE)
 
@@ -106,11 +106,13 @@ De vuelta en diskpart, localizar la letra del CD-ROM:
 list volume
 ```
 
-Anotar la letra asignada al CD-ROM (en el ejemplo: `D:`). Salir de diskpart con `exit` y cargar el driver PVSCSI para que Windows pueda ver los discos:
+Anotar la letra asignada al CD-ROM (en el ejemplo: `D:`).
+ Salir de diskpart con `exit` y cargar el driver PVSCSI para que Windows pueda ver los discos:
 
 ```
 drvload "D:\Program Files\VMware\VMware Tools\Drivers\pvscsi\Win10\amd64\pvscsi.inf"
 ```
+
 
 > ⚠️ Ajustar la ruta si el CD-ROM tiene otra letra o si hay una versión más reciente en el ISO.
 
@@ -139,6 +141,7 @@ dism /image:C:\ /add-driver:D:\vioscsi\2k22\amd64\vioscsi.inf
 
 > ⚠️ Ajustar `2k22` según la versión del SO (`2k19`, `2k16`, etc.) y verificar las letras de unidad en cada caso.
 
+
 Si todo ha ido bien, DISM confirmará con un mensaje de instalación exitosa para cada driver. Cerrar la CMD y pulsar **Continue** para arrancar Windows normalmente.
 
 ![native-migration-06]({{ site.imagesposts2026 }}/06/native-migration-06.png){: .mx-auto.d-block :}
@@ -147,14 +150,14 @@ Si todo ha ido bien, DISM confirmará con un mensaje de instalación exitosa par
 
 # FASE 2 — Preparación del SO
 
-Con Windows arrancado normalmente y el ISO de VirtIO todavía montado, instalar los drivers en el SO ejecutando desde la raíz del ISO:
+Con Windows arrancado normalmente y el ISO de VirtIO todavía montado, instalar los drivers en el SO ejecutando desde la raíz de la ISO:
 
 1. `virtio-win-gt-x64.msi`
 2. `virtio-win-guest-tools.exe`
 
 Mantener todas las opciones por defecto durante la instalación.
 
-Una vez completada la instalación, desmontar todos los ISOs de la VM (desde Windows con "Eject" o desde vCenter poniendo el CD-ROM como "Client Device").
+Una vez completada la instalación, desmontar todos las ISOs de la VM (desde Windows con "Eject" o desde vCenter poniendo el CD-ROM como "Client Device").
 
 ## Guardar la configuración de red
 
@@ -168,7 +171,9 @@ Para solucionar esto de forma controlada, ejecutar el siguiente script en PowerS
 
 El script guardará la IP, máscara, gateway y DNS en `C:\migration-netcfg.json` para restaurarlos después de la migración.
 
-Podéis descargar el script [aquí](https://gist.github.com/miquelmariano/manage-networkcfg).
+![native-migration-07]({{ site.imagesposts2026 }}/06/native-migration-07.png){: .mx-auto.d-block :}
+
+Podéis descargar el script [aquí](https://miquelmariano.github.io/assets/images/Manage-NetworkConfig.ps1).
 
 ---
 
