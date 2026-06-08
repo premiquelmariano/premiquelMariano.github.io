@@ -1,5 +1,5 @@
 ---
-title: Migración de VMs desde vSphere a HPE VM Essentials
+title: Migración de VMs Windows desde vSphere a HPE VM Essentials
 subtitle: Parte 9 - Migración nativa con Migration Plans
 date: '2026-06-08 00:00:00'
 layout: post
@@ -73,6 +73,8 @@ Subirla a vCenter (datastore o Content Library) y montarla como CD-ROM en la VM.
 Necesitamos acceder a la CMD en modo recovery para poder inyectar los drivers offline. Hay dos formas de llegar aquí:
 
 **Opción A** — Reiniciar con la tecla `Shift` pulsada en el menú de inicio.
+
+![native-migration-01]({{ site.imagesposts2026 }}/06/native-migration-01.png){: .mx-auto.d-block :}
 
 **Opción B** — Desde `Configuración > Recuperación > Reiniciar ahora`.
 

@@ -1,5 +1,5 @@
 ---
-title: Migración de VMs desde vSphere con Veeam
+title: Migración de VMs Windows desde vSphere con Veeam
 subtitle: Parte 9.1 - Full VM Restore to HPE Morpheus VM Essentials
 date: '2026-06-08 00:00:00'
 layout: post
