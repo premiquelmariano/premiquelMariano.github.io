@@ -23,8 +23,8 @@ Como veremos, el proceso requiere una preparación previa en origen que es impre
 
 > ⚠️ **OJO**: El trabajo de migración apaga automáticamente la VM origen. Tenerlo en cuenta a la hora de planificar la ventana de mantenimiento.
 
-**VER TODA LA SERIE DE POSTS**
-
+<details markdown="1">
+<summary>VER TODA LA SERIE DE POSTS</summary>
 - [Parte 1 - Introducción a HPE Morpheus VM Essentials software](https://miquelmariano.github.io/introduccion-hpe-morpheus-vm-essentials-software/)
 - [Parte 2 - Instalación VM Essentials software](https://miquelmariano.github.io/instalacion-nodo-vme/)
 - [Parte 3 - Instalación VME Manager](https://miquelmariano.github.io/instalacion-manager/)
@@ -37,8 +37,7 @@ Como veremos, el proceso requiere una preparación previa en origen que es impre
 - [Parte 9.1 - Migración con Veeam](https://miquelmariano.github.io/migracion-vsphere-vme-veeam/)
 - [Parte 10 - Comandos útiles]
 - [Parte 11 - Gestión de actualizaciones en HPE VM Essentials](https://miquelmariano.github.io/actualizaciones-vme-manager-y-nodos-hvm)
-
----
+</details>
 
 # Requisitos previos
 
@@ -50,10 +49,7 @@ Antes de comenzar, verificar que la VM cumple estas condiciones:
 - **TPM deshabilitado**
 - Acceso a la **partición de recuperación** de Windows
 
-La documentación oficial de HPE para este proceso la encontraréis aquí:
-[https://support.hpe.com/hpesc/public/docDisplay?docId=sd00007735en_us](https://support.hpe.com/hpesc/public/docDisplay?docId=sd00007735en_us&page=GUID-D3E08022-96A5-4BD8-9DDF-67D942A361C0.html)
-
----
+La documentación oficial de HPE para este proceso la encontraréis [aquí:](https://support.hpe.com/hpesc/public/docDisplay?docId=sd00007735en_us&page=GUID-D3E08022-96A5-4BD8-9DDF-67D942A361C0.html)
 
 # FASE 1 — Inyección de drivers VirtIO
 
@@ -82,8 +78,8 @@ Necesitamos acceder a la CMD en modo recovery para poder inyectar los drivers of
 Una vez dentro del menú de recuperación: `Troubleshoot → Advanced Options → Command Prompt`
 
 ![native-migration-04]({{ site.imagesposts2026 }}/06/native-migration-04.png){: .mx-auto.d-block :}
-![native-migration-05]({{ site.imagesposts2026 }}/06/native-migration-05.png){: .mx-auto.d-block :}
 
+![native-migration-05]({{ site.imagesposts2026 }}/06/native-migration-05.png){: .mx-auto.d-block :}
 
 ## Verificar visibilidad de discos
 
