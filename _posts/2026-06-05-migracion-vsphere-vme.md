@@ -78,7 +78,13 @@ Necesitamos acceder a la CMD en modo recovery para poder inyectar los drivers of
 
 **Opción B** — Desde `Configuración > Recuperación > Reiniciar ahora`.
 
+![native-migration-02]({{ site.imagesposts2026 }}/06/native-migration-02.png){: .mx-auto.d-block :}
+
 Una vez dentro del menú de recuperación: `Troubleshoot → Advanced Options → Command Prompt`
+
+![native-migration-04]({{ site.imagesposts2026 }}/06/native-migration-04.png){: .mx-auto.d-block :}
+![native-migration-05]({{ site.imagesposts2026 }}/06/native-migration-05.png){: .mx-auto.d-block :}
+
 
 ## Verificar visibilidad de discos
 
