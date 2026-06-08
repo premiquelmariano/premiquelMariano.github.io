@@ -218,6 +218,17 @@ El asistente nos guiará por los siguientes pasos:
 
 Una vez configurado, ejecutar el plan con **Start Plan**. Durante la ejecución podemos monitorizar el progreso desde la misma pantalla. Al finalizar, la VM original en vSphere quedará apagada y la nueva instancia estará disponible en HPE VME.
 
+![native-migration-17]({{ site.imagesposts2026 }}/06/native-migration-17.png){: .mx-auto.d-block :}
+![native-migration-18]({{ site.imagesposts2026 }}/06/native-migration-18.png){: .mx-auto.d-block :}
+![native-migration-19]({{ site.imagesposts2026 }}/06/native-migration-19.png){: .mx-auto.d-block :}
+![native-migration-20]({{ site.imagesposts2026 }}/06/native-migration-20.png){: .mx-auto.d-block :}
+![native-migration-21]({{ site.imagesposts2026 }}/06/native-migration-21.png){: .mx-auto.d-block :}
+![native-migration-22]({{ site.imagesposts2026 }}/06/native-migration-22.png){: .mx-auto.d-block :}
+![native-migration-23]({{ site.imagesposts2026 }}/06/native-migration-23.png){: .mx-auto.d-block :}
+![native-migration-24]({{ site.imagesposts2026 }}/06/native-migration-24.png){: .mx-auto.d-block :}
+![native-migration-25]({{ site.imagesposts2026 }}/06/native-migration-25.png){: .mx-auto.d-block :}
+![native-migration-26]({{ site.imagesposts2026 }}/06/native-migration-26.png){: .mx-auto.d-block :}
+
 ---
 
 # FASE 5 — Post-migración
@@ -232,7 +243,7 @@ Con la VM ya arrancada en HPE VME, abrir PowerShell como administrador y ejecuta
 
 El script detectará automáticamente el adaptador VirtIO, eliminará cualquier configuración residual y aplicará la IP original guardada antes de la migración.
 
-![native-migration-15]({{ site.imagesposts2026 }}/06/native-migration-15.png){: .mx-auto.d-block :}
+![native-migration-16]({{ site.imagesposts2026 }}/06/native-migration-16.png){: .mx-auto.d-block :}
 
 ## VMware Tools
 
