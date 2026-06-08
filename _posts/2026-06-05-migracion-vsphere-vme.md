@@ -63,10 +63,9 @@ Lo que haremos es inyectar estos drivers directamente en la imagen del sistema o
 
 ## Descargar el ISO de VirtIO
 
-La última versión la encontraréis aquí:
-[https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.285-1/](https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.285-1/)
+La última versión la encontraréis [aquí:](https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.285-1/)
 
-Subirla a vCenter (datastore o Content Library) y montarla como CD-ROM en la VM.
+Subirla a vCenter y montarla como CD-ROM en la VM.
 
 ## Arrancar en Windows Recovery Environment (WinRE)
 
