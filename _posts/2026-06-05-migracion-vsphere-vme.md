@@ -192,19 +192,18 @@ Rellenar los datos de conexión:
 
 Marcar la opción **Inventory Existing Instances** para que VME importe el inventario existente. Una vez completada la sincronización, las VMs del entorno vSphere estarán disponibles en la plataforma.
 
+![native-migration-08]({{ site.imagesposts2026 }}/06/native-migration-08.png){: .mx-auto.d-block :}
+![native-migration-09]({{ site.imagesposts2026 }}/06/native-migration-09.png){: .mx-auto.d-block :}
+![native-migration-10]({{ site.imagesposts2026 }}/06/native-migration-10.png){: .mx-auto.d-block :}
+![native-migration-11]({{ site.imagesposts2026 }}/06/native-migration-11.png){: .mx-auto.d-block :}
+![native-migration-12]({{ site.imagesposts2026 }}/06/native-migration-12.png){: .mx-auto.d-block :}
+![native-migration-13]({{ site.imagesposts2026 }}/06/native-migration-13.png){: .mx-auto.d-block :}
+![native-migration-14]({{ site.imagesposts2026 }}/06/native-migration-14.png){: .mx-auto.d-block :}
+![native-migration-15]({{ site.imagesposts2026 }}/06/native-migration-15.png){: .mx-auto.d-block :}
+
 ---
 
-# FASE 4 — Apagado controlado de la VM
-
-Antes de apagar, revisar la configuración del Cloud en HPE VME:
-`Infrastructure → Clouds → editar el Cloud → opción "AUTOMATICALLY POWER ON VMS"`
-
-- Si está **marcada**: apagar la VM desde la interfaz de producto, o bien desmarcar temporalmente la opción y apagar desde vCenter/guest. Tener en cuenta que este cambio afecta a **todas** las VMs del Cloud.
-- Si **no está marcada**: apagar normalmente desde vCenter o desde el propio sistema operativo.
-
----
-
-# FASE 5 — Crear y ejecutar el Migration Plan
+# FASE 4 — Crear y ejecutar el Migration Plan
 
 Con la VM apagada y el Cloud de vSphere integrado en VME, es el momento de crear el plan de migración.
 
@@ -221,7 +220,7 @@ Una vez configurado, ejecutar el plan con **Start Plan**. Durante la ejecución 
 
 ---
 
-# FASE 6 — Post-migración
+# FASE 5 — Post-migración
 
 ## Restaurar la configuración de red
 
@@ -232,6 +231,8 @@ Con la VM ya arrancada en HPE VME, abrir PowerShell como administrador y ejecuta
 ```
 
 El script detectará automáticamente el adaptador VirtIO, eliminará cualquier configuración residual y aplicará la IP original guardada antes de la migración.
+
+![native-migration-15]({{ site.imagesposts2026 }}/06/native-migration-15.png){: .mx-auto.d-block :}
 
 ## VMware Tools
 
