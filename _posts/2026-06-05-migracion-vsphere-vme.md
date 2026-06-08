@@ -150,7 +150,7 @@ Si todo ha ido bien, DISM confirmará con un mensaje de instalación exitosa par
 
 # FASE 2 — Preparación del SO
 
-Con Windows arrancado normalmente y el ISO de VirtIO todavía montado, instalar los drivers en el SO ejecutando desde la raíz de la ISO:
+Con Windows arrancado normalmente y la ISO de VirtIO todavía montado, instalar los drivers en el SO ejecutando desde la raíz de la ISO:
 
 1. `virtio-win-gt-x64.msi`
 2. `virtio-win-guest-tools.exe`
