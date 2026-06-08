@@ -95,6 +95,7 @@ list disk
 ```
 
 Pueden ocurrir dos situaciones:
+
 - **El disco aparece listado** → saltar directamente al apartado "Inyectar los drivers"
 - **No aparece ningún disco** → continuar con el siguiente apartado
 
@@ -143,6 +144,8 @@ dism /image:C:\ /add-driver:D:\vioscsi\2k22\amd64\vioscsi.inf
 > ⚠️ Ajustar `2k22` según la versión del SO (`2k19`, `2k16`, etc.) y verificar las letras de unidad en cada caso.
 
 Si todo ha ido bien, DISM confirmará con un mensaje de instalación exitosa para cada driver. Cerrar la CMD y pulsar **Continue** para arrancar Windows normalmente.
+
+![native-migration-06]({{ site.imagesposts2026 }}/06/native-migration-06.png){: .mx-auto.d-block :}
 
 ---
 
