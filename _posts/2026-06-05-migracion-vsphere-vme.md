@@ -216,7 +216,9 @@ El asistente nos guiará por los siguientes pasos:
 3. **Map Resources**: mapear el cluster destino, el datastore y la red en HPE VME
 4. **Review**: revisión final antes de ejecutar
 
-Una vez configurado, ejecutar el plan con **Start Plan**. Durante la ejecución podemos monitorizar el progreso desde la misma pantalla. Al finalizar, la VM original en vSphere quedará apagada y la nueva instancia estará disponible en HPE VME.
+Una vez configurado, ejecutar el plan con **Start Plan**. 
+Durante la ejecución podemos monitorizar el progreso desde la misma pantalla. 
+Al finalizar, la VM original en vSphere quedará apagada y la nueva instancia estará disponible en HPE VME.
 
 ![native-migration-17]({{ site.imagesposts2026 }}/06/native-migration-17.png){: .mx-auto.d-block :}
 ![native-migration-18]({{ site.imagesposts2026 }}/06/native-migration-18.png){: .mx-auto.d-block :}
