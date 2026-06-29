@@ -3,9 +3,9 @@ title: Backup de VMs en HPE VM Essentials con Veeam v13
 subtitle: Parte 7.1 - Veeam Plug-in for HPE Morpheus VM Essentials
 date: '2026-06-29 00:00:00'
 layout: post
-thumbnail-img: https://miquelmariano.github.io/assets/images/posts/2026/04/ha-01.png
-cover-img: https://miquelmariano.github.io/assets/images/fondos/08.jpg
-share-img: https://miquelmariano.github.io/assets/images/posts/2026/04/ha-01.png
+thumbnail-img: https://miquelmariano.github.io/assets/images/posts/2026/04/veeams13-vme-00.jpg
+cover-img: https://miquelmariano.github.io/assets/images/fondos/09.jpg
+share-img: https://miquelmariano.github.io/assets/images/posts/2026/04/veeams13-vme-00.jpg
 published: true
 author: Miquel Mariano
 tag:
