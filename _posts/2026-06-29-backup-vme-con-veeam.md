@@ -63,6 +63,17 @@ Antes de empezar, conviene tener en cuenta los requisitos de plataforma. Según 
 
 # Instalación del plugin
 
+El plugin está disponible tanto para instalaciones Windows como para el nuevo virtual appliance Linux de Veeam v13. En mi caso lo he probado sobre el appliance Linux.
+
+Lo primero es descargar el binario ```.bndl (para Linux) o el .exe (para Windows) desde el portal de descargas de Veeam, en la sección **Additional Downloads** de la página de My Products.
+Una vez descargado, la instalación es muy directa:
+
+![veeam13-vme-01]({{ site.imagesposts2026 }}/06/veeams13-vme-01.png){: .mx-auto.d-block :}
+![veeam13-vme-02]({{ site.imagesposts2026 }}/06/veeams13-vme-02.png){: .mx-auto.d-block :}
+![veeam13-vme-03]({{ site.imagesposts2026 }}/06/veeams13-vme-03.png){: .mx-auto.d-block :}
+![veeam13-vme-04]({{ site.imagesposts2026 }}/06/veeams13-vme-04.png){: .mx-auto.d-block :}
+![veeam13-vme-05]({{ site.imagesposts2026 }}/06/veeams13-vme-05.png){: .mx-auto.d-block :}
+![veeam13-vme-06]({{ site.imagesposts2026 }}/06/veeams13-vme-06.png){: .mx-auto.d-block :}
 
 
 
