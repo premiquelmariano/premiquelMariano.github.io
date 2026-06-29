@@ -18,6 +18,18 @@ tag:
 - veeam
 ---
 
+Como muchos ya sabréis, [en el post de hace unas semanas vimos cómo desplegar el nuevo virtual appliance de Veeam Backup & Replication v13](https://miquelmariano.github.io/despliegue-veeam-v13-virtual-appliance-ova/). Hoy damos un paso más y vemos cómo proteger nuestras máquinas virtuales que corren sobre HPE VM Essentials (VME), gracias al nuevo Veeam Plug-in for HPE Morpheus VM Essentials.
+Este plugin lleva un tiempo en beta y he tenido la suerte de probarlo en mi laboratorio. Ahora que ya está en producción, es el momento de contaros cómo funciona.
+
+
+
+
+
+
+
+
+
+
 En el post anterior vimos cómo migrar VMs desde vSphere utilizando la herramienta nativa de Migration Plans que incluye HPE VME. En esta entrega veremos una alternativa igual de válida y que en muchos entornos ya está disponible: **migrar usando Veeam Backup & Replication**.
 
 La idea es aprovechar Veeam como vehículo de transporte. En lugar de usar el migration tool nativo, realizamos un backup de la VM en origen y la restauramos directamente sobre HPE VME mediante la opción **Full VM Restore to HPE Morpheus VM Essentials**. El resultado es el mismo, pero el proceso nos da más control y la posibilidad de partir de un punto de restauración limpio y consistente.
