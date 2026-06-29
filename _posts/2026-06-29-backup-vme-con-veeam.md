@@ -104,10 +104,31 @@ Si todo va bien, veremos HPE Morpheus VM Essentials disponible en nuestra Backup
 
 ![veeam13-vme-13]({{ site.imagesposts2026 }}/06/veeams13-vme-13.png){: .mx-auto.d-block :}
 
+# Configuración de Workers
 
+Los workers son el componente que hace el trabajo pesado: se encargan del movimiento de datos, la compresión y el cifrado. 
 
+Veeam los despliega automáticamente en cada nodo del cluster durante los jobs y los elimina al terminar.
 
+Para configurarlos, iremos a **Backup Infrastructure > Backup Proxies > Add Proxy > HPE Morpheus VM Essentials worker**
 
+![veeam13-vme-14]({{ site.imagesposts2026 }}/06/veeams13-vme-14.png){: .mx-auto.d-block :}
+
+Aquí definiremos:
+
+- El cluster VME sobre el que desplegar los workers
+- El nombre base que se aplicará a cada worker en cada nodo
+- Los recursos (vCPU, RAM) que tendrá cada worker
+
+![veeam13-vme-15]({{ site.imagesposts2026 }}/06/veeams13-vme-15.png){: .mx-auto.d-block :}
+![veeam13-vme-16]({{ site.imagesposts2026 }}/06/veeams13-vme-16.png){: .mx-auto.d-block :}
+![veeam13-vme-17]({{ site.imagesposts2026 }}/06/veeams13-vme-17.png){: .mx-auto.d-block :}
+![veeam13-vme-18]({{ site.imagesposts2026 }}/06/veeams13-vme-18.png){: .mx-auto.d-block :}
+![veeam13-vme-19]({{ site.imagesposts2026 }}/06/veeams13-vme-19.png){: .mx-auto.d-block :}
+![veeam13-vme-20]({{ site.imagesposts2026 }}/06/veeams13-vme-20.png){: .mx-auto.d-block :}
+![veeam13-vme-21]({{ site.imagesposts2026 }}/06/veeams13-vme-21.png){: .mx-auto.d-block :}
+
+# Crear el job de backup
 
 
 
