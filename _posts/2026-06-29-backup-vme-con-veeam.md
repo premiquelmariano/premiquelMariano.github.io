@@ -75,6 +75,19 @@ Una vez descargado, la instalación es muy directa:
 ![veeam13-vme-05]({{ site.imagesposts2026 }}/06/veeams13-vme-05.png){: .mx-auto.d-block :}
 ![veeam13-vme-06]({{ site.imagesposts2026 }}/06/veeams13-vme-06.png){: .mx-auto.d-block :}
 
+Tras la instalación, es necesario **reiniciar la consola de administración de Veeam**. 
+
+Al reconectar, nos pedirá actualizar los plugins.
+
+![veeam13-vme-07]({{ site.imagesposts2026 }}/06/veeams13-vme-07.png){: .mx-auto.d-block :}
+![veeam13-vme-08]({{ site.imagesposts2026 }}/06/veeams13-vme-08.png){: .mx-auto.d-block :}
+
+
+
+
+
+
+
 
 
 
