@@ -82,6 +82,27 @@ Al reconectar, nos pedirá actualizar los plugins.
 ![veeam13-vme-07]({{ site.imagesposts2026 }}/06/veeams13-vme-07.png){: .mx-auto.d-block :}
 ![veeam13-vme-08]({{ site.imagesposts2026 }}/06/veeams13-vme-08.png){: .mx-auto.d-block :}
 
+# Añadir el servidor VME a Backup Infrastructure
+
+Con el plugin ya instalado, el siguiente paso es registrar nuestro cluster VME en Veeam.
+
+Desde la consola, iremos a **Backup Infrastructure > Managed Servers > Add Server > Virtualization Platforms > HPE Morpheus VM Essentials**
+
+![veeam13-vme-09]({{ site.imagesposts2026 }}/06/veeams13-vme-09.png){: .mx-auto.d-block :}
+
+Aquí hay un detalle muy importante que aprendí a las malas durante las pruebas: hay que especificar el FQDN completo del VME Manager, no solo el nombre corto. Si ponemos únicamente el hostname sin el dominio, el registro fallará o se inventariará incorrectamente.
+
+![veeam13-vme-10]({{ site.imagesposts2026 }}/06/veeams13-vme-10.png){: .mx-auto.d-block :}
+
+Especificaremos las credenciales de una cuenta con el rol System Admin en el VME Manager.
+A continuación, seleccionaremos el datastore donde se almacenarán los snapshots temporales de las VMs durante el proceso de backup. Estos snapshots son temporales: Veeam los crea al inicio del job y los elimina automáticamente al finalizar.
+
+![veeam13-vme-11]({{ site.imagesposts2026 }}/06/veeams13-vme-11.png){: .mx-auto.d-block :}
+![veeam13-vme-12]({{ site.imagesposts2026 }}/06/veeams13-vme-12.png){: .mx-auto.d-block :}
+
+Si todo va bien, veremos HPE Morpheus VM Essentials disponible en nuestra Backup Infrastructure.
+
+![veeam13-vme-13]({{ site.imagesposts2026 }}/06/veeams13-vme-13.png){: .mx-auto.d-block :}
 
 
 
