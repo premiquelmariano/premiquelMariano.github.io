@@ -3,9 +3,9 @@ title: Backup de VMs en HPE VM Essentials con Veeam v13
 subtitle: Parte 7.1 - Veeam Plug-in for HPE Morpheus VM Essentials
 date: '2026-06-29 00:00:00'
 layout: post
-thumbnail-img: https://miquelmariano.github.io/assets/images/posts/2026/04/veeams13-vme-00.jpg
+thumbnail-img: https://miquelmariano.github.io/assets/images/posts/2026/06/veeams13-vme-00.jpg
 cover-img: https://miquelmariano.github.io/assets/images/fondos/09.jpg
-share-img: https://miquelmariano.github.io/assets/images/posts/2026/04/veeams13-vme-00.jpg
+share-img: https://miquelmariano.github.io/assets/images/posts/2026/06/veeams13-vme-00.jpg
 published: true
 author: Miquel Mariano
 tag:
@@ -30,7 +30,7 @@ La arquitectura es sencilla y se basa en dos componentes principales:
 - Plugin module: Se instala directamente sobre el servidor de Veeam B&R. No requiere un appliance adicional. Es quien gestiona la integración, coordina los checkpoints y orquesta los jobs de backup y restore.
 - Workers: Son VMs Linux ligeras que actúan como proxies para el movimiento de datos. Veeam las despliega y destruye automáticamente en cada nodo del cluster VME durante la ejecución de los jobs.
 
-
+![veeam13-vme-00]({{ site.imagesposts2026 }}/06/veeams13-vme-00.jpg){: .mx-auto.d-block :}
 
 
 
