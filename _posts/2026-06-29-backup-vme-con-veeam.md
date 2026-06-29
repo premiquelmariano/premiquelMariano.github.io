@@ -53,6 +53,15 @@ La arquitectura es sencilla y se basa en dos componentes principales:
 
 ![veeam13-vme-00]({{ site.imagesposts2026 }}/06/veeams13-vme-00.jpg){: .mx-auto.d-block :}
 
+# Requisitos previos
+
+Antes de empezar, conviene tener en cuenta los requisitos de plataforma. Según la documentación oficial, la integración es compatible con:
+
+- HPE Morpheus VM Essentials Appliance versiones 8.0.13 o superior
+- Host agent versión 3.1.3 o superior
+- Paquete morpheus-ws-node versión 3.3.19-1 o superior
+
+# Instalación del plugin
 
 
 
