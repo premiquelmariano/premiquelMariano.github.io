@@ -18,8 +18,13 @@ tag:
 - veeam
 ---
 
-Como muchos ya sabréis, [en el post de hace unas semanas vimos cómo desplegar el nuevo virtual appliance de Veeam Backup & Replication v13](https://miquelmariano.github.io/despliegue-veeam-v13-virtual-appliance-ova/). Hoy damos un paso más y vemos cómo proteger nuestras máquinas virtuales que corren sobre HPE VM Essentials (VME), gracias al nuevo Veeam Plug-in for HPE Morpheus VM Essentials.
+Como muchos ya sabréis, [en el post de hace unas semanas vimos cómo desplegar el nuevo virtual appliance de Veeam Backup & Replication v13](https://miquelmariano.github.io/despliegue-veeam-v13-virtual-appliance-ova/). 
+
+Hoy damos un paso más y vemos cómo proteger nuestras máquinas virtuales que corren sobre HPE VM Essentials (VME), gracias al nuevo Veeam Plug-in for HPE Morpheus VM Essentials.
+
 Este plugin lleva un tiempo en beta y he tenido la suerte de probarlo en mi laboratorio. Ahora que ya está en producción, es el momento de contaros cómo funciona.
+
+**VER TODA LA SERIE DE POSTS**
 
 - [Parte 1 - Introducción a HPE Morpheus VM Essentials software](https://miquelmariano.github.io/introduccion-hpe-morpheus-vm-essentials-software/)
 - [Parte 2 - Instalación VM Essentials software](https://miquelmariano.github.io/instalacion-nodo-vme/)
@@ -35,14 +40,16 @@ Este plugin lleva un tiempo en beta y he tenido la suerte de probarlo en mi labo
 - [Parte 10 - Comandos útiles]
 - [Parte 11 - Gestión de actualizaciones en HPE VM Essentials](https://miquelmariano.github.io/actualizaciones-vme-manager-y-nodos-hvm)
 
-** ¿Qué es el Veeam Plug-in for HPE VM Essentials?
+# ¿Qué es el Veeam Plug-in for HPE VM Essentials?
 
 El plugin es un componente adicional que se instala sobre el servidor de Veeam Backup & Replication y que extiende sus capacidades para proteger máquinas virtuales que corren sobre el hipervisor KVM de HPE VM Essentials.
-Sin este plugin, Veeam simplemente no puede descubrir ni proteger los recursos de VME. Es importante tener esto claro: no viene incluido en el instalador principal de Veeam, hay que descargarlo e instalarlo por separado.
+
+Sin este plugin, Veeam simplemente no puede descubrir ni proteger los recursos de VME. Es importante tener esto claro: **no viene incluido en el instalador principal de Veeam, hay que descargarlo e instalarlo por separado.**
+
 La arquitectura es sencilla y se basa en dos componentes principales:
 
-- Plugin module: Se instala directamente sobre el servidor de Veeam B&R. No requiere un appliance adicional. Es quien gestiona la integración, coordina los checkpoints y orquesta los jobs de backup y restore.
-- Workers: Son VMs Linux ligeras que actúan como proxies para el movimiento de datos. Veeam las despliega y destruye automáticamente en cada nodo del cluster VME durante la ejecución de los jobs.
+- **Plugin module**: Se instala directamente sobre el servidor de Veeam B&R. No requiere un appliance adicional. Es quien gestiona la integración, coordina los checkpoints y orquesta los jobs de backup y restore.
+- **Workers**: Son VMs Linux ligeras que actúan como proxies para el movimiento de datos. Veeam las despliega y destruye automáticamente en cada nodo del cluster VME durante la ejecución de los jobs.
 
 ![veeam13-vme-00]({{ site.imagesposts2026 }}/06/veeams13-vme-00.jpg){: .mx-auto.d-block :}
 
