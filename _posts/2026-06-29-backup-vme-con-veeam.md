@@ -24,8 +24,8 @@ Hoy damos un paso más y vemos cómo proteger nuestras máquinas virtuales que c
 
 Este plugin lleva un tiempo en beta y he tenido la suerte de probarlo en mi laboratorio. Ahora que ya está en producción, es el momento de contaros cómo funciona.
 
-**VER TODA LA SERIE DE POSTS**
-
+<details markdown="1">
+<summary>VER TODA LA SERIE DE POSTS</summary>
 - [Parte 1 - Introducción a HPE Morpheus VM Essentials software](https://miquelmariano.github.io/introduccion-hpe-morpheus-vm-essentials-software/)
 - [Parte 2 - Instalación VM Essentials software](https://miquelmariano.github.io/instalacion-nodo-vme/)
 - [Parte 3 - Instalación VME Manager](https://miquelmariano.github.io/instalacion-manager/)
@@ -39,6 +39,7 @@ Este plugin lleva un tiempo en beta y he tenido la suerte de probarlo en mi labo
 - [Parte 9.1 - Migración con Veeam](https://miquelmariano.github.io/migracion-vsphere-vme-veeam/)
 - [Parte 10 - Comandos útiles]
 - [Parte 11 - Gestión de actualizaciones en HPE VM Essentials](https://miquelmariano.github.io/actualizaciones-vme-manager-y-nodos-hvm)
+</details>
 
 # ¿Qué es el Veeam Plug-in for HPE VM Essentials?
 
