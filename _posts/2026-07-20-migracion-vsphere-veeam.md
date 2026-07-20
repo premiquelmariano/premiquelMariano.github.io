@@ -94,22 +94,20 @@ Desde la consola de Veeam, localizar el backup de la VM a migrar, hacer clic der
 
 `Restore entire VM → HPE Morpheus VM Essentials...`
 
-![veeam13-vme-01]({{ site.imagesposts2026 }}/06/veeams13-vme-01.png){: .mx-auto.d-block :}
-
-![restore-veeam-01]({{ site.imagesposts2026 }}/07/restore-veeam-01.jpg){: .mx-auto.d-block :}
+![restore-veeam-01]({{ site.imagesposts2026 }}/07/restore-veeam-01.png){: .mx-auto.d-block :}
 
 ## Virtual Machines
 
 En el primer paso del asistente, verificar que la VM correcta está seleccionada y el restore point corresponde al backup en frío que acabamos de hacer.
 
-![restore-veeam-02]({{ site.imagesposts2026 }}/07/restore-veeam-02.jpg){: .mx-auto.d-block :}
+![restore-veeam-02]({{ site.imagesposts2026 }}/07/restore-veeam-02.png){: .mx-auto.d-block :}
 
 
 ## Restore Mode
 
 Seleccionar **Restore to a new location, or with different settings**. Esta opción nos permite personalizar el cluster destino, el almacenamiento y la red, que es exactamente lo que necesitamos al cambiar de plataforma.
 
-![restore-veeam-03]({{ site.imagesposts2026 }}/07/restore-veeam-03.jpg){: .mx-auto.d-block :}
+![restore-veeam-03]({{ site.imagesposts2026 }}/07/restore-veeam-03.png){: .mx-auto.d-block :}
 
 ## Cluster
 
