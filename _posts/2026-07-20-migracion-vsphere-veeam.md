@@ -113,21 +113,31 @@ Seleccionar **Restore to a new location, or with different settings**. Esta opci
 
 Seleccionar el cluster de HPE VME donde queremos alojar la VM. Veeam mostrará los clusters disponibles que tenga integrados como infraestructura de backup.
 
+![restore-veeam-04]({{ site.imagesposts2026 }}/07/restore-veeam-04.png){: .mx-auto.d-block :}
+
 ## Storage
 
 Seleccionar el datastore de HPE VME donde se almacenarán los discos de la VM. Veeam mostrará los datastores disponibles en el cluster seleccionado.
+
+![restore-veeam-05]({{ site.imagesposts2026 }}/07/restore-veeam-05.png){: .mx-auto.d-block :}
 
 ## Name
 
 Por defecto se mantiene el nombre original de la VM. Podemos cambiarlo si fuera necesario. También tenemos la opción de **Restore tags and labels** para mantener los metadatos originales.
 
+![restore-veeam-06]({{ site.imagesposts2026 }}/07/restore-veeam-06.png){: .mx-auto.d-block :}
+
 ## Network
 
 Este paso es importante. Veeam intentará mapear automáticamente la red origen con la red destino en HPE VME. Revisar que el mapeo es correcto y ajustar si fuera necesario.
 
+![restore-veeam-07]({{ site.imagesposts2026 }}/07/restore-veeam-07.png){: .mx-auto.d-block :}
+
 ## Reason
 
 Campo opcional para registrar el motivo de la operación. Recomendable rellenarlo con algo descriptivo como "Migración desde vSphere - [nombre VM]" para trazabilidad.
+
+![restore-veeam-08]({{ site.imagesposts2026 }}/07/restore-veeam-08.png){: .mx-auto.d-block :}
 
 ## Summary y ejecución
 
@@ -136,6 +146,12 @@ En la pantalla de resumen podemos revisar toda la configuración antes de ejecut
 Hacer clic en **Finish** para iniciar la restauración. Desde el panel de **Restore session** podremos monitorizar el progreso en tiempo real.
 
 El proceso tarda en función del tamaño de la VM. Una vez completado, el estado de la sesión pasará a **Success**.
+
+![restore-veeam-09]({{ site.imagesposts2026 }}/07/restore-veeam-09.png){: .mx-auto.d-block :}
+
+![restore-veeam-10]({{ site.imagesposts2026 }}/07/restore-veeam-10.png){: .mx-auto.d-block :}
+
+![restore-veeam-11]({{ site.imagesposts2026 }}/07/restore-veeam-11.png){: .mx-auto.d-block :}
 
 ---
 
@@ -150,6 +166,8 @@ Con la VM arrancada en HPE VME, abrir PowerShell como administrador y ejecutar:
 ```
 
 El [script]https://miquelmariano.github.io/assets/images/Manage-NetworkConfig.ps1 detectará el adaptador **Red Hat VirtIO Ethernet Adapter**, eliminará cualquier configuración residual y aplicará la IP, máscara, gateway y DNS guardados antes de la migración.
+
+![restore-veeam-12]({{ site.imagesposts2026 }}/07/restore-veeam-12.png){: .mx-auto.d-block :}
 
 ## VMware Tools
 
