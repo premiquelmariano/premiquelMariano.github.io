@@ -1,7 +1,7 @@
 ---
 title: Migración de VMs Windows desde vSphere con Veeam
 subtitle: Parte 9.1 - Full VM Restore to HPE Morpheus VM Essentials
-date: '2026-06-08 00:00:00'
+date: '2026-07-20 00:00:00'
 layout: post
 thumbnail-img: https://miquelmariano.github.io/assets/images/posts/2026/04/ha-01.png
 cover-img: https://miquelmariano.github.io/assets/images/fondos/08.jpg
@@ -18,32 +18,44 @@ tag:
 - veeam
 ---
 
-En el post anterior vimos cómo migrar VMs desde vSphere utilizando la herramienta nativa de Migration Plans que incluye HPE VME. En esta entrega veremos una alternativa igual de válida y que en muchos entornos ya está disponible: **migrar usando Veeam Backup & Replication**.
+En el [post anterior](https://miquelmariano.github.io/migracion-vsphere-vme/) vimos cómo migrar VMs desde vSphere utilizando la herramienta nativa de Migration Plans que incluye HPE VME. En esta entrega veremos una alternativa igual de válida y que en muchos entornos ya está disponible: **migrar usando Veeam Backup & Replication**.
 
-La idea es aprovechar Veeam como vehículo de transporte. En lugar de usar el migration tool nativo, realizamos un backup de la VM en origen y la restauramos directamente sobre HPE VME mediante la opción **Full VM Restore to HPE Morpheus VM Essentials**. El resultado es el mismo, pero el proceso nos da más control y la posibilidad de partir de un punto de restauración limpio y consistente.
+La idea es aprovechar Veeam como vehículo de transporte. En lugar de usar el migration tool nativo, [realizamos un backup](https://miquelmariano.github.io/backup-vme-con-veeam/) de la VM en origen y la restauramos directamente sobre HPE VME mediante la opción **Full VM Restore to HPE Morpheus VM Essentials**. El resultado es el mismo, pero el proceso nos da más control y la posibilidad de partir de un punto de restauración limpio y consistente.
 
 > ⚠️ **OJO**: Los pasos de preparación previa (inyección de drivers VirtIO) son **exactamente los mismos** que en la migración nativa. Sin estos pasos, la VM no arrancará en KVM independientemente del método de migración que usemos.
 
-**VER TODA LA SERIE DE POSTS**
+<details>
+<summary>VER TODA LA SERIE DE POSTS</summary>
 
-- [Parte 1 - Introducción a HPE Morpheus VM Essentials software](https://miquelmariano.github.io/introduccion-hpe-morpheus-vm-essentials-software/)
-- [Parte 2 - Instalación VM Essentials software](https://miquelmariano.github.io/instalacion-nodo-vme/)
-- [Parte 3 - Instalación VME Manager](https://miquelmariano.github.io/instalacion-manager/)
-- [Parte 4 - Configuración inicial](https://miquelmariano.github.io/configuracion-inicial-primeros-pasos-vm-essentials)
-- [Parte 5 - Creación cluster Ceph](https://miquelmariano.github.io/cluster-ceph/)
-- [Parte 6 - Desplegar nuestra primera VM](https://miquelmariano.github.io/primera-vm-en-vmessentials/)
-- [Parte 7 - Backups](https://miquelmariano.github.io/backups-en-vm-essentials/)
-- [Parte 8 - Pruebas de HA](https://miquelmariano.github.io/ha-en-vm-essentials/)
-- [Parte 9 - Migración de VMs desde vSphere](https://miquelmariano.github.io/migracion-vsphere-vme/)
-- [Parte 9.1 - Migración con Veeam](https://miquelmariano.github.io/migracion-vsphere-vme-veeam/)
-- [Parte 10 - Comandos útiles]
-- [Parte 11 - Gestión de actualizaciones en HPE VM Essentials](https://miquelmariano.github.io/actualizaciones-vme-manager-y-nodos-hvm)
+<ul>
+  <li><a href="https://miquelmariano.github.io/introduccion-hpe-morpheus-vm-essentials-software/">Parte 1 - Introducción a HPE Morpheus VM Essentials software</a></li>
+  <li><a href="https://miquelmariano.github.io/instalacion-nodo-vme/">Parte 2 - Instalación VM Essentials software</a></li>
+  <li><a href="https://miquelmariano.github.io/instalacion-manager/">Parte 3 - Instalación VME Manager</a></li>
+  <li><a href="https://miquelmariano.github.io/configuracion-inicial-primeros-pasos-vm-essentials">Parte 4 - Configuración inicial</a></li>
+  <li><a href="https://miquelmariano.github.io/cluster-ceph/">Parte 5 - Creación cluster Ceph</a></li>
+  <li><a href="https://miquelmariano.github.io/primera-vm-en-vmessentials/">Parte 6 - Desplegar nuestra primera VM</a></li>
+  <li><a href="https://miquelmariano.github.io/backups-en-vm-essentials/">Parte 7 - Backups nativos</a>
+    <ul>
+      <li><a href="https://miquelmariano.github.io/backup-vme-con-veeam/">Parte 7.1 - Backups con Veeam v13</a></li>
+    </ul>
+  </li>
+  <li><a href="https://miquelmariano.github.io/ha-en-vm-essentials/">Parte 8 - Pruebas de HA</a></li>
+  <li><a href="https://miquelmariano.github.io/migracion-vsphere-vme/">Parte 9 - Migración de VMs desde vSphere</a>
+    <ul>
+      <li><a href="https://miquelmariano.github.io/migracion-vsphere-vme-veeam/">Parte 9.1 - Migración con Veeam</a></li>
+    </ul>
+  </li>
+  <li>[Parte 10 - Comandos útiles]</li>
+  <li><a href="https://miquelmariano.github.io/actualizaciones-vme-manager-y-nodos-hvm">Parte 11 - Gestión de actualizaciones en HPE VM Essentials</a></li>
+</ul>
+
+</details>
 
 ---
 
 # Requisitos previos y preparación de la VM
 
-La preparación previa es idéntica a la del post anterior. Resumiendo:
+La preparación previa [es idéntica a la del post anterior](https://miquelmariano.github.io/migracion-vsphere-vme/). Resumiendo:
 
 - Descargar el ISO de VirtIO desde [fedorapeople.org](https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.285-1/)
 - Montar el ISO en la VM y arrancar en **Windows RE** (reiniciar con `Shift` pulsado o desde `Configuración → Recuperación → Reiniciar ahora`)
@@ -61,8 +73,6 @@ dism /image:C:\ /add-driver:D:\vioscsi\2k22\amd64\vioscsi.inf
 ```powershell
 .\Manage-NetworkConfig.ps1 -Action save
 ```
-
-> Para más detalle sobre estos pasos, consultad el [post anterior](https://miquelmariano.github.io/migracion-vsphere-vme/).
 
 ---
 
@@ -86,13 +96,20 @@ Desde la consola de Veeam, localizar el backup de la VM a migrar, hacer clic der
 
 `Restore entire VM → HPE Morpheus VM Essentials...`
 
+![restore-veeam-01]({{ site.imagesposts2026 }}/07/restore-veeam-01.jpg){: .mx-auto.d-block :}
+
 ## Virtual Machines
 
 En el primer paso del asistente, verificar que la VM correcta está seleccionada y el restore point corresponde al backup en frío que acabamos de hacer.
 
+![restore-veeam-02]({{ site.imagesposts2026 }}/07/restore-veeam-02.jpg){: .mx-auto.d-block :}
+
+
 ## Restore Mode
 
 Seleccionar **Restore to a new location, or with different settings**. Esta opción nos permite personalizar el cluster destino, el almacenamiento y la red, que es exactamente lo que necesitamos al cambiar de plataforma.
+
+![restore-veeam-03]({{ site.imagesposts2026 }}/07/restore-veeam-03.jpg){: .mx-auto.d-block :}
 
 ## Cluster
 
