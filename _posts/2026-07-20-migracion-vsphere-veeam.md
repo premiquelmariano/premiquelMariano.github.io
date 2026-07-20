@@ -68,7 +68,7 @@ dism /image:C:\ /add-driver:D:\vioscsi\2k22\amd64\vioscsi.inf
 
 - Arrancar Windows normalmente e instalar `virtio-win-gt-x64.msi` y `virtio-win-guest-tools.exe` desde la raíz del ISO
 - Desmontar todos los ISOs
-- Guardar la configuración de red con el script:
+- Guardar la configuración de red con el [script](https://miquelmariano.github.io/assets/images/Manage-NetworkConfig.ps1):
 
 ```powershell
 .\Manage-NetworkConfig.ps1 -Action save
