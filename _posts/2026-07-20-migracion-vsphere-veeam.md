@@ -165,7 +165,7 @@ Con la VM arrancada en HPE VME, abrir PowerShell como administrador y ejecutar:
 .\Manage-NetworkConfig.ps1 -Action restore
 ```
 
-El [script]https://miquelmariano.github.io/assets/images/Manage-NetworkConfig.ps1 detectará el adaptador **Red Hat VirtIO Ethernet Adapter**, eliminará cualquier configuración residual y aplicará la IP, máscara, gateway y DNS guardados antes de la migración.
+El [script](https://miquelmariano.github.io/assets/images/Manage-NetworkConfig.ps1) detectará el adaptador **Red Hat VirtIO Ethernet Adapter**, eliminará cualquier configuración residual y aplicará la IP, máscara, gateway y DNS guardados antes de la migración.
 
 ![restore-veeam-12]({{ site.imagesposts2026 }}/07/restore-veeam-12.png){: .mx-auto.d-block :}
 
