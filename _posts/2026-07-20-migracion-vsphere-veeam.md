@@ -84,8 +84,6 @@ Desde Veeam, lanzar un backup bajo demanda de la VM sobre el job que la tenga as
 
 Este punto de restauración en frío será el que usemos para la migración.
 
----
-
 # Restauración a HPE Morpheus VM Essentials
 
 Veeam tiene integración nativa con HPE Morpheus VM Essentials como destino de restauración. El proceso es el siguiente.
@@ -153,7 +151,7 @@ Con la VM arrancada en HPE VME, abrir PowerShell como administrador y ejecutar:
 .\Manage-NetworkConfig.ps1 -Action restore
 ```
 
-El script detectará el adaptador **Red Hat VirtIO Ethernet Adapter**, eliminará cualquier configuración residual y aplicará la IP, máscara, gateway y DNS guardados antes de la migración.
+El [script]https://miquelmariano.github.io/assets/images/Manage-NetworkConfig.ps1 detectará el adaptador **Red Hat VirtIO Ethernet Adapter**, eliminará cualquier configuración residual y aplicará la IP, máscara, gateway y DNS guardados antes de la migración.
 
 ## VMware Tools
 
@@ -166,32 +164,15 @@ Al igual que en la migración nativa, Veeam tampoco desinstala VMware Tools dura
 
 ---
 
-# Migración nativa vs Veeam — ¿Cuándo usar cada una?
-
-| | Migration Plan nativo | Veeam Full VM Restore |
-|---|---|---|
-| **Requisito previo** | VirtIO inyectados | VirtIO inyectados |
-| **Necesita Veeam** | No | Sí |
-| **Backup previo** | No obligatorio | Sí (recomendado en frío) |
-| **Control del proceso** | Medio | Alto |
-| **Punto de restauración** | Estado live de la VM | Backup seleccionable |
-| **Ideal para** | Migraciones simples | Entornos con Veeam ya desplegado |
-
-En la práctica, si el entorno ya tiene Veeam desplegado y las VMs están siendo protegidas, la opción de Veeam es muy cómoda y añade la ventaja de poder elegir el punto de restauración concreto desde el que migrar.
-
----
-
 # Conclusión
 
-Hemos visto que Veeam nos ofrece una forma elegante y controlada de realizar la misma migración, aprovechando una infraestructura de backup que probablemente ya está operativa en el entorno. La integración de Veeam con HPE Morpheus VM Essentials como destino de restore es madura y funciona correctamente.
+Hemos visto que Veeam nos ofrece una forma elegante y controlada de realizar la misma migración, aprovechando una infraestructura de backup que probablemente ya está operativa en el entorno. La integración de Veeam con HPE Morpheus VM Essentials como destino de restore es madura y funciona a la perfección.
 
 Los puntos clave a recordar son:
 
-- Los drivers VirtIO son **obligatorios en ambos métodos**, no hay atajos aquí
+- Los drivers VirtIO son **obligatorios en ambos métodos**
 - El backup en frío previo a la migración garantiza consistencia
 - La restauración de red post-migración es necesaria en ambos casos
-
-En el próximo post veremos los **comandos útiles** para operar el día a día de HPE VM Essentials desde la línea de comandos.
 
 Nos vemos en el próximo post ;-)
 
