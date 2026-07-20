@@ -96,6 +96,8 @@ Desde la consola de Veeam, localizar el backup de la VM a migrar, hacer clic der
 
 `Restore entire VM → HPE Morpheus VM Essentials...`
 
+![veeam13-vme-01]({{ site.imagesposts2026 }}/06/veeams13-vme-01.png){: .mx-auto.d-block :}
+
 ![restore-veeam-01]({{ site.imagesposts2026 }}/07/restore-veeam-01.jpg){: .mx-auto.d-block :}
 
 ## Virtual Machines
