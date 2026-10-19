@@ -158,6 +158,41 @@ sudo virsh detach-interface FS-restored network --mac 52:54:00:aa:bb:cc --persis
 
 La MAC la ves con virsh domiflist FS-restored.
 
+# Comandos adicionales
+
+`virsh autostart`
+Controla si la VM arranca con el host.
+
+```ssh
+sudo virsh autostart FS-restored
+sudo virsh autostart --disable FS-restored
+```
+
+# Eliminar una VM sin dejar rastro
+
+Primero se para y luego se elimina la definición junto con todo lo asociado.
+
+```ssh
+sudo virsh list --all
+sudo virsh destroy 2
+sudo virsh undefine hpe-vme-manager --remove-all-storage --wipe-storage --snapshots-metadata --managed-save
+```
+
+Salida:
+
+```ssh
+Domain 'hpe-vme-manager' has been undefined
+Wiping volume 'vda'(/var/morpheus/kvm/local/hpe-vm-essentials-8.1.2-1.qcow2) ... Done.
+Volume 'vda'(/var/morpheus/kvm/local/hpe-vm-essentials-8.1.2-1.qcow2) removed.
+```
+
+Qué hace cada opción:
+• `--remove-all-storage`: busca todos los discos asociados a la VM y los elimina.
+• `--wipe-storage`: sobrescribe los datos del disco antes de borrar el fichero, para evitar su recuperación.
+• `--snapshots-metadata`: borra cualquier registro de snapshots.
+• `--managed-save`: elimina el estado guardado si la VM se había pausado alguna vez.
+
+Es irreversible. Comprueba dos veces el nombre antes de lanzarlo.
 
 
 
