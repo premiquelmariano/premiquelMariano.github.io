@@ -52,12 +52,31 @@ Este post porma parte de la serie sobre HPE VM Essentials y a continuación pode
 
 </details>
 
-{: .box-success}
+{: .box-note}
 • Todos los comandos se lanzan en el nodo donde corre la VM, con sudo.
 • Lo que cambies con virsh no pasa por el manager de VME. Para tareas rutinarias (cambiar CPU, RAM, discos o NICs) usa la consola de VME. Reserva virsh para diagnóstico y para los casos en que el manager no llega.
 • Los ejemplos son de mi laboratorio. Sustituye nombres, IDs, IPs y credenciales por los tuyos.
 
 # Listar y monitorizar VMs
+
+`virsh list`
+Lista las VMs en ejecución. Con `--all` incluye también las apagadas.
+
+```ssh
+ Id   Name             State
+----------------------------------
+ 1    vme-manager-01   running
+ 7    encora-01        running
+ 134  FS-restored      running
+ -    veeam-worker-01  shut off
+ ````
+
+El `Id` es el identificador de dominio que luego puedes usar en lugar del nombre en cualquier comando. Ojo: cambia cada vez que la VM se apaga y se vuelve a encender.
+
+
+
+
+
 
 En este ejemplo partimos de una VM con un disco de 30Gb en el que para ampliarlo seleccionaremos el botón de "Reconfigure" desde el menú "Actions"
 
