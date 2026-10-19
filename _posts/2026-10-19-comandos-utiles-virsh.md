@@ -73,6 +73,64 @@ Lista las VMs en ejecución. Con `--all` incluye también las apagadas.
 
 El `Id` es el identificador de dominio que luego puedes usar en lugar del nombre en cualquier comando. Ojo: cambia cada vez que la VM se apaga y se vuelve a encender.
 
+`virsh dominfo`
+Estado actual (running, paused, shut off...).
+
+```ssh
+sudo virsh domstate FS-restored
+```
+
+`virsh domstats`
+Estadísticas de CPU, memoria, disco y red.
+
+```ssh
+sudo virsh domstats FS-restored
+```
+
+# Controlar el estado de una VM
+
+| Comando | Qué hace |
+| :--- | :--- |
+| `virsh start VM` | Arranca una VM apagada |
+| `virsh shutdown VM` | Apagado ordenado (necesita ACPI o guest agent en el guest) |
+| `virsh destroy VM` | Apagado forzoso, como tirar del cable. Úsalo con cuidado |
+| `virsh reboot VM` | Reinicio ordenado |
+| `virsh suspend VM` | Pausa la VM en memoria |
+| `virsh resume VM` | Reanuda una VM pausada |
+
+Si `shutdown` no hace nada, el guest no está procesando ACPI. Es habitual en Windows con el agente sin instalar o con la VM bloqueada en la pantalla de login.
+
+# Editar la configuración de una VM
+
+`virsh edit`
+Abre el XML de la VM en tu editor. Edítala con la VM apagada y ten presente que el manager puede sobrescribir cambios manuales.
+
+```ssh
+sudo virsh edit FS-restored
+```
+
+`virsh setvcpus`
+Cambia el número de vCPUs. Con la VM apagada, añade --config para que persista.
+
+```ssh
+sudo virsh setvcpus FS-restored 4 --config
+```
+
+`virsh setmem`
+Cambia la memoria asignada. Por defecto el valor va en KiB y no puede superar el máximo definido para la VM.
+
+```ssh
+sudo virsh setmem FS-restored 8388608 --config
+```
+
+8388608 KiB son 8 GiB.
+
+# Almacenamiento y red
+
+
+
+
+
 
 
 
