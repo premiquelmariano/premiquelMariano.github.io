@@ -127,7 +127,36 @@ sudo virsh setmem FS-restored 8388608 --config
 
 # Almacenamiento y red
 
+`virsh attach-disk`
+Añade un disco o una ISO a una VM.
 
+```ssh
+virsh attach-disk FS-restored /ruta/disco.qcow2 vdb --persistent
+virsh attach-disk FS-restored /ruta/virtio-win.iso sdz --type cdrom --mode readonly
+```
+
+`virsh detach-disk`
+Quita un disco por su target.
+
+```ssh
+sudo virsh detach-disk FS-restored vdb --persistent
+```
+
+`virsh attach-interface`
+Añade una interfaz de red.
+
+```ssh
+sudo virsh attach-interface FS-restored network default --model virtio --persistent
+```
+
+`virsh detach-interface`
+Quita una interfaz. Necesita el tipo y, si hay varias, la MAC.
+
+```ssh
+sudo virsh detach-interface FS-restored network --mac 52:54:00:aa:bb:cc --persistent
+```
+
+La MAC la ves con virsh domiflist FS-restored.
 
 
 
