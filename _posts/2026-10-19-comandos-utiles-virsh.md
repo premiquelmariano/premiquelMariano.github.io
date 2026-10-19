@@ -213,47 +213,133 @@ allssh.sh "sudo virsh list --all"
 
 Si no tienes un script así, un bucle sencillo hace lo mismo: `for h in 10.10.10.101 10.10.10.102 10.10.10.103; do ssh vmeadmin@$h "sudo virsh list --all"; done`.
 
+# Ver en qué datastore está una VM
+Con `domblklist`
 
+```ssh
+sudo virsh domblklist mmr-test-03 --details
+ Type   Device   Target   Source
+----------------------------------------------------------------------
+ file   disk     sda      /mnt/116b3df5-a376-43a2-a527-345e0edb4381/mmr-test-03/hvm_21-disk-0-da7951f
+ssh
 
-En este ejemplo partimos de una VM con un disco de 30Gb en el que para ampliarlo seleccionaremos el botón de "Reconfigure" desde el menú "Actions"
+El UUID de la ruta (`116b3df5-...`) es el del pool, es decir, el datastore.
 
-![ampliar-disco-windows-01]({{ site.imagesposts2026 }}/09/ampliar-disco-windows-01.png){: .mx-auto.d-block :}
+Listar los datastores del clúster
 
-Añadiremos el nuevo tamaño sin modificar ningún otro parámetro
+```ssh
+sudo virsh pool-list --all
+ Name                  State    Autostart
+-------------------------------------------
+ HPEVME-Datastore-00   active   yes
+ HPEVME-Datastore-01   active   yes
+ HPEVME-Datastore-02   active   yes
+ local                 active   yes
+ morpheus-cloud-init   active   yes
+ morpheus-images       active   yes
+````
 
-![ampliar-disco-windows-02]({{ site.imagesposts2026 }}/09/ampliar-disco-windows-02.png){: .mx-auto.d-block :}
+Información de un datastore
 
-En la pestaña "history" podremos comprobar que la tarea se ha realizado correctamente
+```ssh
+sudo virsh pool-info HPEVME-Datastore-00
+Name:        HPEVME-Datastore-00
+UUID:        116b3df5-a376-43a2-a527-345e0edb4381
+State:       running
+Capacity:    499.97 GiB
+Allocation:  188.24 GiB
+Available:   311.73 GiB
+````
 
-![ampliar-disco-windows-03]({{ site.imagesposts2026 }}/09/ampliar-disco-windows-03.png){: .mx-auto.d-block :}
+Cruzando el UUID con la ruta del disco sabes exactamente dónde vive la VM.
 
-# Ampliar unidad C
+# Conectar por VNC directamente a una VM
+Cuando el manager no te da consola (o la VM está en una pantalla en la que necesitas ver qué pasa), puedes conectar por VNC al hypervisor. El VNC solo escucha en localhost del nodo, así que hay que localizar la VM, su puerto y su contraseña, y abrir un túnel SSH.
 
-Con el disco ampliado podemos validar que nuestro windows ha detectado correctamente los +2GB adicionales que le hemos asignado.
+### 1. Encontrar el host y la VM
+`sudo virsh list --all`
 
-Tambien vemos que entre la unidad C y el nuevo espacio se ha quedado la partición de recuperación de windows
+###2. Obtener el display VNC
+`sudo virsh domdisplay vme-manager-01`
+`sudo virsh vncdisplay vme-manager-01`
 
-![ampliar-disco-windows-04]({{ site.imagesposts2026 }}/09/ampliar-disco-windows-04.png){: .mx-auto.d-block :}
+```ssh
+vnc://127.0.0.1:2
+127.0.0.1:2
+````
 
-La partición de recuperación de windows no se puede desplazar nativamente con la herramienta de diskpart por lo que en la mayoria de casos podemos optar por eliminarla.
+El display `:2` corresponde al puerto `5900 + 2 = 5902`.
 
-- Abre el menú Inicio, busca **cmd** o **Símbolo del sistema**, haz clic derecho sobre él y selecciona Ejecutar como administrador.
-- Abre la herramienta de gestión de discos: `diskpart`
-- Lista los discos conectados a tu equipo: `list disk`
-- Selecciona el disco principal donde está instalado Windows (reemplaza X por el número de tu disco, generalmente 0): `select disk X`
-- Muestra la lista de particiones dentro de ese disco: `list partition`
-- Identifica la partición de recuperación (suele indicarse como Recuperación o Recovery en la columna Tipo) y selecciónala (reemplaza Y por el número correspondiente): `select partition Y`
-- Fuerza la eliminación de la partición de recuperación: `delete partition override`
-- Sal de Diskpart: `exit`
+### 3. Obtener puerto y contraseña
+`sudo virsh dumpxml --security-info vme-manager-01 | grep -A2 graphics``
 
-![ampliar-disco-windows-05]({{ site.imagesposts2026 }}/09/ampliar-disco-windows-05.png){: .mx-auto.d-block :}
+```ssh
+<graphics type='vnc' port='5902' autoport='no' listen='127.0.0.1' passwd='<PASSWORD>'>
+  <listen type='address' address='127.0.0.1'/>
+</graphics>
+````
 
-Una vez eliminada la partición de recuperación y teniendo el espacio libre contiguo a C: podremos proceder a la ampliación de la unidad
+### 4. Abrir el túnel desde tu equipo (en macOS, Linux y Windows 10/11 con OpenSSH el comando es el mismo)
+`ssh -L 5902:127.0.0.1:5902 vmeadmin@<IP_DEL_NODO>``
 
-![ampliar-disco-windows-06]({{ site.imagesposts2026 }}/09/ampliar-disco-windows-06.png){: .mx-auto.d-block :}
+### 5. Conectar el visor VNC a `127.0.0.1:5902` con la contraseña del paso 3.
 
-Nos vemos en el próximo post ;-)
+# Ejecutar comandos dentro de una VM con el guest agent de QEMU
+
+Si la VM tiene el agente instalado (virtio-win-guest-tools o qemu-guest-agent), puedes lanzar comandos dentro del guest sin login y sin red. Me salvó en una migración desde vSphere de un controlador de dominio: sin red, sin cuenta local y sin poder iniciar sesión, pude ejecutar mi script de configuración de red directamente desde el host.
+
+### Comprobar que el agente responde
+`sudo virsh qemu-agent-command 134 '{"execute":"guest-ping"}' --timeout 10`
+
+Si todo va bien devuelve `{"return":{}}`. El `134` es el ID de dominio que ves en `virsh list`.
+
+### Ejecutar un comando
+`guest-exec` es asíncrono: lanza el proceso y devuelve un PID. Después se consulta el resultado con guest-exec-status, y la salida viene en base64`.
+
+```ssh
+sudo virsh qemu-agent-command 134 '{"execute":"guest-exec","arguments":{"path":"C:\\Windows\\System32\\hostname.exe","capture-output":true}}'
+# {"return":{"pid":1234}}
+
+sudo virsh qemu-agent-command 134 '{"execute":"guest-exec-status","arguments":{"pid":1234}}' | jq -r '.return."out-data"' | base64 -d
+````
+
+Una función para no repetirte: `gexec`
+
+Para no escribir JSON a mano cada vez, esta función lanza cualquier comando de PowerShell, espera a que termine (hasta 120 s) y muestra la salida, los errores y el código de salida.
+
+```ssh
+gexec() {
+  local JSON PID R
+  JSON=$(jq -nc --arg c "$1" '{execute:"guest-exec",arguments:{path:"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",arg:["-NoProfile","-ExecutionPolicy","Bypass","-Command",$c],"capture-output":true}}')
+  PID=$(sudo virsh qemu-agent-command 134 "$JSON" | jq -r '.return.pid')
+  for i in $(seq 1 120); do
+    R=$(sudo virsh qemu-agent-command 134 "{\"execute\":\"guest-exec-status\",\"arguments\":{\"pid\":$PID}}")
+    [ "$(echo "$R" | jq -r '.return.exited')" = "true" ] && break
+    sleep 1
+  done
+  echo "$R" | jq -r '.return."out-data" // empty' | base64 -d
+  echo "$R" | jq -r '.return."err-data" // empty' | base64 -d
+  echo "exitcode: $(echo "$R" | jq -r '.return.exitcode')"
+}
+````
+
+El ID del dominio (`134`) está fijo en la función. Cámbialo por el de tu VM, o pásalo como variable.
+Ejemplos de uso:
+
+```ssh
+# Ver los adaptadores de red
+gexec 'Get-NetAdapter | ft Name,InterfaceDescription,MacAddress,Status -AutoSize | Out-String -Width 200'
+
+# Lanzar un script de restauración de red
+gexec 'Set-Location C:\Users\encora\Downloads; .\Manage-NetworkConfig.ps1 -action restore'
+````
+
+Puntos a tener en cuenta:
+- El comando corre como SYSTEM, así que tiene permisos totales pero no hereda el perfil de ningún usuario.
+- Si la VM viene de vSphere, el agente solo estará si lo instalaste antes de migrar. Mejor instalar VirtIO y el guest agent antes de la migración.
+- Al migrar a VME el NIC cambia (de vmxnet3 a VirtIO). La configuración IP no se hereda: déjala anotada o con un script preparado.
+
+Y hasta aquí por hoy. Y vosotros teneis vuestros propios trucos con VME, cuéntamelos en los comentarios.
 
 Un saludo
-
 Miquel.
