@@ -1,7 +1,7 @@
 ---
 title: Comandos útiles virsh
 subtitle: Parte 10 - Lista de comandos mas útiles para gestionar VM Essentials
-date: '2026-09-04 00:00:00'
+date: '2026-10-19 00:00:00'
 layout: post
 thumbnail-img: https://miquelmariano.github.io/assets/images/posts/2026/09/ampliar-disco-windows-01.png
 cover-img: https://miquelmariano.github.io/assets/images/fondos/10.jpg
@@ -18,7 +18,9 @@ tag:
 - veeam
 ---
 
-En este procedimiento vamos a ver el paso a paso para poder ampliar el disco y la unidad **C:** en una máquina virtual Windows en caliente y sin ningún tipo de parada de servicio.
+HPE VM Essentials (Morpheus) corre sobre KVM/libvirt, así que cada nodo del clúster se puede gobernar con `virsh`. La consola de gestión (el manager) cubre el 90 % del día a día, pero cuando algo se tuerce (una VM que no arranca, un checkpoint huérfano de Veeam, una migración desde vSphere que te deja sin red) `virsh` es la herramienta que te saca del apuro. 
+
+Este post porma parte de la serie sobre HPE VM Essentials y a continuación podeis ver el índice de toda la serie:
 
 <details>
 <summary>VER TODA LA SERIE DE POSTS SOBRE VME</summary>
@@ -49,6 +51,11 @@ En este procedimiento vamos a ver el paso a paso para poder ampliar el disco y l
 </ul>
 
 </details>
+
+{: .box-success}
+• Todos los comandos se lanzan en el nodo donde corre la VM, con sudo.
+• Lo que cambies con virsh no pasa por el manager de VME. Para tareas rutinarias (cambiar CPU, RAM, discos o NICs) usa la consola de VME. Reserva virsh para diagnóstico y para los casos en que el manager no llega.
+• Los ejemplos son de mi laboratorio. Sustituye nombres, IDs, IPs y credenciales por los tuyos.
 
 # Ampliar disco de datos
 
