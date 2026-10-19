@@ -3,9 +3,9 @@ title: Comandos útiles virsh
 subtitle: Parte 10 - Lista de comandos mas útiles para gestionar VM Essentials
 date: '2026-10-19 00:00:00'
 layout: post
-thumbnail-img: https://miquelmariano.github.io/assets/images/posts/2026/09/ampliar-disco-windows-01.png
+thumbnail-img: https://miquelmariano.github.io/assets/images/posts/2025/10/hpe_morpheus_01.jpg
 cover-img: https://miquelmariano.github.io/assets/images/fondos/10.jpg
-share-img: https://miquelmariano.github.io/assets/images/posts/2026/09/ampliar-disco-windows-01.png
+share-img: https://miquelmariano.github.io/assets/images/posts/2025/10/hpe_morpheus_01.jpg
 published: true
 author: Miquel Mariano
 tag:
@@ -57,7 +57,7 @@ Este post porma parte de la serie sobre HPE VM Essentials y a continuación pode
 • Lo que cambies con virsh no pasa por el manager de VME. Para tareas rutinarias (cambiar CPU, RAM, discos o NICs) usa la consola de VME. Reserva virsh para diagnóstico y para los casos en que el manager no llega.
 • Los ejemplos son de mi laboratorio. Sustituye nombres, IDs, IPs y credenciales por los tuyos.
 
-# Ampliar disco de datos
+# Listar y monitorizar VMs
 
 En este ejemplo partimos de una VM con un disco de 30Gb en el que para ampliarlo seleccionaremos el botón de "Reconfigure" desde el menú "Actions"
 
