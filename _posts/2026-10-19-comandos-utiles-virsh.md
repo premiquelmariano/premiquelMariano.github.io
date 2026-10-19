@@ -53,9 +53,9 @@ Este post porma parte de la serie sobre HPE VM Essentials y a continuación pode
 </details>
 
 {: .box-note}
-• Todos los comandos se lanzan en el nodo donde corre la VM, con sudo.
-• Lo que cambies con virsh no pasa por el manager de VME. Para tareas rutinarias (cambiar CPU, RAM, discos o NICs) usa la consola de VME. Reserva virsh para diagnóstico y para los casos en que el manager no llega.
-• Los ejemplos son de mi laboratorio. Sustituye nombres, IDs, IPs y credenciales por los tuyos.
+- Todos los comandos se lanzan en el nodo donde corre la VM, con sudo.
+- Lo que cambies con virsh no pasa por el manager de VME. Para tareas rutinarias (cambiar CPU, RAM, discos o NICs) usa la consola de VME. Reserva virsh para diagnóstico y para los casos en que el manager no llega.
+- Los ejemplos son de mi laboratorio. Sustituye nombres, IDs, IPs y credenciales por los tuyos.
 
 # Listar y monitorizar VMs
 
@@ -187,16 +187,31 @@ Volume 'vda'(/var/morpheus/kvm/local/hpe-vm-essentials-8.1.2-1.qcow2) removed.
 ```
 
 Qué hace cada opción:
-• `--remove-all-storage`: busca todos los discos asociados a la VM y los elimina.
-• `--wipe-storage`: sobrescribe los datos del disco antes de borrar el fichero, para evitar su recuperación.
-• `--snapshots-metadata`: borra cualquier registro de snapshots.
-• `--managed-save`: elimina el estado guardado si la VM se había pausado alguna vez.
+- `--remove-all-storage`: busca todos los discos asociados a la VM y los elimina.
+- `--wipe-storage`: sobrescribe los datos del disco antes de borrar el fichero, para evitar su recuperación.
+- `--snapshots-metadata`: borra cualquier registro de snapshots.
+- `--managed-save`: elimina el estado guardado si la VM se había pausado alguna vez.
 
 Es irreversible. Comprueba dos veces el nombre antes de lanzarlo.
 
+# Ver en qué host está corriendo una VM
 
+En un clúster de varios nodos, virsh solo ve lo que corre en el nodo local. Yo uso un pequeño script (`allssh.sh`) que ejecuta un comando en todos los nodos por SSH y lo agrupa por host:
 
+``ssh
+allssh.sh "sudo virsh list --all"
+================== 10.10.10.101 =================
+ Id   Name              State
+----------------------------------
+ 13   ges-WinSrv2019    running
+ 28   mmr-test-03       running
+ -    veeam-worker-01   shut off
+================== 10.10.10.102 =================
+ 3    mmr-checkmk-01    running
+ 4    Win2025STD        running
+```
 
+Si no tienes un script así, un bucle sencillo hace lo mismo: `for h in 10.10.10.101 10.10.10.102 10.10.10.103; do ssh vmeadmin@$h "sudo virsh list --all"; done`.
 
 
 
